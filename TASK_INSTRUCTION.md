@@ -1,0 +1,172 @@
+# INSTRUCTION — Scheduled task "AH Decode · Reel hằng ngày"
+
+Kho mã và dữ liệu: GitHub `buithucdatqn-sketch/claude` (nhánh `main`). Cách lấy: dùng add_repo (quyền push) rồi `git clone --depth 1 https://github.com/buithucdatqn-sketch/claude <thư_mục_làm_việc>/claude` (timeout lệnh ≥ 10 phút; chỉ MỘT lệnh git tại một thời điểm). Gọi thư mục clone là REPO. Cấu trúc: `REPO/engine/` (bộ engine), `REPO/inbox/` (INBOX), `REPO/TASK_INSTRUCTION.md` (chính tài liệu này). Cuối mỗi lần chạy: `git add inbox`, commit, và `git pull --rebase origin main && git push origin main` (một lần; nếu bị 429 thì đợi 10 giây thử lại một lần).
+
+Mỗi lần chạy là một phiên mới, không nhớ gì từ các cuộc trò chuyện trước. Mọi thông tin cần thiết nằm trong tài liệu này và thư mục INBOX.
+Chạy một lượt, không hỏi lại. Nếu thiếu đầu vào thì dừng và báo rõ thiếu gì (mục 9).
+
+## 1. Nhiệm vụ
+Mỗi ngày, TỰ chọn MỘT nguyên lý thiết kế decor nội thất, rồi TỰ lấy MỘT ảnh dự án thật trên một trong các tạp chí thiết kế (Yatzer, Yellowtrace, Dwell, Wallpaper*) phù hợp để minh hoạ nguyên lý đó, và tạo gói sản xuất cho một reel dọc 9:16, dài khoảng 25–30 giây, series "AH Decode". Reel giải thích MỘT nguyên lý trang trí nội thất bằng các nét doodle trắng nét đứt vẽ lên chính ảnh gốc.
+Gói gồm: (1) kịch bản lời đọc theo cảnh và file chữ thuần để dán vào ElevenLabs, (2) các khung hình 1080×1920, (3) bảng phân cảnh, (4) video reel dựng sẵn (bản không tiếng, hoặc có tiếng nếu đã có audio), (5) danh mục nguồn đã đối chiếu, (6) caption đăng bài.
+Người dùng nói tiếng Việt, mọi chữ trên khung và lời đọc đều bằng tiếng Việt.
+
+## 2. Đầu vào (INBOX = REPO/inbox)
+Chế độ mặc định là TỰ ĐỘNG: không cần người dùng gửi ảnh. Chỉ cần:
+- `INBOX/series.json`: danh sách các tập đã làm (số tập, nguyên lý, URL bài nguồn và URL ảnh đã dùng, ngày). Nếu chưa có thì tạo mới. Dùng để không lặp lại nguyên lý hoặc ảnh/dự án đã dùng (không dùng lại cùng một dự án trong 60 ngày gần nhất).
+- `INBOX/override/` (tuỳ chọn, có thì ưu tiên): `<tên>.jpg|png` ảnh do người dùng gửi + `<tên>.txt` (dòng 1 = credit đúng dạng `tên dự án · studio · nhiếp ảnh gia`, các dòng sau = nguyên lý muốn nói). Có thư mục này thì bỏ qua mục 2b, làm đúng như ảnh người dùng gửi.
+- `INBOX/audio/<slug>.mp3|wav|m4a` (tuỳ chọn): giọng đọc ElevenLabs của chính tập này (người dùng làm từ file `elevenlabs.txt` của lần chạy trước). Có file này thì làm bước 9 (ghép tiếng) trong mục 4.
+- Xử lý xong: cập nhật `series.json`; ảnh override chuyển sang `INBOX/done/`.
+
+## 2b. Chọn nguyên lý và lấy ảnh từ tạp chí thiết kế (chế độ tự động)
+**Nguồn ảnh (chỉ các trang sau, không trang nào khác):** Yatzer (www.yatzer.com), Yellowtrace (www.yellowtrace.com.au), Dwell (www.dwell.com), Wallpaper* (www.wallpaper.com). Đã thử: bốn trang này truy cập được bằng `curl -A "Mozilla/5.0"`. The Local Project chặn truy cập tự động (403 Cloudflare) và Est Living chặn bằng captcha: KHÔNG dùng và KHÔNG cố vượt. Đầu mỗi lần chạy kiểm tra từng trang bằng `curl -sS -m 20 -L -A "Mozilla/5.0" -o /dev/null -w "%{http_code}" <URL>`; trang nào không trả 200 thì bỏ qua lần đó. Nếu không trang nào truy cập được thì dừng và báo (mục 9).
+Cách lấy ảnh theo trang (cấu trúc có thể đổi, hãy xem HTML thật):
+- Yatzer: trang bài chứa `https://media.yatzer.com/...jpg`; bản không hậu tố kích thước là bản gốc lớn nhất, `-1400x…` là dự phòng. Credit nhiếp ảnh: câu "Photography by …" trong bài.
+- Yellowtrace: bài viết WordPress; ảnh ở `assets.yellowtrace.com.au/wp-content/uploads/...`; bỏ hậu tố kích thước `-1040x700` để lấy bản gốc (nếu 404 thì dùng bản có hậu tố lớn nhất). Credit nằm trong bài ("Photography by/Photo by …").
+- Dwell: ảnh ở `images2.dwell.com/photos/.../original.jpg`. Credit nhiếp ảnh và kiến trúc sư nằm trong bài hoặc chú thích ảnh.
+- Wallpaper*: lấy ảnh từ thẻ `og:image`/`img` trong bài (ưu tiên URL lớn nhất); credit nằm ở chú thích ảnh hoặc cuối bài ("Photography: …").
+Mỗi lần chọn trang có ảnh phù hợp nguyên lý nhất; luân phiên giữa các trang để đa dạng, không dùng một trang quá hai ngày liên tiếp.
+
+**Chọn nguyên lý (task tự tìm và chọn lọc, không đợi người dùng)**
+1. Tự tìm nguyên lý trong chính các nguồn học thuật ở mục 3 (giáo trình, chuyên khảo, nghiên cứu có phản biện), không lấy từ các tạp chí ảnh. Dùng WebSearch/WebFetch để đọc mục lục, chương, abstract, rồi chọn MỘT nguyên lý mà: (a) được nêu rõ trong ít nhất 2 nguồn học thuật độc lập; (b) có thể minh hoạ bằng nét vẽ trên một ảnh nội thất (đường, trục, hình, khối, màu, nhịp); (c) nói được trong 25–30 giây; (d) chưa dùng trong `series.json`.
+2. Danh mục tham khảo để bắt đầu (không giới hạn, có thể mở rộng khi tìm thêm nguồn xác minh được): cân bằng (đối xứng, bất đối xứng, hướng tâm), trục, nhịp điệu và lặp lại, tiến cấp, điểm nhấn và thứ bậc thị giác, tỷ lệ và scale, khoảng thở (negative space), thống nhất và hài hoà, tương phản và đa dạng, các nguyên lý Gestalt (gần nhau, tương đồng, liên tục, khép kín, nền–hình), sắc độ/độ sáng/độ bão hoà, bảng màu tương cận và bổ túc, tỷ lệ phân bổ màu (60-30-10 chỉ là quy tắc kinh nghiệm), nhiệt độ màu, chất liệu và vân, pha hoạ tiết, ánh sáng nhiều lớp, lớp trước–giữa–sau, ngưỡng và chuyển tiếp, prospect–refuge, đường dẫn mắt.
+3. Xoay vòng: ưu tiên nhóm chưa dùng nhiều; hết danh mục thì quay lại với góc nhìn khác. Ghi nguyên lý và các nguồn đã dùng vào `series.json`.
+4. Chỉ giữ nguyên lý nếu qua được mục 3 (≥ 2 nguồn đã xác minh). Nếu không thì chọn nguyên lý khác.
+
+**Tìm ảnh minh hoạ trên các trang nguồn**
+3. Lấy danh sách bài từ trang chủ, chuyên mục nội thất/kiến trúc hoặc sitemap của trang nguồn (chuyên mục nào 404 thì dùng sitemap). Chọn các bài về nhà ở/nội thất công trình đã hoàn thành, ưu tiên bài mới. Mở bài, lấy các URL ảnh theo hướng dẫn từng trang ở trên.
+4. Tải về xem thử (Read ảnh) ít nhất 6–10 ảnh ứng viên, chọn ảnh minh hoạ RÕ NHẤT cho nguyên lý. Tiêu chí bắt buộc:
+   - Ảnh nội thất ĐÃ HOÀN THIỆN, ảnh thật, không phải render, bản vẽ, sơ đồ hay ảnh quảng cáo có chữ/logo chèn lên.
+   - Khung ngang (tỷ lệ rộng/cao từ 1,3 đến 1,9). KHÔNG dùng ảnh dọc hoặc vuông (engine khung hình tính cho ảnh ngang).
+   - Cạnh dài ≥ 1800 px (bản gốc), nét, không mờ, không có người nhận diện được rõ mặt.
+   - Nguyên lý hiện ra rõ bằng mắt thường: bạn phải chỉ ra được cụ thể vật nào, đường nào sẽ vẽ doodle. Nếu phải gượng ép thì bỏ ảnh.
+   - Không dùng ảnh người dùng đã duyệt-chưa-đăng trong `series.json`; không dùng ảnh của dự án đã dùng trong 60 ngày.
+5. Tải ảnh: `curl -sS -m 60 -o <file> <URL>`; kiểm tra bằng PIL rằng ảnh mở được. Tạo bản làm việc: thu nhỏ cạnh dài còn 2400 px (LANCZOS, giữ tỷ lệ) lưu thành `source.png`; mọi toạ độ doodle đặt theo bản làm việc này. Giữ ảnh gốc trong `OUT/original/` để tham chiếu.
+6. Lấy credit từ chính trang bài (đọc kỹ chữ trên trang, không đoán): tên dự án (tiêu đề bài), studio/kiến trúc sư (thường nằm trong tiêu đề hoặc đoạn credit cuối bài), nhiếp ảnh gia (các câu kiểu "Photography by …", "Photo: …"; với Yatzer, tên nhiếp ảnh gia thường có trong tên file ảnh). Ghép: `<tên dự án> · <studio> · ảnh <nhiếp ảnh gia> · <tên tạp chí nguồn>`. Nếu thiếu một mục thì bỏ mục đó, không bịa. Dòng credit trên khung hiển thị dưới dạng `Ảnh dự án: ...`; nếu dài quá 960 px thì giảm cỡ chữ dòng credit (tối thiểu 26) hoặc xuống hai dòng, không cắt.
+7. Lưu `OUT/source_info.md`: URL bài nguồn, URL ảnh đã tải, thời điểm tải, credit đầy đủ, ghi chú ảnh vì sao chọn.
+
+**Bản quyền và ghi nguồn (bắt buộc)**
+Ảnh thuộc về nhiếp ảnh gia và dự án; các tạp chí đăng theo cấp phép biên tập. Vì vậy:
+- Luôn hiển thị credit (mục 6) trên khung và trong caption, kèm LINK bài gốc của tạp chí trong caption để dẫn người xem về nguồn.
+- Chỉ dùng ảnh làm minh hoạ phân tích (có bình luận và nét vẽ), không dùng làm ảnh quảng cáo; không cắt bỏ credit hay watermark nếu có.
+- Trong báo cáo cuối, ghi rõ dòng nhắc người dùng: "Ảnh lấy từ <tạp chí>, chưa có xin phép chính thức; cân nhắc xin phép nhiếp ảnh gia/tạp chí nếu đăng thương mại, và sẵn sàng gỡ khi có yêu cầu."
+
+## 3. QUY TẮC NGUỒN (bắt buộc, không ngoại lệ)
+Mọi nhận định phân tích (nguyên lý, cơ chế tri giác, quy tắc phối màu…) phải đối chiếu được với sách giáo trình, chuyên khảo hoặc nghiên cứu có phản biện. KHÔNG dùng blog, trang tạp chí decor, Pinterest, Wikipedia, trang thương mại, video, bài "mẹo trang trí" làm căn cứ.
+
+Quy trình cho từng nhận định đưa vào lời đọc:
+1. Gắn nó với một nguồn cụ thể: tác giả, tựa, năm, nhà xuất bản/tạp chí, chương hoặc DOI.
+2. Xác minh nguồn có thật bằng WebSearch/WebFetch ở nơi đáng tin: trang nhà xuất bản, DOI/Crossref, Google Books, thư viện đại học, PubMed, Semantic Scholar. Đọc được mục lục, abstract hoặc đoạn trích liên quan thì mới tính là đã xác minh.
+3. Không xác minh được: BỎ nhận định đó khỏi lời đọc. Tuyệt đối không dựa vào trí nhớ để bịa số trang, trích dẫn hay tên sách. Chỉ ghi số trang khi đã nhìn thấy tận nơi.
+4. Phân biệt rõ bản chất:
+   - Nguyên lý thiết kế hoặc lý thuyết: Gestalt, cân bằng, nhịp điệu, tỷ lệ, trọng tâm, tương phản…
+   - Phát hiện thực nghiệm: nghiên cứu tri giác, tâm lý màu…
+   - Quy tắc kinh nghiệm: ví dụ 60-30-10. Phải nói đây là "quy tắc kinh nghiệm của giới thực hành", không nói là "khoa học chứng minh".
+5. Không nói quá: tránh "luôn luôn", "đã được chứng minh" khi nguồn chỉ nói "có xu hướng". Giữ đúng mức độ chắc chắn của nguồn.
+6. Mỗi tập cần ít nhất 2 nguồn độc lập. Ít nhất 1 nguồn là sách giáo trình hoặc chuyên khảo, nếu nhận định có hàm ý tâm lý/tri giác thì thêm 1 bài nghiên cứu.
+
+Danh sách nguồn gợi ý để tìm trước (vẫn phải xác minh từng lần, không coi là đã đúng):
+- Ching, F. D. K. & Binggeli, C. *Interior Design Illustrated* (Wiley).
+- Ching, F. D. K. *Architecture: Form, Space, and Order* (Wiley).
+- Pile, J. & Gura, J. *A History of Interior Design* (Wiley); Pile, J. *Interior Design* (Pearson).
+- Lidwell, W., Holden, K. & Butler, J. *Universal Principles of Design* (Rockport).
+- Arnheim, R. *Art and Visual Perception*; *The Dynamics of Architectural Form* (UC Press).
+- Albers, J. *Interaction of Color* (Yale UP); Itten, J. *The Art of Color*.
+- Alexander, C. et al. *A Pattern Language* (Oxford UP).
+- Rasmussen, S. E. *Experiencing Architecture* (MIT Press); Pallasmaa, J. *The Eyes of the Skin* (Wiley); Zumthor, P. *Atmospheres* (Birkhäuser).
+- Nghiên cứu: Palmer & Schloss (2010, PNAS) về sở thích màu; Elliot & Maier (2014, Annual Review of Psychology) về màu và tâm lý; Kaplan & Kaplan về môi trường và ưa thích thị giác; các bài tri giác Gestalt có phản biện (ví dụ Wagemans et al. 2012, Psychological Bulletin).
+Nếu cần nguồn ngoài danh sách, chỉ nhận sách hoặc bài có phản biện, và phải xác minh như trên.
+
+## 4. Quy trình
+1. Chế độ tự động: chọn nguyên lý và tìm ảnh theo mục 2b (nguyên lý trước, ảnh sau). Chế độ override: xem kỹ ảnh người dùng gửi và xác định MỘT nguyên lý thấy rõ trong ảnh.
+2. Tra và xác minh nguồn cho nguyên lý (mục 3) TRƯỚC khi viết kịch bản. Chọn nhận định có nguồn rồi mới viết. Nếu không đủ nguồn vững thì đổi nguyên lý (và có thể đổi ảnh).
+3. Viết kịch bản 6–8 cảnh, tổng khoảng 25–30 giây, khoảng 65–85 từ lời đọc. Khung cảnh gợi ý:
+   - Mở: câu hỏi hoặc nhận xét gây tò mò.
+   - 2–4 cảnh phân tích, mỗi cảnh một ý, zoom vào đúng chi tiết đang nói.
+   - Cảnh tổng kết: "công thức" một câu.
+   - Cảnh cuối: gợi ý tập sau + kêu gọi theo dõi (không ghi nguồn lên khung).
+   Câu ngắn, dễ đọc, tự nhiên, tiếng Việt chuẩn. Lời đọc dùng để dán vào ElevenLabs nên không có ký hiệu lạ, không chú thích trong ngoặc.
+4. Đặt toạ độ doodle bằng cách tự xem ảnh (đọc ảnh bằng Read): trục, đường, hình bao đồ vật bằng đa giác thô theo toạ độ ảnh gốc.
+5. Chạy engine khung hình (mục 5). Xem LẠI từng khung (mục 7). Sửa toạ độ rồi chạy lại cho đến khi đạt.
+6. Soạn `elevenlabs.txt` (mục 8b) từ lời đọc đã chốt.
+7. Dựng video bằng engine video (mục 5b). Xem lại các khung trích từ video (mục 7).
+8. Viết `sources.md` và `caption.txt`, rồi báo cáo (mục 8).
+9. Chỉ khi có file audio trong INBOX/audio: ghép tiếng vào video (mục 5c) và kiểm tra thời lượng.
+
+## 5. Engine dựng khung (thư mục ENGINE = REPO/engine)
+Gồm: `engine_video.py` (mục 5b), `engine_storyboard_v7.py` (chạy bằng `python3 -I`; script tự thêm thư mục của nó vào sys.path), `silhouette.py`, `PatrickHand-Regular.ttf`. Cần: Python 3, Pillow, numpy, opencv-python (pip cần `--break-system-packages`), ffmpeg.
+Chạy: `python3 -I engine_storyboard_v7.py <ảnh> <thư_mục_ra>`
+Engine v7 đang hard-code ảnh và toạ độ của tập #1. Mỗi tập, sao chép thành `engine_epNN.py` rồi sửa CHỈ các phần sau:
+- `SCENES` (tiêu đề `head`, lời `vo`, thời lượng `t`, camera `cam=(điểm_focus_trên_ảnh, zoom, vị_trí_trên_khung)`, `dark`).
+- `OBJ`: đa giác thô quanh đồ vật (toạ độ ảnh gốc). Hàm `doodle()`: trục, đường nối, hình bao, nhãn.
+- `CREDIT`, `HEAD` (đầu trang luôn là `AH DECODE · <TÊN CHỦ ĐỀ VIẾT HOA>`), tên file ra.
+Không đổi: kích thước 1080×1920, nền trắng, băng keo giấy ở giữa mép trên, ảnh không viền, chữ viết tay Patrick Hand, bố cục chữ.
+
+## 5b. Engine dựng video (`engine_video.py`, nằm cùng thư mục ENGINE)
+Là bản mở rộng của engine khung hình: cùng `SCENES`, `OBJ`, `doodle()`, `CREDIT`, `HEAD`. Mỗi tập sao chép thành `engine_video_epNN.py` và sửa CÙNG các phần như mục 5, nên giữ hai engine đồng bộ (sửa dữ liệu cảnh một lần, dán sang cả hai).
+Chạy: `python3 -I engine_video_epNN.py <ảnh> <thư_mục_ra>` → `<thư_mục_ra>/video/reel1_silent.mp4` (đổi tên thành `reel_<slug>_silent.mp4`).
+Mất khoảng 7 phút (30 fps, 1080×1920, H.264 CRF 17), nên đặt timeout lệnh đủ dài hoặc chạy nền và theo dõi.
+Hành vi đã duyệt, không tự ý đổi:
+- Thời lượng mỗi cảnh lấy từ trường `t` của `SCENES` (ví dụ "3–8s"); video dài đến hết cảnh cuối + 1 giây.
+- Chuyển cảnh 0,7 giây: camera nội suy zoom và vị trí; chữ và nét của cảnh cũ mờ đi trong 0,25 giây đầu; tiêu đề và lời đọc của cảnh mới hiện ra ở cuối quãng chuyển.
+- Nét doodle được vẽ dần (theo thứ tự các nét trong `doodle()`), bắt đầu sau khi camera dừng, xong ở khoảng 62% thời lượng cảnh; nhãn chữ trong `doodle()` hiện khi nét vẽ đạt khoảng 55–75%.
+- Khung cuối giữ thêm 1 giây. Video có sẵn track âm thanh im lặng để ghép tiếng sau.
+Nếu một cảnh quá ngắn để vẽ hết nét (cảnh nhiều nét mà dưới 3 giây), kéo dài cảnh đó trong `SCENES` hoặc bớt nét, không tăng tốc vẽ.
+
+## 5c. Ghép giọng ElevenLabs (chỉ khi có audio)
+1. Đo thời lượng audio: `ffprobe -v error -show_entries format=duration -of csv=p=0 <audio>`.
+2. So với thời lượng video:
+   - Chênh trong ±1,5 giây: ghép luôn.
+   - Audio dài hơn video hơn 1,5 giây, hoặc ngắn hơn hơn 3 giây: KHÔNG tự cắt hay kéo giãn giọng. Điều chỉnh `t` các cảnh (kéo dài/rút ngắn cảnh có lời nhiều/ít) theo nhịp đọc rồi dựng lại video; nếu không biết ranh giới từng câu, dùng `ffmpeg -af silencedetect=noise=-35dB:d=0.25` để tìm các quãng nghỉ, ghép từng câu với từng cảnh theo thứ tự trong `elevenlabs.txt`.
+3. Ghép: `ffmpeg -y -i video_silent.mp4 -i audio -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest out.mp4`. Nếu audio ngắn hơn video, thêm `-af apad` rồi `-t <thời lượng video>` thay cho `-shortest`.
+4. Chuẩn âm lượng nhẹ: `-af loudnorm=I=-16:TP=-1.5:LRA=11`.
+5. Kiểm tra bằng cách trích vài khung và đối chiếu thời điểm nhãn chữ với câu đang đọc (dùng silencedetect); báo cáo nếu lệch quá 1 giây.
+
+## 6. Quy cách hình ảnh (đã duyệt, không tự ý đổi)
+- Khung 1080×1920. Nền trắng trơn. Ảnh dự án là ảnh GỐC, không sketch hoá, không làm mờ; dán bằng một miếng băng keo giấy ở giữa mép trên, không viền, hơi nghiêng ~1°, có bóng nhẹ.
+- Cảnh rộng: ảnh nằm giữa khung; chữ nằm NGOÀI ảnh (nâu đậm), mũi tên trắng/nâu chỉ vào nét doodle. Cảnh nói chi tiết: camera zoom vào ảnh; khi hết chỗ nền thì chữ trắng viết lên ảnh, có phủ tối nhẹ để dễ đọc.
+- Mọi nét doodle trên ảnh: màu TRẮNG, NÉT ĐỨT, nét tay tự nhiên. Đồ vật được bao bằng đường đứt ôm theo hình dáng tổng quát (không khoanh tròn), sau khi zoom vào đúng đồ vật/cụm.
+- Tất cả chữ viết tay. Header nhỏ ở trên cùng, tiêu đề cảnh bên dưới, KHÔNG đánh số "Bước n". Dòng credit nhỏ ngay dưới ảnh. Không gạch chân lượn sóng.
+- Khung cuối: tiêu đề tập sau + "Theo dõi để xem tập tiếp theo", không có dòng nguồn.
+
+## 7. Kiểm tra bắt buộc trước khi giao (đọc từng khung bằng Read)
+- Hình bao ôm đúng đồ vật được nhắc trong lời đọc; nét không tràn ra ngoài ảnh; không có "cục" đậm do nét chồng nhau.
+- Chữ đọc rõ, có đủ dấu tiếng Việt, không bị cắt, không đè lên nét vẽ khó đọc, không nằm vắt ngang mép ảnh.
+- Lời đọc khớp với hình trong cùng cảnh, tổng thời lượng 25–30 giây (tốc độ đọc khoảng 2,5–3 từ/giây).
+- Từng nhận định trong lời đọc đều có dòng tương ứng trong `sources.md` đã xác minh; không có nhận định mồ côi.
+- Video: trích ít nhất 8 khung (đầu, giữa quá trình vẽ, cuối từng cảnh chính, khung cuối) để kiểm tra: nét vẽ đã đủ khi cảnh kết thúc, không có nét của cảnh cũ lẫn sang cảnh mới, chữ không bị cắt, chuyển cảnh không giật. Kiểm tra `ffprobe`: 1080×1920, h264, có track âm thanh, thời lượng đúng dự kiến.
+- Không có logo, thương hiệu hay tên người xuất hiện sai trong khung.
+Với việc quan trọng (kịch bản và nguồn), nhờ một agent khác chưa thấy quá trình làm đọc lại và đối chiếu nguồn.
+
+## 8. Đầu ra (OUT = INBOX/out/<YYYY-MM-DD>_<slug>/)
+- `script.md`: bảng cảnh (thời lượng, tiêu đề, lời đọc) + phần lời đọc liền mạch.
+- `elevenlabs.txt`: văn bản thuần để người dùng dán thẳng vào ElevenLabs (mục 8b).
+- `source_info.md`, `original/`.
+- `frames/scene_*.png` + `storyboard.png` + `frames.zip`.
+- `reel_<slug>_silent.mp4` (và `reel_<slug>_final.mp4` nếu đã có audio).
+- `sources.md`: mỗi nhận định → nguồn (tác giả, tựa, năm, NXB/tạp chí, chương/DOI, link nơi đã xác minh) → mức chắc chắn (nguyên lý / thực nghiệm / quy tắc kinh nghiệm) → đã xác minh bằng gì.
+- `caption.txt`: caption đăng bài ngắn gọn, kết thúc bằng 2–3 nguồn chính (sách/nghiên cứu), credit ảnh đầy đủ và link bài gốc của tạp chí; hashtag vừa phải.
+- Gửi cho người dùng (SendUserFile): `elevenlabs.txt` đầu tiên, rồi video, ảnh bảng phân cảnh, `script.md`, `sources.md`, `caption.txt`; kèm tóm tắt tối đa 6 dòng: nguyên lý, nguồn chính, điểm cần duyệt, credit đã có hay còn thiếu, và nhắc "gửi lại file giọng đọc vào INBOX/audio để ghép tiếng".
+Đây là BẢN NHÁP chờ người dùng duyệt. Không đăng, không gửi đi đâu khác.
+
+## 8b. Quy cách `elevenlabs.txt`
+Mục tiêu: người dùng mở file, chọn tất cả, dán vào ElevenLabs, không phải sửa gì.
+- Chỉ có lời đọc, theo đúng thứ tự cảnh. Không đánh số cảnh, không tiêu đề, không chú thích, không ngoặc chỉ dẫn, không emoji, không hashtag, không tên file.
+- Mỗi cảnh một đoạn; giữa các đoạn cách một dòng trống. Trong đoạn, mỗi câu một dòng.
+- Đọc được thành tiếng một cách tự nhiên: viết số, ký hiệu và từ viết tắt thành chữ (ví dụ "60-30-10" thành "sáu mươi, ba mươi, mười"; "≠" thành "không bằng"; "%" thành "phần trăm"). Tên riêng nước ngoài giữ nguyên chính tả, nếu khó đọc thì thêm cách đọc phiên âm tiếng Việt.
+- Dấu câu để điều khiển nhịp: dấu phẩy và chấm đủ rõ; chỗ cần ngắt dài hơn thì dùng dấu "..." hoặc dòng trống, không chèn thẻ kỹ thuật. Câu ngắn, tối đa khoảng 18 từ.
+- Độ dài khớp thời lượng cảnh trong `SCENES`: khoảng 2,5–3 từ mỗi giây, trừ khoảng 0,7 giây chuyển cảnh ở đầu mỗi cảnh. Cuối file ghi thêm một dòng riêng NGOÀI phần dán: `--- Gợi ý cài đặt: giọng nữ hoặc nam trầm ấm, tốc độ 1.0, mô hình đa ngôn ngữ, ngôn ngữ Vietnamese ---` để người dùng tham khảo (dòng này phân tách bằng một dòng trống và dấu `---`, người dùng chỉ dán phần phía trên).
+- Cảnh cuối chỉ đọc câu mời theo dõi và gợi ý tập sau, không đọc nguồn hay credit.
+
+## 9. Khi gặp sự cố
+- Không truy cập được trang nguồn nào hoặc không tìm được ảnh đạt tiêu chí sau khi xem ít nhất 10 ứng viên: dừng, báo rõ lý do và các ảnh/bài đã thử; KHÔNG chuyển sang nguồn ảnh khác, KHÔNG lấy ảnh từ Google/Pinterest.
+- Ảnh quá nhỏ (<1200 px cạnh dài), quá tối, hoặc không minh hoạ được nguyên lý nào có nguồn: vẫn làm bản tốt nhất có thể, ghi rõ hạn chế (ví dụ zoom bị mềm) và đề nghị ảnh khác.
+- Không xác minh đủ 2 nguồn: KHÔNG giao kịch bản như thể đã đủ nguồn. Giao bản nháp, ghi rõ nhận định nào chưa xác minh và để người dùng quyết định.
+- Dựng video quá thời gian hoặc ffmpeg lỗi: vẫn giao khung hình, script và `elevenlabs.txt`, nói rõ video chưa dựng được và vì sao.
+- Công cụ lỗi (mạng, thư viện): thử lại một lần, rồi báo lỗi cụ thể thay vì bỏ qua bước.
+
+## 10. Việc KHÔNG làm
+- Không dùng nguồn web thường thức. Không dựa trí nhớ để dẫn sách/nghiên cứu.
+- Không đổi quy cách hình ảnh ở mục 6. Không sketch hoá ảnh dự án. Không bỏ credit.
+- Không dùng ảnh/đồ hoạ ngoài ảnh đã chọn từ bốn trang nguồn ở mục 2b (hoặc ảnh người dùng gửi ở chế độ override). Không dùng Est Living, The Local Project hay bất kỳ nguồn ảnh nào khác.
+- Không đổi nhịp chuyển cảnh/vẽ nét đã duyệt (mục 5b), không thêm nhạc nền, hiệu ứng hay phụ đề chạy chữ khi chưa được yêu cầu.
+- Không bịa tên studio, nhiếp ảnh gia hay dự án khi thiếu credit; chỉ ghi những gì có trên trang bài nguồn.
