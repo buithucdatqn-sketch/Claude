@@ -24,13 +24,15 @@ if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
 CREDIT = "Ảnh dự án: [tên dự án] · [studio] · [nhiếp ảnh gia]"
 HEAD = "AH DECODE · CÂN BẰNG THỊ GIÁC"
-# Khung cuối cố định cho mọi tập: mời theo dõi Fanpage, KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
+# Khung cuối cố định cho mọi tập: giới thiệu series AH Decode, mời theo dõi Fanpage Giả Thuyết Kiến Trúc, KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
 END_LINES = [
-    (1080, "Theo dõi Fanpage", 60, 230),
-    (1150, "AH Decode", 132, 255),
-    (1370, "Bài viết về kiến trúc dành riêng", 56, 240),
-    (1434, "cho thành viên", 56, 240),
-    (1530, "Link ở phần bình luận", 66, 255),
+    (1060, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
+    (1108, "và cách chọn đồ decor", 40, 215),
+    (1200, "Theo dõi Fanpage", 58, 235),
+    (1268, "Giả Thuyết Kiến Trúc", 104, 255),
+    (1440, "Bài viết về kiến trúc dành riêng", 54, 240),
+    (1502, "cho thành viên", 54, 240),
+    (1590, "Link ở phần bình luận", 64, 255),
 ]
 INK = (46, 38, 32)
 PAPER = (229, 215, 191)  # beige print margin

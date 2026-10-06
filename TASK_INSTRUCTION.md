@@ -7,7 +7,9 @@ Chạy một lượt, không hỏi lại. Nếu thiếu đầu vào thì dừng 
 
 ## 1. Nhiệm vụ
 Mỗi ngày, TỰ chọn MỘT nguyên lý thiết kế decor nội thất, rồi TỰ lấy MỘT ảnh dự án thật trên một trong các tạp chí thiết kế (Yatzer, Yellowtrace, Dwell, Wallpaper*) phù hợp để minh hoạ nguyên lý đó, và tạo gói sản xuất cho một reel dọc 9:16, dài 45–60 giây, series "AH Decode". Reel giải thích MỘT nguyên lý trang trí nội thất bằng các nét doodle trắng nét đứt vẽ lên chính ảnh gốc.
-Mỗi reel là một bài học TRỌN VẸN và CÓ CHIỀU SÂU (mục 4a): nguồn gốc lý thuyết, cơ chế vì sao mắt thấy vậy, đọc nguyên lý trên ảnh, lỗi hay gặp, cách áp dụng cụ thể, cách chọn mua/chọn đồ và thiết kế, rồi công thức tổng kết. Người xem phải học được điều cụ thể mà họ chưa biết, không phải những câu chung chung. Không hẹn "tập sau"; cảnh cuối chỉ mời theo dõi Fanpage AH Decode và các bài viết về kiến trúc dành riêng cho thành viên (link ở phần bình luận).
+Mỗi reel là một bài học TRỌN VẸN và CÓ CHIỀU SÂU (mục 4a): nguồn gốc lý thuyết, cơ chế vì sao mắt thấy vậy, đọc nguyên lý trên ảnh, lỗi hay gặp, cách áp dụng cụ thể, cách chọn mua/chọn đồ và thiết kế, rồi công thức tổng kết. Người xem phải học được điều cụ thể mà họ chưa biết, không phải những câu chung chung. Không hẹn "tập sau"; cảnh cuối chỉ mời theo dõi Fanpage Giả Thuyết Kiến Trúc và các bài viết về kiến trúc dành riêng cho thành viên (link ở phần bình luận).
+
+**Tên gọi (dùng đúng, không lẫn):** Fanpage tên là **Giả Thuyết Kiến Trúc**. **AH Decode** là một series MỚI của Fanpage này, chuyên phân tích các nguyên tắc thiết kế và cách chọn đồ decor. AH Decode KHÔNG phải tên Fanpage: không viết "Fanpage AH Decode". Header trên khung vẫn là `AH DECODE · <CHỦ ĐỀ>`.
 Chạy trọn một lượt, không chờ duyệt lý thuyết hay ảnh giữa chừng.
 Gói gồm: (1) kịch bản lời đọc theo cảnh và file chữ thuần để dán vào ElevenLabs, (2) các khung hình 1080×1920, (3) bảng phân cảnh, (4) video reel dựng sẵn (bản không tiếng, hoặc có tiếng nếu đã có audio), (5) danh mục nguồn đã đối chiếu, (6) caption đăng bài.
 Người dùng nói tiếng Việt, mọi chữ trên khung và lời đọc đều bằng tiếng Việt.
@@ -104,7 +106,7 @@ Thứ tự gợi ý; được đảo thứ tự nếu kể tự nhiên hơn, nh�
 - F. Cách áp dụng cụ thể (1 cảnh, 4–6s): một hai việc người xem làm được ngay trong nhà mình, đủ cụ thể để làm theo (theo mục 3.7).
 - G. Chọn mua, chọn đồ và thiết kế (1 cảnh, 4–6s): nguyên lý này đổi cách chọn đồ thế nào (chọn món theo bộ hay lẻ, chọn khung, màu, kích thước, chất liệu, chọn số lượng…), theo mục 3.7.
 - H. Công thức (1 cảnh, 3–4s): một câu tóm tắt dễ nhớ, có thông tin (không phải khẩu hiệu rỗng).
-- I. Cảnh cuối (1 cảnh, 4–5s): mời theo dõi Fanpage AH Decode và nhắc các bài viết về kiến trúc dành riêng cho thành viên, link ở phần bình luận. KHÔNG nhắc tập sau, không đọc nguồn hay credit. Lời đọc mẫu: "Theo dõi Fanpage AH Decode để học thêm cách đọc một không gian. Các bài viết về kiến trúc dành riêng cho thành viên, link ở phần bình luận."
+- I. Cảnh cuối (1 cảnh, 5–6s): nhắc AH Decode là series phân tích nguyên tắc thiết kế và chọn đồ decor, mời theo dõi Fanpage Giả Thuyết Kiến Trúc và nhắc các bài viết về kiến trúc dành riêng cho thành viên, link ở phần bình luận. KHÔNG nhắc tập sau, không đọc nguồn hay credit. Lời đọc mẫu: "AH Decode là series phân tích nguyên tắc thiết kế và cách chọn đồ decor. Theo dõi Fanpage Giả Thuyết Kiến Trúc để xem thêm. Các bài viết về kiến trúc dành riêng cho thành viên, link ở phần bình luận."
 Quy tắc chiều sâu:
 - Mỗi cảnh phải chứa ít nhất một thông tin cụ thể (tên người/khái niệm, cơ chế, điều kiện, vật cụ thể trong ảnh, việc làm cụ thể). Câu nào bỏ đi mà người xem không mất thông tin gì thì bỏ.
 - Cấm các cụm chung chung không kèm giải thích: "tạo cảm giác hài hoà", "trông đẹp hơn", "thu hút ánh nhìn", "tạo điểm nhấn", "cân bằng thị giác" khi chưa nói vì sao và bằng cách nào.
@@ -127,7 +129,7 @@ Engine v7 đang hard-code ảnh và toạ độ của tập #1. Mỗi tập, sao
 - `SCENES` (tiêu đề `head`, lời `vo`, thời lượng `t`, camera `cam=(điểm_focus_trên_ảnh, zoom, vị_trí_trên_khung)`, `dark`). Cảnh cuối luôn có `head="end"`, `vo=""`.
 - `OBJ`: đa giác thô quanh đồ vật (toạ độ ảnh làm việc). Hàm `doodle()`: trục, đường nối, hình bao, nhãn.
 - `CREDIT`, `HEAD` (đầu trang luôn là `AH DECODE · <TÊN CHỦ ĐỀ VIẾT HOA>`), tên file ra.
-Không đổi: kích thước 1080×1920, nền trắng, băng keo giấy ở giữa mép trên, ảnh không viền, chữ viết tay Patrick Hand, bố cục chữ, khung cuối `END_LINES` (đã cố định: "Theo dõi Fanpage / AH Decode / Bài viết về kiến trúc dành riêng cho thành viên / Link ở phần bình luận").
+Không đổi: kích thước 1080×1920, nền trắng, băng keo giấy ở giữa mép trên, ảnh không viền, chữ viết tay Patrick Hand, bố cục chữ, khung cuối `END_LINES` (đã cố định: "AH Decode · series phân tích nguyên tắc thiết kế và cách chọn đồ decor / Theo dõi Fanpage / Giả Thuyết Kiến Trúc / Bài viết về kiến trúc dành riêng cho thành viên / Link ở phần bình luận").
 Cách làm nhanh đã dùng ở tập 2 (xem `inbox/out/2026-10-06_gestalt-gan-nhau/engine_ep02/`): viết một script nhỏ đọc hai engine gốc, thay khối từ dòng `# ---------------- scenes` đến trước `def render_scene` (engine khung) hoặc trước `BOARDS["plain"] = make_board(1.0)` (engine video) bằng khối dữ liệu của tập, thay `CREDIT`, `HEAD`, tên file ra, rồi ghi thành `engine_epNN.py` và `engine_video_epNN.py`. Một nguồn dữ liệu cho cả hai engine nên chúng luôn đồng bộ. Hàm `D(pts)` trong khối dữ liệu đó đổi toạ độ đo trên ảnh xem thu nhỏ sang ảnh làm việc 2400 px.
 Cảnh không có vật để khoanh (nguồn gốc, cơ chế) vẫn phải có hình: dùng cảnh rộng hoặc zoom vào vùng liên quan, nét doodle tối giản (một đường, một mũi tên) hoặc không nét; không chèn đồ hoạ khác.
 
@@ -156,7 +158,7 @@ Nếu một cảnh quá ngắn để vẽ hết nét (cảnh nhiều nét mà d�
 - Cảnh rộng: ảnh nằm giữa khung; chữ nằm NGOÀI ảnh (nâu đậm), mũi tên trắng/nâu chỉ vào nét doodle. Cảnh nói chi tiết: camera zoom vào ảnh; khi hết chỗ nền thì chữ trắng viết lên ảnh, có phủ tối nhẹ để dễ đọc.
 - Mọi nét doodle trên ảnh: màu TRẮNG, NÉT ĐỨT, nét tay tự nhiên. Đồ vật được bao bằng đường đứt ôm theo hình dáng tổng quát (không khoanh tròn), sau khi zoom vào đúng đồ vật/cụm.
 - Tất cả chữ viết tay. Header nhỏ ở trên cùng, tiêu đề cảnh bên dưới, KHÔNG đánh số "Bước n". Dòng credit nhỏ ngay dưới ảnh. Không gạch chân lượn sóng.
-- Khung cuối: ảnh rộng + credit dưới ảnh, rồi "Theo dõi Fanpage / AH Decode / Bài viết về kiến trúc dành riêng cho thành viên / Link ở phần bình luận" (đã cố định trong engine). Không có dòng nguồn, không nhắc tập sau.
+- Khung cuối: ảnh rộng + credit dưới ảnh, rồi "AH Decode · series phân tích nguyên tắc thiết kế và cách chọn đồ decor / Theo dõi Fanpage / Giả Thuyết Kiến Trúc / Bài viết về kiến trúc dành riêng cho thành viên / Link ở phần bình luận" (đã cố định trong engine). Không có dòng nguồn, không nhắc tập sau.
 
 ## 7. Kiểm tra bắt buộc trước khi giao (đọc từng khung bằng Read)
 - Hình bao ôm đúng đồ vật được nhắc trong lời đọc; nét không tràn ra ngoài ảnh; không có "cục" đậm do nét chồng nhau.
@@ -176,7 +178,7 @@ Kịch bản và nguồn đã được agent độc lập chấm ở bước 5 m
 - `frames/scene_*.png` + `storyboard.png` + `frames.zip`.
 - `reel_<slug>_silent.mp4` (và `reel_<slug>_final.mp4` nếu đã có audio).
 - `sources.md`: mỗi nhận định → nguồn (tác giả, tựa, năm, NXB/tạp chí, chương/DOI, link nơi đã xác minh) → mức chắc chắn (nguyên lý / thực nghiệm / quy tắc kinh nghiệm) → đã xác minh bằng gì.
-- `caption.txt`: caption đăng bài có chiều sâu, bổ sung cho reel (không chép lại lời đọc): vài đoạn ngắn về nguồn gốc, cơ chế, cách áp dụng và gợi ý chọn đồ, cùng quy tắc nguồn như lời đọc; rồi dòng mời "Theo dõi Fanpage AH Decode. Các bài viết về kiến trúc dành riêng cho thành viên: link ở phần bình luận."; rồi 2–3 nguồn chính (sách/nghiên cứu), credit ảnh đầy đủ và link bài gốc của tạp chí; hashtag vừa phải. Không tự điền link thành viên (người dùng tự dán vào bình luận).
+- `caption.txt`: caption đăng bài có chiều sâu, bổ sung cho reel (không chép lại lời đọc): vài đoạn ngắn về nguồn gốc, cơ chế, cách áp dụng và gợi ý chọn đồ, cùng quy tắc nguồn như lời đọc; rồi dòng giới thiệu và mời "AH Decode là series mới của Giả Thuyết Kiến Trúc, phân tích các nguyên tắc thiết kế và cách chọn đồ decor. Theo dõi Fanpage Giả Thuyết Kiến Trúc. Các bài viết về kiến trúc dành riêng cho thành viên: link ở phần bình luận."; rồi 2–3 nguồn chính (sách/nghiên cứu), credit ảnh đầy đủ và link bài gốc của tạp chí; hashtag vừa phải. Không tự điền link thành viên (người dùng tự dán vào bình luận).
 - Gửi cho người dùng (SendUserFile): `elevenlabs.txt` đầu tiên, rồi video, ảnh bảng phân cảnh, `script.md`, `sources.md`, `caption.txt`; kèm tóm tắt tối đa 6 dòng: nguyên lý, ba điều người xem học được, nguồn chính, điểm cần duyệt, credit đã có hay còn thiếu, và nhắc "gửi lại file giọng đọc vào INBOX/audio để ghép tiếng".
 Đây là BẢN NHÁP chờ người dùng duyệt. Không đăng, không gửi đi đâu khác.
 
@@ -187,7 +189,7 @@ Mục tiêu: người dùng mở file, chọn tất cả, dán vào ElevenLabs, 
 - Đọc được thành tiếng một cách tự nhiên: viết số, ký hiệu và từ viết tắt thành chữ (ví dụ "60-30-10" thành "sáu mươi, ba mươi, mười"; "≠" thành "không bằng"; "%" thành "phần trăm"). Tên riêng nước ngoài giữ nguyên chính tả, nếu khó đọc thì thêm cách đọc phiên âm tiếng Việt.
 - Dấu câu để điều khiển nhịp: dấu phẩy và chấm đủ rõ; chỗ cần ngắt dài hơn thì dùng dấu "..." hoặc dòng trống, không chèn thẻ kỹ thuật. Câu ngắn, tối đa khoảng 18 từ.
 - Độ dài khớp thời lượng cảnh trong `SCENES`: khoảng 2,5–3 từ mỗi giây, trừ khoảng 0,7 giây chuyển cảnh ở đầu mỗi cảnh. Cuối file ghi thêm một dòng riêng NGOÀI phần dán: `--- Gợi ý cài đặt: giọng nữ hoặc nam trầm ấm, tốc độ 1.0, mô hình đa ngôn ngữ, ngôn ngữ Vietnamese ---` để người dùng tham khảo (dòng này phân tách bằng một dòng trống và dấu `---`, người dùng chỉ dán phần phía trên).
-- Cảnh cuối chỉ đọc lời mời theo dõi Fanpage AH Decode và nhắc bài viết về kiến trúc dành riêng cho thành viên, link ở phần bình luận (mẫu ở mục 4a, phần I). Không gợi ý tập sau, không đọc nguồn hay credit. Giữ chữ "AH Decode" như tên riêng; dòng gợi ý cài đặt cuối file thêm câu: "nếu ElevenLabs đọc sai tên AH Decode, thay bằng cách viết theo âm bạn muốn".
+- Cảnh cuối chỉ đọc câu giới thiệu series AH Decode, lời mời theo dõi Fanpage Giả Thuyết Kiến Trúc và nhắc bài viết về kiến trúc dành riêng cho thành viên, link ở phần bình luận (mẫu ở mục 4a, phần I). Không gợi ý tập sau, không đọc nguồn hay credit. Giữ chữ "AH Decode" như tên riêng; dòng gợi ý cài đặt cuối file thêm câu: "nếu ElevenLabs đọc sai tên AH Decode, thay bằng cách viết theo âm bạn muốn".
 
 ## 9. Khi gặp sự cố
 - Không truy cập được trang nguồn nào hoặc không tìm được ảnh đạt tiêu chí sau khi xem ít nhất 10 ứng viên: dừng, báo rõ lý do và các ảnh/bài đã thử; KHÔNG chuyển sang nguồn ảnh khác, KHÔNG lấy ảnh từ Google/Pinterest.
