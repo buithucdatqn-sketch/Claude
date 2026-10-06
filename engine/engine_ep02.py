@@ -20,8 +20,20 @@ os.makedirs(os.path.join(OUT, "frames"), exist_ok=True)
 
 W, H, SS = 1080, 1920, 2
 FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
-CREDIT = "Ảnh dự án: Casa Museo · Lazzarini Pickering · ảnh Christopher Ghioldi · Yellowtrace"
-HEAD = "AH DECODE · GESTALT: GẦN NHAU & GIỐNG NHAU"
+if not os.path.exists(FONT):
+    FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
+CREDIT = "Ảnh dự án: Anderson Residence · Aaron G. Green · ảnh Sterling Reed · Dwell"
+HEAD = "AH DECODE · TẦM NHÌN & NƠI TRÚ ẨN"
+# Khung cuối cố định cho mọi tập: giới thiệu series AH Decode, mời theo dõi Fanpage Giả Thuyết Kiến Trúc, KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
+END_LINES = [
+    (1060, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
+    (1108, "và cách chọn đồ decor", 40, 215),
+    (1200, "Theo dõi Fanpage", 58, 235),
+    (1268, "Giả Thuyết Kiến Trúc", 104, 255),
+    (1440, "Bài viết về kiến trúc dành riêng", 54, 240),
+    (1502, "cho thành viên", 54, 240),
+    (1590, "Link ở phần bình luận", 64, 255),
+]
 INK = (46, 38, 32)
 PAPER = (229, 215, 191)  # beige print margin
 
@@ -31,7 +43,7 @@ def F(size):
 
 
 def put_credit(t, xy, size, fill, anchor="la"):
-    """credit trên một dòng; nếu dài quá 960 px thì giảm cỡ chữ (tối thiểu 26)"""
+    """credit một dòng; dài quá 960 px thì giảm cỡ chữ (tối thiểu 26)"""
     s = size
     while s > 26 and t.d.textlength(CREDIT, font=F(s)) > 960:
         s -= 1
@@ -490,59 +502,110 @@ def D(pts):
 
 
 OBJ = dict(
-    wall=D([(1105, 262), (1215, 235), (1345, 222), (1490, 188), (1610, 188), (1690, 143), (1866, 145), (1866, 410),
-            (1862, 590), (1862, 832), (1655, 834), (1632, 812), (1330, 796), (1178, 794), (1178, 600), (1125, 590),
-            (1122, 385), (1105, 380)]),
-    leftframes=D([(458, 352), (815, 362), (820, 480), (556, 470), (460, 470)]),
-    chair_l=D([(1002, 735), (1115, 738), (1122, 915), (1075, 938), (1008, 916)]),
-    chair_r=D([(1255, 752), (1330, 745), (1394, 744), (1414, 800), (1412, 985), (1320, 1002), (1262, 990),
-               (1258, 880), (1276, 840)]),
-    chair_a=D([(696, 768), (714, 712), (786, 706), (796, 772), (786, 800), (702, 806)]),
+    window=D([(108, 340), (300, 322), (395, 318), (412, 880), (300, 900), (108, 905)]),
+    sofa=D([(632, 785), (1325, 785), (1332, 900), (1325, 985), (632, 990), (628, 900)]),
+    sofa_r=D([(1372, 905), (1505, 825), (1840, 980), (1836, 1150), (1700, 1232), (1380, 1060)]),
+    ottomans=D([(305, 1000), (460, 930), (690, 925), (688, 1060), (600, 1195), (335, 1190)]),
+    tables=D([(792, 935), (1030, 930), (1230, 950), (1310, 1080), (1310, 1195), (820, 1180)]),
+    ghost=D([(450, 360), (630, 360), (630, 950), (450, 950)]),
 )
 
 WIDE = (CENTER, 1.0, (540, 905))
 SCENES = [
-    dict(t="0–4s", head="Vì sao bức tường này không rối?", vo="Hàng chục khung ảnh, mà bức tường vẫn gọn. Vì sao?",
+    dict(t="0–3.5s", head="Bạn sẽ ngồi đâu?", vo="Vào phòng này, bạn sẽ ngồi đâu?",
          cam=WIDE, dark=False),
-    dict(t="4–10s", head="Gần nhau thì thành nhóm", vo="Thứ nhất, gần nhau. Các khung đặt sát nhau được mắt gom thành một nhóm.",
-         cam=((1776, 560), 2.3, (540, 880)), dark=True),
-    dict(t="10–15s", head="Cách xa thì tách nhóm", vo="Hai khung bên trái cách xa một đoạn, nên thành nhóm riêng.",
-         cam=((990, 520), 1.9, (540, 860)), dark=True),
-    dict(t="15–21s", head="Giống nhau thì nối nhau", vo="Thứ hai, giống nhau. Ghế đỏ nhung nối với nhau, dù đứng xa.",
-         cam=((1266, 1032), 2.0, (540, 880)), dark=True),
-    dict(t="21–25.5s", head="Công thức: gần nhau + giống nhau", vo="Gần nhau thì thành nhóm. Giống nhau thì thành một họ.",
+    dict(t="3.5–9.5s", head="Tầm nhìn và nơi trú ẩn", vo="Thập niên bảy mươi, Jay Appleton đặt tên cho hai điều: tầm nhìn, và nơi trú ẩn.",
          cam=WIDE, dark=True),
-    dict(t="25.5–29s", head="end", vo="", cam=(CENTER, 1.0, (540, 640)), dark=False),
+    dict(t="9.5–16.1s", head="Vì sao thấy yên tâm?", vo="Giả thuyết: chỗ vừa được che vừa nhìn xa giúp tổ tiên sống sót, nên ta thấy yên tâm.",
+         cam=WIDE, dark=True),
+    dict(t="16.1–19.9s", head="Nơi trú: lưng tựa vách", vo="Sofa tựa vách gỗ đặc, trần thấp dần: nơi trú.",
+         cam=(((975 * 1.2), (640 * 1.2)), 1.9, (540, 900)), dark=True),
+    dict(t="19.9–23.4s", head="Tầm nhìn: ra tận biển", vo="Bên trái, vách kính nhìn ra biển: tầm nhìn.",
+         cam=(((560 * 1.2), (640 * 1.2)), 1.8, (540, 900)), dark=True),
+    dict(t="23.4–30.3s", head="Công cụ của Wright", vo="Nghiên cứu nhà Frank Lloyd Wright ghi nhận ông hay dùng độ cao trần và khoảng cách tới tường đặc.",
+         cam=WIDE, dark=True),
+    dict(t="30.3–37.2s", head="Nhưng bằng chứng nói gì?", vo="Nhưng tổng hợp ba mươi tư nghiên cứu: trong nhà, tầm nhìn có bằng chứng mạnh hơn hẳn nơi trú.",
+         cam=WIDE, dark=True),
+    dict(t="37.2–41.3s", head="Đừng quây kín", vo="Nên tránh quây góc ngồi bằng vách cao hay tủ đứng.",
+         cam=(((560 * 1.2), (640 * 1.2)), 1.8, (540, 900)), dark=True),
+    dict(t="41.3–45.8s", head="Áp dụng", vo="Thử đặt ghế chính tựa tường đặc, mặt hướng ra cửa sổ.",
+         cam=WIDE, dark=True),
+    dict(t="45.8–51.2s", head="Chọn đồ: cao sát tường, thấp ở giữa", vo="Đồ cao nên sát tường, đồ giữa phòng nên thấp hơn tầm mắt khi ngồi.",
+         cam=(((820 * 1.2), (930 * 1.2)), 1.9, (540, 860)), dark=True),
+    dict(t="51.2–54.7s", head="Công thức", vo="Lưng có chỗ dựa, mắt có đường xa.",
+         cam=WIDE, dark=False),
+    dict(t="54.7–63.8s", head="end", vo="",
+         cam=(CENTER, 1.0, (540, 640)), dark=False),
 ]
 END = len(SCENES) - 1
 BOARDS = {}
 
-
 def doodle(i, wb, text, cam):
-    def lab(p, s_, size=62):
-        x, y = cam.pt(p)
+    def lab(p, s_, size=60):
+        x, y = cam.pt(D([p])[0])
         text.put((x, y), s_, size)
 
-    if i == 1:
-        wb.contour(OBJ["wall"], offset=16, eps=4, w=9)
-        lab((1330, 55), "một nhóm", 76)
-    elif i == 2:
-        wb.contour(OBJ["leftframes"], offset=14, eps=3, w=8)
-        wb.arrow((1154, 516), (1010, 516), 7, bow=-14)
-        wb.arrow((1154, 516), (1300, 516), 7, bow=14)
-        lab((985, 575), "khoảng cách", 56)
-        lab((570, 592), "nhóm riêng", 56)
-    elif i == 3:
-        wb.contour(OBJ["chair_l"], offset=14, eps=3, w=8)
-        wb.contour(OBJ["chair_r"], offset=14, eps=3, w=8)
-        wb.contour(OBJ["chair_a"], offset=12, eps=3, w=8)
-        wb.arrow((985, 925), (1185, 972), 7, bow=-26)
-        wb.arrow((1362, 1012), (1492, 1012), 7, bow=-10)
-        lab((820, 1230), "cùng màu đỏ", 70)
-    elif i == 4:
-        wb.contour(OBJ["wall"], offset=16, eps=4, w=7)
-        wb.dashed((900, 910), (1270, 985), 7)
-        wb.dashed((1270, 985), (1600, 1040), 7)
+    def P(p):
+        return D([p])[0]
+
+    def note(xy, s_, target, size=56, bow=-30):
+        """nhãn trên nền trắng phía trên ảnh + mũi tên mực chỉ vào điểm trên ảnh"""
+        text.put(xy, s_, size)
+        w_ = text.d.textlength(s_, font=F(size))
+        tx, ty = cam.pt(P(target))
+        wb.ink_arrow((xy[0] + w_ / 2, xy[1] + size + 14), (tx, ty - 10), bow=bow)
+
+    sofa = OBJ["sofa"]
+    if i == 1:  # nguồn gốc: hai cụm khái niệm
+        wb.contour(OBJ["window"], offset=14, eps=3, w=7)
+        wb.contour(sofa, offset=14, eps=3, w=7)
+        note((60, 420), "tầm nhìn", (250, 330), 58, bow=20)
+        note((520, 420), "nơi trú", (980, 775), 58, bow=-20)
+    elif i == 2:  # cơ chế: nhìn ra xa từ chỗ được che
+        wb.contour(sofa, offset=14, eps=3, w=7)
+        wb.arrow(P((900, 860)), P((300, 640)), 7, bow=-30)
+    elif i == 3:  # nơi trú
+        wb.contour(sofa, offset=16, eps=3, w=8)
+        wb.line(P((660, 205)), P((1270, 362)), 8)
+        wb.dashed(P((645, 230)), P((645, 860)), 7)
+        wb.dashed(P((1288, 410)), P((1288, 860)), 7)
+        lab((690, 312), "trần dốc xuống", 54)
+        lab((760, 560), "vách gỗ đặc", 54)
+    elif i == 4:  # tầm nhìn
+        wb.contour(OBJ["window"], offset=14, eps=3, w=8)
+        wb.arrow(P((900, 870)), P((330, 660)), 8, bow=-36)
+        lab((120, 420), "ra biển", 58)
+    elif i == 5:  # Wright: trần + tường
+        wb.line(P((660, 205)), P((1270, 362)), 7)
+        wb.line(P((60, 250)), P((600, 170)), 7)
+        wb.dashed(P((645, 230)), P((645, 860)), 6)
+        lab((1000, 150), "độ cao trần", 50)
+        lab((680, 720), "tường đặc", 50)
+    elif i == 6:  # bằng chứng
+        wb.contour(OBJ["window"], offset=14, eps=3, w=7)
+        wb.contour(sofa, offset=14, eps=3, w=7)
+        note((40, 400), "tầm nhìn: mạnh", (250, 330), 56, bow=20)
+        note((560, 400), "nơi trú: yếu hơn", (980, 775), 56, bow=-20)
+    elif i == 7:  # lỗi: tủ cao chắn
+        wb.contour(OBJ["ghost"], offset=4, eps=2, w=8)
+        wb.line(P((470, 390)), P((610, 900)), 6)
+        wb.line(P((610, 390)), P((470, 900)), 6)
+        wb.arrow(P((900, 870)), P((660, 760)), 7, bow=-16)
+        lab((410, 250), "tủ cao ở đây?", 54)
+    elif i == 8:  # áp dụng
+        wb.contour(sofa, offset=14, eps=3, w=7)
+        wb.contour(OBJ["sofa_r"], offset=14, eps=3, w=7)
+        wb.arrow(P((960, 860)), P((330, 660)), 7, bow=-30)
+        wb.arrow(P((1500, 900)), P((420, 600)), 7, bow=-50)
+    elif i == 9:  # chọn đồ
+        wb.contour(OBJ["ottomans"], offset=12, eps=3, w=8)
+        wb.contour(OBJ["tables"], offset=12, eps=3, w=8)
+        wb.dashed(P((300, 650)), P((1340, 650)), 6)
+        lab((330, 540), "tầm mắt lúc ngồi", 50)
+        lab((420, 1215), "thấp", 54)
+    elif i == 10:  # công thức
+        wb.contour(sofa, offset=14, eps=3, w=7)
+        wb.arrow(P((900, 860)), P((300, 640)), 7, bow=-30)
 
 
 def render_scene(i):
@@ -557,10 +620,8 @@ def render_scene(i):
 
     if i == END:
         put_credit(text, (W // 2, bot + 30), 34, 225, "ma")
-        text.put((W // 2, 1100), "Tập sau", 56, 230, "ma")
-        text.put((W // 2, 1170), "Điểm nhấn của", 116, 255, "ma")
-        text.put((W // 2, 1292), "căn phòng này", 116, 255, "ma")
-        text.put((W // 2, 1560), "Theo dõi để xem tập tiếp theo", 62, 255, "ma")
+        for y_, s_, sz_, f_ in END_LINES:
+            text.put((W // 2, y_), s_, sz_, f_, "ma")
         return compose(base, np.array(text.img, np.float32) / 255, fabm)
 
     doodle(i, wb, text, cam)
@@ -597,14 +658,15 @@ for i in range(len(SCENES)):
 
 # ---------------- contact sheet ----------------
 PW, PH, GAP, MX, TOP = 360, 640, 34, 50, 200
-cols, rows = 3, 2
+cols = 4
+rows = (len(SCENES) + cols - 1) // cols
 SHW = MX * 2 + cols * PW + (cols - 1) * GAP
 SHH = TOP + rows * (PH + 86) + 250
 sheet = Image.new("RGB", (SHW, SHH), (30, 27, 24))
 d = ImageDraw.Draw(sheet)
-d.text((MX, 38), "AH Decode · Gestalt: gần nhau & giống nhau", font=F(50), fill=(255, 255, 255))
+d.text((MX, 38), "AH Decode · Tầm nhìn & nơi trú ẩn", font=F(50), fill=(255, 255, 255))
 d.text((MX, 118), "Ảnh dán bằng băng giấy · nền trắng · chữ nâu trên nền, trắng trên ảnh", font=F(34), fill=(200, 194, 186))
-d.text((MX, 158), "Camera zoom vào chi tiết · khoảng 30 giây · nét vẽ chạy dần theo lời", font=F(34), fill=(200, 194, 186))
+d.text((MX, 158), "Camera zoom vào chi tiết · nét vẽ chạy dần theo lời đọc", font=F(34), fill=(200, 194, 186))
 for i, fr in enumerate(frames):
     r, c = divmod(i, cols)
     x, y = MX + c * (PW + GAP), TOP + r * (PH + 86)
@@ -615,6 +677,6 @@ for i, fr in enumerate(frames):
 fy = TOP + rows * (PH + 86) + 10
 d.text((MX, fy), "Nền trắng trơn · băng keo giấy thay ghim · header AH DECODE · bỏ “Bước n”", font=F(32), fill=(255, 255, 255))
 d.text((MX, fy + 44), "Cảnh zoom kín ảnh: chữ trắng viết lên ảnh (có phủ tối nhẹ).", font=F(32), fill=(225, 220, 212))
-d.text((MX, fy + 88), "Ảnh tối ~14% ở cảnh có nét vẽ; cảnh 1 và cảnh cuối giữ ảnh nguyên bản.", font=F(32), fill=(225, 220, 212))
+d.text((MX, fy + 88), "Ảnh tối ~14% ở cảnh có nét vẽ; cảnh mở, công thức và cảnh cuối giữ ảnh nguyên bản.", font=F(32), fill=(225, 220, 212))
 sheet.save(os.path.join(OUT, "storyboard.png"))
 print("fabric", tuple(int(x) for x in FAB), "sheet", sheet.size)

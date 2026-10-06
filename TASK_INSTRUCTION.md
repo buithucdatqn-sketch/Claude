@@ -106,11 +106,13 @@ Thứ tự gợi ý; được đảo thứ tự nếu kể tự nhiên hơn, nh�
 - F. Cách áp dụng cụ thể (1 cảnh, 4–6s): một hai việc người xem làm được ngay trong nhà mình, đủ cụ thể để làm theo (theo mục 3.7).
 - G. Chọn mua, chọn đồ và thiết kế (1 cảnh, 4–6s): nguyên lý này đổi cách chọn đồ thế nào (chọn món theo bộ hay lẻ, chọn khung, màu, kích thước, chất liệu, chọn số lượng…), theo mục 3.7.
 - H. Công thức (1 cảnh, 3–4s): một câu tóm tắt dễ nhớ, có thông tin (không phải khẩu hiệu rỗng).
-- I. Cảnh cuối (1 cảnh, 5–6s): nhắc AH Decode là series phân tích nguyên tắc thiết kế và chọn đồ decor, mời theo dõi Fanpage Giả Thuyết Kiến Trúc và nhắc các bài viết về kiến trúc dành riêng cho thành viên, link ở phần bình luận. KHÔNG nhắc tập sau, không đọc nguồn hay credit. Lời đọc mẫu: "AH Decode là series phân tích nguyên tắc thiết kế và cách chọn đồ decor. Theo dõi Fanpage Giả Thuyết Kiến Trúc để xem thêm. Các bài viết về kiến trúc dành riêng cho thành viên, link ở phần bình luận."
+- I. Cảnh cuối (1 cảnh, 7–9s, tính trong tổng 45–60 giây): nhắc AH Decode là series về nguyên tắc thiết kế và chọn đồ decor, mời theo dõi Fanpage Giả Thuyết Kiến Trúc và nhắc bài viết về kiến trúc dành riêng cho thành viên ở link bình luận. KHÔNG nhắc tập sau, không đọc nguồn hay credit. Lời đọc mẫu (giữ ngắn, khoảng 25 từ): "AH Decode, series về nguyên tắc thiết kế và chọn đồ decor. Theo dõi Giả Thuyết Kiến Trúc, bài viết cho thành viên ở link bình luận."
 Quy tắc chiều sâu:
 - Mỗi cảnh phải chứa ít nhất một thông tin cụ thể (tên người/khái niệm, cơ chế, điều kiện, vật cụ thể trong ảnh, việc làm cụ thể). Câu nào bỏ đi mà người xem không mất thông tin gì thì bỏ.
 - Cấm các cụm chung chung không kèm giải thích: "tạo cảm giác hài hoà", "trông đẹp hơn", "thu hút ánh nhìn", "tạo điểm nhấn", "cân bằng thị giác" khi chưa nói vì sao và bằng cách nào.
 - Không lặp lại cùng một ý bằng chữ khác để kéo dài thời lượng.
+- Ngân sách chữ chặt: 110–160 từ cho CẢ 13 cảnh, nên mỗi câu phải gọn. Cách làm đã dùng ở tập 2: viết dữ liệu cảnh một lần trong script sinh engine, tự tính thời lượng mỗi cảnh = 0,7 giây + số từ / 3,2 (tối thiểu 3,5 giây), rồi in tổng số từ và tổng thời lượng để cắt cho vừa trước khi dựng.
+- Lời khuyên (phần E, F, G) dùng "nên", "thử", "nên tránh"; không viết "Vì vậy…" như thể suy luận là kết luận của nghiên cứu.
 
 ## 4b. Tự chấm trước khi dựng hình
 Agent đọc lại (bước 5) trả lời có/không cho từng câu, kèm lý do:

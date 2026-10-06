@@ -9,20 +9,23 @@
   },
   {
     "tap": 2,
-    "slug": "gestalt-gan-nhau",
+    "slug": "tam-nhin-noi-tru",
     "ngay": "2026-10-06",
-    "nguyen_ly": "Gestalt: nhóm theo sự gần nhau (proximity) và tương đồng (similarity)",
-    "tap_chi": "Yellowtrace",
-    "du_an": "Casa Museo, Milan",
-    "studio": "Lazzarini Pickering",
-    "nhiep_anh": "Christopher Ghioldi",
-    "url_bai": "https://www.yellowtrace.com.au/lazzarini-pickering-casa-museo-milan-hybrid-home-gallery/",
-    "url_anh": "https://assets.yellowtrace.com.au/wp-content/uploads/2026/06/26141912/Yellowtrace-Lazzarini-Pickering-Architects-Casa-Museo-Milan-Photo-Christopher-Ghioldi-07_opt80.jpg",
+    "nguyen_ly": "Tầm nhìn và nơi trú ẩn (prospect–refuge)",
+    "tap_chi": "Dwell",
+    "du_an": "Anderson Residence, Rancho Palos Verdes",
+    "studio": "Aaron G. Green",
+    "nhiep_anh": "Sterling Reed",
+    "url_bai": "https://www.dwell.com/article/anderson-residence-aaron-g-green-midcentury-los-angeles-real-estate-1023b1c7",
+    "url_anh": "https://images2.dwell.com/photos/6818593201364905984/7503510078167564288/original.jpg",
     "nguon": [
-      "Lidwell, Holden & Butler (2010) Universal Principles of Design, Rockport (mục lục: Proximity, Similarity)",
-      "Wagemans et al. (2012) Psychological Bulletin 138(6):1172-1217, doi:10.1037/a0029333 (abstract)"
+      "Dosen & Ostwald (2016) City, Territory and Architecture 3:4, doi:10.1186/s40410-016-0033-1 (toàn văn)",
+      "Hildebrand (1999) Origins of Architectural Pleasure, UC Press (trang NXB + bài điểm sách)",
+      "Dawes & Ostwald (2014) Building and Environment 80:228-240, doi:10.1016/j.buildenv.2014.05.026 (abstract)",
+      "Appleton (1984) Landscape Journal 3(2):91-103 (abstract)"
     ],
-    "trang_thai": "ban_nhap_chua_doc_toan_van",
-    "thu_muc": "inbox/out/2026-10-06_gestalt-gan-nhau/"
+    "trang_thai": "ban_nhap_cho_duyet",
+    "thu_muc": "inbox/out/2026-10-06_tam-nhin-noi-tru/",
+    "ghi_chu": "Làm lại tập 2 theo yêu cầu người dùng; bản Gestalt (Casa Museo, Yellowtrace) bị huỷ và đã xoá khỏi inbox/out (còn trong lịch sử git). Nguyên lý Gestalt gần nhau/giống nhau và dự án Casa Museo coi như CHƯA dùng."
   }
 ]
