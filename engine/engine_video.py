@@ -19,15 +19,33 @@ OUT = sys.argv[2] if len(sys.argv) > 2 else HERE
 os.makedirs(os.path.join(OUT, "video"), exist_ok=True)
 
 W, H, SS = 1080, 1920, 2
-FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
+FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
+if not os.path.exists(FONT):
+    FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
 CREDIT = "Ảnh dự án: [tên dự án] · [studio] · [nhiếp ảnh gia]"
 HEAD = "AH DECODE · CÂN BẰNG THỊ GIÁC"
+# Khung cuối cố định cho mọi tập: mời theo dõi Fanpage, KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
+END_LINES = [
+    (1080, "Theo dõi Fanpage", 60, 230),
+    (1150, "AH Decode", 132, 255),
+    (1370, "Bài viết về kiến trúc dành riêng", 56, 240),
+    (1434, "cho thành viên", 56, 240),
+    (1530, "Link ở phần bình luận", 66, 255),
+]
 INK = (46, 38, 32)
 PAPER = (229, 215, 191)  # beige print margin
 
 
 def F(size):
     return ImageFont.truetype(FONT, size)
+
+
+def put_credit(t, xy, size, fill, anchor="la"):
+    """credit một dòng; dài quá 960 px thì giảm cỡ chữ (tối thiểu 26)"""
+    s = size
+    while s > 26 and t.d.textlength(CREDIT, font=F(s)) > 960:
+        s -= 1
+    t.put(xy, CREDIT, s, fill, anchor)
 
 
 src = Image.open(SRC).convert("RGB")
@@ -580,11 +598,9 @@ def layout(i):
     top, bot = cam.card_top, cam.card_bottom
     st, sb = False, False
     if i == END:
-        tm.put((W // 2, bot + 30), CREDIT, 34, 225, "ma")
-        tm.put((W // 2, 1100), "Tập sau", 56, 230, "ma")
-        tm.put((W // 2, 1170), "Màu sắc của", 116, 255, "ma")
-        tm.put((W // 2, 1292), "căn phòng này", 116, 255, "ma")
-        tm.put((W // 2, 1560), "Theo dõi để xem tập tiếp theo", 62, 255, "ma")
+        put_credit(tm, (W // 2, bot + 30), 34, 225, "ma")
+        for y_, s_, sz_, f_ in END_LINES:
+            tm.put((W // 2, y_), s_, sz_, f_, "ma")
     else:
         doodle(i, wb, td, cam)
         title_on_fabric = top >= 440
@@ -599,10 +615,10 @@ def layout(i):
             tm.put((60, 96), HEAD, 36, 220)
             tm.block(60, 150, sc["head"], 84, 92)
         if vo_on_fabric:
-            tm.put((60, bot + 26), CREDIT, 34, 230)
+            put_credit(tm, (60, bot + 26), 34, 230)
             tm.block(60, vo_below, sc["vo"], 60, 78)
         else:
-            tm.put((60, 1388), CREDIT, 32, 235)
+            put_credit(tm, (60, 1388), 32, 235)
             tm.block(60, 1450, sc["vo"], 60, 78)
     a, b = times(sc["t"])
     f = scrim(np.ones((H, 1, 3), np.float32), top=st, bottom=sb)

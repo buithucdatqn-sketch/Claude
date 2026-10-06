@@ -19,15 +19,33 @@ OUT = sys.argv[2] if len(sys.argv) > 2 else HERE
 os.makedirs(os.path.join(OUT, "frames_v7"), exist_ok=True)
 
 W, H, SS = 1080, 1920, 2
-FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
+FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
+if not os.path.exists(FONT):
+    FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
 CREDIT = "Ảnh dự án: [tên dự án] · [studio] · [nhiếp ảnh gia]"
 HEAD = "AH DECODE · CÂN BẰNG THỊ GIÁC"
+# Khung cuối cố định cho mọi tập: mời theo dõi Fanpage, KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
+END_LINES = [
+    (1080, "Theo dõi Fanpage", 60, 230),
+    (1150, "AH Decode", 132, 255),
+    (1370, "Bài viết về kiến trúc dành riêng", 56, 240),
+    (1434, "cho thành viên", 56, 240),
+    (1530, "Link ở phần bình luận", 66, 255),
+]
 INK = (46, 38, 32)
 PAPER = (229, 215, 191)  # beige print margin
 
 
 def F(size):
     return ImageFont.truetype(FONT, size)
+
+
+def put_credit(t, xy, size, fill, anchor="la"):
+    """credit một dòng; dài quá 960 px thì giảm cỡ chữ (tối thiểu 26)"""
+    s = size
+    while s > 26 and t.d.textlength(CREDIT, font=F(s)) > 960:
+        s -= 1
+    t.put(xy, CREDIT, s, fill, anchor)
 
 
 src = Image.open(SRC).convert("RGB")
@@ -559,11 +577,9 @@ def render_scene(i):
     top, bot = cam.card_top, cam.card_bottom
 
     if i == END:
-        text.put((W // 2, bot + 30), CREDIT, 34, 225, "ma")
-        text.put((W // 2, 1100), "Tập sau", 56, 230, "ma")
-        text.put((W // 2, 1170), "Màu sắc của", 116, 255, "ma")
-        text.put((W // 2, 1292), "căn phòng này", 116, 255, "ma")
-        text.put((W // 2, 1560), "Theo dõi để xem tập tiếp theo", 62, 255, "ma")
+        put_credit(text, (W // 2, bot + 30), 34, 225, "ma")
+        for y_, s_, sz_, f_ in END_LINES:
+            text.put((W // 2, y_), s_, sz_, f_, "ma")
         return compose(base, np.array(text.img, np.float32) / 255, fabm)
 
     doodle(i, wb, text, cam)
@@ -580,10 +596,10 @@ def render_scene(i):
         text.put((60, 96), HEAD, 36, 220)
         text.block(60, 150, sc["head"], 84, 92)
     if vo_on_fabric:
-        text.put((60, bot + 26), CREDIT, 34, 230)
+        put_credit(text, (60, bot + 26), 34, 230)
         text.block(60, vo_below, sc["vo"], 60, 78)
     else:
-        text.put((60, 1388), CREDIT, 32, 235)
+        put_credit(text, (60, 1388), 32, 235)
         text.block(60, 1450, sc["vo"], 60, 78)
     white = np.maximum(wb.mask(), np.array(text.img, np.float32) / 255)
     return compose(base, white, fabm)
@@ -600,7 +616,8 @@ for i in range(len(SCENES)):
 
 # ---------------- contact sheet ----------------
 PW, PH, GAP, MX, TOP = 360, 640, 34, 50, 200
-cols, rows = 4, 2
+cols = 4
+rows = (len(SCENES) + cols - 1) // cols
 SHW = MX * 2 + cols * PW + (cols - 1) * GAP
 SHH = TOP + rows * (PH + 86) + 250
 sheet = Image.new("RGB", (SHW, SHH), (30, 27, 24))
@@ -612,7 +629,7 @@ for i, fr in enumerate(frames):
     r, c = divmod(i, cols)
     x, y = MX + c * (PW + GAP), TOP + r * (PH + 86)
     sheet.paste(fr.resize((PW, PH), Image.LANCZOS), (x, y))
-    nm = f"Cảnh {i + 1}" if i < 4 else ("Cảnh 5a" if i == 4 else ("Cảnh 5b" if i == 5 else f"Cảnh {i}"))
+    nm = f"Cảnh {i + 1}"
     d.text((x, y + PH + 10), nm, font=F(40), fill=(255, 255, 255))
     d.text((x + 150, y + PH + 16), SCENES[i]["t"], font=F(32), fill=(200, 194, 186))
 fy = TOP + rows * (PH + 86) + 10
