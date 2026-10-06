@@ -27,5 +27,27 @@
     "trang_thai": "lech_trong_tam_can_lam_lai",
     "thu_muc": "inbox/out/2026-10-06_tam-nhin-noi-tru/",
     "ghi_chu": "Làm lại tập 2 theo yêu cầu người dùng; bản Gestalt (Casa Museo, Yellowtrace) bị huỷ và đã xoá khỏi inbox/out (còn trong lịch sử git). Nguyên lý Gestalt gần nhau/giống nhau và dự án Casa Museo coi như CHƯA dùng. | 2026-10-06: người dùng đánh giá lệch trọng tâm (lý thuyết kiến trúc prospect–refuge, không phải nội thất/decor). Không đăng; tập 2 cần làm lại theo mục 1a. Ảnh Anderson Residence vẫn tính là đã dùng."
+  },
+  {
+    "tap": 3,
+    "slug": "dang-cong-goc-nhon",
+    "ngay": "2026-10-06",
+    "nguyen_ly": "Dáng cong và góc sắc của đồ nội thất (contour bias / preference for curvature)",
+    "nhom": "Đồ nội thất: dáng cong và góc cạnh",
+    "tap_chi": "Yellowtrace",
+    "du_an": "The Twenty Two New York",
+    "studio": "Child Studio",
+    "nhiep_anh": "Alixe Lay",
+    "url_bai": "https://www.yellowtrace.com.au/child-studio-the-twenty-two-new-york-hotel-members-club/",
+    "url_anh": "https://assets.yellowtrace.com.au/wp-content/uploads/2026/09/10122909/Yellowtrace-Child-Studio-The-Twenty-Two-New-York-Hotel-Members-Club-Photo-Alixe-Lay-37_opt80.jpg",
+    "nguon": [
+      "Bar & Neta (2006) Psychological Science 17(8):645-648, doi:10.1111/j.1467-9280.2006.01759.x (toàn văn)",
+      "Gómez-Puerto, Munar & Nadal (2016) Front. Hum. Neurosci. 9:712, doi:10.3389/fnhum.2015.00712 (toàn văn)",
+      "Lidwell, Holden & Butler (2010) Universal Principles of Design, Rockport, mục Contour Bias (phần xem trước)",
+      "Vartanian et al. (2013) PNAS 110(Suppl 2):10446-10453, doi:10.1073/pnas.1301227110 (metadata + mô tả thứ cấp; chỉ dùng trong caption)"
+    ],
+    "trang_thai": "ban_nhap_cho_duyet",
+    "thu_muc": "inbox/out/2026-10-06_dang-cong-goc-nhon/",
+    "ghi_chu": "Tập làm theo trọng tâm nội thất/decor (mục 1a), thay cho tập 2 bị đánh giá lệch trọng tâm."
   }
 ]
