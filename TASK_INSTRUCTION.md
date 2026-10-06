@@ -6,11 +6,18 @@ Mỗi lần chạy là một phiên mới, không nhớ gì từ các cuộc tr�
 Chạy một lượt, không hỏi lại. Nếu thiếu đầu vào thì dừng và báo rõ thiếu gì (mục 9).
 
 ## 1. Nhiệm vụ
-Mỗi ngày, TỰ chọn MỘT nguyên lý thiết kế decor nội thất, rồi TỰ lấy MỘT ảnh dự án thật trên một trong các tạp chí thiết kế (Yatzer, Yellowtrace, Dwell, Wallpaper*) phù hợp để minh hoạ nguyên lý đó, và tạo gói sản xuất cho một reel dọc 9:16, dài 45–60 giây, series "AH Decode". Reel giải thích MỘT nguyên lý trang trí nội thất bằng các nét doodle trắng nét đứt vẽ lên chính ảnh gốc.
-Mỗi reel là một bài học TRỌN VẸN và CÓ CHIỀU SÂU (mục 4a): nguồn gốc lý thuyết, cơ chế vì sao mắt thấy vậy, đọc nguyên lý trên ảnh, lỗi hay gặp, cách áp dụng cụ thể, cách chọn mua/chọn đồ và thiết kế, rồi công thức tổng kết. Người xem phải học được điều cụ thể mà họ chưa biết, không phải những câu chung chung. Không hẹn "tập sau"; cảnh cuối chỉ mời theo dõi Fanpage Giả Thuyết Kiến Trúc và các bài viết về kiến trúc dành riêng cho thành viên (link ở phần bình luận).
+Mỗi ngày, TỰ chọn MỘT nguyên tắc thiết kế NỘI THẤT và DECOR (xem mục 1a), rồi TỰ lấy MỘT ảnh dự án thật trên một trong các tạp chí thiết kế (Yatzer, Yellowtrace, Dwell, Wallpaper*) phù hợp để minh hoạ nguyên lý đó, và tạo gói sản xuất cho một reel dọc 9:16, dài 45–60 giây, series "AH Decode". Reel giải thích MỘT nguyên tắc nội thất/decor bằng các nét doodle trắng nét đứt vẽ lên chính ảnh gốc.
+Mỗi reel là một bài học TRỌN VẸN và CÓ CHIỀU SÂU (mục 4a) về nội thất và decor: nguồn gốc nguyên tắc, cơ chế vì sao mắt thấy vậy, đọc nguyên lý trên ảnh, lỗi hay gặp, cách áp dụng cụ thể, cách chọn mua/chọn đồ và thiết kế, rồi công thức tổng kết. Người xem phải học được điều cụ thể mà họ chưa biết, không phải những câu chung chung. Không hẹn "tập sau"; cảnh cuối chỉ mời theo dõi Fanpage Giả Thuyết Kiến Trúc và các bài viết về kiến trúc dành riêng cho thành viên (link ở phần bình luận).
 
 **Tên gọi (dùng đúng, không lẫn):** Fanpage tên là **Giả Thuyết Kiến Trúc**. **AH Decode** là một series MỚI của Fanpage này, chuyên phân tích các nguyên tắc thiết kế và cách chọn đồ decor. AH Decode KHÔNG phải tên Fanpage: không viết "Fanpage AH Decode". Header trên khung vẫn là `AH DECODE · <CHỦ ĐỀ>`.
 Chạy trọn một lượt, không chờ duyệt lý thuyết hay ảnh giữa chừng.
+
+## 1a. TRỌNG TÂM SERIES: NỘI THẤT VÀ DECOR, KHÔNG PHẢI KIẾN TRÚC (bắt buộc)
+AH Decode dạy người xem cách làm đẹp và chọn đồ cho không gian bên trong: những thứ họ tự quyết được trong nhà mình mà không cần xây, đập hay sửa kết cấu.
+- ĐÚNG trọng tâm: phối màu (bánh xe màu, tương cận, bổ túc, tam giác màu, sắc độ, độ bão hoà, màu nền và màu nhấn, nhiệt độ màu, màu ảnh hưởng nhau và theo ánh sáng); chọn kiểu dáng đồ nội thất (dáng cong hay góc cạnh, chân cao hay sát sàn, trọng lượng thị giác, tỷ lệ món đồ so với phòng và so với nhau, công thái học, kích thước chuẩn của bàn ghế); chọn vật liệu và bề mặt (gỗ, đá, vải, kim loại, độ bóng mờ, vân, tương phản chất cảm); bố cục và sắp xếp đồ (nhóm trò chuyện, lối đi, điểm nhấn, cân bằng, nhịp lặp, khoảng thở); hoạ tiết và vải (pha hoạ tiết theo tỷ lệ, rèm, thảm, gối); đèn và ánh sáng decor (đèn nhiều lớp, nhiệt độ màu bóng đèn, đèn làm điểm nhấn); styling (treo tranh, bày đồ trên kệ, nhóm vật trang trí, cây); các nhà thiết kế nội thất, nhà trang trí, nhà thiết kế đồ nội thất và tạo dáng công nghiệp (ví dụ Charles và Ray Eames, Hans Wegner, Florence Knoll, Dieter Rams, Dorothy Draper, Elsie de Wolfe, Andrée Putman) cùng triết lý, cách làm của họ; các nguyên lý thị giác (Gestalt, tương phản, thứ bậc…) KHI áp vào đồ đạc, màu, vật liệu, bố cục đồ.
+- SAI trọng tâm, KHÔNG làm: lý thuyết kiến trúc và không gian công trình (prospect–refuge, trục và trình tự không gian, ngưỡng và chuyển tiếp, hình khối, mặt bằng, kết cấu, độ cao trần, vách kính, cửa sổ, quan hệ nhà với cảnh quan); phân tích tác phẩm hay lý thuyết của kiến trúc sư (Wright, Le Corbusier, Kahn, Zumthor…) với tư cách kiến trúc sư. Kiến trúc sư chỉ được nhắc khi bàn đến món đồ nội thất họ thiết kế (ví dụ ghế Barcelona của Mies van der Rohe và Lilly Reich) và chỉ ở tư cách người thiết kế đồ.
+- Phép thử trước khi chọn nguyên tắc: người xem có áp dụng được điều này bằng cách mua, đổi, sơn, dời hoặc bày lại đồ trong một căn phòng có sẵn không? Nếu chỉ áp dụng được khi xây hoặc sửa công trình thì loại.
+- Trên ảnh, nét doodle khoanh và chỉ vào ĐỒ VẬT, MÀU, VẬT LIỆU, HOẠ TIẾT, ĐÈN, cách bày đồ; không lấy trần, cột, vách, cửa sổ, kết cấu làm đối tượng phân tích chính.
 Gói gồm: (1) kịch bản lời đọc theo cảnh và file chữ thuần để dán vào ElevenLabs, (2) các khung hình 1080×1920, (3) bảng phân cảnh, (4) video reel dựng sẵn (bản không tiếng, hoặc có tiếng nếu đã có audio), (5) danh mục nguồn đã đối chiếu, (6) caption đăng bài.
 Người dùng nói tiếng Việt, mọi chữ trên khung và lời đọc đều bằng tiếng Việt.
 
@@ -31,22 +38,29 @@ Cách lấy ảnh theo trang (cấu trúc có thể đổi, hãy xem HTML thật
 Mỗi lần chọn trang có ảnh phù hợp nguyên lý nhất; luân phiên giữa các trang để đa dạng, không dùng một trang quá hai ngày liên tiếp.
 
 **Chọn nguyên lý (task tự tìm và chọn lọc, không đợi người dùng)**
-1. Tự tìm nguyên lý trong chính các nguồn học thuật ở mục 3 (giáo trình, chuyên khảo, nghiên cứu có phản biện), không lấy từ các tạp chí ảnh. Dùng WebSearch/WebFetch để đọc chương, đoạn trích, abstract, rồi chọn MỘT nguyên lý mà: (a) được nêu rõ trong ít nhất 2 nguồn học thuật độc lập; (b) có thể minh hoạ bằng nét vẽ trên một ảnh nội thất (đường, trục, hình, khối, màu, nhịp); (c) đủ chất liệu cho cả bảy phần ở mục 4a trong 45–60 giây; (d) chưa dùng trong `series.json`; (e) đọc được NỘI DUNG giải thích (abstract đầy đủ, đoạn trích sách, toàn văn mở), không chỉ thấy tên nguyên lý trong mục lục. Chỉ thấy mục lục thì chưa đủ để nói cơ chế: chọn nguyên lý khác có nguồn đọc được.
+1. Tự tìm nguyên tắc (đúng phạm vi mục 1a) trong chính các nguồn học thuật ở mục 3 (giáo trình, chuyên khảo, nghiên cứu có phản biện), không lấy từ các tạp chí ảnh. Dùng WebSearch/WebFetch để đọc chương, đoạn trích, abstract, rồi chọn MỘT nguyên lý mà: (a) được nêu rõ trong ít nhất 2 nguồn học thuật độc lập; (b) có thể minh hoạ bằng nét vẽ trên đồ đạc, màu, vật liệu hay cách bày đồ trong một ảnh nội thất; (c) đủ chất liệu cho cả bảy phần ở mục 4a trong 45–60 giây; (d) chưa dùng trong `series.json`; (e) đọc được NỘI DUNG giải thích (abstract đầy đủ, đoạn trích sách, toàn văn mở), không chỉ thấy tên nguyên lý trong mục lục. Chỉ thấy mục lục thì chưa đủ để nói cơ chế: chọn nguyên lý khác có nguồn đọc được.
    Nên ưu tiên phạm vi hẹp và cụ thể (ví dụ "gần nhau: khoảng cách quyết định nhóm" thay vì "các nguyên lý Gestalt") để có chỗ đi sâu.
-2. Danh mục tham khảo để bắt đầu (không giới hạn, có thể mở rộng khi tìm thêm nguồn xác minh được): cân bằng (đối xứng, bất đối xứng, hướng tâm), trục, nhịp điệu và lặp lại, tiến cấp, điểm nhấn và thứ bậc thị giác, tỷ lệ và scale, khoảng thở (negative space), thống nhất và hài hoà, tương phản và đa dạng, các nguyên lý Gestalt (gần nhau, tương đồng, liên tục, khép kín, nền–hình), sắc độ/độ sáng/độ bão hoà, bảng màu tương cận và bổ túc, tỷ lệ phân bổ màu (60-30-10 chỉ là quy tắc kinh nghiệm), nhiệt độ màu, chất liệu và vân, pha hoạ tiết, ánh sáng nhiều lớp, lớp trước–giữa–sau, ngưỡng và chuyển tiếp, prospect–refuge, đường dẫn mắt.
+2. Danh mục tham khảo để bắt đầu (không giới hạn, mở rộng được nếu vẫn đúng mục 1a và có nguồn xác minh):
+   - Màu: màu nền, màu phụ và màu nhấn; tỷ lệ phân bổ màu (60-30-10 chỉ là quy tắc kinh nghiệm của giới thực hành); bảng màu tương cận, bổ túc, bổ túc xẻ, tam giác; sắc độ (value) và độ bão hoà; màu nóng, màu lạnh và nhiệt độ màu ánh sáng; tương phản đồng thời (một màu trông khác nhau trên nền khác nhau, theo Albers); sắc trung tính và "undertone"; màu với cảm xúc và sở thích (chỉ theo nghiên cứu, không theo mẹo phong thuỷ).
+   - Đồ nội thất: dáng cong và dáng góc cạnh; trọng lượng thị giác (đồ chân cao, mặt kính, đồ sát sàn); tỷ lệ và scale của đồ so với phòng và với nhau; kích thước công thái học (chiều cao bàn, ghế, khoảng trống đi lại) theo sách chuẩn; đồ theo bộ và phối lẻ; một món "statement"; nguyên tắc của các nhà thiết kế đồ (form follows function, "less but better" của Dieter Rams…).
+   - Vật liệu và bề mặt: tương phản chất cảm (thô và mịn, bóng và mờ); vân gỗ, đá; vải và độ phản xạ; lặp vật liệu để tạo sự thống nhất.
+   - Bố cục và sắp xếp đồ: điểm nhấn của phòng; nhóm ghế trò chuyện; lối đi; cân bằng đối xứng và bất đối xứng của cách bày đồ; nhịp và lặp lại (đồ, màu, hình); khoảng thở; Gestalt (gần nhau, tương đồng, liên tục, khép kín) trong cách nhóm đồ và vật trang trí; thứ bậc thị giác.
+   - Hoạ tiết và vải: pha hoạ tiết theo tỷ lệ to, vừa, nhỏ; hoạ tiết và màu nối các món với nhau; kích thước thảm so với nhóm ghế.
+   - Đèn decor: ba lớp đèn (chung, tác vụ, điểm nhấn); đèn làm điểm nhấn thị giác; nhiệt độ màu bóng đèn ảnh hưởng màu đồ.
+   - Styling: treo tranh và nhóm tranh; bày kệ; nhóm vật trang trí theo chiều cao, chất liệu, màu; cây trong nội thất.
 3. Xoay vòng: ưu tiên nhóm chưa dùng nhiều; hết danh mục thì quay lại với góc nhìn khác. Ghi nguyên lý và các nguồn đã dùng vào `series.json`.
 4. Chỉ giữ nguyên lý nếu qua được mục 3 (≥ 3 nguồn đã xác minh ở mức tương xứng, trong đó phần cơ chế đọc được nội dung). Nếu không thì chọn nguyên lý khác.
 
 **Tìm ảnh minh hoạ trên các trang nguồn**
-5. Lấy danh sách bài từ trang chủ, chuyên mục nội thất/kiến trúc hoặc sitemap của trang nguồn (chuyên mục nào 404 thì dùng sitemap). Chọn các bài về nhà ở/nội thất công trình đã hoàn thành, ưu tiên bài mới. Mở bài, lấy các URL ảnh theo hướng dẫn từng trang ở trên.
+5. Lấy danh sách bài từ chuyên mục NỘI THẤT (interiors, interior design, design) hoặc sitemap của trang nguồn (chuyên mục nào 404 thì dùng sitemap). Ưu tiên bài về dự án do nhà thiết kế nội thất/studio nội thất thực hiện, nhà ở, căn hộ, khách sạn, nhà hàng có phần nội thất và đồ đạc nổi bật; tránh bài mà điểm chính là kiến trúc, hình khối hay cảnh quan. Ưu tiên bài mới. Mở bài, lấy các URL ảnh theo hướng dẫn từng trang ở trên.
 6. Tải về xem thử (Read ảnh) ít nhất 6–10 ảnh ứng viên, chọn ảnh minh hoạ RÕ NHẤT cho nguyên lý. Tiêu chí bắt buộc:
    - Ảnh nội thất ĐÃ HOÀN THIỆN, ảnh thật, không phải render, bản vẽ, sơ đồ hay ảnh quảng cáo có chữ/logo chèn lên.
    - Khung ngang (tỷ lệ rộng/cao từ 1,3 đến 1,9). KHÔNG dùng ảnh dọc hoặc vuông (engine khung hình tính cho ảnh ngang).
    - Cạnh dài ≥ 1800 px (bản gốc), nét, không mờ, không có người nhận diện được rõ mặt.
-   - Nguyên lý hiện ra rõ bằng mắt thường: bạn phải chỉ ra được cụ thể vật nào, đường nào sẽ vẽ doodle. Nếu phải gượng ép thì bỏ ảnh.
+   - Nguyên lý hiện ra rõ bằng mắt thường trên ĐỒ ĐẠC, MÀU, VẬT LIỆU hoặc CÁCH BÀY ĐỒ: bạn phải chỉ ra được cụ thể món đồ nào, mảng màu nào sẽ vẽ doodle. Ảnh mà thứ nổi bật nhất là kiến trúc (trần, cột, vách kính, view) thì bỏ. Nếu phải gượng ép thì bỏ ảnh.
    - Không dùng lại ảnh đã có trong `series.json`; không dùng ảnh của dự án đã dùng trong 60 ngày.
 7. Tải ảnh: `curl -sS -m 60 -o <file> <URL>`; kiểm tra bằng PIL rằng ảnh mở được. Tạo bản làm việc: thu nhỏ cạnh dài còn 2400 px (LANCZOS, giữ tỷ lệ) lưu thành `source.png`; mọi toạ độ doodle đặt theo bản làm việc này. Giữ ảnh gốc trong `OUT/original/` để tham chiếu.
-8. Lấy credit từ chính trang bài (đọc kỹ chữ trên trang, không đoán): tên dự án (tiêu đề bài), studio/kiến trúc sư (thường nằm trong tiêu đề hoặc đoạn credit cuối bài), nhiếp ảnh gia (các câu kiểu "Photography by …", "Photo: …"; với Yatzer, tên nhiếp ảnh gia thường có trong tên file ảnh). Ghép: `<tên dự án> · <studio> · ảnh <nhiếp ảnh gia> · <tên tạp chí nguồn>`. Nếu thiếu một mục thì bỏ mục đó, không bịa. Dòng credit trên khung hiển thị dưới dạng `Ảnh dự án: ...`; nếu dài quá 960 px thì giảm cỡ chữ dòng credit (tối thiểu 26) hoặc xuống hai dòng, không cắt.
+8. Lấy credit từ chính trang bài (đọc kỹ chữ trên trang, không đoán): tên dự án (tiêu đề bài), studio/nhà thiết kế nội thất (ưu tiên ghi người làm nội thất; nếu bài chỉ ghi kiến trúc sư thì ghi kiến trúc sư; thường nằm trong tiêu đề hoặc đoạn credit cuối bài), nhiếp ảnh gia (các câu kiểu "Photography by …", "Photo: …"; với Yatzer, tên nhiếp ảnh gia thường có trong tên file ảnh). Ghép: `<tên dự án> · <studio> · ảnh <nhiếp ảnh gia> · <tên tạp chí nguồn>`. Nếu thiếu một mục thì bỏ mục đó, không bịa. Dòng credit trên khung hiển thị dưới dạng `Ảnh dự án: ...`; nếu dài quá 960 px thì giảm cỡ chữ dòng credit (tối thiểu 26) hoặc xuống hai dòng, không cắt.
 9. Lưu `OUT/source_info.md`: URL bài nguồn, URL ảnh đã tải, thời điểm tải, credit đầy đủ, ghi chú ảnh vì sao chọn.
 
 **Bản quyền và ghi nguồn (bắt buộc)**
@@ -72,20 +86,18 @@ Quy trình cho từng nhận định đưa vào lời đọc:
 7. Phần "cách áp dụng" và "chọn mua/chọn đồ": mỗi lời khuyên phải hoặc có nguồn giáo trình nói điều đó, hoặc là SUY LUẬN TRỰC TIẾP từ nguyên lý đã có nguồn; với loại sau ghi rõ trong `sources.md` là "suy luận áp dụng từ nguyên lý X" và diễn đạt trong lời đọc bằng "nên", "thử", không nói như sự thật khoa học. Không bịa số đo, ngưỡng, tỷ lệ; chỉ nêu con số khi nguồn nêu con số đó (hoặc khi đo được trên chính ảnh và nói rõ là "trong ảnh này"). Không nhắc thương hiệu, cửa hàng hay sản phẩm cụ thể.
 
 Danh sách nguồn gợi ý để tìm trước (vẫn phải xác minh từng lần, không coi là đã đúng):
-- Ching, F. D. K. & Binggeli, C. *Interior Design Illustrated* (Wiley).
-- Ching, F. D. K. *Architecture: Form, Space, and Order* (Wiley).
-- Pile, J. & Gura, J. *A History of Interior Design* (Wiley); Pile, J. *Interior Design* (Pearson).
-- Lidwell, W., Holden, K. & Butler, J. *Universal Principles of Design* (Rockport).
-- Arnheim, R. *Art and Visual Perception*; *The Dynamics of Architectural Form* (UC Press).
-- Albers, J. *Interaction of Color* (Yale UP); Itten, J. *The Art of Color*.
-- Alexander, C. et al. *A Pattern Language* (Oxford UP).
-- Rasmussen, S. E. *Experiencing Architecture* (MIT Press); Pallasmaa, J. *The Eyes of the Skin* (Wiley); Zumthor, P. *Atmospheres* (Birkhäuser).
-- Nghiên cứu: Palmer & Schloss (2010, PNAS) về sở thích màu; Elliot & Maier (2014, Annual Review of Psychology) về màu và tâm lý; Kaplan & Kaplan về môi trường và ưa thích thị giác; các bài tri giác Gestalt có phản biện (ví dụ Wagemans et al. 2012, Psychological Bulletin).
+- Giáo trình thiết kế nội thất: Ching, F. D. K. & Binggeli, C. *Interior Design Illustrated* (Wiley); Kilmer, R. & Kilmer, W. O. *Designing Interiors* (Wiley); Nielson, K. J. & Taylor, D. A. *Interiors: An Introduction* (McGraw-Hill); Mitton, M. & Nystuen, C. *Residential Interior Design: A Guide to Planning Spaces* (Wiley); Pile, J. *Interior Design* và Pile, J. & Gura, J. *A History of Interior Design* (lịch sử nhà thiết kế nội thất, đồ nội thất).
+- Kích thước và công thái học: Panero, J. & Zelnik, M. *Human Dimension and Interior Space* (Whitney Library of Design).
+- Màu: Albers, J. *Interaction of Color* (Yale UP); Itten, J. *The Art of Color*.
+- Nguyên lý thị giác chung: Lidwell, W., Holden, K. & Butler, J. *Universal Principles of Design* (Rockport).
+- Thiết kế sản phẩm và đồ nội thất: Norman, D. *The Design of Everyday Things* và *Emotional Design* (Basic Books); lời của chính nhà thiết kế (ví dụ mười nguyên tắc của Dieter Rams) chỉ dùng để nói "nhà thiết kế X nói gì", không dùng làm bằng chứng khoa học.
+- Nghiên cứu: Palmer & Schloss (2010, PNAS) về sở thích màu; Schloss & Palmer (2011, Attention, Perception & Psychophysics) về phối cặp màu, hài hoà và tương đồng; Elliot & Maier (2014, Annual Review of Psychology) về màu và tâm lý; Bar & Neta (2006, Psychological Science) về sở thích với vật thể cong; Dazkir & Read (2012, Environment and Behavior) về dáng đồ nội thất cong hay góc cạnh và cảm xúc; các bài tri giác Gestalt có phản biện (ví dụ Wagemans et al. 2012, Psychological Bulletin).
+- KHÔNG dùng sách lý thuyết kiến trúc (Ching *Architecture: Form, Space, and Order*, Alexander *A Pattern Language*, Rasmussen, Pallasmaa, Zumthor, Hildebrand, Appleton…) làm nguồn chính của tập, vì lệch trọng tâm mục 1a.
 Nếu cần nguồn ngoài danh sách, chỉ nhận sách hoặc bài có phản biện, và phải xác minh như trên.
 
 ## 4. Quy trình
 1. Chế độ tự động: chọn nguyên lý và tìm ảnh theo mục 2b (nguyên lý trước, ảnh sau). Chế độ override: xem kỹ ảnh người dùng gửi và xác định MỘT nguyên lý thấy rõ trong ảnh.
-2. Tra và xác minh nguồn cho nguyên lý (mục 3) TRƯỚC khi viết kịch bản. Chọn nhận định có nguồn rồi mới viết. Nếu không đủ nguồn vững thì đổi nguyên lý (và có thể đổi ảnh).
+2. Kiểm tra lại nguyên tắc đã chọn với phép thử mục 1a (áp dụng được bằng cách mua, đổi, sơn, dời, bày lại đồ). Tra và xác minh nguồn cho nguyên lý (mục 3) TRƯỚC khi viết kịch bản. Chọn nhận định có nguồn rồi mới viết. Nếu không đủ nguồn vững thì đổi nguyên lý (và có thể đổi ảnh).
 3. Trước khi viết lời, soạn `OUT/research.md`: ghi chép nghiên cứu theo đúng bảy phần ở mục 4a, mỗi ý kèm nguồn và đoạn đã đọc (tóm tắt ngắn hoặc trích ngắn). Kịch bản chỉ được dùng ý có trong `research.md`.
 4. Viết kịch bản 10–13 cảnh, tổng 45–60 giây, khoảng 110–160 từ lời đọc, theo mục 4a. Câu ngắn, dễ đọc, tự nhiên, tiếng Việt chuẩn. Lời đọc dùng để dán vào ElevenLabs nên không có ký hiệu lạ, không chú thích trong ngoặc. Mỗi cảnh tối đa khoảng 22 từ (hiển thị tối đa 3 dòng trên khung).
 5. Nhờ một agent khác chưa thấy quá trình làm đọc `research.md`, `script.md`, `sources.md` và chấm theo mục 4b (chiều sâu và nguồn). Sửa theo góp ý TRƯỚC khi dựng hình.
@@ -99,12 +111,12 @@ Nếu cần nguồn ngoài danh sách, chỉ nhận sách hoặc bài có phản
 ## 4a. Cấu trúc kịch bản có chiều sâu (45–60 giây)
 Thứ tự gợi ý; được đảo thứ tự nếu kể tự nhiên hơn, nhưng phải đủ bảy phần nội dung (B–H). Thời lượng ghi là gợi ý.
 - A. Mở (1 cảnh, 3–4s): một quan sát CỤ THỂ trên ảnh dẫn vào câu hỏi (ví dụ "Hai mươi khung ảnh trên một bức tường, sao không rối?"). Không mở bằng câu chung như "Bạn có biết…".
-- B. Nguồn gốc lý thuyết (1 cảnh, 4–5s): ai đề xuất, năm nào, trong bối cảnh nào, theo đúng nguồn (ví dụ trường phái Gestalt Berlin, bài của Wertheimer). Chỉ nêu tên, năm khi đã đọc thấy trong nguồn.
+- B. Nguồn gốc nguyên tắc (1 cảnh, 4–5s): ai đề xuất hay làm nổi tiếng nó, năm nào, trong bối cảnh nào, theo đúng nguồn: nhà lý thuyết màu (Itten, Albers), nhà thiết kế nội thất hoặc nhà trang trí, nhà thiết kế đồ nội thất và tạo dáng công nghiệp, nhà nghiên cứu tri giác. Không lấy kiến trúc sư hay lý thuyết kiến trúc làm nguồn gốc. Chỉ nêu tên, năm khi đã đọc thấy trong nguồn.
 - C. Cơ chế, vì sao mắt thấy vậy (1–2 cảnh, 6–9s): giải thích bằng ngôn ngữ đời thường điều nguồn nghiên cứu nói (mắt/não làm gì, khi nào thì xảy ra, yếu tố nào mạnh hơn yếu tố nào nếu nguồn có nói). Đây là phần tạo chiều sâu chính, không được thay bằng câu định nghĩa.
-- D. Đọc trên ảnh (2–3 cảnh, 10–14s): mỗi cảnh một chi tiết, zoom vào đúng vật, gọi tên vật và chỉ ra nguyên lý đang hoạt động thế nào ở đó (khoảng cách, đường, màu, kích thước cụ thể nhìn thấy được).
+- D. Đọc trên ảnh (2–3 cảnh, 10–14s): mỗi cảnh một chi tiết, zoom vào đúng MÓN ĐỒ, MẢNG MÀU, VẬT LIỆU hay NHÓM ĐỒ, gọi tên nó và chỉ ra nguyên lý đang hoạt động thế nào ở đó (màu gì lặp ở đâu, dáng ghế ra sao, chất liệu nào đặt cạnh chất liệu nào, khoảng cách giữa các món…).
 - E. Lỗi hay gặp hoặc phản ví dụ (1 cảnh, 4–6s): nếu làm sai thì trông thế nào. Không dựng ảnh khác; dùng chính ảnh với nét gợi ý (ví dụ mũi tên "nếu dời khung này ra xa…") hoặc chỉ vào chỗ trong ảnh mà nguyên lý bị phá có chủ ý.
 - F. Cách áp dụng cụ thể (1 cảnh, 4–6s): một hai việc người xem làm được ngay trong nhà mình, đủ cụ thể để làm theo (theo mục 3.7).
-- G. Chọn mua, chọn đồ và thiết kế (1 cảnh, 4–6s): nguyên lý này đổi cách chọn đồ thế nào (chọn món theo bộ hay lẻ, chọn khung, màu, kích thước, chất liệu, chọn số lượng…), theo mục 3.7.
+- G. Chọn mua, chọn đồ (1 cảnh, 4–6s): nguyên tắc này đổi cách chọn đồ thế nào: chọn dáng, màu, kích thước, chất liệu, hoạ tiết, chọn theo bộ hay phối lẻ, chọn bao nhiêu món; theo mục 3.7. Đây là phần người xem cần nhất, phải cụ thể.
 - H. Công thức (1 cảnh, 3–4s): một câu tóm tắt dễ nhớ, có thông tin (không phải khẩu hiệu rỗng).
 - I. Cảnh cuối (1 cảnh, 7–9s, tính trong tổng 45–60 giây): nhắc AH Decode là series về nguyên tắc thiết kế và chọn đồ decor, mời theo dõi Fanpage Giả Thuyết Kiến Trúc và nhắc bài viết về kiến trúc dành riêng cho thành viên ở link bình luận. KHÔNG nhắc tập sau, không đọc nguồn hay credit. Lời đọc mẫu (giữ ngắn, khoảng 25 từ): "AH Decode, series về nguyên tắc thiết kế và chọn đồ decor. Theo dõi Giả Thuyết Kiến Trúc, bài viết cho thành viên ở link bình luận."
 Quy tắc chiều sâu:
@@ -116,6 +128,7 @@ Quy tắc chiều sâu:
 
 ## 4b. Tự chấm trước khi dựng hình
 Agent đọc lại (bước 5) trả lời có/không cho từng câu, kèm lý do:
+0. Tập có đúng trọng tâm mục 1a không (nội thất, decor, màu, đồ đạc, vật liệu, bố cục đồ; không phải lý thuyết kiến trúc)? Có câu, cảnh hay nguồn nào lệch sang kiến trúc không? Có thì phải sửa, kể cả đổi nguyên tắc.
 1. Có đủ bảy phần B–H, mỗi phần có ít nhất một ý cụ thể?
 2. Phần cơ chế có nói được vì sao (không chỉ nhắc lại định nghĩa)? Có nguồn đọc được nội dung tương ứng?
 3. Người xem có học được ít nhất ba điều cụ thể họ có thể chưa biết? Liệt kê ba điều đó.
@@ -207,4 +220,5 @@ Mục tiêu: người dùng mở file, chọn tất cả, dán vào ElevenLabs, 
 - Không đổi nhịp chuyển cảnh/vẽ nét đã duyệt (mục 5b), không thêm nhạc nền, hiệu ứng hay phụ đề chạy chữ khi chưa được yêu cầu.
 - Không bịa tên studio, nhiếp ảnh gia hay dự án khi thiếu credit; chỉ ghi những gì có trên trang bài nguồn.
 - Không hẹn hay gợi ý "tập sau" ở bất kỳ đâu (khung, lời đọc, caption).
+- Không làm tập về lý thuyết kiến trúc hay không gian công trình (mục 1a): không prospect–refuge, không phân tích nhà của kiến trúc sư, không lấy trần, cột, vách kính, view làm nội dung chính.
 - Không dừng giữa chừng để chờ duyệt lý thuyết hay ảnh.
