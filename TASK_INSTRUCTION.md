@@ -40,12 +40,23 @@ Chế độ mặc định là TỰ ĐỘNG: không cần người dùng gửi �
 ## 2b. Ảnh: CHỈ lấy trong thư mục `anh/` của chính bài đã chọn (bắt buộc)
 KHÔNG truy cập tạp chí hay trang web nào (Yatzer, Yellowtrace, Dwell, Wallpaper*, ArchDaily, Est Living… đều không dùng), không tìm ảnh ngoài kho, không dùng ảnh người dùng gửi ngoài kho. Ảnh duy nhất được dùng là ảnh nằm trong `anh/` của bài đang làm (đường dẫn như trong YAML `anh_theo_thu_tu`).
 1. Xem (Read) toàn bộ ảnh trong `anh/` của bài. Phân loại: ảnh công trình/nội thất thật; sơ đồ (diagram); mặt bằng, trục đo; ảnh đã có nét doodle; ảnh bìa dựng sẵn.
-2. Chọn MỘT ảnh minh hoạ rõ nhất ý chính của bài, theo thứ tự ưu tiên: (a) ảnh nội thất thật, sạch, khung ngang (rộng/cao 1,3–1,9) nếu có; (b) nếu bài chỉ có ảnh nội thất đã kèm nét doodle của bài, dùng ảnh phù hợp nhất và ghi rõ hạn chế trong báo cáo (nét cũ có thể lẫn với nét mới; cân nhắc zoom vào vùng ít nét cũ); (c) không dùng sơ đồ, mặt bằng, trục đo làm ảnh nền. Không gượng ép: nếu không ảnh nào dùng được thì làm bản tốt nhất và nêu rõ trong báo cáo, KHÔNG đi tìm ảnh ngoài kho.
+2. Chọn MỘT ảnh minh hoạ rõ nhất ý chính của bài. KHÔNG cần ưu tiên khung ngang: ảnh ngang, dọc hay vuông đều dùng được (engine phải chỉnh bố cục khung, vùng đặt ảnh và camera cho đúng tỷ lệ ảnh được chọn, vẫn giữ nguyên quy cách mục 6). Thứ tự ưu tiên:
+   (a) Ảnh trong bài ĐÃ CÓ nét doodle (tên có `doodle`, hoặc ảnh có nét trắng nét đứt/nhãn chữ vẽ sẵn): ưu tiên dùng, vì đó là phân tích có sẵn của bài. Không vẽ nét mới đè lên; thay vào đó làm cho chính doodle đó CHUYỂN ĐỘNG theo nguyên tắc dựng video ở mục 5b (xem mục 2c).
+   (b) Ảnh nội thất thật, sạch, không có doodle: dùng engine như thường lệ (đặt toạ độ và vẽ nét mới theo mục 5).
+   (c) Không dùng sơ đồ, mặt bằng, trục đo, ảnh bìa dựng sẵn làm ảnh nền. Không gượng ép: không ảnh nào dùng được thì làm bản tốt nhất, nêu rõ hạn chế, KHÔNG tìm ảnh ngoài kho.
+   Ý chính của reel nên chọn sao cho khớp với ảnh doodle có sẵn của bài.
 3. Bài đủ ảnh thì luân phiên ảnh giữa các tập; không dùng lại ảnh đã có trong `series.json` (so theo đường dẫn ảnh trong kho).
 4. Tạo bản làm việc: thu nhỏ cạnh dài còn tối đa 2400 px (LANCZOS, giữ tỷ lệ; không phóng to) lưu thành `source.png`; mọi toạ độ doodle đặt theo bản này. Chép ảnh gốc vào `OUT/original/`. Ảnh nhỏ hơn 1200 px cạnh dài: vẫn làm, ghi hạn chế.
 5. Credit: lấy từ YAML và chú thích trong bài (`cong_trinh`, `nguon_anh_cong_trinh`, tên tác giả ảnh nếu bài ghi). Định dạng: `<công trình> · <studio> · ảnh <nhiếp ảnh gia>`; thiếu mục nào bỏ mục đó, không bịa. Dòng trên khung: `Ảnh dự án: ...` (dài quá 960 px thì giảm cỡ chữ, tối thiểu 26, hoặc xuống hai dòng, không cắt). Ảnh do chủ bài dựng (bìa, doodle, diagram) ghi thêm "Giả Thuyết Kiến Trúc" nếu bài ghi như vậy.
 6. Lưu `OUT/source_info.md`: đường dẫn ảnh trong kho, commit SHA, credit, lý do chọn ảnh, hạn chế.
 
+
+## 2c. Làm doodle có sẵn trong ảnh chuyển động (khi chọn ảnh loại (a))
+- Dựng hai lớp từ ảnh gốc: (1) lớp nền = ảnh đã xoá nét doodle (inpaint bằng OpenCV `cv2.inpaint` trên mặt nạ nét trắng/nhãn chữ; xem lại bằng Read, sửa mặt nạ đến khi sạch, không để vệt), (2) lớp nét = chính các nét doodle gốc tách theo mặt nạ (giữ nguyên hình dáng, màu trắng, nét đứt, nhãn chữ như bài vẽ). Nếu không xoá sạch được thì dùng kỹ thuật lộ dần (reveal) trực tiếp trên ảnh gốc: phủ ảnh nền chưa có nét rồi lộ nét theo mặt nạ.
+- Tách mặt nạ thành các nét/cụm nét riêng (connected components, sắp theo thứ tự đọc tự nhiên hoặc theo thứ tự lời đọc), mỗi cụm là một "nét" để vẽ dần. Nhãn chữ là cụm riêng, hiện sau khi nét liên quan vẽ đạt khoảng 55–75%.
+- Chuyển động đúng như mục 5b, không đổi nhịp: camera zoom/di chuyển giữa các cảnh theo `cam`, nét được vẽ dần (nét chạy theo đường, đầu nét lộ ra trước) sau khi camera dừng, xong ở khoảng 62% thời lượng cảnh; chữ và nét cảnh cũ mờ đi 0,25 giây đầu chuyển cảnh; nét thuộc cảnh sau không được hiện trước. Mỗi cảnh chỉ hiện cụm nét liên quan đến lời đọc của cảnh đó, các cụm đã vẽ ở cảnh trước mờ đi khi sang cảnh mới.
+- Trong `SCENES`, thay `doodle()` bằng danh sách cụm nét của lớp nét gốc (cụm nào thuộc cảnh nào). Các phần còn lại (băng keo, nền trắng, chữ Patrick Hand, credit, khung cuối) giữ nguyên mục 6.
+- Kiểm tra (mục 7): lớp nền không còn vệt nét cũ, lộ nét khớp lời đọc, nét không bị cắt hay lệch so với ảnh gốc.
 
 ## 3. QUY TẮC THÔNG TIN: CHỈ LẤY TỪ BÀI TRONG KHO (bắt buộc, không ngoại lệ)
 Bài trong KHO BÀI là nguồn thông tin duy nhất cho lời đọc, chữ trên khung, caption và ảnh. Task không tự nghiên cứu (không WebSearch/WebFetch, không mở bất kỳ trang web nào, kể cả link nguồn mà bài dẫn) và không tự viết thêm kiến thức.
