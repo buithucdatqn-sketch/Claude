@@ -13,26 +13,25 @@ TRANS = 0.7
 WIDE = "WIDE"
 SC = [
     dict(part="A", head="Vì sao khối xanh giữ vai chính?", cam=WIDE, dark=False, dd=[],
-         vo="Giữa căn hộ là một khối xanh đậm. Vì sao nó giữ vai chính?"),
+         vo="Giữa căn hộ này là một khối sơn xanh. Vì sao một khối màu lại giữ được vai chính?"),
     dict(part="B", head="Tường, sàn trung tính; màu dồn vào đồ", cam=((900, 1000), 2.2, (540, 900)), dark=False, dd=[],
-         vo="Sách Designing Interiors của Kilmer và Kilmer gợi ý: giữ tường, sàn trung tính, dồn màu đậm vào đồ đạc.",
-         tts="Sách Đi-dai-ninh In-tia-ri-ơ của Kin-mơ và Kin-mơ gợi ý: giữ tường, sàn trung tính, dồn màu đậm vào đồ đạc."),
+         vo="Sách Designing Interiors của hai tác giả Kilmer nêu một cách là giữ tường, sàn trung tính và dồn màu đậm vào đồ đạc.",
+         tts="Sách Đi-dai-ninh In-tia-ri-ơ của hai tác giả Kin-mơ nêu một cách là giữ tường, sàn trung tính và dồn màu đậm vào đồ đạc."),
     dict(part="D", head="Màu trung tính lùi về nền", cam=((800, 1550), 1.7, (540, 880)), free=True, dark=True, dd=["arr1", "lab1"],
-         vo="Ở đây, trần bê tông, sàn gỗ và rèm trắng đều trung tính, nên chúng lùi về làm nền."),
-    dict(part="D", head="Một khối có màu mạnh", cam=((1150, 1900), 2.1, (700, 800)), free=True, dark=True, dd=["arr2", "lab2"],
-         vo="Khối xanh vì thế là màu mạnh duy nhất trong tầm mắt."),
-    dict(part="E", head="Để vỏ nhà yên lặng", cam=((300, 450), 2.4, (540, 900)), dark=False, dd=[],
-         vo="Theo tác giả, điều đáng giá nhất là để vỏ nhà yên lặng. Tường mà cũng sơn màu, khối xanh hẳn mất vai chính."),
-    dict(part="C", head="Bước vào trong: nền và nhấn đảo vai", cam=((450, 1400), 2.2, (540, 900)), dark=False, dd=[],
-         vo="Nhưng khi bước vào bếp trong khối, vai trò đảo ngược: xanh đậm thành nền, đồ nhỏ sáng màu thành điểm nhấn."),
+         vo="Trong ảnh này, bê tông xám, sàn gỗ và rèm trắng đều là màu trung tính."),
+    dict(part="D", head="Chỉ một khối có màu mạnh", cam=((1150, 1900), 2.1, (700, 800)), free=True, dark=True, dd=["arr2", "lab2"],
+         vo="Chỉ riêng khối xanh là có màu thực sự mạnh."),
+    dict(part="C", head="Mắt đọc màu theo xung quanh", cam=((300, 450), 2.4, (540, 900)), dark=False, dd=[],
+         vo="Albers chỉ ra mắt luôn đọc màu cùng những gì xung quanh, nên nếu tường cũng sơn màu, khối xanh hẳn mất vị trí trung tâm.",
+         tts="An-bơ chỉ ra mắt luôn đọc màu cùng những gì xung quanh, nên nếu tường cũng sơn màu, khối xanh hẳn mất vị trí trung tâm."),
+    dict(part="C", head="Bước vào trong: xanh thành nền", cam=((450, 1400), 2.2, (540, 900)), dark=False, dd=[],
+         vo="Nhưng khi bước vào bếp bên trong khối, màu xanh lại thành nền, còn những món đồ nhỏ sáng màu mới nổi lên."),
     dict(part="F", head="Bắt đầu từ khối lớn nhất", cam=((1100, 1400), 2.2, (540, 900)), dark=False, dd=[],
-         vo="Ở nhà mình, thử chọn màu chủ đạo cho khối lớn nhất, thường là dãy tủ hoặc sàn gỗ."),
+         vo="Ở nhà mình, thử chọn màu chủ đạo cho khối lớn nhất trước, thường là dãy tủ hoặc sàn gỗ."),
     dict(part="F", head="Món đồ hay phông nền?", cam=((600, 1700), 2.2, (540, 900)), dark=False, dd=[],
-         vo="Rồi đứng ở cửa hay bàn ăn, xem khối ấy là món đồ, hay đã thành phông nền."),
-    dict(part="G", head="Chọn sơn cho mảng lớn", cam=((1100, 1750), 2.4, (540, 900)), dark=False, dd=[],
-         vo="Sơn mảng lớn nên chọn nhạt hơn mẫu thử một bậc, vì lên tường rộng, màu luôn trông đậm hơn."),
+         vo="Rồi đứng ở cửa hay bàn ăn, xem khối ấy đang là một món đồ hay đã thành phông nền."),
     dict(part="H", head="Chốt lại", cam=WIDE, dark=False, dd=[],
-         vo="Vậy trước khi hỏi màu gì, hãy hỏi: màu ấy sơn ở đâu?"),
+         vo="Vậy khối xanh nổi bật vì mọi thứ quanh nó lùi lại. Trước khi hỏi màu gì, hãy hỏi màu ấy nằm ở đâu."),
     dict(part="I", head="end", cam="END", dark=False, vo="", dd=[],
          tts="Ây-ết Đi-cốt, series về nguyên tắc thiết kế và chọn đồ đê-co. Theo dõi Giả Thuyết Kiến Trúc. Bài viết phân tích đầy đủ xem ở dòng đầu tiên trong phần bình luận.",
          say="AH Decode, series về nguyên tắc thiết kế và chọn đồ decor. Theo dõi Giả Thuyết Kiến Trúc. Bài viết phân tích đầy đủ xem ở dòng đầu tiên trong phần bình luận."),
@@ -166,7 +165,7 @@ md = (f"# AH Decode · Nền lùi, màu dồn một khối · BẢN NHÁP chờ 
       "| # | Thời lượng | Phần | Tiêu đề trên khung | Lời đọc | Hình |\n|---|---|---|---|---|---|\n" + "\n".join(rows) +
       "\n\n## Lời đọc liền mạch\n\n" + " ".join(shown) + "\n\n"
       "## Phiên âm cho ElevenLabs\n\n| Chính tả gốc | Phiên âm |\n|---|---|\n"
-      "| Kilmer | Kin-mơ |\n| Designing Interiors | Đi-dai-ninh In-tia-ri-ơ |\n"
+      "| Kilmer | Kin-mơ |\n| Designing Interiors | Đi-dai-ninh In-tia-ri-ơ |\n| Albers | An-bơ |\n"
       "| AH Decode | Ây-ết Đi-cốt |\n| decor | đê-co |\n")
 open(OUT + "script.md", "w").write(md)
 
