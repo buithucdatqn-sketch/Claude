@@ -82,5 +82,37 @@
       "Nền lùi lại, màu nhấn dồn vào một khối (bài học 1)",
       "Một màu chủ đạo, hai màu phụ đi vòng quanh (bài học 3)"
     ]
+  },
+  {
+    "tap": 5,
+    "slug": "nen-lui-mau-don-mot-khoi",
+    "ngay": "2026-10-15",
+    "nguyen_ly": "Nền lùi, màu nhấn dồn vào một khối (cách 1 phân bổ màu; Kilmer & Kilmer, Albers)",
+    "nhom": "Phối màu: phân bổ màu",
+    "bai_kho": {
+      "duong_dan": "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/bai-01.md",
+      "nhanh": "AH-Interior-notes",
+      "commit": "65b5427c55046c43f02d8e7ec0829e03ae0fdd03"
+    },
+    "anh_kho": [
+      "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/04-doodle-nen-lui.jpg"
+    ],
+    "du_an": "The Green Box, Berlin",
+    "studio": "Ester Bruzkus Architekten",
+    "nhiep_anh": "Robert Rieger",
+    "nguon": [
+      "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 5 (theo bài)",
+      "Albers (1963) Interaction of Color, Yale UP (theo bài)"
+    ],
+    "trang_thai": "cho_ghi_am",
+    "thu_muc": "inbox/out/2026-10-15_nen-lui-mau-don-mot-khoi/",
+    "y_bai": {
+      "muc": "Nền lùi lại, màu nhấn dồn vào một khối",
+      "tom_tat": "Bài học 1: tường/sàn trung tính lùi về nền, màu mạnh dồn vào một khối; lại gần thì nền và nhấn đảo vai"
+    },
+    "y_con_lai_cua_bai": [
+      "Một màu chủ đạo, hai màu phụ đi vòng quanh (bài học 3)"
+    ],
+    "ghi_chu": "Giai đoạn 1 (chưa dựng video, chờ INBOX/audio/nen-lui-mau-don-mot-khoi.mp3). Tiêu đề/nhãn gốc trên ảnh 04 đã xoá khỏi nền, chỉ dùng 2 mũi tên + 2 nhãn."
   }
 ]
