@@ -49,5 +49,30 @@
     "trang_thai": "ban_nhap_cho_duyet",
     "thu_muc": "inbox/out/2026-10-06_dang-cong-goc-nhon/",
     "ghi_chu": "Tập làm theo trọng tâm nội thất/decor (mục 1a), thay cho tập 2 bị đánh giá lệch trọng tâm."
+  },
+  {
+    "tap": 4,
+    "slug": "chenh-sang-vat-nen",
+    "ngay": "2026-10-15",
+    "nguyen_ly": "Chênh độ sáng giữa vật và nền (value contrast; Munsell, Albers, Kilmer & Kilmer)",
+    "nhom": "Phối màu: độ sáng, đồ bày trên kệ",
+    "bai_kho": {
+      "duong_dan": "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/bai-01.md",
+      "nhanh": "AH-Interior-notes",
+      "commit": "65b5427c55046c43f02d8e7ec0829e03ae0fdd03"
+    },
+    "anh_kho": [
+      "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/07-doodle-tuong-phan-thu-vien.jpg"
+    ],
+    "du_an": "The Green Box, Berlin",
+    "studio": "Ester Bruzkus Architekten",
+    "nhiep_anh": "Robert Rieger",
+    "nguon": [
+      "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 5 (theo bài)",
+      "Albers (1963) Interaction of Color, Yale UP (theo bài)"
+    ],
+    "trang_thai": "ban_nhap_cho_duyet",
+    "thu_muc": "inbox/out/2026-10-15_chenh-sang-vat-nen/",
+    "ghi_chu": "Tập đầu tiên lấy từ KHO BÀI (bài 01, đã đánh dấu dùng cả bài). Ý chính: bài học 2 'Chênh sáng mới làm đồ vật hiện ra'. Nhãn gốc 'tương phản sắc đô' trên ảnh 07 thiếu dấu nên không dùng."
   }
 ]
