@@ -6,7 +6,7 @@ Mỗi lần chạy là một phiên mới, không nhớ gì từ các cuộc tr�
 Chạy một lượt, không hỏi lại. Nếu thiếu đầu vào thì dừng và báo rõ thiếu gì (mục 9).
 
 ## 1. Nhiệm vụ
-Mỗi ngày, lấy MỘT bài chưa dùng trong KHO BÀI (mục 2a) và dùng NỘI DUNG CỦA BÀI làm toàn bộ thông tin của reel (nguyên tắc, nguồn gốc, cơ chế, cách áp dụng, cách chọn đồ, nguồn tham khảo). Task KHÔNG tự nghiên cứu và KHÔNG tự viết thêm thông tin ngoài bài (mục 3). Ảnh cũng CHỈ lấy trong thư mục `anh/` của chính bài đó (mục 2b). Tuyệt đối không dùng bất kỳ nguồn thông tin hay ảnh nào ngoài KHO BÀI (không tạp chí, không web, không ảnh người dùng gửi ngoài kho). Từ đó tạo gói sản xuất cho một reel dọc 9:16, dài 45–60 giây, series "AH Decode". Reel giải thích MỘT nguyên tắc nội thất/decor bằng các nét doodle trắng nét đứt vẽ lên chính ảnh gốc.
+Mỗi ngày, lấy MỘT Ý CHƯA DÙNG của một bài trong KHO BÀI (mục 2a; một bài có thể cho nhiều tập, mỗi tập một ý khác nhau) và dùng NỘI DUNG CỦA BÀI làm toàn bộ thông tin của reel (nguyên tắc, nguồn gốc, cơ chế, cách áp dụng, cách chọn đồ, nguồn tham khảo). Task KHÔNG tự nghiên cứu và KHÔNG tự viết thêm thông tin ngoài bài (mục 3). Ảnh cũng CHỈ lấy trong thư mục `anh/` của chính bài đó (mục 2b). Tuyệt đối không dùng bất kỳ nguồn thông tin hay ảnh nào ngoài KHO BÀI (không tạp chí, không web, không ảnh người dùng gửi ngoài kho). Từ đó tạo gói sản xuất cho một reel dọc 9:16, dài 45–60 giây, series "AH Decode". Reel giải thích MỘT nguyên tắc nội thất/decor bằng các nét doodle trắng nét đứt vẽ lên chính ảnh gốc.
 Mỗi reel là một bài học TRỌN VẸN và CÓ CHIỀU SÂU (mục 4a) về nội thất và decor, chắt lọc từ bài trong kho: nguồn gốc nguyên tắc, cơ chế vì sao mắt thấy vậy, đọc nguyên lý trên ảnh, lỗi hay gặp, cách áp dụng cụ thể, cách chọn mua/chọn đồ và thiết kế, rồi công thức tổng kết. Người xem phải học được điều cụ thể mà họ chưa biết, không phải những câu chung chung. Không hẹn "tập sau"; cảnh cuối chỉ mời theo dõi Fanpage Giả Thuyết Kiến Trúc và các bài viết về kiến trúc dành riêng cho thành viên (link ở phần bình luận).
 
 **Tên gọi (dùng đúng, không lẫn):** Fanpage tên là **Giả Thuyết Kiến Trúc**. **AH Decode** là một series MỚI của Fanpage này, chuyên phân tích các nguyên tắc thiết kế và cách chọn đồ decor. AH Decode KHÔNG phải tên Fanpage: không viết "Fanpage AH Decode". Header trên khung vẫn là `AH DECODE · <CHỦ ĐỀ>`.
@@ -18,23 +18,24 @@ AH Decode dạy người xem cách làm đẹp và chọn đồ cho không gian 
 - SAI trọng tâm, KHÔNG làm: lý thuyết kiến trúc và không gian công trình (prospect–refuge, trục và trình tự không gian, ngưỡng và chuyển tiếp, hình khối, mặt bằng, kết cấu, độ cao trần, vách kính, cửa sổ, quan hệ nhà với cảnh quan); phân tích tác phẩm hay lý thuyết của kiến trúc sư (Wright, Le Corbusier, Kahn, Zumthor…) với tư cách kiến trúc sư. Kiến trúc sư chỉ được nhắc khi bàn đến món đồ nội thất họ thiết kế (ví dụ ghế Barcelona của Mies van der Rohe và Lilly Reich) và chỉ ở tư cách người thiết kế đồ.
 - Phép thử với bài và ý chính được chọn: người xem có áp dụng được điều này bằng cách mua, đổi, sơn, dời hoặc bày lại đồ trong một căn phòng có sẵn không? Nếu chỉ áp dụng được khi xây hoặc sửa công trình thì loại.
 - Trên ảnh, nét doodle khoanh và chỉ vào ĐỒ VẬT, MÀU, VẬT LIỆU, HOẠ TIẾT, ĐÈN, cách bày đồ; không lấy trần, cột, vách, cửa sổ, kết cấu làm đối tượng phân tích chính.
-Gói gồm: (1) kịch bản lời đọc theo cảnh và file chữ thuần để dán vào ElevenLabs, (2) các khung hình 1080×1920, (3) bảng phân cảnh, (4) video reel dựng sẵn (bản không tiếng, hoặc có tiếng nếu đã có audio), (5) bảng đối chiếu từng nhận định với bài trong kho, (6) caption đăng bài.
+Gói gồm: (1) kịch bản lời đọc theo cảnh và file chữ thuần để dán vào ElevenLabs, (2) các khung hình 1080×1920, (3) bảng phân cảnh, (4) video reel: KHÔNG dựng trong lần làm tập mới; chỉ dựng sau khi người dùng gửi file ghi âm (mục 5c), (5) bảng đối chiếu từng nhận định với bài trong kho, (6) caption đăng bài.
 Người dùng nói tiếng Việt, mọi chữ trên khung và lời đọc đều bằng tiếng Việt.
 
 ## 2. Đầu vào (INBOX = REPO/inbox)
 Chế độ mặc định là TỰ ĐỘNG: không cần người dùng gửi ảnh. Chỉ cần:
 - KHO BÀI (mục 2a): nguồn thông tin duy nhất cho nội dung reel.
-- `INBOX/series.json`: danh sách các tập đã làm (số tập, bài trong kho đã dùng `bai_kho` = đường dẫn file + commit SHA của nhánh lúc đọc, nguyên lý, đường dẫn ảnh đã dùng trong kho, ngày). Nếu chưa có thì tạo mới. Dùng để không lặp lại bài trong kho, và không lặp lại ảnh.
+- `INBOX/series.json`: danh sách các tập đã làm (số tập, bài trong kho đã dùng `bai_kho` = đường dẫn file + commit SHA của nhánh lúc đọc, ý đã dùng `y_bai` = tiêu đề mục trong bài + tóm tắt một dòng, nguyên lý, đường dẫn ảnh đã dùng trong kho, ngày, `trang_thai`). Nếu chưa có thì tạo mới. Dùng để không lặp lại Ý đã làm (một bài được dùng nhiều lần, mỗi lần một ý khác) và không lặp lại ảnh.
 - `INBOX/override/`: KHÔNG còn dùng (không nhận ảnh hay nguồn ngoài kho). Nếu thư mục có file thì bỏ qua và nhắc trong báo cáo.
-- `INBOX/audio/<slug>.mp3|wav|m4a` (tuỳ chọn): giọng đọc ElevenLabs của chính tập này (người dùng làm từ file `elevenlabs.txt` của lần chạy trước). Có file này thì làm bước 9 (ghép tiếng) trong mục 4.
+- `INBOX/audio/<slug>.mp3|wav|m4a` (tuỳ chọn): giọng đọc ElevenLabs của một tập đang ở trạng thái `cho_ghi_am` (người dùng làm từ `elevenlabs.txt` của tập đó). ĐẦU MỖI LẦN CHẠY phải kiểm tra thư mục này trước: có file khớp `slug` của tập `cho_ghi_am` thì làm giai đoạn 2 (mục 5c: dựng video theo nhịp giọng đọc rồi ghép tiếng) cho tập đó, đổi `trang_thai` thành `da_dung_video`. Làm xong giai đoạn 2 thì vẫn làm tiếp một tập mới (giai đoạn 1) như thường.
 - Xử lý xong: cập nhật `series.json`.
 
 ## 2a. KHO BÀI: nguồn thông tin của reel (bắt buộc)
 - Vị trí: GitHub `buithucdatqn-sketch/A---material`, nhánh `AH-Interior-notes`, thư mục `AH-Decode-Decor/` (https://github.com/buithucdatqn-sketch/A---material/tree/AH-Interior-notes/AH-Decode-Decor/).
 - Cách lấy: dùng add_repo cho `buithucdatqn-sketch/A---material` (chỉ cần quyền đọc), rồi `git clone --depth 1 -b AH-Interior-notes https://github.com/buithucdatqn-sketch/A---material /home/claude/material` (timeout ≥ 10 phút; chỉ MỘT lệnh git tại một thời điểm). Nếu thư mục đã có thì `git -C /home/claude/material pull origin AH-Interior-notes`. Nếu clone không được nhưng công cụ GitHub MCP đọc được kho thì đọc bằng `get_file_contents` (ref `refs/heads/AH-Interior-notes`). Gọi thư mục bài là KHO = `/home/claude/material/AH-Decode-Decor/`. KHÔNG sửa, commit hay push gì vào kho bài.
 - Đọc cấu trúc thư mục trước: nếu có README, mục lục, file hướng dẫn hay quy ước đặt tên (ví dụ số thứ tự, trạng thái "đã duyệt"/"nháp") thì làm theo. Mỗi bài thường là một file (`.md`, `.txt`, hoặc tài liệu khác) hoặc một thư mục con; file không phải bài (README, mẫu, ảnh, ghi chú chung) thì không tính là bài.
-- Chọn bài: bài CHƯA có trong `series.json` (so theo đường dẫn), theo thứ tự trong mục lục nếu có, không thì theo số thứ tự hoặc tên file tăng dần. Bỏ qua bài ghi rõ là nháp/chưa xong. Nếu bài lệch trọng tâm mục 1a (lý thuyết kiến trúc) thì bỏ qua, ghi vào `series.json` với `trang_thai: "bo_qua_lech_trong_tam"` kèm lý do, rồi lấy bài kế tiếp.
-- Đọc TOÀN BỘ bài (Read hết, không bỏ đoạn nào), kể cả phần nguồn tham khảo, ghi chú ảnh, gợi ý dự án nếu có. Bài dài hơn một reel: chọn MỘT ý chính đủ cho bảy phần B–H (mục 4a), phần còn lại có thể đưa vào caption; KHÔNG chia thành nhiều tập, không hẹn "tập sau". Đánh dấu cả bài là đã dùng.
+- Ý trong bài: mỗi ý là một bài học/mục nội dung riêng của bài (thường là một mục tiêu đề `##` hoặc một "bài học" bài tự đánh số), đủ cho bảy phần B–H (mục 4a). Phần mở bài, lý thuyết chung hay kết bài không tính là ý riêng, nhưng được dùng làm nguồn gốc/cơ chế cho bất kỳ ý nào. Lần đầu đọc một bài, liệt kê các ý của bài vào `research.md`.
+- Chọn ý: theo thứ tự bài (mục lục nếu có, không thì số thứ tự hoặc tên file tăng dần), lấy bài đầu tiên còn ý CHƯA có trong `series.json` (so theo `bai_kho.duong_dan` + `y_bai`), rồi lấy ý chưa dùng đầu tiên của bài đó theo thứ tự trong bài. Một ý chỉ được làm MỘT lần; bài thì được dùng lại cho đến khi hết ý. Bỏ qua bài ghi rõ là nháp/chưa xong. Nếu ý (hoặc cả bài) lệch trọng tâm mục 1a (lý thuyết kiến trúc) thì bỏ qua, ghi vào `series.json` với `trang_thai: "bo_qua_lech_trong_tam"` kèm lý do, rồi lấy ý kế tiếp.
+- Đọc TOÀN BỘ bài (Read hết, không bỏ đoạn nào), kể cả phần nguồn tham khảo, ghi chú ảnh, gợi ý dự án nếu có. Reel chỉ làm MỘT ý đã chọn; các ý khác của bài chỉ được nhắc ngắn trong caption khi cần làm rõ, không hẹn "tập sau". Chỉ đánh dấu ý đó là đã dùng (`y_bai`), không đánh dấu cả bài.
 - Nếu bài có ảnh minh hoạ công trình trong `anh/` thì dùng theo mục 2b. Link ảnh hay gợi ý dự án trỏ ra ngoài kho thì KHÔNG mở, không dùng.
 
 ## 2b. Ảnh: CHỈ lấy trong thư mục `anh/` của chính bài đã chọn (bắt buộc)
@@ -45,7 +46,7 @@ KHÔNG truy cập tạp chí hay trang web nào (Yatzer, Yellowtrace, Dwell, Wal
    (b) Ảnh nội thất thật, sạch, không có doodle: dùng engine như thường lệ (đặt toạ độ và vẽ nét mới theo mục 5).
    (c) Không dùng sơ đồ, mặt bằng, trục đo, ảnh bìa dựng sẵn làm ảnh nền. Không gượng ép: không ảnh nào dùng được thì làm bản tốt nhất, nêu rõ hạn chế, KHÔNG tìm ảnh ngoài kho.
    Ý chính của reel nên chọn sao cho khớp với ảnh doodle có sẵn của bài.
-3. Bài đủ ảnh thì luân phiên ảnh giữa các tập; không dùng lại ảnh đã có trong `series.json` (so theo đường dẫn ảnh trong kho).
+3. Chọn ảnh khớp với ý đang làm; không dùng lại ảnh đã có trong `series.json` (so theo đường dẫn ảnh trong kho). Nếu ảnh hợp nhất cho ý này đã dùng ở tập trước của cùng bài thì lấy ảnh khác của bài, nêu rõ trong báo cáo.
 4. Tạo bản làm việc: thu nhỏ cạnh dài còn tối đa 2400 px (LANCZOS, giữ tỷ lệ; không phóng to) lưu thành `source.png`; mọi toạ độ doodle đặt theo bản này. Chép ảnh gốc vào `OUT/original/`. Ảnh nhỏ hơn 1200 px cạnh dài: vẫn làm, ghi hạn chế.
 5. Credit: lấy từ YAML và chú thích trong bài (`cong_trinh`, `nguon_anh_cong_trinh`, tên tác giả ảnh nếu bài ghi). Định dạng: `<công trình> · <studio> · ảnh <nhiếp ảnh gia>`; thiếu mục nào bỏ mục đó, không bịa. Dòng trên khung: `Ảnh dự án: ...` (dài quá 960 px thì giảm cỡ chữ, tối thiểu 26, hoặc xuống hai dòng, không cắt). Ảnh do chủ bài dựng (bìa, doodle, diagram) ghi thêm "Giả Thuyết Kiến Trúc" nếu bài ghi như vậy.
 6. Lưu `OUT/source_info.md`: đường dẫn ảnh trong kho, commit SHA, credit, lý do chọn ảnh, hạn chế.
@@ -77,9 +78,9 @@ Bài trong KHO BÀI là nguồn thông tin duy nhất cho lời đọc, chữ tr
 6. Đặt toạ độ doodle bằng cách tự xem ảnh (đọc ảnh bằng Read): trục, đường, hình bao đồ vật bằng đa giác thô theo toạ độ ảnh làm việc.
 7. Chạy engine khung hình (mục 5). Xem LẠI từng khung (mục 7). Sửa toạ độ rồi chạy lại cho đến khi đạt.
 8. Soạn `elevenlabs.txt` (mục 8b) từ lời đọc đã chốt.
-9. Dựng video bằng engine video (mục 5b). Xem lại các khung trích từ video (mục 7).
+9. KHÔNG dựng video ở giai đoạn này. Vẫn sinh sẵn `engine_video_epNN.py` (mục 5b) để giai đoạn 2 dùng.
 10. Hoàn thiện `sources.md` (bản đầu viết cùng kịch bản ở bước 4, để agent ở bước 5 đối chiếu được), viết `caption.txt`, rồi báo cáo (mục 8).
-11. Chỉ khi có file audio trong INBOX/audio: ghép tiếng vào video (mục 5c) và kiểm tra thời lượng.
+11. Commit, push, gửi file và báo người dùng (mục 8), ghi `trang_thai: "cho_ghi_am"` trong `series.json`, rồi DỪNG. Video chỉ dựng ở lần chạy sau khi đã có file ghi âm trong INBOX/audio (mục 5c).
 
 ## 4a. Cấu trúc kịch bản có chiều sâu (45–60 giây)
 Thứ tự gợi ý; được đảo thứ tự nếu kể tự nhiên hơn, nhưng phải đủ bảy phần nội dung (B–H). Thời lượng ghi là gợi ý.
@@ -133,13 +134,12 @@ Hành vi đã duyệt, không tự ý đổi:
 - Khung cuối giữ thêm 1 giây. Video có sẵn track âm thanh im lặng để ghép tiếng sau.
 Nếu một cảnh quá ngắn để vẽ hết nét (cảnh nhiều nét mà dưới 3 giây), kéo dài cảnh đó trong `SCENES` hoặc bớt nét, không tăng tốc vẽ.
 
-## 5c. Ghép giọng ElevenLabs (chỉ khi có audio)
-1. Đo thời lượng audio: `ffprobe -v error -show_entries format=duration -of csv=p=0 <audio>`.
-2. So với thời lượng video:
-   - Chênh trong ±1,5 giây: ghép luôn.
-   - Audio dài hơn video hơn 1,5 giây, hoặc ngắn hơn hơn 3 giây: KHÔNG tự cắt hay kéo giãn giọng. Điều chỉnh `t` các cảnh (kéo dài/rút ngắn cảnh có lời nhiều/ít) theo nhịp đọc rồi dựng lại video; nếu không biết ranh giới từng câu, dùng `ffmpeg -af silencedetect=noise=-35dB:d=0.25` để tìm các quãng nghỉ, ghép từng câu với từng cảnh theo thứ tự trong `elevenlabs.txt`.
-3. Ghép: `ffmpeg -y -i video_silent.mp4 -i audio -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest out.mp4`. Nếu audio ngắn hơn video, thêm `-af apad` rồi `-t <thời lượng video>` thay cho `-shortest`.
-4. Chuẩn âm lượng nhẹ: `-af loudnorm=I=-16:TP=-1.5:LRA=11`.
+## 5c. Giai đoạn 2: dựng video theo giọng đọc (chỉ khi có file ghi âm)
+Không có bản video không tiếng làm trước. Trình tự: đo audio, căn `t` từng cảnh theo nhịp đọc, dựng video bằng engine video (mục 5b) từ `engine_video_epNN.py` của tập, rồi ghép tiếng. Kiểm tra video theo mục 7 trước khi giao. Đầu ra: `reel_<slug>_final.mp4` (xoá bản không tiếng trung gian nếu có). Commit, push, gửi video cho người dùng.
+1. Đo thời lượng audio: `ffprobe -v error -show_entries format=duration -of csv=p=0 <audio>`. KHÔNG tự cắt hay kéo giãn giọng.
+2. Tìm ranh giới từng câu/cảnh: `ffmpeg -i <audio> -af silencedetect=noise=-35dB:d=0.25 -f null -`, ghép các quãng nghỉ với các đoạn (cảnh) theo thứ tự trong `elevenlabs.txt`. Đặt lại `t` của từng cảnh trong dữ liệu cảnh (gen_epNN.py) sao cho mỗi cảnh bắt đầu khoảng 0,3–0,5 giây trước câu của nó (để chuyển cảnh 0,7 giây trùng quãng nghỉ) và cảnh cuối kéo đến hết giọng đọc. Sinh lại `engine_epNN.py` và `engine_video_epNN.py` từ cùng dữ liệu; cập nhật `script.md` (cột thời lượng).
+3. Dựng video bằng engine video (mục 5b) với `t` mới (chạy nền), rồi ghép: `ffmpeg -y -i <video_dung> -i <audio> -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -af "loudnorm=I=-16:TP=-1.5:LRA=11,apad" -t <thời lượng video> reel_<slug>_final.mp4`.
+4. Chuẩn âm lượng nhẹ đã nằm trong lệnh ghép (loudnorm I=-16).
 5. Kiểm tra bằng cách trích vài khung và đối chiếu thời điểm nhãn chữ với câu đang đọc (dùng silencedetect); báo cáo nếu lệch quá 1 giây.
 
 ## 6. Quy cách hình ảnh (đã duyệt, không tự ý đổi)
@@ -165,10 +165,10 @@ Kịch bản và nguồn đã được agent độc lập chấm ở bước 5 m
 - `elevenlabs.txt`: văn bản thuần để người dùng dán thẳng vào ElevenLabs (mục 8b).
 - `source_info.md`, `original/`.
 - `frames/scene_*.png` + `storyboard.png` + `frames.zip`.
-- `reel_<slug>_silent.mp4` (và `reel_<slug>_final.mp4` nếu đã có audio).
+- Giai đoạn 1 (tập mới): KHÔNG có video. Giai đoạn 2 (đã có ghi âm): `reel_<slug>_final.mp4`.
 - `sources.md`: mỗi nhận định → vị trí trong bài (file + mục/đoạn + trích ngắn) → mức chắc chắn theo bài (nguyên lý / thực nghiệm / quy tắc kinh nghiệm) → nguồn mà bài dẫn cho ý đó (nếu có, chép đúng như bài). Cuối file: danh mục nguồn tham khảo của bài.
 - `caption.txt`: caption đăng bài có chiều sâu, bổ sung cho reel (không chép lại lời đọc): vài đoạn ngắn về nguồn gốc, cơ chế, cách áp dụng và gợi ý chọn đồ, lấy từ bài theo cùng quy tắc mục 3 như lời đọc; rồi dòng giới thiệu và mời "AH Decode là series mới của Giả Thuyết Kiến Trúc, phân tích các nguyên tắc thiết kế và cách chọn đồ decor. Theo dõi Fanpage Giả Thuyết Kiến Trúc. Các bài viết về kiến trúc dành riêng cho thành viên: link ở phần bình luận."; rồi 2–3 nguồn chính lấy từ danh mục nguồn của bài (nếu bài có), credit ảnh đầy đủ theo bài (chỉ ghi link nếu chính bài có ghi); hashtag vừa phải. Không tự điền link thành viên (người dùng tự dán vào bình luận).
-- Gửi cho người dùng (SendUserFile): `elevenlabs.txt` đầu tiên, rồi video, ảnh bảng phân cảnh, `script.md`, `sources.md`, `caption.txt`; kèm tóm tắt tối đa 6 dòng: bài đã dùng trong kho, nguyên lý, ba điều người xem học được, điểm cần duyệt (kể cả phần bài thiếu hoặc nghi lỗi), credit đã có hay còn thiếu, và nhắc "gửi lại file giọng đọc vào INBOX/audio để ghép tiếng".
+- Gửi cho người dùng (SendUserFile) ở giai đoạn 1: `elevenlabs.txt` đầu tiên, rồi ảnh bảng phân cảnh, `script.md`, `sources.md`, `caption.txt`; kèm tóm tắt tối đa 6 dòng: bài đã dùng trong kho, nguyên lý, ba điều người xem học được, điểm cần duyệt (kể cả phần bài thiếu hoặc nghi lỗi), credit đã có hay còn thiếu, và nhắc "gửi file ghi âm vào INBOX/audio/<slug>.mp3 để dựng video". Đồng thời dán nguyên văn nội dung `elevenlabs.txt` (phần dán) vào cả câu trả lời và thông báo PushNotification, để người dùng copy ngay. Giai đoạn 2: gửi `reel_<slug>_final.mp4` và báo thời lượng.
 Đây là BẢN NHÁP chờ người dùng duyệt. Không đăng, không gửi đi đâu khác.
 
 ## 8b. Quy cách `elevenlabs.txt`
@@ -186,7 +186,7 @@ Mục tiêu: người dùng mở file, chọn tất cả, dán vào ElevenLabs, 
 - Bài không có ảnh nào dùng được làm nền: vẫn làm bản tốt nhất với ảnh có sẵn của bài, nêu rõ hạn chế; KHÔNG tìm ảnh ngoài kho.
 - Ảnh quá nhỏ (<1200 px cạnh dài), quá tối, hoặc không minh hoạ được ý chính của bài: vẫn làm bản tốt nhất có thể, ghi rõ hạn chế (ví dụ zoom bị mềm) và đề nghị ảnh khác.
 - Không truy cập được KHO BÀI (add_repo/clone/GitHub MCP đều lỗi, hoặc không thấy thư mục `AH-Decode-Decor/` trên nhánh `AH-Interior-notes`): dừng, báo lỗi cụ thể. KHÔNG tự nghiên cứu để thay thế.
-- Hết bài chưa dùng trong kho: dừng và báo người dùng thêm bài; không tự viết bài mới, không dùng lại bài cũ.
+- Hết ý chưa dùng trong mọi bài của kho: dừng và báo người dùng thêm bài; không tự viết bài mới, không làm lại ý đã dùng. (Vẫn làm giai đoạn 2 nếu có file ghi âm đang chờ.)
 - Bài thiếu nội dung cho một vài phần B–H: làm với phần bài có (mục 4a), ghi rõ phần thiếu trong báo cáo. Bài quá mỏng để làm reel 45–60 giây có chiều sâu: vẫn làm bản tốt nhất, ghi rõ hạn chế; không tự bổ sung kiến thức ngoài bài.
 - Dựng video quá thời gian hoặc ffmpeg lỗi: vẫn giao khung hình, script và `elevenlabs.txt`, nói rõ video chưa dựng được và vì sao.
 - Công cụ lỗi (mạng, thư viện): thử lại một lần, rồi báo lỗi cụ thể thay vì bỏ qua bước.

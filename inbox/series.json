@@ -71,8 +71,16 @@
       "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 5 (theo bài)",
       "Albers (1963) Interaction of Color, Yale UP (theo bài)"
     ],
-    "trang_thai": "ban_nhap_cho_duyet",
+    "trang_thai": "cho_ghi_am",
     "thu_muc": "inbox/out/2026-10-15_chenh-sang-vat-nen/",
-    "ghi_chu": "Tập đầu tiên lấy từ KHO BÀI (bài 01, đã đánh dấu dùng cả bài). Ý chính: bài học 2 'Chênh sáng mới làm đồ vật hiện ra'. Nhãn gốc 'tương phản sắc đô' trên ảnh 07 thiếu dấu nên không dùng."
+    "ghi_chu": "Tập đầu tiên lấy từ KHO BÀI (bài 01; chỉ ý 'Chênh sáng mới làm đồ vật hiện ra' đã dùng). Ý chính: bài học 2 'Chênh sáng mới làm đồ vật hiện ra'. Nhãn gốc 'tương phản sắc đô' trên ảnh 07 thiếu dấu nên không dùng. Đã có bản video không tiếng làm theo quy trình cũ (reel_chenh-sang-vat-nen_silent.mp4); khi có ghi âm thì dựng lại video theo nhịp giọng đọc (mục 5c) thành reel_chenh-sang-vat-nen_final.mp4.",
+    "y_bai": {
+      "muc": "Chênh sáng mới làm đồ vật hiện ra",
+      "tom_tat": "Bài học 2: độ sáng quyết định đồ tách khỏi nền; đồ bày trên kệ đậm nên sáng màu"
+    },
+    "y_con_lai_cua_bai": [
+      "Nền lùi lại, màu nhấn dồn vào một khối (bài học 1)",
+      "Một màu chủ đạo, hai màu phụ đi vòng quanh (bài học 3)"
+    ]
   }
 ]
