@@ -1,34 +1,43 @@
 # INSTRUCTION — Scheduled task "AH Decode · Reel hằng ngày"
 
-Kho mã và dữ liệu: GitHub `buithucdatqn-sketch/claude` (nhánh `main`). Cách lấy: dùng add_repo (quyền push) rồi `git clone --depth 1 https://github.com/buithucdatqn-sketch/claude /home/claude/claude` (timeout lệnh ≥ 10 phút; chỉ MỘT lệnh git tại một thời điểm), sau đó gọi register_repo_root. Gọi thư mục clone là REPO. Cấu trúc: `REPO/engine/` (bộ engine), `REPO/inbox/` (INBOX), `REPO/TASK_INSTRUCTION.md` (bản sao của chính tài liệu này). Cuối mỗi lần chạy: chép `engine_epNN.py` và `engine_video_epNN.py` vào `OUT/engine_epNN/`, `git add inbox`, commit, và `git pull --rebase origin main && git push origin main` (một lần; nếu bị 429 thì đợi 10 giây thử lại một lần).
+Kho mã và dữ liệu: GitHub `buithucdatqn-sketch/claude` (nhánh `main`). Cách lấy: dùng add_repo (quyền push) rồi `git clone --depth 1 https://github.com/buithucdatqn-sketch/claude /home/claude/claude` (timeout lệnh ≥ 10 phút; chỉ MỘT lệnh git tại một thời điểm), sau đó gọi register_repo_root. Gọi thư mục clone là REPO. Cấu trúc: `REPO/engine/` (bộ engine), `REPO/inbox/` (INBOX), `REPO/TASK_INSTRUCTION.md` (bản sao của chính tài liệu này). Thông tin nội dung của mỗi tập lấy từ KHO BÀI (mục 2a), một kho GitHub khác. Cuối mỗi lần chạy: chép `engine_epNN.py` và `engine_video_epNN.py` vào `OUT/engine_epNN/`, `git add inbox`, commit, và `git pull --rebase origin main && git push origin main` (một lần; nếu bị 429 thì đợi 10 giây thử lại một lần).
 
-Mỗi lần chạy là một phiên mới, không nhớ gì từ các cuộc trò chuyện trước. Mọi thông tin cần thiết nằm trong tài liệu này và thư mục INBOX.
+Mỗi lần chạy là một phiên mới, không nhớ gì từ các cuộc trò chuyện trước. Mọi thông tin cần thiết nằm trong tài liệu này, thư mục INBOX và KHO BÀI.
 Chạy một lượt, không hỏi lại. Nếu thiếu đầu vào thì dừng và báo rõ thiếu gì (mục 9).
 
 ## 1. Nhiệm vụ
-Mỗi ngày, TỰ chọn MỘT nguyên tắc thiết kế NỘI THẤT và DECOR (xem mục 1a), rồi TỰ lấy MỘT ảnh dự án thật trên một trong các tạp chí thiết kế (Yatzer, Yellowtrace, Dwell, Wallpaper*) phù hợp để minh hoạ nguyên lý đó, và tạo gói sản xuất cho một reel dọc 9:16, dài 45–60 giây, series "AH Decode". Reel giải thích MỘT nguyên tắc nội thất/decor bằng các nét doodle trắng nét đứt vẽ lên chính ảnh gốc.
-Mỗi reel là một bài học TRỌN VẸN và CÓ CHIỀU SÂU (mục 4a) về nội thất và decor: nguồn gốc nguyên tắc, cơ chế vì sao mắt thấy vậy, đọc nguyên lý trên ảnh, lỗi hay gặp, cách áp dụng cụ thể, cách chọn mua/chọn đồ và thiết kế, rồi công thức tổng kết. Người xem phải học được điều cụ thể mà họ chưa biết, không phải những câu chung chung. Không hẹn "tập sau"; cảnh cuối chỉ mời theo dõi Fanpage Giả Thuyết Kiến Trúc và các bài viết về kiến trúc dành riêng cho thành viên (link ở phần bình luận).
+Mỗi ngày, lấy MỘT bài chưa dùng trong KHO BÀI (mục 2a) và dùng NỘI DUNG CỦA BÀI làm toàn bộ thông tin của reel (nguyên tắc, nguồn gốc, cơ chế, cách áp dụng, cách chọn đồ, nguồn tham khảo). Task KHÔNG tự nghiên cứu và KHÔNG tự viết thêm thông tin ngoài bài (mục 3). Sau đó TỰ lấy MỘT ảnh dự án thật trên một trong các tạp chí thiết kế (Yatzer, Yellowtrace, Dwell, Wallpaper*) phù hợp để minh hoạ nguyên lý đó, và tạo gói sản xuất cho một reel dọc 9:16, dài 45–60 giây, series "AH Decode". Reel giải thích MỘT nguyên tắc nội thất/decor bằng các nét doodle trắng nét đứt vẽ lên chính ảnh gốc.
+Mỗi reel là một bài học TRỌN VẸN và CÓ CHIỀU SÂU (mục 4a) về nội thất và decor, chắt lọc từ bài trong kho: nguồn gốc nguyên tắc, cơ chế vì sao mắt thấy vậy, đọc nguyên lý trên ảnh, lỗi hay gặp, cách áp dụng cụ thể, cách chọn mua/chọn đồ và thiết kế, rồi công thức tổng kết. Người xem phải học được điều cụ thể mà họ chưa biết, không phải những câu chung chung. Không hẹn "tập sau"; cảnh cuối chỉ mời theo dõi Fanpage Giả Thuyết Kiến Trúc và các bài viết về kiến trúc dành riêng cho thành viên (link ở phần bình luận).
 
 **Tên gọi (dùng đúng, không lẫn):** Fanpage tên là **Giả Thuyết Kiến Trúc**. **AH Decode** là một series MỚI của Fanpage này, chuyên phân tích các nguyên tắc thiết kế và cách chọn đồ decor. AH Decode KHÔNG phải tên Fanpage: không viết "Fanpage AH Decode". Header trên khung vẫn là `AH DECODE · <CHỦ ĐỀ>`.
 Chạy trọn một lượt, không chờ duyệt lý thuyết hay ảnh giữa chừng.
 
 ## 1a. TRỌNG TÂM SERIES: NỘI THẤT VÀ DECOR, KHÔNG PHẢI KIẾN TRÚC (bắt buộc)
-AH Decode dạy người xem cách làm đẹp và chọn đồ cho không gian bên trong: những thứ họ tự quyết được trong nhà mình mà không cần xây, đập hay sửa kết cấu.
+AH Decode dạy người xem cách làm đẹp và chọn đồ cho không gian bên trong: những thứ họ tự quyết được trong nhà mình mà không cần xây, đập hay sửa kết cấu. Các bài trong KHO BÀI đã được biên soạn cho series này; mục 1a dùng để chọn chi tiết khoanh trên ảnh, để chọn MỘT ý chính khi bài dài, và để nhận ra bài lệch trọng tâm (khi đó bỏ qua bài đó theo mục 2a).
 - ĐÚNG trọng tâm: phối màu (bánh xe màu, tương cận, bổ túc, tam giác màu, sắc độ, độ bão hoà, màu nền và màu nhấn, nhiệt độ màu, màu ảnh hưởng nhau và theo ánh sáng); chọn kiểu dáng đồ nội thất (dáng cong hay góc cạnh, chân cao hay sát sàn, trọng lượng thị giác, tỷ lệ món đồ so với phòng và so với nhau, công thái học, kích thước chuẩn của bàn ghế); chọn vật liệu và bề mặt (gỗ, đá, vải, kim loại, độ bóng mờ, vân, tương phản chất cảm); bố cục và sắp xếp đồ (nhóm trò chuyện, lối đi, điểm nhấn, cân bằng, nhịp lặp, khoảng thở); hoạ tiết và vải (pha hoạ tiết theo tỷ lệ, rèm, thảm, gối); đèn và ánh sáng decor (đèn nhiều lớp, nhiệt độ màu bóng đèn, đèn làm điểm nhấn); styling (treo tranh, bày đồ trên kệ, nhóm vật trang trí, cây); các nhà thiết kế nội thất, nhà trang trí, nhà thiết kế đồ nội thất và tạo dáng công nghiệp (ví dụ Charles và Ray Eames, Hans Wegner, Florence Knoll, Dieter Rams, Dorothy Draper, Elsie de Wolfe, Andrée Putman) cùng triết lý, cách làm của họ; các nguyên lý thị giác (Gestalt, tương phản, thứ bậc…) KHI áp vào đồ đạc, màu, vật liệu, bố cục đồ.
 - SAI trọng tâm, KHÔNG làm: lý thuyết kiến trúc và không gian công trình (prospect–refuge, trục và trình tự không gian, ngưỡng và chuyển tiếp, hình khối, mặt bằng, kết cấu, độ cao trần, vách kính, cửa sổ, quan hệ nhà với cảnh quan); phân tích tác phẩm hay lý thuyết của kiến trúc sư (Wright, Le Corbusier, Kahn, Zumthor…) với tư cách kiến trúc sư. Kiến trúc sư chỉ được nhắc khi bàn đến món đồ nội thất họ thiết kế (ví dụ ghế Barcelona của Mies van der Rohe và Lilly Reich) và chỉ ở tư cách người thiết kế đồ.
-- Phép thử trước khi chọn nguyên tắc: người xem có áp dụng được điều này bằng cách mua, đổi, sơn, dời hoặc bày lại đồ trong một căn phòng có sẵn không? Nếu chỉ áp dụng được khi xây hoặc sửa công trình thì loại.
+- Phép thử với bài và ý chính được chọn: người xem có áp dụng được điều này bằng cách mua, đổi, sơn, dời hoặc bày lại đồ trong một căn phòng có sẵn không? Nếu chỉ áp dụng được khi xây hoặc sửa công trình thì loại.
 - Trên ảnh, nét doodle khoanh và chỉ vào ĐỒ VẬT, MÀU, VẬT LIỆU, HOẠ TIẾT, ĐÈN, cách bày đồ; không lấy trần, cột, vách, cửa sổ, kết cấu làm đối tượng phân tích chính.
-Gói gồm: (1) kịch bản lời đọc theo cảnh và file chữ thuần để dán vào ElevenLabs, (2) các khung hình 1080×1920, (3) bảng phân cảnh, (4) video reel dựng sẵn (bản không tiếng, hoặc có tiếng nếu đã có audio), (5) danh mục nguồn đã đối chiếu, (6) caption đăng bài.
+Gói gồm: (1) kịch bản lời đọc theo cảnh và file chữ thuần để dán vào ElevenLabs, (2) các khung hình 1080×1920, (3) bảng phân cảnh, (4) video reel dựng sẵn (bản không tiếng, hoặc có tiếng nếu đã có audio), (5) bảng đối chiếu từng nhận định với bài trong kho, (6) caption đăng bài.
 Người dùng nói tiếng Việt, mọi chữ trên khung và lời đọc đều bằng tiếng Việt.
 
 ## 2. Đầu vào (INBOX = REPO/inbox)
 Chế độ mặc định là TỰ ĐỘNG: không cần người dùng gửi ảnh. Chỉ cần:
-- `INBOX/series.json`: danh sách các tập đã làm (số tập, nguyên lý, URL bài nguồn và URL ảnh đã dùng, ngày). Nếu chưa có thì tạo mới. Dùng để không lặp lại nguyên lý hoặc ảnh/dự án đã dùng (không dùng lại cùng một dự án trong 60 ngày gần nhất).
-- `INBOX/override/` (tuỳ chọn, có thì ưu tiên): `<tên>.jpg|png` ảnh do người dùng gửi + `<tên>.txt` (dòng 1 = credit đúng dạng `tên dự án · studio · nhiếp ảnh gia`, các dòng sau = nguyên lý muốn nói). Có thư mục này thì bỏ qua mục 2b, làm đúng như ảnh người dùng gửi.
+- KHO BÀI (mục 2a): nguồn thông tin duy nhất cho nội dung reel.
+- `INBOX/series.json`: danh sách các tập đã làm (số tập, bài trong kho đã dùng `bai_kho` = đường dẫn file + commit SHA của nhánh lúc đọc, nguyên lý, URL bài tạp chí và URL ảnh đã dùng, ngày). Nếu chưa có thì tạo mới. Dùng để không lặp lại bài trong kho, và không lặp lại ảnh/dự án (không dùng lại cùng một dự án trong 60 ngày gần nhất).
+- `INBOX/override/` (tuỳ chọn, có thì ưu tiên): `<tên>.jpg|png` ảnh do người dùng gửi + `<tên>.txt` (dòng 1 = credit đúng dạng `tên dự án · studio · nhiếp ảnh gia`, các dòng sau = đường dẫn bài trong KHO BÀI muốn dùng, nếu có). Có thư mục này thì bỏ qua phần tìm ảnh ở mục 2b, dùng ảnh người dùng gửi; nội dung vẫn lấy từ KHO BÀI (bài được chỉ định, hoặc bài chưa dùng tiếp theo theo mục 2a).
 - `INBOX/audio/<slug>.mp3|wav|m4a` (tuỳ chọn): giọng đọc ElevenLabs của chính tập này (người dùng làm từ file `elevenlabs.txt` của lần chạy trước). Có file này thì làm bước 9 (ghép tiếng) trong mục 4.
 - Xử lý xong: cập nhật `series.json`; ảnh override chuyển sang `INBOX/done/`.
 
-## 2b. Chọn nguyên lý và lấy ảnh từ tạp chí thiết kế (chế độ tự động)
+## 2a. KHO BÀI: nguồn thông tin của reel (bắt buộc)
+- Vị trí: GitHub `buithucdatqn-sketch/A---material`, nhánh `AH-Interior-notes`, thư mục `AH-Decode-Decor/` (https://github.com/buithucdatqn-sketch/A---material/tree/AH-Interior-notes/AH-Decode-Decor/).
+- Cách lấy: dùng add_repo cho `buithucdatqn-sketch/A---material` (chỉ cần quyền đọc), rồi `git clone --depth 1 -b AH-Interior-notes https://github.com/buithucdatqn-sketch/A---material /home/claude/material` (timeout ≥ 10 phút; chỉ MỘT lệnh git tại một thời điểm). Nếu thư mục đã có thì `git -C /home/claude/material pull origin AH-Interior-notes`. Nếu clone không được nhưng công cụ GitHub MCP đọc được kho thì đọc bằng `get_file_contents` (ref `refs/heads/AH-Interior-notes`). Gọi thư mục bài là KHO = `/home/claude/material/AH-Decode-Decor/`. KHÔNG sửa, commit hay push gì vào kho bài.
+- Đọc cấu trúc thư mục trước: nếu có README, mục lục, file hướng dẫn hay quy ước đặt tên (ví dụ số thứ tự, trạng thái "đã duyệt"/"nháp") thì làm theo. Mỗi bài thường là một file (`.md`, `.txt`, hoặc tài liệu khác) hoặc một thư mục con; file không phải bài (README, mẫu, ảnh, ghi chú chung) thì không tính là bài.
+- Chọn bài: bài CHƯA có trong `series.json` (so theo đường dẫn), theo thứ tự trong mục lục nếu có, không thì theo số thứ tự hoặc tên file tăng dần. Bỏ qua bài ghi rõ là nháp/chưa xong. Nếu bài lệch trọng tâm mục 1a (lý thuyết kiến trúc) thì bỏ qua, ghi vào `series.json` với `trang_thai: "bo_qua_lech_trong_tam"` kèm lý do, rồi lấy bài kế tiếp.
+- Đọc TOÀN BỘ bài (Read hết, không bỏ đoạn nào), kể cả phần nguồn tham khảo, ghi chú ảnh, gợi ý dự án nếu có. Bài dài hơn một reel: chọn MỘT ý chính đủ cho bảy phần B–H (mục 4a), phần còn lại có thể đưa vào caption; KHÔNG chia thành nhiều tập, không hẹn "tập sau". Đánh dấu cả bài là đã dùng.
+- Nếu bài có kèm ảnh, link ảnh hoặc gợi ý dự án minh hoạ thuộc bốn trang nguồn ở mục 2b: ưu tiên dùng (vẫn kiểm tiêu chí ảnh và lấy credit theo mục 2b). Ảnh bài gợi ý nằm ngoài bốn trang nguồn thì không dùng, tự tìm ảnh theo mục 2b.
+
+## 2b. Lấy ảnh từ tạp chí thiết kế (chế độ tự động)
 **Nguồn ảnh (chỉ các trang sau, không trang nào khác):** Yatzer (www.yatzer.com), Yellowtrace (www.yellowtrace.com.au), Dwell (www.dwell.com), Wallpaper* (www.wallpaper.com). Đã thử: bốn trang này truy cập được bằng `curl -A "Mozilla/5.0"`. The Local Project chặn truy cập tự động (403 Cloudflare) và Est Living chặn bằng captcha: KHÔNG dùng và KHÔNG cố vượt. Đầu mỗi lần chạy kiểm tra từng trang bằng `curl -sS -m 20 -L -A "Mozilla/5.0" -o /dev/null -w "%{http_code}" <URL>`; trang nào không trả 200 thì bỏ qua lần đó. Nếu không trang nào truy cập được thì dừng và báo (mục 9).
 Cách lấy ảnh theo trang (cấu trúc có thể đổi, hãy xem HTML thật):
 - Yatzer: trang bài chứa `https://media.yatzer.com/...jpg`; bản không hậu tố kích thước là bản gốc lớn nhất, `-1400x…` là dự phòng. Credit nhiếp ảnh: câu "Photography by …" trong bài.
@@ -37,23 +46,9 @@ Cách lấy ảnh theo trang (cấu trúc có thể đổi, hãy xem HTML thật
 - Wallpaper*: lấy ảnh từ thẻ `og:image`/`img` trong bài (ưu tiên URL lớn nhất); credit nằm ở chú thích ảnh hoặc cuối bài ("Photography: …").
 Mỗi lần chọn trang có ảnh phù hợp nguyên lý nhất; luân phiên giữa các trang để đa dạng, không dùng một trang quá hai ngày liên tiếp.
 
-**Chọn nguyên lý (task tự tìm và chọn lọc, không đợi người dùng)**
-1. Tự tìm nguyên tắc (đúng phạm vi mục 1a) trong chính các nguồn học thuật ở mục 3 (giáo trình, chuyên khảo, nghiên cứu có phản biện), không lấy từ các tạp chí ảnh. Dùng WebSearch/WebFetch để đọc chương, đoạn trích, abstract, rồi chọn MỘT nguyên lý mà: (a) được nêu rõ trong ít nhất 2 nguồn học thuật độc lập; (b) có thể minh hoạ bằng nét vẽ trên đồ đạc, màu, vật liệu hay cách bày đồ trong một ảnh nội thất; (c) đủ chất liệu cho cả bảy phần ở mục 4a trong 45–60 giây; (d) chưa dùng trong `series.json`; (e) đọc được NỘI DUNG giải thích (abstract đầy đủ, đoạn trích sách, toàn văn mở), không chỉ thấy tên nguyên lý trong mục lục. Chỉ thấy mục lục thì chưa đủ để nói cơ chế: chọn nguyên lý khác có nguồn đọc được.
-   Nên ưu tiên phạm vi hẹp và cụ thể (ví dụ "gần nhau: khoảng cách quyết định nhóm" thay vì "các nguyên lý Gestalt") để có chỗ đi sâu.
-2. Danh mục tham khảo để bắt đầu (không giới hạn, mở rộng được nếu vẫn đúng mục 1a và có nguồn xác minh):
-   - Màu: màu nền, màu phụ và màu nhấn; tỷ lệ phân bổ màu (60-30-10 chỉ là quy tắc kinh nghiệm của giới thực hành); bảng màu tương cận, bổ túc, bổ túc xẻ, tam giác; sắc độ (value) và độ bão hoà; màu nóng, màu lạnh và nhiệt độ màu ánh sáng; tương phản đồng thời (một màu trông khác nhau trên nền khác nhau, theo Albers); sắc trung tính và "undertone"; màu với cảm xúc và sở thích (chỉ theo nghiên cứu, không theo mẹo phong thuỷ).
-   - Đồ nội thất: dáng cong và dáng góc cạnh; trọng lượng thị giác (đồ chân cao, mặt kính, đồ sát sàn); tỷ lệ và scale của đồ so với phòng và với nhau; kích thước công thái học (chiều cao bàn, ghế, khoảng trống đi lại) theo sách chuẩn; đồ theo bộ và phối lẻ; một món "statement"; nguyên tắc của các nhà thiết kế đồ (form follows function, "less but better" của Dieter Rams…).
-   - Vật liệu và bề mặt: tương phản chất cảm (thô và mịn, bóng và mờ); vân gỗ, đá; vải và độ phản xạ; lặp vật liệu để tạo sự thống nhất.
-   - Bố cục và sắp xếp đồ: điểm nhấn của phòng; nhóm ghế trò chuyện; lối đi; cân bằng đối xứng và bất đối xứng của cách bày đồ; nhịp và lặp lại (đồ, màu, hình); khoảng thở; Gestalt (gần nhau, tương đồng, liên tục, khép kín) trong cách nhóm đồ và vật trang trí; thứ bậc thị giác.
-   - Hoạ tiết và vải: pha hoạ tiết theo tỷ lệ to, vừa, nhỏ; hoạ tiết và màu nối các món với nhau; kích thước thảm so với nhóm ghế.
-   - Đèn decor: ba lớp đèn (chung, tác vụ, điểm nhấn); đèn làm điểm nhấn thị giác; nhiệt độ màu bóng đèn ảnh hưởng màu đồ.
-   - Styling: treo tranh và nhóm tranh; bày kệ; nhóm vật trang trí theo chiều cao, chất liệu, màu; cây trong nội thất.
-3. Xoay vòng: ưu tiên nhóm chưa dùng nhiều; hết danh mục thì quay lại với góc nhìn khác. Ghi nguyên lý và các nguồn đã dùng vào `series.json`.
-4. Chỉ giữ nguyên lý nếu qua được mục 3 (≥ 3 nguồn đã xác minh ở mức tương xứng, trong đó phần cơ chế đọc được nội dung). Nếu không thì chọn nguyên lý khác.
-
-**Tìm ảnh minh hoạ trên các trang nguồn**
+**Tìm ảnh minh hoạ trên các trang nguồn** (nội dung đã chốt từ bài trong kho trước, ảnh sau)
 5. Lấy danh sách bài từ chuyên mục NỘI THẤT (interiors, interior design, design) hoặc sitemap của trang nguồn (chuyên mục nào 404 thì dùng sitemap). Ưu tiên bài về dự án do nhà thiết kế nội thất/studio nội thất thực hiện, nhà ở, căn hộ, khách sạn, nhà hàng có phần nội thất và đồ đạc nổi bật; tránh bài mà điểm chính là kiến trúc, hình khối hay cảnh quan. Ưu tiên bài mới. Mở bài, lấy các URL ảnh theo hướng dẫn từng trang ở trên.
-6. Tải về xem thử (Read ảnh) ít nhất 6–10 ảnh ứng viên, chọn ảnh minh hoạ RÕ NHẤT cho nguyên lý. Tiêu chí bắt buộc:
+6. Tải về xem thử (Read ảnh) ít nhất 6–10 ảnh ứng viên, chọn ảnh minh hoạ RÕ NHẤT cho ý chính của bài. Tiêu chí bắt buộc:
    - Ảnh nội thất ĐÃ HOÀN THIỆN, ảnh thật, không phải render, bản vẽ, sơ đồ hay ảnh quảng cáo có chữ/logo chèn lên.
    - Khung ngang (tỷ lệ rộng/cao từ 1,3 đến 1,9). KHÔNG dùng ảnh dọc hoặc vuông (engine khung hình tính cho ảnh ngang).
    - Cạnh dài ≥ 1800 px (bản gốc), nét, không mờ, không có người nhận diện được rõ mặt.
@@ -69,38 +64,22 @@ Mỗi lần chọn trang có ảnh phù hợp nguyên lý nhất; luân phiên g
 - Chỉ dùng ảnh làm minh hoạ phân tích (có bình luận và nét vẽ), không dùng làm ảnh quảng cáo; không cắt bỏ credit hay watermark nếu có.
 - Trong báo cáo cuối, ghi rõ dòng nhắc người dùng: "Ảnh lấy từ <tạp chí>, chưa có xin phép chính thức; cân nhắc xin phép nhiếp ảnh gia/tạp chí nếu đăng thương mại, và sẵn sàng gỡ khi có yêu cầu."
 
-## 3. QUY TẮC NGUỒN (bắt buộc, không ngoại lệ)
-Mọi nhận định phân tích (nguyên lý, cơ chế tri giác, quy tắc phối màu…) phải đối chiếu được với sách giáo trình, chuyên khảo hoặc nghiên cứu có phản biện. KHÔNG dùng blog, trang tạp chí decor, Pinterest, Wikipedia, trang thương mại, video, bài "mẹo trang trí" làm căn cứ.
-
-Quy trình cho từng nhận định đưa vào lời đọc:
-1. Gắn nó với một nguồn cụ thể: tác giả, tựa, năm, nhà xuất bản/tạp chí, chương hoặc DOI.
-2. Xác minh nguồn có thật bằng WebSearch/WebFetch ở nơi đáng tin: trang nhà xuất bản, DOI/Crossref, Google Books, thư viện đại học, PubMed, Semantic Scholar. Mức xác minh phải tương xứng với nhận định: thấy tên mục trong mục lục chỉ xác minh được "nguyên lý này có trong sách"; nhận định về cơ chế, lịch sử, điều kiện áp dụng phải đọc được đúng đoạn nói điều đó (abstract, đoạn trích, toàn văn). Ghi rõ mức đã đọc trong `sources.md`.
-   Kinh nghiệm truy cập (lần chạy 2026-10-06): WebFetch trong lần chạy tự động chỉ mở được URL đã xuất hiện trong kết quả WebSearch (URL tự gõ bị chặn vì không có ai duyệt), nên luôn WebSearch trước rồi mới mở đúng URL trong kết quả. PubMed và PMC trả trang kiểm tra bot (reCAPTCHA): không cố vượt, dùng trang khác có trong kết quả tìm kiếm như trang bản ghi của trường đại học (ví dụ experts.<trường>.edu), trang nhà xuất bản, tạp chí truy cập mở (Frontiers, PLOS, i-Perception, Journal of Vision), Internet Archive hoặc Google Books. Trang Wiley sản phẩm trả 403. Trang O'Reilly cho đọc mục lục, không cho đọc chương. Mỗi lần tìm, chạy nhiều WebSearch song song để có sẵn URL dự phòng.
-3. Không xác minh được: BỎ nhận định đó khỏi lời đọc. Tuyệt đối không dựa vào trí nhớ để bịa số trang, trích dẫn hay tên sách. Chỉ ghi số trang khi đã nhìn thấy tận nơi.
-4. Phân biệt rõ bản chất:
-   - Nguyên lý thiết kế hoặc lý thuyết: Gestalt, cân bằng, nhịp điệu, tỷ lệ, trọng tâm, tương phản…
-   - Phát hiện thực nghiệm: nghiên cứu tri giác, tâm lý màu…
-   - Quy tắc kinh nghiệm: ví dụ 60-30-10. Phải nói đây là "quy tắc kinh nghiệm của giới thực hành", không nói là "khoa học chứng minh".
-5. Không nói quá: tránh "luôn luôn", "đã được chứng minh" khi nguồn chỉ nói "có xu hướng". Giữ đúng mức độ chắc chắn của nguồn.
-6. Mỗi tập cần ít nhất 3 nguồn độc lập: ít nhất 1 sách giáo trình hoặc chuyên khảo (nguyên lý, cách áp dụng trong thiết kế), ít nhất 1 nghiên cứu có phản biện đọc được nội dung (cơ chế tri giác), và nguồn cho phần nguồn gốc lý thuyết (ai đề xuất, năm, bối cảnh; có thể là một trong hai nguồn trên nếu nguồn đó nêu rõ).
-7. Phần "cách áp dụng" và "chọn mua/chọn đồ": mỗi lời khuyên phải hoặc có nguồn giáo trình nói điều đó, hoặc là SUY LUẬN TRỰC TIẾP từ nguyên lý đã có nguồn; với loại sau ghi rõ trong `sources.md` là "suy luận áp dụng từ nguyên lý X" và diễn đạt trong lời đọc bằng "nên", "thử", không nói như sự thật khoa học. Không bịa số đo, ngưỡng, tỷ lệ; chỉ nêu con số khi nguồn nêu con số đó (hoặc khi đo được trên chính ảnh và nói rõ là "trong ảnh này"). Không nhắc thương hiệu, cửa hàng hay sản phẩm cụ thể.
-
-Danh sách nguồn gợi ý để tìm trước (vẫn phải xác minh từng lần, không coi là đã đúng):
-- Giáo trình thiết kế nội thất: Ching, F. D. K. & Binggeli, C. *Interior Design Illustrated* (Wiley); Kilmer, R. & Kilmer, W. O. *Designing Interiors* (Wiley); Nielson, K. J. & Taylor, D. A. *Interiors: An Introduction* (McGraw-Hill); Mitton, M. & Nystuen, C. *Residential Interior Design: A Guide to Planning Spaces* (Wiley); Pile, J. *Interior Design* và Pile, J. & Gura, J. *A History of Interior Design* (lịch sử nhà thiết kế nội thất, đồ nội thất).
-- Kích thước và công thái học: Panero, J. & Zelnik, M. *Human Dimension and Interior Space* (Whitney Library of Design).
-- Màu: Albers, J. *Interaction of Color* (Yale UP); Itten, J. *The Art of Color*.
-- Nguyên lý thị giác chung: Lidwell, W., Holden, K. & Butler, J. *Universal Principles of Design* (Rockport).
-- Thiết kế sản phẩm và đồ nội thất: Norman, D. *The Design of Everyday Things* và *Emotional Design* (Basic Books); lời của chính nhà thiết kế (ví dụ mười nguyên tắc của Dieter Rams) chỉ dùng để nói "nhà thiết kế X nói gì", không dùng làm bằng chứng khoa học.
-- Nghiên cứu: Palmer & Schloss (2010, PNAS) về sở thích màu; Schloss & Palmer (2011, Attention, Perception & Psychophysics) về phối cặp màu, hài hoà và tương đồng; Elliot & Maier (2014, Annual Review of Psychology) về màu và tâm lý; Bar & Neta (2006, Psychological Science) về sở thích với vật thể cong; Dazkir & Read (2012, Environment and Behavior) về dáng đồ nội thất cong hay góc cạnh và cảm xúc; các bài tri giác Gestalt có phản biện (ví dụ Wagemans et al. 2012, Psychological Bulletin).
-- KHÔNG dùng sách lý thuyết kiến trúc (Ching *Architecture: Form, Space, and Order*, Alexander *A Pattern Language*, Rasmussen, Pallasmaa, Zumthor, Hildebrand, Appleton…) làm nguồn chính của tập, vì lệch trọng tâm mục 1a.
-Nếu cần nguồn ngoài danh sách, chỉ nhận sách hoặc bài có phản biện, và phải xác minh như trên.
+## 3. QUY TẮC THÔNG TIN: CHỈ LẤY TỪ BÀI TRONG KHO (bắt buộc, không ngoại lệ)
+Bài trong KHO BÀI là nguồn thông tin duy nhất cho lời đọc, chữ trên khung và caption. Task không tự nghiên cứu (không WebSearch/WebFetch để tìm hay xác minh nội dung) và không tự viết thêm kiến thức.
+1. Mọi nhận định (nguyên lý, nguồn gốc, tên người, năm, cơ chế, số liệu, lời khuyên áp dụng và chọn đồ) phải có trong bài, đúng ý và đúng mức chắc chắn của bài. Ghi vị trí trong bài (tên file + tiêu đề mục hoặc đoạn, kèm trích ngắn) vào `sources.md`.
+2. Được phép: rút gọn, diễn đạt lại cho dễ nghe, đổi thứ tự cho tự nhiên, chọn ý; và mô tả điều nhìn thấy trực tiếp trên ảnh (gọi tên món đồ, màu, vật liệu trong ảnh, nói rõ là "trong ảnh này"). Không được: thêm tên, năm, số đo, tỷ lệ, nghiên cứu, ví dụ hay lời khuyên mà bài không có; dựa vào trí nhớ để bổ sung.
+3. Giữ nguyên cách bài phân loại và mức chắc chắn: bài gọi là "quy tắc kinh nghiệm" thì nói là quy tắc kinh nghiệm; bài nói "có xu hướng" thì không nói "luôn luôn" hay "đã được chứng minh". Lời khuyên dùng "nên", "thử" như bài.
+4. Nguồn tham khảo: nếu bài có danh mục nguồn thì chép đúng như bài ghi vào `sources.md` và chọn 2–3 nguồn chính cho caption; không tự xác minh lại, không thêm nguồn ngoài bài. Bài không có danh mục nguồn thì caption không ghi mục nguồn (không bịa), `sources.md` ghi rõ "bài không kèm nguồn".
+5. Nghi bài có lỗi (năm, tên, số liệu mâu thuẫn trong chính bài): không tự sửa theo trí nhớ; bỏ nhận định đó khỏi reel và ghi rõ trong báo cáo để người dùng kiểm tra bài gốc.
+6. Không nhắc thương hiệu, cửa hàng hay sản phẩm cụ thể trừ khi bài có và đó là tên đồ nội thất kinh điển (ví dụ ghế của một nhà thiết kế); không có trong bài thì không nhắc.
+7. Ngoại lệ duy nhất cho phép tra cứu trên web: tìm ảnh và credit ảnh ở bốn trang nguồn (mục 2b). Thông tin trên trang tạp chí chỉ dùng cho credit và mô tả dự án trong `source_info.md`, không dùng làm nội dung bài học.
 
 ## 4. Quy trình
-1. Chế độ tự động: chọn nguyên lý và tìm ảnh theo mục 2b (nguyên lý trước, ảnh sau). Chế độ override: xem kỹ ảnh người dùng gửi và xác định MỘT nguyên lý thấy rõ trong ảnh.
-2. Kiểm tra lại nguyên tắc đã chọn với phép thử mục 1a (áp dụng được bằng cách mua, đổi, sơn, dời, bày lại đồ). Tra và xác minh nguồn cho nguyên lý (mục 3) TRƯỚC khi viết kịch bản. Chọn nhận định có nguồn rồi mới viết. Nếu không đủ nguồn vững thì đổi nguyên lý (và có thể đổi ảnh).
-3. Trước khi viết lời, soạn `OUT/research.md`: ghi chép nghiên cứu theo đúng bảy phần ở mục 4a, mỗi ý kèm nguồn và đoạn đã đọc (tóm tắt ngắn hoặc trích ngắn). Kịch bản chỉ được dùng ý có trong `research.md`.
+1. Lấy KHO BÀI, chọn bài và đọc toàn bộ bài (mục 2a). Chế độ override: dùng bài được chỉ định trong file `.txt` nếu có.
+2. Kiểm tra bài và ý chính với phép thử mục 1a (áp dụng được bằng cách mua, đổi, sơn, dời, bày lại đồ). Bài lệch trọng tâm thì bỏ qua theo mục 2a.
+3. Trước khi viết lời, soạn `OUT/research.md`: ghi chú bài theo đúng bảy phần ở mục 4a, mỗi ý kèm vị trí trong bài (tiêu đề mục/đoạn) và trích ngắn đúng câu chữ của bài. Phần nào bài không có thì ghi "bài không có". Kịch bản chỉ được dùng ý có trong `research.md`. Sau đó tìm ảnh (chế độ tự động, mục 2b) hoặc xem ảnh override, chọn chi tiết trên ảnh khớp với ý của bài.
 4. Viết kịch bản 10–13 cảnh, tổng 45–60 giây, khoảng 110–160 từ lời đọc, theo mục 4a. Câu ngắn, dễ đọc, tự nhiên, tiếng Việt chuẩn. Lời đọc dùng để dán vào ElevenLabs nên không có ký hiệu lạ, không chú thích trong ngoặc. Mỗi cảnh tối đa khoảng 22 từ (hiển thị tối đa 3 dòng trên khung).
-5. Nhờ một agent khác chưa thấy quá trình làm đọc `research.md`, `script.md`, `sources.md` và chấm theo mục 4b (chiều sâu và nguồn). Sửa theo góp ý TRƯỚC khi dựng hình.
+5. Nhờ một agent khác chưa thấy quá trình làm đọc BÀI GỐC trong kho (đưa đường dẫn file), `research.md`, `script.md`, `sources.md` và chấm theo mục 4b (chiều sâu và trung thành với bài). Sửa theo góp ý TRƯỚC khi dựng hình.
 6. Đặt toạ độ doodle bằng cách tự xem ảnh (đọc ảnh bằng Read): trục, đường, hình bao đồ vật bằng đa giác thô theo toạ độ ảnh làm việc.
 7. Chạy engine khung hình (mục 5). Xem LẠI từng khung (mục 7). Sửa toạ độ rồi chạy lại cho đến khi đạt.
 8. Soạn `elevenlabs.txt` (mục 8b) từ lời đọc đã chốt.
@@ -111,31 +90,32 @@ Nếu cần nguồn ngoài danh sách, chỉ nhận sách hoặc bài có phản
 ## 4a. Cấu trúc kịch bản có chiều sâu (45–60 giây)
 Thứ tự gợi ý; được đảo thứ tự nếu kể tự nhiên hơn, nhưng phải đủ bảy phần nội dung (B–H). Thời lượng ghi là gợi ý.
 - A. Mở (1 cảnh, 3–4s): một quan sát CỤ THỂ trên ảnh dẫn vào câu hỏi (ví dụ "Hai mươi khung ảnh trên một bức tường, sao không rối?"). Không mở bằng câu chung như "Bạn có biết…".
-- B. Nguồn gốc nguyên tắc (1 cảnh, 4–5s): ai đề xuất hay làm nổi tiếng nó, năm nào, trong bối cảnh nào, theo đúng nguồn: nhà lý thuyết màu (Itten, Albers), nhà thiết kế nội thất hoặc nhà trang trí, nhà thiết kế đồ nội thất và tạo dáng công nghiệp, nhà nghiên cứu tri giác. Không lấy kiến trúc sư hay lý thuyết kiến trúc làm nguồn gốc. Chỉ nêu tên, năm khi đã đọc thấy trong nguồn.
-- C. Cơ chế, vì sao mắt thấy vậy (1–2 cảnh, 6–9s): giải thích bằng ngôn ngữ đời thường điều nguồn nghiên cứu nói (mắt/não làm gì, khi nào thì xảy ra, yếu tố nào mạnh hơn yếu tố nào nếu nguồn có nói). Đây là phần tạo chiều sâu chính, không được thay bằng câu định nghĩa.
+- B. Nguồn gốc nguyên tắc (1 cảnh, 4–5s): ai đề xuất hay làm nổi tiếng nó, năm nào, trong bối cảnh nào, theo đúng bài: nhà lý thuyết màu (Itten, Albers), nhà thiết kế nội thất hoặc nhà trang trí, nhà thiết kế đồ nội thất và tạo dáng công nghiệp, nhà nghiên cứu tri giác. Không lấy kiến trúc sư hay lý thuyết kiến trúc làm nguồn gốc. Chỉ nêu tên, năm khi bài có.
+- C. Cơ chế, vì sao mắt thấy vậy (1–2 cảnh, 6–9s): giải thích bằng ngôn ngữ đời thường điều bài nói (mắt/não làm gì, khi nào thì xảy ra, yếu tố nào mạnh hơn yếu tố nào nếu bài có nói). Đây là phần tạo chiều sâu chính, không được thay bằng câu định nghĩa.
 - D. Đọc trên ảnh (2–3 cảnh, 10–14s): mỗi cảnh một chi tiết, zoom vào đúng MÓN ĐỒ, MẢNG MÀU, VẬT LIỆU hay NHÓM ĐỒ, gọi tên nó và chỉ ra nguyên lý đang hoạt động thế nào ở đó (màu gì lặp ở đâu, dáng ghế ra sao, chất liệu nào đặt cạnh chất liệu nào, khoảng cách giữa các món…).
 - E. Lỗi hay gặp hoặc phản ví dụ (1 cảnh, 4–6s): nếu làm sai thì trông thế nào. Không dựng ảnh khác; dùng chính ảnh với nét gợi ý (ví dụ mũi tên "nếu dời khung này ra xa…") hoặc chỉ vào chỗ trong ảnh mà nguyên lý bị phá có chủ ý.
-- F. Cách áp dụng cụ thể (1 cảnh, 4–6s): một hai việc người xem làm được ngay trong nhà mình, đủ cụ thể để làm theo (theo mục 3.7).
-- G. Chọn mua, chọn đồ (1 cảnh, 4–6s): nguyên tắc này đổi cách chọn đồ thế nào: chọn dáng, màu, kích thước, chất liệu, hoạ tiết, chọn theo bộ hay phối lẻ, chọn bao nhiêu món; theo mục 3.7. Đây là phần người xem cần nhất, phải cụ thể.
+- F. Cách áp dụng cụ thể (1 cảnh, 4–6s): một hai việc người xem làm được ngay trong nhà mình, đủ cụ thể để làm theo, lấy từ bài (mục 3).
+- G. Chọn mua, chọn đồ (1 cảnh, 4–6s): nguyên tắc này đổi cách chọn đồ thế nào: chọn dáng, màu, kích thước, chất liệu, hoạ tiết, chọn theo bộ hay phối lẻ, chọn bao nhiêu món; lấy từ bài (mục 3). Đây là phần người xem cần nhất, phải cụ thể.
 - H. Công thức (1 cảnh, 3–4s): một câu tóm tắt dễ nhớ, có thông tin (không phải khẩu hiệu rỗng).
 - I. Cảnh cuối (1 cảnh, 7–9s, tính trong tổng 45–60 giây): nhắc AH Decode là series về nguyên tắc thiết kế và chọn đồ decor, mời theo dõi Fanpage Giả Thuyết Kiến Trúc và nhắc bài viết về kiến trúc dành riêng cho thành viên ở link bình luận. KHÔNG nhắc tập sau, không đọc nguồn hay credit. Lời đọc mẫu (giữ ngắn, khoảng 25 từ): "AH Decode, series về nguyên tắc thiết kế và chọn đồ decor. Theo dõi Giả Thuyết Kiến Trúc, bài viết cho thành viên ở link bình luận."
 Quy tắc chiều sâu:
+- Nội dung B–H lấy từ bài (mục 3). Bài không có nội dung cho một phần thì gộp hoặc bỏ phần đó, ghi rõ trong `script.md` và báo cáo; KHÔNG tự nghiên cứu hay tự viết để lấp chỗ trống. Riêng phần D (đọc trên ảnh) luôn làm được vì là quan sát trên ảnh.
 - Mỗi cảnh phải chứa ít nhất một thông tin cụ thể (tên người/khái niệm, cơ chế, điều kiện, vật cụ thể trong ảnh, việc làm cụ thể). Câu nào bỏ đi mà người xem không mất thông tin gì thì bỏ.
 - Cấm các cụm chung chung không kèm giải thích: "tạo cảm giác hài hoà", "trông đẹp hơn", "thu hút ánh nhìn", "tạo điểm nhấn", "cân bằng thị giác" khi chưa nói vì sao và bằng cách nào.
 - Không lặp lại cùng một ý bằng chữ khác để kéo dài thời lượng.
 - Ngân sách chữ chặt: 110–160 từ cho CẢ 13 cảnh, nên mỗi câu phải gọn. Cách làm đã dùng ở tập 2: viết dữ liệu cảnh một lần trong script sinh engine, tự tính thời lượng mỗi cảnh = 0,7 giây + số từ / 3,2 (tối thiểu 3,5 giây), rồi in tổng số từ và tổng thời lượng để cắt cho vừa trước khi dựng.
-- Lời khuyên (phần E, F, G) dùng "nên", "thử", "nên tránh"; không viết "Vì vậy…" như thể suy luận là kết luận của nghiên cứu.
+- Lời khuyên (phần E, F, G) lấy từ bài, dùng "nên", "thử", "nên tránh"; không viết "Vì vậy…" như thể suy luận là kết luận của nghiên cứu.
 
 ## 4b. Tự chấm trước khi dựng hình
 Agent đọc lại (bước 5) trả lời có/không cho từng câu, kèm lý do:
 0. Tập có đúng trọng tâm mục 1a không (nội thất, decor, màu, đồ đạc, vật liệu, bố cục đồ; không phải lý thuyết kiến trúc)? Có câu, cảnh hay nguồn nào lệch sang kiến trúc không? Có thì phải sửa, kể cả đổi nguyên tắc.
 1. Có đủ bảy phần B–H, mỗi phần có ít nhất một ý cụ thể?
-2. Phần cơ chế có nói được vì sao (không chỉ nhắc lại định nghĩa)? Có nguồn đọc được nội dung tương ứng?
+2. Phần cơ chế có nói được vì sao (không chỉ nhắc lại định nghĩa)? Có đúng điều bài viết không?
 3. Người xem có học được ít nhất ba điều cụ thể họ có thể chưa biết? Liệt kê ba điều đó.
-4. Có câu chung chung, lặp ý hoặc nói quá nguồn nào không? Liệt kê.
-5. Lời khuyên áp dụng và chọn đồ có làm theo được ngay không, và có đúng mục 3.7 không?
-6. Mọi nhận định đều có dòng tương ứng trong `sources.md`?
-Có câu trả lời "không" thì sửa kịch bản hoặc tìm thêm nguồn, rồi mới dựng hình.
+4. Có câu chung chung, lặp ý hoặc nói quá bài nào không? Liệt kê.
+5. Lời khuyên áp dụng và chọn đồ có làm theo được ngay không, và có đúng như bài không?
+6. Mọi nhận định đều có trong bài gốc và có dòng tương ứng (vị trí trong bài) trong `sources.md`? Có tên, năm, số liệu, lời khuyên nào ngoài bài không? Liệt kê.
+Có câu trả lời "không" thì sửa kịch bản cho đúng bài (không tìm thêm nguồn ngoài bài), rồi mới dựng hình.
 
 ## 5. Engine dựng khung (thư mục ENGINE = REPO/engine)
 Gồm: `engine_video.py` (mục 5b), `engine_storyboard_v7.py` (chạy bằng `python3 -I`; script tự thêm thư mục của nó vào sys.path), `silhouette.py`, `PatrickHand-Regular.ttf`, `reel1_source_example.png` (ảnh mẫu tập #1). Cần: Python 3, Pillow, numpy, opencv-python (pip cần `--break-system-packages`), ffmpeg.
@@ -180,41 +160,45 @@ Nếu một cảnh quá ngắn để vẽ hết nét (cảnh nhiều nét mà d�
 - Chữ đọc rõ, có đủ dấu tiếng Việt, không bị cắt, không đè lên nét vẽ khó đọc, không nằm vắt ngang mép ảnh.
 - Lời đọc khớp với hình trong cùng cảnh, tổng thời lượng 45–60 giây (tốc độ đọc khoảng 2,5–3 từ/giây), 110–160 từ.
 - Đủ bảy phần nội dung B–H của mục 4a; đã qua tự chấm mục 4b.
-- Từng nhận định trong lời đọc đều có dòng tương ứng trong `sources.md` đã xác minh ở mức tương xứng (mục 3.2); không có nhận định mồ côi.
+- Từng nhận định trong lời đọc đều có trong bài gốc và có dòng tương ứng trong `sources.md` (mục 3.1); không có nhận định ngoài bài.
 - Video: trích ít nhất 12 khung (đầu, giữa quá trình vẽ, cuối từng cảnh chính, khung cuối) để kiểm tra: nét vẽ đã đủ khi cảnh kết thúc, không có nét của cảnh cũ lẫn sang cảnh mới, chữ không bị cắt, chuyển cảnh không giật. Kiểm tra `ffprobe`: 1080×1920, h264, có track âm thanh, thời lượng đúng dự kiến.
 - Không có logo, thương hiệu hay tên người xuất hiện sai trong khung.
 Kịch bản và nguồn đã được agent độc lập chấm ở bước 5 mục 4; nếu sau đó kịch bản còn đổi, nhờ đọc lại lần nữa.
 
 ## 8. Đầu ra (OUT = INBOX/out/<YYYY-MM-DD>_<slug>/)
-- `research.md`: ghi chép nghiên cứu theo bảy phần mục 4a (bước 3 mục 4).
+- `research.md`: ghi chú bài theo bảy phần mục 4a, kèm vị trí và trích ngắn trong bài (bước 3 mục 4). Đầu file ghi bài đã dùng: đường dẫn trong kho, link GitHub, commit SHA.
 - `script.md`: bảng cảnh (thời lượng, phần nội dung A–I, tiêu đề, lời đọc, hình) + phần lời đọc liền mạch + kết quả tự chấm mục 4b.
 - `elevenlabs.txt`: văn bản thuần để người dùng dán thẳng vào ElevenLabs (mục 8b).
 - `source_info.md`, `original/`.
 - `frames/scene_*.png` + `storyboard.png` + `frames.zip`.
 - `reel_<slug>_silent.mp4` (và `reel_<slug>_final.mp4` nếu đã có audio).
-- `sources.md`: mỗi nhận định → nguồn (tác giả, tựa, năm, NXB/tạp chí, chương/DOI, link nơi đã xác minh) → mức chắc chắn (nguyên lý / thực nghiệm / quy tắc kinh nghiệm) → đã xác minh bằng gì.
-- `caption.txt`: caption đăng bài có chiều sâu, bổ sung cho reel (không chép lại lời đọc): vài đoạn ngắn về nguồn gốc, cơ chế, cách áp dụng và gợi ý chọn đồ, cùng quy tắc nguồn như lời đọc; rồi dòng giới thiệu và mời "AH Decode là series mới của Giả Thuyết Kiến Trúc, phân tích các nguyên tắc thiết kế và cách chọn đồ decor. Theo dõi Fanpage Giả Thuyết Kiến Trúc. Các bài viết về kiến trúc dành riêng cho thành viên: link ở phần bình luận."; rồi 2–3 nguồn chính (sách/nghiên cứu), credit ảnh đầy đủ và link bài gốc của tạp chí; hashtag vừa phải. Không tự điền link thành viên (người dùng tự dán vào bình luận).
-- Gửi cho người dùng (SendUserFile): `elevenlabs.txt` đầu tiên, rồi video, ảnh bảng phân cảnh, `script.md`, `sources.md`, `caption.txt`; kèm tóm tắt tối đa 6 dòng: nguyên lý, ba điều người xem học được, nguồn chính, điểm cần duyệt, credit đã có hay còn thiếu, và nhắc "gửi lại file giọng đọc vào INBOX/audio để ghép tiếng".
+- `sources.md`: mỗi nhận định → vị trí trong bài (file + mục/đoạn + trích ngắn) → mức chắc chắn theo bài (nguyên lý / thực nghiệm / quy tắc kinh nghiệm) → nguồn mà bài dẫn cho ý đó (nếu có, chép đúng như bài). Cuối file: danh mục nguồn tham khảo của bài.
+- `caption.txt`: caption đăng bài có chiều sâu, bổ sung cho reel (không chép lại lời đọc): vài đoạn ngắn về nguồn gốc, cơ chế, cách áp dụng và gợi ý chọn đồ, lấy từ bài theo cùng quy tắc mục 3 như lời đọc; rồi dòng giới thiệu và mời "AH Decode là series mới của Giả Thuyết Kiến Trúc, phân tích các nguyên tắc thiết kế và cách chọn đồ decor. Theo dõi Fanpage Giả Thuyết Kiến Trúc. Các bài viết về kiến trúc dành riêng cho thành viên: link ở phần bình luận."; rồi 2–3 nguồn chính lấy từ danh mục nguồn của bài (nếu bài có), credit ảnh đầy đủ và link bài gốc của tạp chí; hashtag vừa phải. Không tự điền link thành viên (người dùng tự dán vào bình luận).
+- Gửi cho người dùng (SendUserFile): `elevenlabs.txt` đầu tiên, rồi video, ảnh bảng phân cảnh, `script.md`, `sources.md`, `caption.txt`; kèm tóm tắt tối đa 6 dòng: bài đã dùng trong kho, nguyên lý, ba điều người xem học được, điểm cần duyệt (kể cả phần bài thiếu hoặc nghi lỗi), credit đã có hay còn thiếu, và nhắc "gửi lại file giọng đọc vào INBOX/audio để ghép tiếng".
 Đây là BẢN NHÁP chờ người dùng duyệt. Không đăng, không gửi đi đâu khác.
 
 ## 8b. Quy cách `elevenlabs.txt`
 Mục tiêu: người dùng mở file, chọn tất cả, dán vào ElevenLabs, không phải sửa gì.
 - Chỉ có lời đọc, theo đúng thứ tự cảnh. Không đánh số cảnh, không tiêu đề, không chú thích, không ngoặc chỉ dẫn, không emoji, không hashtag, không tên file.
 - Mỗi cảnh một đoạn; giữa các đoạn cách một dòng trống. Trong đoạn, mỗi câu một dòng.
-- Đọc được thành tiếng một cách tự nhiên: viết số, ký hiệu và từ viết tắt thành chữ (ví dụ "60-30-10" thành "sáu mươi, ba mươi, mười"; "≠" thành "không bằng"; "%" thành "phần trăm"). Tên riêng nước ngoài giữ nguyên chính tả, nếu khó đọc thì thêm cách đọc phiên âm tiếng Việt.
+- Đọc được thành tiếng một cách tự nhiên: viết số, ký hiệu và từ viết tắt thành chữ (ví dụ "60-30-10" thành "sáu mươi, ba mươi, mười"; "≠" thành "không bằng"; "%" thành "phần trăm").
+- PHIÊN ÂM SẴN mọi tên và từ tiếng Anh (hoặc tiếng nước ngoài khác) ngay trong lời đọc, để người dùng dán thẳng vào ElevenLabs, KHÔNG phải sửa gì: tên người, tên tác phẩm, tên series, thuật ngữ tiếng Anh. Viết theo âm tiếng Việt, các âm tiết nối bằng gạch nối, không để kèm chính tả gốc trong ngoặc. Ví dụ: "AH Decode" → "Ây-ết Đi-cốt"; "decor" → "đê-co"; "Hogarth" → "Hô-gát"; "Dieter Rams" → "Đi-tơ Ram"; "Charles và Ray Eames" → "Sác-lơ và Rây Im-xơ"; "Hans Wegner" → "Han Ve-gơ-nơ"; "Josef Albers" → "Giô-dép An-bơ"; "Bauhaus" → "Bao-hao". Chọn cách đọc theo ngôn ngữ gốc của tên (tên Đức đọc kiểu Đức…). Giữ CÙNG một cách phiên âm cho cùng một tên trong cả file.
+- Chỉ `elevenlabs.txt` dùng phiên âm. Chữ trên khung hình, `script.md` và `caption.txt` giữ chính tả gốc. Trong `script.md` thêm bảng nhỏ "Phiên âm cho ElevenLabs" (chính tả gốc → phiên âm) để người dùng tra.
 - Dấu câu để điều khiển nhịp: dấu phẩy và chấm đủ rõ; chỗ cần ngắt dài hơn thì dùng dấu "..." hoặc dòng trống, không chèn thẻ kỹ thuật. Câu ngắn, tối đa khoảng 18 từ.
-- Độ dài khớp thời lượng cảnh trong `SCENES`: khoảng 2,5–3 từ mỗi giây, trừ khoảng 0,7 giây chuyển cảnh ở đầu mỗi cảnh. Cuối file ghi thêm một dòng riêng NGOÀI phần dán: `--- Gợi ý cài đặt: giọng nữ hoặc nam trầm ấm, tốc độ 1.0, mô hình đa ngôn ngữ, ngôn ngữ Vietnamese ---` để người dùng tham khảo (dòng này phân tách bằng một dòng trống và dấu `---`, người dùng chỉ dán phần phía trên).
-- Cảnh cuối chỉ đọc câu giới thiệu series AH Decode, lời mời theo dõi Fanpage Giả Thuyết Kiến Trúc và nhắc bài viết về kiến trúc dành riêng cho thành viên, link ở phần bình luận (mẫu ở mục 4a, phần I). Không gợi ý tập sau, không đọc nguồn hay credit. Giữ chữ "AH Decode" như tên riêng; dòng gợi ý cài đặt cuối file thêm câu: "nếu ElevenLabs đọc sai tên AH Decode, thay bằng cách viết theo âm bạn muốn".
+- Độ dài khớp thời lượng cảnh trong `SCENES`: khoảng 2,5–3 từ mỗi giây, trừ khoảng 0,7 giây chuyển cảnh ở đầu mỗi cảnh. Cuối file ghi thêm một dòng riêng NGOÀI phần dán: `--- Gợi ý cài đặt: giọng nữ hoặc nam trầm ấm, tốc độ 1.0, mô hình đa ngôn ngữ, ngôn ngữ Vietnamese ---` để người dùng tham khảo (dòng này phân tách bằng một dòng trống và dấu `---`, người dùng chỉ dán phần phía trên). Không ghi chú tên riêng hay cách đọc ở dòng này vì lời đọc đã phiên âm sẵn.
+- Cảnh cuối chỉ đọc câu giới thiệu series AH Decode, lời mời theo dõi Fanpage Giả Thuyết Kiến Trúc và nhắc bài viết về kiến trúc dành riêng cho thành viên, link ở phần bình luận (mẫu ở mục 4a, phần I). Không gợi ý tập sau, không đọc nguồn hay credit. Cảnh cuối trong `elevenlabs.txt` viết dạng phiên âm, ví dụ: "Ây-ết Đi-cốt, series về nguyên tắc thiết kế và chọn đồ đê-co. Theo dõi Giả Thuyết Kiến Trúc, bài viết cho thành viên ở link bình luận." ("series" và "link" là từ quen dùng trong tiếng Việt, giữ nguyên.)
 
 ## 9. Khi gặp sự cố
 - Không truy cập được trang nguồn nào hoặc không tìm được ảnh đạt tiêu chí sau khi xem ít nhất 10 ứng viên: dừng, báo rõ lý do và các ảnh/bài đã thử; KHÔNG chuyển sang nguồn ảnh khác, KHÔNG lấy ảnh từ Google/Pinterest.
-- Ảnh quá nhỏ (<1200 px cạnh dài), quá tối, hoặc không minh hoạ được nguyên lý nào có nguồn: vẫn làm bản tốt nhất có thể, ghi rõ hạn chế (ví dụ zoom bị mềm) và đề nghị ảnh khác.
-- Không đọc được nội dung nguồn cho phần cơ chế (chỉ thấy mục lục/tên): đổi sang nguyên lý khác có nguồn đọc được; thử tối đa 3 nguyên lý. Vẫn không được thì làm bản tốt nhất với nguyên lý có nguồn mạnh nhất, ghi rõ nhận định nào chưa xác minh và để người dùng quyết định. KHÔNG giao kịch bản như thể đã đủ nguồn.
+- Ảnh quá nhỏ (<1200 px cạnh dài), quá tối, hoặc không minh hoạ được ý chính của bài: vẫn làm bản tốt nhất có thể, ghi rõ hạn chế (ví dụ zoom bị mềm) và đề nghị ảnh khác.
+- Không truy cập được KHO BÀI (add_repo/clone/GitHub MCP đều lỗi, hoặc không thấy thư mục `AH-Decode-Decor/` trên nhánh `AH-Interior-notes`): dừng, báo lỗi cụ thể. KHÔNG tự nghiên cứu để thay thế.
+- Hết bài chưa dùng trong kho: dừng và báo người dùng thêm bài; không tự viết bài mới, không dùng lại bài cũ.
+- Bài thiếu nội dung cho một vài phần B–H: làm với phần bài có (mục 4a), ghi rõ phần thiếu trong báo cáo. Bài quá mỏng để làm reel 45–60 giây có chiều sâu: vẫn làm bản tốt nhất, ghi rõ hạn chế; không tự bổ sung kiến thức ngoài bài.
 - Dựng video quá thời gian hoặc ffmpeg lỗi: vẫn giao khung hình, script và `elevenlabs.txt`, nói rõ video chưa dựng được và vì sao.
 - Công cụ lỗi (mạng, thư viện): thử lại một lần, rồi báo lỗi cụ thể thay vì bỏ qua bước.
 
 ## 10. Việc KHÔNG làm
-- Không dùng nguồn web thường thức. Không dựa trí nhớ để dẫn sách/nghiên cứu.
+- Không tự nghiên cứu, không lấy thông tin nội dung từ web hay từ trí nhớ; chỉ dùng bài trong KHO BÀI (mục 3). Không sửa hay push gì vào kho bài.
 - Không đổi quy cách hình ảnh ở mục 6. Không sketch hoá ảnh dự án. Không bỏ credit.
 - Không dùng ảnh/đồ hoạ ngoài ảnh đã chọn từ bốn trang nguồn ở mục 2b (hoặc ảnh người dùng gửi ở chế độ override). Không dùng Est Living, The Local Project hay bất kỳ nguồn ảnh nào khác.
 - Không đổi nhịp chuyển cảnh/vẽ nét đã duyệt (mục 5b), không thêm nhạc nền, hiệu ứng hay phụ đề chạy chữ khi chưa được yêu cầu.
