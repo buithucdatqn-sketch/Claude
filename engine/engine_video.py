@@ -30,9 +30,9 @@ END_LINES = [
     (1108, "và cách chọn đồ decor", 40, 215),
     (1200, "Theo dõi Fanpage", 58, 235),
     (1268, "Giả Thuyết Kiến Trúc", 104, 255),
-    (1440, "Bài viết về kiến trúc dành riêng", 54, 240),
-    (1502, "cho thành viên", 54, 240),
-    (1590, "Link ở phần bình luận", 64, 255),
+    (1440, "Bài viết phân tích đầy đủ", 54, 240),
+    (1502, "xem ở dòng đầu tiên", 54, 240),
+    (1590, "trong phần bình luận", 64, 255),
 ]
 INK = (46, 38, 32)
 PAPER = (229, 215, 191)  # beige print margin
