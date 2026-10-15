@@ -13,30 +13,29 @@ TRANS = 0.7
 WIDE = "WIDE"
 SC = [
     dict(part="A", head="Vì sao khối xanh giữ vai chính?", cam=WIDE, dark=False, dd=[],
-         vo="Khối xanh giữa nhà giữ vai chính. Vì sao?"),
-    dict(part="B", head="Cách thứ nhất: nền lùi", cam=((900, 1000), 2.2, (540, 900)), dark=False, dd=[],
-         vo="Kilmer và Kilmer: tường, sàn trung tính, màu đậm dồn vào đồ đạc.",
-         tts="Kin-mơ và Kin-mơ: tường, sàn trung tính, màu đậm dồn vào đồ đạc."),
-    dict(part="B", head="Mắt đọc màu theo xung quanh", cam=((700, 700), 2.2, (540, 900)), dark=False, dd=[],
-         vo="Albers, 1963: mắt đọc màu theo xung quanh.",
-         tts="An-bơ, năm một chín sáu ba: mắt đọc màu theo xung quanh."),
+         vo="Giữa căn hộ là một khối xanh đậm. Vì sao nó giữ vai chính?"),
+    dict(part="B", head="Tường, sàn trung tính; màu dồn vào đồ", cam=((900, 1000), 2.2, (540, 900)), dark=False, dd=[],
+         vo="Sách Designing Interiors của Kilmer và Kilmer gợi ý: giữ tường, sàn trung tính, dồn màu đậm vào đồ đạc.",
+         tts="Sách Đi-dai-ninh In-tia-ri-ơ của Kin-mơ và Kin-mơ gợi ý: giữ tường, sàn trung tính, dồn màu đậm vào đồ đạc."),
     dict(part="D", head="Màu trung tính lùi về nền", cam=((800, 1550), 1.7, (540, 880)), free=True, dark=True, dd=["arr1", "lab1"],
-         vo="Bê tông, sàn gỗ, rèm: trung tính."),
-    dict(part="D", head="Một khối duy nhất có màu mạnh", cam=((1150, 1900), 2.1, (700, 800)), free=True, dark=True, dd=["arr2", "lab2"],
-         vo="Khối xanh là màu mạnh duy nhất trong khung."),
-    dict(part="C", head="Trong khối: nền và nhấn đảo vai", cam=((450, 1400), 2.2, (540, 900)), dark=False, dd=[],
-         vo="Đứng trong khối xanh, như ở bếp: xanh thành nền, đồ nhỏ sáng màu là điểm nhấn."),
-    dict(part="E", head="Thử hình dung: tường cũng sơn màu", cam=((300, 450), 2.4, (540, 900)), dark=False, dd=[],
-         vo="Tường cũng sơn màu thì khối xanh hẳn mất vị trí trung tâm."),
-    dict(part="F", head="Thử ngay trong nhà", cam=((1100, 1400), 2.2, (540, 900)), dark=False, dd=[],
-         vo="Tụi mình chọn màu chủ đạo cho khối lớn nhất, thường tủ hoặc sàn gỗ. Rồi đứng ở cửa, bàn ăn: nó là đồ hay nền?"),
-    dict(part="G", head="Chọn màu cho mảng lớn", cam=((1100, 1750), 2.4, (540, 900)), dark=False, dd=[],
-         vo="Màu phủ mảng lớn trông đậm hơn mẫu nhỏ: nên chọn nhạt hơn một bậc."),
-    dict(part="H", head="Công thức", cam=WIDE, dark=False, dd=[],
-         vo="Theo tụi mình: đừng chỉ hỏi màu gì, hãy hỏi màu ấy định sơn ở đâu."),
+         vo="Ở đây, trần bê tông, sàn gỗ và rèm trắng đều trung tính, nên chúng lùi về làm nền."),
+    dict(part="D", head="Một khối có màu mạnh", cam=((1150, 1900), 2.1, (700, 800)), free=True, dark=True, dd=["arr2", "lab2"],
+         vo="Khối xanh vì thế là màu mạnh duy nhất trong tầm mắt."),
+    dict(part="E", head="Để vỏ nhà yên lặng", cam=((300, 450), 2.4, (540, 900)), dark=False, dd=[],
+         vo="Theo tác giả, điều đáng giá nhất là để vỏ nhà yên lặng. Tường mà cũng sơn màu, khối xanh hẳn mất vai chính."),
+    dict(part="C", head="Bước vào trong: nền và nhấn đảo vai", cam=((450, 1400), 2.2, (540, 900)), dark=False, dd=[],
+         vo="Nhưng khi bước vào bếp trong khối, vai trò đảo ngược: xanh đậm thành nền, đồ nhỏ sáng màu thành điểm nhấn."),
+    dict(part="F", head="Bắt đầu từ khối lớn nhất", cam=((1100, 1400), 2.2, (540, 900)), dark=False, dd=[],
+         vo="Ở nhà mình, thử chọn màu chủ đạo cho khối lớn nhất, thường là dãy tủ hoặc sàn gỗ."),
+    dict(part="F", head="Món đồ hay phông nền?", cam=((600, 1700), 2.2, (540, 900)), dark=False, dd=[],
+         vo="Rồi đứng ở cửa hay bàn ăn, xem khối ấy là món đồ, hay đã thành phông nền."),
+    dict(part="G", head="Chọn sơn cho mảng lớn", cam=((1100, 1750), 2.4, (540, 900)), dark=False, dd=[],
+         vo="Sơn mảng lớn nên chọn nhạt hơn mẫu thử một bậc, vì lên tường rộng, màu luôn trông đậm hơn."),
+    dict(part="H", head="Chốt lại", cam=WIDE, dark=False, dd=[],
+         vo="Vậy trước khi hỏi màu gì, hãy hỏi: màu ấy sơn ở đâu?"),
     dict(part="I", head="end", cam="END", dark=False, vo="", dd=[],
-         tts="Ây-ết Đi-cốt, series về nguyên tắc thiết kế và chọn đồ đê-co. Theo dõi Giả Thuyết Kiến Trúc, bài viết cho thành viên ở link bình luận.",
-         say="AH Decode, series về nguyên tắc thiết kế và chọn đồ decor. Theo dõi Giả Thuyết Kiến Trúc, bài viết cho thành viên ở link bình luận."),
+         tts="Ây-ết Đi-cốt, series về nguyên tắc thiết kế và chọn đồ đê-co. Theo dõi Giả Thuyết Kiến Trúc. Bài viết phân tích đầy đủ xem ở dòng đầu tiên trong phần bình luận.",
+         say="AH Decode, series về nguyên tắc thiết kế và chọn đồ decor. Theo dõi Giả Thuyết Kiến Trúc. Bài viết phân tích đầy đủ xem ở dòng đầu tiên trong phần bình luận."),
 ]
 
 DOODLE = r'''
@@ -139,7 +138,7 @@ def build(src, dst, video, data):
         s = s.replace("Camera zoom vào ảnh khi nói đến chi tiết · ~28 giây · nét vẽ chạy animation theo nhịp lời đọc",
                       "Camera zoom vào chi tiết · nét doodle gốc của bài lộ dần theo lời đọc")
         s = s.replace("Ảnh tối ~14% ở cảnh có nét vẽ; cảnh 1, 6, 7 giữ ảnh nguyên bản.",
-                      "Ảnh tối ~14% ở cảnh có nét vẽ (cảnh 4, 5); các cảnh khác giữ ảnh nguyên bản.")
+                      "Ảnh tối ~14% ở cảnh có nét vẽ (cảnh 3, 4); các cảnh khác giữ ảnh nguyên bản.")
     open(OUT + "engine_ep05/" + dst, "w").write(s)
 
 
@@ -149,7 +148,7 @@ build("engine_video.py", "engine_video_ep05.py", True, data)
 
 # ---- script.md + elevenlabs.txt ----
 NAMES = dict(A="Mở", B="Nguồn gốc", C="Cơ chế", D="Đọc trên ảnh", E="Phản ví dụ", F="Áp dụng",
-             G="Chọn đồ", H="Công thức", I="Cảnh cuối")
+             G="Chọn đồ", H="Chốt", I="Cảnh cuối")
 shown = [s.get("say", s["vo"]) for s in SC]
 spoken_all = [s.get("tts", s["vo"]) for s in SC]
 nw = sum(words(x) for x in shown)
@@ -167,7 +166,7 @@ md = (f"# AH Decode · Nền lùi, màu dồn một khối · BẢN NHÁP chờ 
       "| # | Thời lượng | Phần | Tiêu đề trên khung | Lời đọc | Hình |\n|---|---|---|---|---|---|\n" + "\n".join(rows) +
       "\n\n## Lời đọc liền mạch\n\n" + " ".join(shown) + "\n\n"
       "## Phiên âm cho ElevenLabs\n\n| Chính tả gốc | Phiên âm |\n|---|---|\n"
-      "| Kilmer | Kin-mơ |\n| Albers | An-bơ |\n| 1963 | năm một chín sáu ba |\n"
+      "| Kilmer | Kin-mơ |\n| Designing Interiors | Đi-dai-ninh In-tia-ri-ơ |\n"
       "| AH Decode | Ây-ết Đi-cốt |\n| decor | đê-co |\n")
 open(OUT + "script.md", "w").write(md)
 

@@ -30,9 +30,9 @@ END_LINES = [
     (1108, "và cách chọn đồ decor", 40, 215),
     (1200, "Theo dõi Fanpage", 58, 235),
     (1268, "Giả Thuyết Kiến Trúc", 104, 255),
-    (1440, "Bài viết về kiến trúc dành riêng", 54, 240),
-    (1502, "cho thành viên", 54, 240),
-    (1590, "Link ở phần bình luận", 64, 255),
+    (1440, "Bài viết phân tích đầy đủ", 54, 240),
+    (1502, "xem ở dòng đầu tiên", 54, 240),
+    (1590, "trong phần bình luận", 64, 255),
 ]
 INK = (46, 38, 32)
 PAPER = (229, 215, 191)  # beige print margin
@@ -498,27 +498,27 @@ OBJ = {}
 
 WIDE = (CENTER, 1.0, (540, 940))
 SCENES = [
-    dict(t="0–3.5s", head="Vì sao khối xanh giữ vai chính?", vo="Khối xanh giữa nhà giữ vai chính. Vì sao?",
+    dict(t="0–5.1s", head="Vì sao khối xanh giữ vai chính?", vo="Giữa căn hộ là một khối xanh đậm. Vì sao nó giữ vai chính?",
          cam=WIDE, dark=False, dd=[]),
-    dict(t="3.5–8.3s", head="Cách thứ nhất: nền lùi", vo="Kilmer và Kilmer: tường, sàn trung tính, màu đậm dồn vào đồ đạc.",
+    dict(t="5.1–12.1s", head="Tường, sàn trung tính; màu dồn vào đồ", vo="Sách Designing Interiors của Kilmer và Kilmer gợi ý: giữ tường, sàn trung tính, dồn màu đậm vào đồ đạc.",
          cam=((900, 1000), 2.2, (540, 840)), dark=False, dd=[]),
-    dict(t="8.3–12.8s", head="Mắt đọc màu theo xung quanh", vo="Albers, 1963: mắt đọc màu theo xung quanh.",
-         cam=((700, 700), 2.2, (540, 576)), dark=False, dd=[]),
-    dict(t="12.8–16.3s", head="Màu trung tính lùi về nền", vo="Bê tông, sàn gỗ, rèm: trung tính.",
+    dict(t="12.1–18.7s", head="Màu trung tính lùi về nền", vo="Ở đây, trần bê tông, sàn gỗ và rèm trắng đều trung tính, nên chúng lùi về làm nền.",
          cam=((800, 1550), 1.7, (540, 880)), dark=True, dd=['arr1', 'lab1']),
-    dict(t="16.3–19.8s", head="Một khối duy nhất có màu mạnh", vo="Khối xanh là màu mạnh duy nhất trong khung.",
+    dict(t="18.7–23.1s", head="Một khối có màu mạnh", vo="Khối xanh vì thế là màu mạnh duy nhất trong tầm mắt.",
          cam=((1150, 1900), 2.1, (700, 800)), dark=True, dd=['arr2', 'lab2']),
-    dict(t="19.8–25.8s", head="Trong khối: nền và nhấn đảo vai", vo="Đứng trong khối xanh, như ở bếp: xanh thành nền, đồ nhỏ sáng màu là điểm nhấn.",
-         cam=((450, 1400), 2.2, (356, 1080)), dark=False, dd=[]),
-    dict(t="25.8–30.6s", head="Thử hình dung: tường cũng sơn màu", vo="Tường cũng sơn màu thì khối xanh hẳn mất vị trí trung tâm.",
+    dict(t="23.1–31.3s", head="Để vỏ nhà yên lặng", vo="Theo tác giả, điều đáng giá nhất là để vỏ nhà yên lặng. Tường mà cũng sơn màu, khối xanh hẳn mất vai chính.",
          cam=((300, 450), 2.4, (248, 392)), dark=False, dd=[]),
-    dict(t="30.6–39.4s", head="Thử ngay trong nhà", vo="Tụi mình chọn màu chủ đạo cho khối lớn nhất, thường tủ hoặc sàn gỗ. Rồi đứng ở cửa, bàn ăn: nó là đồ hay nền?",
+    dict(t="31.3–38.9s", head="Bước vào trong: nền và nhấn đảo vai", vo="Nhưng khi bước vào bếp trong khối, vai trò đảo ngược: xanh đậm thành nền, đồ nhỏ sáng màu thành điểm nhấn.",
+         cam=((450, 1400), 2.2, (356, 1080)), dark=False, dd=[]),
+    dict(t="38.9–45.5s", head="Bắt đầu từ khối lớn nhất", vo="Ở nhà mình, thử chọn màu chủ đạo cho khối lớn nhất, thường là dãy tủ hoặc sàn gỗ.",
          cam=((1100, 1400), 2.2, (540, 1080)), dark=False, dd=[]),
-    dict(t="39.4–44.8s", head="Chọn màu cho mảng lớn", vo="Màu phủ mảng lớn trông đậm hơn mẫu nhỏ: nên chọn nhạt hơn một bậc.",
+    dict(t="45.5–51.8s", head="Món đồ hay phông nền?", vo="Rồi đứng ở cửa hay bàn ăn, xem khối ấy là món đồ, hay đã thành phông nền.",
+         cam=((600, 1700), 2.2, (488, 1344)), dark=False, dd=[]),
+    dict(t="51.8–58.8s", head="Chọn sơn cho mảng lớn", vo="Sơn mảng lớn nên chọn nhạt hơn mẫu thử một bậc, vì lên tường rộng, màu luôn trông đậm hơn.",
          cam=((1100, 1750), 2.4, (540, 1336)), dark=False, dd=[]),
-    dict(t="44.8–50.5s", head="Công thức", vo="Theo tụi mình: đừng chỉ hỏi màu gì, hãy hỏi màu ấy định sơn ở đâu.",
+    dict(t="58.8–63.6s", head="Chốt lại", vo="Vậy trước khi hỏi màu gì, hãy hỏi: màu ấy sơn ở đâu?",
          cam=WIDE, dark=False, dd=[]),
-    dict(t="50.5–59.6s", head="end", vo="",
+    dict(t="63.6–74.6s", head="end", vo="",
          cam=(CENTER, 0.8, (540, 600)), dark=False, dd=[]),
 ]
 END = len(SCENES) - 1
@@ -625,6 +625,6 @@ for i, fr in enumerate(frames):
 fy = TOP + rows * (PH + 86) + 10
 d.text((MX, fy), "Nền trắng trơn · băng keo giấy thay ghim · header AH DECODE · bỏ “Bước n”", font=F(32), fill=(255, 255, 255))
 d.text((MX, fy + 44), "Cảnh zoom kín ảnh: chữ trắng viết lên ảnh (có phủ tối nhẹ).", font=F(32), fill=(225, 220, 212))
-d.text((MX, fy + 88), "Ảnh tối ~14% ở cảnh có nét vẽ (cảnh 4, 5); các cảnh khác giữ ảnh nguyên bản.", font=F(32), fill=(225, 220, 212))
+d.text((MX, fy + 88), "Ảnh tối ~14% ở cảnh có nét vẽ (cảnh 3, 4); các cảnh khác giữ ảnh nguyên bản.", font=F(32), fill=(225, 220, 212))
 sheet.save(os.path.join(OUT, "storyboard.png"))
 print("fabric", tuple(int(x) for x in FAB), "sheet", sheet.size)

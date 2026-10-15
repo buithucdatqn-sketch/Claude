@@ -1,19 +1,21 @@
-# sources.md · Tập 5
+# sources.md · Tập 5 (bản viết lại theo instruction mới)
 
-File bài: `AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/bai-01.md` (commit 65b5427). Mức chắc chắn theo bài; nguồn là nguồn bài dẫn.
+File bài: `AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/bai-01.md` (commit 65b5427). Mức chắc chắn theo bài; nguồn là nguồn bài dẫn. Từ nối và diễn giải bằng lời đời thường không tính là nhận định mới (mục 3.2).
 
-| Nhận định trong reel | Vị trí trong bài | Trích ngắn | Mức theo bài | Nguồn bài dẫn |
-|---|---|---|---|---|
-| Khối tủ xanh giữ vai chính (cảnh 1) | "Nền lùi lại..." | "khối màu xanh lại là vật duy nhất có màu thực sự mạnh trong tầm mắt" | quan sát trên công trình | — |
-| Kilmer và Kilmer: tường, sàn trung tính, màu đậm dồn vào đồ đạc (cảnh 2) | "Vậy thì nguyên tắc phân bổ màu..." | "Cách thứ nhất là giữ sàn và tường ở tông trung tính, đồng thời dồn những màu đậm, màu rực vào đồ đạc" | nguyên lý (sách giáo trình) | [1] Kilmer & Kilmer (2014), Designing Interiors, ch.5 |
-| Albers 1963: mắt đọc màu theo xung quanh (cảnh 3, chỉ làm nguồn gốc, không dùng làm cơ chế nhân quả) | "Màu gì, ở đâu?" | "mắt người không bao giờ nhìn một màu đơn lẻ, mà luôn đọc nó trong tương quan với những gì xung quanh" | nguyên lý | [2] Albers, Interaction of Color (1963) |
-| Bê tông, sàn gỗ, rèm: màu trung tính (cảnh 4) | "Nền lùi lại..." | "Bê tông xám, sàn gỗ sáng và rèm trắng đều là những màu trung tính" | quan sát trên công trình | — |
-| Khối xanh là màu mạnh duy nhất trong khung (cảnh 5) | "Nền lùi lại..." | như trên | quan sát | — |
-| Lại gần thì đảo vai: xanh thành nền, đồ nhỏ sáng màu là điểm nhấn (cảnh 6) | "Nền lùi lại..." | "vai trò nền và nhấn sẽ đảo ngược... nền sẽ chuyển sang màu đậm và vật dụng hoặc những chi tiết nhấn sẽ là các món đồ nhỏ, sáng màu" | nhận định của tác giả | — |
-| Tường cũng sơn màu thì khối xanh mất vị trí trung tâm (cảnh 7) | "Nền lùi lại..." | "Thử hình dung nếu các bức tường cũng được sơn màu, khối hộp xanh hẳn sẽ mất ngay vị trí trung tâm" | nhận định (giả định) của tác giả | — |
-| Chọn màu chủ đạo cho khối lớn nhất; đứng ở cửa, bàn ăn xem khối là đồ hay nền (cảnh 8; gợi ý của tác giả: "tụi mình sẽ") | đoạn áp dụng cuối bài | "chọn màu chủ đạo cho khối lớn nhất trong nhà... đứng ở từng vị trí quen thuộc như cửa ra vào, ghế sofa hay bàn ăn" | gợi ý của tác giả ("tụi mình sẽ") | — |
-| Màu mảng lớn trông đậm hơn mẫu nhỏ: nên chọn nhạt hơn một bậc (cảnh 9) | đoạn áp dụng cuối bài; đoạn "Thực ra cũng có nhiều yếu tố khác" | "hãy chọn nhạt hơn mẫu thử một bậc"; "Màu đậm trong phòng nhỏ dễ gây cảm giác ngột ngạt hơn" | gợi ý / "dễ" (xu hướng) | — |
-| Đừng chỉ hỏi màu gì, hãy hỏi màu ấy định sơn ở đâu (cảnh 10) | "Nền lùi lại..." và đoạn kết | "chấp nhận để phần vỏ nhà yên lặng"; "hỏi 'màu ấy định sơn ở đâu'" | quan điểm của tác giả ("Theo tụi mình") | — |
+| Cảnh | Nhận định trong lời đọc | Vị trí trong bài | Trích ngắn | Mức theo bài | Nguồn bài dẫn |
+|---|---|---|---|---|---|
+| 1 | Giữa căn hộ là một khối xanh đậm, giữ vai chính | "Vậy thì nguyên tắc..." (đoạn cuối) và "Nền lùi lại..." | "toàn bộ cách bài trí trong đó đều xoay quanh một khối sơn màu xanh đặt ngay giữa nhà"; "khối hộp xanh hẳn sẽ mất ngay vị trí trung tâm" | quan sát | — |
+| 2 | Kilmer và Kilmer gợi ý: giữ tường, sàn trung tính, dồn màu đậm vào đồ đạc | "Vậy thì nguyên tắc phân bổ màu..." | "Cách thứ nhất là giữ sàn và tường ở tông trung tính, đồng thời dồn những màu đậm, màu rực vào đồ đạc" | nguyên lý (sách), "người ta thường" | [1] |
+| 3 | Trần bê tông, sàn gỗ, rèm trắng đều trung tính, nên lùi về làm nền | "Nền lùi lại..." + nhãn doodle ảnh 04 | "Bê tông xám, sàn gỗ sáng và rèm trắng đều là những màu trung tính"; nhãn "trần bê tông, sàn gỗ sáng lùi về nền" | quan sát của tác giả | — |
+| 4 | Khối xanh là màu mạnh duy nhất trong tầm mắt | "Nền lùi lại..." | "khối màu xanh lại là vật duy nhất có màu thực sự mạnh trong tầm mắt" | quan sát | — |
+| 5 | Theo tác giả, điều đáng giá nhất là để vỏ nhà yên lặng; tường cũng sơn màu thì khối xanh hẳn mất vai chính | "Nền lùi lại..." | "quyết định đáng giá nhất ở đây không nằm ở việc chọn màu xanh, mà ở chỗ nhà thiết kế chấp nhận để phần vỏ nhà yên lặng. Thử hình dung nếu các bức tường cũng được sơn màu, khối hộp xanh hẳn sẽ mất ngay vị trí trung tâm" | quan điểm/giả định của tác giả ("Theo tụi mình", "hẳn") | — |
+| 6 | Bước vào bếp trong khối thì vai trò đảo ngược: xanh đậm thành nền, đồ nhỏ sáng màu thành điểm nhấn | "Nền lùi lại..." | "khi đứng trong các không gian thuộc khối xanh lá giữa nhà như bếp hoặc góc đọc sách, thì nền sẽ chuyển sang màu đậm và vật dụng hoặc những chi tiết nhấn sẽ là các món đồ nhỏ, sáng màu" | nhận định của tác giả | — |
+| 7 | Thử chọn màu chủ đạo cho khối lớn nhất, thường là dãy tủ hoặc sàn gỗ | đoạn áp dụng cuối bài | "tụi mình sẽ bắt đầu bằng việc chọn màu chủ đạo cho khối lớn nhất trong nhà, thường là dãy tủ hoặc sàn gỗ" | gợi ý của tác giả | — |
+| 8 | Đứng ở cửa hay bàn ăn xem khối ấy là món đồ hay đã thành phông nền | đoạn áp dụng cuối bài | "đứng ở từng vị trí quen thuộc như cửa ra vào, ghế sofa hay bàn ăn, để xem khối màu ấy đang đóng vai một món đồ hay đã trở thành phông nền" | gợi ý của tác giả | — |
+| 9 | Sơn mảng lớn nên chọn nhạt hơn mẫu thử một bậc, vì lên tường rộng màu luôn trông đậm hơn | đoạn "Thực ra cũng có nhiều yếu tố khác" + đoạn áp dụng | "một màu khi phủ lên mảng tường lớn bao giờ cũng trông đậm hơn so với trên tấm mẫu nhỏ"; "hãy chọn nhạt hơn mẫu thử một bậc" | gợi ý (hai câu của bài được nối bằng "vì") | — |
+| 10 | Trước khi hỏi màu gì, hãy hỏi màu ấy sơn ở đâu | mở bài và kết bài | "nên hỏi rộng ra... màu ấy sẽ nằm ở đâu"; "không hỏi lại 'màu gì' nữa, mà hỏi 'màu ấy định sơn ở đâu'" | quan điểm của tác giả | — |
+
+Không dùng trong lời đọc (chỉ ở caption): Albers 1963 "mắt luôn đọc màu trong tương quan với xung quanh" [2].
 
 ## Danh mục nguồn của bài (chép đúng như bài)
 [1] Kilmer, R., & Kilmer, W. O. (2014). Designing Interiors (2nd ed.). Hoboken, NJ, Wiley. Chương 5 "Color and Light", mục Color Systems

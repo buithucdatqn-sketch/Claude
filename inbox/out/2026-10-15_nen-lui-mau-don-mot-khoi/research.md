@@ -11,7 +11,7 @@ Nhánh `AH-Interior-notes`, commit `65b5427c55046c43f02d8e7ec0829e03ae0fdd03`.
 3. Một màu chủ đạo, hai màu phụ đi vòng quanh (bài học 3) — chưa dùng
 (Mục "Màu gì, ở đâu?" là phần lý thuyết chung/mở bài, không tính ý riêng; dùng làm nguồn gốc/cơ chế.)
 
-## Bảy phần B–H
+## Các phần theo mục 4a (bản viết lại: mạch kể A → B → D → E → C → F → G → H → I; Albers không dùng trong lời đọc)
 **B. Nguồn gốc**
 - Kilmer & Kilmer, Designing Interiors (2014), ch.5: "người ta thường đi theo một trong hai cách. Cách thứ nhất là giữ sàn và tường ở tông trung tính, đồng thời dồn những màu đậm, màu rực vào đồ đạc." (mục "Vậy thì nguyên tắc phân bổ màu...")
 - Albers, Interaction of Color (1963): "mắt người không bao giờ nhìn một màu đơn lẻ, mà luôn đọc nó trong tương quan với những gì xung quanh. Hơn thế nữa, mảng màu lớn lúc nào cũng lấn át mảng màu nhỏ." (mục "Màu gì, ở đâu?")
