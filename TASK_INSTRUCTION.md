@@ -6,7 +6,7 @@ Mỗi lần chạy là một phiên mới, không nhớ gì từ các cuộc tr�
 Chạy một lượt, không hỏi lại. Nếu thiếu đầu vào thì dừng và báo rõ thiếu gì (mục 9).
 
 ## 1. Nhiệm vụ
-Mỗi ngày, lấy MỘT bài chưa dùng trong KHO BÀI (mục 2a) và dùng NỘI DUNG CỦA BÀI làm toàn bộ thông tin của reel (nguyên tắc, nguồn gốc, cơ chế, cách áp dụng, cách chọn đồ, nguồn tham khảo). Task KHÔNG tự nghiên cứu và KHÔNG tự viết thêm thông tin ngoài bài (mục 3). Sau đó TỰ lấy MỘT ảnh dự án thật trên một trong các tạp chí thiết kế (Yatzer, Yellowtrace, Dwell, Wallpaper*) phù hợp để minh hoạ nguyên lý đó, và tạo gói sản xuất cho một reel dọc 9:16, dài 45–60 giây, series "AH Decode". Reel giải thích MỘT nguyên tắc nội thất/decor bằng các nét doodle trắng nét đứt vẽ lên chính ảnh gốc.
+Mỗi ngày, lấy MỘT bài chưa dùng trong KHO BÀI (mục 2a) và dùng NỘI DUNG CỦA BÀI làm toàn bộ thông tin của reel (nguyên tắc, nguồn gốc, cơ chế, cách áp dụng, cách chọn đồ, nguồn tham khảo). Task KHÔNG tự nghiên cứu và KHÔNG tự viết thêm thông tin ngoài bài (mục 3). Ảnh cũng CHỈ lấy trong thư mục `anh/` của chính bài đó (mục 2b). Tuyệt đối không dùng bất kỳ nguồn thông tin hay ảnh nào ngoài KHO BÀI (không tạp chí, không web, không ảnh người dùng gửi ngoài kho). Từ đó tạo gói sản xuất cho một reel dọc 9:16, dài 45–60 giây, series "AH Decode". Reel giải thích MỘT nguyên tắc nội thất/decor bằng các nét doodle trắng nét đứt vẽ lên chính ảnh gốc.
 Mỗi reel là một bài học TRỌN VẸN và CÓ CHIỀU SÂU (mục 4a) về nội thất và decor, chắt lọc từ bài trong kho: nguồn gốc nguyên tắc, cơ chế vì sao mắt thấy vậy, đọc nguyên lý trên ảnh, lỗi hay gặp, cách áp dụng cụ thể, cách chọn mua/chọn đồ và thiết kế, rồi công thức tổng kết. Người xem phải học được điều cụ thể mà họ chưa biết, không phải những câu chung chung. Không hẹn "tập sau"; cảnh cuối chỉ mời theo dõi Fanpage Giả Thuyết Kiến Trúc và các bài viết về kiến trúc dành riêng cho thành viên (link ở phần bình luận).
 
 **Tên gọi (dùng đúng, không lẫn):** Fanpage tên là **Giả Thuyết Kiến Trúc**. **AH Decode** là một series MỚI của Fanpage này, chuyên phân tích các nguyên tắc thiết kế và cách chọn đồ decor. AH Decode KHÔNG phải tên Fanpage: không viết "Fanpage AH Decode". Header trên khung vẫn là `AH DECODE · <CHỦ ĐỀ>`.
@@ -24,10 +24,10 @@ Người dùng nói tiếng Việt, mọi chữ trên khung và lời đọc đ�
 ## 2. Đầu vào (INBOX = REPO/inbox)
 Chế độ mặc định là TỰ ĐỘNG: không cần người dùng gửi ảnh. Chỉ cần:
 - KHO BÀI (mục 2a): nguồn thông tin duy nhất cho nội dung reel.
-- `INBOX/series.json`: danh sách các tập đã làm (số tập, bài trong kho đã dùng `bai_kho` = đường dẫn file + commit SHA của nhánh lúc đọc, nguyên lý, URL bài tạp chí và URL ảnh đã dùng, ngày). Nếu chưa có thì tạo mới. Dùng để không lặp lại bài trong kho, và không lặp lại ảnh/dự án (không dùng lại cùng một dự án trong 60 ngày gần nhất).
-- `INBOX/override/` (tuỳ chọn, có thì ưu tiên): `<tên>.jpg|png` ảnh do người dùng gửi + `<tên>.txt` (dòng 1 = credit đúng dạng `tên dự án · studio · nhiếp ảnh gia`, các dòng sau = đường dẫn bài trong KHO BÀI muốn dùng, nếu có). Có thư mục này thì bỏ qua phần tìm ảnh ở mục 2b, dùng ảnh người dùng gửi; nội dung vẫn lấy từ KHO BÀI (bài được chỉ định, hoặc bài chưa dùng tiếp theo theo mục 2a).
+- `INBOX/series.json`: danh sách các tập đã làm (số tập, bài trong kho đã dùng `bai_kho` = đường dẫn file + commit SHA của nhánh lúc đọc, nguyên lý, đường dẫn ảnh đã dùng trong kho, ngày). Nếu chưa có thì tạo mới. Dùng để không lặp lại bài trong kho, và không lặp lại ảnh.
+- `INBOX/override/`: KHÔNG còn dùng (không nhận ảnh hay nguồn ngoài kho). Nếu thư mục có file thì bỏ qua và nhắc trong báo cáo.
 - `INBOX/audio/<slug>.mp3|wav|m4a` (tuỳ chọn): giọng đọc ElevenLabs của chính tập này (người dùng làm từ file `elevenlabs.txt` của lần chạy trước). Có file này thì làm bước 9 (ghép tiếng) trong mục 4.
-- Xử lý xong: cập nhật `series.json`; ảnh override chuyển sang `INBOX/done/`.
+- Xử lý xong: cập nhật `series.json`.
 
 ## 2a. KHO BÀI: nguồn thông tin của reel (bắt buộc)
 - Vị trí: GitHub `buithucdatqn-sketch/A---material`, nhánh `AH-Interior-notes`, thư mục `AH-Decode-Decor/` (https://github.com/buithucdatqn-sketch/A---material/tree/AH-Interior-notes/AH-Decode-Decor/).
@@ -35,47 +35,30 @@ Chế độ mặc định là TỰ ĐỘNG: không cần người dùng gửi �
 - Đọc cấu trúc thư mục trước: nếu có README, mục lục, file hướng dẫn hay quy ước đặt tên (ví dụ số thứ tự, trạng thái "đã duyệt"/"nháp") thì làm theo. Mỗi bài thường là một file (`.md`, `.txt`, hoặc tài liệu khác) hoặc một thư mục con; file không phải bài (README, mẫu, ảnh, ghi chú chung) thì không tính là bài.
 - Chọn bài: bài CHƯA có trong `series.json` (so theo đường dẫn), theo thứ tự trong mục lục nếu có, không thì theo số thứ tự hoặc tên file tăng dần. Bỏ qua bài ghi rõ là nháp/chưa xong. Nếu bài lệch trọng tâm mục 1a (lý thuyết kiến trúc) thì bỏ qua, ghi vào `series.json` với `trang_thai: "bo_qua_lech_trong_tam"` kèm lý do, rồi lấy bài kế tiếp.
 - Đọc TOÀN BỘ bài (Read hết, không bỏ đoạn nào), kể cả phần nguồn tham khảo, ghi chú ảnh, gợi ý dự án nếu có. Bài dài hơn một reel: chọn MỘT ý chính đủ cho bảy phần B–H (mục 4a), phần còn lại có thể đưa vào caption; KHÔNG chia thành nhiều tập, không hẹn "tập sau". Đánh dấu cả bài là đã dùng.
-- Nếu bài có kèm ảnh, link ảnh hoặc gợi ý dự án minh hoạ thuộc bốn trang nguồn ở mục 2b: ưu tiên dùng (vẫn kiểm tiêu chí ảnh và lấy credit theo mục 2b). Ảnh bài gợi ý nằm ngoài bốn trang nguồn thì không dùng, tự tìm ảnh theo mục 2b.
+- Nếu bài có ảnh minh hoạ công trình trong `anh/` thì dùng theo mục 2b. Link ảnh hay gợi ý dự án trỏ ra ngoài kho thì KHÔNG mở, không dùng.
 
-## 2b. Lấy ảnh từ tạp chí thiết kế (chế độ tự động)
-**Nguồn ảnh (chỉ các trang sau, không trang nào khác):** Yatzer (www.yatzer.com), Yellowtrace (www.yellowtrace.com.au), Dwell (www.dwell.com), Wallpaper* (www.wallpaper.com). Đã thử: bốn trang này truy cập được bằng `curl -A "Mozilla/5.0"`. The Local Project chặn truy cập tự động (403 Cloudflare) và Est Living chặn bằng captcha: KHÔNG dùng và KHÔNG cố vượt. Đầu mỗi lần chạy kiểm tra từng trang bằng `curl -sS -m 20 -L -A "Mozilla/5.0" -o /dev/null -w "%{http_code}" <URL>`; trang nào không trả 200 thì bỏ qua lần đó. Nếu không trang nào truy cập được thì dừng và báo (mục 9).
-Cách lấy ảnh theo trang (cấu trúc có thể đổi, hãy xem HTML thật):
-- Yatzer: trang bài chứa `https://media.yatzer.com/...jpg`; bản không hậu tố kích thước là bản gốc lớn nhất, `-1400x…` là dự phòng. Credit nhiếp ảnh: câu "Photography by …" trong bài.
-- Yellowtrace: bài viết WordPress; ảnh ở `assets.yellowtrace.com.au/wp-content/uploads/...`; bỏ hậu tố kích thước `-1040x700` để lấy bản gốc (nếu 404 thì dùng bản có hậu tố lớn nhất). Credit nằm trong bài ("Photography by/Photo by …").
-- Dwell: ảnh ở `images2.dwell.com/photos/.../original.jpg`. Credit nhiếp ảnh và kiến trúc sư nằm trong bài hoặc chú thích ảnh.
-- Wallpaper*: lấy ảnh từ thẻ `og:image`/`img` trong bài (ưu tiên URL lớn nhất); credit nằm ở chú thích ảnh hoặc cuối bài ("Photography: …").
-Mỗi lần chọn trang có ảnh phù hợp nguyên lý nhất; luân phiên giữa các trang để đa dạng, không dùng một trang quá hai ngày liên tiếp.
+## 2b. Ảnh: CHỈ lấy trong thư mục `anh/` của chính bài đã chọn (bắt buộc)
+KHÔNG truy cập tạp chí hay trang web nào (Yatzer, Yellowtrace, Dwell, Wallpaper*, ArchDaily, Est Living… đều không dùng), không tìm ảnh ngoài kho, không dùng ảnh người dùng gửi ngoài kho. Ảnh duy nhất được dùng là ảnh nằm trong `anh/` của bài đang làm (đường dẫn như trong YAML `anh_theo_thu_tu`).
+1. Xem (Read) toàn bộ ảnh trong `anh/` của bài. Phân loại: ảnh công trình/nội thất thật; sơ đồ (diagram); mặt bằng, trục đo; ảnh đã có nét doodle; ảnh bìa dựng sẵn.
+2. Chọn MỘT ảnh minh hoạ rõ nhất ý chính của bài, theo thứ tự ưu tiên: (a) ảnh nội thất thật, sạch, khung ngang (rộng/cao 1,3–1,9) nếu có; (b) nếu bài chỉ có ảnh nội thất đã kèm nét doodle của bài, dùng ảnh phù hợp nhất và ghi rõ hạn chế trong báo cáo (nét cũ có thể lẫn với nét mới; cân nhắc zoom vào vùng ít nét cũ); (c) không dùng sơ đồ, mặt bằng, trục đo làm ảnh nền. Không gượng ép: nếu không ảnh nào dùng được thì làm bản tốt nhất và nêu rõ trong báo cáo, KHÔNG đi tìm ảnh ngoài kho.
+3. Bài đủ ảnh thì luân phiên ảnh giữa các tập; không dùng lại ảnh đã có trong `series.json` (so theo đường dẫn ảnh trong kho).
+4. Tạo bản làm việc: thu nhỏ cạnh dài còn tối đa 2400 px (LANCZOS, giữ tỷ lệ; không phóng to) lưu thành `source.png`; mọi toạ độ doodle đặt theo bản này. Chép ảnh gốc vào `OUT/original/`. Ảnh nhỏ hơn 1200 px cạnh dài: vẫn làm, ghi hạn chế.
+5. Credit: lấy từ YAML và chú thích trong bài (`cong_trinh`, `nguon_anh_cong_trinh`, tên tác giả ảnh nếu bài ghi). Định dạng: `<công trình> · <studio> · ảnh <nhiếp ảnh gia>`; thiếu mục nào bỏ mục đó, không bịa. Dòng trên khung: `Ảnh dự án: ...` (dài quá 960 px thì giảm cỡ chữ, tối thiểu 26, hoặc xuống hai dòng, không cắt). Ảnh do chủ bài dựng (bìa, doodle, diagram) ghi thêm "Giả Thuyết Kiến Trúc" nếu bài ghi như vậy.
+6. Lưu `OUT/source_info.md`: đường dẫn ảnh trong kho, commit SHA, credit, lý do chọn ảnh, hạn chế.
 
-**Tìm ảnh minh hoạ trên các trang nguồn** (nội dung đã chốt từ bài trong kho trước, ảnh sau)
-5. Lấy danh sách bài từ chuyên mục NỘI THẤT (interiors, interior design, design) hoặc sitemap của trang nguồn (chuyên mục nào 404 thì dùng sitemap). Ưu tiên bài về dự án do nhà thiết kế nội thất/studio nội thất thực hiện, nhà ở, căn hộ, khách sạn, nhà hàng có phần nội thất và đồ đạc nổi bật; tránh bài mà điểm chính là kiến trúc, hình khối hay cảnh quan. Ưu tiên bài mới. Mở bài, lấy các URL ảnh theo hướng dẫn từng trang ở trên.
-6. Tải về xem thử (Read ảnh) ít nhất 6–10 ảnh ứng viên, chọn ảnh minh hoạ RÕ NHẤT cho ý chính của bài. Tiêu chí bắt buộc:
-   - Ảnh nội thất ĐÃ HOÀN THIỆN, ảnh thật, không phải render, bản vẽ, sơ đồ hay ảnh quảng cáo có chữ/logo chèn lên.
-   - Khung ngang (tỷ lệ rộng/cao từ 1,3 đến 1,9). KHÔNG dùng ảnh dọc hoặc vuông (engine khung hình tính cho ảnh ngang).
-   - Cạnh dài ≥ 1800 px (bản gốc), nét, không mờ, không có người nhận diện được rõ mặt.
-   - Nguyên lý hiện ra rõ bằng mắt thường trên ĐỒ ĐẠC, MÀU, VẬT LIỆU hoặc CÁCH BÀY ĐỒ: bạn phải chỉ ra được cụ thể món đồ nào, mảng màu nào sẽ vẽ doodle. Ảnh mà thứ nổi bật nhất là kiến trúc (trần, cột, vách kính, view) thì bỏ. Nếu phải gượng ép thì bỏ ảnh.
-   - Không dùng lại ảnh đã có trong `series.json`; không dùng ảnh của dự án đã dùng trong 60 ngày.
-7. Tải ảnh: `curl -sS -m 60 -o <file> <URL>`; kiểm tra bằng PIL rằng ảnh mở được. Tạo bản làm việc: thu nhỏ cạnh dài còn 2400 px (LANCZOS, giữ tỷ lệ) lưu thành `source.png`; mọi toạ độ doodle đặt theo bản làm việc này. Giữ ảnh gốc trong `OUT/original/` để tham chiếu.
-8. Lấy credit từ chính trang bài (đọc kỹ chữ trên trang, không đoán): tên dự án (tiêu đề bài), studio/nhà thiết kế nội thất (ưu tiên ghi người làm nội thất; nếu bài chỉ ghi kiến trúc sư thì ghi kiến trúc sư; thường nằm trong tiêu đề hoặc đoạn credit cuối bài), nhiếp ảnh gia (các câu kiểu "Photography by …", "Photo: …"; với Yatzer, tên nhiếp ảnh gia thường có trong tên file ảnh). Ghép: `<tên dự án> · <studio> · ảnh <nhiếp ảnh gia> · <tên tạp chí nguồn>`. Nếu thiếu một mục thì bỏ mục đó, không bịa. Dòng credit trên khung hiển thị dưới dạng `Ảnh dự án: ...`; nếu dài quá 960 px thì giảm cỡ chữ dòng credit (tối thiểu 26) hoặc xuống hai dòng, không cắt.
-9. Lưu `OUT/source_info.md`: URL bài nguồn, URL ảnh đã tải, thời điểm tải, credit đầy đủ, ghi chú ảnh vì sao chọn.
-
-**Bản quyền và ghi nguồn (bắt buộc)**
-Ảnh thuộc về nhiếp ảnh gia và dự án; các tạp chí đăng theo cấp phép biên tập. Vì vậy:
-- Luôn hiển thị credit (bước 8 ở trên) trên khung và trong caption, kèm LINK bài gốc của tạp chí trong caption để dẫn người xem về nguồn.
-- Chỉ dùng ảnh làm minh hoạ phân tích (có bình luận và nét vẽ), không dùng làm ảnh quảng cáo; không cắt bỏ credit hay watermark nếu có.
-- Trong báo cáo cuối, ghi rõ dòng nhắc người dùng: "Ảnh lấy từ <tạp chí>, chưa có xin phép chính thức; cân nhắc xin phép nhiếp ảnh gia/tạp chí nếu đăng thương mại, và sẵn sàng gỡ khi có yêu cầu."
 
 ## 3. QUY TẮC THÔNG TIN: CHỈ LẤY TỪ BÀI TRONG KHO (bắt buộc, không ngoại lệ)
-Bài trong KHO BÀI là nguồn thông tin duy nhất cho lời đọc, chữ trên khung và caption. Task không tự nghiên cứu (không WebSearch/WebFetch để tìm hay xác minh nội dung) và không tự viết thêm kiến thức.
+Bài trong KHO BÀI là nguồn thông tin duy nhất cho lời đọc, chữ trên khung, caption và ảnh. Task không tự nghiên cứu (không WebSearch/WebFetch, không mở bất kỳ trang web nào, kể cả link nguồn mà bài dẫn) và không tự viết thêm kiến thức.
 1. Mọi nhận định (nguyên lý, nguồn gốc, tên người, năm, cơ chế, số liệu, lời khuyên áp dụng và chọn đồ) phải có trong bài, đúng ý và đúng mức chắc chắn của bài. Ghi vị trí trong bài (tên file + tiêu đề mục hoặc đoạn, kèm trích ngắn) vào `sources.md`.
 2. Được phép: rút gọn, diễn đạt lại cho dễ nghe, đổi thứ tự cho tự nhiên, chọn ý; và mô tả điều nhìn thấy trực tiếp trên ảnh (gọi tên món đồ, màu, vật liệu trong ảnh, nói rõ là "trong ảnh này"). Không được: thêm tên, năm, số đo, tỷ lệ, nghiên cứu, ví dụ hay lời khuyên mà bài không có; dựa vào trí nhớ để bổ sung.
 3. Giữ nguyên cách bài phân loại và mức chắc chắn: bài gọi là "quy tắc kinh nghiệm" thì nói là quy tắc kinh nghiệm; bài nói "có xu hướng" thì không nói "luôn luôn" hay "đã được chứng minh". Lời khuyên dùng "nên", "thử" như bài.
 4. Nguồn tham khảo: nếu bài có danh mục nguồn thì chép đúng như bài ghi vào `sources.md` và chọn 2–3 nguồn chính cho caption; không tự xác minh lại, không thêm nguồn ngoài bài. Bài không có danh mục nguồn thì caption không ghi mục nguồn (không bịa), `sources.md` ghi rõ "bài không kèm nguồn".
 5. Nghi bài có lỗi (năm, tên, số liệu mâu thuẫn trong chính bài): không tự sửa theo trí nhớ; bỏ nhận định đó khỏi reel và ghi rõ trong báo cáo để người dùng kiểm tra bài gốc.
 6. Không nhắc thương hiệu, cửa hàng hay sản phẩm cụ thể trừ khi bài có và đó là tên đồ nội thất kinh điển (ví dụ ghế của một nhà thiết kế); không có trong bài thì không nhắc.
-7. Ngoại lệ duy nhất cho phép tra cứu trên web: tìm ảnh và credit ảnh ở bốn trang nguồn (mục 2b). Thông tin trên trang tạp chí chỉ dùng cho credit và mô tả dự án trong `source_info.md`, không dùng làm nội dung bài học.
+7. KHÔNG có ngoại lệ: không truy cập web để tìm ảnh, credit hay thông tin dự án. Mọi thứ lấy từ thư mục của bài trong kho.
 
 ## 4. Quy trình
-1. Lấy KHO BÀI, chọn bài và đọc toàn bộ bài (mục 2a). Chế độ override: dùng bài được chỉ định trong file `.txt` nếu có.
+1. Lấy KHO BÀI, chọn bài và đọc toàn bộ bài (mục 2a).
 2. Kiểm tra bài và ý chính với phép thử mục 1a (áp dụng được bằng cách mua, đổi, sơn, dời, bày lại đồ). Bài lệch trọng tâm thì bỏ qua theo mục 2a.
 3. Trước khi viết lời, soạn `OUT/research.md`: ghi chú bài theo đúng bảy phần ở mục 4a, mỗi ý kèm vị trí trong bài (tiêu đề mục/đoạn) và trích ngắn đúng câu chữ của bài. Phần nào bài không có thì ghi "bài không có". Kịch bản chỉ được dùng ý có trong `research.md`. Sau đó tìm ảnh (chế độ tự động, mục 2b) hoặc xem ảnh override, chọn chi tiết trên ảnh khớp với ý của bài.
 4. Viết kịch bản 10–13 cảnh, tổng 45–60 giây, khoảng 110–160 từ lời đọc, theo mục 4a. Câu ngắn, dễ đọc, tự nhiên, tiếng Việt chuẩn. Lời đọc dùng để dán vào ElevenLabs nên không có ký hiệu lạ, không chú thích trong ngoặc. Mỗi cảnh tối đa khoảng 22 từ (hiển thị tối đa 3 dòng trên khung).
@@ -173,7 +156,7 @@ Kịch bản và nguồn đã được agent độc lập chấm ở bước 5 m
 - `frames/scene_*.png` + `storyboard.png` + `frames.zip`.
 - `reel_<slug>_silent.mp4` (và `reel_<slug>_final.mp4` nếu đã có audio).
 - `sources.md`: mỗi nhận định → vị trí trong bài (file + mục/đoạn + trích ngắn) → mức chắc chắn theo bài (nguyên lý / thực nghiệm / quy tắc kinh nghiệm) → nguồn mà bài dẫn cho ý đó (nếu có, chép đúng như bài). Cuối file: danh mục nguồn tham khảo của bài.
-- `caption.txt`: caption đăng bài có chiều sâu, bổ sung cho reel (không chép lại lời đọc): vài đoạn ngắn về nguồn gốc, cơ chế, cách áp dụng và gợi ý chọn đồ, lấy từ bài theo cùng quy tắc mục 3 như lời đọc; rồi dòng giới thiệu và mời "AH Decode là series mới của Giả Thuyết Kiến Trúc, phân tích các nguyên tắc thiết kế và cách chọn đồ decor. Theo dõi Fanpage Giả Thuyết Kiến Trúc. Các bài viết về kiến trúc dành riêng cho thành viên: link ở phần bình luận."; rồi 2–3 nguồn chính lấy từ danh mục nguồn của bài (nếu bài có), credit ảnh đầy đủ và link bài gốc của tạp chí; hashtag vừa phải. Không tự điền link thành viên (người dùng tự dán vào bình luận).
+- `caption.txt`: caption đăng bài có chiều sâu, bổ sung cho reel (không chép lại lời đọc): vài đoạn ngắn về nguồn gốc, cơ chế, cách áp dụng và gợi ý chọn đồ, lấy từ bài theo cùng quy tắc mục 3 như lời đọc; rồi dòng giới thiệu và mời "AH Decode là series mới của Giả Thuyết Kiến Trúc, phân tích các nguyên tắc thiết kế và cách chọn đồ decor. Theo dõi Fanpage Giả Thuyết Kiến Trúc. Các bài viết về kiến trúc dành riêng cho thành viên: link ở phần bình luận."; rồi 2–3 nguồn chính lấy từ danh mục nguồn của bài (nếu bài có), credit ảnh đầy đủ theo bài (chỉ ghi link nếu chính bài có ghi); hashtag vừa phải. Không tự điền link thành viên (người dùng tự dán vào bình luận).
 - Gửi cho người dùng (SendUserFile): `elevenlabs.txt` đầu tiên, rồi video, ảnh bảng phân cảnh, `script.md`, `sources.md`, `caption.txt`; kèm tóm tắt tối đa 6 dòng: bài đã dùng trong kho, nguyên lý, ba điều người xem học được, điểm cần duyệt (kể cả phần bài thiếu hoặc nghi lỗi), credit đã có hay còn thiếu, và nhắc "gửi lại file giọng đọc vào INBOX/audio để ghép tiếng".
 Đây là BẢN NHÁP chờ người dùng duyệt. Không đăng, không gửi đi đâu khác.
 
@@ -189,7 +172,7 @@ Mục tiêu: người dùng mở file, chọn tất cả, dán vào ElevenLabs, 
 - Cảnh cuối chỉ đọc câu giới thiệu series AH Decode, lời mời theo dõi Fanpage Giả Thuyết Kiến Trúc và nhắc bài viết về kiến trúc dành riêng cho thành viên, link ở phần bình luận (mẫu ở mục 4a, phần I). Không gợi ý tập sau, không đọc nguồn hay credit. Cảnh cuối trong `elevenlabs.txt` viết dạng phiên âm, ví dụ: "Ây-ết Đi-cốt, series về nguyên tắc thiết kế và chọn đồ đê-co. Theo dõi Giả Thuyết Kiến Trúc, bài viết cho thành viên ở link bình luận." ("series" và "link" là từ quen dùng trong tiếng Việt, giữ nguyên.)
 
 ## 9. Khi gặp sự cố
-- Không truy cập được trang nguồn nào hoặc không tìm được ảnh đạt tiêu chí sau khi xem ít nhất 10 ứng viên: dừng, báo rõ lý do và các ảnh/bài đã thử; KHÔNG chuyển sang nguồn ảnh khác, KHÔNG lấy ảnh từ Google/Pinterest.
+- Bài không có ảnh nào dùng được làm nền: vẫn làm bản tốt nhất với ảnh có sẵn của bài, nêu rõ hạn chế; KHÔNG tìm ảnh ngoài kho.
 - Ảnh quá nhỏ (<1200 px cạnh dài), quá tối, hoặc không minh hoạ được ý chính của bài: vẫn làm bản tốt nhất có thể, ghi rõ hạn chế (ví dụ zoom bị mềm) và đề nghị ảnh khác.
 - Không truy cập được KHO BÀI (add_repo/clone/GitHub MCP đều lỗi, hoặc không thấy thư mục `AH-Decode-Decor/` trên nhánh `AH-Interior-notes`): dừng, báo lỗi cụ thể. KHÔNG tự nghiên cứu để thay thế.
 - Hết bài chưa dùng trong kho: dừng và báo người dùng thêm bài; không tự viết bài mới, không dùng lại bài cũ.
@@ -200,7 +183,7 @@ Mục tiêu: người dùng mở file, chọn tất cả, dán vào ElevenLabs, 
 ## 10. Việc KHÔNG làm
 - Không tự nghiên cứu, không lấy thông tin nội dung từ web hay từ trí nhớ; chỉ dùng bài trong KHO BÀI (mục 3). Không sửa hay push gì vào kho bài.
 - Không đổi quy cách hình ảnh ở mục 6. Không sketch hoá ảnh dự án. Không bỏ credit.
-- Không dùng ảnh/đồ hoạ ngoài ảnh đã chọn từ bốn trang nguồn ở mục 2b (hoặc ảnh người dùng gửi ở chế độ override). Không dùng Est Living, The Local Project hay bất kỳ nguồn ảnh nào khác.
+- Không dùng ảnh/đồ hoạ nào ngoài thư mục `anh/` của bài đã chọn trong kho. Không truy cập tạp chí hay trang web nào.
 - Không đổi nhịp chuyển cảnh/vẽ nét đã duyệt (mục 5b), không thêm nhạc nền, hiệu ứng hay phụ đề chạy chữ khi chưa được yêu cầu.
 - Không bịa tên studio, nhiếp ảnh gia hay dự án khi thiếu credit; chỉ ghi những gì có trên trang bài nguồn.
 - Không hẹn hay gợi ý "tập sau" ở bất kỳ đâu (khung, lời đọc, caption).
