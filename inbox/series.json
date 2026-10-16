@@ -114,5 +114,37 @@
       "Một màu chủ đạo, hai màu phụ đi vòng quanh (bài học 3)"
     ],
     "ghi_chu": "Giai đoạn 1 (chưa dựng video, chờ INBOX/audio/nen-lui-mau-don-mot-khoi.mp3). Tiêu đề/nhãn gốc trên ảnh 04 đã xoá khỏi nền, chỉ dùng 2 mũi tên + 2 nhãn."
+  },
+  {
+    "tap": 6,
+    "slug": "hai-mau-phu-di-quanh",
+    "ngay": "2026-10-16",
+    "nguyen_ly": "Một màu chủ đạo, hai màu phụ đi vòng quanh (Kilmer & Kilmer, đáp màu)",
+    "nhom": "Phối màu: màu phụ",
+    "bai_kho": {
+      "duong_dan": "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/bai-01.md",
+      "nhanh": "AH-Interior-notes",
+      "commit": "65b5427c55046c43f02d8e7ec0829e03ae0fdd03"
+    },
+    "anh_kho": [
+      "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/10-doodle-hai-mau-am.jpg"
+    ],
+    "du_an": "The Green Box, Berlin",
+    "studio": "Ester Bruzkus Architekten",
+    "nhiep_anh": "Robert Rieger",
+    "nguon": [
+      "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 5 (theo bài)"
+    ],
+    "trang_thai": "cho_ghi_am",
+    "thu_muc": "inbox/out/2026-10-16_hai-mau-phu-di-quanh/",
+    "cau_moc": "Thêm màu thứ hai, thứ ba vào nhà, có bị rối mắt không?",
+    "y_bai": {
+      "muc": "Một màu chủ đạo, hai màu phụ đi vòng quanh",
+      "tom_tat": "Hai màu phụ vàng và hồng tím làm dịu, mảng nhỏ, mỗi màu lặp lại ít nhất hai chỗ"
+    },
+    "y_con_lai_cua_bai": [
+      "Cùng màu khác bề mặt (ảnh 11, 12)"
+    ],
+    "ghi_chu": "Giai đoạn 1 (chưa dựng video, chờ INBOX/audio/hai-mau-phu-di-quanh.mp3). Dùng doodle gốc ảnh 10. Ước tính 62 giây theo 3,2 từ/giây (thực tế thường ngắn hơn)."
   }
 ]
