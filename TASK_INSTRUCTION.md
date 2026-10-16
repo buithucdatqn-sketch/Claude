@@ -39,17 +39,17 @@ Chế độ mặc định là TỰ ĐỘNG: không cần người dùng gửi �
 - Nếu bài có ảnh minh hoạ công trình trong `anh/` thì dùng theo mục 2b. Link ảnh hay gợi ý dự án trỏ ra ngoài kho thì KHÔNG mở, không dùng.
 
 ## 2b. Ảnh: CHỈ lấy trong thư mục `anh/` của chính bài đã chọn (bắt buộc)
-KHÔNG truy cập tạp chí hay trang web nào (Yatzer, Yellowtrace, Dwell, Wallpaper*, ArchDaily, Est Living… đều không dùng), không tìm ảnh ngoài kho, không dùng ảnh người dùng gửi ngoài kho. Ảnh duy nhất được dùng là ảnh nằm trong `anh/` của bài đang làm (đường dẫn như trong YAML `anh_theo_thu_tu`).
+KHÔNG truy cập tạp chí hay trang web nào (Yatzer, Yellowtrace, Dwell, Wallpaper*, ArchDaily, Est Living… đều không dùng), không tìm ảnh ngoài kho, không dùng ảnh người dùng gửi ngoài kho. Chỉ được dùng ảnh nằm trong `anh/` của bài đang làm (đường dẫn như trong YAML `anh_theo_thu_tu`).
 1. Xem (Read) toàn bộ ảnh trong `anh/` của bài. Phân loại: ảnh công trình/nội thất thật; sơ đồ (diagram); mặt bằng, trục đo; ảnh đã có nét doodle; ảnh bìa dựng sẵn.
-2. Chọn MỘT ảnh minh hoạ rõ nhất ý chính của bài. KHÔNG cần ưu tiên khung ngang: ảnh ngang, dọc hay vuông đều dùng được (engine phải chỉnh bố cục khung, vùng đặt ảnh và camera cho đúng tỷ lệ ảnh được chọn, vẫn giữ nguyên quy cách mục 6). Thứ tự ưu tiên:
+2. Mục đích tối cao của hình là để reel TRỰC QUAN và DỄ HIỂU, nên KHÔNG giới hạn một ảnh: chọn MỘT HOẶC NHIỀU ảnh (thường hai đến bốn), mỗi cảnh dùng ảnh cho người xem THẤY ĐƯỢC đúng điều lời đang nói. Phép thử: nghe một câu và nhìn khung, người chưa biết bài có hiểu ngay chỗ nào đang được nói tới không? Ví dụ ý "một màu chủ đạo, hai màu phụ" phải có ảnh thấy màu chủ đạo, ảnh thấy hai màu phụ, và ảnh thấy màu chủ đạo lặp lại; không được chỉ có ảnh của màu phụ. Mỗi khái niệm được nêu tên trong lời đọc phải có hình thấy được nó (lời nào nói về vật gì thì khung đang chiếu đúng vật đó). KHÔNG cần ưu tiên khung ngang: ảnh ngang, dọc hay vuông đều dùng được và có thể trộn trong một reel (engine tính lại hình học thẻ ảnh theo từng ảnh, vẫn giữ nguyên quy cách mục 6). Thứ tự ưu tiên khi chọn từng ảnh:
    (a) Ảnh trong bài ĐÃ CÓ nét doodle (tên có `doodle`, hoặc ảnh có nét trắng nét đứt/nhãn chữ vẽ sẵn): ưu tiên dùng, vì đó là phân tích có sẵn của bài. Không vẽ nét mới đè lên; thay vào đó làm cho chính doodle đó CHUYỂN ĐỘNG theo nguyên tắc dựng video ở mục 5b (xem mục 2c).
    (b) Ảnh nội thất thật, sạch, không có doodle: dùng engine như thường lệ (đặt toạ độ và vẽ nét mới theo mục 5).
    (c) Không dùng sơ đồ, mặt bằng, trục đo, ảnh bìa dựng sẵn làm ảnh nền. Không gượng ép: không ảnh nào dùng được thì làm bản tốt nhất, nêu rõ hạn chế, KHÔNG tìm ảnh ngoài kho.
-   Ý chính của reel nên chọn sao cho khớp với ảnh doodle có sẵn của bài.
-3. Chọn ảnh khớp với ý đang làm; không dùng lại ảnh đã có trong `series.json` (so theo đường dẫn ảnh trong kho). Nếu ảnh hợp nhất cho ý này đã dùng ở tập trước của cùng bài thì lấy ảnh khác của bài, nêu rõ trong báo cáo.
-4. Tạo bản làm việc: thu nhỏ cạnh dài còn tối đa 2400 px (LANCZOS, giữ tỷ lệ; không phóng to) lưu thành `source.png`; mọi toạ độ doodle đặt theo bản này. Chép ảnh gốc vào `OUT/original/`. Ảnh nhỏ hơn 1200 px cạnh dài: vẫn làm, ghi hạn chế.
+   Ý chính của reel nên chọn sao cho khớp với các ảnh doodle có sẵn của bài. Khi có nhiều ảnh: mỗi ảnh vẫn chỉ hiện nét/nhãn gốc của chính nó; cảnh đổi sang ảnh khác thì chuyển mờ 0,7 giây (cùng ảnh thì camera zoom như cũ); sắp ảnh theo mạch kể (thường ảnh cho thấy khái niệm tổng thể trước, ảnh chi tiết sau, quay lại ảnh tổng thể ở cảnh kết).
+3. Ưu tiên ảnh chưa có trong `series.json` (`anh_kho`, so theo đường dẫn ảnh trong kho). Được dùng lại ảnh đã dùng ở tập trước khi cần ảnh đó để người xem hiểu ý (hình dễ hiểu quan trọng hơn không trùng ảnh), nhưng nêu rõ trong báo cáo và `source_info.md`; không dùng cả loạt ảnh cũ chỉ vì tiện. Ghi tất cả ảnh đã dùng vào `anh_kho`.
+4. Tạo bản làm việc: thu nhỏ cạnh dài còn tối đa 2400 px (LANCZOS, giữ tỷ lệ; không phóng to) lưu thành `source_<id>.png` cho từng ảnh (id ngắn, ví dụ số thứ tự ảnh trong bài); mọi toạ độ doodle đặt theo bản của đúng ảnh đó. Chép ảnh gốc vào `OUT/original/`. Ảnh nhỏ hơn 1200 px cạnh dài: vẫn làm, ghi hạn chế.
 5. Credit: lấy từ YAML và chú thích trong bài (`cong_trinh`, `nguon_anh_cong_trinh`, tên tác giả ảnh nếu bài ghi). Định dạng: `<công trình> · <studio> · ảnh <nhiếp ảnh gia>`; thiếu mục nào bỏ mục đó, không bịa. Dòng trên khung: `Ảnh dự án: ...` (dài quá 960 px thì giảm cỡ chữ, tối thiểu 26, hoặc xuống hai dòng, không cắt). Ảnh do chủ bài dựng (bìa, doodle, diagram) ghi thêm "Giả Thuyết Kiến Trúc" nếu bài ghi như vậy.
-6. Lưu `OUT/source_info.md`: đường dẫn ảnh trong kho, commit SHA, credit, lý do chọn ảnh, hạn chế.
+6. Lưu `OUT/source_info.md`: đường dẫn từng ảnh trong kho, commit SHA, credit, bảng "ảnh nào dùng ở cảnh nào và vì sao", hạn chế.
 
 
 ## 2c. Làm doodle có sẵn trong ảnh chuyển động (khi chọn ảnh loại (a))
@@ -123,6 +123,7 @@ Engine v7 đang hard-code ảnh và toạ độ của tập #1. Mỗi tập, sao
 - `CREDIT`, `HEAD` (đầu trang luôn là `AH DECODE · <TÊN CHỦ ĐỀ VIẾT HOA>`), tên file ra.
 Không đổi: kích thước 1080×1920, nền trắng, băng keo giấy ở giữa mép trên, ảnh không viền, chữ viết tay Patrick Hand, bố cục chữ, khung cuối `END_LINES` (đã cố định: "AH Decode · series phân tích nguyên tắc thiết kế và cách chọn đồ decor / Theo dõi Fanpage / Giả Thuyết Kiến Trúc / Bài viết phân tích đầy đủ / xem ở dòng đầu tiên / trong phần bình luận").
 Cách làm nhanh đã dùng ở tập 2 (xem `inbox/out/2026-10-06_gestalt-gan-nhau/engine_ep02/`): viết một script nhỏ đọc hai engine gốc, thay khối từ dòng `# ---------------- scenes` đến trước `def render_scene` (engine khung) hoặc trước `BOARDS["plain"] = make_board(1.0)` (engine video) bằng khối dữ liệu của tập, thay `CREDIT`, `HEAD`, tên file ra, rồi ghi thành `engine_epNN.py` và `engine_video_epNN.py`. Một nguồn dữ liệu cho cả hai engine nên chúng luôn đồng bộ. Hàm `D(pts)` trong khối dữ liệu đó đổi toạ độ đo trên ảnh xem thu nhỏ sang ảnh làm việc 2400 px.
+**Nhiều ảnh trong một reel:** dùng `ENGINE/multi_patch.py` (hàm `patch(source_text, video, ids, data_block)`): mỗi cảnh trong `SCENES` có thêm trường `img` (id ảnh), ảnh nằm ở `<thư_mục_ảnh>/source_<id>.png`, nét doodle gốc ở `doodle_<id>.npz` (mũi tên sắp từ đuôi tới đầu, nhãn chữ), camera `cam` tính theo toạ độ của đúng ảnh `img`. `use_image(id)` tự đổi hình học thẻ ảnh (ảnh dọc: thẻ 1440, ảnh ngang: thẻ 1920). Mẫu đầy đủ: `inbox/out/2026-10-16_hai-mau-phu-di-quanh/engine_ep06/` (`prep_ep06.py` tách doodle và xoá nền cho từng ảnh, `gen_ep06.py` sinh hai engine + script + elevenlabs). Chạy: `python3 -I engine_epNN.py <thư_mục_ảnh> <thư_mục_ra>`.
 Cảnh không có vật để khoanh (nguồn gốc, cơ chế) vẫn phải có hình: dùng cảnh rộng hoặc zoom vào vùng liên quan, nét doodle tối giản (một đường, một mũi tên) hoặc không nét; không chèn đồ hoạ khác.
 
 ## 5b. Engine dựng video (`engine_video.py`, nằm cùng thư mục ENGINE)
@@ -154,6 +155,7 @@ Không có bản video không tiếng làm trước. Trình tự: đo audio, că
 ## 7. Kiểm tra bắt buộc trước khi giao (đọc từng khung bằng Read)
 - Hình bao ôm đúng đồ vật được nhắc trong lời đọc; nét không tràn ra ngoài ảnh; không có "cục" đậm do nét chồng nhau.
 - Chữ đọc rõ, có đủ dấu tiếng Việt, không bị cắt, không đè lên nét vẽ khó đọc, không nằm vắt ngang mép ảnh.
+- Mỗi khái niệm được nêu tên trong lời đọc (màu chủ đạo, màu phụ, …) có ảnh thấy được nó ở đúng cảnh nói tới; đổi ảnh giữa các cảnh có chuyển mờ, không giật; cảnh đổi ảnh không để nét của ảnh cũ lẫn sang ảnh mới.
 - Lời đọc khớp với hình trong cùng cảnh, là một mạch kể hiểu được khi nghe, không có câu cụt; tổng thời lượng 55–75 giây (tốc độ đọc khoảng 2,5–3 từ/giây), 150–210 từ.
 - Đủ các phần bắt buộc (A, C, D, F, H, I) theo mục 4a; kịch bản nghe là hiểu, không có câu cụt; đã qua tự chấm mục 4b (câu 1 đầu tiên).
 - Từng nhận định trong lời đọc đều có trong bài gốc và có dòng tương ứng trong `sources.md` (mục 3.1); không có nhận định ngoài bài.
@@ -165,7 +167,7 @@ Kịch bản và nguồn đã được agent độc lập chấm ở bước 5 m
 - `research.md`: ghi chú bài theo các phần mục 4a, kèm vị trí và trích ngắn trong bài (bước 3 mục 4). Đầu file ghi bài đã dùng: đường dẫn trong kho, link GitHub, commit SHA.
 - `script.md`: bảng cảnh (thời lượng, phần nội dung A–I, tiêu đề, lời đọc, hình) + phần lời đọc liền mạch + kết quả tự chấm mục 4b.
 - `elevenlabs.txt`: văn bản thuần để người dùng dán thẳng vào ElevenLabs (mục 8b).
-- `source_info.md`, `original/`.
+- `source_info.md` (bảng ảnh nào ở cảnh nào), `original/`, `source_<id>.png` của từng ảnh.
 - `frames/scene_*.png` + `storyboard.png` + `frames.zip`.
 - Giai đoạn 1 (tập mới): KHÔNG có video. Giai đoạn 2 (đã có ghi âm): `reel_<slug>_final.mp4`.
 - `sources.md`: mỗi nhận định → vị trí trong bài (file + mục/đoạn + trích ngắn) → mức chắc chắn theo bài (nguyên lý / thực nghiệm / quy tắc kinh nghiệm) → nguồn mà bài dẫn cho ý đó (nếu có, chép đúng như bài). Cuối file: danh mục nguồn tham khảo của bài.

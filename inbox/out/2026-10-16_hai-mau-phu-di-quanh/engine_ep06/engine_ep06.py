@@ -14,7 +14,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from silhouette import loose_contour  # noqa: E402
 
-SRC = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "source.png")
+SRC_DIR = sys.argv[1] if len(sys.argv) > 1 else HERE  # thư mục chứa source_<id>.png
 OUT = sys.argv[2] if len(sys.argv) > 2 else HERE
 os.makedirs(os.path.join(OUT, "frames"), exist_ok=True)
 
@@ -50,20 +50,32 @@ def put_credit(t, xy, size, fill, anchor="la"):
     t.put(xy, CREDIT, s, fill, anchor)
 
 
-src = Image.open(SRC).convert("RGB")
-SW, SH = src.size
+IMG_IDS = ['13', '10', '11']
+IMG = {i: Image.open(os.path.join(SRC_DIR, "source_%s.png" % i)).convert("RGB") for i in IMG_IDS}
 
-# ---------------- board geometry (2x master, 1x = reel canvas) ----------------
+# ---------------- board geometry (2x master, 1x = reel canvas); tính lại cho từng ảnh bằng use_image ----------------
 B2W, B2H = W * 2, H * 2
-CARD_W2, BORDER2 = 1440, 0  # ảnh dọc 3:4: thẻ hẹp hơn để chữ nằm ngoài ảnh
-PH_W2 = CARD_W2 - 2 * BORDER2
-PH_H2 = int(round(PH_W2 * SH / SW))
-CARD_H2 = PH_H2 + 2 * BORDER2
-C2 = (B2W / 2, 1880.0)
 ANGLE = 1.2  # degrees, counter-clockwise (card is hung very slightly crooked)
-S2 = PH_W2 / SW
-ROT = cv2.getRotationMatrix2D(C2, ANGLE, 1.0)
-CARD_TOP1, CARD_BOT1 = (C2[1] - CARD_H2 / 2) / 2, (C2[1] + CARD_H2 / 2) / 2
+CUR = None
+
+
+def use_image(i):
+    """chọn ảnh hiện hành: đặt lại src, kích thước và hình học thẻ (ảnh dọc: thẻ hẹp 1440, hạ tâm; ảnh ngang: thẻ 1920)"""
+    global CUR, src, SW, SH, CARD_W2, BORDER2, PH_W2, PH_H2, CARD_H2, C2, S2, ROT, CARD_TOP1, CARD_BOT1
+    CUR = i
+    src = IMG[i]
+    SW, SH = src.size
+    BORDER2 = 0
+    CARD_W2, C2 = (1440, (B2W / 2, 1880.0)) if SH > SW else (1920, (B2W / 2, 1810.0))
+    PH_W2 = CARD_W2 - 2 * BORDER2
+    PH_H2 = int(round(PH_W2 * SH / SW))
+    CARD_H2 = PH_H2 + 2 * BORDER2
+    S2 = PH_W2 / SW
+    ROT = cv2.getRotationMatrix2D(C2, ANGLE, 1.0)
+    CARD_TOP1, CARD_BOT1 = (C2[1] - CARD_H2 / 2) / 2, (C2[1] + CARD_H2 / 2) / 2
+
+
+use_image(IMG_IDS[0])
 
 
 def src_to_b2(p):
@@ -493,34 +505,36 @@ def compose(base, white, fabm):
 
 
 # ---------------- scenes ----------------
-CENTER = (SW / 2, SH / 2)
 OBJ = {}
 
-WIDE = (CENTER, 1.0, (540, 940))
 SCENES = [
-    dict(t="0–4.8s", head="Thêm màu nữa, có rối mắt không?", vo="Thêm màu thứ hai, thứ ba vào nhà, có bị rối mắt không?",
-         cam=WIDE, dark=False, dd=[]),
-    dict(t="4.8–12.1s", head="Một màu chủ đạo, hai màu phụ", vo="Sách Designing Interiors của hai tác giả Kilmer nói, phòng dễ chịu có một màu chủ đạo và hai màu phụ.",
+    dict(t="0–4.8s", img="13", head="Thêm màu nữa, có rối mắt không?", vo="Thêm màu thứ hai, thứ ba vào nhà, có bị rối mắt không?",
+         cam=((900, 1200), 1.0, (540, 940)), dark=False, dd=[]),
+    dict(t="4.8–11.1s", img="13", head="Một màu chủ đạo, hai màu phụ", vo="Sách Designing Interiors của Kilmer nói, phòng dễ chịu có một màu chủ đạo và hai màu phụ.",
          cam=((900, 700), 2.2, (540, 576)), dark=False, dd=[]),
-    dict(t="12.1–18.4s", head="Sách không gắn với con số nào", vo="Mọi người hay nghe công thức sáu mươi, ba mươi, mười. Sách không gắn với con số nào.",
-         cam=((1100, 1750), 2.2, (540, 1388)), dark=False, dd=[]),
-    dict(t="18.4–25.7s", head="Vàng quay lại ở mảng ốp đồng", vo="Ví dụ The Green Box ở Berlin, của Ester Bruzkus Architekten. Vàng quay lại ở mảng ốp đồng quanh lò sưởi.",
+    dict(t="11.1–17.4s", img="13", head="Sách không gắn với con số nào", vo="Mọi người hay nghe công thức sáu mươi, ba mươi, mười. Sách không gắn với con số nào.",
+         cam=((1300, 1300), 2.2, (680, 992)), dark=False, dd=[]),
+    dict(t="17.4–25.6s", img="13", head="Xanh chủ đạo, hồng tím quay lại", vo="Ví dụ The Green Box ở Berlin, của Ester Bruzkus Architekten. Xanh là màu chủ đạo, hồng tím quay lại ở ghế quầy bếp.",
+         cam=((1300, 1750), 1.6, (760, 880)), dark=True, dd=['arr', 'lab']),
+    dict(t="25.6–30.4s", img="10", head="Màu phụ thứ nhất: vàng", vo="Quanh lò sưởi, màu phụ thứ nhất là vàng, ở mảng ốp đồng.",
          cam=((430, 700), 2.0, (420, 880)), dark=True, dd=['arr1', 'lab1']),
-    dict(t="25.7–30.5s", head="Hồng tím ở đá và thảm lông", vo="Màu hồng tím thì nằm ở phiến đá hồng và tấm thảm lông.",
+    dict(t="30.4–35.5s", img="10", head="Màu phụ thứ hai: hồng tím", vo="Màu phụ thứ hai là hồng tím, ở phiến đá và tấm thảm lông.",
          cam=((330, 1560), 1.6, (440, 880)), dark=True, dd=['arr2a', 'arr2b', 'lab2']),
-    dict(t="30.5–41.5s", head="Hai màu đối nhau thì làm dịu", vo="Hồng tím gần như đối diện xanh lá trên bánh xe màu. Hai màu đối nhau mà cùng rực, đặt sát nhau là chói mắt, nên hai màu phụ đều được làm dịu.",
+    dict(t="35.5–45.3s", img="10", head="Hai màu đối nhau thì làm dịu", vo="Hồng tím gần như đối diện xanh lá trên bánh xe màu. Hai màu đối nhau mà cùng rực, đặt sát nhau là chói mắt, nên phải làm dịu.",
          cam=((420, 1750), 2.2, (330, 1388)), dark=False, dd=[]),
-    dict(t="41.5–51.3s", head="Mỗi màu phụ có mặt hai chỗ", vo="Ở nhà mình, cho mỗi màu phụ có mặt ít nhất hai chỗ, trên hai chất liệu khác nhau. Màu phụ dịu, nhỏ và quay lại thì không rối.",
-         cam=WIDE, dark=False, dd=[]),
-    dict(t="51.3–62.3s", head="end", vo="",
-         cam=(CENTER, 0.8, (540, 600)), dark=False, dd=[]),
+    dict(t="45.3–50.4s", img="11", head="Màu chủ đạo cũng tự lặp lại", vo="Màu chủ đạo cũng tự lặp lại, ở tường sơn, mặt đá và tủ.",
+         cam=((1510, 900), 1.4, (540, 940)), dark=True, dd=['arr_stone', 'arr_cab', 'lab_stone', 'lab_cab', 'lab_wall', 'lab_same']),
+    dict(t="50.4–59.2s", img="13", head="Mỗi màu phụ có mặt hai chỗ", vo="Ở nhà mình, mỗi màu phụ nên có mặt ít nhất hai chỗ, trên hai chất liệu khác nhau. Dịu, nhỏ, quay lại thì không rối.",
+         cam=((900, 1200), 1.0, (540, 940)), dark=False, dd=[]),
+    dict(t="59.2–70.2s", img="13", head="end", vo="",
+         cam=((900, 1200), 0.8, (540, 600)), dark=False, dd=[]),
 ]
 END = len(SCENES) - 1
 BOARDS = {}
 
-_L = np.load(os.path.join(HERE, "doodle_ep06.npz"))
-LAYER = {k: _L[k] for k in _L.files}   # toạ độ trên ảnh làm việc 1800x2400 (source.png)
-RAD = dict(arr1=1.0, arr2a=1.0, arr2b=1.0)         # bán kính nét gốc (px ảnh làm việc)
+LAYERS = {_i: {k: v for k, v in np.load(os.path.join(HERE, "doodle_%s.npz" % _i)).items()} for _i in IMG_IDS}
+# toạ độ nét/nhãn trên ảnh làm việc (cạnh dài 2400) của từng ảnh; mỗi cảnh chỉ hiện cụm nét của ảnh mình (trường img)
+RAD = 1.0  # bán kính nét gốc (px ảnh làm việc)
 
 
 def _stamp(wb, pts, r_src):
@@ -543,18 +557,20 @@ def _label(text, cam, pts):
 
 
 def doodle(i, wb, text, cam):
+    layer = LAYERS[SCENES[i]["img"]]
     for k in SCENES[i].get("dd", []):
         if k.startswith("lab"):
-            _label(text, cam, LAYER[k])
+            _label(text, cam, layer[k])
         else:
-            _stamp(wb, LAYER[k], RAD[k])
+            _stamp(wb, layer[k], RAD)
 
 
 def render_scene(i):
     sc = SCENES[i]
+    use_image(sc["img"])
     cam = Cam(*sc["cam"])
     key = "clean" if i == END else ("dark" if sc["dark"] else "plain")
-    rr = cam.render(*BOARDS[key])
+    rr = cam.render(*BOARDS[(sc["img"], key)])
     base, fabm = rr[..., :3], 1.0 - np.clip(rr[..., 3] / 255.0, 0, 1)
     text = Text()
     wb = Brush(cam)
@@ -589,9 +605,11 @@ def render_scene(i):
     return compose(base, white, fabm)
 
 
-BOARDS["plain"] = make_board(1.0)
-BOARDS["dark"] = make_board(0.86)
-BOARDS["clean"] = make_board(1.0)
+for _i in IMG_IDS:
+    use_image(_i)
+    BOARDS[(_i, "plain")] = make_board(1.0)
+    BOARDS[(_i, "dark")] = make_board(0.86)
+    BOARDS[(_i, "clean")] = BOARDS[(_i, "plain")]
 frames = []
 for i in range(len(SCENES)):
     im = render_scene(i)
@@ -607,7 +625,7 @@ SHH = TOP + rows * (PH + 86) + 250
 sheet = Image.new("RGB", (SHW, SHH), (30, 27, 24))
 d = ImageDraw.Draw(sheet)
 d.text((MX, 38), "AH Decode · Một màu chủ đạo, hai màu phụ", font=F(60), fill=(255, 255, 255))
-d.text((MX, 118), "Ảnh dán bằng băng giấy · nền trắng · chữ nâu trên nền, trắng trên ảnh", font=F(34), fill=(200, 194, 186))
+d.text((MX, 118), "Ảnh dán bằng băng giấy · nền trắng · chữ nâu trên nền, trắng trên ảnh · mỗi cảnh một ảnh phù hợp nhất", font=F(34), fill=(200, 194, 186))
 d.text((MX, 158), "Camera zoom vào chi tiết · nét doodle gốc của bài lộ dần theo lời đọc", font=F(34), fill=(200, 194, 186))
 for i, fr in enumerate(frames):
     r, c = divmod(i, cols)
@@ -619,6 +637,6 @@ for i, fr in enumerate(frames):
 fy = TOP + rows * (PH + 86) + 10
 d.text((MX, fy), "Nền trắng trơn · băng keo giấy thay ghim · header AH DECODE · bỏ “Bước n”", font=F(32), fill=(255, 255, 255))
 d.text((MX, fy + 44), "Cảnh zoom kín ảnh: chữ trắng viết lên ảnh (có phủ tối nhẹ).", font=F(32), fill=(225, 220, 212))
-d.text((MX, fy + 88), "Ảnh tối ~14% ở cảnh có nét vẽ (cảnh 4, 5); các cảnh khác giữ ảnh nguyên bản.", font=F(32), fill=(225, 220, 212))
+d.text((MX, fy + 88), "Ảnh tối ~14% ở cảnh có nét vẽ; các cảnh khác giữ ảnh nguyên bản.", font=F(32), fill=(225, 220, 212))
 sheet.save(os.path.join(OUT, "storyboard.png"))
 print("fabric", tuple(int(x) for x in FAB), "sheet", sheet.size)

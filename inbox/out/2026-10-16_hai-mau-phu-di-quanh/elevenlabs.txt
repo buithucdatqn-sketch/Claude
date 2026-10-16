@@ -1,20 +1,24 @@
 Thêm màu thứ hai, thứ ba vào nhà, có bị rối mắt không?
 <break time="1.2s" />
-Sách Đi-dai-ninh In-tia-ri-ơ của hai tác giả Kin-mơ nói, phòng dễ chịu có một màu chủ đạo và hai màu phụ.
+Sách Đi-dai-ninh In-tia-ri-ơ của Kin-mơ nói, phòng dễ chịu có một màu chủ đạo và hai màu phụ.
 <break time="1.2s" />
 Mọi người hay nghe công thức sáu mươi, ba mươi, mười.
 Sách không gắn với con số nào.
 <break time="1.2s" />
 Ví dụ Đờ Grin Bóc ở Béc-lin, của Ét-xtơ Bờ-rút-cút Ác-ki-téc-ten.
-Vàng quay lại ở mảng ốp đồng quanh lò sưởi.
+Xanh là màu chủ đạo, hồng tím quay lại ở ghế quầy bếp.
 <break time="1.2s" />
-Màu hồng tím thì nằm ở phiến đá hồng và tấm thảm lông.
+Quanh lò sưởi, màu phụ thứ nhất là vàng, ở mảng ốp đồng.
+<break time="1.2s" />
+Màu phụ thứ hai là hồng tím, ở phiến đá và tấm thảm lông.
 <break time="1.2s" />
 Hồng tím gần như đối diện xanh lá trên bánh xe màu.
-Hai màu đối nhau mà cùng rực, đặt sát nhau là chói mắt, nên hai màu phụ đều được làm dịu.
+Hai màu đối nhau mà cùng rực, đặt sát nhau là chói mắt, nên phải làm dịu.
 <break time="1.2s" />
-Ở nhà mình, cho mỗi màu phụ có mặt ít nhất hai chỗ, trên hai chất liệu khác nhau.
-Màu phụ dịu, nhỏ và quay lại thì không rối.
+Màu chủ đạo cũng tự lặp lại, ở tường sơn, mặt đá và tủ.
+<break time="1.2s" />
+Ở nhà mình, mỗi màu phụ nên có mặt ít nhất hai chỗ, trên hai chất liệu khác nhau.
+Dịu, nhỏ, quay lại thì không rối.
 <break time="1.2s" />
 Ây-ết Đi-cốt, series về nguyên tắc thiết kế và chọn đồ đê-co.
 Theo dõi Giả Thuyết Kiến Trúc.
