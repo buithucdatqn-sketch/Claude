@@ -54,3 +54,22 @@ for iid, (fn, view, boxes, tails, junk, thr, thin) in CFG.items():
     np.savez_compressed(OUT + f"engine_ep06/doodle_{iid}.npz", **layer)
     dbg = a.copy(); dbg[mask_all > 0] = (255, 0, 0)
     Image.fromarray(dbg).resize((a.shape[1] // 3, a.shape[0] // 3)).save(f"/tmp/claude-0/dbg_{iid}.png")
+
+
+# ---- sơ đồ / mặt bằng / trục đo: không có doodle, chỉ thu nhỏ (không phóng to), lớp nét rỗng ----
+PLAIN = {"03": "03-mat-bang-the-green-box.png", "09": "09-truc-do-the-green-box.jpg", "08": "08-diagram-xanh-o-giua-am-di-quanh.png"}
+for iid, fn in PLAIN.items():
+    im = Image.open(OUT + "original/" + fn).convert("RGB")
+    w, h = im.size
+    s_ = min(1.0, 2400 / max(w, h))
+    if s_ < 1:
+        im = im.resize((round(w * s_), round(h * s_)), Image.LANCZOS)
+    if iid == "03":  # xoá tiêu đề và dòng nguồn in sẵn trên mặt bằng (engine in credit riêng), giữ nguyên các nhãn phòng
+        a_ = np.array(im)
+        k_ = a_.shape[1] / 1100
+        a_[: int(100 * k_)] = 255
+        a_[int(625 * k_):] = 255
+        im = Image.fromarray(a_)
+    im.save(OUT + f"source_{iid}.png")
+    np.savez_compressed(OUT + f"engine_ep06/doodle_{iid}.npz")
+    print(iid, im.size)

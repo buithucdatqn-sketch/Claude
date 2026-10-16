@@ -1,6 +1,8 @@
 """Vá hai engine gốc (engine_storyboard_v7.py, engine_video.py) để một reel dùng NHIỀU ảnh.
 Mỗi cảnh có trường img (id ảnh); ảnh nằm trong <thư_mục_ảnh>/source_<id>.png. Hình học thẻ ảnh (dọc/ngang) tính lại theo từng ảnh
 bằng use_image(). Chuyển giữa hai ảnh khác nhau trong video là chuyển mờ 0,7 giây; cùng ảnh thì camera nội suy như cũ.
+Chế độ mực (ink=True trong cảnh): cảnh dùng sơ đồ/mặt bằng/trục đo nền trắng: toàn khung coi như nền giấy nên nét và chữ vẽ bằng mực nâu đậm (không phủ tối trên/dưới), nét mới vẽ bằng Brush (ellipse/arrow) từ dd.
+Mỗi cảnh có thể có credit riêng (trường credit), mặc định là CREDIT.
 Dùng: patch(source_text, video=bool, ids=["10", "13"], data_block=str) -> text engine mới (gen_epNN.py gọi hàm này)."""
 
 
@@ -35,6 +37,7 @@ def use_image(i):
 
 
 use_image(IMG_IDS[0])
+CREDIT_CUR = [CREDIT]  # credit của cảnh đang dựng (cảnh có thể đặt credit riêng)
 
 
 '''
@@ -43,6 +46,8 @@ use_image(IMG_IDS[0])
 def patch(s, video, ids, data_block):
     s = _rep(s, 'SRC = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "source.png")',
              'SRC_DIR = sys.argv[1] if len(sys.argv) > 1 else HERE  # thư mục chứa source_<id>.png')
+    s = _rep(s, 't.d.textlength(CREDIT, font=F(s))', 't.d.textlength(CREDIT_CUR[0], font=F(s))')
+    s = _rep(s, 't.put(xy, CREDIT, s, fill, anchor)', 't.put(xy, CREDIT_CUR[0], s, fill, anchor)')
     a, b = s.index('src = Image.open(SRC)'), s.index('def src_to_b2')
     s = s[:a] + GEOM % dict(ids=ids) + s[b:]
     a = s.index('# ---------------- scenes')
@@ -52,7 +57,12 @@ def patch(s, video, ids, data_block):
               '    BOARDS[(_i, "dark")] = make_board(0.86)\n    BOARDS[(_i, "clean")] = BOARDS[(_i, "plain")]\n')
     if video:
         s = _rep(s, 'BOARDS["plain"] = make_board(1.0)\nBOARDS["dark"] = make_board(0.86)\nBOARDS["clean"] = BOARDS["plain"]\n', boards)
-        s = _rep(s, '    sc = SCENES[i]\n    cam = Cam(*sc["cam"])\n    key = "dark" if', '    sc = SCENES[i]\n    use_image(sc["img"])\n    cam = Cam(*sc["cam"])\n    key = "dark" if')
+        s = _rep(s, '    sc = SCENES[i]\n    cam = Cam(*sc["cam"])\n    key = "dark" if', '    sc = SCENES[i]\n    use_image(sc["img"])\n    CREDIT_CUR[0] = sc.get("credit", CREDIT)\n    cam = Cam(*sc["cam"])\n    key = "dark" if')
+        s = _rep(s, '        st, sb = not title_on_fabric, not vo_on_fabric', '        st, sb = not title_on_fabric and not sc.get("ink"), not vo_on_fabric and not sc.get("ink")')
+        s = _rep(s, '    base, fabm = rr[..., :3] * fac, 1.0 - np.clip(rr[..., 3] / 255.0, 0, 1)\n',
+                 '    base, fabm = rr[..., :3] * fac, 1.0 - np.clip(rr[..., 3] / 255.0, 0, 1)\n'
+                 '    pi = (1.0 if i and L[i - 1]["sc"].get("ink") else 0.0) * (1 - p) + (1.0 if ly["sc"].get("ink") else 0.0) * p\n'
+                 '    fabm = fabm * (1 - pi) + pi  # cảnh mực: cả khung là nền giấy, nét và chữ màu mực\n')
         s = _rep(s, 'return dict(sc=sc, cam=sc["cam"], key=key,', 'return dict(sc=sc, img=sc["img"], cam=sc["cam"], key=key,')
         s = _rep(s, '        cam = Cam(*ly["cam"])\n        rr = render_cam(ly["key"], cam)\n',
                  '        use_image(ly["img"])\n        cam = Cam(*ly["cam"])\n        rr = render_cam((ly["img"], ly["key"]), cam)\n')
@@ -71,6 +81,8 @@ def patch(s, video, ids, data_block):
         s = _rep(s, old, new)
     else:
         s = _rep(s, 'BOARDS["plain"] = make_board(1.0)\nBOARDS["dark"] = make_board(0.86)\nBOARDS["clean"] = make_board(1.0)\n', boards)
-        s = _rep(s, '    sc = SCENES[i]\n    cam = Cam(*sc["cam"])\n', '    sc = SCENES[i]\n    use_image(sc["img"])\n    cam = Cam(*sc["cam"])\n')
+        s = _rep(s, '    sc = SCENES[i]\n    cam = Cam(*sc["cam"])\n', '    sc = SCENES[i]\n    use_image(sc["img"])\n    CREDIT_CUR[0] = sc.get("credit", CREDIT)\n    cam = Cam(*sc["cam"])\n')
+        s = _rep(s, '    base, fabm = rr[..., :3], 1.0 - np.clip(rr[..., 3] / 255.0, 0, 1)\n', '    base, fabm = rr[..., :3], 1.0 - np.clip(rr[..., 3] / 255.0, 0, 1)\n    if sc.get("ink"):\n        fabm = np.ones_like(fabm)  # cảnh mực: cả khung là nền giấy\n')
+        s = _rep(s, 'base = scrim(base, top=not title_on_fabric, bottom=not vo_on_fabric)', 'base = scrim(base, top=not title_on_fabric and not sc.get("ink"), bottom=not vo_on_fabric and not sc.get("ink"))')
         s = _rep(s, 'rr = cam.render(*BOARDS[key])', 'rr = cam.render(*BOARDS[(sc["img"], key)])')
     return s

@@ -45,12 +45,12 @@ def F(size):
 def put_credit(t, xy, size, fill, anchor="la"):
     """credit một dòng; dài quá 960 px thì giảm cỡ chữ (tối thiểu 26)"""
     s = size
-    while s > 26 and t.d.textlength(CREDIT, font=F(s)) > 960:
+    while s > 26 and t.d.textlength(CREDIT_CUR[0], font=F(s)) > 960:
         s -= 1
-    t.put(xy, CREDIT, s, fill, anchor)
+    t.put(xy, CREDIT_CUR[0], s, fill, anchor)
 
 
-IMG_IDS = ['13', '10', '11']
+IMG_IDS = ['13', '09', '08', '03', '11', '10']
 IMG = {i: Image.open(os.path.join(SRC_DIR, "source_%s.png" % i)).convert("RGB") for i in IMG_IDS}
 
 # ---------------- board geometry (2x master, 1x = reel canvas); tính lại cho từng ảnh bằng use_image ----------------
@@ -76,6 +76,7 @@ def use_image(i):
 
 
 use_image(IMG_IDS[0])
+CREDIT_CUR = [CREDIT]  # credit của cảnh đang dựng (cảnh có thể đặt credit riêng)
 
 
 def src_to_b2(p):
@@ -511,23 +512,29 @@ OBJ = {}
 SCENES = [
     dict(t="0–4.8s", img="13", head="Thêm màu nữa, có rối mắt không?", vo="Thêm màu thứ hai, thứ ba vào nhà, có bị rối mắt không?",
          cam=((900, 1200), 1.0, (540, 940)), dark=False, dd=[]),
-    dict(t="4.8–11.1s", img="13", head="Một màu chủ đạo, hai màu phụ", vo="Sách Designing Interiors của Kilmer nói, phòng dễ chịu có một màu chủ đạo và hai màu phụ.",
-         cam=((900, 700), 2.2, (540, 576)), dark=False, dd=[]),
-    dict(t="11.1–17.4s", img="13", head="Sách không gắn với con số nào", vo="Mọi người hay nghe công thức sáu mươi, ba mươi, mười. Sách không gắn với con số nào.",
+    dict(t="4.8–13.6s", img="09", head="Căn hộ có khối xanh ở giữa", vo="Mọi người nhìn căn hộ The Green Box ở Berlin nè. Giữa nhà là một khối xanh, quanh khối xanh có màu vàng và hồng tím.",
+         cam=((780, 470), 2.0, (540, 960)), dark=False, dd=[], ink=True, credit="Trục đo: The Green Box, Berlin · Ester Bruzkus Architekten (qua ArchDaily)"),
+    dict(t="13.6–24.3s", img="08", head="Một màu chủ đạo, hai màu phụ", vo="Sách Designing Interiors của Kilmer nói, phòng dễ chịu có một màu chủ đạo và hai màu phụ. Ở đây, xanh là chủ đạo, vàng và hồng tím là hai màu phụ.",
+         cam=((1080, 1010), 1.0, (540, 880)), dark=False, dd=[], ink=True, credit=""),
+    dict(t="24.3–30.6s", img="13", head="Sách không gắn với con số nào", vo="Mọi người hay nghe công thức sáu mươi, ba mươi, mười. Sách không gắn với con số nào.",
          cam=((1300, 1300), 2.2, (680, 992)), dark=False, dd=[]),
-    dict(t="17.4–25.6s", img="13", head="Xanh chủ đạo, hồng tím quay lại", vo="Ví dụ The Green Box ở Berlin, của Ester Bruzkus Architekten. Xanh là màu chủ đạo, hồng tím quay lại ở ghế quầy bếp.",
+    dict(t="30.6–37.6s", img="03", head="Mặt bằng: bếp nằm trong khối xanh", vo="Trên mặt bằng, khối xanh chạy dọc giữa nhà, tủ bếp chạy liền với nó. Mình đứng ở bếp trước.",
+         cam=((1050, 740), 1.6, (540, 940)), dark=False, dd=[('ellipse', 1134, 752, 330, 140)], ink=True, credit="Mặt bằng: The Green Box, Berlin · Ester Bruzkus Architekten (qua ArchDaily)"),
+    dict(t="37.6–44.2s", img="13", head="Ở bếp: xanh phủ, ghế hồng quay lại", vo="Ở bếp, xanh phủ cả tủ lẫn tường. Còn ghế quầy bếp là hồng tím, màu phụ quay lại.",
          cam=((1300, 1750), 1.6, (760, 880)), dark=True, dd=['arr', 'lab']),
-    dict(t="25.6–30.4s", img="10", head="Màu phụ thứ nhất: vàng", vo="Quanh lò sưởi, màu phụ thứ nhất là vàng, ở mảng ốp đồng.",
-         cam=((430, 700), 2.0, (420, 880)), dark=True, dd=['arr1', 'lab1']),
-    dict(t="30.4–35.5s", img="10", head="Màu phụ thứ hai: hồng tím", vo="Màu phụ thứ hai là hồng tím, ở phiến đá và tấm thảm lông.",
-         cam=((330, 1560), 1.6, (440, 880)), dark=True, dd=['arr2a', 'arr2b', 'lab2']),
-    dict(t="35.5–45.3s", img="10", head="Hai màu đối nhau thì làm dịu", vo="Hồng tím gần như đối diện xanh lá trên bánh xe màu. Hai màu đối nhau mà cùng rực, đặt sát nhau là chói mắt, nên phải làm dịu.",
-         cam=((420, 1750), 2.2, (330, 1388)), dark=False, dd=[]),
-    dict(t="45.3–50.4s", img="11", head="Màu chủ đạo cũng tự lặp lại", vo="Màu chủ đạo cũng tự lặp lại, ở tường sơn, mặt đá và tủ.",
+    dict(t="44.2–49.3s", img="11", head="Màu chủ đạo cũng tự lặp lại", vo="Màu chủ đạo cũng tự lặp lại, ở tường sơn, mặt đá và tủ.",
          cam=((1510, 900), 1.4, (540, 940)), dark=True, dd=['arr_stone', 'arr_cab', 'lab_stone', 'lab_cab', 'lab_wall', 'lab_same']),
-    dict(t="50.4–59.2s", img="13", head="Mỗi màu phụ có mặt hai chỗ", vo="Ở nhà mình, mỗi màu phụ nên có mặt ít nhất hai chỗ, trên hai chất liệu khác nhau. Dịu, nhỏ, quay lại thì không rối.",
-         cam=((900, 1200), 1.0, (540, 940)), dark=False, dd=[]),
-    dict(t="59.2–70.2s", img="13", head="end", vo="",
+    dict(t="49.3–52.8s", img="03", head="Sang phòng khách", vo="Giờ sang phòng khách, quanh tấm thảm tròn.",
+         cam=((1750, 700), 1.6, (540, 940)), dark=False, dd=[('ellipse', 1951, 698, 255, 275)], ink=True, credit="Mặt bằng: The Green Box, Berlin · Ester Bruzkus Architekten (qua ArchDaily)"),
+    dict(t="52.8–57.6s", img="10", head="Màu phụ thứ nhất: vàng", vo="Màu phụ thứ nhất là vàng, ở mảng ốp đồng quanh lò sưởi.",
+         cam=((430, 700), 2.0, (420, 880)), dark=True, dd=['arr1', 'lab1']),
+    dict(t="57.6–62.7s", img="10", head="Màu phụ thứ hai: hồng tím", vo="Màu phụ thứ hai là hồng tím, ở phiến đá và tấm thảm lông.",
+         cam=((330, 1560), 1.6, (440, 880)), dark=True, dd=['arr2a', 'arr2b', 'lab2']),
+    dict(t="62.7–72.5s", img="10", head="Hai màu đối nhau thì làm dịu", vo="Hồng tím gần như đối diện xanh lá trên bánh xe màu. Hai màu đối nhau mà cùng rực, đặt sát nhau là chói mắt, nên phải làm dịu.",
+         cam=((420, 1750), 2.2, (330, 1388)), dark=False, dd=[]),
+    dict(t="72.5–83.8s", img="09", head="Mỗi màu phụ có mặt hai chỗ", vo="Ở nhà mình, mỗi màu phụ nên có mặt ít nhất hai chỗ, trên hai chất liệu khác nhau, như vàng ở sofa và mảng ốp đồng. Dịu, nhỏ, quay lại thì không rối.",
+         cam=((950, 400), 1.8, (540, 850)), dark=False, dd=[('ellipse', 991, 455, 82, 88), ('ellipse', 1134, 291, 48, 78)], ink=True, credit="Trục đo: The Green Box, Berlin · Ester Bruzkus Architekten (qua ArchDaily)"),
+    dict(t="83.8–94.8s", img="13", head="end", vo="",
          cam=((900, 1200), 0.8, (540, 600)), dark=False, dd=[]),
 ]
 END = len(SCENES) - 1
@@ -560,7 +567,9 @@ def _label(text, cam, pts):
 def doodle(i, wb, text, cam):
     layer = LAYERS[SCENES[i]["img"]]
     for k in SCENES[i].get("dd", []):
-        if k.startswith("lab"):
+        if isinstance(k, tuple):   # nét mới vẽ tay (cảnh mực trên mặt bằng/trục đo): ("ellipse", cx, cy, rx, ry) hoặc ("arrow", a, b)
+            getattr(wb, k[0])(*k[1:])
+        elif k.startswith("lab"):
             _label(text, cam, layer[k])
         else:
             _stamp(wb, layer[k], RAD)
@@ -590,6 +599,7 @@ def times(t):
 def layout(i):
     sc = SCENES[i]
     use_image(sc["img"])
+    CREDIT_CUR[0] = sc.get("credit", CREDIT)
     cam = Cam(*sc["cam"])
     key = "dark" if sc["dark"] else "plain"
     if i == END:
@@ -608,7 +618,7 @@ def layout(i):
         vo_lines = len(tm.wrap(sc["vo"], 60, 960))
         vo_below = bot + 110
         vo_on_fabric = vo_below + vo_lines * 78 <= 1800
-        st, sb = not title_on_fabric, not vo_on_fabric
+        st, sb = not title_on_fabric and not sc.get("ink"), not vo_on_fabric and not sc.get("ink")
         if title_on_fabric:
             tm.put((60, 196), HEAD, 38, 215)
             tm.block(60, 250, sc["head"], 96, 104)
@@ -703,6 +713,8 @@ for fi in range(nframes):
         a_main = sm((u - 0.40) / 0.30)
         t_start = TRANS + 0.15
     base, fabm = rr[..., :3] * fac, 1.0 - np.clip(rr[..., 3] / 255.0, 0, 1)
+    pi = (1.0 if i and L[i - 1]["sc"].get("ink") else 0.0) * (1 - p) + (1.0 if ly["sc"].get("ink") else 0.0) * p
+    fabm = fabm * (1 - pi) + pi  # cảnh mực: cả khung là nền giấy, nét và chữ màu mực
     # progressive strokes
     reveal_end = max(t_start + 0.8, 0.62 * dur)
     r = np.clip((u - t_start) / (reveal_end - t_start), 0, 1)

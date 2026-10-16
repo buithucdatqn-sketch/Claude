@@ -15,8 +15,15 @@ from multi_patch import patch  # noqa: E402
 
 WPS = 3.2      # tốc độ đọc dự kiến (từ/giây)
 TRANS = 0.7
-IDS = ["13", "10", "11"]
-DIM = {"13": (1800, 2400), "10": (1800, 2400), "11": (2400, 1800)}   # kích thước ảnh làm việc (rộng, cao)
+IDS = ["13", "09", "08", "03", "11", "10"]
+DIM = {"13": (1800, 2400), "10": (1800, 2400), "11": (2400, 1800), "03": (2400, 1451), "09": (1652, 1167), "08": (2160, 2020)}
+CR_PLAN = "Mặt bằng: The Green Box, Berlin · Ester Bruzkus Architekten (qua ArchDaily)"
+CR_AXO = "Trục đo: The Green Box, Berlin · Ester Bruzkus Architekten (qua ArchDaily)"
+CR_DIA = "Sơ đồ theo Kilmer & Kilmer (2014), tr. 166–167; Beadle (2023)"
+KITCHEN = ("ellipse", 1134, 752, 330, 140)       # mặt bằng 03: tủ bếp chạy liền + đảo bếp
+LIVING = ("ellipse", 1951, 698, 255, 275)        # mặt bằng 03: phòng khách quanh thảm tròn
+SOFA = ("ellipse", 991, 455, 82, 88)             # trục đo 09: sofa vàng
+FIRE = ("ellipse", 1134, 291, 48, 78)            # trục đo 09: mảng ốp đồng quanh lò sưởi
 
 
 def wide(i, z=1.0):
@@ -25,7 +32,7 @@ def wide(i, z=1.0):
 
 
 def cover(i, fx, fy, z, anc, m=40):
-    """ảnh dọc/ngang phủ kín khung khi zoom: dời điểm neo (canvas px / px ảnh = z*0.4 cho thẻ dọc 1440, z*0.4*1920/1440... tính từ thẻ)"""
+    """ảnh phủ kín khung khi zoom: dời điểm neo (thẻ dọc rộng 1440, thẻ ngang rộng 1920 trên canvas 2x)"""
     w, h = DIM[i]
     card = 1440 if h > w else 1920
     sc = z * card / w / 2
@@ -38,25 +45,31 @@ def cover(i, fx, fy, z, anc, m=40):
 SC = [
     dict(part="A", img="13", head="Thêm màu nữa, có rối mắt không?", cam=wide("13"), dark=False, dd=[],
          vo="Thêm màu thứ hai, thứ ba vào nhà, có bị rối mắt không?"),
-    dict(part="B", img="13", head="Một màu chủ đạo, hai màu phụ", cam=((900, 700), 2.2, (540, 900)), dark=False, dd=[],
-         vo="Sách Designing Interiors của Kilmer nói, phòng dễ chịu có một màu chủ đạo và hai màu phụ.",
-         tts="Sách Đi-dai-ninh In-tia-ri-ơ của Kin-mơ nói, phòng dễ chịu có một màu chủ đạo và hai màu phụ."),
+    dict(part="E", img="09", head="Căn hộ có khối xanh ở giữa", cam=((780, 470), 2.0, (540, 960)), free=True, dark=False, ink=True, credit=CR_AXO, dd=[],
+         vo="Mọi người nhìn căn hộ The Green Box ở Berlin nè. Giữa nhà là một khối xanh, quanh khối xanh có màu vàng và hồng tím.",
+         tts="Mọi người nhìn căn hộ Đờ Grin Bóc ở Béc-lin nè. Giữa nhà là một khối xanh, quanh khối xanh có màu vàng và hồng tím."),
+    dict(part="B", img="08", head="Một màu chủ đạo, hai màu phụ", cam=((1080, 1010), 1.0, (540, 880)), free=True, dark=False, ink=True, credit="", dd=[],
+         vo="Sách Designing Interiors của Kilmer nói, phòng dễ chịu có một màu chủ đạo và hai màu phụ. Ở đây, xanh là chủ đạo, vàng và hồng tím là hai màu phụ.",
+         tts="Sách Đi-dai-ninh In-tia-ri-ơ của Kin-mơ nói, phòng dễ chịu có một màu chủ đạo và hai màu phụ. Ở đây, xanh là chủ đạo, vàng và hồng tím là hai màu phụ."),
     dict(part="C", img="13", head="Sách không gắn với con số nào", cam=((1300, 1300), 2.2, (540, 900)), dark=False, dd=[],
          vo="Mọi người hay nghe công thức sáu mươi, ba mươi, mười. Sách không gắn với con số nào."),
-    dict(part="E", img="13", head="Xanh chủ đạo, hồng tím quay lại", cam=((1300, 1750), 1.6, (760, 880)), free=True, dark=True, dd=["arr", "lab"],
-         vo="Ví dụ The Green Box ở Berlin, của Ester Bruzkus Architekten. Xanh là màu chủ đạo, hồng tím quay lại ở ghế quầy bếp.",
-         tts="Ví dụ Đờ Grin Bóc ở Béc-lin, của Ét-xtơ Bờ-rút-cút Ác-ki-téc-ten. Xanh là màu chủ đạo, hồng tím quay lại ở ghế quầy bếp."),
+    dict(part="E", img="03", head="Mặt bằng: bếp nằm trong khối xanh", cam=((1050, 740), 1.6, (540, 940)), free=True, dark=False, ink=True, credit=CR_PLAN, dd=[KITCHEN],
+         vo="Trên mặt bằng, khối xanh chạy dọc giữa nhà, tủ bếp chạy liền với nó. Mình đứng ở bếp trước."),
+    dict(part="E", img="13", head="Ở bếp: xanh phủ, ghế hồng quay lại", cam=((1300, 1750), 1.6, (760, 880)), free=True, dark=True, dd=["arr", "lab"],
+         vo="Ở bếp, xanh phủ cả tủ lẫn tường. Còn ghế quầy bếp là hồng tím, màu phụ quay lại."),
+    dict(part="C", img="11", head="Màu chủ đạo cũng tự lặp lại", cam=((1510, 900), 1.4, (540, 940)), free=True, dark=True,
+         dd=["arr_stone", "arr_cab", "lab_stone", "lab_cab", "lab_wall", "lab_same"],
+         vo="Màu chủ đạo cũng tự lặp lại, ở tường sơn, mặt đá và tủ."),
+    dict(part="E", img="03", head="Sang phòng khách", cam=((1750, 700), 1.6, (540, 940)), free=True, dark=False, ink=True, credit=CR_PLAN, dd=[LIVING],
+         vo="Giờ sang phòng khách, quanh tấm thảm tròn."),
     dict(part="E", img="10", head="Màu phụ thứ nhất: vàng", cam=((430, 700), 2.0, (420, 880)), free=True, dark=True, dd=["arr1", "lab1"],
-         vo="Quanh lò sưởi, màu phụ thứ nhất là vàng, ở mảng ốp đồng."),
+         vo="Màu phụ thứ nhất là vàng, ở mảng ốp đồng quanh lò sưởi."),
     dict(part="E", img="10", head="Màu phụ thứ hai: hồng tím", cam=((330, 1560), 1.6, (440, 880)), free=True, dark=True, dd=["arr2a", "arr2b", "lab2"],
          vo="Màu phụ thứ hai là hồng tím, ở phiến đá và tấm thảm lông."),
     dict(part="C", img="10", head="Hai màu đối nhau thì làm dịu", cam=((420, 1750), 2.2, (330, 1388)), dark=False, dd=[],
          vo="Hồng tím gần như đối diện xanh lá trên bánh xe màu. Hai màu đối nhau mà cùng rực, đặt sát nhau là chói mắt, nên phải làm dịu."),
-    dict(part="C", img="11", head="Màu chủ đạo cũng tự lặp lại", cam=((1510, 900), 1.4, (540, 940)), free=True, dark=True,
-         dd=["arr_stone", "arr_cab", "lab_stone", "lab_cab", "lab_wall", "lab_same"],
-         vo="Màu chủ đạo cũng tự lặp lại, ở tường sơn, mặt đá và tủ."),
-    dict(part="F", img="13", head="Mỗi màu phụ có mặt hai chỗ", cam=wide("13"), dark=False, dd=[],
-         vo="Ở nhà mình, mỗi màu phụ nên có mặt ít nhất hai chỗ, trên hai chất liệu khác nhau. Dịu, nhỏ, quay lại thì không rối."),
+    dict(part="F", img="09", head="Mỗi màu phụ có mặt hai chỗ", cam=((950, 400), 1.8, (540, 850)), free=True, dark=False, ink=True, credit=CR_AXO, dd=[SOFA, FIRE],
+         vo="Ở nhà mình, mỗi màu phụ nên có mặt ít nhất hai chỗ, trên hai chất liệu khác nhau, như vàng ở sofa và mảng ốp đồng. Dịu, nhỏ, quay lại thì không rối."),
     dict(part="I", img="13", head="end", cam="END", dark=False, vo="", dd=[],
          tts="Ây-ết Đi-cốt, series về nguyên tắc thiết kế và chọn đồ đê-co. Theo dõi Giả Thuyết Kiến Trúc. Bài viết phân tích đầy đủ xem ở dòng đầu tiên trong phần bình luận.",
          say="AH Decode, series về nguyên tắc thiết kế và chọn đồ decor. Theo dõi Giả Thuyết Kiến Trúc. Bài viết phân tích đầy đủ xem ở dòng đầu tiên trong phần bình luận."),
@@ -90,7 +103,9 @@ def _label(text, cam, pts):
 def doodle(i, wb, text, cam):
     layer = LAYERS[SCENES[i]["img"]]
     for k in SCENES[i].get("dd", []):
-        if k.startswith("lab"):
+        if isinstance(k, tuple):   # nét mới vẽ tay (cảnh mực trên mặt bằng/trục đo): ("ellipse", cx, cy, rx, ry) hoặc ("arrow", a, b)
+            getattr(wb, k[0])(*k[1:])
+        elif k.startswith("lab"):
             _label(text, cam, layer[k])
         else:
             _stamp(wb, layer[k], RAD)
@@ -122,7 +137,8 @@ def build_data():
                 anc = cover(s["img"], fx, fy, z, anc)
             cam = f"(({fx}, {fy}), {z}, {anc})"
         scenes.append(f'    dict(t="{s["t"]}", img="{s["img"]}", head={json.dumps(s["head"], ensure_ascii=False)}, '
-                      f'vo={json.dumps(s["vo"], ensure_ascii=False)},\n         cam={cam}, dark={s["dark"]}, dd={s["dd"]}),')
+                      f'vo={json.dumps(s["vo"], ensure_ascii=False)},\n         cam={cam}, dark={s["dark"]}, dd={s["dd"]}'
+                      + (', ink=True' if s.get("ink") else '') + (f', credit={json.dumps(s["credit"], ensure_ascii=False)}' if "credit" in s else '') + '),')
     data = ('# ---------------- scenes ----------------\nOBJ = {}\n\nSCENES = [\n' + "\n".join(scenes) + '\n]\n'
             'END = len(SCENES) - 1\nBOARDS = {}\n' + DOODLE + '\n\n')
     return data, t
@@ -169,13 +185,13 @@ for k, s in enumerate(SC):
         cam = "cảnh rộng"
     else:
         cam = f"zoom {s['cam'][1]}× vào {s['cam'][0]}"
-    dd = ", ".join(s["dd"]) or "không nét"
+    dd = ", ".join(k if isinstance(k, str) else "khoanh vùng bằng nét mực" for k in s["dd"]) or "không nét"
     rows.append(f'| {k + 1} | {s["t"]} | {s["part"]} · {NAMES[s["part"]]} | ảnh {s["img"]} | {head} | {shown[k]} | {cam}; {dd} |')
 md = (f"# AH Decode · Một màu chủ đạo, hai màu phụ · BẢN NHÁP chờ duyệt (làm lại nhiều ảnh)\n\n"
       f"Bài trong kho: `AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/bai-01.md` (commit 65b5427), ý chính: mục \"Một màu chủ đạo, hai màu phụ đi vòng quanh\".\n"
-      f"Ảnh (cả ba đều trong `anh/` của bài, đều có doodle gốc): `13-doodle-anh-tong.jpg` (bếp xanh, ghế hồng), `10-doodle-hai-mau-am.jpg` (lò sưởi: đồng vàng, đá hồng, thảm), `11-doodle-dap-mau-bep.jpg` (một màu xanh, ba chất liệu) · The Green Box, Berlin · Ester Bruzkus Architekten · ảnh Robert Rieger\n"
+      f"Ảnh (sáu ảnh, đều trong `anh/` của bài): ảnh chụp có doodle gốc `13-doodle-anh-tong.jpg`, `10-doodle-hai-mau-am.jpg`, `11-doodle-dap-mau-bep.jpg`; ảnh định vị `03-mat-bang-the-green-box.png` (mặt bằng), `09-truc-do-the-green-box.jpg` (trục đo màu), `08-diagram-xanh-o-giua-am-di-quanh.png` (sơ đồ chủ đạo/phụ) · The Green Box, Berlin · Ester Bruzkus Architekten · ảnh Robert Rieger\n"
       f"Thời lượng dự kiến: {total:.1f} giây (ước tính bảo thủ {WPS} từ/giây, đã gồm quãng nghỉ chuyển cảnh) + 1 giây giữ khung cuối · {nw} từ lời đọc (chữ viết) · {len(SC)} cảnh.\n"
-      f"Nét: chỉ dùng doodle gốc của bài trên từng ảnh (mũi tên và nhãn chữ), lộ dần; không vẽ nét mới. Chuyển giữa hai ảnh là chuyển mờ 0,7 giây.\n\n"
+      f"Nét: ảnh chụp dùng doodle gốc của bài (mũi tên, nhãn chữ), lộ dần. Mặt bằng và trục đo không có doodle nên khoanh vùng bằng nét mực đứt vẽ tay (cảnh mực). Chuyển giữa hai ảnh là chuyển mờ 0,7 giây.\n\n"
       "| # | Thời lượng | Phần | Ảnh | Tiêu đề trên khung | Lời đọc | Hình |\n|---|---|---|---|---|---|---|\n" + "\n".join(rows) +
       "\n\n## Lời đọc liền mạch\n\n" + " ".join(shown) + "\n\n"
       "## Phiên âm cho ElevenLabs\n\n| Chính tả gốc | Phiên âm |\n|---|---|\n"

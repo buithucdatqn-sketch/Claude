@@ -129,7 +129,10 @@
     "anh_kho": [
       "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/13-doodle-anh-tong.jpg",
       "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/10-doodle-hai-mau-am.jpg",
-      "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/11-doodle-dap-mau-bep.jpg"
+      "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/11-doodle-dap-mau-bep.jpg",
+      "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/09-truc-do-the-green-box.jpg",
+      "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/03-mat-bang-the-green-box.png",
+      "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/08-diagram-xanh-o-giua-am-di-quanh.png"
     ],
     "du_an": "The Green Box, Berlin",
     "studio": "Ester Bruzkus Architekten",
@@ -148,6 +151,6 @@
       "Chênh sáng mới làm đồ vật hiện ra: đã dùng tập 4",
       "Cùng màu khác bề mặt (ảnh 12) chưa làm"
     ],
-    "ghi_chu": "Làm lại 2026-10-16 theo yêu cầu người dùng: dùng nhiều ảnh (13, 10, 11) để thấy cả màu chủ đạo và hai màu phụ; chưa dựng video, chờ INBOX/audio/hai-mau-phu-di-quanh.mp3. Ước tính 69 giây theo 3,2 từ/giây (bảo thủ, thực tế thường ngắn hơn)."
+    "ghi_chu": "Làm lại lần 2 (2026-10-16): thêm ảnh định vị (trục đo 09, mặt bằng 03, sơ đồ 08) và gom cảnh theo khu vực; chưa dựng video, chờ INBOX/audio/hai-mau-phu-di-quanh.mp3. Ước tính engine ~95 giây (3,2 từ/giây, bảo thủ), 13 cảnh, 273 từ."
   }
 ]

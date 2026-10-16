@@ -1,11 +1,15 @@
-# Ảnh nguồn · Tập 6 (làm lại với nhiều ảnh)
-Cả ba ảnh nằm trong `AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/`, nhánh AH-Interior-notes, commit 65b5427c55046c43f02d8e7ec0829e03ae0fdd03. Bản gốc ở `original/`. Credit chung: The Green Box, Berlin · Ester Bruzkus Architekten · ảnh Robert Rieger.
-| Ảnh | Dùng ở cảnh | Vai trò trong lời giảng | Doodle gốc được làm chuyển động |
+# Ảnh nguồn · Tập 6 (làm lại lần 2: nhiều ảnh + ảnh định vị)
+Cả sáu ảnh nằm trong `AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/`, nhánh AH-Interior-notes, commit 65b5427c55046c43f02d8e7ec0829e03ae0fdd03. Bản gốc ở `original/`.
+| Ảnh | Loại | Cảnh | Vai trò |
 |---|---|---|---|
-| `13-doodle-anh-tong.jpg` (1875×2500, dọc) | 1, 2, 3, 4, 9, khung cuối | Thấy cả căn bếp: xanh phủ tường, tủ, trần là màu chủ đạo; ghế quầy bếp hồng là màu phụ quay lại | mũi tên và nhãn "ghế hồng màu phụ quay lại" |
-| `10-doodle-hai-mau-am.jpg` (1875×2500, dọc) | 5, 6, 7 | Hai màu phụ: đồng vàng; đá hồng và thảm hồng tím; và hai màu ấy đặt cạnh nhau | ba mũi tên, hai nhãn |
-| `11-doodle-dap-mau-bep.jpg` (2500×1875, ngang) | 8 | Màu chủ đạo tự lặp lại trên tường sơn, mặt đá vân, tủ ô liu | hai mũi tên, bốn nhãn |
-- Lý do đổi: bản đầu chỉ dùng ảnh 10 (không có màu chủ đạo) nên người xem không hiểu "chủ đạo" là gì. Giờ mỗi khái niệm có ảnh thấy được khái niệm đó. Cả ba ảnh chưa dùng ở tập 4, 5.
-- Bản làm việc: cạnh dài 2400 px; `source_<id>.png` là nền đã xoá doodle (mặt nạ pixel trắng trong từng hộp, ảnh 11 loại thêm khối trắng dày của nắp lọ, inpaint TELEA); `source_orig_<id>.png` còn doodle. Lớp nét: `engine_ep06/doodle_<id>.npz`. Tiêu đề gốc, nhãn tiêu đề và dòng credit vẽ tay trên ảnh đã xoá, không dùng. Dựng bằng `engine_ep06/prep_ep06.py`.
-- Chuyển ảnh: chuyển mờ 0,7 giây (engine/multi_patch.py); cùng ảnh thì camera zoom như cũ.
-- Hạn chế: cảnh 5 và 8 để lộ mép ảnh (nền trắng quanh thẻ) vì nhãn gốc nằm sát mép; chưa chạy lệnh qa an toàn riêng, chữ do engine dựng theo bố cục đã duyệt.
+| `09-truc-do-the-green-box.jpg` (1652×1167) | trục đo màu | 2, 12 | Cả căn hộ: khối xanh giữa nhà, vàng ở sofa và mảng ốp đồng, hồng tím ở thảm. Cảnh 12 khoanh hai chỗ có vàng bằng nét mực |
+| `08-diagram-xanh-o-giua-am-di-quanh.png` (2160×2020) | sơ đồ khái niệm | 3 | Chú giải chủ đạo / phụ 1 / phụ 2 để giảng lý thuyết |
+| `03-mat-bang-the-green-box.png` (3640×2200→2400×1451) | mặt bằng | 5, 8 | Định vị: khoanh bếp (cảnh 5) và phòng khách quanh thảm tròn (cảnh 8) bằng nét mực. Đã xoá tiêu đề và dòng nguồn in sẵn (engine in credit riêng) |
+| `13-doodle-anh-tong.jpg` | ảnh chụp + doodle gốc | 1, 4, 6, 13 | Bếp: xanh phủ tủ và tường; ghế quầy bếp hồng tím quay lại |
+| `11-doodle-dap-mau-bep.jpg` | ảnh chụp + doodle gốc | 7 | Màu chủ đạo lặp lại: tường sơn, mặt đá vân, tủ ô liu |
+| `10-doodle-hai-mau-am.jpg` | ảnh chụp + doodle gốc | 9, 10, 11 | Phòng khách: đồng vàng, đá hồng, thảm hồng tím |
+- Credit: ảnh chụp "Ảnh dự án: The Green Box, Berlin · Ester Bruzkus Architekten · ảnh Robert Rieger"; mặt bằng và trục đo "… (qua ArchDaily)" theo `nguon_anh_cong_trinh` trong YAML; sơ đồ 08 không in thêm vì ảnh đã in sẵn nguồn (Kilmer & Kilmer 2014, tr. 166–167; Beadle 2023).
+- Thứ tự cảnh gom theo khu vực: bếp (5→6→7) rồi phòng khách (8→9→10→11), để người xem không nhảy qua lại.
+- Bản làm việc: cạnh dài tối đa 2400 px, không phóng to. `source_<id>.png`; ảnh chụp có doodle thì nền đã xoá doodle (inpaint TELEA, đã xem lại) và lớp nét `engine_ep06/doodle_<id>.npz`. Dựng bằng `engine_ep06/prep_ep06.py`.
+- Chuyển ảnh: chuyển mờ 0,7 giây; sang/ra khỏi cảnh mực thì nền chuyển từ ảnh sang giấy trắng theo cùng nhịp (engine/multi_patch.py).
+- Hạn chế: trục đo 09 chỉ 1652 px nên khi zoom hơi mềm; trục đo không dán nhãn nên tên khu vực do lời đọc nói; vị trí ảnh chụp 10 (lò sưởi) chỉ nói chung là "phòng khách quanh thảm tròn" vì bài không nêu chính xác; cảnh 5, 8 để lộ mép mặt bằng; chưa chạy lệnh qa an toàn riêng.
