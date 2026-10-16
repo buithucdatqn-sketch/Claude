@@ -127,7 +127,8 @@
    "commit": "65b5427c55046c43f02d8e7ec0829e03ae0fdd03"
   },
   "anh_kho": [
-   "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/12-doodle-cung-mau-khac-be-mat.jpg"
+   "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/12-doodle-cung-mau-khac-be-mat.jpg",
+   "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/11-doodle-dap-mau-bep.jpg"
   ],
   "du_an": "The Green Box, Berlin",
   "studio": "Ester Bruzkus Architekten",
@@ -139,8 +140,9 @@
    "muc": "Một màu chủ đạo, hai màu phụ đi vòng quanh (phần màu chủ đạo tự đáp lại chính nó, cùng màu khác bề mặt)",
    "tom_tat": "Mặt có rãnh đổ bóng nên sẫm hơn mặt trơn cùng màu sơn; một màu vẫn đủ sáng, trung, tối. Phần hai màu phụ (ảnh 10) chưa dùng."
   },
-  "trang_thai": "cho_ghi_am",
+  "trang_thai": "da_dung_video",
   "thu_muc": "inbox/out/2026-10-16_cung-mau-khac-be-mat/",
-  "ghi_chu": "Làm theo prompt lịch (5-6 cảnh vlog, thẻ ngắt 1,2s). Chưa dựng video, chờ INBOX/audio/cung-mau-khac-be-mat.mp3 hoặc bai-006.mp3."
+  "ghi_chu": "Giai đoạn B xong với ghi âm bai-006.mp3 (49,2 giây). Cảnh 8 dùng ảnh 11 (bếp) theo yêu cầu chủ Trang; khung cuối bỏ cụm 'Theo dõi Fanpage' và tên Fanpage. Ảnh 12 dùng cho các cảnh còn lại.",
+  "video": "inbox/out/2026-10-16_cung-mau-khac-be-mat/reel_cung-mau-khac-be-mat_final.mp4"
  }
 ]

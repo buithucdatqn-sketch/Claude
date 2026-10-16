@@ -11,6 +11,8 @@ WPS = 3.2      # tốc độ đọc dự kiến (từ/giây)
 TRANS = 0.7
 
 WIDE = "WIDE"
+# mốc cảnh căn theo ghi âm: mỗi cảnh bắt đầu khoảng 0,4 giây trước câu của nó; cảnh cuối kéo đến hết giọng + 0,6 giây
+T = [0, 4.5, 11.45, 15.55, 22.65, 25.35, 28.0, 33.0, 38.0, 42.5, 49.8]
 SC = [
     dict(part="A", blk=1, head="Cùng màu, sao khác nhau?", cam=WIDE, dark=False, dd=[],
          vo="Cùng một màu sơn, sao chỗ phẳng chỗ sọc nhìn lại khác nhau?"),
@@ -28,7 +30,8 @@ SC = [
     dict(part="E", blk=5, head="The Green Box, Berlin", cam=((1400, 1250), 2.1, (540, 900)), dark=False, dd=[],
          vo="Căn hộ này là The Green Box ở Berlin, do Ester Bruzkus Architekten thiết kế.",
          tts="Căn hộ này là Đờ Grin Bốc ở Béc-lin, do Ét-xtơ Bờ-rút-cút Ạc-hi-tếch-ten thiết kế."),
-    dict(part="D", blk=5, head="Một họ xanh, mỗi chỗ một độ sáng", cam=((600, 1250), 2.1, (540, 900)), dark=False, dd=[],
+    dict(part="D", blk=5, head="Một họ xanh, ba độ sáng", cam=WIDE, dark=False, dd=[], img="bep",
+         cam_bep=((1260, 900), 1.45, (540, 962)), dd_bep=["arr1", "lab1", "arr2", "lab2"],
          vo="Ở khu bếp cũng vậy, tường sơn, đá vân và tủ ô liu, mỗi chỗ một độ sáng.",
          tts="Ở khu bếp cũng vậy, tường sơn, đá vân và tủ ô-liu, mỗi chỗ một độ sáng."),
     dict(part="H", blk=6, head="Một màu, đủ sáng vừa tối", cam=WIDE, dark=False, dd=[],
@@ -85,42 +88,59 @@ def words(s):
     return len(s.split())
 
 
+def cam_str(s, cam):
+    if cam == WIDE:
+        return "WIDE"
+    if cam == "END":
+        return "(CENTER, 0.8, (540, 600))"
+    (fx, fy), z, anc = cam
+    if not s.get("free"):
+        anc = cover(fx, fy, z, anc)
+    return f"(({fx}, {fy}), {z}, {anc})"
+
+
+def scene_line(s, a, b, cam, dd):
+    return (f'    dict(t="{a:g}–{b:g}s", head={json.dumps(s["head"], ensure_ascii=False)}, '
+            f'vo={json.dumps(s["vo"], ensure_ascii=False)},\n         cam={cam}, dark={s["dark"]}, dd={dd}),')
+
+
+def wrap_data(lines, doodle):
+    return ('# ---------------- scenes ----------------\nCENTER = (SW / 2, SH / 2)\nOBJ = {}\n\n'
+            'WIDE = (CENTER, 1.0, (540, 940))\nSCENES = [\n' + "\n".join(lines) + '\n]\n'
+            'END = len(SCENES) - 1\nBOARDS = {}\n' + doodle + '\n\n')
+
+
 def build_data():
-    t = 0.0
-    scenes = []
+    lines = []
     for k, s in enumerate(SC):
-        spoken = s.get("tts", s["vo"])
-        dur = max(3.5, TRANS + words(spoken) / WPS)
-        if s["head"] == "end":
-            dur = max(dur, 7.0)
-        a, b = round(t, 1), round(t + dur, 1)
-        t = b
+        a, b = T[k], T[k + 1]
         s["t"] = f"{a:g}–{b:g}s"
         s["dur"] = b - a
-        if s["cam"] == WIDE:
-            cam = "WIDE"
-        elif s["cam"] == "END":
-            cam = "(CENTER, 0.8, (540, 600))"
-        else:
-            (fx, fy), z, anc = s["cam"]
-            if not s.get("free"):
-                anc = cover(fx, fy, z, anc)
-            cam = f"(({fx}, {fy}), {z}, {anc})"
-        scenes.append(f'    dict(t="{s["t"]}", head={json.dumps(s["head"], ensure_ascii=False)}, '
-                      f'vo={json.dumps(s["vo"], ensure_ascii=False)},\n         cam={cam}, dark={s["dark"]}, dd={s["dd"]}),')
-    data = ('# ---------------- scenes ----------------\nCENTER = (SW / 2, SH / 2)\nOBJ = {}\n\n'
-            'WIDE = (CENTER, 1.0, (540, 940))\nSCENES = [\n' + "\n".join(scenes) + '\n]\n'
-            'END = len(SCENES) - 1\nBOARDS = {}\n' + DOODLE + '\n\n')
-    return data, t
+        lines.append(scene_line(s, a, b, cam_str(s, s["cam"]), s["dd"]))
+    return wrap_data(lines, DOODLE), T[-1]
 
 
-def build(src, dst, video, data):
+def build_data_bep():
+    """engine phụ cho cảnh dùng ảnh bếp: cảnh trước (ảnh bếp toàn cảnh) + cảnh bếp + khung cuối giả.
+    Video ghép: chỉ lấy đoạn của cảnh bếp, đặt vào đúng mốc của nó trong video chính."""
+    k = next(i for i, s in enumerate(SC) if s.get("img") == "bep")
+    prev, s, nxt = SC[k - 1], SC[k], SC[-1]
+    d0, d1 = T[k] - T[k - 1], T[k + 1] - T[k]
+    lines = [scene_line(prev, 0, d0, "WIDE", []),
+             scene_line(dict(s, free=True), d0, d0 + d1, cam_str(dict(s, free=True), s["cam_bep"]), s["dd_bep"]),
+             scene_line(nxt, d0 + d1, d0 + d1 + 0.5, "(CENTER, 0.8, (540, 600))", [])]
+    return wrap_data(lines, DOODLE.replace("doodle_ep06.npz", "doodle_ep06_bep.npz")), k, d0, d1
+
+
+def build(src, dst, video, data, portrait=True, vname="reel_cung-mau-khac-be-mat_silent.mp4"):
     s = open(E + src).read()
     rep = [('CREDIT = "Ảnh dự án: [tên dự án] · [studio] · [nhiếp ảnh gia]"',
             'CREDIT = "Ảnh dự án: The Green Box, Berlin · Ester Bruzkus Architekten · ảnh Robert Rieger"'),
            ('HEAD = "AH DECODE · CÂN BẰNG THỊ GIÁC"', 'HEAD = "AH DECODE · CÙNG MÀU, KHÁC BỀ MẶT"'),
-           ("CARD_W2, BORDER2 = 1920, 0", "CARD_W2, BORDER2 = 1440, 0  # ảnh dọc 3:4: thẻ hẹp hơn để chữ nằm ngoài ảnh"),
-           ("C2 = (B2W / 2, 1810.0)", "C2 = (B2W / 2, 1880.0)")]
+           ]
+    if portrait:
+        rep += [("CARD_W2, BORDER2 = 1920, 0", "CARD_W2, BORDER2 = 1440, 0  # ảnh dọc 3:4: thẻ hẹp hơn để chữ nằm ngoài ảnh"),
+                ("C2 = (B2W / 2, 1810.0)", "C2 = (B2W / 2, 1880.0)")]
     rep.append(("borderMode=cv2.BORDER_REFLECT)", "borderMode=cv2.BORDER_CONSTANT, borderValue=(255, 255, 255, 0))"))
     for a_, b_ in rep:
         assert a_ in s, a_
@@ -129,7 +149,7 @@ def build(src, dst, video, data):
     b = s.index('def render_scene') if not video else s.index('BOARDS["plain"] = make_board(1.0)')
     s = s[:a] + data + s[b:]
     if video:
-        s = s.replace('"reel1_silent.mp4"', '"reel_cung-mau-khac-be-mat_silent.mp4"')
+        s = s.replace('"reel1_silent.mp4"', f'"{vname}"')
     else:
         s = s.replace('"frames_v7"', '"frames"').replace('"storyboard_reel1_v7.png"', '"storyboard.png"')
         s = s.replace("AH Decode · Cân bằng thị giác — bảng phân cảnh v7", "AH Decode · Cùng màu, khác bề mặt")
@@ -145,6 +165,10 @@ def build(src, dst, video, data):
 data, total = build_data()
 build("engine_storyboard_v7.py", "engine_ep06.py", False, data)
 build("engine_video.py", "engine_video_ep06.py", True, data)
+data_b, KB, D0, D1 = build_data_bep()
+build("engine_storyboard_v7.py", "engine_ep06_bep.py", False, data_b, portrait=False)
+build("engine_video.py", "engine_video_ep06_bep.py", True, data_b, portrait=False, vname="reel_bep_silent.mp4")
+json.dump(dict(scene=KB, t_in_main=T[KB], cut_from=D0, cut_len=D1), open(OUT + "engine_ep06/splice.json", "w"))
 
 # ---- bảng cảnh + elevenlabs.txt (khối dán sẵn, thẻ ngắt 1,2 giây giữa 6 cảnh kịch bản) ----
 shown = [x.get("say", x["vo"]) for x in SC]

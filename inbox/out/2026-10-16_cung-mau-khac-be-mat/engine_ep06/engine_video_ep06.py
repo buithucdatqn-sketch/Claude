@@ -24,15 +24,14 @@ if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
 CREDIT = "Ảnh dự án: The Green Box, Berlin · Ester Bruzkus Architekten · ảnh Robert Rieger"
 HEAD = "AH DECODE · CÙNG MÀU, KHÁC BỀ MẶT"
-# Khung cuối cố định cho mọi tập: giới thiệu series AH Decode, mời theo dõi Fanpage Giả Thuyết Kiến Trúc, KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
+# Khung cuối cố định cho mọi tập: giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
+# KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
 END_LINES = [
-    (1060, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
-    (1108, "và cách chọn đồ decor", 40, 215),
-    (1200, "Theo dõi Fanpage", 58, 235),
-    (1268, "Giả Thuyết Kiến Trúc", 104, 255),
-    (1440, "Bài viết phân tích đầy đủ", 54, 240),
-    (1502, "xem ở dòng đầu tiên", 54, 240),
-    (1590, "trong phần bình luận", 64, 255),
+    (1080, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
+    (1128, "và cách chọn đồ decor", 40, 215),
+    (1260, "Bài viết phân tích đầy đủ", 58, 240),
+    (1326, "xem ở dòng đầu tiên", 58, 240),
+    (1420, "trong phần bình luận", 68, 255),
 ]
 INK = (46, 38, 32)
 PAPER = (229, 215, 191)  # beige print margin
@@ -499,25 +498,25 @@ OBJ = {}
 
 WIDE = (CENTER, 1.0, (540, 940))
 SCENES = [
-    dict(t="0–4.8s", head="Cùng màu, sao khác nhau?", vo="Cùng một màu sơn, sao chỗ phẳng chỗ sọc nhìn lại khác nhau?",
+    dict(t="0–4.5s", head="Cùng màu, sao khác nhau?", vo="Cùng một màu sơn, sao chỗ phẳng chỗ sọc nhìn lại khác nhau?",
          cam=WIDE, dark=False, dd=[]),
-    dict(t="4.8–11.8s", head="Phòng cần đủ sáng, vừa, tối", vo="Sách của hai tác giả Kilmer nói căn phòng nào cũng cần đủ mảng sáng, mảng vừa và mảng tối.",
+    dict(t="4.5–11.45s", head="Phòng cần đủ sáng, vừa, tối", vo="Sách của hai tác giả Kilmer nói căn phòng nào cũng cần đủ mảng sáng, mảng vừa và mảng tối.",
          cam=((1000, 700), 2.2, (540, 576)), dark=False, dd=[]),
-    dict(t="11.8–16.6s", head="Chỉ một màu thì lấy đâu ra sáng tối?", vo="Nhưng nếu chỉ sơn một màu, lấy đâu ra chỗ sáng, chỗ tối?",
+    dict(t="11.45–15.55s", head="Chỉ một màu thì lấy đâu ra sáng tối?", vo="Nhưng nếu chỉ sơn một màu, lấy đâu ra chỗ sáng, chỗ tối?",
          cam=((420, 1500), 2.2, (330, 1168)), dark=False, dd=[]),
-    dict(t="16.6–24.8s", head="Rãnh đổ bóng, nên trông sẫm hơn", vo="Câu trả lời nằm ở bề mặt. Mặt có rãnh tự đổ bóng, nên trông sẫm hơn mặt trơn, dù cùng một màu sơn.",
+    dict(t="15.55–22.65s", head="Rãnh đổ bóng, nên trông sẫm hơn", vo="Câu trả lời nằm ở bề mặt. Mặt có rãnh tự đổ bóng, nên trông sẫm hơn mặt trơn, dù cùng một màu sơn.",
          cam=((430, 1900), 2.2, (338, 1520)), dark=False, dd=[]),
-    dict(t="24.8–28.6s", head="Cánh tủ nan dọc: sẫm hơn", vo="Trong ảnh này, cánh tủ nan dọc trông sẫm hơn.",
+    dict(t="22.65–25.35s", head="Cánh tủ nan dọc: sẫm hơn", vo="Trong ảnh này, cánh tủ nan dọc trông sẫm hơn.",
          cam=((900, 2050), 2.1, (540, 1650)), dark=True, dd=['arr2', 'lab2']),
-    dict(t="28.6–32.1s", head="Tường sơn phẳng: sáng hơn", vo="Tường sơn phẳng ngay bên cạnh thì sáng hơn.",
+    dict(t="25.35–28s", head="Tường sơn phẳng: sáng hơn", vo="Tường sơn phẳng ngay bên cạnh thì sáng hơn.",
          cam=((1420, 620), 2.1, (800, 520)), dark=True, dd=['arr1', 'lab1']),
-    dict(t="32.1–37.5s", head="The Green Box, Berlin", vo="Căn hộ này là The Green Box ở Berlin, do Ester Bruzkus Architekten thiết kế.",
+    dict(t="28–33s", head="The Green Box, Berlin", vo="Căn hộ này là The Green Box ở Berlin, do Ester Bruzkus Architekten thiết kế.",
          cam=((1400, 1250), 2.1, (784, 994)), dark=False, dd=[]),
-    dict(t="37.5–43.5s", head="Một họ xanh, mỗi chỗ một độ sáng", vo="Ở khu bếp cũng vậy, tường sơn, đá vân và tủ ô liu, mỗi chỗ một độ sáng.",
-         cam=((600, 1250), 2.1, (464, 994)), dark=False, dd=[]),
-    dict(t="43.5–48.3s", head="Một màu, đủ sáng vừa tối", vo="Một màu thôi, nhưng đổi bề mặt là có đủ sáng, vừa, tối.",
+    dict(t="33–38s", head="Một họ xanh, ba độ sáng", vo="Ở khu bếp cũng vậy, tường sơn, đá vân và tủ ô liu, mỗi chỗ một độ sáng.",
          cam=WIDE, dark=False, dd=[]),
-    dict(t="48.3–55.3s", head="end", vo="",
+    dict(t="38–42.5s", head="Một màu, đủ sáng vừa tối", vo="Một màu thôi, nhưng đổi bề mặt là có đủ sáng, vừa, tối.",
+         cam=WIDE, dark=False, dd=[]),
+    dict(t="42.5–49.8s", head="end", vo="",
          cam=(CENTER, 0.8, (540, 600)), dark=False, dd=[]),
 ]
 END = len(SCENES) - 1
