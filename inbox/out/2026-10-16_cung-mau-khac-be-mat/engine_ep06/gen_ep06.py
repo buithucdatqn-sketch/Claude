@@ -23,15 +23,15 @@ SC = [
          vo="Nhưng nếu chỉ sơn một màu, lấy đâu ra chỗ sáng, chỗ tối?"),
     dict(part="C", blk=4, head="Rãnh đổ bóng, nên trông sẫm hơn", cam=((430, 1900), 2.2, (540, 900)), dark=False, dd=[],
          vo="Câu trả lời nằm ở bề mặt. Mặt có rãnh tự đổ bóng, nên trông sẫm hơn mặt trơn, dù cùng một màu sơn."),
-    dict(part="D", blk=5, head="Cánh tủ nan dọc: sẫm hơn", cam=((900, 2050), 2.1, (540, 1650)), free=True, dark=True, dd=["arr2", "lab2"],
+    dict(part="D", blk=5, head="Cánh tủ nan dọc: sẫm hơn", cam=((900, 2100), 2.1, (540, 1010)), free=True, dark=True, dd=["arr2", "lab2"],
          vo="Trong ảnh này, cánh tủ nan dọc trông sẫm hơn."),
-    dict(part="D", blk=5, head="Tường sơn phẳng: sáng hơn", cam=((1420, 620), 2.1, (800, 520)), free=True, dark=True, dd=["arr1", "lab1"],
+    dict(part="D", blk=5, head="Tường sơn phẳng: sáng hơn", cam=((1420, 620), 2.1, (760, 690)), free=True, dark=True, dd=["arr1", "lab1"],
          vo="Tường sơn phẳng ngay bên cạnh thì sáng hơn."),
     dict(part="E", blk=5, head="The Green Box, Berlin", cam=((1400, 1250), 2.1, (540, 900)), dark=False, dd=[],
          vo="Căn hộ này là The Green Box ở Berlin, do Ester Bruzkus Architekten thiết kế.",
          tts="Căn hộ này là Đờ Grin Bốc ở Béc-lin, do Ét-xtơ Bờ-rút-cút Ạc-hi-tếch-ten thiết kế."),
     dict(part="D", blk=5, head="Một họ xanh, ba độ sáng", cam=WIDE, dark=False, dd=[], img="bep",
-         cam_bep=((1260, 900), 1.45, (540, 962)), dd_bep=["arr1", "lab1", "arr2", "lab2"],
+         cam_bep=((1170, 900), 1.68, (540, 1210)), dd_bep=["arr1", "lab1"],
          vo="Ở khu bếp cũng vậy, tường sơn, đá vân và tủ ô liu, mỗi chỗ một độ sáng.",
          tts="Ở khu bếp cũng vậy, tường sơn, đá vân và tủ ô-liu, mỗi chỗ một độ sáng."),
     dict(part="H", blk=6, head="Một màu, đủ sáng vừa tối", cam=WIDE, dark=False, dd=[],
@@ -92,7 +92,7 @@ def cam_str(s, cam):
     if cam == WIDE:
         return "WIDE"
     if cam == "END":
-        return "(CENTER, 0.8, (540, 600))"
+        return "END_SAFE"
     (fx, fy), z, anc = cam
     if not s.get("free"):
         anc = cover(fx, fy, z, anc)
@@ -106,7 +106,7 @@ def scene_line(s, a, b, cam, dd):
 
 def wrap_data(lines, doodle):
     return ('# ---------------- scenes ----------------\nCENTER = (SW / 2, SH / 2)\nOBJ = {}\n\n'
-            'WIDE = (CENTER, 1.0, (540, 940))\nSCENES = [\n' + "\n".join(lines) + '\n]\n'
+            'WIDE = WIDE_SAFE\nSCENES = [\n' + "\n".join(lines) + '\n]\n'
             'END = len(SCENES) - 1\nBOARDS = {}\n' + doodle + '\n\n')
 
 
@@ -128,7 +128,7 @@ def build_data_bep():
     d0, d1 = T[k] - T[k - 1], T[k + 1] - T[k]
     lines = [scene_line(prev, 0, d0, "WIDE", []),
              scene_line(dict(s, free=True), d0, d0 + d1, cam_str(dict(s, free=True), s["cam_bep"]), s["dd_bep"]),
-             scene_line(nxt, d0 + d1, d0 + d1 + 0.5, "(CENTER, 0.8, (540, 600))", [])]
+             scene_line(nxt, d0 + d1, d0 + d1 + 0.5, "END_SAFE", [])]
     return wrap_data(lines, DOODLE.replace("doodle_ep06.npz", "doodle_ep06_bep.npz")), k, d0, d1
 
 

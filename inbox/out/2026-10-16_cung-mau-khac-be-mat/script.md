@@ -62,3 +62,6 @@ ElevenLabs rút ngắn thẻ ngắt 1,2 giây (chỉ còn một khoảng lặng 
 | 10 | 42,92–49,16 | Bài phân tích đầy đủ dành cho thành viên... (16 tiếng) |
 Ranh giới cảnh 4/5 là chỗ ít chắc nhất (đoạn 21,63–22,45 được xếp là "dù cùng một màu sơn" của cảnh 4, theo nhịp đọc khoảng 4 tiếng/giây). Mỗi cảnh bắt đầu khoảng 0,4 giây trước câu của nó.
 Âm thanh: lọc dưới 80 Hz, giảm ồn nhẹ (afftdn), chặn đỉnh, chuẩn hoá hai lượt về khoảng −14 LUFS (đo được −14,5 LUFS, đỉnh −1,5 dBFS), AAC 48 kHz. Không có nhạc.
+
+## Sửa vùng an toàn chữ (bản 2)
+Bản đầu bị mất header và tiêu đề khi xem trên bảng tin Facebook (khung 4:5 chỉ giữ y 285–1635). Đã dời mọi chữ vào y 340–1490 theo mục 6a của instruction, chỉnh camera cảnh 5, 6, 8 để nhãn doodle nằm giữa hai khối chữ (cảnh 8 chỉ còn nhãn "đá vân xanh sau bồn rửa"), dựng lại video và ảnh bìa. Engine chạy không còn LỖI hay CẢNH BÁO; đã xem 10 khung cắt 4:5.

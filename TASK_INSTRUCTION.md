@@ -121,7 +121,7 @@ Engine v7 đang hard-code ảnh và toạ độ của tập #1. Mỗi tập, sao
 - `SCENES` (tiêu đề `head`, lời `vo`, thời lượng `t`, camera `cam=(điểm_focus_trên_ảnh, zoom, vị_trí_trên_khung)`, `dark`). Cảnh cuối luôn có `head="end"`, `vo=""`.
 - `OBJ`: đa giác thô quanh đồ vật (toạ độ ảnh làm việc). Hàm `doodle()`: trục, đường nối, hình bao, nhãn.
 - `CREDIT`, `HEAD` (đầu trang luôn là `AH DECODE · <TÊN CHỦ ĐỀ VIẾT HOA>`), tên file ra.
-Không đổi: kích thước 1080×1920, nền trắng, băng keo giấy ở giữa mép trên, ảnh không viền, chữ viết tay Patrick Hand, bố cục chữ, khung cuối `END_LINES` (đã cố định: "AH Decode · series phân tích nguyên tắc thiết kế và cách chọn đồ decor / Bài viết phân tích đầy đủ / xem ở dòng đầu tiên / trong phần bình luận"; KHÔNG có dòng "Theo dõi Fanpage" và tên Fanpage).
+Không đổi: kích thước 1080×1920, nền trắng, băng keo giấy ở giữa mép trên, ảnh không viền, chữ viết tay Patrick Hand, bố cục chữ theo vùng an toàn (mục 6a, đã cài trong engine: hàm `text_layout`, `qa_text`, cam `WIDE_SAFE`, `END_SAFE`), khung cuối `END_LINES` (đã cố định: "AH Decode · series phân tích nguyên tắc thiết kế và cách chọn đồ decor / Bài viết phân tích đầy đủ / xem ở dòng đầu tiên / trong phần bình luận"; KHÔNG có dòng "Theo dõi Fanpage" và tên Fanpage).
 Cách làm nhanh đã dùng ở tập 2 (xem `inbox/out/2026-10-06_gestalt-gan-nhau/engine_ep02/`): viết một script nhỏ đọc hai engine gốc, thay khối từ dòng `# ---------------- scenes` đến trước `def render_scene` (engine khung) hoặc trước `BOARDS["plain"] = make_board(1.0)` (engine video) bằng khối dữ liệu của tập, thay `CREDIT`, `HEAD`, tên file ra, rồi ghi thành `engine_epNN.py` và `engine_video_epNN.py`. Một nguồn dữ liệu cho cả hai engine nên chúng luôn đồng bộ. Hàm `D(pts)` trong khối dữ liệu đó đổi toạ độ đo trên ảnh xem thu nhỏ sang ảnh làm việc 2400 px.
 Cảnh không có vật để khoanh (nguồn gốc, cơ chế) vẫn phải có hình: dùng cảnh rộng hoặc zoom vào vùng liên quan, nét doodle tối giản (một đường, một mũi tên) hoặc không nét; không chèn đồ hoạ khác.
 
@@ -153,12 +153,23 @@ Không có bản video không tiếng làm trước. Trình tự: đo audio, că
 
 ## 6. Quy cách hình ảnh (đã duyệt, không tự ý đổi)
 - Khung 1080×1920. Nền trắng trơn. Ảnh dự án là ảnh GỐC, không sketch hoá, không làm mờ; dán bằng một miếng băng keo giấy ở giữa mép trên, không viền, hơi nghiêng ~1°, có bóng nhẹ.
-- Cảnh rộng: ảnh nằm giữa khung; chữ nằm NGOÀI ảnh (nâu đậm), mũi tên trắng/nâu chỉ vào nét doodle. Cảnh nói chi tiết: camera zoom vào ảnh; khi hết chỗ nền thì chữ trắng viết lên ảnh, có phủ tối nhẹ để dễ đọc.
+- Cảnh rộng: ảnh nằm giữa khung (cam `WIDE_SAFE`, thẻ ảnh gọn trong y ~610–1210); chữ nằm NGOÀI ảnh (nâu đậm), mũi tên trắng/nâu chỉ vào nét doodle. Cảnh nói chi tiết: camera zoom vào ảnh; khi hết chỗ nền thì chữ trắng viết lên ảnh, có phủ tối nhẹ đúng dải chữ để dễ đọc. Mọi chữ theo vùng an toàn mục 6a.
 - Mọi nét doodle trên ảnh: màu TRẮNG, NÉT ĐỨT, nét tay tự nhiên. Đồ vật được bao bằng đường đứt ôm theo hình dáng tổng quát (không khoanh tròn), sau khi zoom vào đúng đồ vật/cụm.
-- Tất cả chữ viết tay. Header nhỏ ở trên cùng, tiêu đề cảnh bên dưới, KHÔNG đánh số "Bước n". Dòng credit nhỏ ngay dưới ảnh. Không gạch chân lượn sóng.
-- Khung cuối: ảnh rộng + credit dưới ảnh, rồi "AH Decode · series phân tích nguyên tắc thiết kế và cách chọn đồ decor / Bài viết phân tích đầy đủ / xem ở dòng đầu tiên / trong phần bình luận" (đã cố định trong engine). KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (quá nhiều chữ). Không có dòng nguồn, không nhắc tập sau.
+- Tất cả chữ viết tay. Header nhỏ ở đầu vùng an toàn (y 344), tiêu đề cảnh bên dưới (y 392, tối đa 2 dòng), KHÔNG đánh số "Bước n". Dòng credit nhỏ ngay dưới ảnh. Không gạch chân lượn sóng.
+- Khung cuối (cam `END_SAFE`): ảnh rộng + credit dưới ảnh, rồi "AH Decode · series phân tích nguyên tắc thiết kế và cách chọn đồ decor / Bài viết phân tích đầy đủ / xem ở dòng đầu tiên / trong phần bình luận" (đã cố định trong engine). KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (quá nhiều chữ). Không có dòng nguồn, không nhắc tập sau.
+
+## 6a. Vùng an toàn chữ: Reels VÀ bảng tin Facebook (bắt buộc)
+Lý do: khi reel 9:16 hiện trên bảng tin (newsfeed) Facebook, nó bị cắt thành khung 4:5 ở giữa, chỉ còn thấy y 285–1635 (ffmpeg `crop=1080:1350:0:285`); trong trình xem Reels, đáy khung bị chú thích và nút che, nửa dưới mép phải bị cột nút (thích, bình luận, chia sẻ) che. Tập 6 đã bị mất header và tiêu đề trên bảng tin vì chữ đặt ở y 96–330. Từ nay:
+- MỌI chữ (header, tiêu đề, credit, phụ đề, nhãn doodle, chữ khung cuối) nằm trong y 340–1490 và x 60–1020; ở nửa dưới (y > 1000) chữ không vượt x 960 (tránh cột nút Reels). Khối chữ rộng tối đa 880 px.
+- Bố cục cố định (engine `text_layout`): header y 344; tiêu đề y 392, cỡ 80, tối đa 2 dòng (hết ở ~590); phụ đề cỡ 56, tối đa 3 dòng, dòng cuối kết thúc ở ~1482; credit cỡ 30 ngay trên phụ đề. Ảnh, nét vẽ và nền có thể tràn ngoài vùng an toàn; chỉ chữ phải ở trong.
+- Chọn camera sao cho mép ảnh KHÔNG cắt ngang khối chữ: mép trên ảnh ≤ 310 (tiêu đề nằm trên ảnh, chữ trắng) hoặc ≥ 600 (tiêu đề nằm trên nền trắng, chữ nâu); mép dưới ảnh ≤ y credit − 20 (khoảng 1270 với phụ đề 2 dòng) hoặc ≥ 1520. Engine in `CẢNH BÁO cảnh n: mép … cắt ngang khối …` kèm số gợi ý khi vi phạm.
+- Nhãn và mũi tên doodle cần đọc được phải nằm giữa hai khối chữ (khoảng y 610–1240), không chồng lên tiêu đề hay phụ đề. Nếu một ảnh có nhiều nhãn trải quá cao, chỉ lộ các nhãn khớp lời đọc vừa trong dải đó (ví dụ cảnh bếp tập 6 chỉ lộ nhãn "đá vân xanh sau bồn rửa").
+- Cảnh rộng dùng `WIDE = WIDE_SAFE`, khung cuối dùng cam `END_SAFE` (khai báo sẵn trong engine; trong khối dữ liệu cảnh của tập, KHÔNG tự đặt lại WIDE bằng toạ độ cũ).
+- Kiểm tra tự động: mỗi lần chạy engine khung và engine video, hàm `qa_text` in `LỖI: chữ ra ngoài vùng an toàn Reels/bảng tin (cảnh n …)`. Có dòng LỖI hoặc CẢNH BÁO nào thì sửa camera (hoặc rút gọn tiêu đề/phụ đề) rồi chạy lại cho đến khi sạch, trước khi giao.
+- Xem thử bằng mắt: trích vài khung video và cắt `ffmpeg -vf "crop=1080:1350:0:285"` để xem đúng như trên bảng tin; header, tiêu đề, phụ đề phải còn đủ.
 
 ## 7. Kiểm tra bắt buộc trước khi giao (đọc từng khung bằng Read)
+- Chạy engine không còn dòng `LỖI: chữ ra ngoài vùng an toàn Reels/bảng tin` hay `CẢNH BÁO … cắt ngang khối …` (mục 6a); đã xem thử khung cắt 4:5 của bảng tin.
 - Hình bao ôm đúng đồ vật được nhắc trong lời đọc; nét không tràn ra ngoài ảnh; không có "cục" đậm do nét chồng nhau.
 - Chữ đọc rõ, có đủ dấu tiếng Việt, không bị cắt, không đè lên nét vẽ khó đọc, không nằm vắt ngang mép ảnh.
 - Lời đọc khớp với hình trong cùng cảnh, là một mạch kể hiểu được khi nghe, không có câu cụt; tổng thời lượng 55–75 giây (tốc độ đọc khoảng 2,5–3 từ/giây), 150–210 từ.

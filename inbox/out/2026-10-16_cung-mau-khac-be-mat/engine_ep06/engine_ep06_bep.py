@@ -24,14 +24,14 @@ if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
 CREDIT = "Ảnh dự án: The Green Box, Berlin · Ester Bruzkus Architekten · ảnh Robert Rieger"
 HEAD = "AH DECODE · CÙNG MÀU, KHÁC BỀ MẶT"
-# Khung cuối cố định cho mọi tập: giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
+# Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
 END_LINES = [
-    (1080, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
-    (1128, "và cách chọn đồ decor", 40, 215),
-    (1260, "Bài viết phân tích đầy đủ", 58, 240),
-    (1326, "xem ở dòng đầu tiên", 58, 240),
-    (1420, "trong phần bình luận", 68, 255),
+    (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
+    (1088, "và cách chọn đồ decor", 40, 215),
+    (1196, "Bài viết phân tích đầy đủ", 58, 240),
+    (1260, "xem ở dòng đầu tiên", 58, 240),
+    (1348, "trong phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
 PAPER = (229, 215, 191)  # beige print margin
@@ -44,7 +44,7 @@ def F(size):
 def put_credit(t, xy, size, fill, anchor="la"):
     """credit một dòng; dài quá 960 px thì giảm cỡ chữ (tối thiểu 26)"""
     s = size
-    while s > 26 and t.d.textlength(CREDIT, font=F(s)) > 960:
+    while s > 24 and t.d.textlength(CREDIT, font=F(s)) > 880:
         s -= 1
     t.put(xy, CREDIT, s, fill, anchor)
 
@@ -63,6 +63,20 @@ ANGLE = 1.2  # degrees, counter-clockwise (card is hung very slightly crooked)
 S2 = PH_W2 / SW
 ROT = cv2.getRotationMatrix2D(C2, ANGLE, 1.0)
 CARD_TOP1, CARD_BOT1 = (C2[1] - CARD_H2 / 2) / 2, (C2[1] + CARD_H2 / 2) / 2
+
+# ---------------- vùng an toàn chữ (Reels + khung 4:5 của bảng tin Facebook) ----------------
+# Bảng tin Facebook cắt reel 9:16 thành 4:5 ở giữa: chỉ thấy y 285–1635 (ffmpeg crop=1080:1350:0:285).
+# Giao diện Reels che đáy (chú thích, nút) và cột nút bên phải. Mọi chữ (tiêu đề, phụ đề, credit, nhãn doodle)
+# phải nằm trong y SAFE_Y0–SAFE_Y1 và x 60–SAFE_X1. Chạy engine sẽ in "LỖI: chữ ra ngoài vùng an toàn Reels/bảng tin".
+SAFE_Y0, SAFE_Y1, SAFE_X1 = 340, 1490, 960
+TEXT_W = 880          # bề rộng khối chữ (x 60–940)
+TOP_END = 600         # khối tiêu đề chiếm y 340–590; ảnh muốn chữ nằm trên nền trắng thì mép trên ảnh phải >= 600
+# cảnh rộng an toàn: thẻ ảnh nằm gọn trong y ~610–1210 để tiêu đề ở trên, credit + phụ đề ở dưới, tất cả trong vùng an toàn
+WIDE_Z = min(1.0, 600.0 / (CARD_H2 / 2), 960.0 / (CARD_W2 / 2))
+WIDE_SAFE = ((SW / 2, SH / 2), WIDE_Z, (540, 910))
+# khung cuối an toàn: thẻ ảnh kết thúc ở y ~944, credit và END_LINES nằm trong y 974–1440
+END_Z = min(0.8, 760.0 / (CARD_H2 / 2), 960.0 / (CARD_W2 / 2))
+END_SAFE = ((SW / 2, SH / 2), END_Z, (540, 944 - END_Z * CARD_H2 / 4))
 
 
 def src_to_b2(p):
@@ -464,14 +478,53 @@ class Text:
             self.put((x, y + i * lh), ln, size, fill)
 
 
+def _band(ys, a, b, r):
+    return smoothstep((ys - (a - r)) / r) * smoothstep(((b + r) - ys) / r)
+
+
 def scrim(base, top=False, bottom=False):
+    """phủ tối nhẹ đúng dải chữ (không còn phủ mép trên/dưới khung vì chữ đã dời vào vùng an toàn)"""
     ys = np.arange(H, dtype=np.float32)
     f = np.ones(H, np.float32)
     if top:
-        f *= 0.42 + 0.58 * smoothstep(ys / 620.0)
+        f *= 1 - 0.55 * _band(ys, SAFE_Y0 - 20, TOP_END, 150)
     if bottom:
-        f *= 0.40 + 0.60 * smoothstep((1980 - ys) / 700.0)
+        f *= 1 - 0.58 * _band(ys, 1150, SAFE_Y1 + 10, 170)
     return base * f[:, None, None]
+
+
+def text_layout(sc, cam, t):
+    """vẽ header, tiêu đề, credit, phụ đề vào t (chữ trắng trên ảnh, nâu trên nền tự đổi theo nền); trả (phủ trên, phủ dưới, cảnh báo)"""
+    top, bot = cam.card_top, cam.card_bottom
+    n = len(t.wrap(sc["vo"], 56, TEXT_W))
+    vo_y = SAFE_Y1 - 8 - n * 72
+    cr_y = vo_y - 48
+    warn = []
+    if len(t.wrap(sc["head"], 80, TEXT_W)) > 2:
+        warn.append("tiêu đề quá 2 dòng")
+    if n > 3:
+        warn.append("phụ đề quá 3 dòng")
+    if SAFE_Y0 - 30 < top < TOP_END:
+        warn.append(f"mép trên ảnh (y {top:.0f}) cắt ngang khối tiêu đề: chỉnh cam để mép trên <= {SAFE_Y0 - 30} hoặc >= {TOP_END}")
+    if cr_y - 20 < bot < SAFE_Y1 + 30:
+        warn.append(f"mép dưới ảnh (y {bot:.0f}) cắt ngang khối phụ đề: chỉnh cam để mép dưới <= {cr_y - 20:.0f} hoặc >= {SAFE_Y1 + 30}")
+    t.put((60, SAFE_Y0 + 4), HEAD, 34, 220)
+    t.block(60, SAFE_Y0 + 52, sc["head"], 80, 88, TEXT_W)
+    put_credit(t, (60, cr_y), 30, 230)
+    t.block(60, vo_y, sc["vo"], 56, 72, TEXT_W)
+    return top < TOP_END, bot > cr_y - 20, warn
+
+
+def qa_text(i, *masks):
+    """kiểm tra mọi điểm chữ/nhãn nằm trong vùng an toàn; in LỖI nếu ra ngoài"""
+    m = np.maximum.reduce([np.asarray(x, np.float32) for x in masks])
+    ys, xs = np.nonzero(m > 0.2)
+    if not len(ys):
+        return
+    low = ys > 1000  # cột nút bên phải của Reels chỉ che nửa dưới khung
+    xr = xs[low].max() if low.any() else 0
+    if ys.min() < SAFE_Y0 - 12 or ys.max() > SAFE_Y1 + 12 or xr > SAFE_X1 + 20 or xs.max() > W - 24:
+        print(f"LỖI: chữ ra ngoài vùng an toàn Reels/bảng tin (cảnh {i + 1}: y {ys.min()}–{ys.max()}, x tới {xs.max()}, nửa dưới x tới {xr})", flush=True)
 
 
 DARK = np.array((62, 54, 46), np.float32)
@@ -495,14 +548,14 @@ def compose(base, white, fabm):
 CENTER = (SW / 2, SH / 2)
 OBJ = {}
 
-WIDE = (CENTER, 1.0, (540, 940))
+WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–5s", head="The Green Box, Berlin", vo="Căn hộ này là The Green Box ở Berlin, do Ester Bruzkus Architekten thiết kế.",
          cam=WIDE, dark=False, dd=[]),
     dict(t="5–10s", head="Một họ xanh, ba độ sáng", vo="Ở khu bếp cũng vậy, tường sơn, đá vân và tủ ô liu, mỗi chỗ một độ sáng.",
-         cam=((1260, 900), 1.45, (540, 962)), dark=False, dd=['arr1', 'lab1', 'arr2', 'lab2']),
+         cam=((1170, 900), 1.68, (540, 1210)), dark=False, dd=['arr1', 'lab1']),
     dict(t="10–10.5s", head="end", vo="",
-         cam=(CENTER, 0.8, (540, 600)), dark=False, dd=[]),
+         cam=END_SAFE, dark=False, dd=[]),
 ]
 END = len(SCENES) - 1
 BOARDS = {}
@@ -553,27 +606,15 @@ def render_scene(i):
         put_credit(text, (W // 2, bot + 30), 34, 225, "ma")
         for y_, s_, sz_, f_ in END_LINES:
             text.put((W // 2, y_), s_, sz_, f_, "ma")
+        qa_text(i, np.array(text.img, np.float32) / 255)
         return compose(base, np.array(text.img, np.float32) / 255, fabm)
 
     doodle(i, wb, text, cam)
-    title_on_fabric = top >= 440
-    vo_lines = len(text.wrap(sc["vo"], 60, 960))
-    vo_below = bot + 110
-    vo_on_fabric = vo_below + vo_lines * 78 <= 1800
-    base = scrim(base, top=not title_on_fabric, bottom=not vo_on_fabric)
-
-    if title_on_fabric:
-        text.put((60, 196), HEAD, 38, 215)
-        text.block(60, 250, sc["head"], 96, 104)
-    else:
-        text.put((60, 96), HEAD, 36, 220)
-        text.block(60, 150, sc["head"], 84, 92)
-    if vo_on_fabric:
-        put_credit(text, (60, bot + 26), 34, 230)
-        text.block(60, vo_below, sc["vo"], 60, 78)
-    else:
-        put_credit(text, (60, 1388), 32, 235)
-        text.block(60, 1450, sc["vo"], 60, 78)
+    st, sb, warn = text_layout(sc, cam, text)
+    for w_ in warn:
+        print(f"CẢNH BÁO cảnh {i + 1}: {w_}", flush=True)
+    qa_text(i, np.array(text.img, np.float32) / 255)
+    base = scrim(base, top=st, bottom=sb)
     white = np.maximum(wb.mask(), np.array(text.img, np.float32) / 255)
     return compose(base, white, fabm)
 
