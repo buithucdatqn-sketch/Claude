@@ -1,0 +1,82 @@
+[
+ {
+  "blk": 1,
+  "t": "0–4.8s",
+  "head": "Cùng màu, sao khác nhau?",
+  "loi": "Cùng một màu sơn, sao chỗ phẳng chỗ sọc nhìn lại khác nhau?",
+  "tts": "Cùng một màu sơn, sao chỗ phẳng chỗ sọc nhìn lại khác nhau?",
+  "part": "A"
+ },
+ {
+  "blk": 2,
+  "t": "4.8–11.8s",
+  "head": "Phòng cần đủ sáng, vừa, tối",
+  "loi": "Sách của hai tác giả Kilmer nói căn phòng nào cũng cần đủ mảng sáng, mảng vừa và mảng tối.",
+  "tts": "Sách của hai tác giả Kin-mơ nói căn phòng nào cũng cần đủ mảng sáng, mảng vừa và mảng tối.",
+  "part": "B"
+ },
+ {
+  "blk": 3,
+  "t": "11.8–16.6s",
+  "head": "Chỉ một màu thì lấy đâu ra sáng tối?",
+  "loi": "Nhưng nếu chỉ sơn một màu, lấy đâu ra chỗ sáng, chỗ tối?",
+  "tts": "Nhưng nếu chỉ sơn một màu, lấy đâu ra chỗ sáng, chỗ tối?",
+  "part": "C"
+ },
+ {
+  "blk": 4,
+  "t": "16.6–24.8s",
+  "head": "Rãnh đổ bóng, nên trông sẫm hơn",
+  "loi": "Câu trả lời nằm ở bề mặt. Mặt có rãnh tự đổ bóng, nên trông sẫm hơn mặt trơn, dù cùng một màu sơn.",
+  "tts": "Câu trả lời nằm ở bề mặt. Mặt có rãnh tự đổ bóng, nên trông sẫm hơn mặt trơn, dù cùng một màu sơn.",
+  "part": "C"
+ },
+ {
+  "blk": 5,
+  "t": "24.8–28.6s",
+  "head": "Cánh tủ nan dọc: sẫm hơn",
+  "loi": "Trong ảnh này, cánh tủ nan dọc trông sẫm hơn.",
+  "tts": "Trong ảnh này, cánh tủ nan dọc trông sẫm hơn.",
+  "part": "D"
+ },
+ {
+  "blk": 5,
+  "t": "28.6–32.1s",
+  "head": "Tường sơn phẳng: sáng hơn",
+  "loi": "Tường sơn phẳng ngay bên cạnh thì sáng hơn.",
+  "tts": "Tường sơn phẳng ngay bên cạnh thì sáng hơn.",
+  "part": "D"
+ },
+ {
+  "blk": 5,
+  "t": "32.1–37.5s",
+  "head": "The Green Box, Berlin",
+  "loi": "Căn hộ này là The Green Box ở Berlin, do Ester Bruzkus Architekten thiết kế.",
+  "tts": "Căn hộ này là Đờ Grin Bốc ở Béc-lin, do Ét-xtơ Bờ-rút-cút Ạc-hi-tếch-ten thiết kế.",
+  "part": "E"
+ },
+ {
+  "blk": 5,
+  "t": "37.5–43.5s",
+  "head": "Một họ xanh, mỗi chỗ một độ sáng",
+  "loi": "Ở khu bếp cũng vậy, tường sơn, đá vân và tủ ô liu, mỗi chỗ một độ sáng.",
+  "tts": "Ở khu bếp cũng vậy, tường sơn, đá vân và tủ ô-liu, mỗi chỗ một độ sáng.",
+  "part": "D"
+ },
+ {
+  "blk": 6,
+  "t": "43.5–48.3s",
+  "head": "Một màu, đủ sáng vừa tối",
+  "loi": "Một màu thôi, nhưng đổi bề mặt là có đủ sáng, vừa, tối.",
+  "tts": "Một màu thôi, nhưng đổi bề mặt là có đủ sáng, vừa, tối.",
+  "part": "H"
+ },
+ {
+  "blk": 6,
+  "t": "48.3–55.3s",
+  "head": "end",
+  "loi": "Bài phân tích đầy đủ dành cho thành viên, mọi người ghé phần bình luận nha.",
+  "tts": "Bài phân tích đầy đủ dành cho thành viên, mọi người ghé phần bình luận nha.",
+  "part": "I"
+ }
+]

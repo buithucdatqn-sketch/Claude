@@ -1,118 +1,146 @@
 [
-  {
-    "tap": 1,
-    "nguyen_ly": "Cân bằng thị giác (đối xứng khung + lõi bất đối xứng)",
-    "ghi_chu": "Bản mẫu của engine (reel1_source_example.png); ghi bổ sung để không lặp lại. Không có URL bài nguồn.",
-    "ngay": null,
-    "url_bai": null,
-    "url_anh": null
+ {
+  "tap": 1,
+  "nguyen_ly": "Cân bằng thị giác (đối xứng khung + lõi bất đối xứng)",
+  "ghi_chu": "Bản mẫu của engine (reel1_source_example.png); ghi bổ sung để không lặp lại. Không có URL bài nguồn.",
+  "ngay": null,
+  "url_bai": null,
+  "url_anh": null
+ },
+ {
+  "tap": 2,
+  "slug": "tam-nhin-noi-tru",
+  "ngay": "2026-10-06",
+  "nguyen_ly": "Tầm nhìn và nơi trú ẩn (prospect–refuge)",
+  "tap_chi": "Dwell",
+  "du_an": "Anderson Residence, Rancho Palos Verdes",
+  "studio": "Aaron G. Green",
+  "nhiep_anh": "Sterling Reed",
+  "url_bai": "https://www.dwell.com/article/anderson-residence-aaron-g-green-midcentury-los-angeles-real-estate-1023b1c7",
+  "url_anh": "https://images2.dwell.com/photos/6818593201364905984/7503510078167564288/original.jpg",
+  "nguon": [
+   "Dosen & Ostwald (2016) City, Territory and Architecture 3:4, doi:10.1186/s40410-016-0033-1 (toàn văn)",
+   "Hildebrand (1999) Origins of Architectural Pleasure, UC Press (trang NXB + bài điểm sách)",
+   "Dawes & Ostwald (2014) Building and Environment 80:228-240, doi:10.1016/j.buildenv.2014.05.026 (abstract)",
+   "Appleton (1984) Landscape Journal 3(2):91-103 (abstract)"
+  ],
+  "trang_thai": "lech_trong_tam_can_lam_lai",
+  "thu_muc": "inbox/out/2026-10-06_tam-nhin-noi-tru/",
+  "ghi_chu": "Làm lại tập 2 theo yêu cầu người dùng; bản Gestalt (Casa Museo, Yellowtrace) bị huỷ và đã xoá khỏi inbox/out (còn trong lịch sử git). Nguyên lý Gestalt gần nhau/giống nhau và dự án Casa Museo coi như CHƯA dùng. | 2026-10-06: người dùng đánh giá lệch trọng tâm (lý thuyết kiến trúc prospect–refuge, không phải nội thất/decor). Không đăng; tập 2 cần làm lại theo mục 1a. Ảnh Anderson Residence vẫn tính là đã dùng."
+ },
+ {
+  "tap": 3,
+  "slug": "dang-cong-goc-nhon",
+  "ngay": "2026-10-06",
+  "nguyen_ly": "Dáng cong và góc sắc của đồ nội thất (contour bias / preference for curvature)",
+  "nhom": "Đồ nội thất: dáng cong và góc cạnh",
+  "tap_chi": "Yellowtrace",
+  "du_an": "The Twenty Two New York",
+  "studio": "Child Studio",
+  "nhiep_anh": "Alixe Lay",
+  "url_bai": "https://www.yellowtrace.com.au/child-studio-the-twenty-two-new-york-hotel-members-club/",
+  "url_anh": "https://assets.yellowtrace.com.au/wp-content/uploads/2026/09/10122909/Yellowtrace-Child-Studio-The-Twenty-Two-New-York-Hotel-Members-Club-Photo-Alixe-Lay-37_opt80.jpg",
+  "nguon": [
+   "Bar & Neta (2006) Psychological Science 17(8):645-648, doi:10.1111/j.1467-9280.2006.01759.x (toàn văn)",
+   "Gómez-Puerto, Munar & Nadal (2016) Front. Hum. Neurosci. 9:712, doi:10.3389/fnhum.2015.00712 (toàn văn)",
+   "Lidwell, Holden & Butler (2010) Universal Principles of Design, Rockport, mục Contour Bias (phần xem trước)",
+   "Vartanian et al. (2013) PNAS 110(Suppl 2):10446-10453, doi:10.1073/pnas.1301227110 (metadata + mô tả thứ cấp; chỉ dùng trong caption)"
+  ],
+  "trang_thai": "ban_nhap_cho_duyet",
+  "thu_muc": "inbox/out/2026-10-06_dang-cong-goc-nhon/",
+  "ghi_chu": "Tập làm theo trọng tâm nội thất/decor (mục 1a), thay cho tập 2 bị đánh giá lệch trọng tâm."
+ },
+ {
+  "tap": 4,
+  "slug": "chenh-sang-vat-nen",
+  "ngay": "2026-10-15",
+  "nguyen_ly": "Chênh độ sáng giữa vật và nền (value contrast; Munsell, Albers, Kilmer & Kilmer)",
+  "nhom": "Phối màu: độ sáng, đồ bày trên kệ",
+  "bai_kho": {
+   "duong_dan": "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/bai-01.md",
+   "nhanh": "AH-Interior-notes",
+   "commit": "65b5427c55046c43f02d8e7ec0829e03ae0fdd03"
   },
-  {
-    "tap": 2,
-    "slug": "tam-nhin-noi-tru",
-    "ngay": "2026-10-06",
-    "nguyen_ly": "Tầm nhìn và nơi trú ẩn (prospect–refuge)",
-    "tap_chi": "Dwell",
-    "du_an": "Anderson Residence, Rancho Palos Verdes",
-    "studio": "Aaron G. Green",
-    "nhiep_anh": "Sterling Reed",
-    "url_bai": "https://www.dwell.com/article/anderson-residence-aaron-g-green-midcentury-los-angeles-real-estate-1023b1c7",
-    "url_anh": "https://images2.dwell.com/photos/6818593201364905984/7503510078167564288/original.jpg",
-    "nguon": [
-      "Dosen & Ostwald (2016) City, Territory and Architecture 3:4, doi:10.1186/s40410-016-0033-1 (toàn văn)",
-      "Hildebrand (1999) Origins of Architectural Pleasure, UC Press (trang NXB + bài điểm sách)",
-      "Dawes & Ostwald (2014) Building and Environment 80:228-240, doi:10.1016/j.buildenv.2014.05.026 (abstract)",
-      "Appleton (1984) Landscape Journal 3(2):91-103 (abstract)"
-    ],
-    "trang_thai": "lech_trong_tam_can_lam_lai",
-    "thu_muc": "inbox/out/2026-10-06_tam-nhin-noi-tru/",
-    "ghi_chu": "Làm lại tập 2 theo yêu cầu người dùng; bản Gestalt (Casa Museo, Yellowtrace) bị huỷ và đã xoá khỏi inbox/out (còn trong lịch sử git). Nguyên lý Gestalt gần nhau/giống nhau và dự án Casa Museo coi như CHƯA dùng. | 2026-10-06: người dùng đánh giá lệch trọng tâm (lý thuyết kiến trúc prospect–refuge, không phải nội thất/decor). Không đăng; tập 2 cần làm lại theo mục 1a. Ảnh Anderson Residence vẫn tính là đã dùng."
+  "anh_kho": [
+   "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/07-doodle-tuong-phan-thu-vien.jpg"
+  ],
+  "du_an": "The Green Box, Berlin",
+  "studio": "Ester Bruzkus Architekten",
+  "nhiep_anh": "Robert Rieger",
+  "nguon": [
+   "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 5 (theo bài)",
+   "Albers (1963) Interaction of Color, Yale UP (theo bài)"
+  ],
+  "trang_thai": "cho_ghi_am",
+  "thu_muc": "inbox/out/2026-10-15_chenh-sang-vat-nen/",
+  "ghi_chu": "Tập đầu tiên lấy từ KHO BÀI (bài 01; chỉ ý 'Chênh sáng mới làm đồ vật hiện ra' đã dùng). Ý chính: bài học 2 'Chênh sáng mới làm đồ vật hiện ra'. Nhãn gốc 'tương phản sắc đô' trên ảnh 07 thiếu dấu nên không dùng. Đã có bản video không tiếng làm theo quy trình cũ (reel_chenh-sang-vat-nen_silent.mp4); khi có ghi âm thì dựng lại video theo nhịp giọng đọc (mục 5c) thành reel_chenh-sang-vat-nen_final.mp4.",
+  "y_bai": {
+   "muc": "Chênh sáng mới làm đồ vật hiện ra",
+   "tom_tat": "Bài học 2: độ sáng quyết định đồ tách khỏi nền; đồ bày trên kệ đậm nên sáng màu"
   },
-  {
-    "tap": 3,
-    "slug": "dang-cong-goc-nhon",
-    "ngay": "2026-10-06",
-    "nguyen_ly": "Dáng cong và góc sắc của đồ nội thất (contour bias / preference for curvature)",
-    "nhom": "Đồ nội thất: dáng cong và góc cạnh",
-    "tap_chi": "Yellowtrace",
-    "du_an": "The Twenty Two New York",
-    "studio": "Child Studio",
-    "nhiep_anh": "Alixe Lay",
-    "url_bai": "https://www.yellowtrace.com.au/child-studio-the-twenty-two-new-york-hotel-members-club/",
-    "url_anh": "https://assets.yellowtrace.com.au/wp-content/uploads/2026/09/10122909/Yellowtrace-Child-Studio-The-Twenty-Two-New-York-Hotel-Members-Club-Photo-Alixe-Lay-37_opt80.jpg",
-    "nguon": [
-      "Bar & Neta (2006) Psychological Science 17(8):645-648, doi:10.1111/j.1467-9280.2006.01759.x (toàn văn)",
-      "Gómez-Puerto, Munar & Nadal (2016) Front. Hum. Neurosci. 9:712, doi:10.3389/fnhum.2015.00712 (toàn văn)",
-      "Lidwell, Holden & Butler (2010) Universal Principles of Design, Rockport, mục Contour Bias (phần xem trước)",
-      "Vartanian et al. (2013) PNAS 110(Suppl 2):10446-10453, doi:10.1073/pnas.1301227110 (metadata + mô tả thứ cấp; chỉ dùng trong caption)"
-    ],
-    "trang_thai": "ban_nhap_cho_duyet",
-    "thu_muc": "inbox/out/2026-10-06_dang-cong-goc-nhon/",
-    "ghi_chu": "Tập làm theo trọng tâm nội thất/decor (mục 1a), thay cho tập 2 bị đánh giá lệch trọng tâm."
+  "y_con_lai_cua_bai": [
+   "Nền lùi lại, màu nhấn dồn vào một khối (bài học 1)",
+   "Một màu chủ đạo, hai màu phụ đi vòng quanh (bài học 3)"
+  ]
+ },
+ {
+  "tap": 5,
+  "slug": "nen-lui-mau-don-mot-khoi",
+  "ngay": "2026-10-15",
+  "nguyen_ly": "Nền lùi, màu nhấn dồn vào một khối (cách 1 phân bổ màu; Kilmer & Kilmer, Albers)",
+  "nhom": "Phối màu: phân bổ màu",
+  "bai_kho": {
+   "duong_dan": "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/bai-01.md",
+   "nhanh": "AH-Interior-notes",
+   "commit": "65b5427c55046c43f02d8e7ec0829e03ae0fdd03"
   },
-  {
-    "tap": 4,
-    "slug": "chenh-sang-vat-nen",
-    "ngay": "2026-10-15",
-    "nguyen_ly": "Chênh độ sáng giữa vật và nền (value contrast; Munsell, Albers, Kilmer & Kilmer)",
-    "nhom": "Phối màu: độ sáng, đồ bày trên kệ",
-    "bai_kho": {
-      "duong_dan": "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/bai-01.md",
-      "nhanh": "AH-Interior-notes",
-      "commit": "65b5427c55046c43f02d8e7ec0829e03ae0fdd03"
-    },
-    "anh_kho": [
-      "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/07-doodle-tuong-phan-thu-vien.jpg"
-    ],
-    "du_an": "The Green Box, Berlin",
-    "studio": "Ester Bruzkus Architekten",
-    "nhiep_anh": "Robert Rieger",
-    "nguon": [
-      "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 5 (theo bài)",
-      "Albers (1963) Interaction of Color, Yale UP (theo bài)"
-    ],
-    "trang_thai": "cho_ghi_am",
-    "thu_muc": "inbox/out/2026-10-15_chenh-sang-vat-nen/",
-    "ghi_chu": "Tập đầu tiên lấy từ KHO BÀI (bài 01; chỉ ý 'Chênh sáng mới làm đồ vật hiện ra' đã dùng). Ý chính: bài học 2 'Chênh sáng mới làm đồ vật hiện ra'. Nhãn gốc 'tương phản sắc đô' trên ảnh 07 thiếu dấu nên không dùng. Đã có bản video không tiếng làm theo quy trình cũ (reel_chenh-sang-vat-nen_silent.mp4); khi có ghi âm thì dựng lại video theo nhịp giọng đọc (mục 5c) thành reel_chenh-sang-vat-nen_final.mp4.",
-    "y_bai": {
-      "muc": "Chênh sáng mới làm đồ vật hiện ra",
-      "tom_tat": "Bài học 2: độ sáng quyết định đồ tách khỏi nền; đồ bày trên kệ đậm nên sáng màu"
-    },
-    "y_con_lai_cua_bai": [
-      "Nền lùi lại, màu nhấn dồn vào một khối (bài học 1)",
-      "Một màu chủ đạo, hai màu phụ đi vòng quanh (bài học 3)"
-    ]
+  "anh_kho": [
+   "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/04-doodle-nen-lui.jpg"
+  ],
+  "du_an": "The Green Box, Berlin",
+  "studio": "Ester Bruzkus Architekten",
+  "nhiep_anh": "Robert Rieger",
+  "nguon": [
+   "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 5 (theo bài)",
+   "Albers (1963) Interaction of Color, Yale UP (theo bài)"
+  ],
+  "trang_thai": "cho_ghi_am",
+  "thu_muc": "inbox/out/2026-10-15_nen-lui-mau-don-mot-khoi/",
+  "y_bai": {
+   "muc": "Nền lùi lại, màu nhấn dồn vào một khối",
+   "tom_tat": "Bài học 1: tường/sàn trung tính lùi về nền, màu mạnh dồn vào một khối; lại gần thì nền và nhấn đảo vai"
   },
-  {
-    "tap": 5,
-    "slug": "nen-lui-mau-don-mot-khoi",
-    "ngay": "2026-10-15",
-    "nguyen_ly": "Nền lùi, màu nhấn dồn vào một khối (cách 1 phân bổ màu; Kilmer & Kilmer, Albers)",
-    "nhom": "Phối màu: phân bổ màu",
-    "bai_kho": {
-      "duong_dan": "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/bai-01.md",
-      "nhanh": "AH-Interior-notes",
-      "commit": "65b5427c55046c43f02d8e7ec0829e03ae0fdd03"
-    },
-    "anh_kho": [
-      "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/04-doodle-nen-lui.jpg"
-    ],
-    "du_an": "The Green Box, Berlin",
-    "studio": "Ester Bruzkus Architekten",
-    "nhiep_anh": "Robert Rieger",
-    "nguon": [
-      "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 5 (theo bài)",
-      "Albers (1963) Interaction of Color, Yale UP (theo bài)"
-    ],
-    "trang_thai": "cho_ghi_am",
-    "thu_muc": "inbox/out/2026-10-15_nen-lui-mau-don-mot-khoi/",
-    "y_bai": {
-      "muc": "Nền lùi lại, màu nhấn dồn vào một khối",
-      "tom_tat": "Bài học 1: tường/sàn trung tính lùi về nền, màu mạnh dồn vào một khối; lại gần thì nền và nhấn đảo vai"
-    },
-    "y_con_lai_cua_bai": [
-      "Một màu chủ đạo, hai màu phụ đi vòng quanh (bài học 3)"
-    ],
-    "ghi_chu": "Giai đoạn 1 (chưa dựng video, chờ INBOX/audio/nen-lui-mau-don-mot-khoi.mp3). Tiêu đề/nhãn gốc trên ảnh 04 đã xoá khỏi nền, chỉ dùng 2 mũi tên + 2 nhãn."
-  }
+  "y_con_lai_cua_bai": [
+   "Một màu chủ đạo, hai màu phụ đi vòng quanh (bài học 3)"
+  ],
+  "ghi_chu": "Giai đoạn 1 (chưa dựng video, chờ INBOX/audio/nen-lui-mau-don-mot-khoi.mp3). Tiêu đề/nhãn gốc trên ảnh 04 đã xoá khỏi nền, chỉ dùng 2 mũi tên + 2 nhãn."
+ },
+ {
+  "tap": 6,
+  "slug": "cung-mau-khac-be-mat",
+  "ngay": "2026-10-16",
+  "nguyen_ly": "Cùng một màu, khác bề mặt (rãnh đổ bóng nên sẫm hơn mặt trơn; một màu vẫn đủ sáng, vừa, tối)",
+  "nhom": "Phối màu: bề mặt vật liệu",
+  "bai_kho": {
+   "duong_dan": "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/bai-01.md",
+   "nhanh": "AH-Interior-notes",
+   "commit": "65b5427c55046c43f02d8e7ec0829e03ae0fdd03"
+  },
+  "anh_kho": [
+   "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/12-doodle-cung-mau-khac-be-mat.jpg"
+  ],
+  "du_an": "The Green Box, Berlin",
+  "studio": "Ester Bruzkus Architekten",
+  "nhiep_anh": "Robert Rieger",
+  "nguon": [
+   "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 5 (theo bài)"
+  ],
+  "y_bai": {
+   "muc": "Một màu chủ đạo, hai màu phụ đi vòng quanh (phần màu chủ đạo tự đáp lại chính nó, cùng màu khác bề mặt)",
+   "tom_tat": "Mặt có rãnh đổ bóng nên sẫm hơn mặt trơn cùng màu sơn; một màu vẫn đủ sáng, trung, tối. Phần hai màu phụ (ảnh 10) chưa dùng."
+  },
+  "trang_thai": "cho_ghi_am",
+  "thu_muc": "inbox/out/2026-10-16_cung-mau-khac-be-mat/",
+  "ghi_chu": "Làm theo prompt lịch (5-6 cảnh vlog, thẻ ngắt 1,2s). Chưa dựng video, chờ INBOX/audio/cung-mau-khac-be-mat.mp3 hoặc bai-006.mp3."
+ }
 ]
