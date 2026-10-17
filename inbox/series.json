@@ -114,5 +114,34 @@
       "Một màu chủ đạo, hai màu phụ đi vòng quanh (bài học 3)"
     ],
     "ghi_chu": "Giai đoạn 1 (chưa dựng video, chờ INBOX/audio/nen-lui-mau-don-mot-khoi.mp3). Tiêu đề/nhãn gốc trên ảnh 04 đã xoá khỏi nền, chỉ dùng 2 mũi tên + 2 nhãn."
+  },
+  {
+    "tap": 6,
+    "slug": "hai-mau-phu-di-quanh",
+    "ngay": "2026-10-17",
+    "nguyen_ly": "Một màu chủ đạo, hai màu phụ đi vòng quanh (đáp màu; Kilmer & Kilmer)",
+    "nhom": "Phối màu: phân bổ màu",
+    "bai_kho": {
+      "duong_dan": "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/bai-01.md",
+      "nhanh": "AH-Interior-notes",
+      "commit": "65b5427c55046c43f02d8e7ec0829e03ae0fdd03"
+    },
+    "anh_kho": [
+      "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/10-doodle-hai-mau-am.jpg"
+    ],
+    "du_an": "The Green Box, Berlin",
+    "studio": "Ester Bruzkus Architekten",
+    "nhiep_anh": "Robert Rieger",
+    "nguon": [
+      "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 5 (theo bài)"
+    ],
+    "trang_thai": "cho_ghi_am",
+    "thu_muc": "inbox/out/2026-10-17_hai-mau-phu-di-quanh/",
+    "y_bai": {
+      "muc": "Một màu chủ đạo, hai màu phụ đi vòng quanh",
+      "tom_tat": "Bài học 3"
+    },
+    "y_con_lai_cua_bai": [],
+    "ghi_chu": "Giai đoạn A (storyboard + kịch bản, chưa dựng video, chờ giọng đọc). Làm theo instruction Giả thuyết kiến trúc (6 cảnh + khung cuối)."
   }
 ]
