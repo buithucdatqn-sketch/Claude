@@ -16,14 +16,14 @@ from multi_patch import patch  # noqa: E402
 WPS = 3.2      # tốc độ đọc dự kiến (từ/giây)
 TRANS = 0.7
 IDS = ["13", "09", "08", "03", "11", "10"]
-DIM = {"13": (1800, 2400), "10": (1800, 2400), "11": (2400, 1800), "03": (2400, 1451), "09": (1652, 1167), "08": (2160, 2020)}
+DIM = {"13": (1800, 2400), "10": (1800, 2400), "11": (2400, 1800), "03": (2400, 1451), "09": (991, 901), "08": (2160, 2020)}
 CR_PLAN = "Mặt bằng: The Green Box, Berlin · Ester Bruzkus Architekten (qua ArchDaily)"
 CR_AXO = "Trục đo: The Green Box, Berlin · Ester Bruzkus Architekten (qua ArchDaily)"
 CR_DIA = "Sơ đồ theo Kilmer & Kilmer (2014), tr. 166–167; Beadle (2023)"
 KITCHEN = ("ellipse", 1134, 752, 330, 140)       # mặt bằng 03: tủ bếp chạy liền + đảo bếp
 LIVING = ("ellipse", 1951, 698, 255, 275)        # mặt bằng 03: phòng khách quanh thảm tròn
-SOFA = ("ellipse", 991, 455, 82, 88)             # trục đo 09: sofa vàng
-FIRE = ("ellipse", 1134, 291, 48, 78)            # trục đo 09: mảng ốp đồng quanh lò sưởi
+SOFA = ("ellipse", 683, 327, 82, 88)             # trục đo 09 (đã cắt lề, gốc +308,+128): sofa vàng
+FIRE = ("ellipse", 826, 163, 48, 78)            # trục đo 09: mảng ốp đồng quanh lò sưởi
 
 
 def wide(i, z=1.0):
@@ -43,32 +43,32 @@ def cover(i, fx, fy, z, anc, m=40):
 
 
 SC = [
-    dict(part="A", img="13", head="Thêm màu có rối không?", cam=wide("13"), dark=False, dd=[],
+    dict(part="A", img="13", head="Thêm màu có rối không?", cam=((900, 1200), 0.8, (540, 900)), dark=False, dd=[],
          vo="Thêm màu thứ hai, thứ ba vào nhà, có bị rối mắt không?"),
-    dict(part="E", img="09", head="Căn hộ có khối xanh ở giữa", cam=((780, 470), 2.0, (540, 960)), free=True, dark=False, ink=True, credit=CR_AXO, dd=[],
+    dict(part="E", img="09", head="Căn hộ có khối xanh ở giữa", cam=((495, 450), 0.84, (540, 862)), free=True, dark=False, ink=True, credit=CR_AXO, dd=[],
          vo="Mọi người nhìn căn hộ The Green Box ở Berlin nè. Giữa nhà là một khối xanh, quanh khối xanh có màu vàng và hồng tím.",
          tts="Mọi người nhìn căn hộ Đờ Grin Bóc ở Béc-lin nè. Giữa nhà là một khối xanh, quanh khối xanh có màu vàng và hồng tím."),
-    dict(part="B", img="08", head="Một màu chủ đạo, hai màu phụ", cam=((1080, 1010), 1.0, (540, 880)), free=True, dark=False, ink=True, credit="", dd=[],
+    dict(part="B", img="08", head="Một màu chủ đạo, hai màu phụ", cam=((1080, 1010), 0.75, (540, 827)), free=True, dark=False, ink=True, credit="", dd=[],
          vo="Sách Designing Interiors của Kilmer nói, phòng dễ chịu có một màu chủ đạo và hai màu phụ. Ở đây, xanh là chủ đạo, vàng và hồng tím là hai màu phụ.",
          tts="Sách Đi-dai-ninh In-tia-ri-ơ của Kin-mơ nói, phòng dễ chịu có một màu chủ đạo và hai màu phụ. Ở đây, xanh là chủ đạo, vàng và hồng tím là hai màu phụ."),
     dict(part="C", img="13", head="Sách không gắn với con số nào", cam=((1300, 1300), 2.2, (540, 900)), dark=False, dd=[],
          vo="Mọi người hay nghe công thức sáu mươi, ba mươi, mười. Sách không gắn với con số nào."),
-    dict(part="E", img="03", head="Mặt bằng: bếp nằm trong khối xanh", cam=((1050, 740), 1.6, (540, 940)), free=True, dark=False, ink=True, credit=CR_PLAN, dd=[KITCHEN],
+    dict(part="E", img="03", head="Mặt bằng: khu bếp", cam=((1050, 790), 1.6, (540, 866)), free=True, dark=False, ink=True, credit=CR_PLAN, dd=[KITCHEN],
          vo="Trên mặt bằng, khối xanh chạy dọc giữa nhà, tủ bếp chạy liền với nó. Mình đứng ở bếp trước."),
     dict(part="E", img="13", head="Ở bếp: xanh phủ, ghế hồng", cam=((1300, 1750), 1.6, (760, 880)), free=True, dark=True, dd=["arr", "lab"],
          vo="Ở bếp, xanh phủ cả tủ lẫn tường. Còn ghế quầy bếp là hồng tím, màu phụ quay lại."),
-    dict(part="C", img="11", head="Màu chủ đạo cũng tự lặp lại", cam=((1510, 900), 1.4, (540, 940)), free=True, dark=True,
+    dict(part="C", img="11", head="Màu chủ đạo cũng tự lặp lại", cam=((1200, 900), 1.1, (540, 915)), free=True, dark=True,
          dd=["arr_stone", "arr_cab", "lab_stone", "lab_cab", "lab_wall", "lab_same"],
          vo="Màu chủ đạo cũng tự lặp lại, ở tường sơn, mặt đá và tủ."),
-    dict(part="E", img="03", head="Sang phòng khách", cam=((1750, 700), 1.6, (540, 940)), free=True, dark=False, ink=True, credit=CR_PLAN, dd=[LIVING],
+    dict(part="E", img="03", head="Sang phòng khách", cam=((1750, 790), 1.6, (540, 866)), free=True, dark=False, ink=True, credit=CR_PLAN, dd=[LIVING],
          vo="Giờ sang phòng khách, quanh tấm thảm tròn."),
-    dict(part="E", img="10", head="Màu phụ thứ nhất: vàng", cam=((430, 700), 2.0, (420, 880)), free=True, dark=True, dd=["arr1", "lab1"],
+    dict(part="E", img="10", head="Màu phụ thứ nhất: vàng", cam=((430, 700), 2.0, (360, 880)), free=True, dark=True, dd=["arr1", "lab1"],
          vo="Màu phụ thứ nhất là vàng, ở mảng ốp đồng quanh lò sưởi."),
-    dict(part="E", img="10", head="Màu phụ thứ hai: hồng tím", cam=((330, 1560), 1.6, (440, 880)), free=True, dark=True, dd=["arr2a", "arr2b", "lab2"],
+    dict(part="E", img="10", head="Màu phụ thứ hai: hồng tím", cam=((330, 1560), 1.6, (205, 970)), free=True, dark=True, dd=["arr2a", "arr2b", "lab2"],
          vo="Màu phụ thứ hai là hồng tím, ở phiến đá và tấm thảm lông."),
     dict(part="C", img="10", head="Hai màu đối nhau thì làm dịu", cam=((420, 1750), 2.2, (330, 1388)), dark=False, dd=[],
          vo="Hồng tím gần như đối diện xanh lá trên bánh xe màu. Hai màu đối nhau mà cùng rực, đặt sát nhau là chói mắt, nên phải làm dịu."),
-    dict(part="F", img="09", head="Mỗi màu phụ có mặt hai chỗ", cam=((950, 400), 1.5, (540, 690)), free=True, dark=False, ink=True, credit=CR_AXO, dd=[SOFA, FIRE],
+    dict(part="F", img="09", head="Mỗi màu phụ có mặt hai chỗ", cam=((495, 450), 0.75, (540, 831)), free=True, dark=False, ink=True, credit=CR_AXO, dd=[SOFA, FIRE],
          vo="Ở nhà mình, mỗi màu phụ nên có mặt ít nhất hai chỗ, trên hai chất liệu khác nhau, như vàng ở sofa và mảng ốp đồng. Dịu, nhỏ, quay lại thì không rối."),
     dict(part="I", img="13", head="end", cam="END", dark=False, vo="", dd=[],
          tts="Ây-ết Đi-cốt, series về nguyên tắc thiết kế và chọn đồ đê-co. Theo dõi Giả Thuyết Kiến Trúc. Bài viết phân tích đầy đủ xem ở dòng đầu tiên trong phần bình luận.",
@@ -137,7 +137,7 @@ def build_data():
         s["dur"] = b - a
         if s["cam"] == "END":
             w, h = DIM[s["img"]]
-            cam = f"(({w // 2}, {h // 2}), 0.8, (540, 600))"
+            cam = f"(({w // 2}, {h // 2}), 0.56, (540, 640))"  # khung cuối: thẻ nhỏ để chữ nằm trong y 330-1500
         else:
             (fx, fy), z, anc = s["cam"]
             if not s.get("free") and z > 1.0:
@@ -159,7 +159,7 @@ def build(src, dst, video, data):
                    ("borderMode=cv2.BORDER_REFLECT)", "borderMode=cv2.BORDER_CONSTANT, borderValue=(255, 255, 255, 0))")]:
         assert a_ in s, a_
         s = s.replace(a_, b_)
-    s = patch(s, video, IDS, data)
+    s = patch(s, video, IDS, data, feed=True)  # bố cục chữ an toàn bảng tin 4:5
     if video:
         s = s.replace('"reel1_silent.mp4"', '"reel_hai-mau-phu-di-quanh_silent.mp4"')
     else:

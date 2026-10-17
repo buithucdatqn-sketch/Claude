@@ -25,14 +25,14 @@ if not os.path.exists(FONT):
 CREDIT = "Ảnh dự án: The Green Box, Berlin · Ester Bruzkus Architekten · ảnh Robert Rieger"
 HEAD = "AH DECODE · MỘT MÀU CHỦ ĐẠO, HAI MÀU PHỤ"
 # Khung cuối cố định cho mọi tập: giới thiệu series AH Decode, mời theo dõi Fanpage Giả Thuyết Kiến Trúc, KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
-END_LINES = [
-    (1060, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
-    (1108, "và cách chọn đồ decor", 40, 215),
-    (1200, "Theo dõi Fanpage", 58, 235),
-    (1268, "Giả Thuyết Kiến Trúc", 104, 255),
-    (1440, "Bài viết phân tích đầy đủ", 54, 240),
-    (1502, "xem ở dòng đầu tiên", 54, 240),
-    (1590, "trong phần bình luận", 64, 255),
+END_LINES = [  # vị trí đã dời vào vùng y 330-1500 (bảng tin 4:5)
+    (1000, 'AH Decode · series phân tích nguyên tắc thiết kế', 40, 215),
+    (1046, 'và cách chọn đồ decor', 40, 215),
+    (1120, 'Theo dõi Fanpage', 58, 235),
+    (1184, 'Giả Thuyết Kiến Trúc', 104, 255),
+    (1300, 'Bài viết phân tích đầy đủ', 54, 240),
+    (1356, 'xem ở dòng đầu tiên', 54, 240),
+    (1414, 'trong phần bình luận', 64, 255),
 ]
 INK = (46, 38, 32)
 PAPER = (229, 215, 191)  # beige print margin
@@ -480,13 +480,29 @@ class Text:
 
 
 def scrim(base, top=False, bottom=False):
+    """phủ tối nhẹ dưới dải chữ khi chữ nằm trên ảnh (dải trên y 330-600, dải dưới y 1150-1500)"""
     ys = np.arange(H, dtype=np.float32)
     f = np.ones(H, np.float32)
     if top:
-        f *= 0.42 + 0.58 * smoothstep(ys / 620.0)
+        w = smoothstep((ys - 150) / 180.0) * smoothstep((800 - ys) / 220.0)
+        f *= 1 - 0.56 * w
     if bottom:
-        f *= 0.40 + 0.60 * smoothstep((1980 - ys) / 700.0)
+        w = smoothstep((ys - 960) / 220.0) * smoothstep((1720 - ys) / 200.0)
+        f *= 1 - 0.58 * w
     return base * f[:, None, None]
+
+
+def feed_text(t, sc, top, bot):
+    """đặt đầu trang, tiêu đề, credit, lời đọc trong vùng y 330-1500; trả về (chữ trên ảnh ở dải trên?, ở dải dưới?)"""
+    t.put((60, 342), HEAD, 34, 220)
+    hl = t.wrap(sc["head"], 80, 960)
+    t.block(60, 384, sc["head"], 80, 88)
+    head_end = 384 + 88 * len(hl) + 10
+    n = len(t.wrap(sc["vo"], 54, 880))
+    vo_top = 1500 - 68 * n
+    put_credit(t, (60, vo_top - 46), 28, 230)
+    t.block(60, vo_top, sc["vo"], 54, 68, width=880)
+    return top < head_end, bot > vo_top - 56
 
 
 DARK = np.array((62, 54, 46), np.float32)
@@ -511,31 +527,31 @@ OBJ = {}
 
 SCENES = [
     dict(t="0–3.44s", img="13", head="Thêm màu có rối không?", vo="Thêm màu thứ hai, thứ ba vào nhà, có bị rối mắt không?",
-         cam=((900, 1200), 1.0, (540, 940)), dark=False, dd=[]),
+         cam=((900, 1200), 0.8, (540, 900)), dark=False, dd=[]),
     dict(t="3.44–10.03s", img="09", head="Căn hộ có khối xanh ở giữa", vo="Mọi người nhìn căn hộ The Green Box ở Berlin nè. Giữa nhà là một khối xanh, quanh khối xanh có màu vàng và hồng tím.",
-         cam=((780, 470), 2.0, (540, 960)), dark=False, dd=[], ink=True, credit="Trục đo: The Green Box, Berlin · Ester Bruzkus Architekten (qua ArchDaily)"),
+         cam=((495, 450), 0.84, (540, 862)), dark=False, dd=[], ink=True, credit="Trục đo: The Green Box, Berlin · Ester Bruzkus Architekten (qua ArchDaily)"),
     dict(t="10.03–19.68s", img="08", head="Một màu chủ đạo, hai màu phụ", vo="Sách Designing Interiors của Kilmer nói, phòng dễ chịu có một màu chủ đạo và hai màu phụ. Ở đây, xanh là chủ đạo, vàng và hồng tím là hai màu phụ.",
-         cam=((1080, 1010), 1.0, (540, 880)), dark=False, dd=[], ink=True, credit=""),
+         cam=((1080, 1010), 0.75, (540, 827)), dark=False, dd=[], ink=True, credit=""),
     dict(t="19.68–23.62s", img="13", head="Sách không gắn với con số nào", vo="Mọi người hay nghe công thức sáu mươi, ba mươi, mười. Sách không gắn với con số nào.",
          cam=((1300, 1300), 2.2, (680, 992)), dark=False, dd=[]),
-    dict(t="23.62–31.44s", img="03", head="Mặt bằng: bếp nằm trong khối xanh", vo="Trên mặt bằng, khối xanh chạy dọc giữa nhà, tủ bếp chạy liền với nó. Mình đứng ở bếp trước.",
-         cam=((1050, 740), 1.6, (540, 940)), dark=False, dd=[('ellipse', 1134, 752, 330, 140)], ink=True, credit="Mặt bằng: The Green Box, Berlin · Ester Bruzkus Architekten (qua ArchDaily)"),
+    dict(t="23.62–31.44s", img="03", head="Mặt bằng: khu bếp", vo="Trên mặt bằng, khối xanh chạy dọc giữa nhà, tủ bếp chạy liền với nó. Mình đứng ở bếp trước.",
+         cam=((1050, 790), 1.6, (540, 866)), dark=False, dd=[('ellipse', 1134, 752, 330, 140)], ink=True, credit="Mặt bằng: The Green Box, Berlin · Ester Bruzkus Architekten (qua ArchDaily)"),
     dict(t="31.44–36.18s", img="13", head="Ở bếp: xanh phủ, ghế hồng", vo="Ở bếp, xanh phủ cả tủ lẫn tường. Còn ghế quầy bếp là hồng tím, màu phụ quay lại.",
          cam=((1300, 1750), 1.6, (760, 880)), dark=True, dd=['arr', 'lab']),
     dict(t="36.18–39.77s", img="11", head="Màu chủ đạo cũng tự lặp lại", vo="Màu chủ đạo cũng tự lặp lại, ở tường sơn, mặt đá và tủ.",
-         cam=((1510, 900), 1.4, (540, 940)), dark=True, dd=['arr_stone', 'arr_cab', 'lab_stone', 'lab_cab', 'lab_wall', 'lab_same']),
+         cam=((1200, 900), 1.1, (540, 915)), dark=True, dd=['arr_stone', 'arr_cab', 'lab_stone', 'lab_cab', 'lab_wall', 'lab_same']),
     dict(t="39.77–42.02s", img="03", head="Sang phòng khách", vo="Giờ sang phòng khách, quanh tấm thảm tròn.",
-         cam=((1750, 700), 1.6, (540, 940)), dark=False, dd=[('ellipse', 1951, 698, 255, 275)], ink=True, credit="Mặt bằng: The Green Box, Berlin · Ester Bruzkus Architekten (qua ArchDaily)"),
+         cam=((1750, 790), 1.6, (540, 866)), dark=False, dd=[('ellipse', 1951, 698, 255, 275)], ink=True, credit="Mặt bằng: The Green Box, Berlin · Ester Bruzkus Architekten (qua ArchDaily)"),
     dict(t="42.02–45.07s", img="10", head="Màu phụ thứ nhất: vàng", vo="Màu phụ thứ nhất là vàng, ở mảng ốp đồng quanh lò sưởi.",
-         cam=((430, 700), 2.0, (420, 880)), dark=True, dd=['arr1', 'lab1']),
+         cam=((430, 700), 2.0, (360, 880)), dark=True, dd=['arr1', 'lab1']),
     dict(t="45.07–48.33s", img="10", head="Màu phụ thứ hai: hồng tím", vo="Màu phụ thứ hai là hồng tím, ở phiến đá và tấm thảm lông.",
-         cam=((330, 1560), 1.6, (440, 880)), dark=True, dd=['arr2a', 'arr2b', 'lab2']),
+         cam=((330, 1560), 1.6, (205, 970)), dark=True, dd=['arr2a', 'arr2b', 'lab2']),
     dict(t="48.33–55.21s", img="10", head="Hai màu đối nhau thì làm dịu", vo="Hồng tím gần như đối diện xanh lá trên bánh xe màu. Hai màu đối nhau mà cùng rực, đặt sát nhau là chói mắt, nên phải làm dịu.",
          cam=((420, 1750), 2.2, (330, 1388)), dark=False, dd=[]),
     dict(t="55.21–61.8s", img="09", head="Mỗi màu phụ có mặt hai chỗ", vo="Ở nhà mình, mỗi màu phụ nên có mặt ít nhất hai chỗ, trên hai chất liệu khác nhau, như vàng ở sofa và mảng ốp đồng. Dịu, nhỏ, quay lại thì không rối.",
-         cam=((950, 400), 1.5, (540, 690)), dark=False, dd=[('ellipse', 991, 455, 82, 88), ('ellipse', 1134, 291, 48, 78)], ink=True, credit="Trục đo: The Green Box, Berlin · Ester Bruzkus Architekten (qua ArchDaily)"),
+         cam=((495, 450), 0.75, (540, 831)), dark=False, dd=[('ellipse', 683, 327, 82, 88), ('ellipse', 826, 163, 48, 78)], ink=True, credit="Trục đo: The Green Box, Berlin · Ester Bruzkus Architekten (qua ArchDaily)"),
     dict(t="61.8–70.11s", img="13", head="end", vo="",
-         cam=((900, 1200), 0.8, (540, 600)), dark=False, dd=[]),
+         cam=((900, 1200), 0.56, (540, 640)), dark=False, dd=[]),
 ]
 END = len(SCENES) - 1
 BOARDS = {}
@@ -614,23 +630,8 @@ def layout(i):
             tm.put((W // 2, y_), s_, sz_, f_, "ma")
     else:
         doodle(i, wb, td, cam)
-        title_on_fabric = top >= 440
-        vo_lines = len(tm.wrap(sc["vo"], 60, 960))
-        vo_below = bot + 110
-        vo_on_fabric = vo_below + vo_lines * 78 <= 1800
-        st, sb = not title_on_fabric and not sc.get("ink"), not vo_on_fabric and not sc.get("ink")
-        if title_on_fabric:
-            tm.put((60, 196), HEAD, 38, 215)
-            tm.block(60, 250, sc["head"], 96, 104)
-        else:
-            tm.put((60, 96), HEAD, 36, 220)
-            tm.block(60, 150, sc["head"], 84, 92)
-        if vo_on_fabric:
-            put_credit(tm, (60, bot + 26), 34, 230)
-            tm.block(60, vo_below, sc["vo"], 60, 78)
-        else:
-            put_credit(tm, (60, 1388), 32, 235)
-            tm.block(60, 1450, sc["vo"], 60, 78)
+        st, sb = feed_text(tm, sc, top, bot)
+        st, sb = st and not sc.get("ink"), sb and not sc.get("ink")
     a, b = times(sc["t"])
     f = scrim(np.ones((H, 1, 3), np.float32), top=st, bottom=sb)
     full = np.zeros((H * SS, W * SS), np.uint8)
@@ -712,7 +713,8 @@ for fi in range(nframes):
         a_old = 1 - sm(u / 0.25)
         a_main = sm((u - 0.40) / 0.30)
         t_start = TRANS + 0.15
-    base, fabm = rr[..., :3] * fac, 1.0 - np.clip(rr[..., 3] / 255.0, 0, 1)
+    fabm = 1.0 - np.clip(rr[..., 3] / 255.0, 0, 1)
+    base = rr[..., :3] * (fac * (1 - fabm[..., None]) + fabm[..., None])  # phủ tối chỉ trên ảnh, nền giấy giữ trắng
     pi = (1.0 if i and L[i - 1]["sc"].get("ink") else 0.0) * (1 - p) + (1.0 if ly["sc"].get("ink") else 0.0) * p
     fabm = fabm * (1 - pi) + pi  # cảnh mực: cả khung là nền giấy, nét và chữ màu mực
     # progressive strokes

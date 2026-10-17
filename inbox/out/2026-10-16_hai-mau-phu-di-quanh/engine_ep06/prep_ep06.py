@@ -64,6 +64,8 @@ for iid, fn in PLAIN.items():
     s_ = min(1.0, 2400 / max(w, h))
     if s_ < 1:
         im = im.resize((round(w * s_), round(h * s_)), Image.LANCZOS)
+    if iid == "09":  # cắt bớt lề trắng quanh hình trục đo để thẻ ảnh gọn, nằm trọn giữa dải chữ trên và dưới
+        im = im.crop((308, 128, 1299, 1029))
     if iid == "03":  # xoá tiêu đề và dòng nguồn in sẵn trên mặt bằng (engine in credit riêng), giữ nguyên các nhãn phòng
         a_ = np.array(im)
         k_ = a_.shape[1] / 1100

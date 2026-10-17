@@ -43,7 +43,60 @@ CREDIT_CUR = [CREDIT]  # credit của cảnh đang dựng (cảnh có thể đ�
 '''
 
 
-def patch(s, video, ids, data_block):
+FEED_SCRIM = '''def scrim(base, top=False, bottom=False):
+    """phủ tối nhẹ dưới dải chữ khi chữ nằm trên ảnh (dải trên y 330-600, dải dưới y 1150-1500)"""
+    ys = np.arange(H, dtype=np.float32)
+    f = np.ones(H, np.float32)
+    if top:
+        w = smoothstep((ys - 150) / 180.0) * smoothstep((800 - ys) / 220.0)
+        f *= 1 - 0.56 * w
+    if bottom:
+        w = smoothstep((ys - 960) / 220.0) * smoothstep((1720 - ys) / 200.0)
+        f *= 1 - 0.58 * w
+    return base * f[:, None, None]
+'''
+
+# Bố cục chữ an toàn cho bảng tin 4:5 Facebook (crop y 285-1635) và giao diện Reels: mọi chữ trong y 330-1500,
+# lời đọc rộng tối đa 880 px (chừa cột nút bên phải). Đầu trang + tiêu đề neo trên ở y 340; lời đọc neo đáy ở y 1495.
+FEED_TEXT = '''def feed_text(t, sc, top, bot):
+    """đặt đầu trang, tiêu đề, credit, lời đọc trong vùng y 330-1500; trả về (chữ trên ảnh ở dải trên?, ở dải dưới?)"""
+    t.put((60, 342), HEAD, 34, 220)
+    hl = t.wrap(sc["head"], 80, 960)
+    t.block(60, 384, sc["head"], 80, 88)
+    head_end = 384 + 88 * len(hl) + 10
+    n = len(t.wrap(sc["vo"], 54, 880))
+    vo_top = 1500 - 68 * n
+    put_credit(t, (60, vo_top - 46), 28, 230)
+    t.block(60, vo_top, sc["vo"], 54, 68, width=880)
+    return top < head_end, bot > vo_top - 56
+'''
+
+END_FEED = [(1000, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215), (1046, "và cách chọn đồ decor", 40, 215),
+            (1120, "Theo dõi Fanpage", 58, 235), (1184, "Giả Thuyết Kiến Trúc", 104, 255), (1300, "Bài viết phân tích đầy đủ", 54, 240),
+            (1356, "xem ở dòng đầu tiên", 54, 240), (1414, "trong phần bình luận", 64, 255)]
+
+
+def feed_safe(s, video):
+    """đổi bố cục chữ sang bản an toàn bảng tin 4:5 (giữ nguyên chữ, cỡ chữ khung cuối, chỉ dời vị trí)"""
+    a, b = s.index("def scrim(base"), s.index("DARK = np.array")
+    s = s[:a] + FEED_SCRIM + "\n\n" + FEED_TEXT + "\n\n" + s[b:]
+    a, b = s.index("END_LINES = ["), s.index("]\nINK = ")
+    s = s[:a] + "END_LINES = [  # vị trí đã dời vào vùng y 330-1500 (bảng tin 4:5)\n" + "".join("    %r,\n" % (x,) for x in END_FEED) + s[b:]
+    if video:
+        old = s[s.index("        title_on_fabric = top >= 440\n"):s.index("    a, b = times(sc[\"t\"])")]
+        s = s.replace(old, '        st, sb = feed_text(tm, sc, top, bot)\n        st, sb = st and not sc.get("ink"), sb and not sc.get("ink")\n')
+        s = _rep(s, '    base, fabm = rr[..., :3] * fac, 1.0 - np.clip(rr[..., 3] / 255.0, 0, 1)\n',
+                 '    fabm = 1.0 - np.clip(rr[..., 3] / 255.0, 0, 1)\n'
+                 '    base = rr[..., :3] * (fac * (1 - fabm[..., None]) + fabm[..., None])  # phủ tối chỉ trên ảnh, nền giấy giữ trắng\n')
+    else:
+        old = s[s.index("    title_on_fabric = top >= 440\n"):s.index("    white = np.maximum(wb.mask()")]
+        s = s.replace(old, '    tt = Text()\n    st, sb = feed_text(tt, sc, top, bot)\n'
+                      '    base = scrim(base, top=st and not sc.get("ink"), bottom=sb and not sc.get("ink")) * (1 - fabm[..., None]) + base * fabm[..., None]\n'
+                      '    text.img = Image.fromarray(np.maximum(np.array(text.img), np.array(tt.img)))\n')
+    return s
+
+
+def patch(s, video, ids, data_block, feed=False):
     s = _rep(s, 'SRC = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "source.png")',
              'SRC_DIR = sys.argv[1] if len(sys.argv) > 1 else HERE  # thư mục chứa source_<id>.png')
     s = _rep(s, 't.d.textlength(CREDIT, font=F(s))', 't.d.textlength(CREDIT_CUR[0], font=F(s))')
@@ -85,4 +138,6 @@ def patch(s, video, ids, data_block):
         s = _rep(s, '    base, fabm = rr[..., :3], 1.0 - np.clip(rr[..., 3] / 255.0, 0, 1)\n', '    base, fabm = rr[..., :3], 1.0 - np.clip(rr[..., 3] / 255.0, 0, 1)\n    if sc.get("ink"):\n        fabm = np.ones_like(fabm)  # cảnh mực: cả khung là nền giấy\n')
         s = _rep(s, 'base = scrim(base, top=not title_on_fabric, bottom=not vo_on_fabric)', 'base = scrim(base, top=not title_on_fabric and not sc.get("ink"), bottom=not vo_on_fabric and not sc.get("ink"))')
         s = _rep(s, 'rr = cam.render(*BOARDS[key])', 'rr = cam.render(*BOARDS[(sc["img"], key)])')
+    if feed:
+        s = feed_safe(s, video)
     return s
