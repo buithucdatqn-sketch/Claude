@@ -43,7 +43,7 @@ def cover(i, fx, fy, z, anc, m=40):
 
 
 SC = [
-    dict(part="A", img="13", head="Thêm màu nữa, có rối mắt không?", cam=wide("13"), dark=False, dd=[],
+    dict(part="A", img="13", head="Thêm màu có rối không?", cam=wide("13"), dark=False, dd=[],
          vo="Thêm màu thứ hai, thứ ba vào nhà, có bị rối mắt không?"),
     dict(part="E", img="09", head="Căn hộ có khối xanh ở giữa", cam=((780, 470), 2.0, (540, 960)), free=True, dark=False, ink=True, credit=CR_AXO, dd=[],
          vo="Mọi người nhìn căn hộ The Green Box ở Berlin nè. Giữa nhà là một khối xanh, quanh khối xanh có màu vàng và hồng tím.",
@@ -55,7 +55,7 @@ SC = [
          vo="Mọi người hay nghe công thức sáu mươi, ba mươi, mười. Sách không gắn với con số nào."),
     dict(part="E", img="03", head="Mặt bằng: bếp nằm trong khối xanh", cam=((1050, 740), 1.6, (540, 940)), free=True, dark=False, ink=True, credit=CR_PLAN, dd=[KITCHEN],
          vo="Trên mặt bằng, khối xanh chạy dọc giữa nhà, tủ bếp chạy liền với nó. Mình đứng ở bếp trước."),
-    dict(part="E", img="13", head="Ở bếp: xanh phủ, ghế hồng quay lại", cam=((1300, 1750), 1.6, (760, 880)), free=True, dark=True, dd=["arr", "lab"],
+    dict(part="E", img="13", head="Ở bếp: xanh phủ, ghế hồng", cam=((1300, 1750), 1.6, (760, 880)), free=True, dark=True, dd=["arr", "lab"],
          vo="Ở bếp, xanh phủ cả tủ lẫn tường. Còn ghế quầy bếp là hồng tím, màu phụ quay lại."),
     dict(part="C", img="11", head="Màu chủ đạo cũng tự lặp lại", cam=((1510, 900), 1.4, (540, 940)), free=True, dark=True,
          dd=["arr_stone", "arr_cab", "lab_stone", "lab_cab", "lab_wall", "lab_same"],
@@ -68,7 +68,7 @@ SC = [
          vo="Màu phụ thứ hai là hồng tím, ở phiến đá và tấm thảm lông."),
     dict(part="C", img="10", head="Hai màu đối nhau thì làm dịu", cam=((420, 1750), 2.2, (330, 1388)), dark=False, dd=[],
          vo="Hồng tím gần như đối diện xanh lá trên bánh xe màu. Hai màu đối nhau mà cùng rực, đặt sát nhau là chói mắt, nên phải làm dịu."),
-    dict(part="F", img="09", head="Mỗi màu phụ có mặt hai chỗ", cam=((950, 400), 1.8, (540, 850)), free=True, dark=False, ink=True, credit=CR_AXO, dd=[SOFA, FIRE],
+    dict(part="F", img="09", head="Mỗi màu phụ có mặt hai chỗ", cam=((950, 400), 1.5, (540, 690)), free=True, dark=False, ink=True, credit=CR_AXO, dd=[SOFA, FIRE],
          vo="Ở nhà mình, mỗi màu phụ nên có mặt ít nhất hai chỗ, trên hai chất liệu khác nhau, như vàng ở sofa và mảng ốp đồng. Dịu, nhỏ, quay lại thì không rối."),
     dict(part="I", img="13", head="end", cam="END", dark=False, vo="", dd=[],
          tts="Ây-ết Đi-cốt, series về nguyên tắc thiết kế và chọn đồ đê-co. Theo dõi Giả Thuyết Kiến Trúc. Bài viết phân tích đầy đủ xem ở dòng đầu tiên trong phần bình luận.",
@@ -116,6 +116,12 @@ def words(s):
     return len(s.split())
 
 
+# Giai đoạn 2: mốc bắt đầu từng cảnh đo từ giọng đọc (inbox/audio/hai-mau-phu-di-quanh.mp3, 70,11 giây; silencedetect -35dB d=0,25)
+# mỗi cảnh bắt đầu 0,4 giây trước câu đầu của nó; cảnh cuối kéo hết giọng đọc
+AUDIO_START = [0.0, 3.44, 10.03, 19.68, 23.62, 31.44, 36.18, 39.77, 42.02, 45.07, 48.33, 55.21, 61.8]
+AUDIO_END = 70.11
+
+
 def build_data():
     t = 0.0
     scenes = []
@@ -124,7 +130,8 @@ def build_data():
         dur = max(3.5, TRANS + words(spoken) / WPS)
         if s["head"] == "end":
             dur = max(dur, 7.0)
-        a, b = round(t, 1), round(t + dur, 1)
+        a = AUDIO_START[k]
+        b = AUDIO_START[k + 1] if k + 1 < len(SC) else AUDIO_END
         t = b
         s["t"] = f"{a:g}–{b:g}s"
         s["dur"] = b - a
@@ -187,10 +194,10 @@ for k, s in enumerate(SC):
         cam = f"zoom {s['cam'][1]}× vào {s['cam'][0]}"
     dd = ", ".join(k if isinstance(k, str) else "khoanh vùng bằng nét mực" for k in s["dd"]) or "không nét"
     rows.append(f'| {k + 1} | {s["t"]} | {s["part"]} · {NAMES[s["part"]]} | ảnh {s["img"]} | {head} | {shown[k]} | {cam}; {dd} |')
-md = (f"# AH Decode · Một màu chủ đạo, hai màu phụ · BẢN NHÁP chờ duyệt (làm lại nhiều ảnh)\n\n"
+md = (f"# AH Decode · Một màu chủ đạo, hai màu phụ · BẢN DỰNG THEO GIỌNG ĐỌC\n\n"
       f"Bài trong kho: `AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/bai-01.md` (commit 65b5427), ý chính: mục \"Một màu chủ đạo, hai màu phụ đi vòng quanh\".\n"
       f"Ảnh (sáu ảnh, đều trong `anh/` của bài): ảnh chụp có doodle gốc `13-doodle-anh-tong.jpg`, `10-doodle-hai-mau-am.jpg`, `11-doodle-dap-mau-bep.jpg`; ảnh định vị `03-mat-bang-the-green-box.png` (mặt bằng), `09-truc-do-the-green-box.jpg` (trục đo màu), `08-diagram-xanh-o-giua-am-di-quanh.png` (sơ đồ chủ đạo/phụ) · The Green Box, Berlin · Ester Bruzkus Architekten · ảnh Robert Rieger\n"
-      f"Thời lượng dự kiến: {total:.1f} giây (ước tính bảo thủ {WPS} từ/giây, đã gồm quãng nghỉ chuyển cảnh) + 1 giây giữ khung cuối · {nw} từ lời đọc (chữ viết) · {len(SC)} cảnh.\n"
+      f"Thời lượng: {total:.1f} giây giọng đọc (đo từ file ghi âm) + 1 giây giữ khung cuối · {nw} từ lời đọc (chữ viết) · {len(SC)} cảnh.\n"
       f"Nét: ảnh chụp dùng doodle gốc của bài (mũi tên, nhãn chữ), lộ dần. Mặt bằng và trục đo không có doodle nên khoanh vùng bằng nét mực đứt vẽ tay (cảnh mực). Chuyển giữa hai ảnh là chuyển mờ 0,7 giây.\n\n"
       "| # | Thời lượng | Phần | Ảnh | Tiêu đề trên khung | Lời đọc | Hình |\n|---|---|---|---|---|---|---|\n" + "\n".join(rows) +
       "\n\n## Lời đọc liền mạch\n\n" + " ".join(shown) + "\n\n"
