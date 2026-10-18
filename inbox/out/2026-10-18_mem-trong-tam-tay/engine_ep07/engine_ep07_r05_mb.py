@@ -29,9 +29,9 @@ HEAD = "AH DECODE · CỨNG Ở XA, MỀM TRONG TẦM TAY"
 END_LINES = [
     (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1088, "và cách chọn đồ decor", 40, 215),
-    (1196, "Bài viết phân tích đầy đủ", 58, 240),
-    (1260, "xem ở dòng đầu tiên", 58, 240),
-    (1348, "trong phần bình luận", 66, 255),
+    (1196, "Bài phân tích về chất cảm vật liệu,", 54, 240),
+    (1258, "nguyên tắc cứng và mềm từ sách của Kilmer", 46, 240),
+    (1348, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
 PAPER = (229, 215, 191)  # beige print margin
@@ -550,11 +550,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.7s", head="Tường, sàn cứng dội tiếng, nên nghe vang", vo="Tường, sàn cứng còn dội tiếng bước chân, nên nhà vừa trông lạnh, vừa nghe vang.",
+    dict(t="0–4.7s", head="Tường, sàn cứng dội tiếng, nên nghe vang", vo="Tường, sàn cứng còn dội tiếng bước chân, nên nhà vừa trông lạnh, vừa nghe vang.",
          cam=WIDE, dark=False, dd=[]),
-    dict(t="5.7–11.4s", head="MS House: mặt bằng tầng trệt", vo="Thử nhìn nhà MS House ở Ấn Độ, hai tầng, xây quanh chín cây sầu đâu.",
+    dict(t="4.7–9.2s", head="MS House: mặt bằng tầng trệt", vo="Thử nhìn nhà MS House ở Ấn Độ, hai tầng, xây quanh chín cây sầu đâu.",
          cam=((790, 350), 1.27, (540, 925)), dark=False, dd=[]),
-    dict(t="11.4–11.9s", head="end", vo="",
+    dict(t="9.2–9.7s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[]),
 ]
 END = len(SCENES) - 1

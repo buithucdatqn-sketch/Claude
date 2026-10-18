@@ -29,9 +29,9 @@ HEAD = "AH DECODE · CỨNG Ở XA, MỀM TRONG TẦM TAY"
 END_LINES = [
     (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1088, "và cách chọn đồ decor", 40, 215),
-    (1196, "Bài viết phân tích đầy đủ", 58, 240),
-    (1260, "xem ở dòng đầu tiên", 58, 240),
-    (1348, "trong phần bình luận", 66, 255),
+    (1196, "Bài phân tích về chất cảm vật liệu,", 54, 240),
+    (1258, "nguyên tắc cứng và mềm từ sách của Kilmer", 46, 240),
+    (1348, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
 PAPER = (229, 215, 191)  # beige print margin
@@ -550,13 +550,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.7s", head="MS House: mặt bằng tầng trệt", vo="Thử nhìn nhà MS House ở Ấn Độ, hai tầng, xây quanh chín cây sầu đâu.",
+    dict(t="0–4.5s", head="MS House: mặt bằng tầng trệt", vo="Thử nhìn nhà MS House ở Ấn Độ, hai tầng, xây quanh chín cây sầu đâu.",
          cam=WIDE, dark=False, dd=[]),
-    dict(t="5.7–10.78s", head="Phòng khách: trần, tường, sàn đều cứng", vo="Ở phòng khách, trần, tường bê tông và sàn đá đều là mặt cứng.",
+    dict(t="4.5–8.17s", head="Phòng khách: trần, tường, sàn đều cứng", vo="Ở phòng khách, trần, tường bê tông và sàn đá đều là mặt cứng.",
          cam=((1310, 800), 3.0, (745, 720)), dark=True, dd=['arr_vo', 'lab_vo']),
-    dict(t="10.78–16.17s", head="Trong tầm tay: mềm và ấm", vo="Còn đồ trong tầm tay thì mềm và ấm, như bộ sofa vải xù này.",
+    dict(t="8.17–11.95s", head="Trong tầm tay: mềm và ấm", vo="Còn đồ trong tầm tay thì mềm và ấm, như bộ sofa vải xù này.",
          cam=((272, 1690), 3.0, (322, 1080)), dark=True, dd=['arr_sofa', 'lab_sofa']),
-    dict(t="16.17–16.67s", head="end", vo="",
+    dict(t="11.95–12.45s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[]),
 ]
 END = len(SCENES) - 1

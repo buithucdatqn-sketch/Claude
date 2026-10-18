@@ -29,9 +29,9 @@ HEAD = "AH DECODE · CỨNG Ở XA, MỀM TRONG TẦM TAY"
 END_LINES = [
     (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1088, "và cách chọn đồ decor", 40, 215),
-    (1196, "Bài viết phân tích đầy đủ", 58, 240),
-    (1260, "xem ở dòng đầu tiên", 58, 240),
-    (1348, "trong phần bình luận", 66, 255),
+    (1196, "Bài phân tích về chất cảm vật liệu,", 54, 240),
+    (1258, "nguyên tắc cứng và mềm từ sách của Kilmer", 46, 240),
+    (1348, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
 PAPER = (229, 215, 191)  # beige print margin
@@ -551,11 +551,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.7s", head="Bê tông mộc: đẹp trên ảnh, lạnh khi ở?", vo="Nhà bê tông mộc lên ảnh thì đẹp, sao ở thật lại hay bị chê lạnh?",
+    dict(t="0–3.6s", head="Bê tông mộc: đẹp trên ảnh, lạnh khi ở?", vo="Nhà bê tông mộc lên ảnh thì đẹp, sao ở thật lại hay bị chê lạnh?",
          cam=WIDE, dark=False, dd=[]),
-    dict(t="5.7–12.03s", head="Kilmer & Kilmer (2014): mặt trơn lạnh, vải dày ấm", vo="Hai tác giả Kilmer viết, phòng nhiều mặt trơn thường lạnh, còn thảm và vải dày thì ấm.",
+    dict(t="3.6–8.85s", head="Kilmer & Kilmer (2014): mặt trơn lạnh, vải dày ấm", vo="Hai tác giả Kilmer viết, phòng nhiều mặt trơn thường lạnh, còn thảm và vải dày thì ấm.",
          cam=((1080, 465), 1.12, (540, 925)), dark=False, dd=[]),
-    dict(t="12.03–12.53s", head="end", vo="",
+    dict(t="8.85–9.35s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[]),
 ]
 END = len(SCENES) - 1

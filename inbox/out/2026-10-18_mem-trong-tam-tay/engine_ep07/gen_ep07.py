@@ -32,8 +32,8 @@ SC = [
     dict(part="B", blk=2, img="dg", head="Kilmer & Kilmer (2014): mặt trơn lạnh, vải dày ấm", cam=((1080, 465), 1.12, (540, 925)), free=True, dark=False, dd=[],
          vo="Hai tác giả Kilmer viết, phòng nhiều mặt trơn thường lạnh, còn thảm và vải dày thì ấm.",
          tts="Hai tác giả Kin-mơ viết, phòng nhiều mặt trơn thường lạnh, còn thảm và vải dày thì ấm."),
-    dict(part="C", blk=3, img="hl", head="Không thiếu vân, chỉ thiếu đồ mềm", cam=((720, 860), 3.0, (540, 900)), dark=False, dd=[],
-         vo="Mà bê tông đâu có thiếu vân, nó thường thiếu đồ mềm ngay bên cạnh."),
+    dict(part="C", blk=3, img="hl", head="Bê tông lạnh vì thiếu đồ mềm bên cạnh", cam=((720, 860), 3.0, (540, 900)), dark=False, dd=[],
+         vo="Mà bê tông hoặc các vật liệu cứng thường gây lạnh lẽo, vì nó thường thiếu đồ mềm bên cạnh."),
     dict(part="C", blk=4, img="an", head="Tường, sàn cứng dội tiếng, nên nghe vang", cam=((1150, 1500), 2.4, (540, 900)), dark=False, dd=[],
          vo="Tường, sàn cứng còn dội tiếng bước chân, nên nhà vừa trông lạnh, vừa nghe vang."),
     dict(part="D", blk=5, img="mb", head="MS House: mặt bằng tầng trệt", cam=((790, 350), 1.27, (540, 925)), free=True, dark=False, dd=[],
@@ -50,15 +50,16 @@ SC = [
          dd=["arr_dau", "lab_dau"],
          vo="Ở phòng ngủ, gỗ ốp đúng chỗ lưng tựa đầu giường, còn bê tông lùi lên cao."),
     dict(part="F", blk=6, img="khach", head="Thử ở nhà mình", cam=((620, 2000), 3.0, (540, 900)), dark=False, dd=[],
-         vo="Nhà mình thì thử đổi đầu giường, lưng ghế sang gỗ, thêm thảm đay và rèm vải lanh cho đỡ vang."),
+         vo="Thử đổi đầu giường, lưng ghế sang gỗ, thêm thảm đay và rèm vải lanh cho đỡ vang."),
     dict(part="H", blk=6, img="tong", head="Bê tông thô: trên cao, ở xa", cam=((650, 900), 3.25, (540, 925)), free=True, dark=True,
          dd=["arr_xa", "lab_xa"],
          vo="Vậy cứ giữ bê tông, chỉ cần để mặt cứng ở xa,"),
     dict(part="H", blk=6, img="tong", head="Gỗ, mây: ngay trong tầm tay", cam=((275, 1680), 2.4, (300, 925)), free=True, dark=True,
          dd=["arr_tam1", "arr_tam2", "lab_tam"],
-         vo="còn đồ mềm thì để trong tầm tay."),
+         vo="còn đồ mềm thì để trong tầm tay, thì sẽ giảm cảm giác lạnh lẽo."),
     dict(part="I", blk=6, img="tong", head="end", cam="END", dark=False, vo="", dd=[],
-         say="Bài phân tích đầy đủ ở gói thành viên, mọi người xem phần bình luận nha."),
+         say="Bài phân tích về chất cảm vật liệu, nguyên tắc cứng và mềm từ sách của Kilmer, mọi người xem phần bình luận nha.",
+         tts="Bài phân tích về chất cảm vật liệu, nguyên tắc cứng và mềm từ sách của Kin-mơ, mọi người xem phần bình luận nha."),
 ]
 
 DOODLE = r'''
@@ -99,7 +100,14 @@ def dur(s):
     return max(3.5, TRANS + words(s.get("say", s["vo"])) / WPS)
 
 
+# Giai đoạn B: mốc cảnh căn theo ghi âm Tap_7.mp3 (51,0 giây; nhận dạng lời bằng sherpa-onnx zipformer-vi, xem script.md):
+# mỗi cảnh bắt đầu khoảng 0,35–0,4 giây trước câu của nó; cảnh cuối kéo đến hết giọng + 0,6 giây.
+T_AUDIO = [0, 3.6, 8.85, 13.75, 18.45, 22.95, 26.62, 30.4, 34.8, 39.2, 42.05, 45.35, 51.6]
+
+
 def times():
+    if T_AUDIO:
+        return list(T_AUDIO)
     T = [0.0]
     for s in SC:
         T.append(round(T[-1] + dur(s), 2))
@@ -193,7 +201,10 @@ def build(src, dst, video, data, img, tag):
            ('HEAD = "AH DECODE · CÂN BẰNG THỊ GIÁC"', 'HEAD = "AH DECODE · CỨNG Ở XA, MỀM TRONG TẦM TAY"'),
            ("CARD_W2, BORDER2 = 1920, 0", f"CARD_W2, BORDER2 = {cw}, 0  # theo tỷ lệ ảnh của run"),
            ("C2 = (B2W / 2, 1810.0)", f"C2 = (B2W / 2, {cy})"),
-           ("borderMode=cv2.BORDER_REFLECT)", "borderMode=cv2.BORDER_CONSTANT, borderValue=(255, 255, 255, 0))")]
+           ("borderMode=cv2.BORDER_REFLECT)", "borderMode=cv2.BORDER_CONSTANT, borderValue=(255, 255, 255, 0))"),
+           # khung cuối: chữ khớp lời mời chủ Trang đã chỉnh trong ghi âm Tap_7.mp3
+           ('(1196, "Bài viết phân tích đầy đủ", 58, 240),\n    (1260, "xem ở dòng đầu tiên", 58, 240),\n    (1348, "trong phần bình luận", 66, 255),',
+            '(1196, "Bài phân tích về chất cảm vật liệu,", 54, 240),\n    (1258, "nguyên tắc cứng và mềm từ sách của Kilmer", 46, 240),\n    (1348, "xem ở phần bình luận", 66, 255),')]
     for a_, b_ in rep:
         assert a_ in s, a_
         s = s.replace(a_, b_)
@@ -221,6 +232,13 @@ for n, ks in enumerate(runs(), 1):
                      cut_from=d0, cut_len=dl + (1.0 if ks[-1] == len(SC) - 1 else 0.0),
                      first_frame=2 if ks[0] > 0 else 1))
 json.dump(RUNS, open(OUT + "engine_ep07/runs.json", "w"), ensure_ascii=False, indent=1)
+
+# ảnh bìa 1080x1920: một cảnh rộng trên ảnh 13 (bàn ăn, bê tông trên cao), tiêu đề ngắn của reel + câu móc
+COVER = [dict(img="tong", head="Cứng ở xa, mềm trong tầm tay", vo="Vì sao nhà bê tông mộc hay bị chê lạnh?", dark=False),
+         dict(img="tong", head="end", vo="", dark=False)]
+build("engine_storyboard_v7.py", "cover_ep07.py", False,
+      wrap_data([scene_line(COVER[0], 0, 3, "WIDE", []), scene_line(COVER[1], 3, 4, "END_SAFE", [])],
+                DOODLE.replace("@NPZ@", "none.npz")), "tong", "cover")
 
 # ---- elevenlabs.txt: sáu khối kịch bản nối bằng thẻ ngắt 1,2 giây (theo prompt của routine) ----
 shown = [x.get("say", x["vo"]) for x in SC]

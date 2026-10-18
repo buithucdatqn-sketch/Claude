@@ -1,7 +1,7 @@
 [
  {
   "blk": 1,
-  "t": "0–5.7s",
+  "t": "0–3.6s",
   "head": "Bê tông mộc: đẹp trên ảnh, lạnh khi ở?",
   "loi": "Nhà bê tông mộc lên ảnh thì đẹp, sao ở thật lại hay bị chê lạnh?",
   "tts": "Nhà bê tông mộc lên ảnh thì đẹp, sao ở thật lại hay bị chê lạnh?",
@@ -9,7 +9,7 @@
  },
  {
   "blk": 2,
-  "t": "5.7–12.03s",
+  "t": "3.6–8.85s",
   "head": "Kilmer & Kilmer (2014): mặt trơn lạnh, vải dày ấm",
   "loi": "Hai tác giả Kilmer viết, phòng nhiều mặt trơn thường lạnh, còn thảm và vải dày thì ấm.",
   "tts": "Hai tác giả Kin-mơ viết, phòng nhiều mặt trơn thường lạnh, còn thảm và vải dày thì ấm.",
@@ -17,15 +17,15 @@
  },
  {
   "blk": 3,
-  "t": "12.03–17.42s",
-  "head": "Không thiếu vân, chỉ thiếu đồ mềm",
-  "loi": "Mà bê tông đâu có thiếu vân, nó thường thiếu đồ mềm ngay bên cạnh.",
-  "tts": "Mà bê tông đâu có thiếu vân, nó thường thiếu đồ mềm ngay bên cạnh.",
+  "t": "8.85–13.75s",
+  "head": "Bê tông lạnh vì thiếu đồ mềm bên cạnh",
+  "loi": "Mà bê tông hoặc các vật liệu cứng thường gây lạnh lẽo, vì nó thường thiếu đồ mềm bên cạnh.",
+  "tts": "Mà bê tông hoặc các vật liệu cứng thường gây lạnh lẽo, vì nó thường thiếu đồ mềm bên cạnh.",
   "part": "C"
  },
  {
   "blk": 4,
-  "t": "17.42–23.12s",
+  "t": "13.75–18.45s",
   "head": "Tường, sàn cứng dội tiếng, nên nghe vang",
   "loi": "Tường, sàn cứng còn dội tiếng bước chân, nên nhà vừa trông lạnh, vừa nghe vang.",
   "tts": "Tường, sàn cứng còn dội tiếng bước chân, nên nhà vừa trông lạnh, vừa nghe vang.",
@@ -33,7 +33,7 @@
  },
  {
   "blk": 5,
-  "t": "23.12–28.82s",
+  "t": "18.45–22.95s",
   "head": "MS House: mặt bằng tầng trệt",
   "loi": "Thử nhìn nhà MS House ở Ấn Độ, hai tầng, xây quanh chín cây sầu đâu.",
   "tts": "Thử nhìn nhà Em-ét Hao-xơ ở Ấn Độ, hai tầng, xây quanh chín cây sầu đâu.",
@@ -41,7 +41,7 @@
  },
  {
   "blk": 5,
-  "t": "28.82–33.9s",
+  "t": "22.95–26.62s",
   "head": "Phòng khách: trần, tường, sàn đều cứng",
   "loi": "Ở phòng khách, trần, tường bê tông và sàn đá đều là mặt cứng.",
   "tts": "Ở phòng khách, trần, tường bê tông và sàn đá đều là mặt cứng.",
@@ -49,7 +49,7 @@
  },
  {
   "blk": 5,
-  "t": "33.9–39.29s",
+  "t": "26.62–30.4s",
   "head": "Trong tầm tay: mềm và ấm",
   "loi": "Còn đồ trong tầm tay thì mềm và ấm, như bộ sofa vải xù này.",
   "tts": "Còn đồ trong tầm tay thì mềm và ấm, như bộ sô-pha vải xù này.",
@@ -57,7 +57,7 @@
  },
  {
   "blk": 5,
-  "t": "39.29–45.3s",
+  "t": "30.4–34.8s",
   "head": "Phòng ngủ: gỗ ở chỗ lưng tựa",
   "loi": "Ở phòng ngủ, gỗ ốp đúng chỗ lưng tựa đầu giường, còn bê tông lùi lên cao.",
   "tts": "Ở phòng ngủ, gỗ ốp đúng chỗ lưng tựa đầu giường, còn bê tông lùi lên cao.",
@@ -65,15 +65,15 @@
  },
  {
   "blk": 6,
-  "t": "45.3–52.56s",
+  "t": "34.8–39.2s",
   "head": "Thử ở nhà mình",
-  "loi": "Nhà mình thì thử đổi đầu giường, lưng ghế sang gỗ, thêm thảm đay và rèm vải lanh cho đỡ vang.",
-  "tts": "Nhà mình thì thử đổi đầu giường, lưng ghế sang gỗ, thêm thảm đay và rèm vải lanh cho đỡ vang.",
+  "loi": "Thử đổi đầu giường, lưng ghế sang gỗ, thêm thảm đay và rèm vải lanh cho đỡ vang.",
+  "tts": "Thử đổi đầu giường, lưng ghế sang gỗ, thêm thảm đay và rèm vải lanh cho đỡ vang.",
   "part": "F"
  },
  {
   "blk": 6,
-  "t": "52.56–57.01s",
+  "t": "39.2–42.05s",
   "head": "Bê tông thô: trên cao, ở xa",
   "loi": "Vậy cứ giữ bê tông, chỉ cần để mặt cứng ở xa,",
   "tts": "Vậy cứ giữ bê tông, chỉ cần để mặt cứng ở xa,",
@@ -81,18 +81,18 @@
  },
  {
   "blk": 6,
-  "t": "57.01–60.51s",
+  "t": "42.05–45.35s",
   "head": "Gỗ, mây: ngay trong tầm tay",
-  "loi": "còn đồ mềm thì để trong tầm tay.",
-  "tts": "còn đồ mềm thì để trong tầm tay.",
+  "loi": "còn đồ mềm thì để trong tầm tay, thì sẽ giảm cảm giác lạnh lẽo.",
+  "tts": "còn đồ mềm thì để trong tầm tay, thì sẽ giảm cảm giác lạnh lẽo.",
   "part": "H"
  },
  {
   "blk": 6,
-  "t": "60.51–66.21s",
+  "t": "45.35–51.6s",
   "head": "end",
-  "loi": "Bài phân tích đầy đủ ở gói thành viên, mọi người xem phần bình luận nha.",
-  "tts": "Bài phân tích đầy đủ ở gói thành viên, mọi người xem phần bình luận nha.",
+  "loi": "Bài phân tích về chất cảm vật liệu, nguyên tắc cứng và mềm từ sách của Kilmer, mọi người xem phần bình luận nha.",
+  "tts": "Bài phân tích về chất cảm vật liệu, nguyên tắc cứng và mềm từ sách của Kin-mơ, mọi người xem phần bình luận nha.",
   "part": "I"
  }
 ]
