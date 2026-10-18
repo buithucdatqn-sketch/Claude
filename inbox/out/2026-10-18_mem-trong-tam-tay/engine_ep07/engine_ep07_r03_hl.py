@@ -16,7 +16,7 @@ from silhouette import loose_contour  # noqa: E402
 
 SRC = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "source.png")
 OUT = sys.argv[2] if len(sys.argv) > 2 else HERE
-os.makedirs(os.path.join(OUT, "frames"), exist_ok=True)
+os.makedirs(os.path.join(OUT, "frames_r03_hl"), exist_ok=True)
 
 W, H, SS = 1080, 1920, 2
 FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
@@ -54,7 +54,7 @@ SW, SH = src.size
 
 # ---------------- board geometry (2x master, 1x = reel canvas) ----------------
 B2W, B2H = W * 2, H * 2
-CARD_W2, BORDER2 = 1280, 0  # ảnh dọc 2:3: thẻ hẹp hơn để chữ nằm ngoài ảnh
+CARD_W2, BORDER2 = 1280, 0  # theo tỷ lệ ảnh của run
 PH_W2 = CARD_W2 - 2 * BORDER2
 PH_H2 = int(round(PH_W2 * SH / SW))
 CARD_H2 = PH_H2 + 2 * BORDER2
@@ -550,32 +550,18 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.7s", head="Bê tông mộc: đẹp trên ảnh, lạnh khi ở?", vo="Nhà bê tông mộc lên ảnh thì đẹp, sao ở thật lại hay bị chê lạnh?",
+    dict(t="0–6.33s", head="Kilmer & Kilmer (2014): mặt trơn lạnh, vải dày ấm", vo="Hai tác giả Kilmer viết, phòng nhiều mặt trơn thường lạnh, còn thảm và vải dày thì ấm.",
          cam=WIDE, dark=False, dd=[]),
-    dict(t="5.7–12.96s", head="Kilmer & Kilmer (2014): mặt trơn lạnh, vải dày ấm", vo="Hai tác giả Kilmer viết, phòng nhiều mặt trơn thường lạnh, còn thảm và vải dày thì mang lại hơi ấm.",
-         cam=((800, 330), 3.4, (540, 409)), dark=False, dd=[]),
-    dict(t="12.96–18.97s", head="Không thiếu vân, chỉ thiếu đồ mềm", vo="Mà bê tông mộc đâu có thiếu vân, nó thường thiếu đồ mềm đặt ngay bên cạnh.",
-         cam=((560, 1000), 4.6, (540, 900)), dark=False, dd=[]),
-    dict(t="18.97–25.61s", head="Tường, sàn cứng dội tiếng, nên nghe vang", vo="Tường, sàn cứng còn dội tiếng bước chân, nên nhà toàn bê tông vừa trông lạnh, vừa nghe vang.",
-         cam=((330, 1420), 4.2, (514, 900)), dark=False, dd=[]),
-    dict(t="25.61–31.93s", head="MS House: trần, tường, sàn đều cứng", vo="Thử nhìn phòng khách nhà MS House, trần, tường bê tông và sàn đá đều là mặt cứng.",
-         cam=((1310, 800), 3.0, (745, 720)), dark=True, dd=['arr_vo', 'lab_vo']),
-    dict(t="31.93–38.88s", head="Trong tầm tay: mềm và ấm", vo="Còn đồ trong tầm tay thì mềm và ấm, bộ sofa vải xù nổi hẳn lên trên nền bê tông.",
-         cam=((272, 1690), 3.0, (322, 1080)), dark=True, dd=['arr_sofa', 'lab_sofa']),
-    dict(t="38.88–44.89s", head="Gỗ ở chỗ lưng tựa, bê tông lùi lên cao", vo="Ở phòng ngủ, gỗ ốp đúng chỗ lưng tựa đầu giường, còn bê tông lùi lên cao.",
-         cam=WIDE, dark=False, dd=[]),
-    dict(t="44.89–52.47s", head="Thử ở nhà mình", vo="Nhà mình thì thử đổi đầu giường, lưng ghế sang gỗ, thêm thảm sợi đay và rèm vải lanh cho đỡ vang.",
-         cam=((620, 2000), 3.0, (540, 1480)), dark=False, dd=[]),
-    dict(t="52.47–58.48s", head="Cứng ở xa, mềm trong tầm tay", vo="Vậy cứ giữ bê tông, chỉ cần để mặt cứng ở xa, đồ mềm trong tầm tay.",
-         cam=WIDE, dark=False, dd=[]),
-    dict(t="58.48–64.8s", head="end", vo="",
+    dict(t="6.33–11.72s", head="Không thiếu vân, chỉ thiếu đồ mềm", vo="Mà bê tông đâu có thiếu vân, nó thường thiếu đồ mềm ngay bên cạnh.",
+         cam=((720, 860), 3.0, (540, 900)), dark=False, dd=[]),
+    dict(t="11.72–12.22s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[]),
 ]
 END = len(SCENES) - 1
 BOARDS = {}
 
-_L = np.load(os.path.join(HERE, "doodle_ep07.npz"))
-LAYER = {k: _L[k] for k in _L.files}   # toạ độ trên ảnh làm việc (source.png)
+_P = os.path.join(HERE, "doodle_ep07_hl.npz")
+LAYER = dict(np.load(_P)) if os.path.isfile(_P) else {}   # toạ độ trên ảnh làm việc của run
 RAD = 0.9                              # bán kính chấm bút khi lộ lại nét gốc (px ảnh làm việc)
 
 
@@ -639,7 +625,7 @@ BOARDS["clean"] = make_board(1.0)
 frames = []
 for i in range(len(SCENES)):
     im = render_scene(i)
-    im.save(os.path.join(OUT, "frames", f"scene_{i + 1}.png"))
+    im.save(os.path.join(OUT, "frames_r03_hl", f"scene_{i + 1}.png"))
     frames.append(im)
 
 # ---------------- contact sheet ----------------
@@ -650,9 +636,9 @@ SHW = MX * 2 + cols * PW + (cols - 1) * GAP
 SHH = TOP + rows * (PH + 86) + 250
 sheet = Image.new("RGB", (SHW, SHH), (30, 27, 24))
 d = ImageDraw.Draw(sheet)
-d.text((MX, 38), "AH Decode · Cứng ở xa, mềm trong tầm tay", font=F(60), fill=(255, 255, 255))
-d.text((MX, 118), "Ảnh dán bằng băng giấy · nền trắng · chữ nâu trên nền, trắng trên ảnh", font=F(34), fill=(200, 194, 186))
-d.text((MX, 158), "Camera zoom vào chi tiết · nét doodle gốc của bài lộ dần theo lời đọc", font=F(34), fill=(200, 194, 186))
+d.text((MX, 38), "AH Decode · Cân bằng thị giác — bảng phân cảnh v7", font=F(60), fill=(255, 255, 255))
+d.text((MX, 118), "Ảnh dán bằng băng giấy ở giữa mép trên · không viền · nền trắng trơn · chữ nâu đậm trên nền, trắng trên ảnh", font=F(34), fill=(200, 194, 186))
+d.text((MX, 158), "Camera zoom vào ảnh khi nói đến chi tiết · ~28 giây · nét vẽ chạy animation theo nhịp lời đọc", font=F(34), fill=(200, 194, 186))
 for i, fr in enumerate(frames):
     r, c = divmod(i, cols)
     x, y = MX + c * (PW + GAP), TOP + r * (PH + 86)
@@ -663,6 +649,6 @@ for i, fr in enumerate(frames):
 fy = TOP + rows * (PH + 86) + 10
 d.text((MX, fy), "Nền trắng trơn · băng keo giấy thay ghim · header AH DECODE · bỏ “Bước n”", font=F(32), fill=(255, 255, 255))
 d.text((MX, fy + 44), "Cảnh zoom kín ảnh: chữ trắng viết lên ảnh (có phủ tối nhẹ).", font=F(32), fill=(225, 220, 212))
-d.text((MX, fy + 88), "Ảnh tối ~14% ở cảnh có nét vẽ; cảnh phòng ngủ dùng ảnh 09 (ghép từ engine phụ).", font=F(32), fill=(225, 220, 212))
-sheet.save(os.path.join(OUT, "storyboard.png"))
+d.text((MX, fy + 88), "Ảnh tối ~14% ở cảnh có nét vẽ; cảnh 1, 6, 7 giữ ảnh nguyên bản.", font=F(32), fill=(225, 220, 212))
+sheet.save(os.path.join(OUT, "storyboard_r03_hl.png"))
 print("fabric", tuple(int(x) for x in FAB), "sheet", sheet.size)

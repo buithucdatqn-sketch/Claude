@@ -112,6 +112,9 @@ def run(src, dst, npz, K, BOX, ARROWS, extra_thr={}, cols={}, shift={}, fsr={}, 
         parts[k] = m
         mask |= m
     big = cv2.dilate(mask, np.ones((9, 9), np.uint8))
+    for k in ARROWS:  # mũi tên lấy ngưỡng cao (chỉ lõi nét) nên quầng mờ rộng hơn: nới mặt nạ thêm
+        if k not in cols and k not in shift and k not in fsr and k not in rows:
+            big |= cv2.dilate(parts[k], np.ones((19, 19), np.uint8))
     special = np.zeros_like(mask)
     for k in list(cols) + list(shift) + list(fsr):
         d = cv2.dilate(parts[k], np.ones((13, 13), np.uint8))
@@ -143,7 +146,7 @@ def run(src, dst, npz, K, BOX, ARROWS, extra_thr={}, cols={}, shift={}, fsr={}, 
         fill_rows(bg, a, d)
         special |= d
     for k in grain:  # vân bê tông dạng hạt: lấy mẫu ngẫu nhiên quanh nét, không để mảng nhoè
-        d = cv2.dilate(parts[k], np.ones((11, 11), np.uint8))
+        d = cv2.dilate(parts[k], np.ones((19, 19) if k in ARROWS else (11, 11), np.uint8))
         for k2, (y0_, y1_) in rows.items():
             if k2 == k:
                 d[y0_:y1_] = 0
@@ -186,3 +189,29 @@ run("source_ngu_orig.png", "source_ngu.png", "doodle_ep07_ngu.npz", 1.6,
     clip=dict(arr_dau=846), noflood=("arr_dau",),
     rows=dict(arr_dau=(int(452 * 1.6), 1602)),  # ván gỗ đầu giường nằm ngang: lấp theo hàng
     grain=("title", "sub", "lab_dau", "arr_dau"))  # chữ và mũi tên trên tường bê tông
+
+# ảnh 13: ảnh tổng (sảnh ăn hai tầng nhìn từ bàn ăn) — cảnh mở và cảnh chốt
+run("source_tong_orig.png", "source_tong.png", "doodle_ep07_tong.npz", 1.6,
+    BOX=dict(title=(52, 28, 378, 274), credit=(452, 972, 698, 1042),
+             lab_xa=(303, 413, 532, 522), arr_xa=(398, 522, 482, 712),
+             lab_tam=(13, 848, 302, 917), arr_tam1=(33, 917, 137, 1262), arr_tam2=(163, 919, 337, 1152)),
+    ARROWS=dict(arr_xa=(410, 535), arr_tam1=(50, 925), arr_tam2=(172, 932)),
+    extra_thr=dict(title=200, arr_xa=205, arr_tam1=215, arr_tam2=215, credit=190),
+    grain=("title", "lab_xa", "arr_xa"))
+
+# ảnh 06: sảnh ăn hai tầng — chỉ dùng nền sạch (nhãn gốc nói về ánh sáng, không hợp lời đọc)
+run("source_an_orig.png", "source_an.png", "doodle_ep07_an.npz", 2.4,
+    BOX=dict(lab1=(18, 33, 212, 92), arr1=(102, 93, 158, 248), title=(683, 33, 982, 77), sub=(746, 103, 937, 132),
+             lab2=(238, 870, 392, 932), arr2=(266, 850, 320, 872), plus1=(186, 826, 217, 854), plus2=(763, 864, 797, 895),
+             credit=(603, 955, 962, 978)),
+    ARROWS=dict(arr1=(110, 100), arr2=(316, 862)),
+    extra_thr=dict(arr1=200, arr2=200, plus1=200, plus2=200, lab2=200, credit=190),
+    grain=("lab1", "arr1", "title", "sub", "lab2", "arr2", "plus1", "plus2", "credit"))
+
+# ảnh 11: hành lang lối vào — chỉ dùng nền sạch
+run("source_hl_orig.png", "source_hl.png", "doodle_ep07_hl.npz", 1.6,
+    BOX=dict(credit=(556, 18, 828, 64), title=(43, 123, 562, 182), sub=(153, 228, 542, 272),
+             lab1=(143, 343, 507, 417), arr1=(483, 368, 527, 667), lab2=(233, 1338, 517, 1412), arr2=(283, 958, 382, 1322)),
+    ARROWS=dict(arr1=(510, 378), arr2=(375, 1312)),
+    extra_thr=dict(arr1=200, arr2=243, lab2=200),
+    grain=("credit", "title", "sub", "lab1", "arr1", "lab2", "arr2"))

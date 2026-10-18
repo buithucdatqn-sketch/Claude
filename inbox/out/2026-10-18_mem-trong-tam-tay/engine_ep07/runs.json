@@ -1,0 +1,113 @@
+[
+ {
+  "tag": "r01_an",
+  "img": "an",
+  "src": "source_an.png",
+  "scenes": [
+   1
+  ],
+  "t_in_main": 0.0,
+  "cut_from": 0.0,
+  "cut_len": 5.7,
+  "first_frame": 1
+ },
+ {
+  "tag": "r02_dg",
+  "img": "dg",
+  "src": "source_dg.png",
+  "scenes": [
+   2
+  ],
+  "t_in_main": 5.7,
+  "cut_from": 5.7,
+  "cut_len": 6.329999999999999,
+  "first_frame": 2
+ },
+ {
+  "tag": "r03_hl",
+  "img": "hl",
+  "src": "source_hl.png",
+  "scenes": [
+   3
+  ],
+  "t_in_main": 12.03,
+  "cut_from": 6.329999999999999,
+  "cut_len": 5.390000000000003,
+  "first_frame": 2
+ },
+ {
+  "tag": "r04_an",
+  "img": "an",
+  "src": "source_an.png",
+  "scenes": [
+   4
+  ],
+  "t_in_main": 17.42,
+  "cut_from": 5.390000000000002,
+  "cut_len": 5.699999999999999,
+  "first_frame": 2
+ },
+ {
+  "tag": "r05_mb",
+  "img": "mb",
+  "src": "source_mb.png",
+  "scenes": [
+   5
+  ],
+  "t_in_main": 23.12,
+  "cut_from": 5.699999999999999,
+  "cut_len": 4.449999999999999,
+  "first_frame": 2
+ },
+ {
+  "tag": "r06_khach",
+  "img": "khach",
+  "src": "source.png",
+  "scenes": [
+   6,
+   7
+  ],
+  "t_in_main": 27.57,
+  "cut_from": 4.449999999999999,
+  "cut_len": 10.469999999999999,
+  "first_frame": 2
+ },
+ {
+  "tag": "r07_ngu",
+  "img": "ngu",
+  "src": "source_ngu.png",
+  "scenes": [
+   8
+  ],
+  "t_in_main": 38.04,
+  "cut_from": 5.390000000000001,
+  "cut_len": 6.009999999999998,
+  "first_frame": 2
+ },
+ {
+  "tag": "r08_khach",
+  "img": "khach",
+  "src": "source.png",
+  "scenes": [
+   9
+  ],
+  "t_in_main": 44.05,
+  "cut_from": 6.009999999999998,
+  "cut_len": 6.950000000000003,
+  "first_frame": 2
+ },
+ {
+  "tag": "r09_tong",
+  "img": "tong",
+  "src": "source_tong.png",
+  "scenes": [
+   10,
+   11,
+   12
+  ],
+  "t_in_main": 51.0,
+  "cut_from": 6.950000000000003,
+  "cut_len": 15.280000000000001,
+  "first_frame": 2
+ }
+]

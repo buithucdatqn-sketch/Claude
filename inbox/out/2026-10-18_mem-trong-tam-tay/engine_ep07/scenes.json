@@ -9,71 +9,87 @@
  },
  {
   "blk": 2,
-  "t": "5.7–12.96s",
+  "t": "5.7–12.03s",
   "head": "Kilmer & Kilmer (2014): mặt trơn lạnh, vải dày ấm",
-  "loi": "Hai tác giả Kilmer viết, phòng nhiều mặt trơn thường lạnh, còn thảm và vải dày thì mang lại hơi ấm.",
-  "tts": "Hai tác giả Kin-mơ viết, phòng nhiều mặt trơn thường lạnh, còn thảm và vải dày thì mang lại hơi ấm.",
+  "loi": "Hai tác giả Kilmer viết, phòng nhiều mặt trơn thường lạnh, còn thảm và vải dày thì ấm.",
+  "tts": "Hai tác giả Kin-mơ viết, phòng nhiều mặt trơn thường lạnh, còn thảm và vải dày thì ấm.",
   "part": "B"
  },
  {
   "blk": 3,
-  "t": "12.96–18.97s",
+  "t": "12.03–17.42s",
   "head": "Không thiếu vân, chỉ thiếu đồ mềm",
-  "loi": "Mà bê tông mộc đâu có thiếu vân, nó thường thiếu đồ mềm đặt ngay bên cạnh.",
-  "tts": "Mà bê tông mộc đâu có thiếu vân, nó thường thiếu đồ mềm đặt ngay bên cạnh.",
+  "loi": "Mà bê tông đâu có thiếu vân, nó thường thiếu đồ mềm ngay bên cạnh.",
+  "tts": "Mà bê tông đâu có thiếu vân, nó thường thiếu đồ mềm ngay bên cạnh.",
   "part": "C"
  },
  {
   "blk": 4,
-  "t": "18.97–25.61s",
+  "t": "17.42–23.12s",
   "head": "Tường, sàn cứng dội tiếng, nên nghe vang",
-  "loi": "Tường, sàn cứng còn dội tiếng bước chân, nên nhà toàn bê tông vừa trông lạnh, vừa nghe vang.",
-  "tts": "Tường, sàn cứng còn dội tiếng bước chân, nên nhà toàn bê tông vừa trông lạnh, vừa nghe vang.",
+  "loi": "Tường, sàn cứng còn dội tiếng bước chân, nên nhà vừa trông lạnh, vừa nghe vang.",
+  "tts": "Tường, sàn cứng còn dội tiếng bước chân, nên nhà vừa trông lạnh, vừa nghe vang.",
   "part": "C"
  },
  {
   "blk": 5,
-  "t": "25.61–31.93s",
-  "head": "MS House: trần, tường, sàn đều cứng",
-  "loi": "Thử nhìn phòng khách nhà MS House, trần, tường bê tông và sàn đá đều là mặt cứng.",
-  "tts": "Thử nhìn phòng khách nhà Em-ét Hao-xơ, trần, tường bê tông và sàn đá đều là mặt cứng.",
+  "t": "23.12–27.57s",
+  "head": "MS House: mặt bằng tầng trệt",
+  "loi": "Nhà MS House có hai tầng, xây quanh chín cây sầu đâu.",
+  "tts": "Nhà Em-ét Hao-xơ có hai tầng, xây quanh chín cây sầu đâu.",
   "part": "D"
  },
  {
   "blk": 5,
-  "t": "31.93–38.88s",
+  "t": "27.57–32.65s",
+  "head": "Phòng khách: trần, tường, sàn đều cứng",
+  "loi": "Phòng khách có trần, tường bê tông và sàn đá đều là mặt cứng.",
+  "tts": "Phòng khách có trần, tường bê tông và sàn đá đều là mặt cứng.",
+  "part": "D"
+ },
+ {
+  "blk": 5,
+  "t": "32.65–38.04s",
   "head": "Trong tầm tay: mềm và ấm",
-  "loi": "Còn đồ trong tầm tay thì mềm và ấm, bộ sofa vải xù nổi hẳn lên trên nền bê tông.",
-  "tts": "Còn đồ trong tầm tay thì mềm và ấm, bộ sô-pha vải xù nổi hẳn lên trên nền bê tông.",
+  "loi": "Còn đồ trong tầm tay thì mềm và ấm, như bộ sofa vải xù này.",
+  "tts": "Còn đồ trong tầm tay thì mềm và ấm, như bộ sô-pha vải xù này.",
   "part": "D"
  },
  {
   "blk": 5,
-  "t": "38.88–44.89s",
-  "head": "Gỗ ở chỗ lưng tựa, bê tông lùi lên cao",
+  "t": "38.04–44.05s",
+  "head": "Phòng ngủ: gỗ ở chỗ lưng tựa",
   "loi": "Ở phòng ngủ, gỗ ốp đúng chỗ lưng tựa đầu giường, còn bê tông lùi lên cao.",
   "tts": "Ở phòng ngủ, gỗ ốp đúng chỗ lưng tựa đầu giường, còn bê tông lùi lên cao.",
   "part": "D"
  },
  {
   "blk": 6,
-  "t": "44.89–52.47s",
+  "t": "44.05–51s",
   "head": "Thử ở nhà mình",
-  "loi": "Nhà mình thì thử đổi đầu giường, lưng ghế sang gỗ, thêm thảm sợi đay và rèm vải lanh cho đỡ vang.",
-  "tts": "Nhà mình thì thử đổi đầu giường, lưng ghế sang gỗ, thêm thảm sợi đay và rèm vải lanh cho đỡ vang.",
+  "loi": "Nhà mình thì thử đổi đầu giường, lưng ghế sang gỗ, thêm thảm đay và rèm lanh cho đỡ vang.",
+  "tts": "Nhà mình thì thử đổi đầu giường, lưng ghế sang gỗ, thêm thảm đay và rèm lanh cho đỡ vang.",
   "part": "F"
  },
  {
   "blk": 6,
-  "t": "52.47–58.48s",
-  "head": "Cứng ở xa, mềm trong tầm tay",
-  "loi": "Vậy cứ giữ bê tông, chỉ cần để mặt cứng ở xa, đồ mềm trong tầm tay.",
-  "tts": "Vậy cứ giữ bê tông, chỉ cần để mặt cứng ở xa, đồ mềm trong tầm tay.",
+  "t": "51–55.45s",
+  "head": "Bê tông thô: trên cao, ở xa",
+  "loi": "Vậy cứ giữ bê tông, chỉ cần để mặt cứng ở xa,",
+  "tts": "Vậy cứ giữ bê tông, chỉ cần để mặt cứng ở xa,",
   "part": "H"
  },
  {
   "blk": 6,
-  "t": "58.48–64.8s",
+  "t": "55.45–58.95s",
+  "head": "Gỗ, mây: ngay trong tầm tay",
+  "loi": "còn đồ mềm thì để trong tầm tay.",
+  "tts": "còn đồ mềm thì để trong tầm tay.",
+  "part": "H"
+ },
+ {
+  "blk": 6,
+  "t": "58.95–65.28s",
   "head": "end",
   "loi": "Bài phân tích đầy đủ nằm trong gói thành viên, mọi người xem ở phần bình luận nha.",
   "tts": "Bài phân tích đầy đủ nằm trong gói thành viên, mọi người xem ở phần bình luận nha.",

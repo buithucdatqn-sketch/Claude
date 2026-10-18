@@ -1,30 +1,43 @@
-"""Bảng phân cảnh tập 7: thay khung cảnh phòng ngủ bằng khung của engine phụ (ảnh 09) rồi dựng lại storyboard.png (cùng bố cục engine v7)."""
-import json, os, shutil, sys
+"""Tập 7: chạy engine khung hình của từng run (runs.json), gom khung của mỗi cảnh vào frames/, dựng storyboard.png (bố cục engine v7)."""
+import json, os, shutil, subprocess, sys
 from PIL import Image, ImageDraw, ImageFont
-OUT = sys.argv[1] if len(sys.argv) > 1 else "./"
+OUT = os.path.abspath(sys.argv[1] if len(sys.argv) > 1 else "./") + "/"
 HERE = os.path.dirname(os.path.abspath(__file__))
 F = lambda s: ImageFont.truetype(os.path.join(HERE, "PatrickHand-Regular.ttf"), s)
-sp = json.load(open(os.path.join(HERE, "splice.json")))
-k0, k1 = sp["scenes"]
-for j, k in enumerate(range(k0, k1 + 1)):
-    shutil.copy(os.path.join(OUT, "frames_ngu", f"scene_{j + 2}.png"), os.path.join(OUT, "frames", f"scene_{k + 1}.png"))
+RUNS = json.load(open(os.path.join(HERE, "runs.json")))
 SC = json.load(open(os.path.join(HERE, "scenes.json")))
+os.makedirs(OUT + "frames", exist_ok=True)
+for r in RUNS:
+    os.makedirs(OUT + "frames_" + r["tag"], exist_ok=True)
+    out = subprocess.run(["python3", "-I", os.path.join(HERE, f"engine_ep07_{r['tag']}.py"), OUT + r["src"], OUT],
+                         capture_output=True, text=True)
+    for line in (out.stdout + out.stderr).splitlines():
+        if "LỖI" in line or "CẢNH BÁO" in line or "Error" in line:
+            print(r["tag"], line)
+    for j, k in enumerate(r["scenes"]):
+        shutil.copy(OUT + f"frames_{r['tag']}/scene_{r['first_frame'] + j}.png", OUT + f"frames/scene_{k}.png")
+    shutil.rmtree(OUT + "frames_" + r["tag"])
+    if os.path.exists(OUT + f"storyboard_{r['tag']}.png"):
+        os.remove(OUT + f"storyboard_{r['tag']}.png")
+NAME = dict(an="ảnh 06 sảnh ăn hai tầng", dg="ảnh 07 diagram", hl="ảnh 11 hành lang", mb="ảnh 02 mặt bằng tầng trệt",
+            khach="ảnh 08 phòng khách", ngu="ảnh 09 phòng ngủ", tong="ảnh 13 bàn ăn, sảnh hai tầng")
+img_of = {k: r["img"] for r in RUNS for k in r["scenes"]}
 PW, PH, GAP, MX, TOP, cols = 360, 640, 34, 50, 200, 4
 rows = (len(SC) + cols - 1) // cols
-sheet = Image.new("RGB", (MX * 2 + cols * PW + (cols - 1) * GAP, TOP + rows * (PH + 86) + 250), (30, 27, 24))
+sheet = Image.new("RGB", (MX * 2 + cols * PW + (cols - 1) * GAP, TOP + rows * (PH + 120) + 200), (30, 27, 24))
 d = ImageDraw.Draw(sheet)
 d.text((MX, 38), "AH Decode · Cứng ở xa, mềm trong tầm tay", font=F(60), fill=(255, 255, 255))
-d.text((MX, 118), "Ảnh dán bằng băng giấy · nền trắng · chữ nâu trên nền, trắng trên ảnh", font=F(34), fill=(200, 194, 186))
-d.text((MX, 158), "Camera zoom vào chi tiết · nét doodle gốc của bài lộ dần theo lời đọc", font=F(34), fill=(200, 194, 186))
+d.text((MX, 118), "Bảy ảnh của MS House trong bài: diagram, mặt bằng, sảnh ăn, hành lang, phòng khách, phòng ngủ, bàn ăn", font=F(34), fill=(200, 194, 186))
+d.text((MX, 158), "Camera zoom vào chi tiết · nét doodle gốc của bài lộ dần theo lời đọc (cảnh 6, 7, 8, 10, 11)", font=F(34), fill=(200, 194, 186))
 for i, sc in enumerate(SC):
     r, c = divmod(i, cols)
-    x, y = MX + c * (PW + GAP), TOP + r * (PH + 86)
-    sheet.paste(Image.open(os.path.join(OUT, "frames", f"scene_{i + 1}.png")).resize((PW, PH), Image.LANCZOS), (x, y))
-    d.text((x, y + PH + 10), f"Cảnh {i + 1}", font=F(40), fill=(255, 255, 255))
-    d.text((x + 150, y + PH + 16), sc["t"], font=F(32), fill=(200, 194, 186))
-fy = TOP + rows * (PH + 86) + 10
-d.text((MX, fy), "Ảnh 08 (phòng khách) cho mọi cảnh, trừ cảnh %d dùng ảnh 09 (phòng ngủ, engine phụ ghép vào)." % (k0 + 1), font=F(32), fill=(255, 255, 255))
-d.text((MX, fy + 44), "Nét trắng và nhãn chữ là doodle gốc của bài, tách lớp rồi lộ dần (cảnh 5, 6, 7).", font=F(32), fill=(225, 220, 212))
-d.text((MX, fy + 88), "Cảnh zoom kín ảnh: chữ trắng viết lên ảnh, phủ tối nhẹ đúng dải chữ.", font=F(32), fill=(225, 220, 212))
-sheet.save(os.path.join(OUT, "storyboard.png"))
+    x, y = MX + c * (PW + GAP), TOP + r * (PH + 120)
+    sheet.paste(Image.open(OUT + f"frames/scene_{i + 1}.png").resize((PW, PH), Image.LANCZOS), (x, y))
+    d.text((x, y + PH + 8), f"Cảnh {i + 1}", font=F(40), fill=(255, 255, 255))
+    d.text((x + 150, y + PH + 14), sc["t"], font=F(32), fill=(200, 194, 186))
+    d.text((x, y + PH + 58), NAME[img_of[i + 1]], font=F(28), fill=(200, 194, 186))
+fy = TOP + rows * (PH + 120) + 10
+d.text((MX, fy), "Mỗi đoạn cảnh cùng ảnh dựng bằng một engine riêng (runs.json), video ghép theo mốc thời gian.", font=F(32), fill=(255, 255, 255))
+d.text((MX, fy + 44), "Cảnh zoom kín ảnh: chữ trắng viết lên ảnh, phủ tối nhẹ đúng dải chữ; diagram, mặt bằng: chữ nâu trên nền trắng.", font=F(32), fill=(225, 220, 212))
+sheet.save(OUT + "storyboard.png")
 print("storyboard", sheet.size)

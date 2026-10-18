@@ -22,7 +22,7 @@ W, H, SS = 1080, 1920, 2
 FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
 if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
-CREDIT = "Ảnh dự án: MS House, Ahmedabad · Studio Saransh · ảnh Ishita Sitwala, The Fishy Project"
+CREDIT = "Diagram: Giả Thuyết Kiến Trúc, theo Kilmer & Kilmer (2014)"
 HEAD = "AH DECODE · CỨNG Ở XA, MỀM TRONG TẦM TAY"
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
@@ -54,7 +54,7 @@ SW, SH = src.size
 
 # ---------------- board geometry (2x master, 1x = reel canvas) ----------------
 B2W, B2H = W * 2, H * 2
-CARD_W2, BORDER2 = 1920, 0
+CARD_W2, BORDER2 = 1920, 0  # theo tỷ lệ ảnh của run
 PH_W2 = CARD_W2 - 2 * BORDER2
 PH_H2 = int(round(PH_W2 * SH / SW))
 CARD_H2 = PH_H2 + 2 * BORDER2
@@ -551,18 +551,18 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.95s", head="Trong tầm tay: mềm và ấm", vo="Còn đồ trong tầm tay thì mềm và ấm, bộ sofa vải xù nổi hẳn lên trên nền bê tông.",
-         cam=WIDE, dark=True, dd=[]),
-    dict(t="6.95–12.96s", head="Gỗ ở chỗ lưng tựa, bê tông lùi lên cao", vo="Ở phòng ngủ, gỗ ốp đúng chỗ lưng tựa đầu giường, còn bê tông lùi lên cao.",
-         cam=((980, 700), 3.1, (540, 880)), dark=False, dd=['arr_dau', 'lab_dau']),
-    dict(t="12.96–13.46s", head="end", vo="",
+    dict(t="0–5.7s", head="Bê tông mộc: đẹp trên ảnh, lạnh khi ở?", vo="Nhà bê tông mộc lên ảnh thì đẹp, sao ở thật lại hay bị chê lạnh?",
+         cam=WIDE, dark=False, dd=[]),
+    dict(t="5.7–12.03s", head="Kilmer & Kilmer (2014): mặt trơn lạnh, vải dày ấm", vo="Hai tác giả Kilmer viết, phòng nhiều mặt trơn thường lạnh, còn thảm và vải dày thì ấm.",
+         cam=((1080, 465), 1.12, (540, 925)), dark=False, dd=[]),
+    dict(t="12.03–12.53s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[]),
 ]
 END = len(SCENES) - 1
 BOARDS = {}
 
-_L = np.load(os.path.join(HERE, "doodle_ep07_ngu.npz"))
-LAYER = {k: _L[k] for k in _L.files}   # toạ độ trên ảnh làm việc (source.png)
+_P = os.path.join(HERE, "none.npz")
+LAYER = dict(np.load(_P)) if os.path.isfile(_P) else {}   # toạ độ trên ảnh làm việc của run
 RAD = 0.9                              # bán kính chấm bút khi lộ lại nét gốc (px ảnh làm việc)
 
 
@@ -665,7 +665,7 @@ proc = subprocess.Popen(
     ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
      "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-t", f"{TOTAL:.2f}",
      "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-pix_fmt", "yuv420p", "-movflags", "+faststart",
-     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "reel_ngu_silent.mp4")], stdin=subprocess.PIPE)
+     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "r02_dg_silent.mp4")], stdin=subprocess.PIPE)
 
 nframes = int(TOTAL * FPS)
 cur = -1

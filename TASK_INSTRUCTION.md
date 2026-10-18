@@ -6,7 +6,7 @@ Mỗi lần chạy là một phiên mới, không nhớ gì từ các cuộc tr�
 Chạy một lượt, không hỏi lại. Nếu thiếu đầu vào thì dừng và báo rõ thiếu gì (mục 9).
 
 ## 1. Nhiệm vụ
-Mỗi ngày, lấy MỘT Ý CHƯA DÙNG của một bài trong KHO BÀI (mục 2a; một bài có thể cho nhiều tập, mỗi tập một ý khác nhau) và dùng NỘI DUNG CỦA BÀI làm toàn bộ thông tin của reel (nguyên tắc, nguồn gốc, cơ chế, cách áp dụng, cách chọn đồ, nguồn tham khảo). Task KHÔNG tự nghiên cứu và KHÔNG tự viết thêm thông tin ngoài bài (mục 3). Ảnh cũng CHỈ lấy trong thư mục `anh/` của chính bài đó (mục 2b). Tuyệt đối không dùng bất kỳ nguồn thông tin hay ảnh nào ngoài KHO BÀI (không tạp chí, không web, không ảnh người dùng gửi ngoài kho). Từ đó tạo gói sản xuất cho một reel dọc 9:16, dài 55–75 giây, series "AH Decode". Reel giải thích MỘT nguyên tắc nội thất/decor bằng các nét doodle trắng nét đứt vẽ lên chính ảnh gốc.
+Mỗi ngày, lấy MỘT Ý CHƯA DÙNG của một bài trong KHO BÀI (mục 2a; một bài có thể cho nhiều tập, mỗi tập một ý khác nhau) và dùng NỘI DUNG CỦA BÀI làm toàn bộ thông tin của reel (nguyên tắc, nguồn gốc, cơ chế, cách áp dụng, cách chọn đồ, nguồn tham khảo). Task KHÔNG tự nghiên cứu và KHÔNG tự viết thêm thông tin ngoài bài (mục 3). Ảnh lấy trước hết trong thư mục `anh/` của chính bài đó, và được lấy thêm ẢNH (không lấy thông tin) của CHÍNH công trình mà bài phân tích từ trang nguồn ảnh của công trình (mục 2b, ví dụ Yatzer). Mỗi reel phải có nhiều ảnh của công trình, có ít nhất một ảnh diagram (sketch) của bài, và mặt bằng nếu bài có (mục 2d). Thông tin nội dung vẫn chỉ lấy từ bài (mục 3). Từ đó tạo gói sản xuất cho một reel dọc 9:16, dài 55–75 giây, series "AH Decode". Reel giải thích MỘT nguyên tắc nội thất/decor bằng các nét doodle trắng nét đứt vẽ lên chính ảnh gốc.
 Mỗi reel là một bài học TRỌN VẸN và CÓ CHIỀU SÂU (mục 4a) về nội thất và decor, chắt lọc từ bài trong kho: nguồn gốc nguyên tắc, cơ chế vì sao mắt thấy vậy, đọc nguyên lý trên ảnh, lỗi hay gặp, cách áp dụng cụ thể, cách chọn mua/chọn đồ và thiết kế, rồi công thức tổng kết. Người xem phải học được điều cụ thể mà họ chưa biết, không phải những câu chung chung. Không hẹn "tập sau"; cảnh cuối chỉ nhắc series AH Decode và nói bài viết phân tích đầy đủ xem ở dòng đầu tiên trong phần bình luận (KHÔNG có cụm "theo dõi Fanpage" và tên Fanpage, vì khung cuối quá nhiều chữ). Lời đọc phải là một mạch kể dễ hiểu (mục 4a), không phải chuỗi thông tin rời.
 
 **Tên gọi (dùng đúng, không lẫn):** Fanpage tên là **Giả Thuyết Kiến Trúc**. **AH Decode** là một series MỚI của Fanpage này, chuyên phân tích các nguyên tắc thiết kế và cách chọn đồ decor. AH Decode KHÔNG phải tên Fanpage: không viết "Fanpage AH Decode". Header trên khung vẫn là `AH DECODE · <CHỦ ĐỀ>`.
@@ -36,20 +36,33 @@ Chế độ mặc định là TỰ ĐỘNG: không cần người dùng gửi �
 - Ý trong bài: mỗi ý là một bài học/mục nội dung riêng của bài (thường là một mục tiêu đề `##` hoặc một "bài học" bài tự đánh số), đủ để kể thành một mạch có cơ chế và cách áp dụng (mục 4a). Phần mở bài, lý thuyết chung hay kết bài không tính là ý riêng, nhưng được dùng làm nguồn gốc/cơ chế cho bất kỳ ý nào. Lần đầu đọc một bài, liệt kê các ý của bài vào `research.md`.
 - Chọn ý: theo thứ tự bài (mục lục nếu có, không thì số thứ tự hoặc tên file tăng dần), lấy bài đầu tiên còn ý CHƯA có trong `series.json` (so theo `bai_kho.duong_dan` + `y_bai`), rồi lấy ý chưa dùng đầu tiên của bài đó theo thứ tự trong bài. Một ý chỉ được làm MỘT lần; bài thì được dùng lại cho đến khi hết ý. Bỏ qua bài ghi rõ là nháp/chưa xong. Nếu ý (hoặc cả bài) lệch trọng tâm mục 1a (lý thuyết kiến trúc) thì bỏ qua, ghi vào `series.json` với `trang_thai: "bo_qua_lech_trong_tam"` kèm lý do, rồi lấy ý kế tiếp.
 - Đọc TOÀN BỘ bài (Read hết, không bỏ đoạn nào), kể cả phần nguồn tham khảo, ghi chú ảnh, gợi ý dự án nếu có. Reel chỉ làm MỘT ý đã chọn; các ý khác của bài chỉ được nhắc ngắn trong caption khi cần làm rõ, không hẹn "tập sau". Chỉ đánh dấu ý đó là đã dùng (`y_bai`), không đánh dấu cả bài.
-- Nếu bài có ảnh minh hoạ công trình trong `anh/` thì dùng theo mục 2b. Link ảnh hay gợi ý dự án trỏ ra ngoài kho thì KHÔNG mở, không dùng.
+- Nếu bài có ảnh minh hoạ công trình trong `anh/` thì dùng theo mục 2b. Link trỏ ra ngoài kho chỉ được mở để lấy thêm ẢNH của chính công trình đó theo mục 2b; không lấy chữ hay thông tin từ đó.
 
-## 2b. Ảnh: CHỈ lấy trong thư mục `anh/` của chính bài đã chọn (bắt buộc)
-KHÔNG truy cập tạp chí hay trang web nào (Yatzer, Yellowtrace, Dwell, Wallpaper*, ArchDaily, Est Living… đều không dùng), không tìm ảnh ngoài kho, không dùng ảnh người dùng gửi ngoài kho. Ảnh duy nhất được dùng là ảnh nằm trong `anh/` của bài đang làm (đường dẫn như trong YAML `anh_theo_thu_tu`).
+## 2b. Ảnh: thư mục `anh/` của bài, cộng ảnh của chính công trình từ trang nguồn ảnh (bắt buộc)
+Nguồn ảnh, theo thứ tự:
+- Thứ nhất: ảnh trong `anh/` của bài đang làm (đường dẫn như trong YAML `anh_theo_thu_tu`): ảnh doodle, diagram, mặt bằng, ảnh công trình.
+- Thứ hai (được phép, nên dùng khi `anh/` thiếu không gian): ảnh của CHÍNH công trình mà bài phân tích (YAML `cong_trinh`), lấy từ trang nguồn ảnh mà bài ghi trong YAML `nguon_anh_cong_trinh` (ví dụ bài 02: Yatzer cho ảnh, ArchDaily cho mặt bằng). Chỉ lấy ảnh, KHÔNG lấy chữ, số liệu hay nhận định từ trang đó (mục 3). Chỉ ảnh của đúng công trình ấy, đúng bộ ảnh đã đăng cùng bài trên trang; không lấy ảnh công trình khác, không lấy ảnh từ trang không do bài ghi. Credit theo trang: `<công trình> · <studio> · ảnh <nhiếp ảnh gia>`; lưu ảnh gốc vào `OUT/original/` và ghi URL trang, URL ảnh vào `source_info.md`. Ảnh ngoài bài là ảnh sạch (không doodle): dùng như loại (b).
+- Nếu mạng của môi trường chặn trang nguồn (curl, WebFetch bị từ chối), ghi rõ trong báo cáo và làm với ảnh trong `anh/`; không lấy ảnh từ trang khác để thay.
+- Không dùng ảnh người dùng gửi ngoài kho, không tìm ảnh bằng công cụ tìm kiếm.
 1. Xem (Read) toàn bộ ảnh trong `anh/` của bài. Phân loại: ảnh công trình/nội thất thật; sơ đồ (diagram); mặt bằng, trục đo; ảnh đã có nét doodle; ảnh bìa dựng sẵn.
-2. Chọn MỘT ảnh CHÍNH minh hoạ rõ nhất ý chính của bài. Không bắt buộc cả reel chỉ dùng một ảnh: cảnh nào lời đọc nói về một chỗ khác có ảnh riêng trong `anh/` của cùng bài (ví dụ cảnh nói về khu bếp thì dùng ảnh bếp) thì được đổi sang ảnh đó cho cảnh ấy, cùng quy tắc ưu tiên (a)–(c) và cùng quy cách mục 6; ghi rõ cảnh nào dùng ảnh nào trong `source_info.md` và `series.json` (`anh_kho` liệt kê đủ). Cách dựng: xem mục 5d. KHÔNG cần ưu tiên khung ngang: ảnh ngang, dọc hay vuông đều dùng được (engine phải chỉnh bố cục khung, vùng đặt ảnh và camera cho đúng tỷ lệ ảnh được chọn, vẫn giữ nguyên quy cách mục 6). Thứ tự ưu tiên:
+2. Chọn MỘT ảnh CHÍNH minh hoạ rõ nhất ý chính của bài, rồi chọn thêm các ảnh khác theo mục 2d (bắt buộc: diagram, mặt bằng nếu có, ít nhất ba không gian): cảnh nào lời đọc nói về một chỗ khác thì dùng ảnh chỗ đó (ví dụ cảnh nói về khu bếp thì dùng ảnh bếp), cùng quy tắc ưu tiên (a)–(c) và cùng quy cách mục 6; ghi rõ cảnh nào dùng ảnh nào trong `source_info.md` và `series.json` (`anh_kho` liệt kê đủ). Cách dựng: xem mục 5d. KHÔNG cần ưu tiên khung ngang: ảnh ngang, dọc hay vuông đều dùng được (engine phải chỉnh bố cục khung, vùng đặt ảnh và camera cho đúng tỷ lệ ảnh được chọn, vẫn giữ nguyên quy cách mục 6). Thứ tự ưu tiên:
    (a) Ảnh trong bài ĐÃ CÓ nét doodle (tên có `doodle`, hoặc ảnh có nét trắng nét đứt/nhãn chữ vẽ sẵn): ưu tiên dùng, vì đó là phân tích có sẵn của bài. Không vẽ nét mới đè lên; thay vào đó làm cho chính doodle đó CHUYỂN ĐỘNG theo nguyên tắc dựng video ở mục 5b (xem mục 2c).
    (b) Ảnh nội thất thật, sạch, không có doodle: dùng engine như thường lệ (đặt toạ độ và vẽ nét mới theo mục 5).
-   (c) Không dùng sơ đồ, mặt bằng, trục đo, ảnh bìa dựng sẵn làm ảnh nền. Không gượng ép: không ảnh nào dùng được thì làm bản tốt nhất, nêu rõ hạn chế, KHÔNG tìm ảnh ngoài kho.
+   (c) Diagram (sketch) và mặt bằng của bài DÙNG ĐƯỢC làm ảnh nền cho cảnh nguồn gốc, cơ chế, giới thiệu công trình (mục 2d). Cắt vùng có chú thích (bỏ tiêu đề lớn, lề trắng) để chữ trên diagram đủ to, đặt thẻ ảnh trong dải y 610–1240 (chữ của khung là chữ nâu trên nền trắng, không viết đè lên diagram). Không dùng ảnh bìa dựng sẵn làm nền.
    Ý chính của reel nên chọn sao cho khớp với ảnh doodle có sẵn của bài.
-3. Chọn ảnh khớp với ý đang làm; không dùng lại ảnh đã có trong `series.json` (so theo đường dẫn ảnh trong kho). Nếu ảnh hợp nhất cho ý này đã dùng ở tập trước của cùng bài thì lấy ảnh khác của bài, nêu rõ trong báo cáo.
+3. Chọn ảnh khớp với ý đang làm. Ảnh CHÍNH (ảnh có nét doodle được lộ dần cho ý của tập) không trùng ảnh chính hay ảnh có nét lộ dần của tập trước (so theo `series.json`). Ảnh phụ (diagram, mặt bằng, ảnh không gian dùng nền sạch) được dùng lại ở tập khác vì bài thường ít ảnh, nhưng ưu tiên ảnh chưa dùng; nêu rõ trong báo cáo ảnh nào dùng lại.
 4. Tạo bản làm việc: thu nhỏ cạnh dài còn tối đa 2400 px (LANCZOS, giữ tỷ lệ; không phóng to) lưu thành `source.png`; mọi toạ độ doodle đặt theo bản này. Chép ảnh gốc vào `OUT/original/`. Ảnh nhỏ hơn 1200 px cạnh dài: vẫn làm, ghi hạn chế.
 5. Credit: lấy từ YAML và chú thích trong bài (`cong_trinh`, `nguon_anh_cong_trinh`, tên tác giả ảnh nếu bài ghi). Định dạng: `<công trình> · <studio> · ảnh <nhiếp ảnh gia>`; thiếu mục nào bỏ mục đó, không bịa. Dòng trên khung: `Ảnh dự án: ...` (dài quá 960 px thì giảm cỡ chữ, tối thiểu 26, hoặc xuống hai dòng, không cắt). Ảnh do chủ bài dựng (bìa, doodle, diagram) ghi thêm "Giả Thuyết Kiến Trúc" nếu bài ghi như vậy.
-6. Lưu `OUT/source_info.md`: đường dẫn ảnh trong kho, commit SHA, credit, lý do chọn ảnh, hạn chế.
+6. Lưu `OUT/source_info.md`: đường dẫn ảnh trong kho (hoặc URL trang và URL ảnh nếu lấy ngoài bài), commit SHA, credit, lý do chọn ảnh, cảnh nào dùng ảnh nào, hạn chế.
+
+## 2d. Reel nhiều ảnh: mặt bằng, diagram và các không gian khác (bắt buộc)
+Người xem cần hình dung được cả công trình, nên các cảnh KHÔNG được xoay quanh một ảnh:
+- Ít nhất MỘT ảnh diagram (sketch) của bài, thường ở cảnh nguồn gốc hoặc cơ chế (ví dụ tập 7: diagram 07 "Thô và mịn, cán cân ấm lạnh" ở cảnh Kilmer).
+- Mặt bằng công trình nếu bài có (trong `anh/` hoặc từ trang nguồn ảnh), ở cảnh giới thiệu công trình, cắt vùng có chú thích phòng đang nói tới.
+- Ảnh của ít nhất BA không gian khác nhau của công trình (ví dụ lối vào, sảnh, phòng khách, phòng ngủ, bếp). Mỗi cảnh nói về chỗ nào thì dùng ảnh chỗ đó.
+- Một ảnh không chiếm quá khoảng một nửa số cảnh. Cảnh mở và cảnh chốt nên dùng ảnh rộng, gợi cảm nhất của công trình.
+- Ảnh doodle của bài mà nhãn gốc không khớp lời cảnh đó: xoá sạch nét (mục 2c) và dùng như ảnh sạch; chỉ lộ những nhãn khớp lời.
+Cách dựng: mục 5d.
 
 
 ## 2c. Làm doodle có sẵn trong ảnh chuyển động (khi chọn ảnh loại (a))
@@ -60,14 +73,14 @@ KHÔNG truy cập tạp chí hay trang web nào (Yatzer, Yellowtrace, Dwell, Wal
 - Kiểm tra (mục 7): lớp nền không còn vệt nét cũ, lộ nét khớp lời đọc, nét không bị cắt hay lệch so với ảnh gốc.
 
 ## 3. QUY TẮC THÔNG TIN: CHỈ LẤY TỪ BÀI TRONG KHO (bắt buộc, không ngoại lệ)
-Bài trong KHO BÀI là nguồn thông tin duy nhất cho lời đọc, chữ trên khung, caption và ảnh. Task không tự nghiên cứu (không WebSearch/WebFetch, không mở bất kỳ trang web nào, kể cả link nguồn mà bài dẫn) và không tự viết thêm kiến thức.
+Bài trong KHO BÀI là nguồn thông tin duy nhất cho lời đọc, chữ trên khung và caption. Task không tự nghiên cứu (không WebSearch, không mở trang web để lấy thông tin, kể cả link nguồn mà bài dẫn) và không tự viết thêm kiến thức. Riêng ảnh của chính công trình được lấy thêm từ trang nguồn ảnh theo mục 2b.
 1. Mọi nhận định (nguyên lý, nguồn gốc, tên người, năm, cơ chế, số liệu, lời khuyên áp dụng và chọn đồ) phải có trong bài, đúng ý và đúng mức chắc chắn của bài. Ghi vị trí trong bài (tên file + tiêu đề mục hoặc đoạn, kèm trích ngắn) vào `sources.md`.
 2. Được phép: rút gọn, diễn đạt lại cho dễ nghe, đổi thứ tự cho tự nhiên, chọn ý, thêm câu nối và từ nối ("vì", "nên", "nghĩa là", "thử nhìn lại ảnh") để các ý thành một mạch, giải thích điều bài nói bằng lời đời thường (những việc này KHÔNG phải thêm kiến thức),  và mô tả điều nhìn thấy trực tiếp trên ảnh (gọi tên món đồ, màu, vật liệu trong ảnh, nói rõ là "trong ảnh này"). Không được: thêm tên, năm, số đo, tỷ lệ, nghiên cứu, ví dụ hay lời khuyên mà bài không có; dựa vào trí nhớ để bổ sung.
 3. Giữ nguyên cách bài phân loại và mức chắc chắn: bài gọi là "quy tắc kinh nghiệm" thì nói là quy tắc kinh nghiệm; bài nói "có xu hướng" thì không nói "luôn luôn" hay "đã được chứng minh". Lời khuyên dùng "nên", "thử" như bài.
 4. Nguồn tham khảo: nếu bài có danh mục nguồn thì chép đúng như bài ghi vào `sources.md` và chọn 2–3 nguồn chính cho caption; không tự xác minh lại, không thêm nguồn ngoài bài. Bài không có danh mục nguồn thì caption không ghi mục nguồn (không bịa), `sources.md` ghi rõ "bài không kèm nguồn".
 5. Nghi bài có lỗi (năm, tên, số liệu mâu thuẫn trong chính bài): không tự sửa theo trí nhớ; bỏ nhận định đó khỏi reel và ghi rõ trong báo cáo để người dùng kiểm tra bài gốc.
 6. Không nhắc thương hiệu, cửa hàng hay sản phẩm cụ thể trừ khi bài có và đó là tên đồ nội thất kinh điển (ví dụ ghế của một nhà thiết kế); không có trong bài thì không nhắc.
-7. KHÔNG có ngoại lệ: không truy cập web để tìm ảnh, credit hay thông tin dự án. Mọi thứ lấy từ thư mục của bài trong kho.
+7. Thông tin không có ngoại lệ: không truy cập web để lấy thông tin dự án. Ngoại lệ duy nhất là ẢNH (và credit của ảnh) của chính công trình từ trang nguồn ảnh mà bài ghi (mục 2b).
 
 ## 4. Quy trình
 1. Lấy KHO BÀI, chọn bài và đọc toàn bộ bài (mục 2a).
@@ -136,8 +149,9 @@ Hành vi đã duyệt, không tự ý đổi:
 - Khung cuối giữ thêm 1 giây. Video có sẵn track âm thanh im lặng để ghép tiếng sau.
 Nếu một cảnh quá ngắn để vẽ hết nét (cảnh nhiều nét mà dưới 3 giây), kéo dài cảnh đó trong `SCENES` hoặc bớt nét, không tăng tốc vẽ.
 
-## 5d. Reel dùng nhiều ảnh (một cảnh đổi sang ảnh khác của cùng bài)
-Engine dựng theo một ảnh, nên cảnh dùng ảnh phụ được dựng bằng một engine phụ rồi ghép (cách đã dùng ở tập 6, `inbox/out/2026-10-16_cung-mau-khac-be-mat/engine_ep06/gen_ep06.py`):
+## 5d. Reel dùng nhiều ảnh
+Cách hiện hành (tập 7, `inbox/out/2026-10-18_mem-trong-tam-tay/engine_ep07/`): mỗi cảnh khai báo `img` (khoá trong `IMGS`: file ảnh làm việc, npz doodle gốc, credit riêng của ảnh). `gen_epNN.py` gom các cảnh liên tiếp cùng ảnh thành "run" và sinh cho mỗi run `engine_epNN_rKK_<ảnh>.py` + `engine_video_epNN_rKK_<ảnh>.py` (cảnh trước dựng toàn cảnh trên ảnh của run, các cảnh của run, khung cuối giả nếu run không chứa khung cuối); hình học thẻ tự tính theo tỷ lệ ảnh (dọc, vuông: thẻ cao 1920 ở bảng 2x, C2 y 1880; ngang: rộng 1920, C2 y 1810). `runs.json` ghi mốc cắt của mỗi run; `sheet_epNN.py` chạy engine khung của từng run, gom khung vào `frames/` và dựng `storyboard.png`. Giai đoạn 2: dựng video từng run, cắt đúng đoạn `cut_from`, `cut_len` của mỗi run và nối theo thứ tự (`ffmpeg` trim + concat), rồi ghép tiếng.
+Cách cũ (tập 6) cho một ảnh phụ, còn dùng được:
 - Trong dữ liệu cảnh, đánh dấu cảnh đó (`img`, `cam_bep`, `dd_bep`); script sinh thêm `engine_epNN_<anh>.py` và `engine_video_epNN_<anh>.py` từ engine gốc, với ba cảnh: cảnh trước (ảnh phụ toàn cảnh, cùng tiêu đề và lời của cảnh trước trong video chính), cảnh dùng ảnh phụ, một khung cuối giả. Ảnh ngang dùng hình học thẻ mặc định của engine gốc, ảnh dọc dùng bản thẻ hẹp như tập 5, 6.
 - Ảnh phụ cũng tách lớp doodle gốc như mục 2c (`source_<anh>.png`, `doodle_epNN_<anh>.npz`). Ở video chính, cảnh đó để camera rộng, không nét (để quãng chuyển sang cảnh sau mượt).
 - Ghép: lấy đúng đoạn của cảnh ảnh phụ trong video phụ (bắt đầu từ đầu cảnh, gồm cả 0,7 giây chuyển cảnh từ ảnh phụ toàn cảnh vào), thay vào đúng mốc thời gian của cảnh đó trong video chính (`ffmpeg` trim + concat), rồi mới ghép tiếng.
@@ -169,6 +183,7 @@ Lý do: khi reel 9:16 hiện trên bảng tin (newsfeed) Facebook, nó bị cắ
 - Xem thử bằng mắt: trích vài khung video và cắt `ffmpeg -vf "crop=1080:1350:0:285"` để xem đúng như trên bảng tin; header, tiêu đề, phụ đề phải còn đủ.
 
 ## 7. Kiểm tra bắt buộc trước khi giao (đọc từng khung bằng Read)
+- Đạt mục 2d: có ít nhất một diagram (sketch) của bài, có mặt bằng nếu bài có, có ảnh của ít nhất ba không gian khác nhau, không ảnh nào chiếm quá khoảng nửa số cảnh; chú thích trên diagram, mặt bằng đọc được ở khung 1080×1920.
 - Chạy engine không còn dòng `LỖI: chữ ra ngoài vùng an toàn Reels/bảng tin` hay `CẢNH BÁO … cắt ngang khối …` (mục 6a); đã xem thử khung cắt 4:5 của bảng tin.
 - Hình bao ôm đúng đồ vật được nhắc trong lời đọc; nét không tràn ra ngoài ảnh; không có "cục" đậm do nét chồng nhau.
 - Chữ đọc rõ, có đủ dấu tiếng Việt, không bị cắt, không đè lên nét vẽ khó đọc, không nằm vắt ngang mép ảnh.
@@ -214,7 +229,7 @@ Mục tiêu: người dùng mở file, chọn tất cả, dán vào ElevenLabs, 
 ## 10. Việc KHÔNG làm
 - Không tự nghiên cứu, không lấy thông tin nội dung từ web hay từ trí nhớ; chỉ dùng bài trong KHO BÀI (mục 3). Không sửa hay push gì vào kho bài.
 - Không đổi quy cách hình ảnh ở mục 6. Không sketch hoá ảnh dự án. Không bỏ credit.
-- Không dùng ảnh/đồ hoạ nào ngoài thư mục `anh/` của bài đã chọn trong kho. Không truy cập tạp chí hay trang web nào.
+- Không dùng ảnh/đồ hoạ nào ngoài thư mục `anh/` của bài và ảnh của chính công trình từ trang nguồn ảnh bài ghi (mục 2b). Không lấy thông tin nội dung từ trang web nào.
 - Không đổi nhịp chuyển cảnh/vẽ nét đã duyệt (mục 5b), không thêm nhạc nền, hiệu ứng hay phụ đề chạy chữ khi chưa được yêu cầu.
 - Không bịa tên studio, nhiếp ảnh gia hay dự án khi thiếu credit; chỉ ghi những gì có trên trang bài nguồn.
 - Không hẹn hay gợi ý "tập sau" ở bất kỳ đâu (khung, lời đọc, caption).

@@ -157,8 +157,13 @@
    "commit": "8fd09bdd396e0e27f055d6cba0816b568e47ea0e"
   },
   "anh_kho": [
+   "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/06-doodle-bong-va-nham-sanh-an.jpg",
+   "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/07-diagram-can-can-tho-min.png",
+   "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/11-doodle-van-tho-hanh-lang.jpg",
+   "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/02-mat-bang-tang-tret-ms-house.png",
    "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/08-doodle-tho-min-phong-khach.jpg",
-   "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/09-doodle-go-o-gan-phong-ngu.jpg"
+   "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/09-doodle-go-o-gan-phong-ngu.jpg",
+   "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/13-doodle-anh-tong.jpg"
   ],
   "du_an": "MS House, Ahmedabad",
   "studio": "Studio Saransh",
@@ -172,6 +177,6 @@
   },
   "trang_thai": "cho_ghi_am",
   "thu_muc": "inbox/out/2026-10-18_mem-trong-tam-tay/",
-  "ghi_chu": "Làm lại theo yêu cầu chủ Trang; bản ý 'ánh sáng xiên' (ảnh 04) bị huỷ và chủ Trang không muốn dùng ý đó. Cảnh 7 dùng ảnh 09 (engine phụ, splice.json). Chờ file giọng bai-007.mp3."
+  "ghi_chu": "Bản 3 (nhiều ảnh) theo yêu cầu chủ Trang: diagram 07, mặt bằng 02, sảnh ăn 06, hành lang 11, phòng khách 08, phòng ngủ 09, bàn ăn 13; dựng theo run (engine_ep07/runs.json). Ảnh Yatzer chưa lấy được vì mạng môi trường chặn yatzer.com. Ý 'ánh sáng xiên' (ảnh 04) chủ Trang không muốn dùng. Chờ file giọng bai-007.mp3."
  }
 ]
