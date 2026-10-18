@@ -114,5 +114,38 @@
       "Một màu chủ đạo, hai màu phụ đi vòng quanh (bài học 3)"
     ],
     "ghi_chu": "Giai đoạn 1 (chưa dựng video, chờ INBOX/audio/nen-lui-mau-don-mot-khoi.mp3). Tiêu đề/nhãn gốc trên ảnh 04 đã xoá khỏi nền, chỉ dùng 2 mũi tên + 2 nhãn."
+  },
+  {
+    "tap": 6,
+    "slug": "cung-mau-khac-be-mat",
+    "ngay": "2026-10-18",
+    "nguyen_ly": "Cùng màu, khác bề mặt (bề mặt có rãnh trông sẫm hơn mặt trơn; một màu vẫn đủ sáng, trung, tối)",
+    "nhom": "Phối màu: màu chủ đạo, bề mặt",
+    "bai_kho": {
+      "duong_dan": "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/bai-01.md",
+      "nhanh": "AH-Interior-notes",
+      "commit": "0965b48464010d4e4881805202300611027a9bb1"
+    },
+    "anh_kho": [
+      "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/12-doodle-cung-mau-khac-be-mat.jpg"
+    ],
+    "du_an": "The Green Box, Berlin",
+    "studio": "Ester Bruzkus Architekten",
+    "nhiep_anh": "Robert Rieger",
+    "cau_moc": "Cùng một màu sơn xanh, sao mặt tủ này sẫm hơn mặt kia?",
+    "nguon": [
+      "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 5 (theo bài)"
+    ],
+    "trang_thai": "cho_ghi_am",
+    "thu_muc": "inbox/out/2026-10-18_cung-mau-khac-be-mat/",
+    "y_bai": {
+      "muc": "Một màu chủ đạo, hai màu phụ đi vòng quanh: cùng màu, khác bề mặt",
+      "tom_tat": "Mặt có rãnh tự đổ bóng nên sẫm hơn mặt trơn cùng màu sơn; một màu vẫn đủ sáng, trung, tối"
+    },
+    "y_con_lai_cua_bai": [
+      "Màu phụ lặp lại ở ít nhất hai chỗ, hai chất liệu (ảnh 10 hai màu ấm đi quanh, ảnh 11 một màu ba chất liệu ở bếp)",
+      "Mẹo chụp ảnh đen trắng để kiểm tra chênh sáng (đoạn kết bài)"
+    ],
+    "ghi_chu": "Giai đoạn A (chưa dựng video, chờ giọng đọc ElevenLabs bai-006). Link Buy Me a Coffee chưa có trong prompt: bình luận ghim để chỗ trống."
   }
 ]
