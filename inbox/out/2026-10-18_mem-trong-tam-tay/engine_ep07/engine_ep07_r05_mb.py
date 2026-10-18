@@ -552,9 +552,9 @@ WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–5.7s", head="Tường, sàn cứng dội tiếng, nên nghe vang", vo="Tường, sàn cứng còn dội tiếng bước chân, nên nhà vừa trông lạnh, vừa nghe vang.",
          cam=WIDE, dark=False, dd=[]),
-    dict(t="5.7–10.15s", head="MS House: mặt bằng tầng trệt", vo="Nhà MS House có hai tầng, xây quanh chín cây sầu đâu.",
+    dict(t="5.7–11.4s", head="MS House: mặt bằng tầng trệt", vo="Thử nhìn nhà MS House ở Ấn Độ, hai tầng, xây quanh chín cây sầu đâu.",
          cam=((790, 350), 1.27, (540, 925)), dark=False, dd=[]),
-    dict(t="10.15–10.65s", head="end", vo="",
+    dict(t="11.4–11.9s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[]),
 ]
 END = len(SCENES) - 1

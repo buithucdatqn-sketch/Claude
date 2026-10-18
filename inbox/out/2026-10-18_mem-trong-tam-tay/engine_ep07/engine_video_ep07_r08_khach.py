@@ -553,9 +553,9 @@ WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–6.01s", head="Phòng ngủ: gỗ ở chỗ lưng tựa", vo="Ở phòng ngủ, gỗ ốp đúng chỗ lưng tựa đầu giường, còn bê tông lùi lên cao.",
          cam=WIDE, dark=True, dd=[]),
-    dict(t="6.01–12.96s", head="Thử ở nhà mình", vo="Nhà mình thì thử đổi đầu giường, lưng ghế sang gỗ, thêm thảm đay và rèm lanh cho đỡ vang.",
+    dict(t="6.01–13.27s", head="Thử ở nhà mình", vo="Nhà mình thì thử đổi đầu giường, lưng ghế sang gỗ, thêm thảm đay và rèm vải lanh cho đỡ vang.",
          cam=((620, 2000), 3.0, (540, 1480)), dark=False, dd=[]),
-    dict(t="12.96–13.46s", head="end", vo="",
+    dict(t="13.27–13.77s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[]),
 ]
 END = len(SCENES) - 1

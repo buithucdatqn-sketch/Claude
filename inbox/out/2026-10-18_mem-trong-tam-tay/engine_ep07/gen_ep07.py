@@ -37,11 +37,11 @@ SC = [
     dict(part="C", blk=4, img="an", head="Tường, sàn cứng dội tiếng, nên nghe vang", cam=((1150, 1500), 2.4, (540, 900)), dark=False, dd=[],
          vo="Tường, sàn cứng còn dội tiếng bước chân, nên nhà vừa trông lạnh, vừa nghe vang."),
     dict(part="D", blk=5, img="mb", head="MS House: mặt bằng tầng trệt", cam=((790, 350), 1.27, (540, 925)), free=True, dark=False, dd=[],
-         vo="Nhà MS House có hai tầng, xây quanh chín cây sầu đâu.",
-         tts="Nhà Em-ét Hao-xơ có hai tầng, xây quanh chín cây sầu đâu."),
+         vo="Thử nhìn nhà MS House ở Ấn Độ, hai tầng, xây quanh chín cây sầu đâu.",
+         tts="Thử nhìn nhà Em-ét Hao-xơ ở Ấn Độ, hai tầng, xây quanh chín cây sầu đâu."),
     dict(part="D", blk=5, img="khach", head="Phòng khách: trần, tường, sàn đều cứng", cam=((1310, 800), 3.0, (745, 720)), free=True, dark=True,
          dd=["arr_vo", "lab_vo"],
-         vo="Phòng khách có trần, tường bê tông và sàn đá đều là mặt cứng."),
+         vo="Ở phòng khách, trần, tường bê tông và sàn đá đều là mặt cứng."),
     dict(part="D", blk=5, img="khach", head="Trong tầm tay: mềm và ấm", cam=((272, 1690), 3.0, (322, 1080)), free=True, dark=True,
          dd=["arr_sofa", "lab_sofa"],
          vo="Còn đồ trong tầm tay thì mềm và ấm, như bộ sofa vải xù này.",
@@ -50,7 +50,7 @@ SC = [
          dd=["arr_dau", "lab_dau"],
          vo="Ở phòng ngủ, gỗ ốp đúng chỗ lưng tựa đầu giường, còn bê tông lùi lên cao."),
     dict(part="F", blk=6, img="khach", head="Thử ở nhà mình", cam=((620, 2000), 3.0, (540, 900)), dark=False, dd=[],
-         vo="Nhà mình thì thử đổi đầu giường, lưng ghế sang gỗ, thêm thảm đay và rèm lanh cho đỡ vang."),
+         vo="Nhà mình thì thử đổi đầu giường, lưng ghế sang gỗ, thêm thảm đay và rèm vải lanh cho đỡ vang."),
     dict(part="H", blk=6, img="tong", head="Bê tông thô: trên cao, ở xa", cam=((650, 900), 3.25, (540, 925)), free=True, dark=True,
          dd=["arr_xa", "lab_xa"],
          vo="Vậy cứ giữ bê tông, chỉ cần để mặt cứng ở xa,"),
@@ -58,7 +58,7 @@ SC = [
          dd=["arr_tam1", "arr_tam2", "lab_tam"],
          vo="còn đồ mềm thì để trong tầm tay."),
     dict(part="I", blk=6, img="tong", head="end", cam="END", dark=False, vo="", dd=[],
-         say="Bài phân tích đầy đủ nằm trong gói thành viên, mọi người xem ở phần bình luận nha."),
+         say="Bài phân tích đầy đủ ở gói thành viên, mọi người xem phần bình luận nha."),
 ]
 
 DOODLE = r'''
