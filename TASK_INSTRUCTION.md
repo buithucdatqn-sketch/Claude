@@ -144,13 +144,18 @@ Chạy: `python3 -I engine_video_epNN.py <ảnh> <thư_mục_ra>` → `<thư_m�
 Mất khoảng 6–7 phút cho mỗi 30 giây video (30 fps, 1080×1920, H.264 CRF 17), tức khoảng 10–15 phút cho reel 55–75 giây: chạy nền (`nohup … > log 2>&1 &`), làm việc khác trong lúc chờ, rồi kiểm tra log. Engine ghi thêm vài ảnh `probe_*.png` vào thư mục `video/`: xoá sau khi chuyển file mp4 ra.
 Hành vi đã duyệt, không tự ý đổi:
 - Thời lượng mỗi cảnh lấy từ trường `t` của `SCENES` (ví dụ "3–8s"); video dài đến hết cảnh cuối + 1 giây.
-- Chuyển cảnh 0,7 giây: camera nội suy zoom và vị trí; chữ và nét của cảnh cũ mờ đi trong 0,25 giây đầu; tiêu đề và lời đọc của cảnh mới hiện ra ở cuối quãng chuyển.
+- Chuyển cảnh trên CÙNG một ảnh: camera nội suy zoom và vị trí trong 1,1 giây (`TRANS_MOVE`, có lia/zoom) hoặc 0,7 giây (camera không đổi); chữ và nét của cảnh cũ mờ đi trong 0,25 giây đầu; tiêu đề và lời đọc của cảnh mới hiện ra ở cuối quãng chuyển.
+- Camera dịu mắt (chủ Trang duyệt sau tập 7: zoom từ xa vào nhiều và nhanh gây chóng mặt):
+  - KHÔNG mở cảnh bằng cú zoom từ ảnh toàn cảnh vào chi tiết. Đổi sang ảnh khác thì HOÀ TAN 0,45 giây (xfade) thẳng vào đúng khung của cảnh mới, không zoom.
+  - Trong mỗi cảnh, camera trôi rất nhẹ theo khoá `move` của cảnh: `push` (đẩy vào 6%), `pull` (lùi ra 6%), `pan_l`, `pan_r` (lia ngang), `pan_u`, `pan_d` (lia dọc, 4% khung), `hold` (đứng yên). Nét và nhãn doodle bám theo ảnh khi camera trôi; tiêu đề, phụ đề đứng yên. Không khai báo thì engine tự xoay vòng.
+  - Đa dạng: hai cảnh liền nhau không dùng cùng một kiểu; một reel có ít nhất ba kiểu khác nhau, xen cảnh đứng yên hoặc lia giữa các cảnh đẩy vào. Cảnh sát mép ảnh (cam `free`) chỉ dùng `push`, `pull`, `pan_u`, `pan_d` hoặc `hold`, tránh lia lộ mép trắng.
+  - Mức zoom cảnh chi tiết vừa phải (khoảng 2–3,4); không nhảy zoom quá 2 lần giữa hai cảnh liền nhau trên cùng ảnh. Nên dùng chuyển cảnh lia dọc/ngang trên cùng ảnh (ví dụ tập 7: tường bê tông trên cao lia xuống bàn ăn) thay cho zoom ra rồi zoom vào.
 - Nét doodle được vẽ dần (theo thứ tự các nét trong `doodle()`), bắt đầu sau khi camera dừng, xong ở khoảng 62% thời lượng cảnh; nhãn chữ trong `doodle()` hiện khi nét vẽ đạt khoảng 55–75%.
 - Khung cuối giữ thêm 1 giây. Video có sẵn track âm thanh im lặng để ghép tiếng sau.
 Nếu một cảnh quá ngắn để vẽ hết nét (cảnh nhiều nét mà dưới 3 giây), kéo dài cảnh đó trong `SCENES` hoặc bớt nét, không tăng tốc vẽ.
 
 ## 5d. Reel dùng nhiều ảnh
-Cách hiện hành (tập 7, `inbox/out/2026-10-18_mem-trong-tam-tay/engine_ep07/`): mỗi cảnh khai báo `img` (khoá trong `IMGS`: file ảnh làm việc, npz doodle gốc, credit riêng của ảnh). `gen_epNN.py` gom các cảnh liên tiếp cùng ảnh thành "run" và sinh cho mỗi run `engine_epNN_rKK_<ảnh>.py` + `engine_video_epNN_rKK_<ảnh>.py` (cảnh trước dựng toàn cảnh trên ảnh của run, các cảnh của run, khung cuối giả nếu run không chứa khung cuối); hình học thẻ tự tính theo tỷ lệ ảnh (dọc, vuông: thẻ cao 1920 ở bảng 2x, C2 y 1880; ngang: rộng 1920, C2 y 1810). `runs.json` ghi mốc cắt của mỗi run; `sheet_epNN.py` chạy engine khung của từng run, gom khung vào `frames/` và dựng `storyboard.png`. Giai đoạn 2: dựng video từng run, cắt đúng đoạn `cut_from`, `cut_len` của mỗi run và nối theo thứ tự (`ffmpeg` trim + concat), rồi ghép tiếng.
+Cách hiện hành (tập 7, `inbox/out/2026-10-18_mem-trong-tam-tay/engine_ep07/`): mỗi cảnh khai báo `img` (khoá trong `IMGS`: file ảnh làm việc, npz doodle gốc, credit riêng của ảnh). `gen_epNN.py` gom các cảnh liên tiếp cùng ảnh thành "run" và sinh cho mỗi run `engine_epNN_rKK_<ảnh>.py` + `engine_video_epNN_rKK_<ảnh>.py` (cảnh nối: chữ của cảnh trước trên ĐÚNG camera cảnh đầu run, đứng yên, để hoà tan không nhảy chữ; các cảnh của run; khung cuối giả nếu run không chứa khung cuối); hình học thẻ tự tính theo tỷ lệ ảnh (dọc, vuông: thẻ cao 1920 ở bảng 2x, C2 y 1880; ngang: rộng 1920, C2 y 1810). `runs.json` ghi mốc cắt của mỗi run; `sheet_epNN.py` chạy engine khung của từng run, gom khung vào `frames/` và dựng `storyboard.png`. Giai đoạn 2: dựng video từng run, cắt đúng đoạn `cut_from`, `cut_len` của mỗi run (run sau lấy thêm 0,45 giây trước điểm cắt) và nối bằng hoà tan 0,45 giây (`ffmpeg` trim + xfade, giữ nguyên mốc thời gian, xem `ghep_ep07.py`), rồi ghép tiếng.
 Cách cũ (tập 6) cho một ảnh phụ, còn dùng được:
 - Trong dữ liệu cảnh, đánh dấu cảnh đó (`img`, `cam_bep`, `dd_bep`); script sinh thêm `engine_epNN_<anh>.py` và `engine_video_epNN_<anh>.py` từ engine gốc, với ba cảnh: cảnh trước (ảnh phụ toàn cảnh, cùng tiêu đề và lời của cảnh trước trong video chính), cảnh dùng ảnh phụ, một khung cuối giả. Ảnh ngang dùng hình học thẻ mặc định của engine gốc, ảnh dọc dùng bản thẻ hẹp như tập 5, 6.
 - Ảnh phụ cũng tách lớp doodle gốc như mục 2c (`source_<anh>.png`, `doodle_epNN_<anh>.npz`). Ở video chính, cảnh đó để camera rộng, không nét (để quãng chuyển sang cảnh sau mượt).
@@ -190,6 +195,7 @@ Lý do: khi reel 9:16 hiện trên bảng tin (newsfeed) Facebook, nó bị cắ
 - Lời đọc khớp với hình trong cùng cảnh, là một mạch kể hiểu được khi nghe, không có câu cụt; tổng thời lượng 55–75 giây (tốc độ đọc khoảng 2,5–3 từ/giây), 150–210 từ.
 - Đủ các phần bắt buộc (A, C, D, F, H, I) theo mục 4a; kịch bản nghe là hiểu, không có câu cụt; đã qua tự chấm mục 4b (câu 1 đầu tiên).
 - Từng nhận định trong lời đọc đều có trong bài gốc và có dòng tương ứng trong `sources.md` (mục 3.1); không có nhận định ngoài bài.
+- Camera dịu mắt (mục 5b): không có cú zoom từ ảnh toàn cảnh vào chi tiết khi mở cảnh; đổi ảnh bằng hoà tan; ít nhất ba kiểu `move` khác nhau, hai cảnh liền nhau không cùng kiểu; xem lại vài giây quanh mỗi điểm đổi ảnh.
 - Video: trích ít nhất 12 khung (đầu, giữa quá trình vẽ, cuối từng cảnh chính, khung cuối) để kiểm tra: nét vẽ đã đủ khi cảnh kết thúc, không có nét của cảnh cũ lẫn sang cảnh mới, chữ không bị cắt, chuyển cảnh không giật. Kiểm tra `ffprobe`: 1080×1920, h264, có track âm thanh, thời lượng đúng dự kiến.
 - Không có logo, thương hiệu hay tên người xuất hiện sai trong khung.
 Kịch bản và nguồn đã được agent độc lập chấm ở bước 5 mục 4; nếu sau đó kịch bản còn đổi, nhờ đọc lại lần nữa.
@@ -230,7 +236,7 @@ Mục tiêu: người dùng mở file, chọn tất cả, dán vào ElevenLabs, 
 - Không tự nghiên cứu, không lấy thông tin nội dung từ web hay từ trí nhớ; chỉ dùng bài trong KHO BÀI (mục 3). Không sửa hay push gì vào kho bài.
 - Không đổi quy cách hình ảnh ở mục 6. Không sketch hoá ảnh dự án. Không bỏ credit.
 - Không dùng ảnh/đồ hoạ nào ngoài thư mục `anh/` của bài và ảnh của chính công trình từ trang nguồn ảnh bài ghi (mục 2b). Không lấy thông tin nội dung từ trang web nào.
-- Không đổi nhịp chuyển cảnh/vẽ nét đã duyệt (mục 5b), không thêm nhạc nền, hiệu ứng hay phụ đề chạy chữ khi chưa được yêu cầu.
+- Không đổi nhịp chuyển cảnh/vẽ nét đã duyệt (mục 5b, gồm quy tắc camera dịu mắt), không thêm nhạc nền, hiệu ứng hay phụ đề chạy chữ khi chưa được yêu cầu.
 - Không bịa tên studio, nhiếp ảnh gia hay dự án khi thiếu credit; chỉ ghi những gì có trên trang bài nguồn.
 - Không hẹn hay gợi ý "tập sau" ở bất kỳ đâu (khung, lời đọc, caption).
 - Không làm tập về lý thuyết kiến trúc hay không gian công trình (mục 1a): không prospect–refuge, không phân tích nhà của kiến trúc sư, không lấy trần, cột, vách kính, view làm nội dung chính.

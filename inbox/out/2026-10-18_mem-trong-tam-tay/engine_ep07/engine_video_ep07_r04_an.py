@@ -552,11 +552,11 @@ OBJ = {}
 WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–4.9s", head="Bê tông lạnh vì thiếu đồ mềm bên cạnh", vo="Mà bê tông hoặc các vật liệu cứng thường gây lạnh lẽo, vì nó thường thiếu đồ mềm bên cạnh.",
-         cam=WIDE, dark=False, dd=[]),
+         cam=((1150, 1500), 2.4, (540, 1098)), dark=False, dd=[], move="hold"),
     dict(t="4.9–9.6s", head="Tường, sàn cứng dội tiếng, nên nghe vang", vo="Tường, sàn cứng còn dội tiếng bước chân, nên nhà vừa trông lạnh, vừa nghe vang.",
-         cam=((1150, 1500), 2.4, (540, 1098)), dark=False, dd=[]),
+         cam=((1150, 1500), 2.4, (540, 1098)), dark=False, dd=[], move="pan_r"),
     dict(t="9.6–10.1s", head="end", vo="",
-         cam=END_SAFE, dark=False, dd=[]),
+         cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
 BOARDS = {}
@@ -599,7 +599,13 @@ BOARDS["clean"] = BOARDS["plain"]
 
 import subprocess, re
 FPS = 30
-TRANS = 0.7
+TRANS = 0.7          # chuyển cảnh cũ (khi cả hai cảnh dùng camera rộng hoặc cảnh đầu)
+TRANS_MOVE = 1.1     # chuyển cảnh có lia/zoom camera trên cùng ảnh: chậm hơn để không chóng mặt
+# Chuyển động camera trong cảnh (Ken Burns nhẹ), khoá `move` trong SCENES:
+#   "push" đẩy vào chậm, "pull" lùi ra chậm, "pan_l"/"pan_r" lia ngang, "pan_u"/"pan_d" lia dọc, "hold" đứng yên.
+# Không khai báo thì tự xoay vòng MOVES theo số thứ tự cảnh. Biên độ nhỏ (zoom 6%, lia 4% khung) để mắt không mỏi.
+MOVES = ["push", "pan_r", "pull", "pan_l", "push", "pan_u", "hold", "pan_d"]
+MOVE_Z, MOVE_P = 0.06, 44.0
 DARKC = DARK
 
 
@@ -641,7 +647,7 @@ def layout(i):
     tmm = np.array(tm.img, np.float32) / 255
     tdm = np.array(td.img, np.float32) / 255
     return dict(sc=sc, cam=sc["cam"], key=key, wb=wb, tm=tmm, td=tdm, f=f, t0=a, t1=b,
-                final=np.maximum(fullm, np.maximum(tmm, tdm)), n=len(wb.circ))
+                final=np.maximum(fullm, np.maximum(tmm, tdm)), dd=np.maximum(fullm, tdm), n=len(wb.circ))
 
 
 L = [layout(i) for i in range(len(SCENES))]
@@ -651,6 +657,52 @@ TOTAL = L[-1]["t1"] + 1.0  # hold last frame 1s extra
 
 def render_cam(key, cam):
     return cam.render(*BOARDS[key])
+
+
+def move_of(i):
+    sc = SCENES[i]
+    if i == END:
+        return sc.get("move", "push")
+    return sc.get("move", MOVES[i % len(MOVES)])
+
+
+def cam_at(i, q):
+    """camera của cảnh i tại tiến độ q (0 đầu cảnh, 1 cuối cảnh) sau khi cộng chuyển động nhẹ"""
+    (f, z, a) = SCENES[i]["cam"]
+    mv = move_of(i)
+    q = min(max(q, 0.0), 1.0)
+    if mv == "push":
+        z = z * (1 + MOVE_Z * q)
+    elif mv == "pull":
+        z = z * (1 + MOVE_Z * (1 - q))
+    elif mv in ("pan_l", "pan_r", "pan_u", "pan_d"):
+        z = z * (1 + MOVE_Z * 0.5)   # phóng nhẹ để lia không lộ mép ảnh
+        d = MOVE_P * (q - 0.5) * 2
+        a = (a[0] + (d if mv == "pan_l" else -d if mv == "pan_r" else 0),
+             a[1] + (d if mv == "pan_u" else -d if mv == "pan_d" else 0))
+    return (f, z, a)
+
+
+def follow(mask, c_base, c_now):
+    """dời lớp nét (vẽ theo camera gốc của cảnh) cho khớp camera hiện tại: cùng phép co giãn + tịnh tiến"""
+    (f0, z0, a0), (f1, z1, a1) = c_base, c_now
+    if abs(z1 - z0) < 1e-6 and abs(a1[0] - a0[0]) < 1e-3 and abs(a1[1] - a0[1]) < 1e-3 and f0 == f1:
+        return mask
+    k = z1 / z0
+    b0, b1 = Cam(f0, z0, a0), Cam(f1, z1, a1)
+    p = (0.0, 0.0)
+    x0, y0 = b0.pt(p)
+    x1, y1 = b1.pt(p)
+    M = np.float32([[k, 0, x1 - k * x0], [0, k, y1 - k * y0]])
+    return cv2.warpAffine(mask, M, (W, H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_CONSTANT, borderValue=0)
+
+
+def lerp_t(c0, c1, p):
+    """nội suy camera dạng (điểm nhìn trên ảnh, zoom, neo trên khung); zoom theo thang log"""
+    (f0, z0, a0), (f1, z1, a1) = c0, c1
+    return ((f0[0] + (f1[0] - f0[0]) * p, f0[1] + (f1[1] - f0[1]) * p),
+            math.exp(math.log(z0) * (1 - p) + math.log(z1) * p),
+            (a0[0] + (a1[0] - a0[0]) * p, a0[1] + (a1[1] - a0[1]) * p))
 
 
 def lerp_cam(c0, c1, p):
@@ -679,9 +731,13 @@ for fi in range(nframes):
     dur = ly["t1"] - ly["t0"]
     if i != cur:
         cur, acc, ptr = i, np.zeros((H * SS, W * SS), np.uint8), 0
+    moving = i > 0 and L[i - 1]["cam"] != ly["cam"]
+    tr = TRANS_MOVE if moving else TRANS
+    q = (u - (tr if i > 0 else 0.0)) / max(0.5, dur - (tr if i > 0 else 0.0))
+    c_now = cam_at(i, q)
     if i == 0:
         p, trans = 1.0, 0.0
-        cam = Cam(*ly["cam"])
+        cam = Cam(*c_now)
         rr = render_cam(ly["key"], cam)
         fac = ly["f"]
         a_old = 0.0
@@ -689,8 +745,11 @@ for fi in range(nframes):
         t_start = 0.0
     else:
         prev = L[i - 1]
-        p = sm(u / TRANS)
-        cam = lerp_cam(prev["cam"], ly["cam"], p)
+        p = sm(u / tr)
+        c_prev_end = cam_at(i - 1, 1.0)
+        if p < 1:
+            c_now = lerp_t(c_prev_end, cam_at(i, 0.0), p)
+        cam = Cam(*c_now)
         r1 = render_cam(ly["key"], cam)
         if prev["key"] != ly["key"] and p < 1:
             r0 = render_cam(prev["key"], cam)
@@ -699,8 +758,8 @@ for fi in range(nframes):
             rr = r1
         fac = prev["f"] * (1 - p) + ly["f"] * p
         a_old = 1 - sm(u / 0.25)
-        a_main = sm((u - 0.40) / 0.30)
-        t_start = TRANS + 0.15
+        a_main = sm((u - (tr - 0.30)) / 0.30)
+        t_start = tr + 0.15
     base, fabm = rr[..., :3] * fac, 1.0 - np.clip(rr[..., 3] / 255.0, 0, 1)
     # progressive strokes
     reveal_end = max(t_start + 0.8, 0.62 * dur)
@@ -713,9 +772,12 @@ for fi in range(nframes):
         ptr = tgt
     sm_mask = cv2.resize(acc, (W, H), interpolation=cv2.INTER_AREA).astype(np.float32) / 255
     a_lab = sm((r - 0.55) / 0.2) if ly["n"] else 0.0
-    layer = np.maximum(sm_mask, np.maximum(ly["tm"] * a_main, ly["td"] * a_lab))
+    # nét và nhãn doodle bám theo ảnh khi camera trôi; chữ tiêu đề, phụ đề đứng yên trên khung
+    dd = follow(np.maximum(sm_mask, ly["td"] * a_lab), ly["cam"], c_now)
+    layer = np.maximum(dd, ly["tm"] * a_main)
     if a_old > 0.002:
-        layer = np.maximum(layer, L[i - 1]["final"] * a_old)
+        old = L[i - 1]
+        layer = np.maximum(layer, np.maximum(follow(old["dd"], old["cam"], c_now), old["tm"]) * a_old)
     # fade out at very end
     img = compose(base, layer, fabm)
     proc.stdin.write(np.asarray(img).tobytes())

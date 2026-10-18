@@ -551,9 +551,9 @@ OBJ = {}
 WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–3.6s", head="Bê tông mộc: đẹp trên ảnh, lạnh khi ở?", vo="Nhà bê tông mộc lên ảnh thì đẹp, sao ở thật lại hay bị chê lạnh?",
-         cam=WIDE, dark=False, dd=[]),
+         cam=WIDE, dark=False, dd=[], move="push"),
     dict(t="3.6–4.1s", head="end", vo="",
-         cam=END_SAFE, dark=False, dd=[]),
+         cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
 BOARDS = {}

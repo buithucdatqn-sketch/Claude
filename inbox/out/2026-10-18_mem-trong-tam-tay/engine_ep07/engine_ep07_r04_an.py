@@ -551,11 +551,11 @@ OBJ = {}
 WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–4.9s", head="Bê tông lạnh vì thiếu đồ mềm bên cạnh", vo="Mà bê tông hoặc các vật liệu cứng thường gây lạnh lẽo, vì nó thường thiếu đồ mềm bên cạnh.",
-         cam=WIDE, dark=False, dd=[]),
+         cam=((1150, 1500), 2.4, (540, 1098)), dark=False, dd=[], move="hold"),
     dict(t="4.9–9.6s", head="Tường, sàn cứng dội tiếng, nên nghe vang", vo="Tường, sàn cứng còn dội tiếng bước chân, nên nhà vừa trông lạnh, vừa nghe vang.",
-         cam=((1150, 1500), 2.4, (540, 1098)), dark=False, dd=[]),
+         cam=((1150, 1500), 2.4, (540, 1098)), dark=False, dd=[], move="pan_r"),
     dict(t="9.6–10.1s", head="end", vo="",
-         cam=END_SAFE, dark=False, dd=[]),
+         cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
 BOARDS = {}

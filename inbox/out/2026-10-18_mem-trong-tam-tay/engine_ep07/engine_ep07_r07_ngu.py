@@ -551,11 +551,11 @@ OBJ = {}
 WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–3.78s", head="Trong tầm tay: mềm và ấm", vo="Còn đồ trong tầm tay thì mềm và ấm, như bộ sofa vải xù này.",
-         cam=WIDE, dark=True, dd=[]),
+         cam=((980, 700), 3.1, (540, 880)), dark=True, dd=[], move="hold"),
     dict(t="3.78–8.18s", head="Phòng ngủ: gỗ ở chỗ lưng tựa", vo="Ở phòng ngủ, gỗ ốp đúng chỗ lưng tựa đầu giường, còn bê tông lùi lên cao.",
-         cam=((980, 700), 3.1, (540, 880)), dark=True, dd=['arr_dau', 'lab_dau']),
+         cam=((980, 700), 3.1, (540, 880)), dark=True, dd=['arr_dau', 'lab_dau'], move="pull"),
     dict(t="8.18–8.68s", head="end", vo="",
-         cam=END_SAFE, dark=False, dd=[]),
+         cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
 BOARDS = {}

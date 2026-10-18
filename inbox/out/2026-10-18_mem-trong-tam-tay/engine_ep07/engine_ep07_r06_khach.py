@@ -551,13 +551,13 @@ OBJ = {}
 WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–4.5s", head="MS House: mặt bằng tầng trệt", vo="Thử nhìn nhà MS House ở Ấn Độ, hai tầng, xây quanh chín cây sầu đâu.",
-         cam=WIDE, dark=False, dd=[]),
+         cam=((1310, 800), 3.0, (745, 720)), dark=False, dd=[], move="hold"),
     dict(t="4.5–8.17s", head="Phòng khách: trần, tường, sàn đều cứng", vo="Ở phòng khách, trần, tường bê tông và sàn đá đều là mặt cứng.",
-         cam=((1310, 800), 3.0, (745, 720)), dark=True, dd=['arr_vo', 'lab_vo']),
+         cam=((1310, 800), 3.0, (745, 720)), dark=True, dd=['arr_vo', 'lab_vo'], move="pan_u"),
     dict(t="8.17–11.95s", head="Trong tầm tay: mềm và ấm", vo="Còn đồ trong tầm tay thì mềm và ấm, như bộ sofa vải xù này.",
-         cam=((272, 1690), 3.0, (322, 1080)), dark=True, dd=['arr_sofa', 'lab_sofa']),
+         cam=((272, 1690), 3.0, (322, 1080)), dark=True, dd=['arr_sofa', 'lab_sofa'], move="push"),
     dict(t="11.95–12.45s", head="end", vo="",
-         cam=END_SAFE, dark=False, dd=[]),
+         cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
 BOARDS = {}

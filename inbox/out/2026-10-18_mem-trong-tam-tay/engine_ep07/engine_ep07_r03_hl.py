@@ -551,11 +551,11 @@ OBJ = {}
 WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–5.25s", head="Kilmer & Kilmer (2014): mặt trơn lạnh, vải dày ấm", vo="Hai tác giả Kilmer viết, phòng nhiều mặt trơn thường lạnh, còn thảm và vải dày thì ấm.",
-         cam=WIDE, dark=False, dd=[]),
+         cam=((720, 860), 3.0, (540, 900)), dark=False, dd=[], move="hold"),
     dict(t="5.25–10.15s", head="Bê tông lạnh vì thiếu đồ mềm bên cạnh", vo="Mà bê tông hoặc các vật liệu cứng thường gây lạnh lẽo, vì nó thường thiếu đồ mềm bên cạnh.",
-         cam=((720, 860), 3.0, (540, 900)), dark=False, dd=[]),
+         cam=((720, 860), 3.0, (540, 900)), dark=False, dd=[], move="pull"),
     dict(t="10.15–10.65s", head="end", vo="",
-         cam=END_SAFE, dark=False, dd=[]),
+         cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
 BOARDS = {}

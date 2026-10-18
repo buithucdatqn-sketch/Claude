@@ -83,3 +83,9 @@ Cảnh cuối theo prompt routine: mời vào gói thành viên ở phần bình
 Mỗi cảnh bắt đầu khoảng 0,35–0,4 giây trước câu của nó; cảnh cuối kéo đến 51,6 giây, video giữ khung cuối thêm 1 giây (52,6 giây).
 Âm thanh: lọc dưới 80 Hz, giảm ồn nhẹ (afftdn), chặn đỉnh, chuẩn hoá về khoảng −14 LUFS (đo được −14,6 LUFS, đỉnh −1,5 dBFS), AAC 48 kHz. Không có nhạc.
 Dựng: chín run (runs.json) dựng song song bằng engine_ep07/render_ep07.sh, cắt và nối bằng engine_ep07/ghep_ep07.py.
+
+## Bản camera dịu mắt (theo góp ý chủ Trang: zoom từ xa vào nhiều và nhanh gây chóng mặt)
+- Bỏ cú zoom từ ảnh toàn cảnh vào chi tiết ở đầu mỗi lần đổi ảnh: đổi ảnh bằng hoà tan 0,45 giây thẳng vào khung của cảnh mới (`ghep_ep07.py`, xfade, giữ nguyên mốc giọng).
+- Trong cảnh, camera trôi nhẹ theo `move`: 1 push · 2 pan_l (diagram) · 3 pull · 4 pan_r · 5 push (mặt bằng) · 6 pan_u · 7 push · 8 pull · 9 pan_l · 10 push · 11 pull · 12 push. Biên độ 6% zoom, 4% lia; nét và nhãn doodle bám theo ảnh.
+- Chuyển cảnh trên cùng ảnh (6→7, 10→11) chậm lại 1,1 giây; 10→11 là lia chéo từ tường bê tông trên cao xuống bàn ăn.
+- Engine gốc `engine/engine_video.py` đã thêm `move`, `TRANS_MOVE`, `cam_at`, `follow` cho các tập sau.

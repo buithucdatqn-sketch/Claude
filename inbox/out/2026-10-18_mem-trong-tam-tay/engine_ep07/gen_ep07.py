@@ -27,37 +27,37 @@ IMGS = dict(
     mb=("source_mb.png", "", "Mặt bằng: Studio Saransh, nguồn ArchDaily (2025) · ghi chú Giả Thuyết Kiến Trúc"),  # ảnh 02, cắt vùng phòng khách và sảnh ăn (chú thích gốc đủ to)
 )
 SC = [
-    dict(part="A", blk=1, img="an", head="Bê tông mộc: đẹp trên ảnh, lạnh khi ở?", cam=WIDE, dark=False, dd=[],
+    dict(move="push", part="A", blk=1, img="an", head="Bê tông mộc: đẹp trên ảnh, lạnh khi ở?", cam=WIDE, dark=False, dd=[],
          vo="Nhà bê tông mộc lên ảnh thì đẹp, sao ở thật lại hay bị chê lạnh?"),
-    dict(part="B", blk=2, img="dg", head="Kilmer & Kilmer (2014): mặt trơn lạnh, vải dày ấm", cam=((1080, 465), 1.12, (540, 925)), free=True, dark=False, dd=[],
+    dict(move="pan_l", part="B", blk=2, img="dg", head="Kilmer & Kilmer (2014): mặt trơn lạnh, vải dày ấm", cam=((1080, 465), 1.12, (540, 925)), free=True, dark=False, dd=[],
          vo="Hai tác giả Kilmer viết, phòng nhiều mặt trơn thường lạnh, còn thảm và vải dày thì ấm.",
          tts="Hai tác giả Kin-mơ viết, phòng nhiều mặt trơn thường lạnh, còn thảm và vải dày thì ấm."),
-    dict(part="C", blk=3, img="hl", head="Bê tông lạnh vì thiếu đồ mềm bên cạnh", cam=((720, 860), 3.0, (540, 900)), dark=False, dd=[],
+    dict(move="pull", part="C", blk=3, img="hl", head="Bê tông lạnh vì thiếu đồ mềm bên cạnh", cam=((720, 860), 3.0, (540, 900)), dark=False, dd=[],
          vo="Mà bê tông hoặc các vật liệu cứng thường gây lạnh lẽo, vì nó thường thiếu đồ mềm bên cạnh."),
-    dict(part="C", blk=4, img="an", head="Tường, sàn cứng dội tiếng, nên nghe vang", cam=((1150, 1500), 2.4, (540, 900)), dark=False, dd=[],
+    dict(move="pan_r", part="C", blk=4, img="an", head="Tường, sàn cứng dội tiếng, nên nghe vang", cam=((1150, 1500), 2.4, (540, 900)), dark=False, dd=[],
          vo="Tường, sàn cứng còn dội tiếng bước chân, nên nhà vừa trông lạnh, vừa nghe vang."),
-    dict(part="D", blk=5, img="mb", head="MS House: mặt bằng tầng trệt", cam=((790, 350), 1.27, (540, 925)), free=True, dark=False, dd=[],
+    dict(move="push", part="D", blk=5, img="mb", head="MS House: mặt bằng tầng trệt", cam=((790, 350), 1.27, (540, 925)), free=True, dark=False, dd=[],
          vo="Thử nhìn nhà MS House ở Ấn Độ, hai tầng, xây quanh chín cây sầu đâu.",
          tts="Thử nhìn nhà Em-ét Hao-xơ ở Ấn Độ, hai tầng, xây quanh chín cây sầu đâu."),
-    dict(part="D", blk=5, img="khach", head="Phòng khách: trần, tường, sàn đều cứng", cam=((1310, 800), 3.0, (745, 720)), free=True, dark=True,
+    dict(move="pan_u", part="D", blk=5, img="khach", head="Phòng khách: trần, tường, sàn đều cứng", cam=((1310, 800), 3.0, (745, 720)), free=True, dark=True,
          dd=["arr_vo", "lab_vo"],
          vo="Ở phòng khách, trần, tường bê tông và sàn đá đều là mặt cứng."),
-    dict(part="D", blk=5, img="khach", head="Trong tầm tay: mềm và ấm", cam=((272, 1690), 3.0, (322, 1080)), free=True, dark=True,
+    dict(move="push", part="D", blk=5, img="khach", head="Trong tầm tay: mềm và ấm", cam=((272, 1690), 3.0, (322, 1080)), free=True, dark=True,
          dd=["arr_sofa", "lab_sofa"],
          vo="Còn đồ trong tầm tay thì mềm và ấm, như bộ sofa vải xù này.",
          tts="Còn đồ trong tầm tay thì mềm và ấm, như bộ sô-pha vải xù này."),
-    dict(part="D", blk=5, img="ngu", head="Phòng ngủ: gỗ ở chỗ lưng tựa", cam=((980, 700), 3.1, (540, 880)), free=True, dark=True,
+    dict(move="pull", part="D", blk=5, img="ngu", head="Phòng ngủ: gỗ ở chỗ lưng tựa", cam=((980, 700), 3.1, (540, 880)), free=True, dark=True,
          dd=["arr_dau", "lab_dau"],
          vo="Ở phòng ngủ, gỗ ốp đúng chỗ lưng tựa đầu giường, còn bê tông lùi lên cao."),
-    dict(part="F", blk=6, img="khach", head="Thử ở nhà mình", cam=((620, 2000), 3.0, (540, 900)), dark=False, dd=[],
+    dict(move="pan_l", part="F", blk=6, img="khach", head="Thử ở nhà mình", cam=((620, 2000), 3.0, (540, 900)), dark=False, dd=[],
          vo="Thử đổi đầu giường, lưng ghế sang gỗ, thêm thảm đay và rèm vải lanh cho đỡ vang."),
-    dict(part="H", blk=6, img="tong", head="Bê tông thô: trên cao, ở xa", cam=((650, 900), 3.25, (540, 925)), free=True, dark=True,
+    dict(move="push", part="H", blk=6, img="tong", head="Bê tông thô: trên cao, ở xa", cam=((650, 900), 3.25, (540, 925)), free=True, dark=True,
          dd=["arr_xa", "lab_xa"],
          vo="Vậy cứ giữ bê tông, chỉ cần để mặt cứng ở xa,"),
-    dict(part="H", blk=6, img="tong", head="Gỗ, mây: ngay trong tầm tay", cam=((275, 1680), 2.4, (300, 925)), free=True, dark=True,
+    dict(move="pull", part="H", blk=6, img="tong", head="Gỗ, mây: ngay trong tầm tay", cam=((275, 1680), 2.4, (300, 925)), free=True, dark=True,
          dd=["arr_tam1", "arr_tam2", "lab_tam"],
          vo="còn đồ mềm thì để trong tầm tay, thì sẽ giảm cảm giác lạnh lẽo."),
-    dict(part="I", blk=6, img="tong", head="end", cam="END", dark=False, vo="", dd=[],
+    dict(move="push", part="I", blk=6, img="tong", head="end", cam="END", dark=False, vo="", dd=[],
          say="Bài phân tích về chất cảm vật liệu, nguyên tắc cứng và mềm từ sách của Kilmer, mọi người xem phần bình luận nha.",
          tts="Bài phân tích về chất cảm vật liệu, nguyên tắc cứng và mềm từ sách của Kin-mơ, mọi người xem phần bình luận nha."),
 ]
@@ -153,9 +153,10 @@ def cam_str(s, cam):
     return f"(({fx}, {fy}), {z}, {anc})"
 
 
-def scene_line(s, a, b, cam, dd):
+def scene_line(s, a, b, cam, dd, move=None):
+    mv = move or s.get("move", "hold")
     return (f'    dict(t="{a:g}–{b:g}s", head={json.dumps(s["head"], ensure_ascii=False)}, '
-            f'vo={json.dumps(s["vo"], ensure_ascii=False)},\n         cam={cam}, dark={s["dark"]}, dd={dd}),')
+            f'vo={json.dumps(s["vo"], ensure_ascii=False)},\n         cam={cam}, dark={s["dark"]}, dd={dd}, move="{mv}"),')
 
 
 def wrap_data(lines, doodle):
@@ -175,13 +176,16 @@ def runs():
 
 
 def build_run(T, ks):
-    """dữ liệu cảnh cho một run: cảnh trước (toàn cảnh ảnh của run) + các cảnh của run + khung cuối giả"""
+    """dữ liệu cảnh cho một run: cảnh trước + các cảnh của run + khung cuối giả.
+    Cảnh trước dùng ĐÚNG camera của cảnh đầu run, đứng yên (không zoom từ ảnh toàn cảnh vào nữa): đoạn cắt
+    của run mở bằng hoà tan từ run trước (ghep_ep07.py), chữ cảnh trước mờ đi như cũ."""
     img = SC[ks[0]]["img"]
     lines, t, d0 = [], 0.0, 0.0
     if ks[0] > 0:
         prev = SC[ks[0] - 1]
         d0 = T[ks[0]] - T[ks[0] - 1]
-        lines.append(scene_line(prev, 0, d0, "WIDE", []))
+        first = SC[ks[0]]
+        lines.append(scene_line(prev, 0, d0, cam_str(first, first["cam"]), [], move="hold"))
         t = d0
     for k in ks:
         s = SC[k]
@@ -190,7 +194,7 @@ def build_run(T, ks):
         t += d
     if ks[-1] != len(SC) - 1:
         end = SC[-1]
-        lines.append(scene_line(end, t, t + 0.5, "END_SAFE", []))
+        lines.append(scene_line(end, t, t + 0.5, "END_SAFE", [], move="hold"))
     return wrap_data(lines, DOODLE.replace("@NPZ@", IMGS[img][1] or "none.npz")), d0, t - d0
 
 
