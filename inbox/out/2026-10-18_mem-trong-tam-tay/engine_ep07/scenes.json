@@ -1,0 +1,82 @@
+[
+ {
+  "blk": 1,
+  "t": "0–5.7s",
+  "head": "Bê tông mộc: đẹp trên ảnh, lạnh khi ở?",
+  "loi": "Nhà bê tông mộc lên ảnh thì đẹp, sao ở thật lại hay bị chê lạnh?",
+  "tts": "Nhà bê tông mộc lên ảnh thì đẹp, sao ở thật lại hay bị chê lạnh?",
+  "part": "A"
+ },
+ {
+  "blk": 2,
+  "t": "5.7–12.34s",
+  "head": "Kilmer & Kilmer (2014): mặt trơn lạnh, vải dày ấm",
+  "loi": "Hai tác giả Kilmer viết, phòng nhiều mặt trơn thường lạnh, còn thảm, vải dày mang lại hơi ấm.",
+  "tts": "Hai tác giả Kin-mơ viết, phòng nhiều mặt trơn thường lạnh, còn thảm, vải dày mang lại hơi ấm.",
+  "part": "B"
+ },
+ {
+  "blk": 3,
+  "t": "12.34–18.35s",
+  "head": "Không thiếu vân, chỉ thiếu đồ mềm",
+  "loi": "Mà bê tông mộc đâu có thiếu vân, nó thường thiếu đồ mềm đặt ngay bên cạnh.",
+  "tts": "Mà bê tông mộc đâu có thiếu vân, nó thường thiếu đồ mềm đặt ngay bên cạnh.",
+  "part": "C"
+ },
+ {
+  "blk": 4,
+  "t": "18.35–24.68s",
+  "head": "Tường, sàn cứng dội tiếng, nên nghe vang",
+  "loi": "Tường, sàn cứng còn dội tiếng bước chân, nên nhà bê tông vừa trông lạnh, vừa nghe vang.",
+  "tts": "Tường, sàn cứng còn dội tiếng bước chân, nên nhà bê tông vừa trông lạnh, vừa nghe vang.",
+  "part": "C"
+ },
+ {
+  "blk": 5,
+  "t": "24.68–31s",
+  "head": "MS House: trần, tường, sàn đều cứng",
+  "loi": "Như phòng khách nhà MS House ở Ấn Độ, trần và tường bê tông, sàn đá, đều cứng.",
+  "tts": "Như phòng khách nhà Em-ét Hao-xơ ở Ấn Độ, trần và tường bê tông, sàn đá, đều cứng.",
+  "part": "D"
+ },
+ {
+  "blk": 5,
+  "t": "31–37.33s",
+  "head": "Trong tầm tay: mềm và ấm",
+  "loi": "Còn đồ trong tầm tay thì mềm, ấm. Bộ sofa vải xù nổi hẳn trên nền bê tông.",
+  "tts": "Còn đồ trong tầm tay thì mềm, ấm. Bộ sô-pha vải xù nổi hẳn trên nền bê tông.",
+  "part": "D"
+ },
+ {
+  "blk": 5,
+  "t": "37.33–43.66s",
+  "head": "Gỗ ở chỗ lưng tựa, bê tông lùi lên cao",
+  "loi": "Phòng ngủ cũng vậy, gỗ ốp đúng chỗ lưng tựa đầu giường, còn bê tông lùi lên cao.",
+  "tts": "Phòng ngủ cũng vậy, gỗ ốp đúng chỗ lưng tựa đầu giường, còn bê tông lùi lên cao.",
+  "part": "D"
+ },
+ {
+  "blk": 6,
+  "t": "43.66–51.55s",
+  "head": "Thử ở nhà mình",
+  "loi": "Nhà toàn bê tông thì thử đổi đầu giường, lưng ghế sang gỗ, thêm thảm sợi đay, rèm vải lanh cho đỡ vang.",
+  "tts": "Nhà toàn bê tông thì thử đổi đầu giường, lưng ghế sang gỗ, thêm thảm sợi đay, rèm vải lanh cho đỡ vang.",
+  "part": "F"
+ },
+ {
+  "blk": 6,
+  "t": "51.55–57.56s",
+  "head": "Cứng ở xa, mềm trong tầm tay",
+  "loi": "Vậy cứ giữ bê tông, chỉ cần để mặt cứng ở xa, đồ mềm trong tầm tay.",
+  "tts": "Vậy cứ giữ bê tông, chỉ cần để mặt cứng ở xa, đồ mềm trong tầm tay.",
+  "part": "H"
+ },
+ {
+  "blk": 6,
+  "t": "57.56–63.89s",
+  "head": "end",
+  "loi": "Bài phân tích đầy đủ nằm trong gói thành viên, mọi người vào phần bình luận xem nha.",
+  "tts": "Bài phân tích đầy đủ nằm trong gói thành viên, mọi người vào phần bình luận xem nha.",
+  "part": "I"
+ }
+]
