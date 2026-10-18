@@ -144,5 +144,34 @@
   "thu_muc": "inbox/out/2026-10-16_cung-mau-khac-be-mat/",
   "ghi_chu": "Giai đoạn B xong với ghi âm bai-006.mp3 (49,2 giây). Cảnh 8 dùng ảnh 11 (bếp) theo yêu cầu chủ Trang; khung cuối bỏ cụm 'Theo dõi Fanpage' và tên Fanpage. Ảnh 12 dùng cho các cảnh còn lại.",
   "video": "inbox/out/2026-10-16_cung-mau-khac-be-mat/reel_cung-mau-khac-be-mat_final.mp4"
+ },
+ {
+  "tap": 7,
+  "slug": "mem-trong-tam-tay",
+  "ngay": "2026-10-18",
+  "nguyen_ly": "Chất cảm: mặt cứng để ở xa, đồ mềm trong tầm tay (nhà bê tông mộc không thiếu vân mà thiếu đồ mềm bên cạnh)",
+  "nhom": "Vật liệu và bề mặt: thô, mịn, mềm, cứng",
+  "bai_kho": {
+   "duong_dan": "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/bai-02.md",
+   "nhanh": "AH-Interior-notes",
+   "commit": "8fd09bdd396e0e27f055d6cba0816b568e47ea0e"
+  },
+  "anh_kho": [
+   "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/08-doodle-tho-min-phong-khach.jpg",
+   "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/09-doodle-go-o-gan-phong-ngu.jpg"
+  ],
+  "du_an": "MS House, Ahmedabad",
+  "studio": "Studio Saransh",
+  "nhiep_anh": "Ishita Sitwala, The Fishy Project",
+  "nguon": [
+   "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 4, mục Texture (theo bài)"
+  ],
+  "y_bai": {
+   "muc": "Đặt bề mặt thô cạnh bề mặt mịn để căn phòng ấm hơn",
+   "tom_tat": "Phòng nhiều mặt trơn thì lạnh và vang; để mặt cứng ở xa, gỗ và đồ vải trong tầm tay (phòng khách, đầu giường MS House)."
+  },
+  "trang_thai": "cho_ghi_am",
+  "thu_muc": "inbox/out/2026-10-18_mem-trong-tam-tay/",
+  "ghi_chu": "Làm lại theo yêu cầu chủ Trang; bản ý 'ánh sáng xiên' (ảnh 04) bị huỷ và chủ Trang không muốn dùng ý đó. Cảnh 7 dùng ảnh 09 (engine phụ, splice.json). Chờ file giọng bai-007.mp3."
  }
 ]

@@ -163,7 +163,6 @@ def run(src, dst, npz, K, BOX, ARROWS, extra_thr={}, cols={}, shift={}, fsr={}, 
     np.savez(OUT + "engine_ep07/" + npz, **layers)
     for k, v in layers.items():
         print(npz, k, v.shape, v.min(0).astype(int), v.max(0).astype(int))
-    cv2.imwrite(OUT + "engine_ep07/_mask_" + dst, big * 255)
 
 
 # ảnh 08: phòng khách

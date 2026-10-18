@@ -9,15 +9,15 @@
  },
  {
   "blk": 2,
-  "t": "5.7–12.34s",
+  "t": "5.7–12.96s",
   "head": "Kilmer & Kilmer (2014): mặt trơn lạnh, vải dày ấm",
-  "loi": "Hai tác giả Kilmer viết, phòng nhiều mặt trơn thường lạnh, còn thảm, vải dày mang lại hơi ấm.",
-  "tts": "Hai tác giả Kin-mơ viết, phòng nhiều mặt trơn thường lạnh, còn thảm, vải dày mang lại hơi ấm.",
+  "loi": "Hai tác giả Kilmer viết, phòng nhiều mặt trơn thường lạnh, còn thảm và vải dày thì mang lại hơi ấm.",
+  "tts": "Hai tác giả Kin-mơ viết, phòng nhiều mặt trơn thường lạnh, còn thảm và vải dày thì mang lại hơi ấm.",
   "part": "B"
  },
  {
   "blk": 3,
-  "t": "12.34–18.35s",
+  "t": "12.96–18.97s",
   "head": "Không thiếu vân, chỉ thiếu đồ mềm",
   "loi": "Mà bê tông mộc đâu có thiếu vân, nó thường thiếu đồ mềm đặt ngay bên cạnh.",
   "tts": "Mà bê tông mộc đâu có thiếu vân, nó thường thiếu đồ mềm đặt ngay bên cạnh.",
@@ -25,47 +25,47 @@
  },
  {
   "blk": 4,
-  "t": "18.35–24.68s",
+  "t": "18.97–25.61s",
   "head": "Tường, sàn cứng dội tiếng, nên nghe vang",
-  "loi": "Tường, sàn cứng còn dội tiếng bước chân, nên nhà bê tông vừa trông lạnh, vừa nghe vang.",
-  "tts": "Tường, sàn cứng còn dội tiếng bước chân, nên nhà bê tông vừa trông lạnh, vừa nghe vang.",
+  "loi": "Tường, sàn cứng còn dội tiếng bước chân, nên nhà toàn bê tông vừa trông lạnh, vừa nghe vang.",
+  "tts": "Tường, sàn cứng còn dội tiếng bước chân, nên nhà toàn bê tông vừa trông lạnh, vừa nghe vang.",
   "part": "C"
  },
  {
   "blk": 5,
-  "t": "24.68–31s",
+  "t": "25.61–31.93s",
   "head": "MS House: trần, tường, sàn đều cứng",
-  "loi": "Như phòng khách nhà MS House ở Ấn Độ, trần và tường bê tông, sàn đá, đều cứng.",
-  "tts": "Như phòng khách nhà Em-ét Hao-xơ ở Ấn Độ, trần và tường bê tông, sàn đá, đều cứng.",
+  "loi": "Thử nhìn phòng khách nhà MS House, trần, tường bê tông và sàn đá đều là mặt cứng.",
+  "tts": "Thử nhìn phòng khách nhà Em-ét Hao-xơ, trần, tường bê tông và sàn đá đều là mặt cứng.",
   "part": "D"
  },
  {
   "blk": 5,
-  "t": "31–37.33s",
+  "t": "31.93–38.88s",
   "head": "Trong tầm tay: mềm và ấm",
-  "loi": "Còn đồ trong tầm tay thì mềm, ấm. Bộ sofa vải xù nổi hẳn trên nền bê tông.",
-  "tts": "Còn đồ trong tầm tay thì mềm, ấm. Bộ sô-pha vải xù nổi hẳn trên nền bê tông.",
+  "loi": "Còn đồ trong tầm tay thì mềm và ấm, bộ sofa vải xù nổi hẳn lên trên nền bê tông.",
+  "tts": "Còn đồ trong tầm tay thì mềm và ấm, bộ sô-pha vải xù nổi hẳn lên trên nền bê tông.",
   "part": "D"
  },
  {
   "blk": 5,
-  "t": "37.33–43.66s",
+  "t": "38.88–44.89s",
   "head": "Gỗ ở chỗ lưng tựa, bê tông lùi lên cao",
-  "loi": "Phòng ngủ cũng vậy, gỗ ốp đúng chỗ lưng tựa đầu giường, còn bê tông lùi lên cao.",
-  "tts": "Phòng ngủ cũng vậy, gỗ ốp đúng chỗ lưng tựa đầu giường, còn bê tông lùi lên cao.",
+  "loi": "Ở phòng ngủ, gỗ ốp đúng chỗ lưng tựa đầu giường, còn bê tông lùi lên cao.",
+  "tts": "Ở phòng ngủ, gỗ ốp đúng chỗ lưng tựa đầu giường, còn bê tông lùi lên cao.",
   "part": "D"
  },
  {
   "blk": 6,
-  "t": "43.66–51.55s",
+  "t": "44.89–52.47s",
   "head": "Thử ở nhà mình",
-  "loi": "Nhà toàn bê tông thì thử đổi đầu giường, lưng ghế sang gỗ, thêm thảm sợi đay, rèm vải lanh cho đỡ vang.",
-  "tts": "Nhà toàn bê tông thì thử đổi đầu giường, lưng ghế sang gỗ, thêm thảm sợi đay, rèm vải lanh cho đỡ vang.",
+  "loi": "Nhà mình thì thử đổi đầu giường, lưng ghế sang gỗ, thêm thảm sợi đay và rèm vải lanh cho đỡ vang.",
+  "tts": "Nhà mình thì thử đổi đầu giường, lưng ghế sang gỗ, thêm thảm sợi đay và rèm vải lanh cho đỡ vang.",
   "part": "F"
  },
  {
   "blk": 6,
-  "t": "51.55–57.56s",
+  "t": "52.47–58.48s",
   "head": "Cứng ở xa, mềm trong tầm tay",
   "loi": "Vậy cứ giữ bê tông, chỉ cần để mặt cứng ở xa, đồ mềm trong tầm tay.",
   "tts": "Vậy cứ giữ bê tông, chỉ cần để mặt cứng ở xa, đồ mềm trong tầm tay.",
@@ -73,10 +73,10 @@
  },
  {
   "blk": 6,
-  "t": "57.56–63.89s",
+  "t": "58.48–64.8s",
   "head": "end",
-  "loi": "Bài phân tích đầy đủ nằm trong gói thành viên, mọi người vào phần bình luận xem nha.",
-  "tts": "Bài phân tích đầy đủ nằm trong gói thành viên, mọi người vào phần bình luận xem nha.",
+  "loi": "Bài phân tích đầy đủ nằm trong gói thành viên, mọi người xem ở phần bình luận nha.",
+  "tts": "Bài phân tích đầy đủ nằm trong gói thành viên, mọi người xem ở phần bình luận nha.",
   "part": "I"
  }
 ]
