@@ -193,7 +193,7 @@ run("source_ngu_orig.png", "source_ngu.png", "doodle_ep07_ngu.npz", 1.6,
 # ảnh 13: ảnh tổng (sảnh ăn hai tầng nhìn từ bàn ăn) — cảnh mở và cảnh chốt
 run("source_tong_orig.png", "source_tong.png", "doodle_ep07_tong.npz", 1.6,
     BOX=dict(title=(52, 28, 378, 274), credit=(452, 972, 698, 1042),
-             lab_xa=(303, 413, 532, 522), arr_xa=(398, 522, 482, 712),
+             lab_xa=(303, 413, 532, 514), arr_xa=(398, 522, 482, 712),
              lab_tam=(13, 848, 302, 917), arr_tam1=(33, 917, 137, 1262), arr_tam2=(163, 919, 337, 1152)),
     ARROWS=dict(arr_xa=(410, 535), arr_tam1=(50, 925), arr_tam2=(172, 932)),
     extra_thr=dict(title=200, arr_xa=205, arr_tam1=215, arr_tam2=215, credit=190),
