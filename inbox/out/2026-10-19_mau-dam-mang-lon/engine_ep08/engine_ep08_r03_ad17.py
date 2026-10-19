@@ -16,7 +16,7 @@ from silhouette import loose_contour  # noqa: E402
 
 SRC = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "source.png")
 OUT = sys.argv[2] if len(sys.argv) > 2 else HERE
-os.makedirs(os.path.join(OUT, "frames_r05_ad20"), exist_ok=True)
+os.makedirs(os.path.join(OUT, "frames_r03_ad17"), exist_ok=True)
 
 W, H, SS = 1080, 1920, 2
 FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
@@ -54,7 +54,7 @@ SW, SH = src.size
 
 # ---------------- board geometry (2x master, 1x = reel canvas) ----------------
 B2W, B2H = W * 2, H * 2
-CARD_W2, BORDER2 = 1440, 0  # theo tỷ lệ ảnh của run
+CARD_W2, BORDER2 = 1280, 0  # theo tỷ lệ ảnh của run
 PH_W2 = CARD_W2 - 2 * BORDER2
 PH_H2 = int(round(PH_W2 * SH / SW))
 CARD_H2 = PH_H2 + 2 * BORDER2
@@ -550,11 +550,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–7.26s", head="Kilmer & Kilmer (2014): nền đậm, đồ lớn dịu", vo="Sách của hai tác giả Kilmer gợi ý đặt màu đậm lên tường hoặc sàn, còn đồ lớn thì dịu tông.",
-         cam=WIDE, dark=False, dd=[], move="hold"),
-    dict(t="7.26–12.34s", head="Phòng ngủ: tường xanh đậm làm nền", vo="Như phòng ngủ này, tường xanh đậm làm nền, còn giường lớn thì trắng.",
-         cam=WIDE, dark=False, dd=[], move="push"),
-    dict(t="12.34–12.84s", head="end", vo="",
+    dict(t="0–9.14s", head="Albers (1963): mảng lớn lấn át mảng nhỏ", vo="Mà Josef Albers từng chỉ ra rằng mảng màu lớn luôn lấn át mảng màu nhỏ, và cả dãy tủ chính là một mảng màu rất lớn.",
+         cam=((1000, 1100), 2.3, (568, 900)), dark=False, dd=[], move="hold"),
+    dict(t="9.14–18.28s", head="Mảng lớn trông đậm hơn mẫu thử", vo="Hơn nữa, một màu khi phủ lên mảng lớn bao giờ cũng trông đậm hơn trên tấm mẫu nhỏ, nên sơn xong thường đậm hơn mình tưởng.",
+         cam=((1000, 1100), 2.3, (568, 900)), dark=True, dd=[], move="push"),
+    dict(t="18.28–18.78s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
@@ -625,7 +625,7 @@ BOARDS["clean"] = make_board(1.0)
 frames = []
 for i in range(len(SCENES)):
     im = render_scene(i)
-    im.save(os.path.join(OUT, "frames_r05_ad20", f"scene_{i + 1}.png"))
+    im.save(os.path.join(OUT, "frames_r03_ad17", f"scene_{i + 1}.png"))
     frames.append(im)
 
 # ---------------- contact sheet ----------------
@@ -650,5 +650,5 @@ fy = TOP + rows * (PH + 86) + 10
 d.text((MX, fy), "Nền trắng trơn · băng keo giấy thay ghim · header AH DECODE · bỏ “Bước n”", font=F(32), fill=(255, 255, 255))
 d.text((MX, fy + 44), "Cảnh zoom kín ảnh: chữ trắng viết lên ảnh (có phủ tối nhẹ).", font=F(32), fill=(225, 220, 212))
 d.text((MX, fy + 88), "Ảnh tối ~14% ở cảnh có nét vẽ; cảnh 1, 6, 7 giữ ảnh nguyên bản.", font=F(32), fill=(225, 220, 212))
-sheet.save(os.path.join(OUT, "storyboard_r05_ad20.png"))
+sheet.save(os.path.join(OUT, "storyboard_r03_ad17.png"))
 print("fabric", tuple(int(x) for x in FAB), "sheet", sheet.size)

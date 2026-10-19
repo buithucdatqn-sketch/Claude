@@ -33,6 +33,18 @@ Ngày 2026-10-19 có hai phiên làm lại đúng ý đã có ở tập 7 hoặc
    - Nếu mạng của môi trường chặn các trang ảnh (proxy trả 403; ngày 2026-10-19 đã chặn archdaily.com, images.adsttc.com, estliving.com, divisare.com, aninteriormag.com, architonic.com, esterbruzkus.com, yatzer.com): không vòng qua chặn, không dựng reel bằng ảnh trùng. Dừng phần dựng hình. Báo chủ Trang hai cách: (1) mở các tên miền đó trong cấu hình mạng của môi trường; (2) tải ảnh rồi thêm vào `anh/` của bài trong kho, hoặc gửi vào phiên. Vẫn giao kịch bản và `elevenlabs.txt` nếu đã xong.
    - Diagram chưa dùng của bài thì ưu tiên dùng.
 6. **Lời mời cuối do chủ Trang chỉnh ở tập 7** (dùng làm mẫu ưu tiên cho phần I): "Bài phân tích về <chủ đề>, <ý> từ sách của <tác giả>, mọi người xem phần bình luận nha." Giữ ngắn, không thêm "gói thành viên" nếu chủ Trang không yêu cầu lại.
+6b. **Kịch bản rời rạc vì nhồi quá nhiều ý: BỚT Ý, không cắt chữ** (chủ Trang góp ý nhiều lần; tái phạm ở tập 8 bản 1 ngày 2026-10-19). Nguyên nhân của bản 1:
+   - Gom 7–8 ý lẻ còn sót của bài vào một reel.
+   - Mỗi cảnh một ý mới, kèm một ảnh mới.
+   - Khi quá 210 từ thì nén câu (bỏ chữ nối, chủ ngữ, viết kiểu "riêng thì đẹp, gộp lại rối mắt"), thay vì bỏ ý.
+   - Người chấm cũng đề xuất cắt chữ, và được làm theo.
+
+   Từ nay:
+   - **Một câu hỏi trung tâm.** Trước khi viết, ghi câu hỏi trung tâm vào `script.md`. Chỉ giữ ý trả lời trực tiếp câu hỏi đó: tối đa 1 nguồn gốc, 2–3 lý do/cơ chế, 1–2 việc làm, 1 câu chốt trả lời lại câu hỏi. Đếm số ý trước khi viết. Quá 6 ý nội dung (không tính mở và cảnh cuối) thì bỏ bớt.
+   - **Vượt thời lượng thì bỏ cả một ý hoặc một cảnh.** Không bỏ từ nối, chủ ngữ, không biến câu thành liệt kê. Thời lượng đến 75 giây là được dùng hết. Chủ Trang cũng cho phép dài hơn một chút nếu cần để câu trọn nghĩa, nhưng ưu tiên bỏ ý trước.
+   - **Mỗi cảnh (trừ cảnh 1) mở bằng từ nối hoặc tiếp ý câu trước:** "Đó là…", "Mà…", "Hơn nữa…", "Nhưng…", "Vì vậy…", "Vậy…". Cảnh nào mở ra chủ đề mới không liên quan câu trước thì cảnh đó thừa.
+   - **Ý gom từ phần còn sót của bài:** chỉ làm khi xâu được thành một câu hỏi; không xâu được thì báo chủ Trang, không gom.
+   - **Người chấm (mục 4b) phải chấm từng chỗ chuyển cảnh** (nối mượt hay gãy). Khi đề xuất rút ngắn, người chấm chỉ được đề xuất bỏ ý/cảnh, không được đề xuất bỏ chữ nối. Gặp đề xuất cắt chữ làm câu cụt thì không làm theo.
 7. Cuối lần chạy, ghi trong báo cáo cho chủ Trang rằng nhánh vừa push cần được gộp vào `main`. Gộp xong thì bước 1 nhẹ đi, nhưng vẫn phải làm.
 Chạy một lượt, không hỏi lại. Nếu thiếu đầu vào thì dừng và báo rõ thiếu gì (mục 9).
 

@@ -9,128 +9,92 @@
   ],
   "t_in_main": 0.0,
   "cut_from": 0.0,
-  "cut_len": 11.71,
+  "cut_len": 13.59,
   "first_frame": 1
  },
  {
-  "tag": "r02_dg1a",
-  "img": "dg1a",
-  "src": "source_dg1a.png",
-  "scenes": [
-   3
-  ],
-  "t_in_main": 11.71,
-  "cut_from": 7.260000000000001,
-  "cut_len": 5.7,
-  "first_frame": 2
- },
- {
-  "tag": "r03_dg1b",
+  "tag": "r02_dg1b",
   "img": "dg1b",
   "src": "source_dg1b.png",
   "scenes": [
-   4
+   3
   ],
-  "t_in_main": 17.41,
-  "cut_from": 5.699999999999999,
-  "cut_len": 6.949999999999999,
+  "t_in_main": 13.59,
+  "cut_from": 8.51,
+  "cut_len": 9.139999999999999,
   "first_frame": 2
  },
  {
-  "tag": "r04_dg2",
-  "img": "dg2",
-  "src": "source_dg2.png",
-  "scenes": [
-   5
-  ],
-  "t_in_main": 24.36,
-  "cut_from": 6.949999999999999,
-  "cut_len": 7.260000000000002,
-  "first_frame": 2
- },
- {
-  "tag": "r05_ad20",
-  "img": "ad20",
-  "src": "source_ad20.png",
-  "scenes": [
-   6
-  ],
-  "t_in_main": 31.62,
-  "cut_from": 7.260000000000002,
-  "cut_len": 5.080000000000002,
-  "first_frame": 2
- },
- {
-  "tag": "r06_ad21",
-  "img": "ad21",
-  "src": "source_ad21.png",
-  "scenes": [
-   7
-  ],
-  "t_in_main": 36.7,
-  "cut_from": 5.080000000000002,
-  "cut_len": 5.079999999999998,
-  "first_frame": 2
- },
- {
-  "tag": "r07_ad17",
+  "tag": "r03_ad17",
   "img": "ad17",
   "src": "source_ad17.png",
   "scenes": [
-   8
+   4
   ],
-  "t_in_main": 41.78,
-  "cut_from": 5.079999999999998,
-  "cut_len": 4.759999999999998,
+  "t_in_main": 22.73,
+  "cut_from": 9.14,
+  "cut_len": 9.14,
   "first_frame": 2
  },
  {
-  "tag": "r08_ad10",
+  "tag": "r04_ad21",
+  "img": "ad21",
+  "src": "source_ad21.png",
+  "scenes": [
+   5
+  ],
+  "t_in_main": 31.87,
+  "cut_from": 9.14,
+  "cut_len": 4.760000000000002,
+  "first_frame": 2
+ },
+ {
+  "tag": "r05_ad10",
   "img": "ad10",
   "src": "source_ad10.png",
   "scenes": [
-   9
+   6
   ],
-  "t_in_main": 46.54,
-  "cut_from": 4.759999999999998,
-  "cut_len": 5.079999999999998,
+  "t_in_main": 36.63,
+  "cut_from": 4.760000000000002,
+  "cut_len": 6.329999999999998,
   "first_frame": 2
  },
  {
-  "tag": "r09_ad18",
+  "tag": "r06_ad18",
   "img": "ad18",
   "src": "source_ad18.png",
   "scenes": [
-   10
+   7
   ],
-  "t_in_main": 51.62,
-  "cut_from": 5.079999999999998,
-  "cut_len": 6.330000000000005,
+  "t_in_main": 42.96,
+  "cut_from": 6.329999999999998,
+  "cut_len": 8.509999999999998,
   "first_frame": 2
  },
  {
-  "tag": "r10_ad15",
+  "tag": "r07_ad15",
   "img": "ad15",
   "src": "source_ad15.png",
   "scenes": [
-   11
+   8
   ],
-  "t_in_main": 57.95,
-  "cut_from": 6.330000000000005,
-  "cut_len": 5.699999999999996,
+  "t_in_main": 51.47,
+  "cut_from": 8.509999999999998,
+  "cut_len": 6.950000000000003,
   "first_frame": 2
  },
  {
-  "tag": "r11_ad8",
+  "tag": "r08_ad8",
   "img": "ad8",
   "src": "source_ad8.png",
   "scenes": [
-   12,
-   13
+   9,
+   10
   ],
-  "t_in_main": 63.65,
-  "cut_from": 5.699999999999996,
-  "cut_len": 13.649999999999999,
+  "t_in_main": 58.42,
+  "cut_from": 6.950000000000003,
+  "cut_len": 15.840000000000003,
   "first_frame": 2
  }
 ]

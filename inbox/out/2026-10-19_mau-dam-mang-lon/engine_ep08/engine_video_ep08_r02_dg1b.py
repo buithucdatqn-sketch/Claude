@@ -16,7 +16,7 @@ from silhouette import loose_contour  # noqa: E402
 
 SRC = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "source.png")
 OUT = sys.argv[2] if len(sys.argv) > 2 else HERE
-os.makedirs(os.path.join(OUT, "frames_r03_dg1b"), exist_ok=True)
+os.makedirs(os.path.join(OUT, "video"), exist_ok=True)
 
 W, H, SS = 1080, 1920, 2
 FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
@@ -344,6 +344,7 @@ class Brush:
         self.m = np.zeros((H * SS, W * SS), np.uint8)
         self.v = cam
         self.n = 0
+        self.circ = []
 
     def mask(self):
         return cv2.resize(self.m, (W, H), interpolation=cv2.INTER_AREA).astype(np.float32) / 255.0
@@ -361,7 +362,7 @@ class Brush:
         ramp = np.minimum(smoothstep(t / max(taper[0], 1e-3)), smoothstep((1 - t) / max(taper[1], 1e-3)))
         wv = w * (floor + (1 - floor) * ramp) * (1 + 0.14 * noise1d(rng, n, 40))
         for (x, y), ww in zip(P, wv):
-            cv2.circle(self.m, (int(x * SS), int(y * SS)), max(1, int(ww * SS / 2)), 255, -1, cv2.LINE_AA)
+            self.circ.append((int(x * SS), int(y * SS), max(1, int(ww * SS / 2))))
 
     def dashed_path(self, P, w=8, dash=(80, 150), gap=(16, 28), closed=False, amp=1.6):
         pts = list(P) + ([P[0]] if closed else [])
@@ -550,11 +551,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.7s", head="Lỗi hay gặp: mỗi phòng một màu", vo="Ngược lại, có nhà sơn mỗi phòng một màu, riêng thì đẹp, gộp lại rối mắt.",
-         cam=((545, 281), 1.0, (540, 900)), dark=False, dd=[], move="hold"),
-    dict(t="5.7–12.65s", head="Albers (1963): mảng lớn lấn át mảng nhỏ", vo="Josef Albers chỉ ra mảng màu lớn luôn lấn át mảng nhỏ. Chia đều thì chẳng màu nào làm chủ.",
+    dict(t="0–8.51s", head="Căn hộ mẫu: The Green Box, Berlin", vo="Đó là câu bác hàng xóm hỏi, khi bạn tụi mình sơn cả dãy tủ một màu xanh rêu, theo mẫu căn hộ trong ảnh.",
+         cam=((545, 281), 1.0, (540, 900)), dark=True, dd=[], move="hold"),
+    dict(t="8.51–17.65s", head="Albers (1963): mảng lớn lấn át mảng nhỏ", vo="Mà Josef Albers từng chỉ ra rằng mảng màu lớn luôn lấn át mảng màu nhỏ, và cả dãy tủ chính là một mảng màu rất lớn.",
          cam=((545, 281), 1.0, (540, 900)), dark=False, dd=[], move="pull"),
-    dict(t="12.65–13.15s", head="end", vo="",
+    dict(t="17.65–18.15s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
@@ -592,63 +593,198 @@ def doodle(i, wb, text, cam):
             _stamp(wb, LAYER[k], RAD)
 
 
-def render_scene(i):
-    sc = SCENES[i]
-    cam = Cam(*sc["cam"])
-    key = "clean" if i == END else ("dark" if sc["dark"] else "plain")
-    rr = cam.render(*BOARDS[key])
-    base, fabm = rr[..., :3], 1.0 - np.clip(rr[..., 3] / 255.0, 0, 1)
-    text = Text()
-    wb = Brush(cam)
-    top, bot = cam.card_top, cam.card_bottom
-
-    if i == END:
-        put_credit(text, (W // 2, bot + 30), 34, 225, "ma")
-        for y_, s_, sz_, f_ in END_LINES:
-            text.put((W // 2, y_), s_, sz_, f_, "ma")
-        qa_text(i, np.array(text.img, np.float32) / 255)
-        return compose(base, np.array(text.img, np.float32) / 255, fabm)
-
-    doodle(i, wb, text, cam)
-    st, sb, warn = text_layout(sc, cam, text)
-    for w_ in warn:
-        print(f"CẢNH BÁO cảnh {i + 1}: {w_}", flush=True)
-    qa_text(i, np.array(text.img, np.float32) / 255)
-    base = scrim(base, top=st, bottom=sb)
-    white = np.maximum(wb.mask(), np.array(text.img, np.float32) / 255)
-    return compose(base, white, fabm)
-
-
 BOARDS["plain"] = make_board(1.0)
 BOARDS["dark"] = make_board(0.86)
-BOARDS["clean"] = make_board(1.0)
-frames = []
-for i in range(len(SCENES)):
-    im = render_scene(i)
-    im.save(os.path.join(OUT, "frames_r03_dg1b", f"scene_{i + 1}.png"))
-    frames.append(im)
+BOARDS["clean"] = BOARDS["plain"]
 
-# ---------------- contact sheet ----------------
-PW, PH, GAP, MX, TOP = 360, 640, 34, 50, 200
-cols = 4
-rows = (len(SCENES) + cols - 1) // cols
-SHW = MX * 2 + cols * PW + (cols - 1) * GAP
-SHH = TOP + rows * (PH + 86) + 250
-sheet = Image.new("RGB", (SHW, SHH), (30, 27, 24))
-d = ImageDraw.Draw(sheet)
-d.text((MX, 38), "AH Decode · Cân bằng thị giác — bảng phân cảnh v7", font=F(60), fill=(255, 255, 255))
-d.text((MX, 118), "Ảnh dán bằng băng giấy ở giữa mép trên · không viền · nền trắng trơn · chữ nâu đậm trên nền, trắng trên ảnh", font=F(34), fill=(200, 194, 186))
-d.text((MX, 158), "Camera zoom vào ảnh khi nói đến chi tiết · ~28 giây · nét vẽ chạy animation theo nhịp lời đọc", font=F(34), fill=(200, 194, 186))
-for i, fr in enumerate(frames):
-    r, c = divmod(i, cols)
-    x, y = MX + c * (PW + GAP), TOP + r * (PH + 86)
-    sheet.paste(fr.resize((PW, PH), Image.LANCZOS), (x, y))
-    nm = f"Cảnh {i + 1}"
-    d.text((x, y + PH + 10), nm, font=F(40), fill=(255, 255, 255))
-    d.text((x + 150, y + PH + 16), SCENES[i]["t"], font=F(32), fill=(200, 194, 186))
-fy = TOP + rows * (PH + 86) + 10
-d.text((MX, fy), "Nền trắng trơn · băng keo giấy thay ghim · header AH DECODE · bỏ “Bước n”", font=F(32), fill=(255, 255, 255))
-d.text((MX, fy + 44), "Cảnh zoom kín ảnh: chữ trắng viết lên ảnh (có phủ tối nhẹ).", font=F(32), fill=(225, 220, 212))
-d.text((MX, fy + 88), "Ảnh tối ~14% ở cảnh có nét vẽ; cảnh 1, 6, 7 giữ ảnh nguyên bản.", font=F(32), fill=(225, 220, 212))
-sheet.save(os.path.join(OUT, "storyboard_r03_dg1b.png"))
-print("fabric", tuple(int(x) for x in FAB), "sheet", sheet.size)
+import subprocess, re
+FPS = 30
+TRANS = 0.7          # chuyển cảnh cũ (khi cả hai cảnh dùng camera rộng hoặc cảnh đầu)
+TRANS_MOVE = 1.1     # chuyển cảnh có lia/zoom camera trên cùng ảnh: chậm hơn để không chóng mặt
+# Chuyển động camera trong cảnh (Ken Burns nhẹ), khoá `move` trong SCENES:
+#   "push" đẩy vào chậm, "pull" lùi ra chậm, "pan_l"/"pan_r" lia ngang, "pan_u"/"pan_d" lia dọc, "hold" đứng yên.
+# Không khai báo thì tự xoay vòng MOVES theo số thứ tự cảnh. Biên độ nhỏ (zoom 6%, lia 4% khung) để mắt không mỏi.
+MOVES = ["push", "pan_r", "pull", "pan_l", "push", "pan_u", "hold", "pan_d"]
+MOVE_Z, MOVE_P = 0.06, 44.0
+DARKC = DARK
+
+
+def sm(x):
+    return float(smoothstep(np.float32(x)))
+
+
+def times(t):
+    a, b = re.findall(r"[\d.]+", t.replace("–", "-"))[:2]
+    return float(a), float(b)
+
+
+def layout(i):
+    sc = SCENES[i]
+    cam = Cam(*sc["cam"])
+    key = "dark" if sc["dark"] else "plain"
+    if i == END:
+        key = "clean"
+    wb = Brush(cam)
+    td, tm = Text(), Text()
+    top, bot = cam.card_top, cam.card_bottom
+    st, sb = False, False
+    if i == END:
+        put_credit(tm, (W // 2, bot + 30), 34, 225, "ma")
+        for y_, s_, sz_, f_ in END_LINES:
+            tm.put((W // 2, y_), s_, sz_, f_, "ma")
+    else:
+        doodle(i, wb, td, cam)
+        st, sb, warn = text_layout(sc, cam, tm)
+        for w_ in warn:
+            print(f"CẢNH BÁO cảnh {i + 1}: {w_}", flush=True)
+    qa_text(i, np.array(tm.img, np.float32) / 255, np.array(td.img, np.float32) / 255)
+    a, b = times(sc["t"])
+    f = scrim(np.ones((H, 1, 3), np.float32), top=st, bottom=sb)
+    full = np.zeros((H * SS, W * SS), np.uint8)
+    for x, y, r in wb.circ:
+        cv2.circle(full, (x, y), r, 255, -1, cv2.LINE_AA)
+    fullm = cv2.resize(full, (W, H), interpolation=cv2.INTER_AREA).astype(np.float32) / 255
+    tmm = np.array(tm.img, np.float32) / 255
+    tdm = np.array(td.img, np.float32) / 255
+    return dict(sc=sc, cam=sc["cam"], key=key, wb=wb, tm=tmm, td=tdm, f=f, t0=a, t1=b,
+                final=np.maximum(fullm, np.maximum(tmm, tdm)), dd=np.maximum(fullm, tdm), n=len(wb.circ))
+
+
+L = [layout(i) for i in range(len(SCENES))]
+print("layouts done", [l["n"] for l in L])
+TOTAL = L[-1]["t1"] + 1.0  # hold last frame 1s extra
+
+
+def render_cam(key, cam):
+    return cam.render(*BOARDS[key])
+
+
+def move_of(i):
+    sc = SCENES[i]
+    if i == END:
+        return sc.get("move", "push")
+    return sc.get("move", MOVES[i % len(MOVES)])
+
+
+def cam_at(i, q):
+    """camera của cảnh i tại tiến độ q (0 đầu cảnh, 1 cuối cảnh) sau khi cộng chuyển động nhẹ"""
+    (f, z, a) = SCENES[i]["cam"]
+    mv = move_of(i)
+    q = min(max(q, 0.0), 1.0)
+    if mv == "push":
+        z = z * (1 + MOVE_Z * q)
+    elif mv == "pull":
+        z = z * (1 + MOVE_Z * (1 - q))
+    elif mv in ("pan_l", "pan_r", "pan_u", "pan_d"):
+        z = z * (1 + MOVE_Z * 0.5)   # phóng nhẹ để lia không lộ mép ảnh
+        d = MOVE_P * (q - 0.5) * 2
+        a = (a[0] + (d if mv == "pan_l" else -d if mv == "pan_r" else 0),
+             a[1] + (d if mv == "pan_u" else -d if mv == "pan_d" else 0))
+    return (f, z, a)
+
+
+def follow(mask, c_base, c_now):
+    """dời lớp nét (vẽ theo camera gốc của cảnh) cho khớp camera hiện tại: cùng phép co giãn + tịnh tiến"""
+    (f0, z0, a0), (f1, z1, a1) = c_base, c_now
+    if abs(z1 - z0) < 1e-6 and abs(a1[0] - a0[0]) < 1e-3 and abs(a1[1] - a0[1]) < 1e-3 and f0 == f1:
+        return mask
+    k = z1 / z0
+    b0, b1 = Cam(f0, z0, a0), Cam(f1, z1, a1)
+    p = (0.0, 0.0)
+    x0, y0 = b0.pt(p)
+    x1, y1 = b1.pt(p)
+    M = np.float32([[k, 0, x1 - k * x0], [0, k, y1 - k * y0]])
+    return cv2.warpAffine(mask, M, (W, H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_CONSTANT, borderValue=0)
+
+
+def lerp_t(c0, c1, p):
+    """nội suy camera dạng (điểm nhìn trên ảnh, zoom, neo trên khung); zoom theo thang log"""
+    (f0, z0, a0), (f1, z1, a1) = c0, c1
+    return ((f0[0] + (f1[0] - f0[0]) * p, f0[1] + (f1[1] - f0[1]) * p),
+            math.exp(math.log(z0) * (1 - p) + math.log(z1) * p),
+            (a0[0] + (a1[0] - a0[0]) * p, a0[1] + (a1[1] - a0[1]) * p))
+
+
+def lerp_cam(c0, c1, p):
+    (f0, z0, a0), (f1, z1, a1) = c0, c1
+    z = math.exp(math.log(z0) * (1 - p) + math.log(z1) * p)
+    f = (f0[0] + (f1[0] - f0[0]) * p, f0[1] + (f1[1] - f0[1]) * p)
+    a = (a0[0] + (a1[0] - a0[0]) * p, a0[1] + (a1[1] - a0[1]) * p)
+    return Cam(f, z, a)
+
+
+proc = subprocess.Popen(
+    ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
+     "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-t", f"{TOTAL:.2f}",
+     "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-pix_fmt", "yuv420p", "-movflags", "+faststart",
+     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "r02_dg1b_silent.mp4")], stdin=subprocess.PIPE)
+
+nframes = int(TOTAL * FPS)
+cur = -1
+acc = None
+ptr = 0
+for fi in range(nframes):
+    t = fi / FPS
+    i = max(k for k in range(len(L)) if L[k]["t0"] <= t + 1e-6)
+    ly = L[i]
+    u = t - ly["t0"]
+    dur = ly["t1"] - ly["t0"]
+    if i != cur:
+        cur, acc, ptr = i, np.zeros((H * SS, W * SS), np.uint8), 0
+    moving = i > 0 and L[i - 1]["cam"] != ly["cam"]
+    tr = TRANS_MOVE if moving else TRANS
+    q = (u - (tr if i > 0 else 0.0)) / max(0.5, dur - (tr if i > 0 else 0.0))
+    c_now = cam_at(i, q)
+    if i == 0:
+        p, trans = 1.0, 0.0
+        cam = Cam(*c_now)
+        rr = render_cam(ly["key"], cam)
+        fac = ly["f"]
+        a_old = 0.0
+        a_main = sm((u - 0.15) / 0.5)
+        t_start = 0.0
+    else:
+        prev = L[i - 1]
+        p = sm(u / tr)
+        c_prev_end = cam_at(i - 1, 1.0)
+        if p < 1:
+            c_now = lerp_t(c_prev_end, cam_at(i, 0.0), p)
+        cam = Cam(*c_now)
+        r1 = render_cam(ly["key"], cam)
+        if prev["key"] != ly["key"] and p < 1:
+            r0 = render_cam(prev["key"], cam)
+            rr = r0 * (1 - p) + r1 * p
+        else:
+            rr = r1
+        fac = prev["f"] * (1 - p) + ly["f"] * p
+        a_old = 1 - sm(u / 0.25)
+        a_main = sm((u - (tr - 0.30)) / 0.30)
+        t_start = tr + 0.15
+    base, fabm = rr[..., :3] * fac, 1.0 - np.clip(rr[..., 3] / 255.0, 0, 1)
+    # progressive strokes
+    reveal_end = max(t_start + 0.8, 0.62 * dur)
+    r = np.clip((u - t_start) / (reveal_end - t_start), 0, 1)
+    r = r * r * (3 - 2 * r) * 0.35 + r * 0.65
+    tgt = int(ly["n"] * r)
+    if tgt > ptr:
+        for x, y, rad in ly["wb"].circ[ptr:tgt]:
+            cv2.circle(acc, (x, y), rad, 255, -1, cv2.LINE_AA)
+        ptr = tgt
+    sm_mask = cv2.resize(acc, (W, H), interpolation=cv2.INTER_AREA).astype(np.float32) / 255
+    a_lab = sm((r - 0.55) / 0.2) if ly["n"] else 0.0
+    # nét và nhãn doodle bám theo ảnh khi camera trôi; chữ tiêu đề, phụ đề đứng yên trên khung
+    dd = follow(np.maximum(sm_mask, ly["td"] * a_lab), ly["cam"], c_now)
+    layer = np.maximum(dd, ly["tm"] * a_main)
+    if a_old > 0.002:
+        old = L[i - 1]
+        layer = np.maximum(layer, np.maximum(follow(old["dd"], old["cam"], c_now), old["tm"]) * a_old)
+    # fade out at very end
+    img = compose(base, layer, fabm)
+    proc.stdin.write(np.asarray(img).tobytes())
+    if fi % 90 == 0:
+        print("frame", fi, "/", nframes, flush=True)
+        if fi in (0, 240, 480, 720):
+            img.save(os.path.join(OUT, "video", f"probe_{fi}.png"))
+proc.stdin.close()
+proc.wait()
+print("done")

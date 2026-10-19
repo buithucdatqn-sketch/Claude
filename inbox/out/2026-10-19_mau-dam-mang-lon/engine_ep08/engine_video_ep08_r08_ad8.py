@@ -54,11 +54,11 @@ SW, SH = src.size
 
 # ---------------- board geometry (2x master, 1x = reel canvas) ----------------
 B2W, B2H = W * 2, H * 2
-CARD_W2, BORDER2 = 1920, 0  # theo tỷ lệ ảnh của run
+CARD_W2, BORDER2 = 1440, 0  # theo tỷ lệ ảnh của run
 PH_W2 = CARD_W2 - 2 * BORDER2
 PH_H2 = int(round(PH_W2 * SH / SW))
 CARD_H2 = PH_H2 + 2 * BORDER2
-C2 = (B2W / 2, 1810.0)
+C2 = (B2W / 2, 1880.0)
 ANGLE = 1.2  # degrees, counter-clockwise (card is hung very slightly crooked)
 S2 = PH_W2 / SW
 ROT = cv2.getRotationMatrix2D(C2, ANGLE, 1.0)
@@ -551,12 +551,12 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.33s", head="Một mặt thoáng: khối xanh thành mảng tối", vo="còn nhà bạn tụi mình chỉ một mặt thoáng hướng tây, nên khối xanh dễ thành mảng tối.",
-         cam=((1250, 800), 2.9, (540, 888)), dark=True, dd=[], move="hold"),
-    dict(t="6.33–12.03s", head="Thử ở nhà mình: nhạt hơn mẫu một bậc", vo="Ở nhà mình, màu nào phủ mảng lớn thì chọn nhạt hơn mẫu thử một bậc.",
-         cam=((1250, 800), 2.9, (540, 888)), dark=True, dd=[], move="push"),
-    dict(t="12.03–12.53s", head="end", vo="",
-         cam=END_SAFE, dark=False, dd=[], move="hold"),
+    dict(t="0–6.95s", head="Thử ở nhà mình: nhạt hơn mẫu một bậc", vo="Vì vậy, màu nào sẽ phủ lên mảng lớn, mọi người cứ chọn nhạt hơn tấm mẫu thử một bậc.",
+         cam=((1100, 1500), 2.3, (540, 1132)), dark=True, dd=[], move="hold"),
+    dict(t="6.95–15.46s", head="Ngộp hay không: còn tùy diện tích, ánh sáng", vo="Vậy khối tủ xanh có ngộp không, theo tụi mình, còn tùy nó to cỡ nào so với phòng và nhà đủ sáng hay không.",
+         cam=((1100, 1500), 2.3, (540, 1132)), dark=True, dd=[], move="pull"),
+    dict(t="15.46–21.79s", head="end", vo="",
+         cam=END_SAFE, dark=False, dd=[], move="push"),
 ]
 END = len(SCENES) - 1
 BOARDS = {}
@@ -717,7 +717,7 @@ proc = subprocess.Popen(
     ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
      "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-t", f"{TOTAL:.2f}",
      "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-pix_fmt", "yuv420p", "-movflags", "+faststart",
-     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "r10_ad15_silent.mp4")], stdin=subprocess.PIPE)
+     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "r08_ad8_silent.mp4")], stdin=subprocess.PIPE)
 
 nframes = int(TOTAL * FPS)
 cur = -1

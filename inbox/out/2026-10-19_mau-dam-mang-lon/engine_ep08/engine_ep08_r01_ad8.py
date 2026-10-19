@@ -550,11 +550,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–4.45s", head="Khối tủ xanh to: ở lâu có ngộp?", vo="Sơn nguyên khối tủ to màu xanh, ở lâu có ngộp không?",
+    dict(t="0–5.08s", head="Khối tủ xanh to: ở lâu có ngộp?", vo="Sơn nguyên một khối tủ to màu xanh, ở lâu có thấy ngộp không?",
          cam=WIDE, dark=False, dd=[], move="push"),
-    dict(t="4.45–11.71s", head="Căn hộ mẫu: The Green Box, Berlin", vo="Bác hàng xóm hỏi vậy khi bạn tụi mình sơn tủ xanh rêu theo căn hộ The Green Box ở Berlin.",
+    dict(t="5.08–13.59s", head="Căn hộ mẫu: The Green Box, Berlin", vo="Đó là câu bác hàng xóm hỏi, khi bạn tụi mình sơn cả dãy tủ một màu xanh rêu, theo mẫu căn hộ trong ảnh.",
          cam=((1450, 1000), 2.3, (798, 880)), dark=True, dd=[], move="pan_d"),
-    dict(t="11.71–12.21s", head="end", vo="",
+    dict(t="13.59–14.09s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

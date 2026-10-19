@@ -54,7 +54,7 @@ SW, SH = src.size
 
 # ---------------- board geometry (2x master, 1x = reel canvas) ----------------
 B2W, B2H = W * 2, H * 2
-CARD_W2, BORDER2 = 1440, 0  # theo tỷ lệ ảnh của run
+CARD_W2, BORDER2 = 1280, 0  # theo tỷ lệ ảnh của run
 PH_W2 = CARD_W2 - 2 * BORDER2
 PH_H2 = int(round(PH_W2 * SH / SW))
 CARD_H2 = PH_H2 + 2 * BORDER2
@@ -551,11 +551,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.08s", head="Berlin: hai mặt kính cao kịch trần", vo="Ánh sáng cũng vậy, căn hộ Berlin có hai mặt kính cao kịch trần,",
-         cam=((1200, 1600), 2.3, (568, 1224)), dark=False, dd=[], move="hold"),
-    dict(t="5.08–11.41s", head="Một mặt thoáng: khối xanh thành mảng tối", vo="còn nhà bạn tụi mình chỉ một mặt thoáng hướng tây, nên khối xanh dễ thành mảng tối.",
-         cam=((1200, 1600), 2.3, (568, 1224)), dark=True, dd=[], move="pan_l"),
-    dict(t="11.41–11.91s", head="end", vo="",
+    dict(t="0–9.14s", head="Albers (1963): mảng lớn lấn át mảng nhỏ", vo="Mà Josef Albers từng chỉ ra rằng mảng màu lớn luôn lấn át mảng màu nhỏ, và cả dãy tủ chính là một mảng màu rất lớn.",
+         cam=((1000, 1100), 2.3, (568, 900)), dark=False, dd=[], move="hold"),
+    dict(t="9.14–18.28s", head="Mảng lớn trông đậm hơn mẫu thử", vo="Hơn nữa, một màu khi phủ lên mảng lớn bao giờ cũng trông đậm hơn trên tấm mẫu nhỏ, nên sơn xong thường đậm hơn mình tưởng.",
+         cam=((1000, 1100), 2.3, (568, 900)), dark=True, dd=[], move="push"),
+    dict(t="18.28–18.78s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
@@ -717,7 +717,7 @@ proc = subprocess.Popen(
     ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
      "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-t", f"{TOTAL:.2f}",
      "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-pix_fmt", "yuv420p", "-movflags", "+faststart",
-     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "r09_ad18_silent.mp4")], stdin=subprocess.PIPE)
+     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "r03_ad17_silent.mp4")], stdin=subprocess.PIPE)
 
 nframes = int(TOTAL * FPS)
 cur = -1
