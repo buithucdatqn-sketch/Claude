@@ -1,183 +1,236 @@
 [
- {
-  "tap": 1,
-  "nguyen_ly": "Cân bằng thị giác (đối xứng khung + lõi bất đối xứng)",
-  "ghi_chu": "Bản mẫu của engine (reel1_source_example.png); ghi bổ sung để không lặp lại. Không có URL bài nguồn.",
-  "ngay": null,
-  "url_bai": null,
-  "url_anh": null
- },
- {
-  "tap": 2,
-  "slug": "tam-nhin-noi-tru",
-  "ngay": "2026-10-06",
-  "nguyen_ly": "Tầm nhìn và nơi trú ẩn (prospect–refuge)",
-  "tap_chi": "Dwell",
-  "du_an": "Anderson Residence, Rancho Palos Verdes",
-  "studio": "Aaron G. Green",
-  "nhiep_anh": "Sterling Reed",
-  "url_bai": "https://www.dwell.com/article/anderson-residence-aaron-g-green-midcentury-los-angeles-real-estate-1023b1c7",
-  "url_anh": "https://images2.dwell.com/photos/6818593201364905984/7503510078167564288/original.jpg",
-  "nguon": [
-   "Dosen & Ostwald (2016) City, Territory and Architecture 3:4, doi:10.1186/s40410-016-0033-1 (toàn văn)",
-   "Hildebrand (1999) Origins of Architectural Pleasure, UC Press (trang NXB + bài điểm sách)",
-   "Dawes & Ostwald (2014) Building and Environment 80:228-240, doi:10.1016/j.buildenv.2014.05.026 (abstract)",
-   "Appleton (1984) Landscape Journal 3(2):91-103 (abstract)"
-  ],
-  "trang_thai": "lech_trong_tam_can_lam_lai",
-  "thu_muc": "inbox/out/2026-10-06_tam-nhin-noi-tru/",
-  "ghi_chu": "Làm lại tập 2 theo yêu cầu người dùng; bản Gestalt (Casa Museo, Yellowtrace) bị huỷ và đã xoá khỏi inbox/out (còn trong lịch sử git). Nguyên lý Gestalt gần nhau/giống nhau và dự án Casa Museo coi như CHƯA dùng. | 2026-10-06: người dùng đánh giá lệch trọng tâm (lý thuyết kiến trúc prospect–refuge, không phải nội thất/decor). Không đăng; tập 2 cần làm lại theo mục 1a. Ảnh Anderson Residence vẫn tính là đã dùng."
- },
- {
-  "tap": 3,
-  "slug": "dang-cong-goc-nhon",
-  "ngay": "2026-10-06",
-  "nguyen_ly": "Dáng cong và góc sắc của đồ nội thất (contour bias / preference for curvature)",
-  "nhom": "Đồ nội thất: dáng cong và góc cạnh",
-  "tap_chi": "Yellowtrace",
-  "du_an": "The Twenty Two New York",
-  "studio": "Child Studio",
-  "nhiep_anh": "Alixe Lay",
-  "url_bai": "https://www.yellowtrace.com.au/child-studio-the-twenty-two-new-york-hotel-members-club/",
-  "url_anh": "https://assets.yellowtrace.com.au/wp-content/uploads/2026/09/10122909/Yellowtrace-Child-Studio-The-Twenty-Two-New-York-Hotel-Members-Club-Photo-Alixe-Lay-37_opt80.jpg",
-  "nguon": [
-   "Bar & Neta (2006) Psychological Science 17(8):645-648, doi:10.1111/j.1467-9280.2006.01759.x (toàn văn)",
-   "Gómez-Puerto, Munar & Nadal (2016) Front. Hum. Neurosci. 9:712, doi:10.3389/fnhum.2015.00712 (toàn văn)",
-   "Lidwell, Holden & Butler (2010) Universal Principles of Design, Rockport, mục Contour Bias (phần xem trước)",
-   "Vartanian et al. (2013) PNAS 110(Suppl 2):10446-10453, doi:10.1073/pnas.1301227110 (metadata + mô tả thứ cấp; chỉ dùng trong caption)"
-  ],
-  "trang_thai": "ban_nhap_cho_duyet",
-  "thu_muc": "inbox/out/2026-10-06_dang-cong-goc-nhon/",
-  "ghi_chu": "Tập làm theo trọng tâm nội thất/decor (mục 1a), thay cho tập 2 bị đánh giá lệch trọng tâm."
- },
- {
-  "tap": 4,
-  "slug": "chenh-sang-vat-nen",
-  "ngay": "2026-10-15",
-  "nguyen_ly": "Chênh độ sáng giữa vật và nền (value contrast; Munsell, Albers, Kilmer & Kilmer)",
-  "nhom": "Phối màu: độ sáng, đồ bày trên kệ",
-  "bai_kho": {
-   "duong_dan": "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/bai-01.md",
-   "nhanh": "AH-Interior-notes",
-   "commit": "65b5427c55046c43f02d8e7ec0829e03ae0fdd03"
+  {
+    "tap": 1,
+    "nguyen_ly": "Cân bằng thị giác (đối xứng khung + lõi bất đối xứng)",
+    "ghi_chu": "Bản mẫu của engine (reel1_source_example.png); ghi bổ sung để không lặp lại. Không có URL bài nguồn.",
+    "ngay": null,
+    "url_bai": null,
+    "url_anh": null
   },
-  "anh_kho": [
-   "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/07-doodle-tuong-phan-thu-vien.jpg"
-  ],
-  "du_an": "The Green Box, Berlin",
-  "studio": "Ester Bruzkus Architekten",
-  "nhiep_anh": "Robert Rieger",
-  "nguon": [
-   "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 5 (theo bài)",
-   "Albers (1963) Interaction of Color, Yale UP (theo bài)"
-  ],
-  "trang_thai": "cho_ghi_am",
-  "thu_muc": "inbox/out/2026-10-15_chenh-sang-vat-nen/",
-  "ghi_chu": "Tập đầu tiên lấy từ KHO BÀI (bài 01; chỉ ý 'Chênh sáng mới làm đồ vật hiện ra' đã dùng). Ý chính: bài học 2 'Chênh sáng mới làm đồ vật hiện ra'. Nhãn gốc 'tương phản sắc đô' trên ảnh 07 thiếu dấu nên không dùng. Đã có bản video không tiếng làm theo quy trình cũ (reel_chenh-sang-vat-nen_silent.mp4); khi có ghi âm thì dựng lại video theo nhịp giọng đọc (mục 5c) thành reel_chenh-sang-vat-nen_final.mp4.",
-  "y_bai": {
-   "muc": "Chênh sáng mới làm đồ vật hiện ra",
-   "tom_tat": "Bài học 2: độ sáng quyết định đồ tách khỏi nền; đồ bày trên kệ đậm nên sáng màu"
+  {
+    "tap": 2,
+    "slug": "tam-nhin-noi-tru",
+    "ngay": "2026-10-06",
+    "nguyen_ly": "Tầm nhìn và nơi trú ẩn (prospect–refuge)",
+    "tap_chi": "Dwell",
+    "du_an": "Anderson Residence, Rancho Palos Verdes",
+    "studio": "Aaron G. Green",
+    "nhiep_anh": "Sterling Reed",
+    "url_bai": "https://www.dwell.com/article/anderson-residence-aaron-g-green-midcentury-los-angeles-real-estate-1023b1c7",
+    "url_anh": "https://images2.dwell.com/photos/6818593201364905984/7503510078167564288/original.jpg",
+    "nguon": [
+      "Dosen & Ostwald (2016) City, Territory and Architecture 3:4, doi:10.1186/s40410-016-0033-1 (toàn văn)",
+      "Hildebrand (1999) Origins of Architectural Pleasure, UC Press (trang NXB + bài điểm sách)",
+      "Dawes & Ostwald (2014) Building and Environment 80:228-240, doi:10.1016/j.buildenv.2014.05.026 (abstract)",
+      "Appleton (1984) Landscape Journal 3(2):91-103 (abstract)"
+    ],
+    "trang_thai": "lech_trong_tam_can_lam_lai",
+    "thu_muc": "inbox/out/2026-10-06_tam-nhin-noi-tru/",
+    "ghi_chu": "Làm lại tập 2 theo yêu cầu người dùng; bản Gestalt (Casa Museo, Yellowtrace) bị huỷ và đã xoá khỏi inbox/out (còn trong lịch sử git). Nguyên lý Gestalt gần nhau/giống nhau và dự án Casa Museo coi như CHƯA dùng. | 2026-10-06: người dùng đánh giá lệch trọng tâm (lý thuyết kiến trúc prospect–refuge, không phải nội thất/decor). Không đăng; tập 2 cần làm lại theo mục 1a. Ảnh Anderson Residence vẫn tính là đã dùng."
   },
-  "y_con_lai_cua_bai": [
-   "Nền lùi lại, màu nhấn dồn vào một khối (bài học 1)",
-   "Một màu chủ đạo, hai màu phụ đi vòng quanh (bài học 3)"
-  ]
- },
- {
-  "tap": 5,
-  "slug": "nen-lui-mau-don-mot-khoi",
-  "ngay": "2026-10-15",
-  "nguyen_ly": "Nền lùi, màu nhấn dồn vào một khối (cách 1 phân bổ màu; Kilmer & Kilmer, Albers)",
-  "nhom": "Phối màu: phân bổ màu",
-  "bai_kho": {
-   "duong_dan": "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/bai-01.md",
-   "nhanh": "AH-Interior-notes",
-   "commit": "65b5427c55046c43f02d8e7ec0829e03ae0fdd03"
+  {
+    "tap": 3,
+    "slug": "dang-cong-goc-nhon",
+    "ngay": "2026-10-06",
+    "nguyen_ly": "Dáng cong và góc sắc của đồ nội thất (contour bias / preference for curvature)",
+    "nhom": "Đồ nội thất: dáng cong và góc cạnh",
+    "tap_chi": "Yellowtrace",
+    "du_an": "The Twenty Two New York",
+    "studio": "Child Studio",
+    "nhiep_anh": "Alixe Lay",
+    "url_bai": "https://www.yellowtrace.com.au/child-studio-the-twenty-two-new-york-hotel-members-club/",
+    "url_anh": "https://assets.yellowtrace.com.au/wp-content/uploads/2026/09/10122909/Yellowtrace-Child-Studio-The-Twenty-Two-New-York-Hotel-Members-Club-Photo-Alixe-Lay-37_opt80.jpg",
+    "nguon": [
+      "Bar & Neta (2006) Psychological Science 17(8):645-648, doi:10.1111/j.1467-9280.2006.01759.x (toàn văn)",
+      "Gómez-Puerto, Munar & Nadal (2016) Front. Hum. Neurosci. 9:712, doi:10.3389/fnhum.2015.00712 (toàn văn)",
+      "Lidwell, Holden & Butler (2010) Universal Principles of Design, Rockport, mục Contour Bias (phần xem trước)",
+      "Vartanian et al. (2013) PNAS 110(Suppl 2):10446-10453, doi:10.1073/pnas.1301227110 (metadata + mô tả thứ cấp; chỉ dùng trong caption)"
+    ],
+    "trang_thai": "ban_nhap_cho_duyet",
+    "thu_muc": "inbox/out/2026-10-06_dang-cong-goc-nhon/",
+    "ghi_chu": "Tập làm theo trọng tâm nội thất/decor (mục 1a), thay cho tập 2 bị đánh giá lệch trọng tâm."
   },
-  "anh_kho": [
-   "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/04-doodle-nen-lui.jpg"
-  ],
-  "du_an": "The Green Box, Berlin",
-  "studio": "Ester Bruzkus Architekten",
-  "nhiep_anh": "Robert Rieger",
-  "nguon": [
-   "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 5 (theo bài)",
-   "Albers (1963) Interaction of Color, Yale UP (theo bài)"
-  ],
-  "trang_thai": "cho_ghi_am",
-  "thu_muc": "inbox/out/2026-10-15_nen-lui-mau-don-mot-khoi/",
-  "y_bai": {
-   "muc": "Nền lùi lại, màu nhấn dồn vào một khối",
-   "tom_tat": "Bài học 1: tường/sàn trung tính lùi về nền, màu mạnh dồn vào một khối; lại gần thì nền và nhấn đảo vai"
+  {
+    "tap": 4,
+    "slug": "chenh-sang-vat-nen",
+    "ngay": "2026-10-15",
+    "nguyen_ly": "Chênh độ sáng giữa vật và nền (value contrast; Munsell, Albers, Kilmer & Kilmer)",
+    "nhom": "Phối màu: độ sáng, đồ bày trên kệ",
+    "bai_kho": {
+      "duong_dan": "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/bai-01.md",
+      "nhanh": "AH-Interior-notes",
+      "commit": "65b5427c55046c43f02d8e7ec0829e03ae0fdd03"
+    },
+    "anh_kho": [
+      "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/07-doodle-tuong-phan-thu-vien.jpg"
+    ],
+    "du_an": "The Green Box, Berlin",
+    "studio": "Ester Bruzkus Architekten",
+    "nhiep_anh": "Robert Rieger",
+    "nguon": [
+      "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 5 (theo bài)",
+      "Albers (1963) Interaction of Color, Yale UP (theo bài)"
+    ],
+    "trang_thai": "cho_ghi_am",
+    "thu_muc": "inbox/out/2026-10-15_chenh-sang-vat-nen/",
+    "ghi_chu": "Tập đầu tiên lấy từ KHO BÀI (bài 01; chỉ ý 'Chênh sáng mới làm đồ vật hiện ra' đã dùng). Ý chính: bài học 2 'Chênh sáng mới làm đồ vật hiện ra'. Nhãn gốc 'tương phản sắc đô' trên ảnh 07 thiếu dấu nên không dùng. Đã có bản video không tiếng làm theo quy trình cũ (reel_chenh-sang-vat-nen_silent.mp4); khi có ghi âm thì dựng lại video theo nhịp giọng đọc (mục 5c) thành reel_chenh-sang-vat-nen_final.mp4.",
+    "y_bai": {
+      "muc": "Chênh sáng mới làm đồ vật hiện ra",
+      "tom_tat": "Bài học 2: độ sáng quyết định đồ tách khỏi nền; đồ bày trên kệ đậm nên sáng màu"
+    },
+    "y_con_lai_cua_bai": [
+      "Nền lùi lại, màu nhấn dồn vào một khối (bài học 1)",
+      "Một màu chủ đạo, hai màu phụ đi vòng quanh (bài học 3)"
+    ]
   },
-  "y_con_lai_cua_bai": [
-   "Một màu chủ đạo, hai màu phụ đi vòng quanh (bài học 3)"
-  ],
-  "ghi_chu": "Giai đoạn 1 (chưa dựng video, chờ INBOX/audio/nen-lui-mau-don-mot-khoi.mp3). Tiêu đề/nhãn gốc trên ảnh 04 đã xoá khỏi nền, chỉ dùng 2 mũi tên + 2 nhãn."
- },
- {
-  "tap": 6,
-  "slug": "cung-mau-khac-be-mat",
-  "ngay": "2026-10-16",
-  "nguyen_ly": "Cùng một màu, khác bề mặt (rãnh đổ bóng nên sẫm hơn mặt trơn; một màu vẫn đủ sáng, vừa, tối)",
-  "nhom": "Phối màu: bề mặt vật liệu",
-  "bai_kho": {
-   "duong_dan": "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/bai-01.md",
-   "nhanh": "AH-Interior-notes",
-   "commit": "65b5427c55046c43f02d8e7ec0829e03ae0fdd03"
+  {
+    "tap": 5,
+    "slug": "nen-lui-mau-don-mot-khoi",
+    "ngay": "2026-10-15",
+    "nguyen_ly": "Nền lùi, màu nhấn dồn vào một khối (cách 1 phân bổ màu; Kilmer & Kilmer, Albers)",
+    "nhom": "Phối màu: phân bổ màu",
+    "bai_kho": {
+      "duong_dan": "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/bai-01.md",
+      "nhanh": "AH-Interior-notes",
+      "commit": "65b5427c55046c43f02d8e7ec0829e03ae0fdd03"
+    },
+    "anh_kho": [
+      "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/04-doodle-nen-lui.jpg"
+    ],
+    "du_an": "The Green Box, Berlin",
+    "studio": "Ester Bruzkus Architekten",
+    "nhiep_anh": "Robert Rieger",
+    "nguon": [
+      "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 5 (theo bài)",
+      "Albers (1963) Interaction of Color, Yale UP (theo bài)"
+    ],
+    "trang_thai": "cho_ghi_am",
+    "thu_muc": "inbox/out/2026-10-15_nen-lui-mau-don-mot-khoi/",
+    "y_bai": {
+      "muc": "Nền lùi lại, màu nhấn dồn vào một khối",
+      "tom_tat": "Bài học 1: tường/sàn trung tính lùi về nền, màu mạnh dồn vào một khối; lại gần thì nền và nhấn đảo vai"
+    },
+    "y_con_lai_cua_bai": [
+      "Một màu chủ đạo, hai màu phụ đi vòng quanh (bài học 3)"
+    ],
+    "ghi_chu": "Giai đoạn 1 (chưa dựng video, chờ INBOX/audio/nen-lui-mau-don-mot-khoi.mp3). Tiêu đề/nhãn gốc trên ảnh 04 đã xoá khỏi nền, chỉ dùng 2 mũi tên + 2 nhãn."
   },
-  "anh_kho": [
-   "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/12-doodle-cung-mau-khac-be-mat.jpg",
-   "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/11-doodle-dap-mau-bep.jpg"
-  ],
-  "du_an": "The Green Box, Berlin",
-  "studio": "Ester Bruzkus Architekten",
-  "nhiep_anh": "Robert Rieger",
-  "nguon": [
-   "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 5 (theo bài)"
-  ],
-  "y_bai": {
-   "muc": "Một màu chủ đạo, hai màu phụ đi vòng quanh (phần màu chủ đạo tự đáp lại chính nó, cùng màu khác bề mặt)",
-   "tom_tat": "Mặt có rãnh đổ bóng nên sẫm hơn mặt trơn cùng màu sơn; một màu vẫn đủ sáng, trung, tối. Phần hai màu phụ (ảnh 10) chưa dùng."
+  {
+    "tap": 6,
+    "slug": "cung-mau-khac-be-mat",
+    "ngay": "2026-10-16",
+    "nguyen_ly": "Cùng một màu, khác bề mặt (rãnh đổ bóng nên sẫm hơn mặt trơn; một màu vẫn đủ sáng, vừa, tối)",
+    "nhom": "Phối màu: bề mặt vật liệu",
+    "bai_kho": {
+      "duong_dan": "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/bai-01.md",
+      "nhanh": "AH-Interior-notes",
+      "commit": "65b5427c55046c43f02d8e7ec0829e03ae0fdd03"
+    },
+    "anh_kho": [
+      "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/12-doodle-cung-mau-khac-be-mat.jpg",
+      "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/11-doodle-dap-mau-bep.jpg"
+    ],
+    "du_an": "The Green Box, Berlin",
+    "studio": "Ester Bruzkus Architekten",
+    "nhiep_anh": "Robert Rieger",
+    "nguon": [
+      "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 5 (theo bài)"
+    ],
+    "y_bai": {
+      "muc": "Một màu chủ đạo, hai màu phụ đi vòng quanh (phần màu chủ đạo tự đáp lại chính nó, cùng màu khác bề mặt)",
+      "tom_tat": "Mặt có rãnh đổ bóng nên sẫm hơn mặt trơn cùng màu sơn; một màu vẫn đủ sáng, trung, tối. Phần hai màu phụ (ảnh 10) chưa dùng."
+    },
+    "trang_thai": "da_dung_video",
+    "thu_muc": "inbox/out/2026-10-16_cung-mau-khac-be-mat/",
+    "ghi_chu": "Giai đoạn B xong với ghi âm bai-006.mp3 (49,2 giây). Cảnh 8 dùng ảnh 11 (bếp) theo yêu cầu chủ Trang; khung cuối bỏ cụm 'Theo dõi Fanpage' và tên Fanpage. Ảnh 12 dùng cho các cảnh còn lại.",
+    "video": "inbox/out/2026-10-16_cung-mau-khac-be-mat/reel_cung-mau-khac-be-mat_final.mp4"
   },
-  "trang_thai": "da_dung_video",
-  "thu_muc": "inbox/out/2026-10-16_cung-mau-khac-be-mat/",
-  "ghi_chu": "Giai đoạn B xong với ghi âm bai-006.mp3 (49,2 giây). Cảnh 8 dùng ảnh 11 (bếp) theo yêu cầu chủ Trang; khung cuối bỏ cụm 'Theo dõi Fanpage' và tên Fanpage. Ảnh 12 dùng cho các cảnh còn lại.",
-  "video": "inbox/out/2026-10-16_cung-mau-khac-be-mat/reel_cung-mau-khac-be-mat_final.mp4"
- },
- {
-  "tap": 7,
-  "slug": "mem-trong-tam-tay",
-  "ngay": "2026-10-18",
-  "nguyen_ly": "Chất cảm: mặt cứng để ở xa, đồ mềm trong tầm tay (nhà bê tông mộc không thiếu vân mà thiếu đồ mềm bên cạnh)",
-  "nhom": "Vật liệu và bề mặt: thô, mịn, mềm, cứng",
-  "bai_kho": {
-   "duong_dan": "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/bai-02.md",
-   "nhanh": "AH-Interior-notes",
-   "commit": "8fd09bdd396e0e27f055d6cba0816b568e47ea0e"
+  {
+    "tap": 6,
+    "slug": "hai-mau-phu-di-quanh",
+    "ngay": "2026-10-16",
+    "nguyen_ly": "Một màu chủ đạo, hai màu phụ đi vòng quanh (Kilmer & Kilmer, đáp màu)",
+    "nhom": "Phối màu: màu phụ",
+    "bai_kho": {
+      "duong_dan": "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/bai-01.md",
+      "nhanh": "AH-Interior-notes",
+      "commit": "65b5427c55046c43f02d8e7ec0829e03ae0fdd03"
+    },
+    "anh_kho": [
+      "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/13-doodle-anh-tong.jpg",
+      "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/10-doodle-hai-mau-am.jpg",
+      "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/11-doodle-dap-mau-bep.jpg",
+      "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/09-truc-do-the-green-box.jpg",
+      "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/03-mat-bang-the-green-box.png",
+      "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/08-diagram-xanh-o-giua-am-di-quanh.png"
+    ],
+    "du_an": "The Green Box, Berlin",
+    "studio": "Ester Bruzkus Architekten",
+    "nhiep_anh": "Robert Rieger",
+    "nguon": [
+      "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 5 (theo bài)"
+    ],
+    "trang_thai": "da_dung_video",
+    "thu_muc": "inbox/out/2026-10-16_hai-mau-phu-di-quanh/",
+    "cau_moc": "Thêm màu thứ hai, thứ ba vào nhà, có bị rối mắt không?",
+    "y_bai": {
+      "muc": "Một màu chủ đạo, hai màu phụ đi vòng quanh",
+      "tom_tat": "Hai màu phụ vàng và hồng tím làm dịu, mảng nhỏ, mỗi màu lặp lại ít nhất hai chỗ"
+    },
+    "y_con_lai_cua_bai": [
+      "Chênh sáng mới làm đồ vật hiện ra: đã dùng tập 4",
+      "Cùng màu khác bề mặt (ảnh 12) chưa làm"
+    ],
+    "ghi_chu": "Gộp từ nhánh ryepqj ngày 2026-10-19 (trước đó nằm riêng một nhánh nên các phiên sau không thấy). Hai bản tập 6 song song: cung-mau-khac-be-mat và hai-mau-phu-di-quanh, cùng bài 01, khác ý. | Làm lại lần 2 (2026-10-16): thêm ảnh định vị (trục đo 09, mặt bằng 03, sơ đồ 08) và gom cảnh theo khu vực; chưa dựng video, chờ INBOX/audio/hai-mau-phu-di-quanh.mp3. Ước tính engine ~95 giây (3,2 từ/giây, bảo thủ), 13 cảnh, 273 từ. | 2026-10-17: đã dựng video theo giọng đọc Bai_006.mp3 (70,11 giây giọng, video 71,1 giây): reel_hai-mau-phu-di-quanh_final.mp4 + cover_hai-mau-phu-di-quanh.png. Mốc cảnh đo bằng silencedetect; mốc cảnh 12 và 13 (55,21 và 61,8 giây) suy từ nhịp đọc. | 2026-10-17: dựng lại với bố cục chữ an toàn bảng tin 4:5 (mọi chữ trong y 330–1500), đã kiểm tra khung cắt 4:5; bản nhẹ cho điện thoại reel_hai-mau-phu-di-quanh_mobile.mp4.",
+    "nhanh_goc": "claude/happy-mccarthy-ryepqj"
   },
-  "anh_kho": [
-   "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/06-doodle-bong-va-nham-sanh-an.jpg",
-   "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/07-diagram-can-can-tho-min.png",
-   "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/11-doodle-van-tho-hanh-lang.jpg",
-   "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/02-mat-bang-tang-tret-ms-house.png",
-   "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/08-doodle-tho-min-phong-khach.jpg",
-   "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/09-doodle-go-o-gan-phong-ngu.jpg",
-   "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/13-doodle-anh-tong.jpg"
-  ],
-  "du_an": "MS House, Ahmedabad",
-  "studio": "Studio Saransh",
-  "nhiep_anh": "Ishita Sitwala, The Fishy Project",
-  "nguon": [
-   "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 4, mục Texture (theo bài)"
-  ],
-  "y_bai": {
-   "muc": "Đặt bề mặt thô cạnh bề mặt mịn để căn phòng ấm hơn",
-   "tom_tat": "Phòng nhiều mặt trơn thì lạnh và vang; để mặt cứng ở xa, gỗ và đồ vải trong tầm tay (phòng khách, đầu giường MS House)."
+  {
+    "tap": 7,
+    "slug": "mem-trong-tam-tay",
+    "ngay": "2026-10-18",
+    "nguyen_ly": "Chất cảm: mặt cứng để ở xa, đồ mềm trong tầm tay (nhà bê tông mộc không thiếu vân mà thiếu đồ mềm bên cạnh)",
+    "nhom": "Vật liệu và bề mặt: thô, mịn, mềm, cứng",
+    "bai_kho": {
+      "duong_dan": "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/bai-02.md",
+      "nhanh": "AH-Interior-notes",
+      "commit": "8fd09bdd396e0e27f055d6cba0816b568e47ea0e"
+    },
+    "anh_kho": [
+      "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/06-doodle-bong-va-nham-sanh-an.jpg",
+      "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/07-diagram-can-can-tho-min.png",
+      "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/11-doodle-van-tho-hanh-lang.jpg",
+      "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/02-mat-bang-tang-tret-ms-house.png",
+      "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/08-doodle-tho-min-phong-khach.jpg",
+      "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/09-doodle-go-o-gan-phong-ngu.jpg",
+      "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/13-doodle-anh-tong.jpg"
+    ],
+    "du_an": "MS House, Ahmedabad",
+    "studio": "Studio Saransh",
+    "nhiep_anh": "Ishita Sitwala, The Fishy Project",
+    "nguon": [
+      "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 4, mục Texture (theo bài)"
+    ],
+    "y_bai": {
+      "muc": "Đặt bề mặt thô cạnh bề mặt mịn để căn phòng ấm hơn",
+      "tom_tat": "Phòng nhiều mặt trơn thì lạnh và vang; để mặt cứng ở xa, gỗ và đồ vải trong tầm tay (phòng khách, đầu giường MS House)."
+    },
+    "trang_thai": "da_dung_video",
+    "thu_muc": "inbox/out/2026-10-18_mem-trong-tam-tay/",
+    "ghi_chu": "Bản 3 (nhiều ảnh): diagram 07, mặt bằng 02, sảnh ăn 06, hành lang 11, phòng khách 08, phòng ngủ 09, bàn ăn 13; dựng theo run (engine_ep07/runs.json). Giai đoạn B xong với ghi âm Tap_7.mp3 (51,0 giây, chủ Trang chỉnh lời cảnh 3, 9, câu chốt, lời mời cuối; chữ trên khung đã đổi theo). Ảnh Yatzer chưa lấy được vì mạng môi trường chặn yatzer.com. Ý 'ánh sáng xiên' (ảnh 04) chủ Trang không muốn dùng.",
+    "video": "inbox/out/2026-10-18_mem-trong-tam-tay/reel_mem-trong-tam-tay_final.mp4"
   },
-  "trang_thai": "da_dung_video",
-  "thu_muc": "inbox/out/2026-10-18_mem-trong-tam-tay/",
-  "ghi_chu": "Bản 3 (nhiều ảnh): diagram 07, mặt bằng 02, sảnh ăn 06, hành lang 11, phòng khách 08, phòng ngủ 09, bàn ăn 13; dựng theo run (engine_ep07/runs.json). Giai đoạn B xong với ghi âm Tap_7.mp3 (51,0 giây, chủ Trang chỉnh lời cảnh 3, 9, câu chốt, lời mời cuối; chữ trên khung đã đổi theo). Ảnh Yatzer chưa lấy được vì mạng môi trường chặn yatzer.com. Ý 'ánh sáng xiên' (ảnh 04) chủ Trang không muốn dùng.",
-  "video": "inbox/out/2026-10-18_mem-trong-tam-tay/reel_mem-trong-tam-tay_final.mp4"
- }
+  {
+    "tap": null,
+    "slug": "anh-sang-xien",
+    "trang_thai": "cam_chu_trang_khong_dung",
+    "bai_kho": {
+      "duong_dan": "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/bai-02.md",
+      "nhanh": "AH-Interior-notes"
+    },
+    "y_bai": {
+      "muc": "Chất cảm chỉ hiện rõ khi ánh sáng chiếu xiên qua bề mặt",
+      "tom_tat": "Nắng xiên/ánh sáng trượt làm vân tường hiện ra (ảnh 01, 04, 05)"
+    },
+    "ghi_chu": "Chủ Trang KHÔNG muốn làm ý này (đã bỏ ở tập 7 ngày 2026-10-18; nhắc lại 2026-10-19). Coi như đã dùng: không làm reel nắng xiên/ánh sáng xiên/ánh sáng trượt dọc tường, không lấy ảnh 04, 05, diagram 01 làm ảnh chính. Đã có hai bản làm nhầm ở nhánh claude/happy-mccarthy-qs8b4y (2026-10-19) và bản đầu tập 7 (437548a), đều huỷ."
+  }
 ]

@@ -1,8 +1,33 @@
 # INSTRUCTION — Scheduled task "AH Decode · Reel hằng ngày"
 
-Kho mã và dữ liệu: GitHub `buithucdatqn-sketch/claude` (nhánh `main`). Cách lấy: dùng add_repo (quyền push) rồi `git clone --depth 1 https://github.com/buithucdatqn-sketch/claude /home/claude/claude` (timeout lệnh ≥ 10 phút; chỉ MỘT lệnh git tại một thời điểm), sau đó gọi register_repo_root. Gọi thư mục clone là REPO. Cấu trúc: `REPO/engine/` (bộ engine), `REPO/inbox/` (INBOX), `REPO/TASK_INSTRUCTION.md` (bản sao của chính tài liệu này). Thông tin nội dung của mỗi tập lấy từ KHO BÀI (mục 2a), một kho GitHub khác. Cuối mỗi lần chạy: chép `engine_epNN.py` và `engine_video_epNN.py` vào `OUT/engine_epNN/`, `git add inbox`, commit, và `git pull --rebase origin main && git push origin main` (một lần; nếu bị 429 thì đợi 10 giây thử lại một lần).
+Kho mã và dữ liệu: GitHub `buithucdatqn-sketch/claude` (nhánh `main`). Cách lấy: dùng add_repo (quyền push) rồi `git clone --depth 1 https://github.com/buithucdatqn-sketch/claude /home/claude/claude` (timeout lệnh ≥ 10 phút; chỉ MỘT lệnh git tại một thời điểm), sau đó gọi register_repo_root. Gọi thư mục clone là REPO. Cấu trúc: `REPO/engine/` (bộ engine), `REPO/inbox/` (INBOX), `REPO/TASK_INSTRUCTION.md` (bản sao của chính tài liệu này). Thông tin nội dung của mỗi tập lấy từ KHO BÀI (mục 2a), một kho GitHub khác. Cuối mỗi lần chạy: chép `engine_epNN.py` và `engine_video_epNN.py` vào `OUT/engine_epNN/`, `git add inbox`, commit, và push lên nhánh được giao cho phiên (nếu phiên được phép đẩy `main` thì `git pull --rebase origin main && git push origin main`; nếu bị 429 thì đợi 10 giây thử lại một lần). Trạng thái mới nhất KHÔNG chắc nằm ở `main`: xem mục 0.
 
 Mỗi lần chạy là một phiên mới, không nhớ gì từ các cuộc trò chuyện trước. Mọi thông tin cần thiết nằm trong tài liệu này, thư mục INBOX và KHO BÀI.
+
+## 0. BÀI HỌC TỪ CÁC LẦN LÀM SAI (đọc trước tiên, bắt buộc)
+Ngày 2026-10-19 có hai phiên làm lại đúng ý đã có ở tập 7 hoặc ý chủ Trang đã bỏ, vẫn dùng một ảnh, sai chủng loại ảnh. Nguyên nhân và cách tránh:
+1. **`main` KHÔNG phải trạng thái mới nhất.** Mỗi phiên bị buộc đẩy lên nhánh riêng (`claude/...`), nên `main` có thể dừng ở tập 5 trong khi tập 6, tập 7 nằm ở các nhánh khác. Vì vậy đầu MỖI lần chạy, trước khi chọn ý:
+   - `git fetch origin '+refs/heads/*:refs/remotes/origin/*'`, liệt kê mọi nhánh (`git branch -r`).
+   - Với TỪNG nhánh: đọc `inbox/series.json` (`git show <nhánh>:inbox/series.json`), liệt kê `inbox/out/` (`git ls-tree --name-only <nhánh> inbox/out/`) và xem `git log -3 <nhánh>`. Gộp tất cả thành một danh sách: số tập, `slug`, `bai_kho`, `y_bai`, `anh_kho`, `trang_thai`. Một thư mục trong `inbox/out/` hay một commit "Tập N" mà `series.json` chưa ghi vẫn tính là ĐÃ LÀM.
+   - Đặt nhánh được giao lên nền nhánh có tập mới nhất (`git checkout -B <nhánh được giao> <nhánh mới nhất>`), rồi chép sang thư mục `inbox/out/` và dòng `series.json` của các nhánh khác còn thiếu. Đọc `TASK_INSTRUCTION.md` của nhánh mới nhất. Số tập mới = số tập lớn nhất tìm được + 1.
+   - Ngay trước khi push, fetch lại một lần và kiểm tra không nhánh nào vừa làm cùng ý.
+2. **Tài liệu này thắng prompt của lịch chạy khi hai bên mâu thuẫn.** Prompt lịch chạy có thể là bản cũ, ví dụ "chọn MỘT ảnh", "5–6 cảnh, 110–140 từ", "chèn thẻ break". Các điểm đó đã được chủ Trang thay bằng mục 2d (nhiều ảnh), mục 4a (8–13 cảnh, 150–210 từ) và mục 8b (không thẻ kỹ thuật). Prompt chỉ quyết định những gì tài liệu này không nói tới.
+3. **Ý chủ Trang đã cấm, coi như đã dùng:** "chất cảm chỉ hiện rõ khi ánh sáng chiếu xiên" của bài 02, gồm nắng xiên, ánh sáng trượt dọc tường, vân bê tông hiện ra dưới nắng. Không làm lại dưới bất kỳ tên nào. Ảnh 01, 04, 05 của bài 02 không được làm ảnh chính. `series.json` có dòng `trang_thai: "cam_chu_trang_khong_dung"` cho ý này. Mọi dòng có trạng thái đó đều là ý cấm.
+4. **Không trùng NỘI DUNG, không chỉ trùng tên ý.** So `y_bai` là chưa đủ. Trước khi viết lời, đọc `script.md` của mọi tập cùng bài. Tập mới không được lặp lại:
+   - câu móc, câu chốt hay lời khuyên của tập trước;
+   - cảnh "đọc trên ảnh" về cùng món đồ với cùng nhận xét (ví dụ tập 7 đã nói: sofa vải xù, gỗ đầu giường, bê tông trên cao/ở xa, bàn gỗ ghế mây);
+   - ảnh chính hay ảnh có nét lộ dần của tập trước.
+   Phần nào của ý mới đã được tập trước nói thì chỉ nhắc tối đa một câu nối, rồi đi sang điều mới. Tự kiểm: liệt kê ba điều người xem học được ở tập mới, không điều nào được trùng ba điều của tập trước (xem mục "Tự chấm" trong `script.md` của tập trước).
+5. **Số lượng và chủng loại ảnh: kiểm tra TRƯỚC khi viết lời** (mục 2d). Lập bảng ảnh trong `source_info.md`, ghi rõ loại của từng ảnh:
+   - ít nhất một diagram (sketch) của bài;
+   - mặt bằng nếu bài có;
+   - ảnh của ít nhất BA không gian khác nhau;
+   - tập 6 và tập 7 đạt yêu cầu với 6–7 ảnh khác nhau;
+   - không ảnh nào quá khoảng nửa số cảnh;
+   - không dựng reel quanh một ảnh duy nhất.
+   Thiếu loại nào thì chọn lại ý hoặc lấy thêm ảnh của chính công trình theo mục 2b, không viết kịch bản trước rồi mới tìm ảnh.
+6. **Lời mời cuối do chủ Trang chỉnh ở tập 7** (dùng làm mẫu ưu tiên cho phần I): "Bài phân tích về <chủ đề>, <ý> từ sách của <tác giả>, mọi người xem phần bình luận nha." Giữ ngắn, không thêm "gói thành viên" nếu chủ Trang không yêu cầu lại.
+7. Cuối lần chạy, ghi trong báo cáo cho chủ Trang rằng nhánh vừa push cần được gộp vào `main`. Gộp xong thì bước 1 nhẹ đi, nhưng vẫn phải làm.
 Chạy một lượt, không hỏi lại. Nếu thiếu đầu vào thì dừng và báo rõ thiếu gì (mục 9).
 
 ## 1. Nhiệm vụ
@@ -34,6 +59,7 @@ Chế độ mặc định là TỰ ĐỘNG: không cần người dùng gửi �
 - Cách lấy: dùng add_repo cho `buithucdatqn-sketch/A---material` (chỉ cần quyền đọc), rồi `git clone --depth 1 -b AH-Interior-notes https://github.com/buithucdatqn-sketch/A---material /home/claude/material` (timeout ≥ 10 phút; chỉ MỘT lệnh git tại một thời điểm). Nếu thư mục đã có thì `git -C /home/claude/material pull origin AH-Interior-notes`. Nếu clone không được nhưng công cụ GitHub MCP đọc được kho thì đọc bằng `get_file_contents` (ref `refs/heads/AH-Interior-notes`). Gọi thư mục bài là KHO = `/home/claude/material/AH-Decode-Decor/`. KHÔNG sửa, commit hay push gì vào kho bài.
 - Đọc cấu trúc thư mục trước: nếu có README, mục lục, file hướng dẫn hay quy ước đặt tên (ví dụ số thứ tự, trạng thái "đã duyệt"/"nháp") thì làm theo. Mỗi bài thường là một file (`.md`, `.txt`, hoặc tài liệu khác) hoặc một thư mục con; file không phải bài (README, mẫu, ảnh, ghi chú chung) thì không tính là bài.
 - Ý trong bài: mỗi ý là một bài học/mục nội dung riêng của bài (thường là một mục tiêu đề `##` hoặc một "bài học" bài tự đánh số), đủ để kể thành một mạch có cơ chế và cách áp dụng (mục 4a). Phần mở bài, lý thuyết chung hay kết bài không tính là ý riêng, nhưng được dùng làm nguồn gốc/cơ chế cho bất kỳ ý nào. Lần đầu đọc một bài, liệt kê các ý của bài vào `research.md`.
+- Danh sách ý đã dùng lấy từ `series.json` ĐÃ GỘP từ mọi nhánh (mục 0.1), cộng các ý bị cấm (`trang_thai: "cam_chu_trang_khong_dung"`, mục 0.3).
 - Chọn ý: theo thứ tự bài (mục lục nếu có, không thì số thứ tự hoặc tên file tăng dần), lấy bài đầu tiên còn ý CHƯA có trong `series.json` (so theo `bai_kho.duong_dan` + `y_bai`), rồi lấy ý chưa dùng đầu tiên của bài đó theo thứ tự trong bài. Một ý chỉ được làm MỘT lần; bài thì được dùng lại cho đến khi hết ý. Bỏ qua bài ghi rõ là nháp/chưa xong. Nếu ý (hoặc cả bài) lệch trọng tâm mục 1a (lý thuyết kiến trúc) thì bỏ qua, ghi vào `series.json` với `trang_thai: "bo_qua_lech_trong_tam"` kèm lý do, rồi lấy ý kế tiếp.
 - Đọc TOÀN BỘ bài (Read hết, không bỏ đoạn nào), kể cả phần nguồn tham khảo, ghi chú ảnh, gợi ý dự án nếu có. Reel chỉ làm MỘT ý đã chọn; các ý khác của bài chỉ được nhắc ngắn trong caption khi cần làm rõ, không hẹn "tập sau". Chỉ đánh dấu ý đó là đã dùng (`y_bai`), không đánh dấu cả bài.
 - Nếu bài có ảnh minh hoạ công trình trong `anh/` thì dùng theo mục 2b. Link trỏ ra ngoài kho chỉ được mở để lấy thêm ẢNH của chính công trình đó theo mục 2b; không lấy chữ hay thông tin từ đó.

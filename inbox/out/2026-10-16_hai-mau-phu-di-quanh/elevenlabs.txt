@@ -1,0 +1,37 @@
+Thêm màu thứ hai, thứ ba vào nhà, có bị rối mắt không?
+<break time="1.2s" />
+Mọi người nhìn căn hộ Đờ Grin Bóc ở Béc-lin nè.
+Giữa nhà là một khối xanh, quanh khối xanh có màu vàng và hồng tím.
+<break time="1.2s" />
+Sách Đi-dai-ninh In-tia-ri-ơ của Kin-mơ nói, phòng dễ chịu có một màu chủ đạo và hai màu phụ.
+Ở đây, xanh là chủ đạo, vàng và hồng tím là hai màu phụ.
+<break time="1.2s" />
+Mọi người hay nghe công thức sáu mươi, ba mươi, mười.
+Sách không gắn với con số nào.
+<break time="1.2s" />
+Trên mặt bằng, khối xanh chạy dọc giữa nhà, tủ bếp chạy liền với nó.
+Mình đứng ở bếp trước.
+<break time="1.2s" />
+Ở bếp, xanh phủ cả tủ lẫn tường.
+Còn ghế quầy bếp là hồng tím, màu phụ quay lại.
+<break time="1.2s" />
+Màu chủ đạo cũng tự lặp lại, ở tường sơn, mặt đá và tủ.
+<break time="1.2s" />
+Giờ sang phòng khách, quanh tấm thảm tròn.
+<break time="1.2s" />
+Màu phụ thứ nhất là vàng, ở mảng ốp đồng quanh lò sưởi.
+<break time="1.2s" />
+Màu phụ thứ hai là hồng tím, ở phiến đá và tấm thảm lông.
+<break time="1.2s" />
+Hồng tím gần như đối diện xanh lá trên bánh xe màu.
+Hai màu đối nhau mà cùng rực, đặt sát nhau là chói mắt, nên phải làm dịu.
+<break time="1.2s" />
+Ở nhà mình, mỗi màu phụ nên có mặt ít nhất hai chỗ, trên hai chất liệu khác nhau, như vàng ở sofa và mảng ốp đồng.
+Dịu, nhỏ, quay lại thì không rối.
+<break time="1.2s" />
+Ây-ết Đi-cốt, series về nguyên tắc thiết kế và chọn đồ đê-co.
+Theo dõi Giả Thuyết Kiến Trúc.
+Bài viết phân tích đầy đủ xem ở dòng đầu tiên trong phần bình luận.
+
+---
+--- Gợi ý cài đặt: giọng nữ hoặc nam trầm ấm, tốc độ 1.0, mô hình đa ngôn ngữ, ngôn ngữ Vietnamese ---
