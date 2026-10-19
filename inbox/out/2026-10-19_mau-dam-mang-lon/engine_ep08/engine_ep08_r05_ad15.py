@@ -16,7 +16,7 @@ from silhouette import loose_contour  # noqa: E402
 
 SRC = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "source.png")
 OUT = sys.argv[2] if len(sys.argv) > 2 else HERE
-os.makedirs(os.path.join(OUT, "frames_r06_ad18"), exist_ok=True)
+os.makedirs(os.path.join(OUT, "frames_r05_ad15"), exist_ok=True)
 
 W, H, SS = 1080, 1920, 2
 FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
@@ -54,11 +54,11 @@ SW, SH = src.size
 
 # ---------------- board geometry (2x master, 1x = reel canvas) ----------------
 B2W, B2H = W * 2, H * 2
-CARD_W2, BORDER2 = 1440, 0  # theo tỷ lệ ảnh của run
+CARD_W2, BORDER2 = 1920, 0  # theo tỷ lệ ảnh của run
 PH_W2 = CARD_W2 - 2 * BORDER2
 PH_H2 = int(round(PH_W2 * SH / SW))
 CARD_H2 = PH_H2 + 2 * BORDER2
-C2 = (B2W / 2, 1880.0)
+C2 = (B2W / 2, 1810.0)
 ANGLE = 1.2  # degrees, counter-clockwise (card is hung very slightly crooked)
 S2 = PH_W2 / SW
 ROT = cv2.getRotationMatrix2D(C2, ANGLE, 1.0)
@@ -550,11 +550,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.33s", head="The Green Box: hai mặt kính cao kịch trần", vo="Nhưng còn ánh sáng nữa. Căn hộ mẫu ở Berlin có tới hai mặt kính cao kịch trần,",
-         cam=((1200, 1600), 2.3, (568, 1224)), dark=False, dd=[], move="hold"),
-    dict(t="6.33–14.84s", head="Một mặt thoáng: khối xanh thành mảng tối", vo="còn nhà bạn tụi mình chỉ có một mặt thoáng nhìn về hướng tây, nên khối xanh đậm rất dễ biến thành một mảng tối.",
-         cam=((1200, 1600), 2.3, (568, 1224)), dark=True, dd=[], move="pan_l"),
-    dict(t="14.84–15.34s", head="end", vo="",
+    dict(t="0–4.76s", head="Phòng nhỏ: màu đậm dễ ngộp", vo="Và phòng càng nhỏ, màu đậm càng dễ gây cảm giác ngột ngạt.",
+         cam=((1250, 800), 2.9, (540, 888)), dark=True, dd=[], move="hold"),
+    dict(t="4.76–11.71s", head="Thử ở nhà mình: nhạt hơn mẫu một bậc", vo="Vì vậy, màu nào sẽ phủ lên mảng lớn, mọi người nên chọn nhạt hơn tấm mẫu thử một bậc.",
+         cam=((1250, 800), 2.9, (540, 888)), dark=True, dd=[], move="push"),
+    dict(t="11.71–12.21s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
@@ -625,7 +625,7 @@ BOARDS["clean"] = make_board(1.0)
 frames = []
 for i in range(len(SCENES)):
     im = render_scene(i)
-    im.save(os.path.join(OUT, "frames_r06_ad18", f"scene_{i + 1}.png"))
+    im.save(os.path.join(OUT, "frames_r05_ad15", f"scene_{i + 1}.png"))
     frames.append(im)
 
 # ---------------- contact sheet ----------------
@@ -650,5 +650,5 @@ fy = TOP + rows * (PH + 86) + 10
 d.text((MX, fy), "Nền trắng trơn · băng keo giấy thay ghim · header AH DECODE · bỏ “Bước n”", font=F(32), fill=(255, 255, 255))
 d.text((MX, fy + 44), "Cảnh zoom kín ảnh: chữ trắng viết lên ảnh (có phủ tối nhẹ).", font=F(32), fill=(225, 220, 212))
 d.text((MX, fy + 88), "Ảnh tối ~14% ở cảnh có nét vẽ; cảnh 1, 6, 7 giữ ảnh nguyên bản.", font=F(32), fill=(225, 220, 212))
-sheet.save(os.path.join(OUT, "storyboard_r06_ad18.png"))
+sheet.save(os.path.join(OUT, "storyboard_r05_ad15.png"))
 print("fabric", tuple(int(x) for x in FAB), "sheet", sheet.size)

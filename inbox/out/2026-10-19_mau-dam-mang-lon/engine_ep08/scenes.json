@@ -9,23 +9,23 @@
  },
  {
   "blk": 1,
-  "t": "5.08–13.59s",
+  "t": "5.08–13.9s",
   "head": "Căn hộ mẫu: The Green Box, Berlin",
-  "loi": "Đó là câu bác hàng xóm hỏi, khi bạn tụi mình sơn cả dãy tủ một màu xanh rêu, theo mẫu căn hộ trong ảnh.",
-  "tts": "Đó là câu bác hàng xóm hỏi, khi bạn tụi mình sơn cả dãy tủ một màu xanh rêu, theo mẫu căn hộ trong ảnh.",
+  "loi": "Đó là câu bác hàng xóm hỏi, khi bạn tụi mình sơn cả khối tủ màu xanh rêu, theo mẫu căn hộ ở Berlin trong ảnh.",
+  "tts": "Đó là câu bác hàng xóm hỏi, khi bạn tụi mình sơn cả khối tủ màu xanh rêu, theo mẫu căn hộ ở Béc-lin trong ảnh.",
   "part": "A"
  },
  {
   "blk": 2,
-  "t": "13.59–22.73s",
+  "t": "13.9–23.04s",
   "head": "Albers (1963): mảng lớn lấn át mảng nhỏ",
-  "loi": "Mà Josef Albers từng chỉ ra rằng mảng màu lớn luôn lấn át mảng màu nhỏ, và cả dãy tủ chính là một mảng màu rất lớn.",
-  "tts": "Mà Giô-dép An-bơ từng chỉ ra rằng mảng màu lớn luôn lấn át mảng màu nhỏ, và cả dãy tủ chính là một mảng màu rất lớn.",
+  "loi": "Theo Josef Albers, mảng màu lớn luôn lấn át mảng màu nhỏ, nên một khối tủ to như vậy sẽ làm chủ màu của cả căn phòng.",
+  "tts": "Theo Giô-dép An-bơ, mảng màu lớn luôn lấn át mảng màu nhỏ, nên một khối tủ to như vậy sẽ làm chủ màu của cả căn phòng.",
   "part": "B"
  },
  {
   "blk": 3,
-  "t": "22.73–31.87s",
+  "t": "23.04–32.18s",
   "head": "Mảng lớn trông đậm hơn mẫu thử",
   "loi": "Hơn nữa, một màu khi phủ lên mảng lớn bao giờ cũng trông đậm hơn trên tấm mẫu nhỏ, nên sơn xong thường đậm hơn mình tưởng.",
   "tts": "Hơn nữa, một màu khi phủ lên mảng lớn bao giờ cũng trông đậm hơn trên tấm mẫu nhỏ, nên sơn xong thường đậm hơn mình tưởng.",
@@ -33,7 +33,7 @@
  },
  {
   "blk": 3,
-  "t": "31.87–36.63s",
+  "t": "32.18–36.94s",
   "head": "Phòng nhỏ: màu đậm dễ ngộp",
   "loi": "Và phòng càng nhỏ, màu đậm càng dễ gây cảm giác ngột ngạt.",
   "tts": "Và phòng càng nhỏ, màu đậm càng dễ gây cảm giác ngột ngạt.",
@@ -41,31 +41,31 @@
  },
  {
   "blk": 4,
-  "t": "36.63–42.96s",
-  "head": "The Green Box: hai mặt kính cao kịch trần",
-  "loi": "Nhưng còn ánh sáng nữa. Căn hộ mẫu ở Berlin có tới hai mặt kính cao kịch trần,",
-  "tts": "Nhưng còn ánh sáng nữa. Căn hộ mẫu ở Béc-lin có tới hai mặt kính cao kịch trần,",
+  "t": "36.94–43.89s",
+  "head": "Thử ở nhà mình: nhạt hơn mẫu một bậc",
+  "loi": "Vì vậy, màu nào sẽ phủ lên mảng lớn, mọi người nên chọn nhạt hơn tấm mẫu thử một bậc.",
+  "tts": "Vì vậy, màu nào sẽ phủ lên mảng lớn, mọi người nên chọn nhạt hơn tấm mẫu thử một bậc.",
+  "part": "F"
+ },
+ {
+  "blk": 5,
+  "t": "43.89–50.53s",
+  "head": "Căn hộ mẫu: hai mặt kính cao kịch trần",
+  "loi": "Ngoài diện tích, còn ánh sáng nữa. Căn hộ mẫu ấy có tới hai mặt kính cao kịch trần,",
+  "tts": "Ngoài diện tích, còn ánh sáng nữa. Căn hộ mẫu ấy có tới hai mặt kính cao kịch trần,",
   "part": "D"
  },
  {
-  "blk": 4,
-  "t": "42.96–51.47s",
+  "blk": 5,
+  "t": "50.53–59.04s",
   "head": "Một mặt thoáng: khối xanh thành mảng tối",
   "loi": "còn nhà bạn tụi mình chỉ có một mặt thoáng nhìn về hướng tây, nên khối xanh đậm rất dễ biến thành một mảng tối.",
   "tts": "còn nhà bạn tụi mình chỉ có một mặt thoáng nhìn về hướng tây, nên khối xanh đậm rất dễ biến thành một mảng tối.",
   "part": "D"
  },
  {
-  "blk": 5,
-  "t": "51.47–58.42s",
-  "head": "Thử ở nhà mình: nhạt hơn mẫu một bậc",
-  "loi": "Vì vậy, màu nào sẽ phủ lên mảng lớn, mọi người cứ chọn nhạt hơn tấm mẫu thử một bậc.",
-  "tts": "Vì vậy, màu nào sẽ phủ lên mảng lớn, mọi người cứ chọn nhạt hơn tấm mẫu thử một bậc.",
-  "part": "F"
- },
- {
   "blk": 6,
-  "t": "58.42–66.93s",
+  "t": "59.04–67.55s",
   "head": "Ngộp hay không: còn tùy diện tích, ánh sáng",
   "loi": "Vậy khối tủ xanh có ngộp không, theo tụi mình, còn tùy nó to cỡ nào so với phòng và nhà đủ sáng hay không.",
   "tts": "Vậy khối tủ xanh có ngộp không, theo tụi mình, còn tùy nó to cỡ nào so với phòng và nhà đủ sáng hay không.",
@@ -73,7 +73,7 @@
  },
  {
   "blk": 6,
-  "t": "66.93–73.26s",
+  "t": "67.55–73.88s",
   "head": "end",
   "loi": "Bài phân tích về phân bổ màu từ sách của Kilmer, mọi người xem phần bình luận nha.",
   "tts": "Bài phân tích về phân bổ màu từ sách của Kin-mơ, mọi người xem phần bình luận nha.",

@@ -1,50 +1,45 @@
-# AH Decode · Màu đậm, mảng lớn · tập 8 · giai đoạn A, chờ ghi âm
+# AH Decode · Màu đậm, mảng lớn · tập 8 (bản 2, một mạch) · giai đoạn A, chờ ghi âm
 
-Bài 01 (The Green Box), phần chưa tập nào dùng: mở bài (câu hỏi của bác hàng xóm), mục "Màu gì, ở đâu?" (Albers, cách thứ hai đặt màu đậm lên nền) và đoạn "Thực ra cũng có nhiều yếu tố khác chi phối việc chọn màu" (diện tích, mẫu thử, ánh sáng). Xen kẽ bài: tập 7 là bài 02.
-Ảnh: diagram 01, 02 của bài và bảy ảnh MỚI của chính công trình từ ArchDaily (Robert Rieger), không trùng ảnh nào của tập 4, 5, 6, 6b. Không có mặt bằng (mặt bằng duy nhất đã dùng ở tập 6b). Xem source_info.md.
+**Câu hỏi trung tâm (mục 0.6b):** khối tủ màu đậm có làm nhà ngộp không? Trả lời bằng diện tích (Albers, mảng lớn trông đậm hơn mẫu, phòng nhỏ) và ánh sáng, kèm một việc làm (chọn nhạt hơn mẫu một bậc).
+Bản 1 bị chủ Trang chê rời rạc (8 ý lẻ, câu bị nén). Bản 2 bỏ hẳn ba ý không phục vụ câu hỏi: mỗi phòng một màu, cách 2 nền đậm, phòng ngủ tường xanh.
+Bài 01 (The Green Box); ảnh: diagram 01 của bài + sáu ảnh mới từ ArchDaily (Robert Rieger), không trùng tập 4, 5, 6, 6b. Không có mặt bằng (đã dùng ở tập 6b).
 
 ## Bảng cảnh
 | # | Phần | Thời lượng (ước tính) | Ảnh | Tiêu đề trên khung | Phụ đề (loi) | Bản đọc (tts) |
 |---|---|---|---|---|---|---|
-| 1 | A | 0–4.45s | ArchDaily 8 phòng khách, khối thư viện xanh | Khối tủ xanh to: ở lâu có ngộp? | Sơn nguyên khối tủ to màu xanh, ở lâu có ngộp không? | giữ nguyên |
-| 2 | A | 4.45–11.71s | ArchDaily 8 phòng khách, khối thư viện xanh | Căn hộ mẫu: The Green Box, Berlin | Bác hàng xóm hỏi vậy khi bạn tụi mình sơn tủ xanh rêu theo căn hộ The Green Box ở Berlin. | Bác hàng xóm hỏi vậy khi bạn tụi mình sơn tủ xanh rêu theo căn hộ Đờ Grin Bốc ở Béc-lin. |
-| 3 | E | 11.71–17.41s | diagram 01, khung mỗi phòng một màu | Lỗi hay gặp: mỗi phòng một màu | Ngược lại, có nhà sơn mỗi phòng một màu, riêng thì đẹp, gộp lại rối mắt. | giữ nguyên |
-| 4 | B | 17.41–24.36s | diagram 01, khung một màu làm chủ | Albers (1963): mảng lớn lấn át mảng nhỏ | Josef Albers chỉ ra mảng màu lớn luôn lấn át mảng nhỏ. Chia đều thì chẳng màu nào làm chủ. | Giô-dép An-bơ chỉ ra mảng màu lớn luôn lấn át mảng nhỏ. Chia đều thì chẳng màu nào làm chủ. |
-| 5 | B | 24.36–31.62s | diagram 02, nửa nền đậm | Kilmer & Kilmer (2014): nền đậm, đồ lớn dịu | Sách của hai tác giả Kilmer gợi ý đặt màu đậm lên tường hoặc sàn, còn đồ lớn thì dịu tông. | Sách của hai tác giả Kin-mơ gợi ý đặt màu đậm lên tường hoặc sàn, còn đồ lớn thì dịu tông. |
-| 6 | D | 31.62–36.7s | ArchDaily 20 phòng ngủ | Phòng ngủ: tường xanh đậm làm nền | Như phòng ngủ này, tường xanh đậm làm nền, còn giường lớn thì trắng. | giữ nguyên |
-| 7 | C | 36.7–41.78s | ArchDaily 21 khoảng hẹp trong khối | Phòng nhỏ: màu đậm dễ ngộp | Có điều, màu đậm trong phòng nhỏ dễ ngột ngạt hơn trong phòng lớn. | giữ nguyên |
-| 8 | C | 41.78–46.54s | ArchDaily 17 tủ nan, mảng tường xanh nhạt | Mảng lớn trông đậm hơn mẫu thử | Màu phủ lên mảng tường lớn luôn trông đậm hơn trên mẫu nhỏ. | giữ nguyên |
-| 9 | D | 46.54–51.62s | ArchDaily 10 phòng khách sáng | Berlin: hai mặt kính cao kịch trần | Ánh sáng cũng vậy, căn hộ Berlin có hai mặt kính cao kịch trần, | Ánh sáng cũng vậy, căn hộ Béc-lin có hai mặt kính cao kịch trần, |
-| 10 | D | 51.62–57.95s | ArchDaily 18 tủ xanh đậm | Một mặt thoáng: khối xanh thành mảng tối | còn nhà bạn tụi mình chỉ một mặt thoáng hướng tây, nên khối xanh dễ thành mảng tối. | giữ nguyên |
-| 11 | F | 57.95–63.65s | ArchDaily 15 tủ áo màu nhạt | Thử ở nhà mình: nhạt hơn mẫu một bậc | Ở nhà mình, màu nào phủ mảng lớn thì chọn nhạt hơn mẫu thử một bậc. | giữ nguyên |
-| 12 | H | 63.65–70.29s | ArchDaily 8 phòng khách, khối thư viện xanh | Ngộp hay không: còn tùy diện tích, ánh sáng | Vậy ngộp hay không, theo tụi mình, còn tùy màu phủ rộng cỡ nào và nhà đủ sáng không. | giữ nguyên |
-| 13 | I | 70.29–76.3s | ArchDaily 8 phòng khách, khối thư viện xanh | (khung cuối) | Bài phân tích phân bổ màu từ sách của Kilmer, mọi người xem phần bình luận nha. | Bài phân tích phân bổ màu từ sách của Kin-mơ, mọi người xem phần bình luận nha. |
+| 1 | A | 0–5.08s | ArchDaily 8 phòng khách, khối thư viện xanh | Khối tủ xanh to: ở lâu có ngộp? | Sơn nguyên một khối tủ to màu xanh, ở lâu có thấy ngộp không? | giữ nguyên |
+| 2 | A | 5.08–13.9s | ArchDaily 8 phòng khách, khối thư viện xanh | Căn hộ mẫu: The Green Box, Berlin | Đó là câu bác hàng xóm hỏi, khi bạn tụi mình sơn cả khối tủ màu xanh rêu, theo mẫu căn hộ ở Berlin trong ảnh. | Đó là câu bác hàng xóm hỏi, khi bạn tụi mình sơn cả khối tủ màu xanh rêu, theo mẫu căn hộ ở Béc-lin trong ảnh. |
+| 3 | B | 13.9–23.04s | diagram 01, khung một màu làm chủ | Albers (1963): mảng lớn lấn át mảng nhỏ | Theo Josef Albers, mảng màu lớn luôn lấn át mảng màu nhỏ, nên một khối tủ to như vậy sẽ làm chủ màu của cả căn phòng. | Theo Giô-dép An-bơ, mảng màu lớn luôn lấn át mảng màu nhỏ, nên một khối tủ to như vậy sẽ làm chủ màu của cả căn phòng. |
+| 4 | C | 23.04–32.18s | ArchDaily 17 tủ nan, mảng tường xanh nhạt | Mảng lớn trông đậm hơn mẫu thử | Hơn nữa, một màu khi phủ lên mảng lớn bao giờ cũng trông đậm hơn trên tấm mẫu nhỏ, nên sơn xong thường đậm hơn mình tưởng. | giữ nguyên |
+| 5 | C | 32.18–36.94s | ArchDaily 21 khoảng hẹp trong khối | Phòng nhỏ: màu đậm dễ ngộp | Và phòng càng nhỏ, màu đậm càng dễ gây cảm giác ngột ngạt. | giữ nguyên |
+| 6 | F | 36.94–43.89s | ArchDaily 15 tủ áo màu nhạt | Thử ở nhà mình: nhạt hơn mẫu một bậc | Vì vậy, màu nào sẽ phủ lên mảng lớn, mọi người nên chọn nhạt hơn tấm mẫu thử một bậc. | giữ nguyên |
+| 7 | D | 43.89–50.53s | ArchDaily 10 phòng khách sáng | Căn hộ mẫu: hai mặt kính cao kịch trần | Ngoài diện tích, còn ánh sáng nữa. Căn hộ mẫu ấy có tới hai mặt kính cao kịch trần, | giữ nguyên |
+| 8 | D | 50.53–59.04s | ArchDaily 18 tủ xanh đậm | Một mặt thoáng: khối xanh thành mảng tối | còn nhà bạn tụi mình chỉ có một mặt thoáng nhìn về hướng tây, nên khối xanh đậm rất dễ biến thành một mảng tối. | giữ nguyên |
+| 9 | H | 59.04–67.55s | ArchDaily 8 phòng khách, khối thư viện xanh | Ngộp hay không: còn tùy diện tích, ánh sáng | Vậy khối tủ xanh có ngộp không, theo tụi mình, còn tùy nó to cỡ nào so với phòng và nhà đủ sáng hay không. | giữ nguyên |
+| 10 | I | 67.55–73.88s | ArchDaily 8 phòng khách, khối thư viện xanh | (khung cuối) | Bài phân tích về phân bổ màu từ sách của Kilmer, mọi người xem phần bình luận nha. | Bài phân tích về phân bổ màu từ sách của Kin-mơ, mọi người xem phần bình luận nha. |
 
 ## Lời đọc liền mạch (phụ đề)
-Sơn nguyên khối tủ to màu xanh, ở lâu có ngộp không? Bác hàng xóm hỏi vậy khi bạn tụi mình sơn tủ xanh rêu theo căn hộ The Green Box ở Berlin. Ngược lại, có nhà sơn mỗi phòng một màu, riêng thì đẹp, gộp lại rối mắt. Josef Albers chỉ ra mảng màu lớn luôn lấn át mảng nhỏ. Chia đều thì chẳng màu nào làm chủ. Sách của hai tác giả Kilmer gợi ý đặt màu đậm lên tường hoặc sàn, còn đồ lớn thì dịu tông. Như phòng ngủ này, tường xanh đậm làm nền, còn giường lớn thì trắng. Có điều, màu đậm trong phòng nhỏ dễ ngột ngạt hơn trong phòng lớn. Màu phủ lên mảng tường lớn luôn trông đậm hơn trên mẫu nhỏ. Ánh sáng cũng vậy, căn hộ Berlin có hai mặt kính cao kịch trần, còn nhà bạn tụi mình chỉ một mặt thoáng hướng tây, nên khối xanh dễ thành mảng tối. Ở nhà mình, màu nào phủ mảng lớn thì chọn nhạt hơn mẫu thử một bậc. Vậy ngộp hay không, theo tụi mình, còn tùy màu phủ rộng cỡ nào và nhà đủ sáng không. Bài phân tích phân bổ màu từ sách của Kilmer, mọi người xem phần bình luận nha.
+Sơn nguyên một khối tủ to màu xanh, ở lâu có thấy ngộp không? Đó là câu bác hàng xóm hỏi, khi bạn tụi mình sơn cả khối tủ màu xanh rêu, theo mẫu căn hộ ở Berlin trong ảnh. Theo Josef Albers, mảng màu lớn luôn lấn át mảng màu nhỏ, nên một khối tủ to như vậy sẽ làm chủ màu của cả căn phòng. Hơn nữa, một màu khi phủ lên mảng lớn bao giờ cũng trông đậm hơn trên tấm mẫu nhỏ, nên sơn xong thường đậm hơn mình tưởng. Và phòng càng nhỏ, màu đậm càng dễ gây cảm giác ngột ngạt. Vì vậy, màu nào sẽ phủ lên mảng lớn, mọi người nên chọn nhạt hơn tấm mẫu thử một bậc. Ngoài diện tích, còn ánh sáng nữa. Căn hộ mẫu ấy có tới hai mặt kính cao kịch trần, còn nhà bạn tụi mình chỉ có một mặt thoáng nhìn về hướng tây, nên khối xanh đậm rất dễ biến thành một mảng tối. Vậy khối tủ xanh có ngộp không, theo tụi mình, còn tùy nó to cỡ nào so với phòng và nhà đủ sáng hay không. Bài phân tích về phân bổ màu từ sách của Kilmer, mọi người xem phần bình luận nha.
 
 ## Phiên âm cho ElevenLabs
 | Chính tả gốc | Phiên âm |
 |---|---|
-| The Green Box | Đờ Grin Bốc |
 | Berlin | Béc-lin |
 | Josef Albers | Giô-dép An-bơ |
 | Kilmer | Kin-mơ |
 
-Hai bản dán: `elevenlabs.txt` (mục 8b, mỗi cảnh một đoạn, không thẻ) và `elevenlabs_break.txt` (sáu khối nối bằng thẻ ngắt 1,2 giây, theo prompt lịch chạy).
-
-## Tự chấm (agent độc lập, mục 4b)
-- Lượt 1: CHƯA ĐẠT. Cảnh 4 gán nhầm vế "chia đều thì chẳng màu nào làm chủ" cho Albers; cảnh 5–6 lệch "cách 2" (ảnh có tấm vải hoa lớn nhiều màu, trái với "món nhỏ màu mạnh"; "tủ đầu giường sáng" lặp ý chênh sáng của tập 4, 5); cảnh 12 nói chắc hơn bài; cảnh 2–3 chuyển ý đột ngột; cảnh 2 thiếu Berlin. Đã sửa cả.
-- Lượt 2: nội dung đạt các câu 0–7; chỉ còn dài (227 từ). Đã cắt còn 215 từ, ước tính giọng đọc khoảng 68 giây (engine tính bảo thủ 76 giây; giai đoạn B căn lại theo ghi âm).
-- Ba điều người xem học được (không trùng tập trước): mảng màu lớn lấn át mảng nhỏ (Albers), nên chia đều mỗi phòng một màu thì chẳng màu nào làm chủ; cách đặt màu đậm lên tường hoặc sàn, đồ lớn để dịu; màu phủ mảng lớn trông đậm hơn mẫu, chọn nhạt hơn một bậc, và nhà ít mặt thoáng thì khối đậm dễ thành mảng tối.
+## Tự chấm (agent độc lập)
+- Bản 1: hai lượt chấm theo mục 4b; sửa gán ý Albers, cảnh phòng ngủ lặp ý tập trước, câu chốt nói quá, rồi cắt chữ cho đủ độ dài. Chính việc cắt chữ làm bản 1 rời rạc.
+- Bản 2 (người chấm mới, chấm từng chỗ chuyển cảnh): mạch kể liền, chỉ còn các lỗi: "Vì vậy" đặt sau ý ánh sáng là nối sai nguyên nhân; câu Albers ngầm làm lý do gây ngộp; Berlin chưa được giới thiệu; lẫn "khối tủ" và "dãy tủ". Đã sửa: đưa lời khuyên lên ngay sau ý diện tích, Albers nói "làm chủ màu", nhắc Berlin ở cảnh 2, thống nhất "khối tủ".
+- Không theo một góp ý: người chấm đề nghị cảnh cuối theo mẫu cũ mục 4a-I; giữ mẫu lời mời chủ Trang đã chỉnh ở tập 7 (mục 0.6).
+- Ba điều người xem học được: mảng màu lớn lấn át mảng nhỏ nên khối tủ to làm chủ màu cả phòng; màu phủ mảng lớn trông đậm hơn mẫu và phòng nhỏ dễ ngộp, nên chọn nhạt hơn mẫu thử một bậc; nhà ít mặt thoáng thì khối đậm dễ thành mảng tối.
 
 ## Tự kiểm
-- Câu móc ở cảnh 1, có cả lời và chữ trên khung.
-- Bản đọc không có chữ số, tiếng Anh, ký hiệu; tên nước ngoài đã phiên âm; gọi "mọi người", xưng "tụi mình".
-- Engine khung chạy không có LỖI vùng an toàn chữ; một CẢNH BÁO ở khung nối đầu run ảnh ArchDaily 20 (khung chuyển cảnh mang phụ đề cảnh 5, không nằm trong đoạn cắt).
-- Ảnh chụp sạch, không có nét gốc; nét chỉ có trên diagram (vẽ sẵn). Không có nét doodle mới.
+- Câu móc ở cảnh 1, có lời và chữ trên khung. 214 từ, ước tính giọng đọc khoảng 68 giây.
+- Mỗi cảnh từ cảnh 2 mở bằng từ nối (Đó là, Theo, Hơn nữa, Và, Vì vậy, Ngoài, còn, Vậy).
+- Engine không có LỖI vùng an toàn; một CẢNH BÁO ở khung nối đầu đoạn ảnh ArchDaily 10 (không nằm trong đoạn cắt).
 
 ## Cần kiểm tra
-- Không có mặt bằng (mục 2d) vì mặt bằng và trục đo duy nhất của căn hộ đã dùng ở tập 6b; chủ Trang muốn thêm thì báo.
-- Ảnh ArchDaily 20 (phòng ngủ) có tấm vải hoa lớn sau giường; lời cảnh 6 chỉ nói tường và giường.
-- Bài 01 coi như đã hết ý; tập sau theo quy tắc xen kẽ sẽ quay về bài 02 (ý còn lại: độ thô theo khoảng cách nhìn) hoặc bài mới trong kho.
+- Bài gốc mở bài gọi "bác hàng xóm", cuối bài gọi "chị hàng xóm"; reel dùng "bác".
+- Không có mặt bằng (mục 2d).
+- Phần đọc trên ảnh mỏng: ảnh chụp chỉ minh hoạ, lời không gọi tên chi tiết trên ảnh.

@@ -552,10 +552,10 @@ OBJ = {}
 WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–4.76s", head="Phòng nhỏ: màu đậm dễ ngộp", vo="Và phòng càng nhỏ, màu đậm càng dễ gây cảm giác ngột ngạt.",
-         cam=WIDE, dark=True, dd=[], move="hold"),
-    dict(t="4.76–11.09s", head="The Green Box: hai mặt kính cao kịch trần", vo="Nhưng còn ánh sáng nữa. Căn hộ mẫu ở Berlin có tới hai mặt kính cao kịch trần,",
-         cam=WIDE, dark=False, dd=[], move="pull"),
-    dict(t="11.09–11.59s", head="end", vo="",
+         cam=((1250, 800), 2.9, (540, 888)), dark=True, dd=[], move="hold"),
+    dict(t="4.76–11.71s", head="Thử ở nhà mình: nhạt hơn mẫu một bậc", vo="Vì vậy, màu nào sẽ phủ lên mảng lớn, mọi người nên chọn nhạt hơn tấm mẫu thử một bậc.",
+         cam=((1250, 800), 2.9, (540, 888)), dark=True, dd=[], move="push"),
+    dict(t="11.71–12.21s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
@@ -717,7 +717,7 @@ proc = subprocess.Popen(
     ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
      "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-t", f"{TOTAL:.2f}",
      "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-pix_fmt", "yuv420p", "-movflags", "+faststart",
-     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "r05_ad10_silent.mp4")], stdin=subprocess.PIPE)
+     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "r05_ad15_silent.mp4")], stdin=subprocess.PIPE)
 
 nframes = int(TOTAL * FPS)
 cur = -1

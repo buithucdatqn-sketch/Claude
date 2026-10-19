@@ -551,11 +551,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–8.51s", head="Căn hộ mẫu: The Green Box, Berlin", vo="Đó là câu bác hàng xóm hỏi, khi bạn tụi mình sơn cả dãy tủ một màu xanh rêu, theo mẫu căn hộ trong ảnh.",
+    dict(t="0–8.82s", head="Căn hộ mẫu: The Green Box, Berlin", vo="Đó là câu bác hàng xóm hỏi, khi bạn tụi mình sơn cả khối tủ màu xanh rêu, theo mẫu căn hộ ở Berlin trong ảnh.",
          cam=((545, 281), 1.0, (540, 900)), dark=True, dd=[], move="hold"),
-    dict(t="8.51–17.65s", head="Albers (1963): mảng lớn lấn át mảng nhỏ", vo="Mà Josef Albers từng chỉ ra rằng mảng màu lớn luôn lấn át mảng màu nhỏ, và cả dãy tủ chính là một mảng màu rất lớn.",
+    dict(t="8.82–17.96s", head="Albers (1963): mảng lớn lấn át mảng nhỏ", vo="Theo Josef Albers, mảng màu lớn luôn lấn át mảng màu nhỏ, nên một khối tủ to như vậy sẽ làm chủ màu của cả căn phòng.",
          cam=((545, 281), 1.0, (540, 900)), dark=False, dd=[], move="pull"),
-    dict(t="17.65–18.15s", head="end", vo="",
+    dict(t="17.96–18.46s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

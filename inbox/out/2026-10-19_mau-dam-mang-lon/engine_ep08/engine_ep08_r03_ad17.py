@@ -550,7 +550,7 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–9.14s", head="Albers (1963): mảng lớn lấn át mảng nhỏ", vo="Mà Josef Albers từng chỉ ra rằng mảng màu lớn luôn lấn át mảng màu nhỏ, và cả dãy tủ chính là một mảng màu rất lớn.",
+    dict(t="0–9.14s", head="Albers (1963): mảng lớn lấn át mảng nhỏ", vo="Theo Josef Albers, mảng màu lớn luôn lấn át mảng màu nhỏ, nên một khối tủ to như vậy sẽ làm chủ màu của cả căn phòng.",
          cam=((1000, 1100), 2.3, (568, 900)), dark=False, dd=[], move="hold"),
     dict(t="9.14–18.28s", head="Mảng lớn trông đậm hơn mẫu thử", vo="Hơn nữa, một màu khi phủ lên mảng lớn bao giờ cũng trông đậm hơn trên tấm mẫu nhỏ, nên sơn xong thường đậm hơn mình tưởng.",
          cam=((1000, 1100), 2.3, (568, 900)), dark=True, dd=[], move="push"),
