@@ -1,0 +1,14 @@
+Cùng một bức tường bê tông, sao trên ảnh thì ấm mà ngoài đời lại lạnh?
+<break time="1.2s" />
+Sách Đi-dai-ninh In-tia-ri-ơ của hai tác giả Kin-mơ nói chất cảm chỉ hiện rõ khi ánh sáng chiếu xiên.
+<break time="1.2s" />
+Tụi mình hay gặp ở nhà phố. Giữ bê tông trần công phu, rồi chiếu bằng lưới đèn âm trần rải đều. Vân chìm mất, chỉ còn mảng xám.
+<break time="1.2s" />
+Mặt bê tông có vô số gờ nhỏ. Nắng đi xiên thì mỗi gờ đổ một vệt bóng, và mắt nhận ra bề mặt nhám. Ánh sáng chiếu thẳng thì bóng mất, tường phẳng lì.
+<break time="1.2s" />
+Ban công phòng ngủ chính trong nhà của Xtu-đi-ô Xa-ran ở A-mê-đa-bát. Chỗ có nắng hiện rõ vệt ván khuôn. Chỗ trong bóng chỉ còn mảng xám phẳng.
+<break time="1.2s" />
+Vậy muốn tường bê tông bớt lạnh, hãy cho ánh sáng đi sát mặt tường. Gói thành viên có bài phân tích đầy đủ, kèm ba việc làm lại cho nhà phố bê tông trần, ở phần bình luận nha.
+
+---
+--- Gợi ý cài đặt: giọng nam hoặc nữ trầm ấm, tốc độ 1.0, mô hình Multilingual v2, ngôn ngữ Vietnamese ---

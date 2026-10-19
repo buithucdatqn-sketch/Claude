@@ -114,5 +114,33 @@
       "Một màu chủ đạo, hai màu phụ đi vòng quanh (bài học 3)"
     ],
     "ghi_chu": "Giai đoạn 1 (chưa dựng video, chờ INBOX/audio/nen-lui-mau-don-mot-khoi.mp3). Tiêu đề/nhãn gốc trên ảnh 04 đã xoá khỏi nền, chỉ dùng 2 mũi tên + 2 nhãn."
+  },
+  {
+    "tap": 6,
+    "slug": "nang-xien-hien-van-be-tong",
+    "ngay": "2026-10-19",
+    "nguyen_ly": "Chất cảm chỉ hiện rõ khi ánh sáng chiếu xiên (Kilmer & Kilmer 2014, ch. 4)",
+    "nhom": "Chất cảm vật liệu: ánh sáng xiên",
+    "bai_kho": {
+      "duong_dan": "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/bai-02.md",
+      "nhanh": "AH-Interior-notes",
+      "commit": "8fd09bdd396e0e27f055d6cba0816b568e47ea0e"
+    },
+    "anh_kho": [
+      "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/04-doodle-nang-xien-ban-cong.jpg"
+    ],
+    "du_an": "MS House, Ahmedabad",
+    "studio": "Studio Saransh",
+    "nhiep_anh": "Ishita Sitwala, The Fishy Project",
+    "nguon": [
+      "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 4 (theo bài)"
+    ],
+    "trang_thai": "cho_ghi_am",
+    "thu_muc": "inbox/out/2026-10-19_nang-xien-hien-van-be-tong/",
+    "ghi_chu": "Làm theo scheduled prompt 'Giả thuyết kiến trúc' (6 cảnh + khung cuối, ~60 giây). Giai đoạn A xong; chưa dựng video, chờ file giọng đọc ElevenLabs (bai-006.mp3). Ý đã dùng: mục 'Chất cảm chỉ hiện rõ khi ánh sáng chiếu xiên'.",
+    "y_bai": {
+      "muc": "Chất cảm chỉ hiện rõ khi ánh sáng chiếu xiên qua bề mặt",
+      "tom_tat": "Gờ và rãnh nhỏ đổ bóng khi nắng đi xiên; đèn rải đều làm vân biến mất"
+    }
   }
 ]
