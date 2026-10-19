@@ -1,0 +1,8 @@
+source_*.png
+original/
+frames/
+frames_*/
+storyboard.png
+__pycache__/
+vid/
+*.log

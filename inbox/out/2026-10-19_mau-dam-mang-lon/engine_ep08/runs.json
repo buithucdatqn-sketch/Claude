@@ -1,0 +1,135 @@
+[
+ {
+  "tag": "r01_i13",
+  "img": "i13",
+  "src": "source_13.png",
+  "scenes": [
+   1
+  ],
+  "t_in_main": 0.0,
+  "cut_from": 0.0,
+  "cut_len": 5.08,
+  "first_frame": 1
+ },
+ {
+  "tag": "r02_i04",
+  "img": "i04",
+  "src": "source_04.png",
+  "scenes": [
+   2
+  ],
+  "t_in_main": 5.08,
+  "cut_from": 5.08,
+  "cut_len": 7.58,
+  "first_frame": 2
+ },
+ {
+  "tag": "r03_dg1a",
+  "img": "dg1a",
+  "src": "source_dg1a.png",
+  "scenes": [
+   3
+  ],
+  "t_in_main": 12.66,
+  "cut_from": 7.58,
+  "cut_len": 6.010000000000002,
+  "first_frame": 2
+ },
+ {
+  "tag": "r04_dg1b",
+  "img": "dg1b",
+  "src": "source_dg1b.png",
+  "scenes": [
+   4
+  ],
+  "t_in_main": 18.67,
+  "cut_from": 6.010000000000002,
+  "cut_len": 7.259999999999998,
+  "first_frame": 2
+ },
+ {
+  "tag": "r05_dg2",
+  "img": "dg2",
+  "src": "source_dg2.png",
+  "scenes": [
+   5
+  ],
+  "t_in_main": 25.93,
+  "cut_from": 7.259999999999998,
+  "cut_len": 9.450000000000003,
+  "first_frame": 2
+ },
+ {
+  "tag": "r06_i04",
+  "img": "i04",
+  "src": "source_04.png",
+  "scenes": [
+   6
+  ],
+  "t_in_main": 35.38,
+  "cut_from": 9.450000000000003,
+  "cut_len": 5.079999999999998,
+  "first_frame": 2
+ },
+ {
+  "tag": "r07_i12",
+  "img": "i12",
+  "src": "source_12.png",
+  "scenes": [
+   7
+  ],
+  "t_in_main": 40.46,
+  "cut_from": 5.079999999999998,
+  "cut_len": 5.390000000000001,
+  "first_frame": 2
+ },
+ {
+  "tag": "r08_mb",
+  "img": "mb",
+  "src": "source_03c.png",
+  "scenes": [
+   8
+  ],
+  "t_in_main": 45.85,
+  "cut_from": 5.390000000000001,
+  "cut_len": 5.699999999999996,
+  "first_frame": 2
+ },
+ {
+  "tag": "r09_i07",
+  "img": "i07",
+  "src": "source_07.png",
+  "scenes": [
+   9
+  ],
+  "t_in_main": 51.55,
+  "cut_from": 5.699999999999996,
+  "cut_len": 7.260000000000005,
+  "first_frame": 2
+ },
+ {
+  "tag": "r10_i11",
+  "img": "i11",
+  "src": "source_11.png",
+  "scenes": [
+   10
+  ],
+  "t_in_main": 58.81,
+  "cut_from": 7.260000000000005,
+  "cut_len": 6.329999999999998,
+  "first_frame": 2
+ },
+ {
+  "tag": "r11_i04",
+  "img": "i04",
+  "src": "source_04.png",
+  "scenes": [
+   11,
+   12
+  ],
+  "t_in_main": 65.14,
+  "cut_from": 6.329999999999998,
+  "cut_len": 13.340000000000003,
+  "first_frame": 2
+ }
+]
