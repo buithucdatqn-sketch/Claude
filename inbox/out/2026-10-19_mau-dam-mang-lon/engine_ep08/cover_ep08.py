@@ -29,8 +29,8 @@ HEAD = "AH DECODE · MÀU ĐẬM, MẢNG LỚN"
 END_LINES = [
     (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1088, "và cách chọn đồ decor", 40, 215),
-    (1196, "Bài phân tích về phân bổ màu", 54, 240),
-    (1258, "từ sách của Kilmer", 46, 240),
+    (1196, "Bài phân tích các nguyên tắc phân bổ màu", 50, 240),
+    (1258, "trong nhà, từ sách của Kilmer", 46, 240),
     (1348, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)

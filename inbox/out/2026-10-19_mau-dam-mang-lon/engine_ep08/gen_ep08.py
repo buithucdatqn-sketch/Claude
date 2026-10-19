@@ -32,11 +32,11 @@ SC = [
     dict(move="push", part="A", blk=1, img="ad8", head="Khối tủ xanh to: ở lâu có ngộp?", cam=WIDE, dark=False, dd=[],
          vo="Sơn nguyên một khối tủ to màu xanh, ở lâu có thấy ngộp không?"),
     dict(move="pan_d", part="A", blk=1, img="ad8", head="Căn hộ mẫu: The Green Box, Berlin", cam=((1450, 1000), 2.3, (540, 900)), dark=True, dd=[],
-         vo="Đó là câu bác hàng xóm hỏi, khi bạn tụi mình sơn cả khối tủ màu xanh rêu, theo mẫu căn hộ ở Berlin trong ảnh.",
-         tts="Đó là câu bác hàng xóm hỏi, khi bạn tụi mình sơn cả khối tủ màu xanh rêu, theo mẫu căn hộ ở Béc-lin trong ảnh."),
+         vo="Đó là câu bác hàng xóm hỏi, khi bạn tụi mình sơn cả khối tủ màu xanh rêu, tham khảo theo một căn hộ ở Berlin trong ảnh.",
+         tts="Đó là câu bác hàng xóm hỏi, khi bạn tụi mình sơn cả khối tủ màu xanh rêu, tham khảo theo một căn hộ ở Béc-lin trong ảnh."),
     dict(move="pull", part="B", blk=2, img="dg1b", head="Albers (1963): mảng lớn lấn át mảng nhỏ", cam=((545, 281), 1.0, (540, 900)), free=True, dark=False, dd=[],
-         vo="Theo Josef Albers, mảng màu lớn luôn lấn át mảng màu nhỏ, nên một khối tủ to như vậy sẽ làm chủ màu của cả căn phòng.",
-         tts="Theo Giô-dép An-bơ, mảng màu lớn luôn lấn át mảng màu nhỏ, nên một khối tủ to như vậy sẽ làm chủ màu của cả căn phòng."),
+         vo="Theo Josef Albers, mảng màu lớn luôn lấn át mảng màu nhỏ, nên một khối tủ to như vậy sẽ làm chủ màu của cả không gian nhà.",
+         tts="Theo Giô-dép An-bơ, mảng màu lớn luôn lấn át mảng màu nhỏ, nên một khối tủ to như vậy sẽ làm chủ màu của cả không gian nhà."),
     dict(move="push", part="C", blk=3, img="ad17", head="Mảng lớn trông đậm hơn mẫu thử", cam=((1000, 1100), 2.3, (540, 900)), dark=True, dd=[],
          vo="Hơn nữa, một màu khi phủ lên mảng lớn bao giờ cũng trông đậm hơn trên tấm mẫu nhỏ, nên sơn xong thường đậm hơn mình tưởng."),
     dict(move="pan_u", part="C", blk=3, img="ad21", head="Phòng nhỏ: màu đậm dễ ngộp", cam=((1300, 1200), 2.3, (540, 900)), dark=True, dd=[],
@@ -50,8 +50,8 @@ SC = [
     dict(move="pull", part="H", blk=6, img="ad8", head="Ngộp hay không: còn tùy diện tích, ánh sáng", cam=((1100, 1500), 2.3, (540, 900)), dark=True, dd=[],
          vo="Vậy khối tủ xanh có ngộp không, theo tụi mình, còn tùy nó to cỡ nào so với phòng và nhà đủ sáng hay không."),
     dict(move="push", part="I", blk=6, img="ad8", head="end", cam="END", dark=False, vo="", dd=[],
-         say="Bài phân tích về phân bổ màu từ sách của Kilmer, mọi người xem phần bình luận nha.",
-         tts="Bài phân tích về phân bổ màu từ sách của Kin-mơ, mọi người xem phần bình luận nha."),
+         say="Bài phân tích về các nguyên tắc phân bổ màu trong nhà từ sách của Kilmer, mọi người xem phần bình luận nha.",
+         tts="Bài phân tích về các nguyên tắc phân bổ màu trong nhà từ sách của Kin-mơ, mọi người xem phần bình luận nha."),
 ]
 
 
@@ -93,8 +93,9 @@ def dur(s):
     return max(3.5, TRANS + words(s.get("say", s["vo"])) / WPS)
 
 
-# Giai đoạn A: chưa có ghi âm, thời lượng tính theo số từ (mục 4a). Giai đoạn B điền mốc theo ghi âm vào đây.
-T_AUDIO = []
+# Giai đoạn B: mốc cảnh căn theo ghi âm Bai_8.mp3 (53,24 giây; nhận dạng lời bằng sherpa-onnx zipformer-vi, xem script.md):
+# mỗi cảnh bắt đầu 0,35 giây trước câu của nó; cảnh cuối kéo đến hết giọng + 0,6 giây.
+T_AUDIO = [0, 4.11, 10.42, 17.48, 23.85, 27.05, 31.79, 37.10, 42.32, 48.44, 53.85]
 
 
 def times():
@@ -200,7 +201,7 @@ def build(src, dst, video, data, img, tag):
            ("borderMode=cv2.BORDER_REFLECT)", "borderMode=cv2.BORDER_CONSTANT, borderValue=(255, 255, 255, 0))"),
            # khung cuối: lời mời theo mẫu chủ Trang chỉnh ở tập 7 (mục 0.6)
            ('(1196, "Bài viết phân tích đầy đủ", 58, 240),\n    (1260, "xem ở dòng đầu tiên", 58, 240),\n    (1348, "trong phần bình luận", 66, 255),',
-            '(1196, "Bài phân tích về phân bổ màu", 54, 240),\n    (1258, "từ sách của Kilmer", 46, 240),\n    (1348, "xem ở phần bình luận", 66, 255),')]
+            '(1196, "Bài phân tích các nguyên tắc phân bổ màu", 50, 240),\n    (1258, "trong nhà, từ sách của Kilmer", 46, 240),\n    (1348, "xem ở phần bình luận", 66, 255),')]
     for a_, b_ in rep:
         assert a_ in s, a_
         s = s.replace(a_, b_)

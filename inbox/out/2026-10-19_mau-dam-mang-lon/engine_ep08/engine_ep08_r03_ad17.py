@@ -29,8 +29,8 @@ HEAD = "AH DECODE · MÀU ĐẬM, MẢNG LỚN"
 END_LINES = [
     (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1088, "và cách chọn đồ decor", 40, 215),
-    (1196, "Bài phân tích về phân bổ màu", 54, 240),
-    (1258, "từ sách của Kilmer", 46, 240),
+    (1196, "Bài phân tích các nguyên tắc phân bổ màu", 50, 240),
+    (1258, "trong nhà, từ sách của Kilmer", 46, 240),
     (1348, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
@@ -550,11 +550,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–9.14s", head="Albers (1963): mảng lớn lấn át mảng nhỏ", vo="Theo Josef Albers, mảng màu lớn luôn lấn át mảng màu nhỏ, nên một khối tủ to như vậy sẽ làm chủ màu của cả căn phòng.",
+    dict(t="0–7.06s", head="Albers (1963): mảng lớn lấn át mảng nhỏ", vo="Theo Josef Albers, mảng màu lớn luôn lấn át mảng màu nhỏ, nên một khối tủ to như vậy sẽ làm chủ màu của cả không gian nhà.",
          cam=((1000, 1100), 2.3, (568, 900)), dark=False, dd=[], move="hold"),
-    dict(t="9.14–18.28s", head="Mảng lớn trông đậm hơn mẫu thử", vo="Hơn nữa, một màu khi phủ lên mảng lớn bao giờ cũng trông đậm hơn trên tấm mẫu nhỏ, nên sơn xong thường đậm hơn mình tưởng.",
+    dict(t="7.06–13.43s", head="Mảng lớn trông đậm hơn mẫu thử", vo="Hơn nữa, một màu khi phủ lên mảng lớn bao giờ cũng trông đậm hơn trên tấm mẫu nhỏ, nên sơn xong thường đậm hơn mình tưởng.",
          cam=((1000, 1100), 2.3, (568, 900)), dark=True, dd=[], move="push"),
-    dict(t="18.28–18.78s", head="end", vo="",
+    dict(t="13.43–13.93s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

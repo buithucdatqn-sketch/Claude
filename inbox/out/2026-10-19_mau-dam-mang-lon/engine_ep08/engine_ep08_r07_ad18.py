@@ -29,8 +29,8 @@ HEAD = "AH DECODE · MÀU ĐẬM, MẢNG LỚN"
 END_LINES = [
     (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1088, "và cách chọn đồ decor", 40, 215),
-    (1196, "Bài phân tích về phân bổ màu", 54, 240),
-    (1258, "từ sách của Kilmer", 46, 240),
+    (1196, "Bài phân tích các nguyên tắc phân bổ màu", 50, 240),
+    (1258, "trong nhà, từ sách của Kilmer", 46, 240),
     (1348, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
@@ -550,11 +550,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.64s", head="Căn hộ mẫu: hai mặt kính cao kịch trần", vo="Ngoài diện tích, còn ánh sáng nữa. Căn hộ mẫu ấy có tới hai mặt kính cao kịch trần,",
+    dict(t="0–5.31s", head="Căn hộ mẫu: hai mặt kính cao kịch trần", vo="Ngoài diện tích, còn ánh sáng nữa. Căn hộ mẫu ấy có tới hai mặt kính cao kịch trần,",
          cam=((1200, 1600), 2.3, (568, 1224)), dark=False, dd=[], move="hold"),
-    dict(t="6.64–15.15s", head="Một mặt thoáng: khối xanh thành mảng tối", vo="còn nhà bạn tụi mình chỉ có một mặt thoáng nhìn về hướng tây, nên khối xanh đậm rất dễ biến thành một mảng tối.",
+    dict(t="5.31–10.53s", head="Một mặt thoáng: khối xanh thành mảng tối", vo="còn nhà bạn tụi mình chỉ có một mặt thoáng nhìn về hướng tây, nên khối xanh đậm rất dễ biến thành một mảng tối.",
          cam=((1200, 1600), 2.3, (568, 1224)), dark=True, dd=[], move="pan_l"),
-    dict(t="15.15–15.65s", head="end", vo="",
+    dict(t="10.53–11.03s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

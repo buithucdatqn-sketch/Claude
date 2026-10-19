@@ -1,7 +1,7 @@
 [
  {
   "blk": 1,
-  "t": "0–5.08s",
+  "t": "0–4.11s",
   "head": "Khối tủ xanh to: ở lâu có ngộp?",
   "loi": "Sơn nguyên một khối tủ to màu xanh, ở lâu có thấy ngộp không?",
   "tts": "Sơn nguyên một khối tủ to màu xanh, ở lâu có thấy ngộp không?",
@@ -9,23 +9,23 @@
  },
  {
   "blk": 1,
-  "t": "5.08–13.9s",
+  "t": "4.11–10.42s",
   "head": "Căn hộ mẫu: The Green Box, Berlin",
-  "loi": "Đó là câu bác hàng xóm hỏi, khi bạn tụi mình sơn cả khối tủ màu xanh rêu, theo mẫu căn hộ ở Berlin trong ảnh.",
-  "tts": "Đó là câu bác hàng xóm hỏi, khi bạn tụi mình sơn cả khối tủ màu xanh rêu, theo mẫu căn hộ ở Béc-lin trong ảnh.",
+  "loi": "Đó là câu bác hàng xóm hỏi, khi bạn tụi mình sơn cả khối tủ màu xanh rêu, tham khảo theo một căn hộ ở Berlin trong ảnh.",
+  "tts": "Đó là câu bác hàng xóm hỏi, khi bạn tụi mình sơn cả khối tủ màu xanh rêu, tham khảo theo một căn hộ ở Béc-lin trong ảnh.",
   "part": "A"
  },
  {
   "blk": 2,
-  "t": "13.9–23.04s",
+  "t": "10.42–17.48s",
   "head": "Albers (1963): mảng lớn lấn át mảng nhỏ",
-  "loi": "Theo Josef Albers, mảng màu lớn luôn lấn át mảng màu nhỏ, nên một khối tủ to như vậy sẽ làm chủ màu của cả căn phòng.",
-  "tts": "Theo Giô-dép An-bơ, mảng màu lớn luôn lấn át mảng màu nhỏ, nên một khối tủ to như vậy sẽ làm chủ màu của cả căn phòng.",
+  "loi": "Theo Josef Albers, mảng màu lớn luôn lấn át mảng màu nhỏ, nên một khối tủ to như vậy sẽ làm chủ màu của cả không gian nhà.",
+  "tts": "Theo Giô-dép An-bơ, mảng màu lớn luôn lấn át mảng màu nhỏ, nên một khối tủ to như vậy sẽ làm chủ màu của cả không gian nhà.",
   "part": "B"
  },
  {
   "blk": 3,
-  "t": "23.04–32.18s",
+  "t": "17.48–23.85s",
   "head": "Mảng lớn trông đậm hơn mẫu thử",
   "loi": "Hơn nữa, một màu khi phủ lên mảng lớn bao giờ cũng trông đậm hơn trên tấm mẫu nhỏ, nên sơn xong thường đậm hơn mình tưởng.",
   "tts": "Hơn nữa, một màu khi phủ lên mảng lớn bao giờ cũng trông đậm hơn trên tấm mẫu nhỏ, nên sơn xong thường đậm hơn mình tưởng.",
@@ -33,7 +33,7 @@
  },
  {
   "blk": 3,
-  "t": "32.18–36.94s",
+  "t": "23.85–27.05s",
   "head": "Phòng nhỏ: màu đậm dễ ngộp",
   "loi": "Và phòng càng nhỏ, màu đậm càng dễ gây cảm giác ngột ngạt.",
   "tts": "Và phòng càng nhỏ, màu đậm càng dễ gây cảm giác ngột ngạt.",
@@ -41,7 +41,7 @@
  },
  {
   "blk": 4,
-  "t": "36.94–43.89s",
+  "t": "27.05–31.79s",
   "head": "Thử ở nhà mình: nhạt hơn mẫu một bậc",
   "loi": "Vì vậy, màu nào sẽ phủ lên mảng lớn, mọi người nên chọn nhạt hơn tấm mẫu thử một bậc.",
   "tts": "Vì vậy, màu nào sẽ phủ lên mảng lớn, mọi người nên chọn nhạt hơn tấm mẫu thử một bậc.",
@@ -49,7 +49,7 @@
  },
  {
   "blk": 5,
-  "t": "43.89–50.53s",
+  "t": "31.79–37.1s",
   "head": "Căn hộ mẫu: hai mặt kính cao kịch trần",
   "loi": "Ngoài diện tích, còn ánh sáng nữa. Căn hộ mẫu ấy có tới hai mặt kính cao kịch trần,",
   "tts": "Ngoài diện tích, còn ánh sáng nữa. Căn hộ mẫu ấy có tới hai mặt kính cao kịch trần,",
@@ -57,7 +57,7 @@
  },
  {
   "blk": 5,
-  "t": "50.53–59.04s",
+  "t": "37.1–42.32s",
   "head": "Một mặt thoáng: khối xanh thành mảng tối",
   "loi": "còn nhà bạn tụi mình chỉ có một mặt thoáng nhìn về hướng tây, nên khối xanh đậm rất dễ biến thành một mảng tối.",
   "tts": "còn nhà bạn tụi mình chỉ có một mặt thoáng nhìn về hướng tây, nên khối xanh đậm rất dễ biến thành một mảng tối.",
@@ -65,7 +65,7 @@
  },
  {
   "blk": 6,
-  "t": "59.04–67.55s",
+  "t": "42.32–48.44s",
   "head": "Ngộp hay không: còn tùy diện tích, ánh sáng",
   "loi": "Vậy khối tủ xanh có ngộp không, theo tụi mình, còn tùy nó to cỡ nào so với phòng và nhà đủ sáng hay không.",
   "tts": "Vậy khối tủ xanh có ngộp không, theo tụi mình, còn tùy nó to cỡ nào so với phòng và nhà đủ sáng hay không.",
@@ -73,10 +73,10 @@
  },
  {
   "blk": 6,
-  "t": "67.55–73.88s",
+  "t": "48.44–53.85s",
   "head": "end",
-  "loi": "Bài phân tích về phân bổ màu từ sách của Kilmer, mọi người xem phần bình luận nha.",
-  "tts": "Bài phân tích về phân bổ màu từ sách của Kin-mơ, mọi người xem phần bình luận nha.",
+  "loi": "Bài phân tích về các nguyên tắc phân bổ màu trong nhà từ sách của Kilmer, mọi người xem phần bình luận nha.",
+  "tts": "Bài phân tích về các nguyên tắc phân bổ màu trong nhà từ sách của Kin-mơ, mọi người xem phần bình luận nha.",
   "part": "I"
  }
 ]

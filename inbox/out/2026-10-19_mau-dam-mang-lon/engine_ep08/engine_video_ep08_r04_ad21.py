@@ -29,8 +29,8 @@ HEAD = "AH DECODE · MÀU ĐẬM, MẢNG LỚN"
 END_LINES = [
     (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1088, "và cách chọn đồ decor", 40, 215),
-    (1196, "Bài phân tích về phân bổ màu", 54, 240),
-    (1258, "từ sách của Kilmer", 46, 240),
+    (1196, "Bài phân tích các nguyên tắc phân bổ màu", 50, 240),
+    (1258, "trong nhà, từ sách của Kilmer", 46, 240),
     (1348, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
@@ -551,11 +551,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–9.14s", head="Mảng lớn trông đậm hơn mẫu thử", vo="Hơn nữa, một màu khi phủ lên mảng lớn bao giờ cũng trông đậm hơn trên tấm mẫu nhỏ, nên sơn xong thường đậm hơn mình tưởng.",
+    dict(t="0–6.37s", head="Mảng lớn trông đậm hơn mẫu thử", vo="Hơn nữa, một màu khi phủ lên mảng lớn bao giờ cũng trông đậm hơn trên tấm mẫu nhỏ, nên sơn xong thường đậm hơn mình tưởng.",
          cam=((1300, 1200), 2.3, (660, 900)), dark=True, dd=[], move="hold"),
-    dict(t="9.14–13.9s", head="Phòng nhỏ: màu đậm dễ ngộp", vo="Và phòng càng nhỏ, màu đậm càng dễ gây cảm giác ngột ngạt.",
+    dict(t="6.37–9.57s", head="Phòng nhỏ: màu đậm dễ ngộp", vo="Và phòng càng nhỏ, màu đậm càng dễ gây cảm giác ngột ngạt.",
          cam=((1300, 1200), 2.3, (660, 900)), dark=True, dd=[], move="pan_u"),
-    dict(t="13.9–14.4s", head="end", vo="",
+    dict(t="9.57–10.07s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

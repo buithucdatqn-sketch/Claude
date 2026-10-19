@@ -29,8 +29,8 @@ HEAD = "AH DECODE · MÀU ĐẬM, MẢNG LỚN"
 END_LINES = [
     (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1088, "và cách chọn đồ decor", 40, 215),
-    (1196, "Bài phân tích về phân bổ màu", 54, 240),
-    (1258, "từ sách của Kilmer", 46, 240),
+    (1196, "Bài phân tích các nguyên tắc phân bổ màu", 50, 240),
+    (1258, "trong nhà, từ sách của Kilmer", 46, 240),
     (1348, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
@@ -550,11 +550,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.08s", head="Khối tủ xanh to: ở lâu có ngộp?", vo="Sơn nguyên một khối tủ to màu xanh, ở lâu có thấy ngộp không?",
+    dict(t="0–4.11s", head="Khối tủ xanh to: ở lâu có ngộp?", vo="Sơn nguyên một khối tủ to màu xanh, ở lâu có thấy ngộp không?",
          cam=WIDE, dark=False, dd=[], move="push"),
-    dict(t="5.08–13.9s", head="Căn hộ mẫu: The Green Box, Berlin", vo="Đó là câu bác hàng xóm hỏi, khi bạn tụi mình sơn cả khối tủ màu xanh rêu, theo mẫu căn hộ ở Berlin trong ảnh.",
+    dict(t="4.11–10.42s", head="Căn hộ mẫu: The Green Box, Berlin", vo="Đó là câu bác hàng xóm hỏi, khi bạn tụi mình sơn cả khối tủ màu xanh rêu, tham khảo theo một căn hộ ở Berlin trong ảnh.",
          cam=((1450, 1000), 2.3, (798, 880)), dark=True, dd=[], move="pan_d"),
-    dict(t="13.9–14.4s", head="end", vo="",
+    dict(t="10.42–10.92s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
