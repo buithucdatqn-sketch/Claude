@@ -551,11 +551,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–7.58s", head="Kilmer & Kilmer (2014): nền đậm, đồ lớn dịu", vo="Sách của hai tác giả Kilmer gợi ý đặt màu đậm lên tường hoặc sàn, còn đồ lớn thì để tông dịu.",
+    dict(t="0–7.26s", head="Kilmer & Kilmer (2014): nền đậm, đồ lớn dịu", vo="Sách của hai tác giả Kilmer gợi ý đặt màu đậm lên tường hoặc sàn, còn đồ lớn thì dịu tông.",
          cam=WIDE, dark=False, dd=[], move="hold"),
-    dict(t="7.58–13.28s", head="Phòng ngủ: tường xanh đậm làm nền", vo="Như phòng ngủ này, tường xanh đậm làm nền, còn chiếc giường lớn thì để trắng.",
+    dict(t="7.26–12.34s", head="Phòng ngủ: tường xanh đậm làm nền", vo="Như phòng ngủ này, tường xanh đậm làm nền, còn giường lớn thì trắng.",
          cam=WIDE, dark=False, dd=[], move="push"),
-    dict(t="13.28–13.78s", head="end", vo="",
+    dict(t="12.34–12.84s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

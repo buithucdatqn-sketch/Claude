@@ -554,7 +554,7 @@ SCENES = [
          cam=WIDE, dark=True, dd=[], move="hold"),
     dict(t="5.7–12.34s", head="Ngộp hay không: còn tùy diện tích, ánh sáng", vo="Vậy ngộp hay không, theo tụi mình, còn tùy màu phủ rộng cỡ nào và nhà đủ sáng không.",
          cam=WIDE, dark=False, dd=[], move="pull"),
-    dict(t="12.34–18.67s", head="end", vo="",
+    dict(t="12.34–18.35s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="push"),
 ]
 END = len(SCENES) - 1

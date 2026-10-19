@@ -552,9 +552,9 @@ WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–4.76s", head="Mảng lớn trông đậm hơn mẫu thử", vo="Màu phủ lên mảng tường lớn luôn trông đậm hơn trên mẫu nhỏ.",
          cam=WIDE, dark=True, dd=[], move="hold"),
-    dict(t="4.76–10.46s", head="Berlin: hai mặt kính cao kịch trần", vo="Ánh sáng cũng vậy. Căn hộ ở Berlin có tới hai mặt kính cao kịch trần,",
+    dict(t="4.76–9.84s", head="Berlin: hai mặt kính cao kịch trần", vo="Ánh sáng cũng vậy, căn hộ Berlin có hai mặt kính cao kịch trần,",
          cam=WIDE, dark=False, dd=[], move="pull"),
-    dict(t="10.46–10.96s", head="end", vo="",
+    dict(t="9.84–10.34s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

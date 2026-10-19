@@ -1,15 +1,15 @@
 [
  {
   "blk": 1,
-  "t": "0–5.08s",
+  "t": "0–4.45s",
   "head": "Khối tủ xanh to: ở lâu có ngộp?",
-  "loi": "Sơn nguyên một khối tủ to màu xanh, ở lâu có thấy ngộp không?",
-  "tts": "Sơn nguyên một khối tủ to màu xanh, ở lâu có thấy ngộp không?",
+  "loi": "Sơn nguyên khối tủ to màu xanh, ở lâu có ngộp không?",
+  "tts": "Sơn nguyên khối tủ to màu xanh, ở lâu có ngộp không?",
   "part": "A"
  },
  {
   "blk": 1,
-  "t": "5.08–12.34s",
+  "t": "4.45–11.71s",
   "head": "Căn hộ mẫu: The Green Box, Berlin",
   "loi": "Bác hàng xóm hỏi vậy khi bạn tụi mình sơn tủ xanh rêu theo căn hộ The Green Box ở Berlin.",
   "tts": "Bác hàng xóm hỏi vậy khi bạn tụi mình sơn tủ xanh rêu theo căn hộ Đờ Grin Bốc ở Béc-lin.",
@@ -17,15 +17,15 @@
  },
  {
   "blk": 2,
-  "t": "12.34–18.98s",
+  "t": "11.71–17.41s",
   "head": "Lỗi hay gặp: mỗi phòng một màu",
-  "loi": "Ngược lại, có nhà sơn mỗi phòng một màu, từng màu riêng thì đẹp, gộp lại thì rối mắt.",
-  "tts": "Ngược lại, có nhà sơn mỗi phòng một màu, từng màu riêng thì đẹp, gộp lại thì rối mắt.",
+  "loi": "Ngược lại, có nhà sơn mỗi phòng một màu, riêng thì đẹp, gộp lại rối mắt.",
+  "tts": "Ngược lại, có nhà sơn mỗi phòng một màu, riêng thì đẹp, gộp lại rối mắt.",
   "part": "E"
  },
  {
   "blk": 2,
-  "t": "18.98–25.93s",
+  "t": "17.41–24.36s",
   "head": "Albers (1963): mảng lớn lấn át mảng nhỏ",
   "loi": "Josef Albers chỉ ra mảng màu lớn luôn lấn át mảng nhỏ. Chia đều thì chẳng màu nào làm chủ.",
   "tts": "Giô-dép An-bơ chỉ ra mảng màu lớn luôn lấn át mảng nhỏ. Chia đều thì chẳng màu nào làm chủ.",
@@ -33,23 +33,23 @@
  },
  {
   "blk": 3,
-  "t": "25.93–33.51s",
+  "t": "24.36–31.62s",
   "head": "Kilmer & Kilmer (2014): nền đậm, đồ lớn dịu",
-  "loi": "Sách của hai tác giả Kilmer gợi ý đặt màu đậm lên tường hoặc sàn, còn đồ lớn thì để tông dịu.",
-  "tts": "Sách của hai tác giả Kin-mơ gợi ý đặt màu đậm lên tường hoặc sàn, còn đồ lớn thì để tông dịu.",
+  "loi": "Sách của hai tác giả Kilmer gợi ý đặt màu đậm lên tường hoặc sàn, còn đồ lớn thì dịu tông.",
+  "tts": "Sách của hai tác giả Kin-mơ gợi ý đặt màu đậm lên tường hoặc sàn, còn đồ lớn thì dịu tông.",
   "part": "B"
  },
  {
   "blk": 3,
-  "t": "33.51–39.21s",
+  "t": "31.62–36.7s",
   "head": "Phòng ngủ: tường xanh đậm làm nền",
-  "loi": "Như phòng ngủ này, tường xanh đậm làm nền, còn chiếc giường lớn thì để trắng.",
-  "tts": "Như phòng ngủ này, tường xanh đậm làm nền, còn chiếc giường lớn thì để trắng.",
+  "loi": "Như phòng ngủ này, tường xanh đậm làm nền, còn giường lớn thì trắng.",
+  "tts": "Như phòng ngủ này, tường xanh đậm làm nền, còn giường lớn thì trắng.",
   "part": "D"
  },
  {
   "blk": 4,
-  "t": "39.21–44.29s",
+  "t": "36.7–41.78s",
   "head": "Phòng nhỏ: màu đậm dễ ngộp",
   "loi": "Có điều, màu đậm trong phòng nhỏ dễ ngột ngạt hơn trong phòng lớn.",
   "tts": "Có điều, màu đậm trong phòng nhỏ dễ ngột ngạt hơn trong phòng lớn.",
@@ -57,7 +57,7 @@
  },
  {
   "blk": 4,
-  "t": "44.29–49.05s",
+  "t": "41.78–46.54s",
   "head": "Mảng lớn trông đậm hơn mẫu thử",
   "loi": "Màu phủ lên mảng tường lớn luôn trông đậm hơn trên mẫu nhỏ.",
   "tts": "Màu phủ lên mảng tường lớn luôn trông đậm hơn trên mẫu nhỏ.",
@@ -65,23 +65,23 @@
  },
  {
   "blk": 5,
-  "t": "49.05–54.75s",
+  "t": "46.54–51.62s",
   "head": "Berlin: hai mặt kính cao kịch trần",
-  "loi": "Ánh sáng cũng vậy. Căn hộ ở Berlin có tới hai mặt kính cao kịch trần,",
-  "tts": "Ánh sáng cũng vậy. Căn hộ ở Béc-lin có tới hai mặt kính cao kịch trần,",
+  "loi": "Ánh sáng cũng vậy, căn hộ Berlin có hai mặt kính cao kịch trần,",
+  "tts": "Ánh sáng cũng vậy, căn hộ Béc-lin có hai mặt kính cao kịch trần,",
   "part": "D"
  },
  {
   "blk": 5,
-  "t": "54.75–61.39s",
+  "t": "51.62–57.95s",
   "head": "Một mặt thoáng: khối xanh thành mảng tối",
-  "loi": "còn nhà bạn tụi mình chỉ một mặt thoáng hướng tây, nên khối xanh đậm dễ thành mảng tối.",
-  "tts": "còn nhà bạn tụi mình chỉ một mặt thoáng hướng tây, nên khối xanh đậm dễ thành mảng tối.",
+  "loi": "còn nhà bạn tụi mình chỉ một mặt thoáng hướng tây, nên khối xanh dễ thành mảng tối.",
+  "tts": "còn nhà bạn tụi mình chỉ một mặt thoáng hướng tây, nên khối xanh dễ thành mảng tối.",
   "part": "D"
  },
  {
   "blk": 6,
-  "t": "61.39–67.09s",
+  "t": "57.95–63.65s",
   "head": "Thử ở nhà mình: nhạt hơn mẫu một bậc",
   "loi": "Ở nhà mình, màu nào phủ mảng lớn thì chọn nhạt hơn mẫu thử một bậc.",
   "tts": "Ở nhà mình, màu nào phủ mảng lớn thì chọn nhạt hơn mẫu thử một bậc.",
@@ -89,7 +89,7 @@
  },
  {
   "blk": 6,
-  "t": "67.09–73.73s",
+  "t": "63.65–70.29s",
   "head": "Ngộp hay không: còn tùy diện tích, ánh sáng",
   "loi": "Vậy ngộp hay không, theo tụi mình, còn tùy màu phủ rộng cỡ nào và nhà đủ sáng không.",
   "tts": "Vậy ngộp hay không, theo tụi mình, còn tùy màu phủ rộng cỡ nào và nhà đủ sáng không.",
@@ -97,10 +97,10 @@
  },
  {
   "blk": 6,
-  "t": "73.73–80.06s",
+  "t": "70.29–76.3s",
   "head": "end",
-  "loi": "Bài phân tích về phân bổ màu từ sách của Kilmer, mọi người xem phần bình luận nha.",
-  "tts": "Bài phân tích về phân bổ màu từ sách của Kin-mơ, mọi người xem phần bình luận nha.",
+  "loi": "Bài phân tích phân bổ màu từ sách của Kilmer, mọi người xem phần bình luận nha.",
+  "tts": "Bài phân tích phân bổ màu từ sách của Kin-mơ, mọi người xem phần bình luận nha.",
   "part": "I"
  }
 ]

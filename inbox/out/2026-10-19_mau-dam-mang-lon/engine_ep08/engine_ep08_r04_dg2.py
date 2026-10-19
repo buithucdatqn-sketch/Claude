@@ -552,9 +552,9 @@ WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–6.95s", head="Albers (1963): mảng lớn lấn át mảng nhỏ", vo="Josef Albers chỉ ra mảng màu lớn luôn lấn át mảng nhỏ. Chia đều thì chẳng màu nào làm chủ.",
          cam=((502, 642), 0.62, (540, 900)), dark=False, dd=[], move="hold"),
-    dict(t="6.95–14.53s", head="Kilmer & Kilmer (2014): nền đậm, đồ lớn dịu", vo="Sách của hai tác giả Kilmer gợi ý đặt màu đậm lên tường hoặc sàn, còn đồ lớn thì để tông dịu.",
+    dict(t="6.95–14.21s", head="Kilmer & Kilmer (2014): nền đậm, đồ lớn dịu", vo="Sách của hai tác giả Kilmer gợi ý đặt màu đậm lên tường hoặc sàn, còn đồ lớn thì dịu tông.",
          cam=((502, 642), 0.62, (540, 900)), dark=False, dd=[], move="hold"),
-    dict(t="14.53–15.03s", head="end", vo="",
+    dict(t="14.21–14.71s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

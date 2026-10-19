@@ -551,11 +551,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.64s", head="Lỗi hay gặp: mỗi phòng một màu", vo="Ngược lại, có nhà sơn mỗi phòng một màu, từng màu riêng thì đẹp, gộp lại thì rối mắt.",
+    dict(t="0–5.7s", head="Lỗi hay gặp: mỗi phòng một màu", vo="Ngược lại, có nhà sơn mỗi phòng một màu, riêng thì đẹp, gộp lại rối mắt.",
          cam=((545, 281), 1.0, (540, 900)), dark=False, dd=[], move="hold"),
-    dict(t="6.64–13.59s", head="Albers (1963): mảng lớn lấn át mảng nhỏ", vo="Josef Albers chỉ ra mảng màu lớn luôn lấn át mảng nhỏ. Chia đều thì chẳng màu nào làm chủ.",
+    dict(t="5.7–12.65s", head="Albers (1963): mảng lớn lấn át mảng nhỏ", vo="Josef Albers chỉ ra mảng màu lớn luôn lấn át mảng nhỏ. Chia đều thì chẳng màu nào làm chủ.",
          cam=((545, 281), 1.0, (540, 900)), dark=False, dd=[], move="pull"),
-    dict(t="13.59–14.09s", head="end", vo="",
+    dict(t="12.65–13.15s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
