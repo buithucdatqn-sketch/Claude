@@ -16,13 +16,13 @@ from silhouette import loose_contour  # noqa: E402
 
 SRC = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "source.png")
 OUT = sys.argv[2] if len(sys.argv) > 2 else HERE
-os.makedirs(os.path.join(OUT, "frames_r08_mb"), exist_ok=True)
+os.makedirs(os.path.join(OUT, "frames_r01_ad8"), exist_ok=True)
 
 W, H, SS = 1080, 1920, 2
 FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
 if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
-CREDIT = "Mặt bằng: Ester Bruzkus Architekten, qua ArchDaily · ghi chú Giả Thuyết Kiến Trúc"
+CREDIT = "Ảnh dự án: The Green Box, Berlin · Ester Bruzkus Architekten · ảnh Robert Rieger (qua ArchDaily)"
 HEAD = "AH DECODE · MÀU ĐẬM, MẢNG LỚN"
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
@@ -54,11 +54,11 @@ SW, SH = src.size
 
 # ---------------- board geometry (2x master, 1x = reel canvas) ----------------
 B2W, B2H = W * 2, H * 2
-CARD_W2, BORDER2 = 1920, 0  # theo tỷ lệ ảnh của run
+CARD_W2, BORDER2 = 1440, 0  # theo tỷ lệ ảnh của run
 PH_W2 = CARD_W2 - 2 * BORDER2
 PH_H2 = int(round(PH_W2 * SH / SW))
 CARD_H2 = PH_H2 + 2 * BORDER2
-C2 = (B2W / 2, 1810.0)
+C2 = (B2W / 2, 1880.0)
 ANGLE = 1.2  # degrees, counter-clockwise (card is hung very slightly crooked)
 S2 = PH_W2 / SW
 ROT = cv2.getRotationMatrix2D(C2, ANGLE, 1.0)
@@ -550,11 +550,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.39s", head="Mảng lớn trông đậm hơn mẫu thử", vo="Cùng một màu, phủ lên mảng tường lớn luôn trông đậm hơn trên mẫu nhỏ.",
-         cam=((1200, 540), 1.25, (540, 900)), dark=True, dd=[], move="hold"),
-    dict(t="5.39–11.09s", head="Berlin: hai mặt kính cao kịch trần", vo="Ánh sáng cũng vậy. Căn hộ ở Berlin có tới hai mặt kính cao kịch trần,",
-         cam=((1200, 540), 1.25, (540, 900)), dark=False, dd=[], move="pull"),
-    dict(t="11.09–11.59s", head="end", vo="",
+    dict(t="0–5.08s", head="Khối tủ xanh to: ở lâu có ngộp?", vo="Sơn nguyên một khối tủ to màu xanh, ở lâu có thấy ngộp không?",
+         cam=WIDE, dark=False, dd=[], move="push"),
+    dict(t="5.08–12.34s", head="Căn hộ mẫu: The Green Box, Berlin", vo="Bác hàng xóm hỏi vậy khi bạn tụi mình sơn tủ xanh rêu theo căn hộ The Green Box ở Berlin.",
+         cam=((1450, 1000), 2.3, (798, 880)), dark=True, dd=[], move="pan_d"),
+    dict(t="12.34–12.84s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
@@ -625,7 +625,7 @@ BOARDS["clean"] = make_board(1.0)
 frames = []
 for i in range(len(SCENES)):
     im = render_scene(i)
-    im.save(os.path.join(OUT, "frames_r08_mb", f"scene_{i + 1}.png"))
+    im.save(os.path.join(OUT, "frames_r01_ad8", f"scene_{i + 1}.png"))
     frames.append(im)
 
 # ---------------- contact sheet ----------------
@@ -650,5 +650,5 @@ fy = TOP + rows * (PH + 86) + 10
 d.text((MX, fy), "Nền trắng trơn · băng keo giấy thay ghim · header AH DECODE · bỏ “Bước n”", font=F(32), fill=(255, 255, 255))
 d.text((MX, fy + 44), "Cảnh zoom kín ảnh: chữ trắng viết lên ảnh (có phủ tối nhẹ).", font=F(32), fill=(225, 220, 212))
 d.text((MX, fy + 88), "Ảnh tối ~14% ở cảnh có nét vẽ; cảnh 1, 6, 7 giữ ảnh nguyên bản.", font=F(32), fill=(225, 220, 212))
-sheet.save(os.path.join(OUT, "storyboard_r08_mb.png"))
+sheet.save(os.path.join(OUT, "storyboard_r01_ad8.png"))
 print("fabric", tuple(int(x) for x in FAB), "sheet", sheet.size)

@@ -22,7 +22,7 @@ W, H, SS = 1080, 1920, 2
 FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
 if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
-CREDIT = "Ảnh dự án: The Green Box, Berlin · Ester Bruzkus Architekten · ảnh Robert Rieger"
+CREDIT = "Diagram: Giả Thuyết Kiến Trúc, theo Kilmer & Kilmer (2014)"
 HEAD = "AH DECODE · MÀU ĐẬM, MẢNG LỚN"
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
@@ -54,11 +54,11 @@ SW, SH = src.size
 
 # ---------------- board geometry (2x master, 1x = reel canvas) ----------------
 B2W, B2H = W * 2, H * 2
-CARD_W2, BORDER2 = 1440, 0  # theo tỷ lệ ảnh của run
+CARD_W2, BORDER2 = 1920, 0  # theo tỷ lệ ảnh của run
 PH_W2 = CARD_W2 - 2 * BORDER2
 PH_H2 = int(round(PH_W2 * SH / SW))
 CARD_H2 = PH_H2 + 2 * BORDER2
-C2 = (B2W / 2, 1880.0)
+C2 = (B2W / 2, 1810.0)
 ANGLE = 1.2  # degrees, counter-clockwise (card is hung very slightly crooked)
 S2 = PH_W2 / SW
 ROT = cv2.getRotationMatrix2D(C2, ANGLE, 1.0)
@@ -551,11 +551,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–9.45s", head="Kilmer & Kilmer (2014): cách 2, nền đậm", vo="Sách của hai tác giả Kilmer còn một cách, sơn đậm lên tường hoặc sàn, đồ lớn lùi về tông dịu, vài món nhỏ mới mang màu mạnh.",
-         cam=((900, 1500), 2.3, (540, 1132)), dark=False, dd=[], move="hold"),
-    dict(t="9.45–14.53s", head="Phòng nhỏ: màu đậm dễ ngộp", vo="Có điều, màu đậm trong phòng nhỏ dễ ngột ngạt hơn trong phòng lớn.",
-         cam=((900, 1500), 2.3, (540, 1132)), dark=True, dd=[], move="pan_u"),
-    dict(t="14.53–15.03s", head="end", vo="",
+    dict(t="0–7.26s", head="Căn hộ mẫu: The Green Box, Berlin", vo="Bác hàng xóm hỏi vậy khi bạn tụi mình sơn tủ xanh rêu theo căn hộ The Green Box ở Berlin.",
+         cam=((545, 281), 1.0, (540, 900)), dark=True, dd=[], move="hold"),
+    dict(t="7.26–13.9s", head="Lỗi hay gặp: mỗi phòng một màu", vo="Ngược lại, có nhà sơn mỗi phòng một màu, từng màu riêng thì đẹp, gộp lại thì rối mắt.",
+         cam=((545, 281), 1.0, (540, 900)), dark=False, dd=[], move="push"),
+    dict(t="13.9–14.4s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
@@ -717,7 +717,7 @@ proc = subprocess.Popen(
     ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
      "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-t", f"{TOTAL:.2f}",
      "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-pix_fmt", "yuv420p", "-movflags", "+faststart",
-     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "r06_i04_silent.mp4")], stdin=subprocess.PIPE)
+     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "r02_dg1a_silent.mp4")], stdin=subprocess.PIPE)
 
 nframes = int(TOTAL * FPS)
 cur = -1

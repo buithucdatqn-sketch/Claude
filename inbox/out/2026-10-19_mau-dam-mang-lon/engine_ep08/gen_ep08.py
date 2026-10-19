@@ -3,7 +3,7 @@ Khai thác phần bài 01 chưa tập nào dùng (tập 4, 5, 6, 6b đã làm: c
 hai màu phụ): câu hỏi của bác hàng xóm, lỗi mỗi phòng một màu (diagram 01), cách 2 nền đậm (diagram 02),
 Albers "mảng lớn lấn át mảng nhỏ", phòng nhỏ dễ ngộp, mảng lớn trông đậm hơn mẫu thử, ánh sáng hai mặt kính
 so với một mặt thoáng hướng tây, chọn nhạt hơn mẫu thử một bậc. Xen kẽ bài: tập 7 là bài 02 nên tập 8 lấy bài 01.
-Ảnh chụp của bài 01 đều đã lộ nét ở tập trước, nên ở đây chỉ dùng nền sạch (đã xoá nét ở tập 4, 5, 6, 6b), không lộ nhãn cũ.
+Ảnh chụp lấy mới từ ArchDaily (bộ ảnh Robert Rieger của chính công trình), không trùng ảnh tập 4, 5, 6, 6b; không có mặt bằng vì mặt bằng duy nhất đã dùng ở tập 6b.
 Dựng trên gen_ep07.py của tập 7 (run theo ảnh, hoà tan khi đổi ảnh)."""
 import json
 import os
@@ -15,51 +15,56 @@ WPS = 3.2      # tốc độ đọc dự kiến (từ/giây) cho bản nháp; gi
 TRANS = 0.7
 
 WIDE = "WIDE"
-PHOTO = "Ảnh dự án: The Green Box, Berlin · Ester Bruzkus Architekten · ảnh Robert Rieger"
+PHOTO = "Ảnh dự án: The Green Box, Berlin · Ester Bruzkus Architekten · ảnh Robert Rieger (qua ArchDaily)"
 DIAG = "Diagram: Giả Thuyết Kiến Trúc, theo Kilmer & Kilmer (2014)"
-# ảnh làm việc: (file, npz doodle gốc, credit). Ảnh chụp là nền sạch của các tập trước, không lộ nét.
+# ảnh làm việc: (file, npz doodle gốc, credit). Ảnh chụp lấy mới từ bộ ảnh ArchDaily của chính công trình (trang nguồn ảnh
+# bài 01 ghi), không trùng ảnh nào đã dùng ở tập 4, 5, 6, 6b (mục 0.5c). Ảnh sạch, không có nét gốc nên không lộ nét.
 IMGS = dict(
-    i13=("source_13.png", "", PHOTO),   # ảnh 13 bếp trong khối xanh (nền sạch từ tập 6b)
-    i04=("source_04.png", "", PHOTO),   # ảnh 04 khối xanh giữa nhà, góc sách (nền sạch từ tập 5)
-    i12=("source_12.png", "", PHOTO),   # ảnh 12 tủ nan và tường sơn phẳng (nền sạch từ tập 6)
-    i07=("source_07.png", "", PHOTO),   # ảnh 07 mặt thư viện (nền sạch từ tập 4)
-    i11=("source_11.png", "", PHOTO),   # ảnh 11 mảng bếp (nền sạch từ tập 6b)
-    dg1a=("source_dg1a.png", "", DIAG),  # diagram 01, khung "chia đều mỗi phòng một màu"
-    dg1b=("source_dg1b.png", "", DIAG),  # diagram 01, khung "nền lùi, một màu làm chủ"
-    dg2=("source_dg2.png", "", DIAG),    # diagram 02, cách 2 nền đậm
-    mb=("source_03c.png", "", "Mặt bằng: Ester Bruzkus Architekten, qua ArchDaily · ghi chú Giả Thuyết Kiến Trúc"),  # ảnh 03 (bản tập 6b, đã bỏ tiêu đề), cắt dải có chú thích
+    ad8=("source_ad8.png", "", PHOTO),    # ArchDaily 8: phòng khách, khối thư viện xanh cạnh mặt kính
+    ad20=("source_ad20.png", "", PHOTO),  # ArchDaily 20: phòng ngủ tường xanh đậm, giường trắng
+    ad21=("source_ad21.png", "", PHOTO),  # ArchDaily 21: khoảng hẹp giữa vách kính và mảng xanh
+    ad17=("source_ad17.png", "", PHOTO),  # ArchDaily 17: tủ nan xanh cạnh mảng tường xanh nhạt lớn
+    ad10=("source_ad10.png", "", PHOTO),  # ArchDaily 10: phòng khách sáng, rèm trắng cao kịch trần
+    ad18=("source_ad18.png", "", PHOTO),  # ArchDaily 18: tủ xanh đậm, chỗ khuất sáng
+    ad15=("source_ad15.png", "", PHOTO),  # ArchDaily 15: tủ áo sơn màu nhạt, mảng lớn
+    dg1a=("source_dg1a.png", "", DIAG),   # diagram 01, khung "chia đều mỗi phòng một màu"
+    dg1b=("source_dg1b.png", "", DIAG),   # diagram 01, khung "nền lùi, một màu làm chủ"
+    dg2=("source_dg2.png", "", DIAG),     # diagram 02, cách 2 nền đậm
 )
 SC = [
-    dict(move="push", part="A", blk=1, img="i13", head="Khối tủ xanh to: ở lâu có ngộp?", cam=WIDE, dark=False, dd=[],
+    dict(move="push", part="A", blk=1, img="ad8", head="Khối tủ xanh to: ở lâu có ngộp?", cam=WIDE, dark=False, dd=[],
          vo="Sơn nguyên một khối tủ to màu xanh, ở lâu có thấy ngộp không?"),
-    dict(move="pull", part="A", blk=1, img="i04", head="Câu hỏi của bác hàng xóm", cam=((1000, 1100), 2.3, (540, 900)), dark=True, dd=[],
-         vo="Bác hàng xóm hỏi vậy khi bạn tụi mình sơn cả khối tủ xanh rêu, theo mẫu căn hộ The Green Box.",
-         tts="Bác hàng xóm hỏi vậy khi bạn tụi mình sơn cả khối tủ xanh rêu, theo mẫu căn hộ Đờ Grin Bốc."),
+    dict(move="pan_d", part="A", blk=1, img="ad8", head="Căn hộ mẫu: The Green Box, Berlin", cam=((1450, 1000), 2.3, (540, 900)), dark=True, dd=[],
+         vo="Bác hàng xóm hỏi vậy khi bạn tụi mình sơn tủ xanh rêu theo căn hộ The Green Box ở Berlin.",
+         tts="Bác hàng xóm hỏi vậy khi bạn tụi mình sơn tủ xanh rêu theo căn hộ Đờ Grin Bốc ở Béc-lin."),
     dict(move="push", part="E", blk=2, img="dg1a", head="Lỗi hay gặp: mỗi phòng một màu", cam=((545, 281), 1.0, (540, 900)), free=True, dark=False, dd=[],
-         vo="Nhiều nhà lại chọn mỗi phòng một màu, đứng riêng thì đẹp, gộp lại thì rối mắt."),
+         vo="Ngược lại, có nhà sơn mỗi phòng một màu, từng màu riêng thì đẹp, gộp lại thì rối mắt."),
     dict(move="pull", part="B", blk=2, img="dg1b", head="Albers (1963): mảng lớn lấn át mảng nhỏ", cam=((545, 281), 1.0, (540, 900)), free=True, dark=False, dd=[],
-         vo="Josef Albers chỉ ra, mảng màu lớn luôn lấn át mảng nhỏ, nên chia đều thì chẳng màu nào làm chủ.",
-         tts="Giô-dép An-bơ chỉ ra, mảng màu lớn luôn lấn át mảng nhỏ, nên chia đều thì chẳng màu nào làm chủ."),
-    dict(move="hold", part="B", blk=3, img="dg2", head="Kilmer & Kilmer (2014): cách 2, nền đậm", cam=((502, 642), 0.66, (540, 900)), free=True, dark=False, dd=[],
-         vo="Sách của hai tác giả Kilmer còn một cách, sơn đậm lên tường hoặc sàn, đồ lớn lùi về tông dịu, vài món nhỏ mới mang màu mạnh.",
-         tts="Sách của hai tác giả Kin-mơ còn một cách, sơn đậm lên tường hoặc sàn, đồ lớn lùi về tông dịu, vài món nhỏ mới mang màu mạnh."),
-    dict(move="pan_u", part="C", blk=4, img="i04", head="Phòng nhỏ: màu đậm dễ ngộp", cam=((900, 1500), 2.3, (540, 900)), dark=True, dd=[],
+         vo="Josef Albers chỉ ra mảng màu lớn luôn lấn át mảng nhỏ. Chia đều thì chẳng màu nào làm chủ.",
+         tts="Giô-dép An-bơ chỉ ra mảng màu lớn luôn lấn át mảng nhỏ. Chia đều thì chẳng màu nào làm chủ."),
+    dict(move="hold", part="B", blk=3, img="dg2", head="Kilmer & Kilmer (2014): nền đậm, đồ lớn dịu", cam=((502, 642), 0.62, (540, 900)), free=True, dark=False, dd=[],
+         vo="Sách của hai tác giả Kilmer gợi ý đặt màu đậm lên tường hoặc sàn, còn đồ lớn thì để tông dịu.",
+         tts="Sách của hai tác giả Kin-mơ gợi ý đặt màu đậm lên tường hoặc sàn, còn đồ lớn thì để tông dịu."),
+    dict(move="push", part="D", blk=3, img="ad20", head="Phòng ngủ: tường xanh đậm làm nền", cam=WIDE, dark=False, dd=[],
+         vo="Như phòng ngủ này, tường xanh đậm làm nền, còn chiếc giường lớn thì để trắng."),
+    dict(move="pan_u", part="C", blk=4, img="ad21", head="Phòng nhỏ: màu đậm dễ ngộp", cam=((1300, 1200), 2.3, (540, 900)), dark=True, dd=[],
          vo="Có điều, màu đậm trong phòng nhỏ dễ ngột ngạt hơn trong phòng lớn."),
-    dict(move="push", part="C", blk=4, img="i12", head="Mảng lớn trông đậm hơn mẫu thử", cam=((1300, 900), 2.4, (540, 900)), dark=True, dd=[],
-         vo="Cùng một màu, phủ lên mảng tường lớn luôn trông đậm hơn trên mẫu nhỏ."),
-    dict(move="pull", part="D", blk=5, img="mb", head="Berlin: hai mặt kính cao kịch trần", cam=((1200, 540), 1.25, (540, 900)), free=True, dark=False, dd=[],
+    dict(move="push", part="C", blk=4, img="ad17", head="Mảng lớn trông đậm hơn mẫu thử", cam=((1000, 1100), 2.3, (540, 900)), dark=True, dd=[],
+         vo="Màu phủ lên mảng tường lớn luôn trông đậm hơn trên mẫu nhỏ."),
+    dict(move="pull", part="D", blk=5, img="ad10", head="Berlin: hai mặt kính cao kịch trần", cam=WIDE, dark=False, dd=[],
          vo="Ánh sáng cũng vậy. Căn hộ ở Berlin có tới hai mặt kính cao kịch trần,",
          tts="Ánh sáng cũng vậy. Căn hộ ở Béc-lin có tới hai mặt kính cao kịch trần,"),
-    dict(move="pan_l", part="D", blk=5, img="i07", head="Một mặt thoáng: khối xanh thành mảng tối", cam=((900, 1200), 2.3, (540, 900)), dark=True, dd=[],
-         vo="còn nhà bạn tụi mình chỉ có một mặt thoáng hướng tây, nên khối xanh đậm dễ thành một mảng tối."),
-    dict(move="push", part="F", blk=6, img="i11", head="Thử ở nhà mình: nhạt hơn mẫu một bậc", cam=((600, 500), 2.9, (540, 900)), dark=True, dd=[],
-         vo="Ở nhà mình, màu nào sẽ phủ lên mảng lớn thì chọn nhạt hơn mẫu thử một bậc."),
-    dict(move="pull", part="H", blk=6, img="i04", head="Ngộp hay không: diện tích và ánh sáng", cam=WIDE, dark=False, dd=[],
-         vo="Vậy ngộp hay không là chuyện diện tích và ánh sáng, chứ không chỉ là màu gì."),
-    dict(move="push", part="I", blk=6, img="i04", head="end", cam="END", dark=False, vo="", dd=[],
+    dict(move="pan_l", part="D", blk=5, img="ad18", head="Một mặt thoáng: khối xanh thành mảng tối", cam=((1200, 1600), 2.3, (540, 900)), dark=True, dd=[],
+         vo="còn nhà bạn tụi mình chỉ một mặt thoáng hướng tây, nên khối xanh đậm dễ thành mảng tối."),
+    dict(move="push", part="F", blk=6, img="ad15", head="Thử ở nhà mình: nhạt hơn mẫu một bậc", cam=((1250, 800), 2.9, (540, 900)), dark=True, dd=[],
+         vo="Ở nhà mình, màu nào phủ mảng lớn thì chọn nhạt hơn mẫu thử một bậc."),
+    dict(move="pull", part="H", blk=6, img="ad8", head="Ngộp hay không: còn tùy diện tích, ánh sáng", cam=WIDE, dark=False, dd=[],
+         vo="Vậy ngộp hay không, theo tụi mình, còn tùy màu phủ rộng cỡ nào và nhà đủ sáng không."),
+    dict(move="push", part="I", blk=6, img="ad8", head="end", cam="END", dark=False, vo="", dd=[],
          say="Bài phân tích về phân bổ màu từ sách của Kilmer, mọi người xem phần bình luận nha.",
          tts="Bài phân tích về phân bổ màu từ sách của Kin-mơ, mọi người xem phần bình luận nha."),
 ]
+
 
 DOODLE = r'''
 _P = os.path.join(HERE, "@NPZ@")
@@ -235,12 +240,12 @@ for n, ks in enumerate(runs(), 1):
                      first_frame=2 if ks[0] > 0 else 1))
 json.dump(RUNS, open(OUT + "engine_ep08/runs.json", "w"), ensure_ascii=False, indent=1)
 
-# ảnh bìa 1080x1920: cảnh rộng ảnh 13 (bếp trong khối xanh), tiêu đề ngắn của reel + câu móc
-COVER = [dict(img="i13", head="Màu đậm, mảng lớn", vo="Khối tủ xanh to, ở lâu có ngộp không?", dark=False),
-         dict(img="i13", head="end", vo="", dark=False)]
+# ảnh bìa 1080x1920: cảnh rộng ảnh ArchDaily 8 (khối thư viện xanh), tiêu đề ngắn của reel + câu móc
+COVER = [dict(img="ad8", head="Màu đậm, mảng lớn", vo="Khối tủ xanh to, ở lâu có ngộp không?", dark=False),
+         dict(img="ad8", head="end", vo="", dark=False)]
 build("engine_storyboard_v7.py", "cover_ep08.py", False,
       wrap_data([scene_line(COVER[0], 0, 3, "WIDE", []), scene_line(COVER[1], 3, 4, "END_SAFE", [])],
-                DOODLE.replace("@NPZ@", "none.npz")), "i13", "cover")
+                DOODLE.replace("@NPZ@", "none.npz")), "ad8", "cover")
 
 # ---- elevenlabs.txt theo mục 8b (không thẻ kỹ thuật) + elevenlabs_break.txt (sáu khối, thẻ ngắt 1,2 giây, theo prompt lịch chạy) ----
 shown = [x.get("say", x["vo"]) for x in SC]

@@ -19,15 +19,15 @@ for r in RUNS:
     shutil.rmtree(OUT + "frames_" + r["tag"])
     if os.path.exists(OUT + f"storyboard_{r['tag']}.png"):
         os.remove(OUT + f"storyboard_{r['tag']}.png")
-NAME = dict(i13="ảnh 13 bếp", i04="ảnh 04 khối xanh, góc sách", i12="ảnh 12 tủ nan, tường sơn", i07="ảnh 07 mặt thư viện", i11="ảnh 11 mảng bếp", dg1a="diagram 01 (mỗi phòng một màu)", dg1b="diagram 01 (một màu làm chủ)", dg2="diagram 02 (cách 2 nền đậm)", mb="ảnh 03 mặt bằng")
+NAME = dict(ad8="ArchDaily 8 phòng khách, khối thư viện", ad20="ArchDaily 20 phòng ngủ", ad21="ArchDaily 21 khoảng hẹp", ad17="ArchDaily 17 tủ nan, tường", ad10="ArchDaily 10 phòng khách sáng", ad18="ArchDaily 18 tủ xanh đậm", ad15="ArchDaily 15 tủ áo màu nhạt", dg1a="diagram 01 (mỗi phòng một màu)", dg1b="diagram 01 (một màu làm chủ)", dg2="diagram 02 (cách 2 nền đậm)")
 img_of = {k: r["img"] for r in RUNS for k in r["scenes"]}
 PW, PH, GAP, MX, TOP, cols = 360, 640, 34, 50, 200, 4
 rows = (len(SC) + cols - 1) // cols
 sheet = Image.new("RGB", (MX * 2 + cols * PW + (cols - 1) * GAP, TOP + rows * (PH + 120) + 200), (30, 27, 24))
 d = ImageDraw.Draw(sheet)
 d.text((MX, 38), "AH Decode · Màu đậm, mảng lớn (tập 8)", font=F(60), fill=(255, 255, 255))
-d.text((MX, 118), "Bài 01 (The Green Box): diagram 01, 02, mặt bằng 03, ảnh 04, 07, 11, 12, 13 (bếp, góc sách, mảng bếp, tủ nan)", font=F(34), fill=(200, 194, 186))
-d.text((MX, 158), "Ảnh chụp dùng nền sạch (nhãn gốc đã dùng ở tập 4–6); đổi ảnh bằng hoà tan, camera trôi nhẹ", font=F(34), fill=(200, 194, 186))
+d.text((MX, 118), "Bài 01 (The Green Box): diagram 01, 02 của bài + 7 ảnh mới từ ArchDaily (Robert Rieger), không trùng tập 4–6", font=F(34), fill=(200, 194, 186))
+d.text((MX, 158), "Ảnh chụp sạch, không có nét gốc; đổi ảnh bằng hoà tan, camera trôi nhẹ", font=F(34), fill=(200, 194, 186))
 for i, sc in enumerate(SC):
     r, c = divmod(i, cols)
     x, y = MX + c * (PW + GAP), TOP + r * (PH + 120)

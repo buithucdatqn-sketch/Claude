@@ -54,11 +54,11 @@ SW, SH = src.size
 
 # ---------------- board geometry (2x master, 1x = reel canvas) ----------------
 B2W, B2H = W * 2, H * 2
-CARD_W2, BORDER2 = 1920, 0  # theo tỷ lệ ảnh của run
+CARD_W2, BORDER2 = 1502, 0  # theo tỷ lệ ảnh của run
 PH_W2 = CARD_W2 - 2 * BORDER2
 PH_H2 = int(round(PH_W2 * SH / SW))
 CARD_H2 = PH_H2 + 2 * BORDER2
-C2 = (B2W / 2, 1810.0)
+C2 = (B2W / 2, 1880.0)
 ANGLE = 1.2  # degrees, counter-clockwise (card is hung very slightly crooked)
 S2 = PH_W2 / SW
 ROT = cv2.getRotationMatrix2D(C2, ANGLE, 1.0)
@@ -551,11 +551,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.01s", head="Lỗi hay gặp: mỗi phòng một màu", vo="Nhiều nhà lại chọn mỗi phòng một màu, đứng riêng thì đẹp, gộp lại thì rối mắt.",
-         cam=((545, 281), 1.0, (540, 900)), dark=False, dd=[], move="hold"),
-    dict(t="6.01–13.27s", head="Albers (1963): mảng lớn lấn át mảng nhỏ", vo="Josef Albers chỉ ra, mảng màu lớn luôn lấn át mảng nhỏ, nên chia đều thì chẳng màu nào làm chủ.",
-         cam=((545, 281), 1.0, (540, 900)), dark=False, dd=[], move="pull"),
-    dict(t="13.27–13.77s", head="end", vo="",
+    dict(t="0–6.95s", head="Albers (1963): mảng lớn lấn át mảng nhỏ", vo="Josef Albers chỉ ra mảng màu lớn luôn lấn át mảng nhỏ. Chia đều thì chẳng màu nào làm chủ.",
+         cam=((502, 642), 0.62, (540, 900)), dark=False, dd=[], move="hold"),
+    dict(t="6.95–14.53s", head="Kilmer & Kilmer (2014): nền đậm, đồ lớn dịu", vo="Sách của hai tác giả Kilmer gợi ý đặt màu đậm lên tường hoặc sàn, còn đồ lớn thì để tông dịu.",
+         cam=((502, 642), 0.62, (540, 900)), dark=False, dd=[], move="hold"),
+    dict(t="14.53–15.03s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
@@ -717,7 +717,7 @@ proc = subprocess.Popen(
     ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
      "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-t", f"{TOTAL:.2f}",
      "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-pix_fmt", "yuv420p", "-movflags", "+faststart",
-     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "r04_dg1b_silent.mp4")], stdin=subprocess.PIPE)
+     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "r04_dg2_silent.mp4")], stdin=subprocess.PIPE)
 
 nframes = int(TOTAL * FPS)
 cur = -1

@@ -232,5 +232,45 @@
       "tom_tat": "Nắng xiên/ánh sáng trượt làm vân tường hiện ra (ảnh 01, 04, 05)"
     },
     "ghi_chu": "Chủ Trang KHÔNG muốn làm ý này (đã bỏ ở tập 7 ngày 2026-10-18; nhắc lại 2026-10-19). Coi như đã dùng: không làm reel nắng xiên/ánh sáng xiên/ánh sáng trượt dọc tường, không lấy ảnh 04, 05, diagram 01 làm ảnh chính. Đã có hai bản làm nhầm ở nhánh claude/happy-mccarthy-qs8b4y (2026-10-19) và bản đầu tập 7 (437548a), đều huỷ."
+  },
+  {
+    "tap": 8,
+    "slug": "mau-dam-mang-lon",
+    "ngay": "2026-10-19",
+    "nguyen_ly": "Màu đậm trên mảng lớn: diện tích và ánh sáng (Albers, Kilmer & Kilmer cách 2 nền đậm)",
+    "nhom": "Phối màu: diện tích, ánh sáng",
+    "bai_kho": {
+      "duong_dan": "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/bai-01.md",
+      "nhanh": "AH-Interior-notes",
+      "commit": "e93fb208ecc908cdf55801227247d5c4887a59ce"
+    },
+    "anh_kho": [
+      "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/01-diagram-mau-gi-mau-o-dau.png",
+      "AH-Decode-Decor/bai-01-3-bai-hoc-phoi-mau-noi-that-can-ho/anh/02-diagram-hai-cach-phan-bo.png"
+    ],
+    "anh_ngoai": [
+      "archdaily:the-green-box-ester-bruzkus-architekten_8.jpg",
+      "archdaily:the-green-box-ester-bruzkus-architekten_10.jpg",
+      "archdaily:the-green-box-ester-bruzkus-architekten_15.jpg",
+      "archdaily:the-green-box-ester-bruzkus-architekten_17.jpg",
+      "archdaily:the-green-box-ester-bruzkus-architekten_18.jpg",
+      "archdaily:the-green-box-ester-bruzkus-architekten_20.jpg",
+      "archdaily:the-green-box-ester-bruzkus-architekten_21.jpg"
+    ],
+    "du_an": "The Green Box, Berlin",
+    "studio": "Ester Bruzkus Architekten",
+    "nhiep_anh": "Robert Rieger",
+    "nguon": [
+      "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 5 (theo bài)",
+      "Albers (1963) Interaction of Color, Yale UP (theo bài)"
+    ],
+    "trang_thai": "cho_ghi_am",
+    "thu_muc": "inbox/out/2026-10-19_mau-dam-mang-lon/",
+    "y_bai": {
+      "muc": "Mở bài + mục 'Màu gì, ở đâu?' + đoạn 'Thực ra cũng có nhiều yếu tố khác chi phối việc chọn màu'",
+      "tom_tat": "Khối màu đậm có ngộp hay không là chuyện diện tích và ánh sáng; mỗi phòng một màu thì rối; cách 2 nền đậm; mảng lớn trông đậm hơn mẫu, chọn nhạt hơn một bậc"
+    },
+    "y_con_lai_cua_bai": [],
+    "ghi_chu": "Xen kẽ bài (tập 7 là bài 02). Ảnh chụp lấy mới từ ArchDaily (Robert Rieger), không trùng tập 4, 5, 6, 6b; không có mặt bằng vì mặt bằng duy nhất đã dùng ở tập 6b. Bài 01 coi như đã khai thác hết ý."
   }
 ]

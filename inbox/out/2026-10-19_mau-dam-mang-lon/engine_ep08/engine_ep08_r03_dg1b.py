@@ -16,7 +16,7 @@ from silhouette import loose_contour  # noqa: E402
 
 SRC = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "source.png")
 OUT = sys.argv[2] if len(sys.argv) > 2 else HERE
-os.makedirs(os.path.join(OUT, "frames_r03_dg1a"), exist_ok=True)
+os.makedirs(os.path.join(OUT, "frames_r03_dg1b"), exist_ok=True)
 
 W, H, SS = 1080, 1920, 2
 FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
@@ -550,10 +550,10 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–7.58s", head="Câu hỏi của bác hàng xóm", vo="Bác hàng xóm hỏi vậy khi bạn tụi mình sơn cả khối tủ xanh rêu, theo mẫu căn hộ The Green Box.",
-         cam=((545, 281), 1.0, (540, 900)), dark=True, dd=[], move="hold"),
-    dict(t="7.58–13.59s", head="Lỗi hay gặp: mỗi phòng một màu", vo="Nhiều nhà lại chọn mỗi phòng một màu, đứng riêng thì đẹp, gộp lại thì rối mắt.",
-         cam=((545, 281), 1.0, (540, 900)), dark=False, dd=[], move="push"),
+    dict(t="0–6.64s", head="Lỗi hay gặp: mỗi phòng một màu", vo="Ngược lại, có nhà sơn mỗi phòng một màu, từng màu riêng thì đẹp, gộp lại thì rối mắt.",
+         cam=((545, 281), 1.0, (540, 900)), dark=False, dd=[], move="hold"),
+    dict(t="6.64–13.59s", head="Albers (1963): mảng lớn lấn át mảng nhỏ", vo="Josef Albers chỉ ra mảng màu lớn luôn lấn át mảng nhỏ. Chia đều thì chẳng màu nào làm chủ.",
+         cam=((545, 281), 1.0, (540, 900)), dark=False, dd=[], move="pull"),
     dict(t="13.59–14.09s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
@@ -625,7 +625,7 @@ BOARDS["clean"] = make_board(1.0)
 frames = []
 for i in range(len(SCENES)):
     im = render_scene(i)
-    im.save(os.path.join(OUT, "frames_r03_dg1a", f"scene_{i + 1}.png"))
+    im.save(os.path.join(OUT, "frames_r03_dg1b", f"scene_{i + 1}.png"))
     frames.append(im)
 
 # ---------------- contact sheet ----------------
@@ -650,5 +650,5 @@ fy = TOP + rows * (PH + 86) + 10
 d.text((MX, fy), "Nền trắng trơn · băng keo giấy thay ghim · header AH DECODE · bỏ “Bước n”", font=F(32), fill=(255, 255, 255))
 d.text((MX, fy + 44), "Cảnh zoom kín ảnh: chữ trắng viết lên ảnh (có phủ tối nhẹ).", font=F(32), fill=(225, 220, 212))
 d.text((MX, fy + 88), "Ảnh tối ~14% ở cảnh có nét vẽ; cảnh 1, 6, 7 giữ ảnh nguyên bản.", font=F(32), fill=(225, 220, 212))
-sheet.save(os.path.join(OUT, "storyboard_r03_dg1a.png"))
+sheet.save(os.path.join(OUT, "storyboard_r03_dg1b.png"))
 print("fabric", tuple(int(x) for x in FAB), "sheet", sheet.size)

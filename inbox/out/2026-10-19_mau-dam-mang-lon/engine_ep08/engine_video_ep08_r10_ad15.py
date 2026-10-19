@@ -22,7 +22,7 @@ W, H, SS = 1080, 1920, 2
 FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
 if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
-CREDIT = "Ảnh dự án: The Green Box, Berlin · Ester Bruzkus Architekten · ảnh Robert Rieger"
+CREDIT = "Ảnh dự án: The Green Box, Berlin · Ester Bruzkus Architekten · ảnh Robert Rieger (qua ArchDaily)"
 HEAD = "AH DECODE · MÀU ĐẬM, MẢNG LỚN"
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
@@ -551,11 +551,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–7.26s", head="Một mặt thoáng: khối xanh thành mảng tối", vo="còn nhà bạn tụi mình chỉ có một mặt thoáng hướng tây, nên khối xanh đậm dễ thành một mảng tối.",
-         cam=((600, 500), 2.9, (540, 540)), dark=True, dd=[], move="hold"),
-    dict(t="7.26–13.59s", head="Thử ở nhà mình: nhạt hơn mẫu một bậc", vo="Ở nhà mình, màu nào sẽ phủ lên mảng lớn thì chọn nhạt hơn mẫu thử một bậc.",
-         cam=((600, 500), 2.9, (540, 540)), dark=True, dd=[], move="push"),
-    dict(t="13.59–14.09s", head="end", vo="",
+    dict(t="0–6.64s", head="Một mặt thoáng: khối xanh thành mảng tối", vo="còn nhà bạn tụi mình chỉ một mặt thoáng hướng tây, nên khối xanh đậm dễ thành mảng tối.",
+         cam=((1250, 800), 2.9, (540, 888)), dark=True, dd=[], move="hold"),
+    dict(t="6.64–12.34s", head="Thử ở nhà mình: nhạt hơn mẫu một bậc", vo="Ở nhà mình, màu nào phủ mảng lớn thì chọn nhạt hơn mẫu thử một bậc.",
+         cam=((1250, 800), 2.9, (540, 888)), dark=True, dd=[], move="push"),
+    dict(t="12.34–12.84s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
@@ -717,7 +717,7 @@ proc = subprocess.Popen(
     ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
      "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-t", f"{TOTAL:.2f}",
      "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-pix_fmt", "yuv420p", "-movflags", "+faststart",
-     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "r10_i11_silent.mp4")], stdin=subprocess.PIPE)
+     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "r10_ad15_silent.mp4")], stdin=subprocess.PIPE)
 
 nframes = int(TOTAL * FPS)
 cur = -1
