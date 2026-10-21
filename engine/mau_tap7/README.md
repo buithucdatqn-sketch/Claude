@@ -8,6 +8,7 @@ Chép nguyên thư mục này vào `OUT/engine_epNN/`, đổi `ep07` thành `epN
 | `gen_epNN.py` | Một nguồn dữ liệu cảnh duy nhất: sinh engine khung + engine video cho từng run, `runs.json`, `scenes.json`, `elevenlabs.txt`, engine ảnh bìa | `IMGS` (ảnh, npz, credit riêng), `SC` (mỗi cảnh: `img`, `head`, `vo`, `tts`, `cam`, `dd`, `move`), `T_AUDIO` (mốc cảnh theo ghi âm, giai đoạn B), `HEAD`, chữ khung cuối, `COVER`. |
 | `sheet_epNN.py` | Chạy engine khung của mọi run, gom `frames/`, dựng `storyboard.png` | Tên hiển thị của ảnh (`NAME`). |
 | `render_epNN.sh` | Dựng video các run song song (3 tiến trình) | Không. |
-| `ghep_epNN.py` | Cắt từng run và nối bằng hoà tan 0,45 giây, ghép giọng đã xử lý | Tên file giọng và tên file ra. |
+| `ghep_epNN.py` | Cắt từng run và nối bằng hoà tan 0,45 giây, ghép giọng đã xử lý | Chạy `python3 -I ghep_epNN.py OUT audio/bai-NNN_xu-ly.wav OUT/reel_<slug>_final.mp4`. |
 
 Thứ tự chạy: `make_layers.py` → `gen_epNN.py` → `sheet_epNN.py` (xem storyboard, sửa camera) → (giai đoạn B) đặt `T_AUDIO`, sửa lời theo ghi âm → `gen_epNN.py` → `sheet_epNN.py` → `render_epNN.sh` → `ghep_epNN.py`.
+Đường dẫn engine tự tìm từ vị trí file (thư mục chứa engine/engine_video.py), chạy được ở mọi chỗ clone repo.

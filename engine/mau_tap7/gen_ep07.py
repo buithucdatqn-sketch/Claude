@@ -9,7 +9,16 @@ import json
 import os
 import re
 
-E = "/home/user/Claude/engine/"
+def _repo_engine(d):
+    """tìm thư mục engine/ của repo (chứa engine_video.py) từ vị trí file này đi lên"""
+    while d != "/":
+        if os.path.isfile(os.path.join(d, "engine", "engine_video.py")):
+            return os.path.join(d, "engine") + "/"
+        d = os.path.dirname(d)
+    raise SystemExit("không tìm thấy engine/engine_video.py")
+
+
+E = _repo_engine(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) + "/"
 WPS = 3.2      # tốc độ đọc dự kiến (từ/giây) cho bản nháp; giai đoạn B căn lại theo ghi âm
 TRANS = 0.7

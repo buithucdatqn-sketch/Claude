@@ -22,9 +22,10 @@ for i in range(1, len(RUNS)):
     chain.append(f"[{cur}][v{i}]xfade=transition={tr}:duration={XF}:offset={acc - XF:.3f}[x{i}]")
     cur, acc = f"x{i}", acc + lens[i] - XF
 fc = ";".join(parts + chain) + f";[{len(RUNS)}:a]apad[a]"
-ins += ["-i", OUT + "audio/bai-007_xu-ly.wav"]
+AUDIO = sys.argv[2] if len(sys.argv) > 2 else OUT + "audio/bai-007_xu-ly.wav"   # đổi theo tập
+ins += ["-i", AUDIO]
 subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *ins, "-filter_complex", fc,
                 "-map", f"[{cur}]", "-map", "[a]", "-t", f"{acc:.3f}", "-c:v", "libx264", "-preset", "medium", "-crf", "17",
                 "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart",
-                OUT + "reel_mem-trong-tam-tay_final.mp4"], check=True)
+                sys.argv[3] if len(sys.argv) > 3 else OUT + "reel_mem-trong-tam-tay_final.mp4"], check=True)
 print("xong", round(acc, 2), "giây")
