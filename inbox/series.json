@@ -173,7 +173,7 @@
     "nguon": [
       "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 12 (theo bài)"
     ],
-    "trang_thai": "cho_ghi_am",
+    "trang_thai": "da_dung_video",
     "thu_muc": "inbox/out/2026-10-21_be-mat-hat-sang/",
     "y_bai": {
       "muc": "Bề mặt đón ánh sáng đầu tiên quyết định căn phòng sáng tới đâu",
@@ -183,6 +183,7 @@
       "Ánh sáng từ trên cao vào sâu và dịu hơn cửa ngang tầm mắt (bài học 1; đã có bản nháp bỏ dở ở 2026-10-21_anh-sang-tu-tren-cao)",
       "Chỗ làm việc sáng gần đều, chỗ nghỉ được chênh sáng (bài học 3)"
     ],
-    "ghi_chu": "Chủ Trang chuyển hướng từ 'ánh sáng từ trên cao' sang 'bề mặt phản xạ'. Hai ảnh chụp (11, 10) + sơ đồ 01, 09 + mặt bằng 02. Giai đoạn A, chờ giọng ElevenLabs."
+    "ghi_chu": "Chủ Trang chuyển hướng từ 'ánh sáng từ trên cao' sang 'bề mặt phản xạ'. Hai ảnh chụp (11, 10) + sơ đồ 01, 09 + mặt bằng 02. Giai đoạn A, chờ giọng ElevenLabs. | Giai đoạn 2 (2026-10-21): giọng ElevenLabs 54,75 s (inbox/audio/be-mat-hat-sang.mp3). Thẻ ngắt bị rút còn 0,4–0,7 s nên mốc cảnh lấy bằng ghép cụm câu theo khoảng nghỉ (silencedetect -35 dB/0,12 s) và số tiếng; cảnh 1–10 khớp dấu câu. Phần khung cuối chỉ có khoảng 2,5 s tiếng nói (~10 tiếng) thay vì 36 tiếng, cần chủ Trang nghe lại. Âm thanh: lọc dưới 80 Hz, afftdn nhẹ, -14,8 LUFS. Video 56,5 s.",
+    "video": "inbox/out/2026-10-21_be-mat-hat-sang/reel_be-mat-hat-sang_final.mp4"
   }
 ]
