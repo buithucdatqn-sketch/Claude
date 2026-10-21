@@ -150,38 +150,39 @@
   },
   {
     "tap": 7,
-    "slug": "anh-sang-tu-tren-cao",
+    "slug": "be-mat-hat-sang",
     "ngay": "2026-10-21",
-    "nguyen_ly": "Ánh sáng vào từ trên cao vào sâu và dịu hơn cửa ngang tầm mắt (Kilmer & Kilmer, Designing Interiors 2014, ch.12)",
-    "nhom": "Ánh sáng tự nhiên: vị trí ô cửa",
+    "nguyen_ly": "Bề mặt đón ánh sáng đầu tiên quyết định phòng sáng tới đâu (Kilmer & Kilmer, Designing Interiors 2014, ch.12)",
+    "nhom": "Ánh sáng tự nhiên: bề mặt phản xạ",
     "bai_kho": {
       "duong_dan": "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/bai-03.md",
       "nhanh": "AH-Interior-notes",
       "commit": "dad48a5494ea48cfecd8e479089e94c1e7e80c13"
     },
     "anh_kho": [
-      "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/anh/07-doodle-cua-cao-ban-an.jpg",
-      "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/anh/06-doodle-vach-lam-cau-thang.jpg",
-      "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/anh/05-diagram-cua-thap-cua-cao.png",
-      "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/anh/04-mat-cat-doc-union-street.png"
+      "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/anh/11-doodle-go-mo-gam-cau-thang.jpg",
+      "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/anh/10-doodle-go-mo-inox-bong.jpg",
+      "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/anh/01-diagram-be-mat-hat-sang.png",
+      "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/anh/09-diagram-thang-phan-xa.png",
+      "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/anh/02-mat-bang-tang-tret-union-street.png"
     ],
     "du_an": "Union Street House, Northcote, Melbourne",
     "studio": "Prior Barraclough",
     "nhiep_anh": "Ben Hosking",
-    "cau_moc": "Nhà phố mở kính thật lớn, mà ba giờ chiều vẫn phải bật đèn. Lạ không?",
+    "cau_moc": "Cùng một ô cửa, sao phòng sơn trắng sáng hẳn, còn phòng ốp gỗ lại tối?",
     "nguon": [
       "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 12 (theo bài)"
     ],
     "trang_thai": "cho_ghi_am",
-    "thu_muc": "inbox/out/2026-10-21_anh-sang-tu-tren-cao/",
+    "thu_muc": "inbox/out/2026-10-21_be-mat-hat-sang/",
     "y_bai": {
-      "muc": "Ánh sáng đi vào từ trên cao sẽ vào sâu và dịu hơn ánh sáng từ ô cửa ngang tầm mắt",
-      "tom_tat": "Cửa sát trần cho ánh sáng chạm trần, tường, lam trước khi tới người; Union Street: ô kính đầu hồi + vách lam gác lửng"
+      "muc": "Bề mặt đón ánh sáng đầu tiên quyết định căn phòng sáng tới đâu",
+      "tom_tat": "Mắt chỉ thấy ánh sáng bề mặt hắt lại; trần sáng nhất, mặt mờ; Union Street: gỗ mờ không chói, bù bằng kính hai đầu, hốc bếp inox bóng"
     },
     "y_con_lai_cua_bai": [
-      "Bề mặt đón ánh sáng đầu tiên quyết định phòng sáng tới đâu (bài học 2)",
+      "Ánh sáng từ trên cao vào sâu và dịu hơn cửa ngang tầm mắt (bài học 1; đã có bản nháp bỏ dở ở 2026-10-21_anh-sang-tu-tren-cao)",
       "Chỗ làm việc sáng gần đều, chỗ nghỉ được chênh sáng (bài học 3)"
     ],
-    "ghi_chu": "Tập đầu tiên theo nguyên tắc 2b mới: hai ảnh chụp (07, 06) + sơ đồ 05 + mặt cắt 04; engine v8 nhiều ảnh. Giai đoạn A, chờ giọng ElevenLabs."
+    "ghi_chu": "Chủ Trang chuyển hướng từ 'ánh sáng từ trên cao' sang 'bề mặt phản xạ'. Hai ảnh chụp (11, 10) + sơ đồ 01, 09 + mặt bằng 02. Giai đoạn A, chờ giọng ElevenLabs."
   }
 ]
