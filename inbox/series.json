@@ -114,5 +114,38 @@
       "Một màu chủ đạo, hai màu phụ đi vòng quanh (bài học 3)"
     ],
     "ghi_chu": "Giai đoạn 1 (chưa dựng video, chờ INBOX/audio/nen-lui-mau-don-mot-khoi.mp3). Tiêu đề/nhãn gốc trên ảnh 04 đã xoá khỏi nền, chỉ dùng 2 mũi tên + 2 nhãn."
+  },
+  {
+    "tap": 6,
+    "slug": "chat-cam-anh-xien",
+    "ngay": "2026-10-21",
+    "nguyen_ly": "Chất cảm chỉ hiện rõ khi ánh sáng chiếu xiên (Kilmer & Kilmer, Designing Interiors 2014, ch.4)",
+    "nhom": "Chất cảm vật liệu: ánh sáng xiên",
+    "bai_kho": {
+      "duong_dan": "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/bai-02.md",
+      "nhanh": "AH-Interior-notes",
+      "commit": "4becc17794bb377e143af5f411c40f6a4bf75769"
+    },
+    "anh_kho": [
+      "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/04-doodle-nang-xien-ban-cong.jpg"
+    ],
+    "du_an": "MS House, Ahmedabad, Ấn Độ",
+    "studio": "Studio Saransh",
+    "nhiep_anh": "Ishita Sitwala, The Fishy Project",
+    "cau_moc": "Cùng một bức tường bê tông, sao trên ảnh thì ấm, ngoài đời lại lạnh?",
+    "nguon": [
+      "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 4 (theo bài)"
+    ],
+    "trang_thai": "cho_ghi_am",
+    "thu_muc": "inbox/out/2026-10-21_chat-cam-anh-xien/",
+    "y_bai": {
+      "muc": "Chất cảm chỉ hiện rõ khi ánh sáng chiếu xiên qua bề mặt",
+      "tom_tat": "Gờ nhỏ đổ bóng khi nắng sát mặt tường; đèn sáng đều làm vân chìm"
+    },
+    "y_con_lai_cua_bai": [
+      "Thô cạnh mịn, mềm trong tầm tay, cứng ở xa (bài học 2)",
+      "Độ thô theo kích thước phòng và khoảng cách nhìn (bài học 3)"
+    ],
+    "ghi_chu": "Giai đoạn A, chờ giọng ElevenLabs (bai-02). Chưa dựng video."
   }
 ]
