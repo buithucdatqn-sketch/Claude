@@ -1,4 +1,4 @@
-"""Reel storyboard generator v5 (one oak pin per print, beige margins, all-white text).
+"""Reel storyboard generator v8 (nhiều ảnh nguồn: PHOTOS, SCENES[i]["img"]) (one oak pin per print, beige margins, all-white text).
 The project photo is a print pinned on a linen board; the 'camera' zooms into the
 board. Doodles (white, dashed) sit on the photo; text goes outside the photo with
 ink arrows pointing at the doodles, or white on the photo when the zoom fills the screen."""
@@ -22,7 +22,7 @@ W, H, SS = 1080, 1920, 2
 FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
 if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
-CREDIT = "Ảnh dự án: Union Street House, Northcote, Melbourne · Prior Barraclough · ảnh Ben Hosking"
+CREDIT = 'Ảnh dự án: Union Street House, Northcote, Melbourne · Prior Barraclough · ảnh Ben Hosking'
 HEAD = "AH DECODE · ÁNH SÁNG TỪ TRÊN CAO"
 # Khung cuối cố định cho mọi tập: giới thiệu series AH Decode, mời theo dõi Fanpage Giả Thuyết Kiến Trúc, KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
 END_LINES = [
@@ -42,34 +42,66 @@ def F(size):
     return ImageFont.truetype(FONT, size)
 
 
-def put_credit(t, xy, size, fill, anchor="la"):
-    """credit một dòng; dài quá 960 px thì giảm cỡ chữ (tối thiểu 26)"""
+def put_credit(t, xy, size, fill, anchor="la", credit=None):
+    """credit một dòng (riêng cho từng ảnh); dài quá 960 px thì giảm cỡ chữ (tối thiểu 26)"""
+    txt = credit or CREDIT
     s = size
-    while s > 26 and t.d.textlength(CREDIT, font=F(s)) > 960:
+    while s > 26 and t.d.textlength(txt, font=F(s)) > 960:
         s -= 1
-    t.put(xy, CREDIT, s, fill, anchor)
+    t.put(xy, txt, s, fill, anchor)
 
-
-src = Image.open(SRC).convert("RGB")
-SW, SH = src.size
 
 # ---------------- board geometry (2x master, 1x = reel canvas) ----------------
 B2W, B2H = W * 2, H * 2
-CARD_W2, BORDER2 = 1320, 0  # ảnh dọc 3:4: thẻ hẹp hơn để chữ nằm ngoài ảnh
-PH_W2 = CARD_W2 - 2 * BORDER2
-PH_H2 = int(round(PH_W2 * SH / SW))
-CARD_H2 = PH_H2 + 2 * BORDER2
+CARD_W2, BORDER2 = 1320, 0  # ảnh chính dọc 2:3: thẻ hẹp hơn để chữ nằm ngoài ảnh
 C2 = (B2W / 2, 1880.0)
 ANGLE = 1.2  # degrees, counter-clockwise (card is hung very slightly crooked)
-S2 = PH_W2 / SW
-ROT = cv2.getRotationMatrix2D(C2, ANGLE, 1.0)
-CARD_TOP1, CARD_BOT1 = (C2[1] - CARD_H2 / 2) / 2, (C2[1] + CARD_H2 / 2) / 2
+
+
+class Photo:
+    """một ảnh nguồn và hình học thẻ ảnh của nó; cảnh chỉ tới ảnh qua SCENES[i]["img"] (mặc định "main")"""
+
+    def __init__(self, path, card_w2=None, c2y=None, border2=None, credit=None, angle=ANGLE):
+        self.src = Image.open(path).convert("RGB")
+        self.SW, self.SH = self.src.size
+        self.CARD_W2 = CARD_W2 if card_w2 is None else card_w2
+        self.BORDER2 = BORDER2 if border2 is None else border2
+        self.PH_W2 = self.CARD_W2 - 2 * self.BORDER2
+        self.PH_H2 = int(round(self.PH_W2 * self.SH / self.SW))
+        self.CARD_H2 = self.PH_H2 + 2 * self.BORDER2
+        self.C2 = (B2W / 2, C2[1] if c2y is None else c2y)
+        self.ANGLE = angle
+        self.S2 = self.PH_W2 / self.SW
+        self.ROT = cv2.getRotationMatrix2D(self.C2, angle, 1.0)
+        self.CARD_TOP1, self.CARD_BOT1 = (self.C2[1] - self.CARD_H2 / 2) / 2, (self.C2[1] + self.CARD_H2 / 2) / 2
+        self.CARD_L1, self.CARD_R1 = (self.C2[0] - self.CARD_W2 / 2) / 2, (self.C2[0] + self.CARD_W2 / 2) / 2
+        self.center = (self.SW / 2, self.SH / 2)
+        self.credit = credit
+        self.boards = {}
+
+    def src_to_b2(self, p):
+        ux = self.C2[0] + p[0] * self.S2 - self.PH_W2 / 2
+        uy = self.C2[1] + p[1] * self.S2 - self.PH_H2 / 2
+        R = self.ROT
+        return (R[0, 0] * ux + R[0, 1] * uy + R[0, 2], R[1, 0] * ux + R[1, 1] * uy + R[1, 2])
+
+    def board(self, key):
+        if key not in self.boards:
+            self.boards[key] = make_board(0.86 if key == "dark" else 1.0, self)
+        return self.boards[key]
+
+
+PHOTOS = {"main": Photo(SRC)}
+DEFAULT_IMG = "main"
+src = PHOTOS["main"].src
+SW, SH = src.size
+PH_W2, PH_H2, CARD_H2 = PHOTOS["main"].PH_W2, PHOTOS["main"].PH_H2, PHOTOS["main"].CARD_H2
+S2, ROT = PHOTOS["main"].S2, PHOTOS["main"].ROT
+CARD_TOP1, CARD_BOT1 = PHOTOS["main"].CARD_TOP1, PHOTOS["main"].CARD_BOT1
 
 
 def src_to_b2(p):
-    ux = C2[0] + p[0] * S2 - PH_W2 / 2
-    uy = C2[1] + p[1] * S2 - PH_H2 / 2
-    return (ROT[0, 0] * ux + ROT[0, 1] * uy + ROT[0, 2], ROT[1, 0] * ux + ROT[1, 1] * uy + ROT[1, 2])
+    return PHOTOS[DEFAULT_IMG].src_to_b2(p)
 
 
 # ---------------- colour ----------------
@@ -225,28 +257,29 @@ def add_swatch(out, sw):
 _LINEN = None
 
 
-def make_board(dark, swatches=False):
+def make_board(dark, P=None, swatches=False):
+    P = P or PHOTOS[DEFAULT_IMG]
     global _LINEN
     if _LINEN is None:
         _LINEN = linen()
     fab = np.full((B2H, B2W, 3), 255.0, np.float32)  # plain white background
     # paper card (unrotated), then rotate rgb + alpha together
-    x0, y0 = int(C2[0] - CARD_W2 / 2), int(C2[1] - CARD_H2 / 2)
+    x0, y0 = int(P.C2[0] - P.CARD_W2 / 2), int(P.C2[1] - P.CARD_H2 / 2)
     rgb = np.empty((B2H, B2W, 3), np.float32)
     rgb[:] = PAPER
     rng = np.random.default_rng(5)
-    paper = np.empty((CARD_H2, CARD_W2, 3), np.float32)
+    paper = np.empty((P.CARD_H2, P.CARD_W2, 3), np.float32)
     paper[:] = PAPER
-    paper *= (1 + 0.012 * cv2.GaussianBlur(rng.normal(size=(CARD_H2, CARD_W2)).astype(np.float32), (0, 0), 1.2))[..., None]
-    ph = np.array(src.resize((PH_W2, PH_H2), Image.LANCZOS)).astype(np.float32) * dark
-    paper[BORDER2:BORDER2 + PH_H2, BORDER2:BORDER2 + PH_W2] = ph
+    paper *= (1 + 0.012 * cv2.GaussianBlur(rng.normal(size=(P.CARD_H2, P.CARD_W2)).astype(np.float32), (0, 0), 1.2))[..., None]
+    ph = np.array(P.src.resize((P.PH_W2, P.PH_H2), Image.LANCZOS)).astype(np.float32) * dark
+    paper[P.BORDER2:P.BORDER2 + P.PH_H2, P.BORDER2:P.BORDER2 + P.PH_W2] = ph
     # hairline shadow where the print edge meets the white margin
-    edge = np.zeros((CARD_H2, CARD_W2), np.float32)
-    rgb[y0:y0 + CARD_H2, x0:x0 + CARD_W2] = paper
+    edge = np.zeros((P.CARD_H2, P.CARD_W2), np.float32)
+    rgb[y0:y0 + P.CARD_H2, x0:x0 + P.CARD_W2] = paper
     al = np.zeros((B2H, B2W), np.float32)
-    al[y0:y0 + CARD_H2, x0:x0 + CARD_W2] = 1
-    rgb = cv2.warpAffine(rgb, ROT, (B2W, B2H), flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_REPLICATE)
-    al = cv2.warpAffine(al, ROT, (B2W, B2H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_CONSTANT, borderValue=0)
+    al[y0:y0 + P.CARD_H2, x0:x0 + P.CARD_W2] = 1
+    rgb = cv2.warpAffine(rgb, P.ROT, (B2W, B2H), flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_REPLICATE)
+    al = cv2.warpAffine(al, P.ROT, (B2W, B2H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_CONSTANT, borderValue=0)
     # soft shadows on the linen
     s1 = cv2.GaussianBlur(np.roll(np.roll(al, 26, 0), 14, 1), (0, 0), 30) * 0.42
     s2 = cv2.GaussianBlur(np.roll(np.roll(al, 8, 0), 4, 1), (0, 0), 7) * 0.30
@@ -255,10 +288,10 @@ def make_board(dark, swatches=False):
     if swatches:
         for sw in SWATCHES:
             add_swatch(out, sw)
-    cx, cy = C2[0], y0 + 6  # tape centred on the top edge
-    px = ROT[0, 0] * cx + ROT[0, 1] * cy + ROT[0, 2]
-    py = ROT[1, 0] * cx + ROT[1, 1] * cy + ROT[1, 2]
-    draw_tape(out, (px, py), ANGLE - 3.0)
+    cx, cy = P.C2[0], y0 + 6  # tape centred on the top edge
+    px = P.ROT[0, 0] * cx + P.ROT[0, 1] * cy + P.ROT[0, 2]
+    py = P.ROT[1, 0] * cx + P.ROT[1, 1] * cy + P.ROT[1, 2]
+    draw_tape(out, (px, py), P.ANGLE - 3.0)
     b2 = np.concatenate([np.clip(out, 0, 255), (al * 255)[..., None]], 2).astype(np.uint8)
     b1 = cv2.resize(b2, (W, H), interpolation=cv2.INTER_AREA)
     return b1, b2
@@ -266,14 +299,41 @@ def make_board(dark, swatches=False):
 
 # ---------------- camera ----------------
 class Cam:
-    def __init__(self, focus_src, z, anchor):
-        self.z, self.A = z, anchor
-        fb = src_to_b2(focus_src)
+    """focus_src: điểm trên ảnh (hoặc "C" = tâm ảnh); anchor: (x, y) trên khung, ("top", y[, x]) đặt mép trên thẻ ở y,
+    ("cover"[, x, y]) dời neo để thẻ phủ kín khung nếu zoom đủ lớn"""
+
+    def __init__(self, focus_src, z, anchor, P=None):
+        self.P = P or PHOTOS[DEFAULT_IMG]
+        self.focus = self.P.center if focus_src == "C" else tuple(focus_src)
+        self.z = z
+        fb = self.P.src_to_b2(self.focus)
         self.F = (fb[0] / 2, fb[1] / 2)
-        self.s = z * S2 / 2  # canvas px per source px
+        self.s = z * self.P.S2 / 2  # canvas px per source px
+        self.A = self._anchor(anchor)
+
+    def _anchor(self, anchor):
+        if isinstance(anchor, (tuple, list)) and anchor and isinstance(anchor[0], str):
+            kind = anchor[0]
+            if kind == "top":
+                ax = anchor[2] if len(anchor) > 2 else W / 2
+                return (ax, anchor[1] + self.z * (self.F[1] - self.P.CARD_TOP1))
+            if kind == "cover":
+                ax = anchor[1] if len(anchor) > 1 else W / 2
+                ay = anchor[2] if len(anchor) > 2 else 900
+                m = 40
+                z, F, P = self.z, self.F, self.P
+                lo, hi = W + m - z * (P.CARD_R1 - F[0]), -m - z * (P.CARD_L1 - F[0])
+                if lo <= hi:
+                    ax = min(max(ax, lo), hi)
+                lo, hi = H + m - z * (P.CARD_BOT1 - F[1]), -m - z * (P.CARD_TOP1 - F[1])
+                if lo <= hi:
+                    ay = min(max(ay, lo), hi)
+                return (ax, ay)
+            raise ValueError(anchor)
+        return tuple(anchor)
 
     def pt(self, p):
-        bx, by = src_to_b2(p)
+        bx, by = self.P.src_to_b2(p)
         return (self.A[0] + self.z * (bx / 2 - self.F[0]), self.A[1] + self.z * (by / 2 - self.F[1]))
 
     def board_y(self, y1):
@@ -281,11 +341,11 @@ class Cam:
 
     @property
     def card_top(self):
-        return self.board_y(CARD_TOP1)
+        return self.board_y(self.P.CARD_TOP1)
 
     @property
     def card_bottom(self):
-        return self.board_y(CARD_BOT1)
+        return self.board_y(self.P.CARD_BOT1)
 
     def render(self, b1, b2):
         z = self.z
@@ -328,6 +388,7 @@ def bezier(a, b, bow, n=40):
 
 class Brush:
     def __init__(self, cam):
+        self.P = cam.P
         self.m = np.zeros((H * SS, W * SS), np.uint8)
         self.v = cam
         self.n = 0
@@ -421,7 +482,7 @@ class Brush:
 
     def contour(self, poly, offset=14, eps=2.5, w=8, dash=(80, 150), gap=(16, 28)):
         pad = 80
-        mask = np.zeros((SH + 2 * pad, SW + 2 * pad), np.uint8)
+        mask = np.zeros((self.v.P.SH + 2 * pad, self.v.P.SW + 2 * pad), np.uint8)
         cv2.fillPoly(mask, [np.array(poly, np.int32) + pad], 255)
         cont = [(x - pad, y - pad) for x, y in loose_contour(mask, offset=offset, eps=eps)]
         self.n += 1
@@ -495,32 +556,41 @@ def compose(base, white, fabm):
 # ---------------- scenes ----------------
 CENTER = (SW / 2, SH / 2)
 OBJ = {}
+PHOTOS["main"].credit = 'Ảnh dự án: Union Street House, Northcote, Melbourne · Prior Barraclough · ảnh Ben Hosking'
+PHOTOS["lam"] = Photo(os.path.join(HERE, "..", "source_lam.png"), credit='Ảnh dự án: Union Street House, Northcote, Melbourne · Prior Barraclough · ảnh Ben Hosking')
+PHOTOS["sodo"] = Photo(os.path.join(HERE, "..", "source_sodo.png"), 1200, 1810.0, credit='Sơ đồ: Giả Thuyết Kiến Trúc, theo Kilmer & Kilmer (2014)')
+PHOTOS["catdoc"] = Photo(os.path.join(HERE, "..", "source_catdoc.png"), 1920, 1810.0, credit='Mặt cắt dọc: bản vẽ Prior Barraclough, nguồn ArchDaily (2023)')
 
-WIDE = (CENTER, 1.0, (540, 940))
 SCENES = [
-    dict(t="0–5.7s", head="Mở kính lớn, vẫn bật đèn ban ngày?", vo="Nhà phố mở kính thật lớn, mà ba giờ chiều vẫn phải bật đèn. Lạ không?",
-         cam=WIDE, dark=False, dd=[]),
-    dict(t="5.7–12.7s", head="Kilmer & Kilmer (2014), Designing Interiors", vo="Hai tác giả Kilmer nói, vị trí và hình dạng ô cửa quyết định ánh sáng vào sâu tới đâu.",
-         cam=((600, 700), 2.1, (480, 566)), dark=False, dd=[]),
-    dict(t="12.7–21.2s", head="Kính ngang tầm mắt: nắng gắt, trời chói", vo="Kính ngang tầm mắt đưa nắng thành vệt gắt trên sàn, và đặt mảng trời chói ngay trước mắt. Thế là kéo rèm, bật đèn.",
-         cam=((800, 1750), 2.1, (540, 1397)), dark=False, dd=[]),
-    dict(t="21.2–29.4s", head="Cửa sát trần: ánh sáng chạm trần trước", vo="Cửa sát trần thì khác. Ánh sáng rơi lên trần và tường trước, rồi mới hắt xuống người, nên tới mắt đã dịu đi.",
-         cam=((1250, 300), 2.1, (817, 220)), dark=True, dd=['arr_tran', 'lab_tran']),
-    dict(t="29.4–41.3s", head="Ô kính cao sát mái, dưới là vách lam", vo="Nhà Union Street của Prior Barraclough ở Melbourne, hai bên hông kín vì chung tường hàng xóm. Họ mở ô kính cao sát mái ở đầu hồi, ngay dưới là vách lam gỗ của gác lửng.",
-         cam=((620, 850), 2.1, (497, 696)), dark=True, dd=['arr_kinh', 'lab_kinh', 'arr_lam', 'lab_lam']),
-    dict(t="41.3–47.3s", head="Mặt bàn không có vệt nắng nào", vo="Ánh sáng xuyên qua lam rồi mới xuống bàn ăn. Mặt bàn không có vệt nắng nào.",
-         cam=((700, 1800), 2.1, (540, 1440)), dark=True, dd=['arr_ban', 'lab_ban']),
-    dict(t="47.3–58.6s", head="Chốt lại", vo="Nhà sáng hay không, không ở số mét kính, mà ở chỗ ánh sáng chạm vào đâu trước khi tới mắt. Bài phân tích đầy đủ cho thành viên ở phần bình luận nha.",
-         cam=WIDE, dark=False, dd=[]),
-    dict(t="58.6–69.6s", head="end", vo="",
-         cam=(CENTER, 0.8, (540, 600)), dark=False, dd=[]),
+    dict(t="0–5.7s", img="main", head="Mở kính lớn, vẫn bật đèn ban ngày?", vo="Nhà phố mở kính thật lớn, mà ba giờ chiều vẫn phải bật đèn. Lạ không?",
+         cam=('C', 1.0, (540, 940)), dark=False, dd=[]),
+    dict(t="5.7–11.7s", img="main", head="Kilmer & Kilmer (2014), Designing Interiors", vo="Hai tác giả Kilmer nói, vị trí ô cửa quyết định ánh sáng vào sâu tới đâu.",
+         cam=((600, 700), 2.1, ('cover', 540, 900)), dark=False, dd=[]),
+    dict(t="11.7–19.3s", img="sodo", head="Kính ngang tầm mắt: nắng gắt, trời chói", vo="Kính ngang tầm mắt đưa nắng gắt vào sát cửa, lại đặt mảng trời chói ngay trước mắt. Thế là kéo rèm.",
+         cam=((540, 1300), 1.35, ('top', 520)), dark=False, dd=[]),
+    dict(t="19.3–24.7s", img="sodo", head="Cửa sát trần: ánh sáng chạm trần trước", vo="Cửa sát trần thì ánh sáng chạm trần và tường trước, tới mắt đã dịu.",
+         cam=((1620, 1300), 1.35, ('top', 520)), dark=False, dd=[]),
+    dict(t="24.7–33.2s", img="catdoc", head="Mặt cắt: ô kính cao ở đầu hồi", vo="Nhà Union Street của Prior Barraclough ở Melbourne kín hai bên hông. Họ kéo mái cao dần, mở ô kính sát mái ở đầu hồi.",
+         cam=((900, 875), 1.2, ('top', 520)), dark=False, dd=[]),
+    dict(t="33.2–38.6s", img="main", head="Ô kính cao sát mái, dưới là vách lam", vo="Nhìn từ bàn ăn, ngay dưới ô kính là vách lam gỗ của gác lửng.",
+         cam=((620, 850), 2.1, ('cover', 540, 900)), dark=True, dd=['arr_kinh', 'lab_kinh', 'arr_lam', 'lab_lam']),
+    dict(t="38.6–44.9s", img="lam", head="Qua lam, ánh sáng in vệt lên tường gỗ", vo="Từ cầu thang, ánh sáng qua lam in thành vệt trên tường gỗ, không rơi thẳng xuống người.",
+         cam=((800, 900), 1.5, ('top', 540)), dark=True, dd=['arr_lam6', 'lab_lam6', 'arr_vet', 'lab_vet']),
+    dict(t="44.9–49.4s", img="main", head="Trần gỗ sáng dần về phía ô kính", vo="Quay lại bàn ăn, trần gỗ sáng dần về phía ô kính,",
+         cam=((800, 600), 1.5, ('top', 540)), dark=True, dd=['arr_tran', 'lab_tran']),
+    dict(t="49.4–52.9s", img="main", head="Mặt bàn không có vệt nắng nào", vo="còn mặt bàn không có vệt nắng nào.",
+         cam=((800, 1300), 1.6, ('top', -184)), dark=True, dd=['arr_ban']),
+    dict(t="52.9–63s", img="main", head="Chốt lại", vo="Nhà sáng không nhờ nhiều kính, mà nhờ ánh sáng chạm vào đâu trước khi tới mắt. Bài phân tích đầy đủ cho thành viên ở phần bình luận nha.",
+         cam=('C', 1.0, (540, 940)), dark=False, dd=[]),
+    dict(t="63–74s", img="main", head="end", vo="",
+         cam=('C', 0.8, (540, 600)), dark=False, dd=[]),
 ]
 END = len(SCENES) - 1
 BOARDS = {}
 
 _L = np.load(os.path.join(HERE, "doodle_ep07.npz"))
-LAYER = {k: _L[k] for k in _L.files}   # toạ độ trên ảnh làm việc 1600x2400 (source.png)
-RAD = dict(arr_tran=0.8, arr_lam=0.8, arr_kinh=0.8, arr_ban=0.8)         # bán kính nét gốc (px ảnh làm việc)
+LAYER = {k: _L[k] for k in _L.files}   # toạ độ trên ảnh làm việc 1600x2400 của ảnh mà cảnh dùng (khoá *6/vet: ảnh "lam")
+RAD = dict(arr_tran=0.8, arr_lam=0.8, arr_kinh=0.8, arr_ban=0.8, arr_lam6=0.8, arr_vet=0.8)   # bán kính nét gốc (px ảnh làm việc)
 
 
 def _stamp(wb, pts, r_src):
@@ -550,18 +620,20 @@ def doodle(i, wb, text, cam):
             _stamp(wb, LAYER[k], RAD[k])
 
 
+# ---------------- render ----------------
 def render_scene(i):
     sc = SCENES[i]
-    cam = Cam(*sc["cam"])
-    key = "clean" if i == END else ("dark" if sc["dark"] else "plain")
-    rr = cam.render(*BOARDS[key])
+    P = PHOTOS[sc.get("img", DEFAULT_IMG)]
+    cam = Cam(*sc["cam"], P=P)
+    key = "plain" if i == END else ("dark" if sc["dark"] else "plain")
+    rr = cam.render(*P.board(key))
     base, fabm = rr[..., :3], 1.0 - np.clip(rr[..., 3] / 255.0, 0, 1)
     text = Text()
     wb = Brush(cam)
     top, bot = cam.card_top, cam.card_bottom
 
     if i == END:
-        put_credit(text, (W // 2, bot + 30), 34, 225, "ma")
+        put_credit(text, (W // 2, bot + 30), 34, 225, "ma", credit=P.credit)
         for y_, s_, sz_, f_ in END_LINES:
             text.put((W // 2, y_), s_, sz_, f_, "ma")
         return compose(base, np.array(text.img, np.float32) / 255, fabm)
@@ -580,18 +652,15 @@ def render_scene(i):
         text.put((60, 96), HEAD, 36, 220)
         text.block(60, 150, sc["head"], 84, 92)
     if vo_on_fabric:
-        put_credit(text, (60, bot + 26), 34, 230)
+        put_credit(text, (60, bot + 26), 34, 230, credit=P.credit)
         text.block(60, vo_below, sc["vo"], 60, 78)
     else:
-        put_credit(text, (60, 1388), 32, 235)
+        put_credit(text, (60, 1388), 32, 235, credit=P.credit)
         text.block(60, 1450, sc["vo"], 60, 78)
     white = np.maximum(wb.mask(), np.array(text.img, np.float32) / 255)
     return compose(base, white, fabm)
 
 
-BOARDS["plain"] = make_board(1.0)
-BOARDS["dark"] = make_board(0.86)
-BOARDS["clean"] = make_board(1.0)
 frames = []
 for i in range(len(SCENES)):
     im = render_scene(i)
@@ -607,8 +676,8 @@ SHH = TOP + rows * (PH + 86) + 250
 sheet = Image.new("RGB", (SHW, SHH), (30, 27, 24))
 d = ImageDraw.Draw(sheet)
 d.text((MX, 38), "AH Decode · Ánh sáng từ trên cao", font=F(60), fill=(255, 255, 255))
-d.text((MX, 118), "Ảnh dán bằng băng giấy · nền trắng · chữ nâu trên nền, trắng trên ảnh", font=F(34), fill=(200, 194, 186))
-d.text((MX, 158), "Camera zoom vào chi tiết · nét doodle gốc của bài lộ dần theo lời đọc", font=F(34), fill=(200, 194, 186))
+d.text((MX, 118), "Hai ảnh chụp 07, 06 + sơ đồ 05 + mặt cắt 04 · nền trắng · chữ nâu trên nền, trắng trên ảnh", font=F(34), fill=(200, 194, 186))
+d.text((MX, 158), "Camera zoom vào chi tiết · nét doodle gốc của bài lộ dần theo lời đọc · đổi ảnh = mờ chéo 0,7 giây", font=F(34), fill=(200, 194, 186))
 for i, fr in enumerate(frames):
     r, c = divmod(i, cols)
     x, y = MX + c * (PW + GAP), TOP + r * (PH + 86)
@@ -619,6 +688,6 @@ for i, fr in enumerate(frames):
 fy = TOP + rows * (PH + 86) + 10
 d.text((MX, fy), "Nền trắng trơn · băng keo giấy thay ghim · header AH DECODE · bỏ “Bước n”", font=F(32), fill=(255, 255, 255))
 d.text((MX, fy + 44), "Cảnh zoom kín ảnh: chữ trắng viết lên ảnh (có phủ tối nhẹ).", font=F(32), fill=(225, 220, 212))
-d.text((MX, fy + 88), "Ảnh tối ~14% ở cảnh có nét vẽ (cảnh 4, 5, 6); các cảnh khác giữ ảnh nguyên bản.", font=F(32), fill=(225, 220, 212))
+d.text((MX, fy + 88), "Ảnh tối ~14% ở cảnh có nét vẽ (cảnh 6–9); các cảnh khác giữ ảnh nguyên bản.", font=F(32), fill=(225, 220, 212))
 sheet.save(os.path.join(OUT, "storyboard.png"))
 print("fabric", tuple(int(x) for x in FAB), "sheet", sheet.size)

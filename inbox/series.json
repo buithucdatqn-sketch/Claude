@@ -147,5 +147,41 @@
       "Độ thô theo kích thước phòng và khoảng cách nhìn (bài học 3)"
     ],
     "ghi_chu": "Giai đoạn A, chờ giọng ElevenLabs (bai-02). Chưa dựng video."
+  },
+  {
+    "tap": 7,
+    "slug": "anh-sang-tu-tren-cao",
+    "ngay": "2026-10-21",
+    "nguyen_ly": "Ánh sáng vào từ trên cao vào sâu và dịu hơn cửa ngang tầm mắt (Kilmer & Kilmer, Designing Interiors 2014, ch.12)",
+    "nhom": "Ánh sáng tự nhiên: vị trí ô cửa",
+    "bai_kho": {
+      "duong_dan": "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/bai-03.md",
+      "nhanh": "AH-Interior-notes",
+      "commit": "dad48a5494ea48cfecd8e479089e94c1e7e80c13"
+    },
+    "anh_kho": [
+      "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/anh/07-doodle-cua-cao-ban-an.jpg",
+      "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/anh/06-doodle-vach-lam-cau-thang.jpg",
+      "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/anh/05-diagram-cua-thap-cua-cao.png",
+      "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/anh/04-mat-cat-doc-union-street.png"
+    ],
+    "du_an": "Union Street House, Northcote, Melbourne",
+    "studio": "Prior Barraclough",
+    "nhiep_anh": "Ben Hosking",
+    "cau_moc": "Nhà phố mở kính thật lớn, mà ba giờ chiều vẫn phải bật đèn. Lạ không?",
+    "nguon": [
+      "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 12 (theo bài)"
+    ],
+    "trang_thai": "cho_ghi_am",
+    "thu_muc": "inbox/out/2026-10-21_anh-sang-tu-tren-cao/",
+    "y_bai": {
+      "muc": "Ánh sáng đi vào từ trên cao sẽ vào sâu và dịu hơn ánh sáng từ ô cửa ngang tầm mắt",
+      "tom_tat": "Cửa sát trần cho ánh sáng chạm trần, tường, lam trước khi tới người; Union Street: ô kính đầu hồi + vách lam gác lửng"
+    },
+    "y_con_lai_cua_bai": [
+      "Bề mặt đón ánh sáng đầu tiên quyết định phòng sáng tới đâu (bài học 2)",
+      "Chỗ làm việc sáng gần đều, chỗ nghỉ được chênh sáng (bài học 3)"
+    ],
+    "ghi_chu": "Tập đầu tiên theo nguyên tắc 2b mới: hai ảnh chụp (07, 06) + sơ đồ 05 + mặt cắt 04; engine v8 nhiều ảnh. Giai đoạn A, chờ giọng ElevenLabs."
   }
 ]

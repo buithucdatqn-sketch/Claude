@@ -1,26 +1,24 @@
-Nhà phố mở kính thật lớn, mà ba giờ chiều vẫn phải bật đèn.
-Lạ không?
-
-Hai tác giả Kin-mơ nói, vị trí và hình dạng ô cửa quyết định ánh sáng vào sâu tới đâu.
-
-Kính ngang tầm mắt đưa nắng thành vệt gắt trên sàn, và đặt mảng trời chói ngay trước mắt.
-Thế là kéo rèm, bật đèn.
-
-Cửa sát trần thì khác.
-Ánh sáng rơi lên trần và tường trước, rồi mới hắt xuống người, nên tới mắt đã dịu đi.
-
-Nhà Diu-ni-ơn Xtrít của Prai-ơ Ba-ra-clo ở Meo-bơn, hai bên hông kín vì chung tường hàng xóm.
-Họ mở ô kính cao sát mái ở đầu hồi, ngay dưới là vách lam gỗ của gác lửng.
-
-Ánh sáng xuyên qua lam rồi mới xuống bàn ăn.
-Mặt bàn không có vệt nắng nào.
-
-Nhà sáng hay không, không ở số mét kính, mà ở chỗ ánh sáng chạm vào đâu trước khi tới mắt.
-Bài phân tích đầy đủ cho thành viên ở phần bình luận nha.
-
-Ây-ết Đi-cốt, series về nguyên tắc thiết kế và chọn đồ đê-co.
-Theo dõi Giả Thuyết Kiến Trúc.
-Bài viết phân tích đầy đủ xem ở dòng đầu tiên trong phần bình luận.
+Nhà phố mở kính thật lớn, mà ba giờ chiều vẫn phải bật đèn. Lạ không?
+<break time="1.2s" />
+Hai tác giả Kin-mơ nói, vị trí ô cửa quyết định ánh sáng vào sâu tới đâu.
+<break time="1.2s" />
+Kính ngang tầm mắt đưa nắng gắt vào sát cửa, lại đặt mảng trời chói ngay trước mắt. Thế là kéo rèm.
+<break time="1.2s" />
+Cửa sát trần thì ánh sáng chạm trần và tường trước, tới mắt đã dịu.
+<break time="1.2s" />
+Nhà Diu-ni-ơn Xtrít của Prai-ơ Ba-ra-clo ở Meo-bơn kín hai bên hông. Họ kéo mái cao dần, mở ô kính sát mái ở đầu hồi.
+<break time="1.2s" />
+Nhìn từ bàn ăn, ngay dưới ô kính là vách lam gỗ của gác lửng.
+<break time="1.2s" />
+Từ cầu thang, ánh sáng qua lam in thành vệt trên tường gỗ, không rơi thẳng xuống người.
+<break time="1.2s" />
+Quay lại bàn ăn, trần gỗ sáng dần về phía ô kính,
+<break time="1.2s" />
+còn mặt bàn không có vệt nắng nào.
+<break time="1.2s" />
+Nhà sáng không nhờ nhiều kính, mà nhờ ánh sáng chạm vào đâu trước khi tới mắt. Bài phân tích đầy đủ cho thành viên ở phần bình luận nha.
+<break time="1.2s" />
+Ây-ết Đi-cốt, series về nguyên tắc thiết kế và chọn đồ đê-co. Theo dõi Giả Thuyết Kiến Trúc. Bài viết phân tích đầy đủ xem ở dòng đầu tiên trong phần bình luận.
 
 ---
 --- Gợi ý cài đặt: giọng nữ hoặc nam trầm ấm, tốc độ 1.0, mô hình đa ngôn ngữ, ngôn ngữ Vietnamese ---
