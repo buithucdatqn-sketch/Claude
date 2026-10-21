@@ -17,7 +17,7 @@ CREDITS = dict(
 WIDE = ("C", 1.0, (540, 940))
 COVER = ("cover", 540, 900)
 SC = [
-    dict(part="A", img="main", head="Cùng ô cửa, sao phòng gỗ tối hơn?", cam=WIDE, dark=False, dd=[],
+    dict(part="A", img="main", head="Sao phòng gỗ tối hơn?", cam=WIDE, dark=False, dd=[],
          vo="Cùng một ô cửa, sao phòng sơn trắng sáng hẳn, còn phòng ốp gỗ lại tối?"),
     dict(part="B", img="sodo1", head="Kilmer & Kilmer (2014): ánh sáng hắt lại", cam=("C", 1.25, ("top", 520)), dark=False, dd=[],
          vo="Theo hai tác giả Kilmer, mắt chỉ thấy ánh sáng do bề mặt hắt lại. Tường trắng mờ hắt nhiều, gỗ sẫm nuốt bớt.",
@@ -82,15 +82,16 @@ def words(s):
     return len(s.split())
 
 
+# Mốc cảnh theo giọng đọc bai-03 (inbox/audio/be-mat-hat-sang.mp3, 54,75 giây): mỗi cảnh bắt đầu 0,4 giây trước câu của nó
+# (ranh giới câu lấy từ silencedetect -35 dB / 0,12 s, ghép cụm câu theo số tiếng); cảnh cuối kéo quá giọng đọc 0,75 giây.
+TIMES = [0.0, 4.49, 11.2, 16.94, 21.37, 27.34, 31.28, 36.14, 42.14, 46.08, 51.8, 55.5]
+
+
 def build_data():
     t = 0.0
     scenes = []
-    for s in SC:
-        spoken = s.get("tts", s["vo"])
-        dur = max(3.5, TRANS + words(spoken) / WPS)
-        if s["head"] == "end":
-            dur = max(dur, 7.0)
-        a, b = round(t, 1), round(t + dur, 1)
+    for k, s in enumerate(SC):
+        a, b = TIMES[k], TIMES[k + 1]
         t = b
         s["t"] = f"{a:g}–{b:g}s"
         s["dur"] = b - a
