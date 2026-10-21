@@ -4,6 +4,29 @@ Kho mã và dữ liệu: GitHub `buithucdatqn-sketch/claude` (nhánh `main`). C�
 
 Mỗi lần chạy là một phiên mới, không nhớ gì từ các cuộc trò chuyện trước. Mọi thông tin cần thiết nằm trong tài liệu này, thư mục INBOX và KHO BÀI.
 
+## 00. CHUẨN CHẤT LƯỢNG: TẬP 7 LÀ BẢN MẪU (đọc đầu tiên, bắt buộc)
+Chủ Trang duyệt tập 7 "Cứng ở xa, mềm trong tầm tay" (`inbox/out/2026-10-18_mem-trong-tam-tay/`, video `reel_mem-trong-tam-tay_final.mp4`) là mức chất lượng tối thiểu cho mọi tập sau. Lần chạy ngày 2026-10-21 cho kết quả tệ vì dựng từ `main` cũ, không thấy bản mẫu này. Từ nay, mỗi tập phải ĐẠT HOẶC VƯỢT tập 7 ở từng điểm dưới đây. Trước khi giao, xem video tập 7 (trích khung bằng ffmpeg và Read) rồi so tập mới với nó; tập mới kém hơn ở điểm nào thì sửa điểm đó trước khi giao.
+
+**Cách làm: dùng bộ khuôn `engine/mau_tap7/`** (đọc `README.md` trong đó). Không tự viết lại engine, không dựng reel một ảnh bằng engine v7 gốc. Các file `engine/engine_storyboard_v8.py`, `engine_video_v8.py`, `make_v8.py` do lần chạy 2026-10-21 tự viết, chưa có camera dịu mắt và hoà tan; chỉ tham khảo, không dùng thay bộ khuôn. Chép bộ khuôn vào `OUT/engine_epNN/` và chỉ sửa dữ liệu của tập.
+
+Mười điểm của bản mẫu (mỗi điểm là một mục kiểm tra trong báo cáo, ghi đạt/không đạt):
+1. **Một câu hỏi trung tâm, mạch kể liền** (mục 0.6b, 4a). Câu móc là một quan sát đời thường cụ thể ("Nhà bê tông mộc lên ảnh thì đẹp, sao ở thật lại hay bị chê lạnh?"). Câu chốt trả lời lại đúng câu đó ("Vậy cứ giữ bê tông, chỉ cần để mặt cứng ở xa, còn đồ mềm thì để trong tầm tay"). Khoảng 6 khối nội dung: móc → nguồn gốc (tác giả, năm trên màn hình) → vì sao (có chữ "vì", "nên") → công trình thật, đọc trên ảnh từng không gian → việc làm ngay ở nhà mình → chốt + lời mời.
+2. **Kịch bản qua người chấm độc lập ít nhất hai lượt** (mục 4b). Tập 7 qua ba lượt: lượt 1 bắt được mâu thuẫn "mặt trơn lạnh" với "thiếu đồ mềm, mịn", câu chốt chưa trả lời câu móc, ý "nghe vang" bị bỏ lửng. Mọi góp ý đều phải sửa xong rồi mới dựng hình, và ghi lại trong `script.md`. Người chấm được đưa đường dẫn bài gốc, `research.md`, `scenes.json`, `elevenlabs.txt`, `sources.md`, và chưa thấy quá trình làm.
+3. **Nhiều ảnh, đúng chỗ đang nói** (mục 2d). Tập 7 có 12 khung trên 7 ảnh: sảnh ăn (mở), diagram của bài (nguồn gốc Kilmer), hành lang, sảnh ăn (tiếng vang), mặt bằng (giới thiệu công trình), phòng khách (hai cảnh), phòng ngủ, phòng khách, bàn ăn (chốt, hai cảnh), khung cuối. Lời nói tới chỗ nào thì hình là chỗ đó.
+4. **Doodle gốc của bài sống lại** (mục 2c). Tách lớp bằng `make_layers.py`. Nền sạch, không vệt: bê tông và vải xù lấy hạt quanh nét; gỗ vân dọc lấp theo cột; ván ngang lấp theo hàng. Mũi tên lộ dần từ đuôi tới đầu, nhãn hiện khi nét đạt 55–75%. Chỉ lộ nhãn khớp lời của cảnh; ảnh có nhãn không khớp thì xoá sạch và dùng như ảnh thường.
+5. **Diagram và mặt bằng đọc được trên điện thoại.** Cắt sát vùng có chú thích (bỏ tiêu đề lớn, lề trắng). Đặt thẻ trong dải y 610–1240, chữ của khung là chữ nâu trên nền trắng. Credit riêng cho mỗi ảnh (ảnh công trình, diagram, mặt bằng).
+6. **Camera dịu mắt** (mục 5b): đổi ảnh bằng hoà tan 0,45 giây; trong cảnh camera trôi rất nhẹ theo `move`; ít nhất ba kiểu; hai cảnh liền nhau không cùng kiểu; không zoom từ toàn cảnh vào chi tiết; chuyển cảnh trên cùng ảnh 1,1 giây, ưu tiên lia.
+7. **Chữ an toàn và đúng lời** (mục 6a). Engine chạy không có dòng LỖI. Khung cắt 4:5 của bảng tin còn đủ header, tiêu đề, phụ đề. Tiêu đề cảnh là một ý ngắn có thông tin ("Phòng ngủ: gỗ ở chỗ lưng tựa"), không lặp nguyên phụ đề.
+8. **Giai đoạn B khớp ghi âm thật.** Chủ Trang thường chỉnh lời khi thu. Nhận dạng lại lời của file ghi âm (cách đã dùng: sherpa-onnx, mô hình `sherpa-onnx-zipformer-vi-2025-04-20` tải từ GitHub releases của k2-fsa/sherpa-onnx, chạy trong máy, lấy cả mốc thời gian từng chữ). Sửa phụ đề, tiêu đề, chữ khung cuối theo đúng lời đã thu. Đặt `T_AUDIO`: mỗi cảnh bắt đầu khoảng 0,35–0,4 giây trước câu của nó; câu không có quãng nghỉ thì chia theo mốc chữ. Bảng đoạn nói ↔ câu ghi trong `script.md`.
+9. **Âm thanh:** lọc dưới 80 Hz, giảm ồn nhẹ (`afftdn`), chặn đỉnh, chuẩn hoá về −14 LUFS (chấp nhận −14 đến −15), đỉnh ≤ −1,5 dBFS, AAC 48 kHz, không nhạc. Đo lại bằng `ebur128` và ghi số đo.
+10. **Kiểm tra bằng mắt trước khi giao:** trích ít nhất 18 khung (quanh mọi điểm đổi ảnh và chuyển cảnh, giữa lúc nét đang vẽ, khung cuối) kèm khung cắt 4:5. Phóng to chỗ nghi vệt (đốm sáng lẫn vào nhãn, mép trắng lộ ra khi lia) và sửa. Kiểm tra `ffprobe`: 1080×1920, h264, AAC 48 kHz, thời lượng bằng giọng + khoảng 1,6 giây. Giao kèm ảnh bìa 1080×1920 (engine `cover_epNN.py` do `gen_epNN.py` sinh).
+
+**Góp ý của chủ Trang phải được lưu lại ngay trong phiên.** Mỗi khi chủ Trang góp ý trong một phiên làm reel (kể cả lần chạy theo lịch được tiếp tục bằng tin nhắn), phiên đó phải:
+- ghi góp ý thành quy tắc trong tài liệu này (mục liên quan, kèm ví dụ cụ thể của tập đang làm);
+- sửa engine dùng chung (`engine/`, `engine/mau_tap7/`) nếu góp ý là về hình hay chuyển động;
+- commit, push nhánh được giao, rồi đề nghị chủ Trang cho gộp vào `main` (hoặc mở pull request).
+Không để góp ý chỉ nằm trong thư mục của một tập.
+
 ## 0. BÀI HỌC TỪ CÁC LẦN LÀM SAI (đọc trước tiên, bắt buộc)
 Ngày 2026-10-19 có hai phiên làm lại đúng ý đã có ở tập 7 hoặc ý chủ Trang đã bỏ, vẫn dùng một ảnh, sai chủng loại ảnh. Nguyên nhân và cách tránh:
 1. **`main` KHÔNG phải trạng thái mới nhất.** Mỗi phiên bị buộc đẩy lên nhánh riêng (`claude/...`), nên `main` có thể dừng ở tập 5 trong khi tập 6, tập 7 nằm ở các nhánh khác. Vì vậy đầu MỖI lần chạy, trước khi chọn ý:
@@ -45,7 +68,7 @@ Ngày 2026-10-19 có hai phiên làm lại đúng ý đã có ở tập 7 hoặc
    - **Mỗi cảnh (trừ cảnh 1) mở bằng từ nối hoặc tiếp ý câu trước:** "Đó là…", "Mà…", "Hơn nữa…", "Nhưng…", "Vì vậy…", "Vậy…". Cảnh nào mở ra chủ đề mới không liên quan câu trước thì cảnh đó thừa.
    - **Ý gom từ phần còn sót của bài:** chỉ làm khi xâu được thành một câu hỏi; không xâu được thì báo chủ Trang, không gom.
    - **Người chấm (mục 4b) phải chấm từng chỗ chuyển cảnh** (nối mượt hay gãy). Khi đề xuất rút ngắn, người chấm chỉ được đề xuất bỏ ý/cảnh, không được đề xuất bỏ chữ nối. Gặp đề xuất cắt chữ làm câu cụt thì không làm theo.
-7. Cuối lần chạy, ghi trong báo cáo cho chủ Trang rằng nhánh vừa push cần được gộp vào `main`. Gộp xong thì bước 1 nhẹ đi, nhưng vẫn phải làm.
+7. Cuối lần chạy, ghi trong báo cáo cho chủ Trang rằng nhánh vừa push cần được gộp vào `main`. Gộp xong thì bước 1 nhẹ đi, nhưng vẫn phải làm. Ngày 2026-10-21 đã gộp mọi nhánh vào `main` (tập 1–9); lần chạy cùng ngày tự đặt tên "Tập 7" cho bài 03 vì không thấy tập 7, 8 trên `main`, nay là tập 9.
 Chạy một lượt, không hỏi lại. Nếu thiếu đầu vào thì dừng và báo rõ thiếu gì (mục 9).
 
 ## 1. Nhiệm vụ
@@ -106,6 +129,8 @@ Người xem cần hình dung được cả công trình, nên các cảnh KHÔN
 - Ảnh của ít nhất BA không gian khác nhau của công trình (ví dụ lối vào, sảnh, phòng khách, phòng ngủ, bếp). Mỗi cảnh nói về chỗ nào thì dùng ảnh chỗ đó.
 - Một ảnh không chiếm quá khoảng một nửa số cảnh. Cảnh mở và cảnh chốt nên dùng ảnh rộng, gợi cảm nhất của công trình.
 - Ảnh doodle của bài mà nhãn gốc không khớp lời cảnh đó: xoá sạch nét (mục 2c) và dùng như ảnh sạch; chỉ lộ những nhãn khớp lời.
+- Khi ý chính liên quan tới vị trí trong nhà (cửa, giếng trời, cầu thang, hướng nắng, đường đi của ánh sáng), đặt cảnh mặt bằng hoặc mặt cắt ngay trước cảnh ảnh chụp của chính chỗ đó, để người xem định vị được (rút từ lần chạy 2026-10-21).
+- Nếu bài kèm ảnh gốc chưa doodle (`anh/goc/` hoặc YAML `anh_goc_khong_doodle`), dùng ảnh gốc làm nền sạch và lấy lớp nét bằng hiệu giữa hai ảnh, thay cho xoá nét.
 Cách dựng: mục 5d.
 
 

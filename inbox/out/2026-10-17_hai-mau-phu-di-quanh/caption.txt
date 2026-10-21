@@ -1,0 +1,8 @@
+Một màu chính, hai màu phụ, và mỗi màu phụ đều phải quay lại ở một chỗ khác. Ở The Green Box (Berlin), vàng đồng và hồng tím đều xuất hiện lại, nhưng chỉ trên mảng nhỏ và đã được làm dịu.
+
+Nhà mọi người đang có màu nào lặp lại ở ít nhất hai chỗ, bằng hai chất liệu khác nhau?
+
+Nguồn (theo bài gốc): Kilmer, R. & Kilmer, W. O. (2014). Designing Interiors (2nd ed.), Wiley, chương 5.
+Ảnh: The Green Box, Berlin · Ester Bruzkus Architekten · ảnh Robert Rieger
+
+#kientruc #noithat #phoimau #giathuyetkientruc #lythuyetkientruc
