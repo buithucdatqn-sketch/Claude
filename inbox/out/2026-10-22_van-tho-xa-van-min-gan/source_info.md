@@ -1,16 +1,23 @@
-# source_info.md · Tập 10
+# source_info.md · Tập 10 (bản 3)
 Kho: github.com/buithucdatqn-sketch/A---material, nhánh AH-Interior-notes, commit 6d869f9a07f7186a0d5a3543bdb027671437b4b4, bài 02.
-Chỉ dùng ảnh trong `anh/` của bài 02 (không tải ảnh ngoài kho, theo prompt của lịch chạy).
+Ảnh ngoài bài: bộ ảnh MS House trên ArchDaily (https://www.archdaily.com/1032005/ms-house-studio-saransh), chủ Trang cho phép ngày 2026-10-22. Chỉ lấy ảnh và credit, không lấy chữ. URL từng ảnh: `original/archdaily/urls.txt`; ảnh gốc: `original/archdaily/`.
+Credit ảnh công trình (bài và ArchDaily ghi giống nhau): MS House, Ahmedabad · Studio Saransh · ảnh Ishita Sitwala, The Fishy Project.
 
-| Ảnh kho | Loại | Dùng ở | Đã dùng ở tập trước? | Xử lý |
+| Ảnh | Nguồn, loại | Cảnh | Đã dùng ở tập trước? | Xử lý, doodle |
 |---|---|---|---|---|
-| anh/10-diagram-ty-xich-khoang-cach.png (2160x2080) | diagram | cảnh 2, 3 (hàng trên), 4 (hàng dưới), 12 (dòng kết) | chưa | cắt ba dải: `source_dgt.png` (hai căn phòng, đứng xa / đứng sát), `source_dgb.png` (hai vòng vân), `source_dgc.png` (dòng kết "vân thô để chỗ nhìn xa, vân mịn để chỗ ở gần"); bỏ tiêu đề |
-| anh/03-mat-bang-tang-mot-ms-house.png (1846x1870) | mặt bằng | cảnh 8 | chưa | cắt vùng hai phòng ngủ tầng một và chú thích `source_mb.png` |
-| anh/12-doodle-van-nho-phong-ngu.jpg (1667x2500) | ảnh công trình có doodle | cảnh 9, 11, 13 | chưa | thu nhỏ 1600x2400; xoá nét và chữ doodle bằng make_layers_ep10.py (TELEA, nền trát phẳng nên làm mờ nhẹ ở chỗ chữ) → `source_ph.png`; nét gốc đã tách vào `doodle_ep10_ph.npz` nhưng chưa dùng (xem hạn chế) |
-| anh/11-doodle-van-tho-hanh-lang.jpg | ảnh công trình | cảnh 1, 5, 6, 7, 10 | CÓ, tập 7 (cảnh 3) | dùng lại nền đã xoá nét của tập 7 (`source_hl.png`) |
+| ArchDaily 39 | mặt ngoài nhìn từ vườn | 1 (câu móc, khung thẻ rộng) | chưa | không nét |
+| anh/10-diagram-ty-xich-khoang-cach.png | diagram của bài | 2, 3 (hàng trên), 12 (dòng kết) | chưa | cắt dải `source_dgt.png`, `source_dgc.png` |
+| ArchDaily 26 | mặt ngoài nhìn xa, tường vân cốp pha | 4, 13 (khung cuối) | chưa | nét mới: khung đứt bao mảng tường + nhãn "sọc mảnh, nhìn êm" |
+| ArchDaily 24 | tường bê tông nhìn sát | 5 | chưa | nét mới: nhãn "gờ, lỗ bọt khí", mũi tên, vòng bao hàng lỗ bọt khí |
+| anh/11-doodle-van-tho-hanh-lang.jpg | ảnh của bài, hành lang lối vào | 6 | CÓ, tập 7 (chủ Trang cho dùng lại) | nền sạch (đã xoá nét gốc ở tập 7) + nét mới: khung bao mảng tường cạnh cửa, nhãn "vân cốp pha to, chỗ đi qua", mũi tên |
+| ArchDaily 29 | phòng khách | 7 (khung thẻ) | chưa | nét mới: khung bao mảng tường sau, nhãn "bê tông ván ép, mặt mịn" |
+| anh/03-mat-bang-tang-mot-ms-house.png | mặt bằng của bài | 8 | chưa | cắt vùng hai phòng ngủ tầng một, chú thích gốc |
+| ArchDaily 6 | phòng ngủ con gái | 9 (khung thẻ, cắt nửa dưới `source_a6c.png`) | chưa | nét mới: nhãn "ô đá nhỏ lặp lại" trên mảng gỗ, mũi tên, vòng bao sàn ô đá |
+| ArchDaily 35 | cổng lối vào | 10 (khung thẻ, cắt nửa dưới `source_a35c.png`) | chưa | nét mới: khung bao dải tường cổng, nhãn "vân rõ ở lối vào", mũi tên ngắn |
+| anh/12-doodle-van-nho-phong-ngu.jpg | ảnh của bài, phòng ngủ (kệ, tường vôi) | 11 | chưa | nền sạch (make_layers_ep10.py) + nét mới: nhãn "tường trát vôi mịn", mũi tên |
 
-Credit ảnh công trình: MS House, Ahmedabad · Studio Saransh · ảnh Ishita Sitwala, The Fishy Project. Mặt bằng: Studio Saransh, nguồn ArchDaily (2025), ghi chú Giả Thuyết Kiến Trúc. Diagram: Giả Thuyết Kiến Trúc, theo Kilmer & Kilmer (2014).
+Nét doodle vẽ bằng `engine_ep10/draw_ep10.py` (nét trắng, nét đứt, rung tay, góc vẽ lố), lưu `doodle_ep10_<ảnh>.npz` theo đúng thứ tự vẽ để engine lộ dần; ảnh xem thử ở `doodle_preview/`. Mỗi ảnh chỉ dùng ở một hoặc hai cảnh; ba không gian trở lên (mặt ngoài, hành lang, phòng khách, phòng ngủ, lối vào).
 
-## Hạn chế (cần chủ Trang quyết định)
-1. Kho không còn đủ ảnh mới của bài 02: chỉ ảnh 12 là ảnh công trình chưa dùng; ảnh 11 tập 7 đã dùng; ảnh 13, 06, 08, 09 của tập 7; ảnh 04, 05 thuộc ý bị cấm; ảnh 01 là diagram về ánh xiên. Reel chỉ có ảnh của HAI không gian (hành lang, phòng ngủ), thiếu yêu cầu ba không gian (mục 2d) và có một ảnh dùng lại (11), trái mục 0.5c của TASK_INSTRUCTION. Prompt của lịch chạy cấm lấy ảnh ngoài kho (archdaily.com, yatzer.com, v.v.), trong khi TASK_INSTRUCTION mục 2b cho phép lấy thêm ảnh của chính công trình từ trang nguồn. Tôi theo prompt (nghiêm hơn) và không tải ảnh ngoài. Muốn đủ ảnh: thêm ảnh MS House vào `anh/` của bài 02 hoặc xác nhận cho phép tải từ ArchDaily (hiện ArchDaily truy cập được).
-2. Nhãn doodle gốc của ảnh 11 và 12 nằm sát mép trên hoặc mép dưới ảnh nên khi zoom kín ảnh không vào được dải chữ an toàn (y 340–1490) mà không lộ mép trắng; reel dùng cả hai ảnh như ảnh sạch, không lộ nét.
+## Hạn chế
+- Nhãn gốc vẽ sẵn trên ảnh 11 và 12 của bài nằm sát mép ảnh nên không dùng; thay bằng nét vẽ mới đặt giữa dải an toàn (y 610–1240).
+- Ảnh phòng khách, phòng ngủ, lối vào có vùng cần chỉ nằm sát đáy ảnh, nên dựng bằng khung thẻ (ảnh giữa khung, chữ nâu ở ngoài) để nhãn nằm trong dải an toàn; nhãn trên thẻ nhỏ hơn cảnh zoom kín (khoảng 40–55 px).

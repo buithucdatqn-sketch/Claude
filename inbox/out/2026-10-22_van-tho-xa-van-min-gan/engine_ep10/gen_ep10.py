@@ -23,41 +23,46 @@ WIDE = "WIDE"
 PHOTO = "Ảnh dự án: MS House, Ahmedabad · Studio Saransh · ảnh Ishita Sitwala, The Fishy Project"
 # ảnh làm việc: (file, npz doodle gốc, credit)
 IMGS = dict(
-    hl=("source_hl.png", "doodle_ep10_hl.npz", PHOTO),     # ảnh 11 hành lang lối vào (nét gốc: arr1/lab1 vân ván khuôn to, arr2/lab2 phòng trong mịn hơn)
-    ph=("source_ph.png", "doodle_ep10_ph.npz", PHOTO),     # ảnh 12 phòng ngủ cô con gái (nét gốc: lab_top, arr_ke/lab_ke, arr_san/lab_san)
-    dgt=("source_dgt.png", "", "Diagram: Giả Thuyết Kiến Trúc, theo Kilmer & Kilmer (2014)"),   # ảnh 10, hàng trên: hai khoảng cách đứng xa, đứng sát
-    dgc=("source_dgc.png", "", "Diagram: Giả Thuyết Kiến Trúc, theo Kilmer & Kilmer (2014)"),   # ảnh 10, dòng kết "vân thô để chỗ nhìn xa, vân mịn để chỗ ở gần"
-    dgb=("source_dgb.png", "", "Diagram: Giả Thuyết Kiến Trúc, theo Kilmer & Kilmer (2014)"),   # ảnh 10, hàng dưới: hai vòng vân và câu kết
-    mb=("source_mb.png", "", "Mặt bằng: Studio Saransh, nguồn ArchDaily (2025) · ghi chú Giả Thuyết Kiến Trúc"),  # ảnh 03, mặt bằng tầng một, cắt hai phòng ngủ tầng một và chú thích
+    a39=("source_a39.png", "", PHOTO),                         # ArchDaily 39: mặt ngoài nhìn từ vườn (ảnh ngoài bài)
+    a26=("source_a26.png", "doodle_ep10_a26.npz", PHOTO),      # ArchDaily 26: mặt ngoài nhìn xa, tường vân cốp pha
+    a24=("source_a24.png", "doodle_ep10_a24.npz", PHOTO),      # ArchDaily 24: tường bê tông nhìn sát (gờ, lỗ bọt khí)
+    hl=("source_hl.png", "doodle_ep10_hl.npz", PHOTO),         # ảnh 11 của bài: hành lang lối vào (nền sạch, nét mới)
+    a29=("source_a29.png", "doodle_ep10_a29.npz", PHOTO),      # ArchDaily 29: phòng khách, bê tông ván ép
+    a6c=("source_a6c.png", "doodle_ep10_a6c.npz", PHOTO),      # ArchDaily 6 (cắt nửa dưới): phòng ngủ con gái, sàn ô đá nhỏ
+    a35c=("source_a35c.png", "doodle_ep10_a35c.npz", PHOTO),   # ArchDaily 35 (cắt nửa dưới): cổng lối vào
+    ph=("source_ph.png", "doodle_ep10_ph.npz", PHOTO),         # ảnh 12 của bài: phòng ngủ, tường vôi (nền sạch, nét mới)
+    dgt=("source_dgt.png", "", "Diagram: Giả Thuyết Kiến Trúc, theo Kilmer & Kilmer (2014)"),   # ảnh 10, hàng trên
+    dgc=("source_dgc.png", "", "Diagram: Giả Thuyết Kiến Trúc, theo Kilmer & Kilmer (2014)"),   # ảnh 10, dòng kết
+    mb=("source_mb.png", "", "Mặt bằng: Studio Saransh, nguồn ArchDaily (2025) · ghi chú Giả Thuyết Kiến Trúc"),  # ảnh 03, mặt bằng tầng một
 )
 SC = [
-    dict(move="push", part="A", blk=1, img="hl", head="Cùng một bức tường: xa thì êm, sát thì nặng?", cam=WIDE, dark=False, dd=[],
+    dict(move="push", part="A", blk=1, img="a39", head="Cùng một bức tường: xa thì êm, sát thì nặng?", cam=WIDE, dark=False, dd=[],
          vo="Cùng một bức tường bê tông, sao đứng xa thấy êm, mà đứng sát lại thấy nặng nề?"),
     dict(move="pan_l", part="B", blk=2, img="dgt", head="Kilmer & Kilmer (2014): đá khối to, phòng nhỏ, khó chịu", cam=((1020, 465), 1.1, (540, 925)), free=True, dark=False, dd=[],
          vo="Sách nội thất của hai tác giả Kilmer lưu ý, đá khối to, tức là vân rất to, xây trong phòng nhỏ thì người ở thấy khó chịu.",
          tts="Sách nội thất của hai tác giả Kin-mơ lưu ý, đá khối to, tức là vân rất to, xây trong phòng nhỏ thì người ở thấy khó chịu."),
     dict(move="push", part="C", blk=2, img="dgt", head="Vân to hay nhỏ: hợp với phòng và khoảng cách nhìn", cam=((1300, 465), 1.3, (540, 900)), free=True, dark=False, dd=[],
          vo="Nghĩa là vân to hay nhỏ phải hợp với độ rộng của phòng, và với khoảng cách mình đứng nhìn."),
-    dict(move="pull", part="C", blk=2, img="dgb", head="Đứng xa: chỉ còn sọc mảnh, êm", cam=((560, 390), 1.4, (540, 925)), free=True, dark=False, dd=[],
+    dict(move="pull", part="C", blk=2, img="a26", head="Đứng xa: chỉ còn sọc mảnh, êm", cam=((1100, 950), 2.1, (540, 900)), dark=True, dd=["out", "lab"],
          vo="Đứng xa, vết cốp pha trên tường chỉ còn là những sọc mảnh, nhìn êm."),
-    dict(move="push", part="C", blk=2, img="hl", head="Đứng sát: thấy gờ, lỗ bọt khí", cam=((830, 1050), 3.0, (540, 900)), dark=True, dd=[],
+    dict(move="push", part="C", blk=2, img="a24", head="Đứng sát: thấy gờ, lỗ bọt khí", cam=((600, 1300), 3.0, (540, 900)), dark=True, dd=["lab", "arr", "ring"],
          vo="Còn đứng sát, từng gờ bê tông, từng lỗ bọt khí hiện rõ, nên bức tường thấy nặng."),
-    dict(move="pan_r", part="D", blk=3, img="hl", head="MS House: vân to ở hành lang lối vào", cam=((900, 900), 2.2, (540, 900)), dark=True, dd=[],
+    dict(move="pan_r", part="D", blk=3, img="hl", head="MS House: vân to ở hành lang lối vào", cam=((900, 900), 2.2, (540, 900)), dark=True, dd=["out", "lab", "arr"],
          vo="Ở MS House, một nhà bê tông bên Ấn Độ, tụi mình để ý vân to nhất nằm ở hành lang lối vào, chỗ đi qua, nhìn từ xa.",
          tts="Ở Em-ét Hao-xơ, một nhà bê tông bên Ấn Độ, tụi mình để ý vân to nhất nằm ở hành lang lối vào, chỗ đi qua, nhìn từ xa."),
-    dict(move="pull", part="D", blk=3, img="hl", head="Phòng trong: chỗ dừng lại thì mịn hơn", cam=((460, 1150), 2.4, (540, 900)), dark=True, dd=[],
-         vo="Bước qua cửa vào phòng trong, chỗ người ta dừng lại lâu hơn, đã có gỗ, có thảm, mịn hơn."),
+    dict(move="pull", part="D", blk=3, img="a29", head="Phòng khách: bê tông ván ép, mặt mịn hơn", cam=((1000, 667), 0.88, (540, 915)), free=True, dark=False, dd=["out", "lab"],
+         vo="Còn phòng khách là chỗ ngồi lâu, nên bê tông ở đó đổ bằng ván ép, mặt mịn hơn."),
     dict(move="push", part="D", blk=3, img="mb", head="Mặt bằng tầng một: phòng ngủ trên lầu", cam=((653, 360), 1.0, (540, 925)), free=True, dark=False, dd=[],
          vo="Lên tới phòng ngủ trên lầu, vân còn nhỏ hơn nữa."),
-    dict(move="pan_u", part="D", blk=3, img="ph", head="Phòng ngủ: sàn ô đá nhỏ lặp lại", cam=((600, 1700), 2.3, (540, 900)), dark=True, dd=[],
+    dict(move="pan_u", part="D", blk=3, img="a6c", head="Phòng ngủ: sàn ô đá nhỏ lặp lại", cam=((800, 625), 0.78, (540, 920)), free=True, dark=False, dd=["lab", "arr", "ring"],
          vo="Sàn chỉ còn những ô đá nhỏ lặp lại, mắt có chi tiết để nhìn mà không thấy nặng."),
-    dict(move="pan_l", part="F", blk=4, img="hl", head="Gợi ý cho nhà phố: vân rõ ở lối vào", cam=((800, 1500), 2.2, (540, 900)), dark=True, dd=[],
+    dict(move="pan_l", part="F", blk=4, img="a35c", head="Gợi ý cho nhà phố: vân rõ ở lối vào", cam=((800, 475), 1.0, (540, 925)), free=True, dark=False, dd=["out", "lab", "arr"],
          vo="Tụi mình nghĩ nhà phố cũng làm được, bê tông vân rõ để ở lối vào, giếng trời,"),
-    dict(move="push", part="F", blk=4, img="ph", head="Phòng ngủ trên lầu: trát vôi mịn", cam=((420, 900), 2.3, (540, 900)), dark=True, dd=[],
+    dict(move="push", part="F", blk=4, img="ph", head="Phòng ngủ trên lầu: trát vôi mịn", cam=((420, 900), 2.3, (540, 900)), dark=True, dd=["arr", "lab"],
          vo="còn phòng ngủ trên lầu thì trát vôi mịn."),
     dict(move="pan_r", part="H", blk=5, img="dgc", head="Đi qua, nhìn xa: vân thô · Ngồi lâu, ở gần: vân mịn", cam=((1020, 184), 1.15, (540, 925)), free=True, dark=False, dd=[],
          vo="Tóm lại, chỗ đi qua, nhìn từ xa thì vân thô, chỗ ngồi lâu, ở gần thì vân mịn."),
-    dict(move="push", part="I", blk=5, img="ph", head="end", cam="END", dark=False, vo="", dd=[],
+    dict(move="push", part="I", blk=5, img="a26", head="end", cam="END", dark=False, vo="", dd=[],
          say="Bài phân tích về vân to, vân nhỏ của bề mặt từ sách của Kilmer, mọi người xem phần bình luận nha.",
          tts="Bài phân tích về vân to, vân nhỏ của bề mặt từ sách của Kin-mơ, mọi người xem phần bình luận nha."),
 ]
@@ -236,11 +241,11 @@ for n, ks in enumerate(runs(), 1):
 json.dump(RUNS, open(OUT + "engine_ep10/runs.json", "w"), ensure_ascii=False, indent=1)
 
 # ảnh bìa 1080x1920: cảnh rộng trên ảnh 12 (kệ gỗ, tường vôi, sàn ô đá nhỏ), tiêu đề ngắn + câu móc
-COVER = [dict(img="ph", head="Vân thô ở xa, vân mịn ở gần", vo="Tường bê tông nhám: xa thì đẹp, sát sao lại nặng?", dark=False),
-         dict(img="ph", head="end", vo="", dark=False)]
+COVER = [dict(img="a26", head="Vân thô ở xa, vân mịn ở gần", vo="Tường bê tông nhám: xa thì đẹp, sát sao lại nặng?", dark=False),
+         dict(img="a26", head="end", vo="", dark=False)]
 build("engine_storyboard_v7.py", "cover_ep10.py", False,
       wrap_data([scene_line(COVER[0], 0, 3, "WIDE", []), scene_line(COVER[1], 3, 4, "END_SAFE", [])],
-                DOODLE.replace("@NPZ@", "none.npz")), "ph", "cover")
+                DOODLE.replace("@NPZ@", "none.npz")), "a26", "cover")
 
 # ---- elevenlabs.txt: năm khối kịch bản nối bằng thẻ ngắt 1,2 giây (theo prompt của routine) ----
 shown = [x.get("say", x["vo"]) for x in SC]

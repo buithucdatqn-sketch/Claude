@@ -19,15 +19,15 @@ for r in RUNS:
     shutil.rmtree(OUT + "frames_" + r["tag"])
     if os.path.exists(OUT + f"storyboard_{r['tag']}.png"):
         os.remove(OUT + f"storyboard_{r['tag']}.png")
-NAME = dict(dgt="ảnh 10 diagram (hàng trên)", dgb="ảnh 10 diagram (hàng dưới)", dgc="ảnh 10 diagram (dòng kết)", hl="ảnh 11 hành lang", mb="ảnh 03 mặt bằng tầng một", ph="ảnh 12 phòng ngủ")
+NAME = dict(a39="ArchDaily 39 mặt ngoài", a26="ArchDaily 26 mặt ngoài nhìn xa", a24="ArchDaily 24 tường nhìn sát", hl="ảnh 11 hành lang", a29="ArchDaily 29 phòng khách", mb="ảnh 03 mặt bằng tầng một", a6c="ArchDaily 6 phòng ngủ", a35c="ArchDaily 35 lối vào", ph="ảnh 12 phòng ngủ", dgt="ảnh 10 diagram (hàng trên)", dgc="ảnh 10 diagram (dòng kết)")
 img_of = {k: r["img"] for r in RUNS for k in r["scenes"]}
 PW, PH, GAP, MX, TOP, cols = 360, 640, 34, 50, 200, 4
 rows = (len(SC) + cols - 1) // cols
 sheet = Image.new("RGB", (MX * 2 + cols * PW + (cols - 1) * GAP, TOP + rows * (PH + 120) + 200), (30, 27, 24))
 d = ImageDraw.Draw(sheet)
 d.text((MX, 38), "AH Decode · Vân thô ở xa, vân mịn ở gần", font=F(60), fill=(255, 255, 255))
-d.text((MX, 118), "Bốn ảnh của bài: diagram 10, mặt bằng tầng một 03, hành lang 11, phòng ngủ 12 (kho chưa có thêm ảnh không gian khác)", font=F(34), fill=(200, 194, 186))
-d.text((MX, 158), "Ảnh sạch (nhãn doodle gốc nằm sát mép ảnh, ngoài dải chữ an toàn) · camera trôi nhẹ", font=F(34), fill=(200, 194, 186))
+d.text((MX, 118), "Ảnh của bài (diagram 10, mặt bằng 03, hành lang 11, phòng ngủ 12) + ảnh MS House trên ArchDaily (39, 26, 24, 29, 6, 35)", font=F(34), fill=(200, 194, 186))
+d.text((MX, 158), "Nét doodle trắng nét đứt vẽ mới trên ảnh, lộ dần theo lời (cảnh 4, 5, 6, 7, 9, 10, 11) · camera trôi nhẹ", font=F(34), fill=(200, 194, 186))
 for i, sc in enumerate(SC):
     r, c = divmod(i, cols)
     x, y = MX + c * (PW + GAP), TOP + r * (PH + 120)

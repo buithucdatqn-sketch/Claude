@@ -550,10 +550,12 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.64s", head="Đi qua, nhìn xa: vân thô · Ngồi lâu, ở gần: vân mịn", vo="Tóm lại, chỗ đi qua, nhìn từ xa thì vân thô, chỗ ngồi lâu, ở gần thì vân mịn.",
+    dict(t="0–6.32s", head="Gợi ý cho nhà phố: vân rõ ở lối vào", vo="Tụi mình nghĩ nhà phố cũng làm được, bê tông vân rõ để ở lối vào, giếng trời,",
+         cam=((420, 900), 2.3, (346, 788)), dark=False, dd=[], move="hold"),
+    dict(t="6.32–9.83s", head="Phòng ngủ trên lầu: trát vôi mịn", vo="còn phòng ngủ trên lầu thì trát vôi mịn.",
+         cam=((420, 900), 2.3, (346, 788)), dark=True, dd=['arr', 'lab'], move="push"),
+    dict(t="9.83–10.33s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
-    dict(t="6.64–14.22s", head="end", vo="",
-         cam=END_SAFE, dark=False, dd=[], move="push"),
 ]
 END = len(SCENES) - 1
 BOARDS = {}

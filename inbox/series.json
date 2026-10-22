@@ -378,10 +378,10 @@
    "commit": "6d869f9a07f7186a0d5a3543bdb027671437b4b4"
   },
   "anh_kho": [
-   "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/11-doodle-van-tho-hanh-lang.jpg (dùng lại, đã dùng ở tập 7)",
    "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/10-diagram-ty-xich-khoang-cach.png",
    "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/03-mat-bang-tang-mot-ms-house.png",
-   "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/12-doodle-van-nho-phong-ngu.jpg"
+   "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/11-doodle-van-tho-hanh-lang.jpg (dùng lại từ tập 7, nét mới)",
+   "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/12-doodle-van-nho-phong-ngu.jpg (nét mới)"
   ],
   "y_bai": {
    "muc": "Độ thô của bề mặt phải hợp với kích thước phòng và khoảng cách nhìn",
@@ -389,7 +389,10 @@
   },
   "trang_thai": "cho_ghi_am",
   "thu_muc": "inbox/out/2026-10-22_van-tho-xa-van-min-gan",
-  "ghi_chu": "Chỉ 2 không gian (hành lang, phòng ngủ) vì kho hết ảnh mới của bài 02; ảnh 11 dùng lại; không tải ảnh ngoài kho theo prompt.",
-  "ban": 2
+  "ghi_chu": "Bản 3: thêm doodle vẽ mới trên ảnh (7 cảnh), thêm 6 ảnh ArchDaily theo cho phép của chủ Trang 2026-10-22; năm không gian.",
+  "ban": 3,
+  "anh_ngoai_bai": [
+   "ArchDaily MS House số 39, 26, 24, 29, 6, 35 (https://www.archdaily.com/1032005/ms-house-studio-saransh), ảnh Ishita Sitwala | The Fishy Project"
+  ]
  }
 ]

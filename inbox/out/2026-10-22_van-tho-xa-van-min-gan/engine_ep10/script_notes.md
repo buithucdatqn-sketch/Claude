@@ -1,6 +1,6 @@
 ## Câu hỏi trung tâm
 Cùng một bức tường bê tông, vì sao đứng xa thấy êm mà ngồi sát lại thấy nặng, và nên để vân to, vân mịn ở đâu trong nhà?
-Ý trả lời (6): (1) nguồn: đá khối to xây trong phòng nhỏ làm người ở khó chịu, tức kích cỡ vân phải hợp chỗ đặt; (2) vì sao: xa chỉ còn sọc mảnh, sát thấy gờ và lỗ bọt khí; (3) MS House: vân to nhất ở hành lang lối vào, chỗ đi qua hoặc nhìn từ xa; (4) bước vào phòng trong (chỗ dừng lại) đã có gỗ, thảm, mịn hơn; phòng ngủ trên lầu chỉ còn ô đá nhỏ; (5) nhà phố: vân rõ ở lối vào, giếng trời, phòng ngủ trát vôi mịn; (6) chốt: chỗ đi qua vân to, chỗ ngồi lâu vân mịn.
+Ý trả lời (6): (1) nguồn: đá khối to xây trong phòng nhỏ làm người ở khó chịu, tức kích cỡ vân phải hợp chỗ đặt; (2) vì sao: xa chỉ còn sọc mảnh, sát thấy gờ và lỗ bọt khí; (3) MS House: vân to nhất ở hành lang lối vào, chỗ đi qua hoặc nhìn từ xa; (4) phòng khách là chỗ ngồi lâu nên bê tông đổ bằng ván ép, mặt mịn hơn; phòng ngủ trên lầu chỉ còn ô đá nhỏ; (5) nhà phố: vân rõ ở lối vào, giếng trời, phòng ngủ trát vôi mịn; (6) chốt: chỗ đi qua vân to, chỗ ngồi lâu vân mịn.
 
 ## Bản 2 khác bản 1 thế nào (góp ý chủ Trang: "chưa sâu, câu từ hơi khó hiểu")
 - Từ ngữ: bỏ "chất cảm", "tỷ xích", "terrazzo", "xô thơm" khỏi lời đọc; "ván khuôn" đổi thành "cốp pha" (từ quen trên công trường và ở nhà phố); câu ngắn, mỗi câu một việc.
@@ -16,7 +16,7 @@ Studio Saransh, Ahmedabad không đọc, chỉ hiện ở dòng credit.
 
 ## Ba điều người xem học được
 1. Độ nhám có kích cỡ, và mắt đọc nó theo khoảng cách: xa thì sọc mảnh êm, sát thì gờ và lỗ bọt khí làm tường nặng.
-2. MS House đổi độ nhám theo chỗ người ta ở bao lâu: hành lang (đi qua) vân to nhất, phòng trong (dừng lại) có gỗ, thảm, phòng ngủ trên lầu chỉ còn ô đá nhỏ.
+2. MS House đổi độ nhám theo chỗ người ta ở bao lâu: hành lang (đi qua) vân to nhất, phòng khách (ngồi lâu) đổ bằng ván ép nên mịn hơn, phòng ngủ trên lầu chỉ còn ô đá nhỏ.
 3. Ở nhà phố: vân rõ để ở lối vào, giếng trời, phòng ngủ trên lầu trát vôi mịn; đá khối to không hợp phòng nhỏ.
 Khác tập 7 (mặt trơn lạnh và vang; mặt cứng ở xa, đồ mềm trong tầm tay): tập 7 nói cứng hay mềm, tập này nói vân to hay nhỏ theo khoảng cách nhìn và thời gian ở. Ý "bê tông thô ở trên cao, ở xa" có ở tập 7 cảnh 10, nên tập này không lặp câu đó mà đi vào kích cỡ vân.
 
@@ -42,4 +42,10 @@ Lượt 3 (agent độc lập thứ ba): CẦN SỬA NHẸ (3 câu). Góp ý: ng
 
 ## Cần kiểm tra
 - Bài ghi "phòng ngủ của cô con gái" nhưng mặt bằng ảnh 03 ghi "phòng ngủ các con gái"; lời đọc tránh bằng "phòng ngủ trên lầu".
-- Ảnh: chỉ hai không gian (hành lang, phòng ngủ), ảnh 11 dùng lại từ tập 7 ở 5/13 cảnh, không có nét doodle lộ dần (xem source_info.md).
+- Ảnh: xem source_info.md (bản 3 đã đủ năm không gian và có nét doodle).
+
+
+## Bản 3 (chủ Trang góp ý 2026-10-22: thiếu doodle sketch trên ảnh)
+- Thêm nét doodle trắng nét đứt vẽ mới trên ảnh ở 7 cảnh (4, 5, 6, 7, 9, 10, 11): khung bao, vòng bao, mũi tên, nhãn viết tay, lộ dần theo lời (engine_ep10/draw_ep10.py).
+- Chủ Trang cho phép dùng lại ảnh tập trước và lấy ảnh MS House chưa có trong bài: thêm sáu ảnh ArchDaily (mặt ngoài 39, 26; tường nhìn sát 24; phòng khách 29; phòng ngủ con gái 6; cổng lối vào 35). Reel giờ có năm không gian, mỗi ảnh chỉ một hoặc hai cảnh.
+- Nhờ có ảnh phòng khách thật, cảnh 7 trở lại đúng câu của bài: "Còn phòng khách là chỗ ngồi lâu, nên bê tông ở đó đổ bằng ván ép, mặt mịn hơn" (thay cho câu "phòng trong" trên ảnh hành lang ở bản 2). Cảnh 4 (đứng xa) và cảnh 5 (đứng sát) giờ là ảnh chụp thật thay cho diagram. Lời đọc các cảnh còn lại giữ như bản 2 đã qua ba lượt chấm.

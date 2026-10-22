@@ -4,8 +4,8 @@ OUT = os.path.abspath(sys.argv[1] if len(sys.argv) > 1 else "./") + "/"
 HERE = os.path.dirname(os.path.abspath(__file__))
 sc = json.load(open(HERE + "/scenes.json")); runs = json.load(open(HERE + "/runs.json"))
 img = {k: r["img"] for r in runs for k in r["scenes"]}
-NAME = dict(hl="ảnh 11 hành lang lối vào (nền đã xoá nét, dùng lại từ tập 7)", dgt="ảnh 10 diagram, hàng trên",
-            dgb="ảnh 10 diagram, hàng dưới", dgc="ảnh 10 diagram, dòng kết", mb="ảnh 03 mặt bằng tầng một", ph="ảnh 12 phòng ngủ (đã xoá nét)")
+NAME = dict(a39="ArchDaily 39 mặt ngoài", a26="ArchDaily 26 mặt ngoài nhìn xa (doodle mới)", a24="ArchDaily 24 tường nhìn sát (doodle mới)", a29="ArchDaily 29 phòng khách (doodle mới)", a6c="ArchDaily 6 phòng ngủ con gái (doodle mới)", a35c="ArchDaily 35 cổng lối vào (doodle mới)", hl="ảnh 11 hành lang lối vào (dùng lại từ tập 7, doodle mới)", dgt="ảnh 10 diagram, hàng trên",
+            dgb="ảnh 10 diagram, hàng dưới", dgc="ảnh 10 diagram, dòng kết", mb="ảnh 03 mặt bằng tầng một", ph="ảnh 12 phòng ngủ (doodle mới)")
 rows = []
 for i, s in enumerate(sc, 1):
     head = s["head"] if s["head"] != "end" else "(khung cuối)"

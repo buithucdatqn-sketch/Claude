@@ -49,15 +49,15 @@
  },
  {
   "blk": 3,
-  "t": "44.21–51.16s",
-  "head": "Phòng trong: chỗ dừng lại thì mịn hơn",
-  "loi": "Bước qua cửa vào phòng trong, chỗ người ta dừng lại lâu hơn, đã có gỗ, có thảm, mịn hơn.",
-  "tts": "Bước qua cửa vào phòng trong, chỗ người ta dừng lại lâu hơn, đã có gỗ, có thảm, mịn hơn.",
+  "t": "44.21–50.85s",
+  "head": "Phòng khách: bê tông ván ép, mặt mịn hơn",
+  "loi": "Còn phòng khách là chỗ ngồi lâu, nên bê tông ở đó đổ bằng ván ép, mặt mịn hơn.",
+  "tts": "Còn phòng khách là chỗ ngồi lâu, nên bê tông ở đó đổ bằng ván ép, mặt mịn hơn.",
   "part": "D"
  },
  {
   "blk": 3,
-  "t": "51.16–55.3s",
+  "t": "50.85–54.99s",
   "head": "Mặt bằng tầng một: phòng ngủ trên lầu",
   "loi": "Lên tới phòng ngủ trên lầu, vân còn nhỏ hơn nữa.",
   "tts": "Lên tới phòng ngủ trên lầu, vân còn nhỏ hơn nữa.",
@@ -65,7 +65,7 @@
  },
  {
   "blk": 3,
-  "t": "55.3–61.94s",
+  "t": "54.99–61.63s",
   "head": "Phòng ngủ: sàn ô đá nhỏ lặp lại",
   "loi": "Sàn chỉ còn những ô đá nhỏ lặp lại, mắt có chi tiết để nhìn mà không thấy nặng.",
   "tts": "Sàn chỉ còn những ô đá nhỏ lặp lại, mắt có chi tiết để nhìn mà không thấy nặng.",
@@ -73,7 +73,7 @@
  },
  {
   "blk": 4,
-  "t": "61.94–68.27s",
+  "t": "61.63–67.95s",
   "head": "Gợi ý cho nhà phố: vân rõ ở lối vào",
   "loi": "Tụi mình nghĩ nhà phố cũng làm được, bê tông vân rõ để ở lối vào, giếng trời,",
   "tts": "Tụi mình nghĩ nhà phố cũng làm được, bê tông vân rõ để ở lối vào, giếng trời,",
@@ -81,7 +81,7 @@
  },
  {
   "blk": 4,
-  "t": "68.27–71.78s",
+  "t": "67.95–71.46s",
   "head": "Phòng ngủ trên lầu: trát vôi mịn",
   "loi": "còn phòng ngủ trên lầu thì trát vôi mịn.",
   "tts": "còn phòng ngủ trên lầu thì trát vôi mịn.",
@@ -89,7 +89,7 @@
  },
  {
   "blk": 5,
-  "t": "71.78–78.42s",
+  "t": "71.46–78.1s",
   "head": "Đi qua, nhìn xa: vân thô · Ngồi lâu, ở gần: vân mịn",
   "loi": "Tóm lại, chỗ đi qua, nhìn từ xa thì vân thô, chỗ ngồi lâu, ở gần thì vân mịn.",
   "tts": "Tóm lại, chỗ đi qua, nhìn từ xa thì vân thô, chỗ ngồi lâu, ở gần thì vân mịn.",
@@ -97,7 +97,7 @@
  },
  {
   "blk": 5,
-  "t": "78.42–86s",
+  "t": "78.1–85.67s",
   "head": "end",
   "loi": "Bài phân tích về vân to, vân nhỏ của bề mặt từ sách của Kilmer, mọi người xem phần bình luận nha.",
   "tts": "Bài phân tích về vân to, vân nhỏ của bề mặt từ sách của Kin-mơ, mọi người xem phần bình luận nha.",

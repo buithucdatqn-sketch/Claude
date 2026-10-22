@@ -1,4 +1,4 @@
-# sources.md · Tập 10 · Vân thô ở xa, vân mịn ở gần
+# sources.md · Tập 10 (bản 3: thêm doodle và ảnh ArchDaily) · Vân thô ở xa, vân mịn ở gần
 Bài: bai-02.md (kho AH-Decode-Decor, commit 6d869f9). Mức chắc chắn theo bài: phần cơ chế tỷ xích lấy từ sách Kilmer & Kilmer (nguyên lý, [1]); phần MS House là quan sát của tác giả bài trên ảnh ("tụi mình nhận ra một quy luật mà nhà thiết kế không nói thành lời"); bài tự nhận chưa có số đo.
 
 | Cảnh | Nhận định trong reel | Vị trí trong bài | Trích ngắn | Mức chắc chắn |
@@ -6,10 +6,10 @@ Bài: bai-02.md (kho AH-Decode-Decor, commit 6d869f9). Mức chắc chắn theo 
 | 1 | Cùng một bức tường bê tông, đứng xa thấy êm, đứng sát thấy nặng (câu hỏi) | mục "Độ thô…" + diagram 10 | diagram 10: "đứng xa / đứng sát", "sọc mảnh, êm" / "gờ, bọt khí, nặng" | quan sát có diagram |
 | 2 | Sách của hai tác giả Kilmer: đá khối to (tức vân rất to) xây trong phòng nhỏ làm người ở khó chịu | mục "Độ thô…", câu 1–2 (đoạn dẫn [1]); tóm tắt nguyên tắc đầu bài ("vân quá to trong phòng nhỏ… bức bối") | "Những khối đá xây to trong một căn phòng nhỏ sẽ làm người ở thấy khó chịu" | nguyên lý theo sách (Kilmer & Kilmer 2014, ch. 4) |
 | 3 | Nghĩa là vân to hay nhỏ phải hợp với độ rộng của phòng và khoảng cách đứng nhìn | cuối mục 2 (câu dẫn sang mục "Độ thô…") | "Mỗi căn phòng có một giới hạn, tùy vào kích thước của phòng và khoảng cách giữa người với bề mặt." | nhận định của tác giả bài |
-| 4 | Đứng xa: vết cốp pha chỉ còn sọc mảnh, êm | mục "Độ thô…", câu "Thành ra khi đứng xa…" | "khi đứng xa, vân ván khuôn trên tường chỉ còn là những đường sọc mảnh"; diagram "sọc mảnh, êm"; bài dùng "cốp pha" ở mục 2 | diễn giải của tác giả bài |
-| 5 | Đứng sát: gờ, lỗ bọt khí hiện rõ, nên tường thấy nặng | cùng câu + diagram 10 | "còn khi đứng sát thì từng gờ bê tông, từng lỗ bọt khí đều hiện rõ"; nhãn diagram "nặng" | diễn giải + diagram |
+| 4 | Đứng xa: vết cốp pha chỉ còn sọc mảnh, êm (hình: mặt ngoài MS House nhìn từ vườn, ArchDaily số 26) | mục "Độ thô…", câu "Thành ra khi đứng xa…" | "khi đứng xa, vân ván khuôn trên tường chỉ còn là những đường sọc mảnh"; diagram "sọc mảnh, êm"; bài dùng "cốp pha" ở mục 2 | diễn giải của tác giả bài |
+| 5 | Đứng sát: gờ, lỗ bọt khí hiện rõ, nên tường thấy nặng (hình: tường bê tông MS House nhìn sát, ArchDaily số 24) | cùng câu + diagram 10 | "còn khi đứng sát thì từng gờ bê tông, từng lỗ bọt khí đều hiện rõ"; nhãn diagram "nặng" | diễn giải + diagram |
 | 6 | MS House, nhà bê tông bên Ấn Độ: tụi mình để ý vân to nhất ở hành lang lối vào, chỗ đi qua, nhìn từ xa | đoạn "Nhìn lại cả ngôi nhà qua ảnh, tụi mình nhận ra một quy luật…" | "Bê tông in vân ván khuôn thô nhất được dành cho hành lang lối vào, sảnh ăn hai tầng và mặt ngoài, tức những nơi người ta đi qua hoặc nhìn từ xa." | quan sát của tác giả bài trên ảnh (giữ "tụi mình để ý") |
-| 7 | Bước qua cửa vào phòng trong, chỗ dừng lại lâu hơn, đã có gỗ, có thảm, mịn hơn | chú thích doodle trên ảnh 11 của bài | nhãn: "phòng trong có gỗ, thảm / chỗ dừng lại thì mịn hơn"; tiêu đề phụ: "đi qua thì thô, dừng lại thì mịn" | chú thích ảnh của tác giả bài. Bài không gọi tên phòng này nên lời đọc không gọi là phòng khách |
+| 7 | Còn phòng khách là chỗ ngồi lâu, nên bê tông ở đó đổ bằng ván ép, mặt mịn hơn | đoạn "Nhìn lại cả ngôi nhà qua ảnh…" | "Phòng khách là nơi người ta ngồi lâu nên dùng loại bê tông đổ ván ép có mặt mịn hơn." | quan sát của tác giả bài. Hình: ảnh phòng khách MS House trên ArchDaily (số 29), nhãn vẽ mới "bê tông ván ép, mặt mịn" |
 | 8 | Lên phòng ngủ trên lầu, vân còn nhỏ hơn nữa | đoạn "Nhìn lại cả ngôi nhà…"; mặt bằng tầng một (ảnh 03) | "càng đi vào sâu trong nhà và càng ở gần người, vân của bề mặt càng nhỏ và mịn"; mặt bằng: "phòng ngủ các con gái" ở tầng một | quan sát của tác giả bài |
 | 9 | Sàn chỉ còn ô đá nhỏ lặp lại, có chi tiết mà không nặng | cùng đoạn | "sàn terrazzo pha đá xanh mà nhìn trên ảnh là những ô chữ nhật nhỏ lặp lại… Mắt vẫn có chi tiết để nhìn, nhưng căn phòng không vì thế mà nặng nề." | quan sát + nhận định của tác giả bài |
 | 10–11 | Tụi mình nghĩ nhà phố cũng làm được: bê tông vân rõ ở lối vào, giếng trời; phòng ngủ trên lầu trát vôi mịn | đoạn "Với một căn nhà phố bê tông mộc ở mình…", việc cuối | "tụi mình nghĩ… bê tông vân rõ nên để ở giếng trời và lối vào, còn phòng ngủ trên lầu thì trát vôi mịn." | lời khuyên của tác giả bài |
@@ -17,3 +17,6 @@ Bài: bai-02.md (kho AH-Decode-Decor, commit 6d869f9). Mức chắc chắn theo 
 | 13 | Mời xem bài phân tích ở phần bình luận | mẫu lời mời tập 7 | — | — |
 
 Danh mục nguồn của bài: [1] Kilmer, R., & Kilmer, W. O. (2014). Designing Interiors (2nd ed.). Wiley. Chương 4, mục Texture. [2] Itten, Design and Form (1964/1975). [3] Le Corbusier, L'Art décoratif d'aujourd'hui (1925). [4] Pallasmaa, The Eyes of the Skin (1996). Reel này chỉ dùng [1].
+
+
+Ảnh ngoài bài (chỉ lấy ảnh và credit, không lấy chữ): bộ ảnh MS House trên ArchDaily (https://www.archdaily.com/1032005/ms-house-studio-saransh), ảnh Ishita Sitwala | The Fishy Project; dùng ảnh số 39, 26, 24, 29, 6, 35 (URL từng ảnh trong `original/archdaily/urls.txt`).
