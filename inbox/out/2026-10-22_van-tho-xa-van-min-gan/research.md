@@ -7,18 +7,17 @@ Link: https://github.com/buithucdatqn-sketch/A---material/blob/AH-Interior-notes
 ## Câu hỏi trung tâm
 Cùng một bức tường bê tông ván khuôn, vì sao đứng xa thấy đẹp mà đứng sát lại thấy nặng, và nên đặt vân thô, vân mịn ở đâu?
 
-## Ý của mục (đếm: 5 ý nội dung)
-1. Tỷ xích của vân (Kilmer & Kilmer 2014) quan trọng không kém loại chất cảm. Trích: "Kích thước của vân, hay tỷ xích của chất cảm, quan trọng không kém bản thân loại chất cảm [1]."
-2. Đứng xa vân chỉ còn đường sọc mảnh, đứng sát thấy từng gờ, lỗ bọt khí. Trích: "khi đứng xa, vân ván khuôn trên tường chỉ còn là những đường sọc mảnh, còn khi đứng sát thì từng gờ bê tông, từng lỗ bọt khí đều hiện rõ." Diagram 10: "sọc mảnh, êm" / "gờ, bọt khí, nặng".
-3. MS House: bê tông vân ván khuôn thô nhất ở hành lang lối vào, sảnh ăn hai tầng, mặt ngoài (chỗ đi qua hoặc nhìn từ xa). Trích: "Bê tông in vân ván khuôn thô nhất được dành cho hành lang lối vào, sảnh ăn hai tầng và mặt ngoài, tức những nơi người ta đi qua hoặc nhìn từ xa."
-4. Càng vào sâu và gần người, vân càng nhỏ và mịn; phòng ngủ con gái: tường xanh xô thơm, sàn terrazzo ô nhỏ lặp lại; mắt vẫn có chi tiết nhưng phòng không nặng nề. Trích: "càng đi vào sâu trong nhà và càng ở gần người, vân của bề mặt càng nhỏ và mịn... Mắt vẫn có chi tiết để nhìn, nhưng căn phòng không vì thế mà nặng nề."
-5. Việc làm: "bê tông vân rõ nên để ở giếng trời và lối vào, còn phòng ngủ trên lầu thì trát vôi mịn."
+## Ý của mục (bản 2, dùng trong reel: 6 ý)
+1. Đá khối to trong phòng nhỏ làm người ở khó chịu (đoạn dẫn sách [1]). Trích: "Những khối đá xây to trong một căn phòng nhỏ sẽ làm người ở thấy khó chịu".
+2. Đứng xa vân ván khuôn chỉ còn sọc mảnh, đứng sát thấy gờ, lỗ bọt khí. Trích: "khi đứng xa, vân ván khuôn trên tường chỉ còn là những đường sọc mảnh, còn khi đứng sát thì từng gờ bê tông, từng lỗ bọt khí đều hiện rõ." Diagram 10: "sọc mảnh, êm" / "gờ, bọt khí, nặng".
+3. MS House: vân thô nhất ở hành lang lối vào, sảnh ăn, mặt ngoài (đi qua hoặc nhìn từ xa).
+4. Phòng khách ngồi lâu nên bê tông ván ép mịn hơn; phòng ngủ con gái sàn ô nhỏ lặp lại; "Mắt vẫn có chi tiết để nhìn, nhưng căn phòng không vì thế mà nặng nề."
+5. Lời khuyên nhà phố: "bê tông vân rõ nên để ở giếng trời và lối vào, còn phòng ngủ trên lầu thì trát vôi mịn."
+6. Chốt từ diagram và chú thích ảnh 11, 12: chỗ đi qua vân thô, chỗ ở lâu vân nhỏ.
 
-## Các phần theo mục 4a
-A mở (cảnh 1) · B nguồn (cảnh 2, Kilmer & Kilmer 2014) · C cơ chế (cảnh 3, 4) · D đọc trên ảnh/công trình (cảnh 5–8) · F việc làm (cảnh 9) · H chốt (cảnh 10) · I cuối (cảnh 11). Bài không có E, G cho ý này (bài có nói lỗi "nhiều chất cảm mạnh gây bức bối" nhưng đã cắt để giữ một câu hỏi, ghi vào caption).
-Bài không nêu số đo cụ thể: không con số nào cho biết bao nhiêu độ thô là đủ (bài nói rõ phần này "chủ yếu đến từ kinh nghiệm thiết kế chứ chưa được đo đạc").
-
-## Phần bài không dùng
-- Ý "quá nhiều loại chất cảm mạnh gây bức bối" và "hình nhỏ lặp lại thành mảng vân" (rút gọn vào caption).
-- Mẹo kiểm tra buổi tối "ngồi chỗ quen nhìn sang tường" (cảnh đã làm rồi bỏ để không vượt 210 từ; để vào caption).
-- Mẹo lau chùi, khí hậu Việt Nam, bảo trì: không thuộc câu hỏi trung tâm.
+## Ý để ở caption
+- Hình nhỏ lặp lại (ván sàn, viên gạch, lá cây) mắt đọc thành một mảng vân chung, hút mắt hơn từng viên lẻ.
+- Quá nhiều loại chất cảm mạnh, mỗi thứ một kiểu, gây bức bối; nhà phố mỗi phòng một loại gạch, không mảng nào đủ rộng làm nền.
+- MS House dùng ít vật liệu (bê tông, vôi, đá Kota, gỗ teak) ở nhiều độ thô mịn.
+- Mẹo tự kiểm tra buổi tối (vế "vân rối mắt thì bề mặt quá gần người"); vế còn lại nói về ánh sáng chiếu thẳng, thuộc ý ánh sáng xiên đã bị cấm, nên không dùng.
+- Giới hạn bài tự nêu: chưa có số đo, nhận định từ kinh nghiệm thiết kế.

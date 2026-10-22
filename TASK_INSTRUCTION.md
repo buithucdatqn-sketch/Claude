@@ -68,6 +68,15 @@ Ngày 2026-10-19 có hai phiên làm lại đúng ý đã có ở tập 7 hoặc
    - **Mỗi cảnh (trừ cảnh 1) mở bằng từ nối hoặc tiếp ý câu trước:** "Đó là…", "Mà…", "Hơn nữa…", "Nhưng…", "Vì vậy…", "Vậy…". Cảnh nào mở ra chủ đề mới không liên quan câu trước thì cảnh đó thừa.
    - **Ý gom từ phần còn sót của bài:** chỉ làm khi xâu được thành một câu hỏi; không xâu được thì báo chủ Trang, không gom.
    - **Người chấm (mục 4b) phải chấm từng chỗ chuyển cảnh** (nối mượt hay gãy). Khi đề xuất rút ngắn, người chấm chỉ được đề xuất bỏ ý/cảnh, không được đề xuất bỏ chữ nối. Gặp đề xuất cắt chữ làm câu cụt thì không làm theo.
+6c. **"Chưa sâu và câu từ hơi khó hiểu"** (chủ Trang góp ý 2026-10-22 cho tập 10 bản 1 "Vân thô ở xa, vân mịn ở gần", yêu cầu chạy lại). Bản 1 hỏng vì:
+   - Dùng nguyên từ chuyên môn của bài trong lời đọc: "chất cảm", "tỷ xích", "ván khuôn", "terrazzo", "xô thơm". Người không học kiến trúc nghe không ra.
+   - Câu nguồn gốc nói chung chung ("kích thước của vân quan trọng không kém loại chất cảm") mà không có hình ảnh cụ thể nào.
+   - Chỉ có hai mốc "xa / gần", bỏ chặng giữa của ví dụ công trình, nên người xem không thấy được quy luật thay đổi dần.
+   Từ nay:
+   - **Đổi từ chuyên môn sang từ đời thường** trong lời đọc: "ván khuôn" → "cốp pha", "chất cảm" → "độ nhám", "vân to, vân nhỏ"; tên vật liệu lạ thì tả bằng cái nhìn thấy ("sàn ô đá nhỏ lặp lại" thay cho "sàn terrazzo"). Từ chuyên môn chỉ để ở tiêu đề khung, caption.
+   - **Câu nguồn gốc phải có một hình ảnh cụ thể của sách/bài** (ví dụ tập 10 bản 2: "đá khối to mà xây trong phòng nhỏ, người ở sẽ thấy khó chịu"), không chỉ một nhận định chung.
+   - **Chiều sâu = đủ các chặng của ví dụ, có lý do ở từng chặng** (tập 10 bản 2: hành lang là chỗ đi qua nên vân to nhất → phòng khách là chỗ ngồi lâu nên mịn hơn → phòng ngủ trên lầu chỉ còn ô đá nhỏ), chứ không phải thêm nhiều ý mới. Ý phụ hay (mắt gộp viên nhỏ thành mảng vân, mỗi phòng một loại gạch) đưa vào caption.
+   - Người chấm độc lập (mục 4b) chấm khắt khe riêng hai điểm "sâu" và "dễ hiểu", ít nhất hai lượt.
 7. Cuối lần chạy, ghi trong báo cáo cho chủ Trang rằng nhánh vừa push cần được gộp vào `main`. Gộp xong thì bước 1 nhẹ đi, nhưng vẫn phải làm. Ngày 2026-10-21 đã gộp mọi nhánh vào `main` (tập 1–9); lần chạy cùng ngày tự đặt tên "Tập 7" cho bài 03 vì không thấy tập 7, 8 trên `main`, nay là tập 9.
 Chạy một lượt, không hỏi lại. Nếu thiếu đầu vào thì dừng và báo rõ thiếu gì (mục 9).
 

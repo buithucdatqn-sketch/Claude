@@ -29,8 +29,8 @@ HEAD = "AH DECODE · VÂN THÔ Ở XA, VÂN MỊN Ở GẦN"
 END_LINES = [
     (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1088, "và cách chọn đồ decor", 40, 215),
-    (1196, "Bài phân tích về chất cảm vật liệu,", 54, 240),
-    (1258, "độ thô của vân từ sách của Kilmer", 50, 240),
+    (1196, "Bài phân tích về vân to, vân nhỏ", 54, 240),
+    (1258, "của bề mặt, từ sách của Kilmer", 50, 240),
     (1348, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
@@ -551,11 +551,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.64s", head="Cùng một bức tường: xa thì êm, sát thì nặng?", vo="Vì sao cùng một bức tường ván khuôn, đứng xa thì êm mắt mà đứng sát lại thấy nặng?",
+    dict(t="0–6.33s", head="Cùng một bức tường: xa thì êm, sát thì nặng?", vo="Cùng một bức tường bê tông, sao đứng xa thấy êm, mà đứng sát lại thấy nặng nề?",
          cam=((1020, 465), 1.1, (540, 925)), dark=False, dd=[], move="hold"),
-    dict(t="6.64–13.59s", head="Kilmer & Kilmer (2014): vân cũng có kích thước", vo="Sách nội thất của hai tác giả Kilmer nói, kích thước của vân quan trọng không kém loại chất cảm.",
+    dict(t="6.33–15.78s", head="Kilmer & Kilmer (2014): đá khối to, phòng nhỏ, khó chịu", vo="Sách nội thất của hai tác giả Kilmer lưu ý, đá khối to, tức là vân rất to, xây trong phòng nhỏ thì người ở thấy khó chịu.",
          cam=((1020, 465), 1.1, (540, 925)), dark=False, dd=[], move="pan_l"),
-    dict(t="13.59–14.09s", head="end", vo="",
+    dict(t="15.78–22.73s", head="Vân to hay nhỏ: hợp với phòng và khoảng cách nhìn", vo="Nghĩa là vân to hay nhỏ phải hợp với độ rộng của phòng, và với khoảng cách mình đứng nhìn.",
+         cam=((1300, 465), 1.3, (540, 900)), dark=False, dd=[], move="push"),
+    dict(t="22.73–23.23s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

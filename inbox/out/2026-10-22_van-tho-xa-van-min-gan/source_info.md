@@ -4,10 +4,10 @@ Chỉ dùng ảnh trong `anh/` của bài 02 (không tải ảnh ngoài kho, the
 
 | Ảnh kho | Loại | Dùng ở | Đã dùng ở tập trước? | Xử lý |
 |---|---|---|---|---|
-| anh/10-diagram-ty-xich-khoang-cach.png (2160x2080) | diagram | cảnh 2, 3, 10 | chưa | cắt hai dải: hàng trên (hai khoảng cách) `source_dgt.png`, hàng dưới (hai vòng vân + câu kết) `source_dgb.png`, bỏ tiêu đề |
-| anh/03-mat-bang-tang-mot-ms-house.png (1846x1870) | mặt bằng | cảnh 6 | chưa | cắt vùng hai phòng ngủ tầng một và chú thích `source_mb.png` |
-| anh/12-doodle-van-nho-phong-ngu.jpg (1667x2500) | ảnh công trình có doodle | cảnh 7, 8, 11 | chưa | thu nhỏ 1600x2400; xoá nét và chữ doodle bằng make_layers_ep10.py (TELEA, nền trát phẳng nên làm mờ nhẹ ở chỗ chữ) → `source_ph.png`; nét gốc đã tách vào `doodle_ep10_ph.npz` nhưng chưa dùng (xem hạn chế) |
-| anh/11-doodle-van-tho-hanh-lang.jpg | ảnh công trình | cảnh 1, 4, 5, 9 | CÓ, tập 7 (cảnh 3) | dùng lại nền đã xoá nét của tập 7 (`source_hl.png`) |
+| anh/10-diagram-ty-xich-khoang-cach.png (2160x2080) | diagram | cảnh 2, 3 (hàng trên), 4 (hàng dưới), 12 (dòng kết) | chưa | cắt ba dải: `source_dgt.png` (hai căn phòng, đứng xa / đứng sát), `source_dgb.png` (hai vòng vân), `source_dgc.png` (dòng kết "vân thô để chỗ nhìn xa, vân mịn để chỗ ở gần"); bỏ tiêu đề |
+| anh/03-mat-bang-tang-mot-ms-house.png (1846x1870) | mặt bằng | cảnh 8 | chưa | cắt vùng hai phòng ngủ tầng một và chú thích `source_mb.png` |
+| anh/12-doodle-van-nho-phong-ngu.jpg (1667x2500) | ảnh công trình có doodle | cảnh 9, 11, 13 | chưa | thu nhỏ 1600x2400; xoá nét và chữ doodle bằng make_layers_ep10.py (TELEA, nền trát phẳng nên làm mờ nhẹ ở chỗ chữ) → `source_ph.png`; nét gốc đã tách vào `doodle_ep10_ph.npz` nhưng chưa dùng (xem hạn chế) |
+| anh/11-doodle-van-tho-hanh-lang.jpg | ảnh công trình | cảnh 1, 5, 6, 7, 10 | CÓ, tập 7 (cảnh 3) | dùng lại nền đã xoá nét của tập 7 (`source_hl.png`) |
 
 Credit ảnh công trình: MS House, Ahmedabad · Studio Saransh · ảnh Ishita Sitwala, The Fishy Project. Mặt bằng: Studio Saransh, nguồn ArchDaily (2025), ghi chú Giả Thuyết Kiến Trúc. Diagram: Giả Thuyết Kiến Trúc, theo Kilmer & Kilmer (2014).
 

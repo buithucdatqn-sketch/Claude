@@ -1,82 +1,106 @@
 [
  {
   "blk": 1,
-  "t": "0–6.64s",
+  "t": "0–6.33s",
   "head": "Cùng một bức tường: xa thì êm, sát thì nặng?",
-  "loi": "Vì sao cùng một bức tường ván khuôn, đứng xa thì êm mắt mà đứng sát lại thấy nặng?",
-  "tts": "Vì sao cùng một bức tường ván khuôn, đứng xa thì êm mắt mà đứng sát lại thấy nặng?",
+  "loi": "Cùng một bức tường bê tông, sao đứng xa thấy êm, mà đứng sát lại thấy nặng nề?",
+  "tts": "Cùng một bức tường bê tông, sao đứng xa thấy êm, mà đứng sát lại thấy nặng nề?",
   "part": "A"
  },
  {
   "blk": 2,
-  "t": "6.64–13.59s",
-  "head": "Kilmer & Kilmer (2014): vân cũng có kích thước",
-  "loi": "Sách nội thất của hai tác giả Kilmer nói, kích thước của vân quan trọng không kém loại chất cảm.",
-  "tts": "Sách nội thất của hai tác giả Kin-mơ nói, kích thước của vân quan trọng không kém loại chất cảm.",
+  "t": "6.33–15.78s",
+  "head": "Kilmer & Kilmer (2014): đá khối to, phòng nhỏ, khó chịu",
+  "loi": "Sách nội thất của hai tác giả Kilmer lưu ý, đá khối to, tức là vân rất to, xây trong phòng nhỏ thì người ở thấy khó chịu.",
+  "tts": "Sách nội thất của hai tác giả Kin-mơ lưu ý, đá khối to, tức là vân rất to, xây trong phòng nhỏ thì người ở thấy khó chịu.",
   "part": "B"
  },
  {
   "blk": 2,
-  "t": "13.59–19.29s",
-  "head": "Đứng xa: vân chỉ còn sọc mảnh",
-  "loi": "Vì đứng xa, vân ván khuôn chỉ còn là những đường sọc mảnh, nên êm mắt.",
-  "tts": "Vì đứng xa, vân ván khuôn chỉ còn là những đường sọc mảnh, nên êm mắt.",
+  "t": "15.78–22.73s",
+  "head": "Vân to hay nhỏ: hợp với phòng và khoảng cách nhìn",
+  "loi": "Nghĩa là vân to hay nhỏ phải hợp với độ rộng của phòng, và với khoảng cách mình đứng nhìn.",
+  "tts": "Nghĩa là vân to hay nhỏ phải hợp với độ rộng của phòng, và với khoảng cách mình đứng nhìn.",
   "part": "C"
  },
  {
   "blk": 2,
-  "t": "19.29–24.99s",
+  "t": "22.73–28.12s",
+  "head": "Đứng xa: chỉ còn sọc mảnh, êm",
+  "loi": "Đứng xa, vết cốp pha trên tường chỉ còn là những sọc mảnh, nhìn êm.",
+  "tts": "Đứng xa, vết cốp pha trên tường chỉ còn là những sọc mảnh, nhìn êm.",
+  "part": "C"
+ },
+ {
+  "blk": 2,
+  "t": "28.12–34.45s",
   "head": "Đứng sát: thấy gờ, lỗ bọt khí",
-  "loi": "Còn đứng sát, từng gờ bê tông, từng lỗ bọt khí hiện rõ, nên thấy nặng.",
-  "tts": "Còn đứng sát, từng gờ bê tông, từng lỗ bọt khí hiện rõ, nên thấy nặng.",
+  "loi": "Còn đứng sát, từng gờ bê tông, từng lỗ bọt khí hiện rõ, nên bức tường thấy nặng.",
+  "tts": "Còn đứng sát, từng gờ bê tông, từng lỗ bọt khí hiện rõ, nên bức tường thấy nặng.",
   "part": "C"
  },
  {
   "blk": 3,
-  "t": "24.99–34.44s",
-  "head": "Hành lang lối vào: vân to, chỗ đi qua",
-  "loi": "Thử nhìn nhà MS House ở Ấn Độ: vân ván khuôn to nhất nằm ở hành lang lối vào, nơi người ta đi qua hoặc nhìn từ xa.",
-  "tts": "Thử nhìn nhà Em-ét Hao-xơ ở Ấn Độ: vân ván khuôn to nhất nằm ở hành lang lối vào, nơi người ta đi qua hoặc nhìn từ xa.",
+  "t": "34.45–44.21s",
+  "head": "MS House: vân to ở hành lang lối vào",
+  "loi": "Ở MS House, một nhà bê tông bên Ấn Độ, tụi mình để ý vân to nhất nằm ở hành lang lối vào, chỗ đi qua, nhìn từ xa.",
+  "tts": "Ở Em-ét Hao-xơ, một nhà bê tông bên Ấn Độ, tụi mình để ý vân to nhất nằm ở hành lang lối vào, chỗ đi qua, nhìn từ xa.",
   "part": "D"
  },
  {
   "blk": 3,
-  "t": "34.44–42.33s",
-  "head": "Mặt bằng tầng một: vào tới phòng ngủ",
-  "loi": "Càng đi vào sâu trong nhà, càng gần chỗ người ở, vân càng nhỏ và mịn, cho tới phòng ngủ của con gái.",
-  "tts": "Càng đi vào sâu trong nhà, càng gần chỗ người ở, vân càng nhỏ và mịn, cho tới phòng ngủ của con gái.",
+  "t": "44.21–51.16s",
+  "head": "Phòng trong: chỗ dừng lại thì mịn hơn",
+  "loi": "Bước qua cửa vào phòng trong, chỗ người ta dừng lại lâu hơn, đã có gỗ, có thảm, mịn hơn.",
+  "tts": "Bước qua cửa vào phòng trong, chỗ người ta dừng lại lâu hơn, đã có gỗ, có thảm, mịn hơn.",
   "part": "D"
  },
  {
   "blk": 3,
-  "t": "42.33–46.47s",
-  "head": "Phòng ngủ: sàn ô đá nhỏ lặp lại, mắt vẫn có chi tiết",
-  "loi": "Ở đó, sàn terrazzo là những ô đá nhỏ lặp lại.",
-  "tts": "Ở đó, sàn tê-ra-dô là những ô đá nhỏ lặp lại.",
+  "t": "51.16–55.3s",
+  "head": "Mặt bằng tầng một: phòng ngủ trên lầu",
+  "loi": "Lên tới phòng ngủ trên lầu, vân còn nhỏ hơn nữa.",
+  "tts": "Lên tới phòng ngủ trên lầu, vân còn nhỏ hơn nữa.",
+  "part": "D"
+ },
+ {
+  "blk": 3,
+  "t": "55.3–61.94s",
+  "head": "Phòng ngủ: sàn ô đá nhỏ lặp lại",
+  "loi": "Sàn chỉ còn những ô đá nhỏ lặp lại, mắt có chi tiết để nhìn mà không thấy nặng.",
+  "tts": "Sàn chỉ còn những ô đá nhỏ lặp lại, mắt có chi tiết để nhìn mà không thấy nặng.",
   "part": "D"
  },
  {
   "blk": 4,
-  "t": "46.47–54.98s",
-  "head": "Nhà phố: vân rõ ở lối vào, vôi mịn ở phòng ngủ",
-  "loi": "Nhà phố bê tông mộc cũng làm được: vân rõ để ở lối vào và giếng trời, phòng ngủ trên lầu thì trát vôi mịn.",
-  "tts": "Nhà phố bê tông mộc cũng làm được: vân rõ để ở lối vào và giếng trời, phòng ngủ trên lầu thì trát vôi mịn.",
+  "t": "61.94–68.27s",
+  "head": "Gợi ý cho nhà phố: vân rõ ở lối vào",
+  "loi": "Tụi mình nghĩ nhà phố cũng làm được, bê tông vân rõ để ở lối vào, giếng trời,",
+  "tts": "Tụi mình nghĩ nhà phố cũng làm được, bê tông vân rõ để ở lối vào, giếng trời,",
+  "part": "F"
+ },
+ {
+  "blk": 4,
+  "t": "68.27–71.78s",
+  "head": "Phòng ngủ trên lầu: trát vôi mịn",
+  "loi": "còn phòng ngủ trên lầu thì trát vôi mịn.",
+  "tts": "còn phòng ngủ trên lầu thì trát vôi mịn.",
   "part": "F"
  },
  {
   "blk": 5,
-  "t": "54.98–63.8s",
-  "head": "Vân thô chỗ nhìn xa, vân mịn chỗ ở gần",
-  "loi": "Tóm lại, vân thô để chỗ nhìn xa, vân mịn để chỗ ở gần, thì mắt vẫn có chi tiết mà căn phòng không nặng nề.",
-  "tts": "Tóm lại, vân thô để chỗ nhìn xa, vân mịn để chỗ ở gần, thì mắt vẫn có chi tiết mà căn phòng không nặng nề.",
+  "t": "71.78–78.42s",
+  "head": "Đi qua, nhìn xa: vân thô · Ngồi lâu, ở gần: vân mịn",
+  "loi": "Tóm lại, chỗ đi qua, nhìn từ xa thì vân thô, chỗ ngồi lâu, ở gần thì vân mịn.",
+  "tts": "Tóm lại, chỗ đi qua, nhìn từ xa thì vân thô, chỗ ngồi lâu, ở gần thì vân mịn.",
   "part": "H"
  },
  {
   "blk": 5,
-  "t": "63.8–71.69s",
+  "t": "78.42–86s",
   "head": "end",
-  "loi": "Bài phân tích về chất cảm vật liệu, độ thô của vân từ sách của Kilmer, mọi người xem phần bình luận nha.",
-  "tts": "Bài phân tích về chất cảm vật liệu, độ thô của vân từ sách của Kin-mơ, mọi người xem phần bình luận nha.",
+  "loi": "Bài phân tích về vân to, vân nhỏ của bề mặt từ sách của Kilmer, mọi người xem phần bình luận nha.",
+  "tts": "Bài phân tích về vân to, vân nhỏ của bề mặt từ sách của Kin-mơ, mọi người xem phần bình luận nha.",
   "part": "I"
  }
 ]

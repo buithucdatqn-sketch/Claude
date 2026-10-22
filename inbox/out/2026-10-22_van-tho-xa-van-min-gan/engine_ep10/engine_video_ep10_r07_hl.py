@@ -29,8 +29,8 @@ HEAD = "AH DECODE · VÂN THÔ Ở XA, VÂN MỊN Ở GẦN"
 END_LINES = [
     (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1088, "và cách chọn đồ decor", 40, 215),
-    (1196, "Bài phân tích về chất cảm vật liệu,", 54, 240),
-    (1258, "độ thô của vân từ sách của Kilmer", 50, 240),
+    (1196, "Bài phân tích về vân to, vân nhỏ", 54, 240),
+    (1258, "của bề mặt, từ sách của Kilmer", 50, 240),
     (1348, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
@@ -551,11 +551,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–4.14s", head="Phòng ngủ: sàn ô đá nhỏ lặp lại, mắt vẫn có chi tiết", vo="Ở đó, sàn terrazzo là những ô đá nhỏ lặp lại.",
-         cam=((520, 1350), 2.4, (459, 952)), dark=True, dd=[], move="hold"),
-    dict(t="4.14–12.65s", head="Nhà phố: vân rõ ở lối vào, vôi mịn ở phòng ngủ", vo="Nhà phố bê tông mộc cũng làm được: vân rõ để ở lối vào và giếng trời, phòng ngủ trên lầu thì trát vôi mịn.",
-         cam=((520, 1350), 2.4, (459, 952)), dark=True, dd=[], move="pan_l"),
-    dict(t="12.65–13.15s", head="end", vo="",
+    dict(t="0–6.64s", head="Phòng ngủ: sàn ô đá nhỏ lặp lại", vo="Sàn chỉ còn những ô đá nhỏ lặp lại, mắt có chi tiết để nhìn mà không thấy nặng.",
+         cam=((800, 1500), 2.2, (540, 1168)), dark=True, dd=[], move="hold"),
+    dict(t="6.64–12.97s", head="Gợi ý cho nhà phố: vân rõ ở lối vào", vo="Tụi mình nghĩ nhà phố cũng làm được, bê tông vân rõ để ở lối vào, giếng trời,",
+         cam=((800, 1500), 2.2, (540, 1168)), dark=True, dd=[], move="pan_l"),
+    dict(t="12.97–13.47s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

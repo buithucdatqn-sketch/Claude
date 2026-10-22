@@ -26,37 +26,40 @@ IMGS = dict(
     hl=("source_hl.png", "doodle_ep10_hl.npz", PHOTO),     # ảnh 11 hành lang lối vào (nét gốc: arr1/lab1 vân ván khuôn to, arr2/lab2 phòng trong mịn hơn)
     ph=("source_ph.png", "doodle_ep10_ph.npz", PHOTO),     # ảnh 12 phòng ngủ cô con gái (nét gốc: lab_top, arr_ke/lab_ke, arr_san/lab_san)
     dgt=("source_dgt.png", "", "Diagram: Giả Thuyết Kiến Trúc, theo Kilmer & Kilmer (2014)"),   # ảnh 10, hàng trên: hai khoảng cách đứng xa, đứng sát
+    dgc=("source_dgc.png", "", "Diagram: Giả Thuyết Kiến Trúc, theo Kilmer & Kilmer (2014)"),   # ảnh 10, dòng kết "vân thô để chỗ nhìn xa, vân mịn để chỗ ở gần"
     dgb=("source_dgb.png", "", "Diagram: Giả Thuyết Kiến Trúc, theo Kilmer & Kilmer (2014)"),   # ảnh 10, hàng dưới: hai vòng vân và câu kết
     mb=("source_mb.png", "", "Mặt bằng: Studio Saransh, nguồn ArchDaily (2025) · ghi chú Giả Thuyết Kiến Trúc"),  # ảnh 03, mặt bằng tầng một, cắt hai phòng ngủ tầng một và chú thích
 )
 SC = [
     dict(move="push", part="A", blk=1, img="hl", head="Cùng một bức tường: xa thì êm, sát thì nặng?", cam=WIDE, dark=False, dd=[],
-         vo="Vì sao cùng một bức tường ván khuôn, đứng xa thì êm mắt mà đứng sát lại thấy nặng?"),
-    dict(move="pan_l", part="B", blk=2, img="dgt", head="Kilmer & Kilmer (2014): vân cũng có kích thước", cam=((1020, 465), 1.1, (540, 925)), free=True, dark=False, dd=[],
-         vo="Sách nội thất của hai tác giả Kilmer nói, kích thước của vân quan trọng không kém loại chất cảm.",
-         tts="Sách nội thất của hai tác giả Kin-mơ nói, kích thước của vân quan trọng không kém loại chất cảm."),
-    dict(move="pull", part="C", blk=2, img="dgb", head="Đứng xa: vân chỉ còn sọc mảnh", cam=((560, 390), 1.4, (540, 925)), free=True, dark=False, dd=[],
-         vo="Vì đứng xa, vân ván khuôn chỉ còn là những đường sọc mảnh, nên êm mắt."),
+         vo="Cùng một bức tường bê tông, sao đứng xa thấy êm, mà đứng sát lại thấy nặng nề?"),
+    dict(move="pan_l", part="B", blk=2, img="dgt", head="Kilmer & Kilmer (2014): đá khối to, phòng nhỏ, khó chịu", cam=((1020, 465), 1.1, (540, 925)), free=True, dark=False, dd=[],
+         vo="Sách nội thất của hai tác giả Kilmer lưu ý, đá khối to, tức là vân rất to, xây trong phòng nhỏ thì người ở thấy khó chịu.",
+         tts="Sách nội thất của hai tác giả Kin-mơ lưu ý, đá khối to, tức là vân rất to, xây trong phòng nhỏ thì người ở thấy khó chịu."),
+    dict(move="push", part="C", blk=2, img="dgt", head="Vân to hay nhỏ: hợp với phòng và khoảng cách nhìn", cam=((1300, 465), 1.3, (540, 900)), free=True, dark=False, dd=[],
+         vo="Nghĩa là vân to hay nhỏ phải hợp với độ rộng của phòng, và với khoảng cách mình đứng nhìn."),
+    dict(move="pull", part="C", blk=2, img="dgb", head="Đứng xa: chỉ còn sọc mảnh, êm", cam=((560, 390), 1.4, (540, 925)), free=True, dark=False, dd=[],
+         vo="Đứng xa, vết cốp pha trên tường chỉ còn là những sọc mảnh, nhìn êm."),
     dict(move="push", part="C", blk=2, img="hl", head="Đứng sát: thấy gờ, lỗ bọt khí", cam=((830, 1050), 3.0, (540, 900)), dark=True, dd=[],
-         vo="Còn đứng sát, từng gờ bê tông, từng lỗ bọt khí hiện rõ, nên thấy nặng."),
-    dict(move="pan_r", part="D", blk=3, img="hl", head="Hành lang lối vào: vân to, chỗ đi qua", cam=((540, 700), 2.1, (540, 900)), dark=True,
-         dd=[],
-         vo="Thử nhìn nhà MS House ở Ấn Độ: vân ván khuôn to nhất nằm ở hành lang lối vào, nơi người ta đi qua hoặc nhìn từ xa.",
-         tts="Thử nhìn nhà Em-ét Hao-xơ ở Ấn Độ: vân ván khuôn to nhất nằm ở hành lang lối vào, nơi người ta đi qua hoặc nhìn từ xa."),
-    dict(move="push", part="D", blk=3, img="mb", head="Mặt bằng tầng một: vào tới phòng ngủ", cam=((653, 360), 1.0, (540, 925)), free=True, dark=False, dd=[],
-         vo="Càng đi vào sâu trong nhà, càng gần chỗ người ở, vân càng nhỏ và mịn, cho tới phòng ngủ của con gái."),
-    dict(move="pan_u", part="D", blk=3, img="ph", head="Phòng ngủ: sàn ô đá nhỏ lặp lại, mắt vẫn có chi tiết", cam=((600, 1700), 2.3, (540, 900)), dark=True,
-         dd=[],
-         vo="Ở đó, sàn terrazzo là những ô đá nhỏ lặp lại.",
-         tts="Ở đó, sàn tê-ra-dô là những ô đá nhỏ lặp lại."),
-    dict(move="pan_l", part="F", blk=4, img="hl", head="Nhà phố: vân rõ ở lối vào, vôi mịn ở phòng ngủ", cam=((520, 1350), 2.4, (540, 900)), dark=True,
-         dd=[],
-         vo="Nhà phố bê tông mộc cũng làm được: vân rõ để ở lối vào và giếng trời, phòng ngủ trên lầu thì trát vôi mịn."),
-    dict(move="pan_d", part="H", blk=5, img="dgb", head="Vân thô chỗ nhìn xa, vân mịn chỗ ở gần", cam=((1000, 420), 1.3, (540, 925)), free=True, dark=False, dd=[],
-         vo="Tóm lại, vân thô để chỗ nhìn xa, vân mịn để chỗ ở gần, thì mắt vẫn có chi tiết mà căn phòng không nặng nề."),
+         vo="Còn đứng sát, từng gờ bê tông, từng lỗ bọt khí hiện rõ, nên bức tường thấy nặng."),
+    dict(move="pan_r", part="D", blk=3, img="hl", head="MS House: vân to ở hành lang lối vào", cam=((900, 900), 2.2, (540, 900)), dark=True, dd=[],
+         vo="Ở MS House, một nhà bê tông bên Ấn Độ, tụi mình để ý vân to nhất nằm ở hành lang lối vào, chỗ đi qua, nhìn từ xa.",
+         tts="Ở Em-ét Hao-xơ, một nhà bê tông bên Ấn Độ, tụi mình để ý vân to nhất nằm ở hành lang lối vào, chỗ đi qua, nhìn từ xa."),
+    dict(move="pull", part="D", blk=3, img="hl", head="Phòng trong: chỗ dừng lại thì mịn hơn", cam=((460, 1150), 2.4, (540, 900)), dark=True, dd=[],
+         vo="Bước qua cửa vào phòng trong, chỗ người ta dừng lại lâu hơn, đã có gỗ, có thảm, mịn hơn."),
+    dict(move="push", part="D", blk=3, img="mb", head="Mặt bằng tầng một: phòng ngủ trên lầu", cam=((653, 360), 1.0, (540, 925)), free=True, dark=False, dd=[],
+         vo="Lên tới phòng ngủ trên lầu, vân còn nhỏ hơn nữa."),
+    dict(move="pan_u", part="D", blk=3, img="ph", head="Phòng ngủ: sàn ô đá nhỏ lặp lại", cam=((600, 1700), 2.3, (540, 900)), dark=True, dd=[],
+         vo="Sàn chỉ còn những ô đá nhỏ lặp lại, mắt có chi tiết để nhìn mà không thấy nặng."),
+    dict(move="pan_l", part="F", blk=4, img="hl", head="Gợi ý cho nhà phố: vân rõ ở lối vào", cam=((800, 1500), 2.2, (540, 900)), dark=True, dd=[],
+         vo="Tụi mình nghĩ nhà phố cũng làm được, bê tông vân rõ để ở lối vào, giếng trời,"),
+    dict(move="push", part="F", blk=4, img="ph", head="Phòng ngủ trên lầu: trát vôi mịn", cam=((420, 900), 2.3, (540, 900)), dark=True, dd=[],
+         vo="còn phòng ngủ trên lầu thì trát vôi mịn."),
+    dict(move="pan_r", part="H", blk=5, img="dgc", head="Đi qua, nhìn xa: vân thô · Ngồi lâu, ở gần: vân mịn", cam=((1020, 184), 1.15, (540, 925)), free=True, dark=False, dd=[],
+         vo="Tóm lại, chỗ đi qua, nhìn từ xa thì vân thô, chỗ ngồi lâu, ở gần thì vân mịn."),
     dict(move="push", part="I", blk=5, img="ph", head="end", cam="END", dark=False, vo="", dd=[],
-         say="Bài phân tích về chất cảm vật liệu, độ thô của vân từ sách của Kilmer, mọi người xem phần bình luận nha.",
-         tts="Bài phân tích về chất cảm vật liệu, độ thô của vân từ sách của Kin-mơ, mọi người xem phần bình luận nha."),
+         say="Bài phân tích về vân to, vân nhỏ của bề mặt từ sách của Kilmer, mọi người xem phần bình luận nha.",
+         tts="Bài phân tích về vân to, vân nhỏ của bề mặt từ sách của Kin-mơ, mọi người xem phần bình luận nha."),
 ]
 
 DOODLE = r'''
@@ -203,7 +206,7 @@ def build(src, dst, video, data, img, tag):
            ("borderMode=cv2.BORDER_REFLECT)", "borderMode=cv2.BORDER_CONSTANT, borderValue=(255, 255, 255, 0))"),
            # khung cuối: chữ khớp lời mời (mẫu tập 7)
            ('(1196, "Bài viết phân tích đầy đủ", 58, 240),\n    (1260, "xem ở dòng đầu tiên", 58, 240),\n    (1348, "trong phần bình luận", 66, 255),',
-            '(1196, "Bài phân tích về chất cảm vật liệu,", 54, 240),\n    (1258, "độ thô của vân từ sách của Kilmer", 50, 240),\n    (1348, "xem ở phần bình luận", 66, 255),')]
+            '(1196, "Bài phân tích về vân to, vân nhỏ", 54, 240),\n    (1258, "của bề mặt, từ sách của Kilmer", 50, 240),\n    (1348, "xem ở phần bình luận", 66, 255),')]
     for a_, b_ in rep:
         assert a_ in s, a_
         s = s.replace(a_, b_)
@@ -233,7 +236,7 @@ for n, ks in enumerate(runs(), 1):
 json.dump(RUNS, open(OUT + "engine_ep10/runs.json", "w"), ensure_ascii=False, indent=1)
 
 # ảnh bìa 1080x1920: cảnh rộng trên ảnh 12 (kệ gỗ, tường vôi, sàn ô đá nhỏ), tiêu đề ngắn + câu móc
-COVER = [dict(img="ph", head="Vân thô ở xa, vân mịn ở gần", vo="Vì sao đứng sát tường bê tông lại thấy nặng?", dark=False),
+COVER = [dict(img="ph", head="Vân thô ở xa, vân mịn ở gần", vo="Tường bê tông nhám: xa thì đẹp, sát sao lại nặng?", dark=False),
          dict(img="ph", head="end", vo="", dark=False)]
 build("engine_storyboard_v7.py", "cover_ep10.py", False,
       wrap_data([scene_line(COVER[0], 0, 3, "WIDE", []), scene_line(COVER[1], 3, 4, "END_SAFE", [])],

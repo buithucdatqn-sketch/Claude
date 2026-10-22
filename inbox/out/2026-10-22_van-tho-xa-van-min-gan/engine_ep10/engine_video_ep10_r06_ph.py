@@ -29,8 +29,8 @@ HEAD = "AH DECODE · VÂN THÔ Ở XA, VÂN MỊN Ở GẦN"
 END_LINES = [
     (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1088, "và cách chọn đồ decor", 40, 215),
-    (1196, "Bài phân tích về chất cảm vật liệu,", 54, 240),
-    (1258, "độ thô của vân từ sách của Kilmer", 50, 240),
+    (1196, "Bài phân tích về vân to, vân nhỏ", 54, 240),
+    (1258, "của bề mặt, từ sách của Kilmer", 50, 240),
     (1348, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
@@ -551,11 +551,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–7.89s", head="Mặt bằng tầng một: vào tới phòng ngủ", vo="Càng đi vào sâu trong nhà, càng gần chỗ người ở, vân càng nhỏ và mịn, cho tới phòng ngủ của con gái.",
+    dict(t="0–4.14s", head="Mặt bằng tầng một: phòng ngủ trên lầu", vo="Lên tới phòng ngủ trên lầu, vân còn nhỏ hơn nữa.",
          cam=((600, 1700), 2.3, (512, 1316)), dark=False, dd=[], move="hold"),
-    dict(t="7.89–12.03s", head="Phòng ngủ: sàn ô đá nhỏ lặp lại, mắt vẫn có chi tiết", vo="Ở đó, sàn terrazzo là những ô đá nhỏ lặp lại.",
+    dict(t="4.14–10.78s", head="Phòng ngủ: sàn ô đá nhỏ lặp lại", vo="Sàn chỉ còn những ô đá nhỏ lặp lại, mắt có chi tiết để nhìn mà không thấy nặng.",
          cam=((600, 1700), 2.3, (512, 1316)), dark=True, dd=[], move="pan_u"),
-    dict(t="12.03–12.53s", head="end", vo="",
+    dict(t="10.78–11.28s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

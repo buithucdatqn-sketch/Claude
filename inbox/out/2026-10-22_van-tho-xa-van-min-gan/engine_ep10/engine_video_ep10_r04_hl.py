@@ -29,8 +29,8 @@ HEAD = "AH DECODE · VÂN THÔ Ở XA, VÂN MỊN Ở GẦN"
 END_LINES = [
     (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1088, "và cách chọn đồ decor", 40, 215),
-    (1196, "Bài phân tích về chất cảm vật liệu,", 54, 240),
-    (1258, "độ thô của vân từ sách của Kilmer", 50, 240),
+    (1196, "Bài phân tích về vân to, vân nhỏ", 54, 240),
+    (1258, "của bề mặt, từ sách của Kilmer", 50, 240),
     (1348, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
@@ -551,13 +551,15 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.7s", head="Đứng xa: vân chỉ còn sọc mảnh", vo="Vì đứng xa, vân ván khuôn chỉ còn là những đường sọc mảnh, nên êm mắt.",
+    dict(t="0–5.39s", head="Đứng xa: chỉ còn sọc mảnh, êm", vo="Đứng xa, vết cốp pha trên tường chỉ còn là những sọc mảnh, nhìn êm.",
          cam=((830, 1050), 3.0, (540, 900)), dark=False, dd=[], move="hold"),
-    dict(t="5.7–11.4s", head="Đứng sát: thấy gờ, lỗ bọt khí", vo="Còn đứng sát, từng gờ bê tông, từng lỗ bọt khí hiện rõ, nên thấy nặng.",
+    dict(t="5.39–11.72s", head="Đứng sát: thấy gờ, lỗ bọt khí", vo="Còn đứng sát, từng gờ bê tông, từng lỗ bọt khí hiện rõ, nên bức tường thấy nặng.",
          cam=((830, 1050), 3.0, (540, 900)), dark=True, dd=[], move="push"),
-    dict(t="11.4–20.85s", head="Hành lang lối vào: vân to, chỗ đi qua", vo="Thử nhìn nhà MS House ở Ấn Độ: vân ván khuôn to nhất nằm ở hành lang lối vào, nơi người ta đi qua hoặc nhìn từ xa.",
-         cam=((540, 700), 2.1, (414, 548)), dark=True, dd=[], move="pan_r"),
-    dict(t="20.85–21.35s", head="end", vo="",
+    dict(t="11.72–21.48s", head="MS House: vân to ở hành lang lối vào", vo="Ở MS House, một nhà bê tông bên Ấn Độ, tụi mình để ý vân to nhất nằm ở hành lang lối vào, chỗ đi qua, nhìn từ xa.",
+         cam=((900, 900), 2.2, (540, 752)), dark=True, dd=[], move="pan_r"),
+    dict(t="21.48–28.43s", head="Phòng trong: chỗ dừng lại thì mịn hơn", vo="Bước qua cửa vào phòng trong, chỗ người ta dừng lại lâu hơn, đã có gỗ, có thảm, mịn hơn.",
+         cam=((460, 1150), 2.4, (402, 900)), dark=True, dd=[], move="pull"),
+    dict(t="28.43–28.93s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

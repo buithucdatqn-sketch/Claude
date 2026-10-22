@@ -29,8 +29,8 @@ HEAD = "AH DECODE · VÂN THÔ Ở XA, VÂN MỊN Ở GẦN"
 END_LINES = [
     (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1088, "và cách chọn đồ decor", 40, 215),
-    (1196, "Bài phân tích về chất cảm vật liệu,", 54, 240),
-    (1258, "độ thô của vân từ sách của Kilmer", 50, 240),
+    (1196, "Bài phân tích về vân to, vân nhỏ", 54, 240),
+    (1258, "của bề mặt, từ sách của Kilmer", 50, 240),
     (1348, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
@@ -550,11 +550,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.95s", head="Kilmer & Kilmer (2014): vân cũng có kích thước", vo="Sách nội thất của hai tác giả Kilmer nói, kích thước của vân quan trọng không kém loại chất cảm.",
+    dict(t="0–6.95s", head="Vân to hay nhỏ: hợp với phòng và khoảng cách nhìn", vo="Nghĩa là vân to hay nhỏ phải hợp với độ rộng của phòng, và với khoảng cách mình đứng nhìn.",
          cam=((560, 390), 1.4, (540, 925)), dark=False, dd=[], move="hold"),
-    dict(t="6.95–12.65s", head="Đứng xa: vân chỉ còn sọc mảnh", vo="Vì đứng xa, vân ván khuôn chỉ còn là những đường sọc mảnh, nên êm mắt.",
+    dict(t="6.95–12.34s", head="Đứng xa: chỉ còn sọc mảnh, êm", vo="Đứng xa, vết cốp pha trên tường chỉ còn là những sọc mảnh, nhìn êm.",
          cam=((560, 390), 1.4, (540, 925)), dark=False, dd=[], move="pull"),
-    dict(t="12.65–13.15s", head="end", vo="",
+    dict(t="12.34–12.84s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

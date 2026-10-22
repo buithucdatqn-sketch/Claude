@@ -385,10 +385,11 @@
   ],
   "y_bai": {
    "muc": "Độ thô của bề mặt phải hợp với kích thước phòng và khoảng cách nhìn",
-   "tom_tat": "Đứng xa vân ván khuôn chỉ còn sọc mảnh, đứng sát thấy gờ, lỗ bọt khí nên nặng; MS House để vân to ở chỗ đi qua, vân nhỏ mịn ở chỗ ở gần; vân rõ ở lối vào, phòng ngủ trát vôi mịn."
+   "tom_tat": "Bản 2 (chạy lại theo góp ý chủ Trang 'chưa sâu, câu từ khó hiểu'): đá khối to trong phòng nhỏ gây khó chịu; đứng xa vết cốp pha chỉ còn sọc mảnh, ngồi sát thấy gờ, lỗ bọt khí nên nặng; MS House: hành lang (đi qua) vân to nhất, phòng khách (ngồi lâu) mịn hơn, phòng ngủ trên lầu sàn ô đá nhỏ; nhà phố: vân rõ ở lối vào, giếng trời, phòng ngủ trát vôi mịn."
   },
   "trang_thai": "cho_ghi_am",
   "thu_muc": "inbox/out/2026-10-22_van-tho-xa-van-min-gan",
-  "ghi_chu": "Chỉ 2 không gian (hành lang, phòng ngủ) vì kho hết ảnh mới của bài 02; ảnh 11 dùng lại; không tải ảnh ngoài kho theo prompt."
+  "ghi_chu": "Chỉ 2 không gian (hành lang, phòng ngủ) vì kho hết ảnh mới của bài 02; ảnh 11 dùng lại; không tải ảnh ngoài kho theo prompt.",
+  "ban": 2
  }
 ]
