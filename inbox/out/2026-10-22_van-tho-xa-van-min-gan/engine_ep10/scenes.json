@@ -1,15 +1,15 @@
 [
  {
   "blk": 1,
-  "t": "0–6.33s",
+  "t": "0–4.85s",
   "head": "Cùng một bức tường: xa thì êm, sát thì nặng?",
-  "loi": "Cùng một bức tường bê tông, sao đứng xa thấy êm, mà đứng sát lại thấy nặng nề?",
-  "tts": "Cùng một bức tường bê tông, sao đứng xa thấy êm, mà đứng sát lại thấy nặng nề?",
+  "loi": "Cùng một bức tường, sao đứng xa thấy êm, mà đứng sát lại thấy nặng nề?",
+  "tts": "Cùng một bức tường, sao đứng xa thấy êm, mà đứng sát lại thấy nặng nề?",
   "part": "A"
  },
  {
   "blk": 2,
-  "t": "6.33–15.78s",
+  "t": "4.85–13.05s",
   "head": "Kilmer & Kilmer (2014): đá khối to, phòng nhỏ, khó chịu",
   "loi": "Sách nội thất của hai tác giả Kilmer lưu ý, đá khối to, tức là vân rất to, xây trong phòng nhỏ thì người ở thấy khó chịu.",
   "tts": "Sách nội thất của hai tác giả Kin-mơ lưu ý, đá khối to, tức là vân rất to, xây trong phòng nhỏ thì người ở thấy khó chịu.",
@@ -17,7 +17,7 @@
  },
  {
   "blk": 2,
-  "t": "15.78–22.73s",
+  "t": "13.05–17.95s",
   "head": "Vân to hay nhỏ: hợp với phòng và khoảng cách nhìn",
   "loi": "Nghĩa là vân to hay nhỏ phải hợp với độ rộng của phòng, và với khoảng cách mình đứng nhìn.",
   "tts": "Nghĩa là vân to hay nhỏ phải hợp với độ rộng của phòng, và với khoảng cách mình đứng nhìn.",
@@ -25,7 +25,7 @@
  },
  {
   "blk": 2,
-  "t": "22.73–28.12s",
+  "t": "17.95–22.27s",
   "head": "Đứng xa: chỉ còn sọc mảnh, êm",
   "loi": "Đứng xa, vết cốp pha trên tường chỉ còn là những sọc mảnh, nhìn êm.",
   "tts": "Đứng xa, vết cốp pha trên tường chỉ còn là những sọc mảnh, nhìn êm.",
@@ -33,7 +33,7 @@
  },
  {
   "blk": 2,
-  "t": "28.12–34.45s",
+  "t": "22.27–27.72s",
   "head": "Đứng sát: thấy gờ, lỗ bọt khí",
   "loi": "Còn đứng sát, từng gờ bê tông, từng lỗ bọt khí hiện rõ, nên bức tường thấy nặng.",
   "tts": "Còn đứng sát, từng gờ bê tông, từng lỗ bọt khí hiện rõ, nên bức tường thấy nặng.",
@@ -41,7 +41,7 @@
  },
  {
   "blk": 3,
-  "t": "34.45–44.21s",
+  "t": "27.72–34.95s",
   "head": "MS House: vân to ở hành lang lối vào",
   "loi": "Ở MS House, một nhà bê tông bên Ấn Độ, tụi mình để ý vân to nhất nằm ở hành lang lối vào, chỗ đi qua, nhìn từ xa.",
   "tts": "Ở Em-ét Hao-xơ, một nhà bê tông bên Ấn Độ, tụi mình để ý vân to nhất nằm ở hành lang lối vào, chỗ đi qua, nhìn từ xa.",
@@ -49,7 +49,7 @@
  },
  {
   "blk": 3,
-  "t": "44.21–50.85s",
+  "t": "34.95–39.57s",
   "head": "Phòng khách: bê tông ván ép, mặt mịn hơn",
   "loi": "Còn phòng khách là chỗ ngồi lâu, nên bê tông ở đó đổ bằng ván ép, mặt mịn hơn.",
   "tts": "Còn phòng khách là chỗ ngồi lâu, nên bê tông ở đó đổ bằng ván ép, mặt mịn hơn.",
@@ -57,7 +57,7 @@
  },
  {
   "blk": 3,
-  "t": "50.85–54.99s",
+  "t": "39.57–42.16s",
   "head": "Mặt bằng tầng một: phòng ngủ trên lầu",
   "loi": "Lên tới phòng ngủ trên lầu, vân còn nhỏ hơn nữa.",
   "tts": "Lên tới phòng ngủ trên lầu, vân còn nhỏ hơn nữa.",
@@ -65,7 +65,7 @@
  },
  {
   "blk": 3,
-  "t": "54.99–61.63s",
+  "t": "42.16–46.55s",
   "head": "Phòng ngủ: sàn ô đá nhỏ lặp lại",
   "loi": "Sàn chỉ còn những ô đá nhỏ lặp lại, mắt có chi tiết để nhìn mà không thấy nặng.",
   "tts": "Sàn chỉ còn những ô đá nhỏ lặp lại, mắt có chi tiết để nhìn mà không thấy nặng.",
@@ -73,23 +73,23 @@
  },
  {
   "blk": 4,
-  "t": "61.63–67.95s",
-  "head": "Gợi ý cho nhà phố: vân rõ ở lối vào",
-  "loi": "Tụi mình nghĩ nhà phố cũng làm được, bê tông vân rõ để ở lối vào, giếng trời,",
-  "tts": "Tụi mình nghĩ nhà phố cũng làm được, bê tông vân rõ để ở lối vào, giếng trời,",
-  "part": "F"
+  "t": "46.55–51.94s",
+  "head": "Chỗ tiếp xúc gần: chọn vật liệu cho khéo",
+  "loi": "Cũng vì vậy, nội thất của những ngôi nhà bê tông trần nếu không khéo cân nhắc vật liệu cho những khu vực tiếp xúc gần,",
+  "tts": "Cũng vì vậy, nội thất của những ngôi nhà bê tông trần nếu không khéo cân nhắc vật liệu cho những khu vực tiếp xúc gần,",
+  "part": "E"
  },
  {
   "blk": 4,
-  "t": "67.95–71.46s",
-  "head": "Phòng ngủ trên lầu: trát vôi mịn",
-  "loi": "còn phòng ngủ trên lầu thì trát vôi mịn.",
-  "tts": "còn phòng ngủ trên lầu thì trát vôi mịn.",
-  "part": "F"
+  "t": "51.94–53.6s",
+  "head": "Bê tông trần ở sát người: dễ lạnh",
+  "loi": "thì cảm giác ở sẽ rất lạnh.",
+  "tts": "thì cảm giác ở sẽ rất lạnh.",
+  "part": "E"
  },
  {
   "blk": 5,
-  "t": "71.46–78.1s",
+  "t": "53.6–59.22s",
   "head": "Đi qua, nhìn xa: vân thô · Ngồi lâu, ở gần: vân mịn",
   "loi": "Tóm lại, chỗ đi qua, nhìn từ xa thì vân thô, chỗ ngồi lâu, ở gần thì vân mịn.",
   "tts": "Tóm lại, chỗ đi qua, nhìn từ xa thì vân thô, chỗ ngồi lâu, ở gần thì vân mịn.",
@@ -97,10 +97,10 @@
  },
  {
   "blk": 5,
-  "t": "78.1–85.67s",
+  "t": "59.22–67.45s",
   "head": "end",
-  "loi": "Bài phân tích về vân to, vân nhỏ của bề mặt từ sách của Kilmer, mọi người xem phần bình luận nha.",
-  "tts": "Bài phân tích về vân to, vân nhỏ của bề mặt từ sách của Kin-mơ, mọi người xem phần bình luận nha.",
+  "loi": "Bài phân tích về vân to, vân nhỏ của bề mặt và nguyên tắc phối vật liệu cứng mềm theo luật xa gần từ sách của Kilmer, mọi người xem phần bình luận nhá.",
+  "tts": "Bài phân tích về vân to, vân nhỏ của bề mặt và nguyên tắc phối vật liệu cứng mềm theo luật xa gần từ sách của Kin-mơ, mọi người xem phần bình luận nhá.",
   "part": "I"
  }
 ]

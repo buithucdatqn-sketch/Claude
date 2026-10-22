@@ -9,14 +9,13 @@ Credit ảnh công trình (bài và ArchDaily ghi giống nhau): MS House, Ahmed
 | anh/10-diagram-ty-xich-khoang-cach.png | diagram của bài | 2, 3 (hàng trên), 12 (dòng kết) | chưa | cắt dải `source_dgt.png`, `source_dgc.png` |
 | ArchDaily 26 | mặt ngoài nhìn xa, tường vân cốp pha | 4, 13 (khung cuối) | chưa | nét mới: khung đứt bao mảng tường + nhãn "sọc mảnh, nhìn êm" |
 | ArchDaily 24 | tường bê tông nhìn sát | 5 | chưa | nét mới: nhãn "gờ, lỗ bọt khí", mũi tên, vòng bao hàng lỗ bọt khí |
-| anh/11-doodle-van-tho-hanh-lang.jpg | ảnh của bài, hành lang lối vào | 6 | CÓ, tập 7 (chủ Trang cho dùng lại) | nền sạch (đã xoá nét gốc ở tập 7) + nét mới: khung bao mảng tường cạnh cửa, nhãn "vân cốp pha to, chỗ đi qua", mũi tên |
+| anh/11-doodle-van-tho-hanh-lang.jpg | ảnh của bài, hành lang lối vào | 6, 11 | CÓ, tập 7 (chủ Trang cho dùng lại) | nền sạch (đã xoá nét gốc ở tập 7) + nét mới: khung bao mảng tường cạnh cửa, nhãn "vân cốp pha to, chỗ đi qua", mũi tên |
 | ArchDaily 29 | phòng khách | 7 (khung thẻ) | chưa | nét mới: khung bao mảng tường sau, nhãn "bê tông ván ép, mặt mịn" |
 | anh/03-mat-bang-tang-mot-ms-house.png | mặt bằng của bài | 8 | chưa | cắt vùng hai phòng ngủ tầng một, chú thích gốc |
 | ArchDaily 6 | phòng ngủ con gái | 9 (khung thẻ, cắt nửa dưới `source_a6c.png`) | chưa | nét mới: nhãn "ô đá nhỏ lặp lại" trên mảng gỗ, mũi tên, vòng bao sàn ô đá |
-| ArchDaily 35 | cổng lối vào | 10 (khung thẻ, cắt nửa dưới `source_a35c.png`) | chưa | nét mới: khung bao dải tường cổng, nhãn "vân rõ ở lối vào", mũi tên ngắn |
-| anh/12-doodle-van-nho-phong-ngu.jpg | ảnh của bài, phòng ngủ (kệ, tường vôi) | 11 | chưa | nền sạch (make_layers_ep10.py) + nét mới: nhãn "tường trát vôi mịn", mũi tên |
+| anh/12-doodle-van-nho-phong-ngu.jpg | ảnh của bài, phòng ngủ (kệ gỗ, tường vôi) | 10 | chưa | nền sạch (make_layers_ep10.py) + nét mới theo chú thích gốc của bài: nhãn "kệ gỗ mặt mịn, trong tầm tay", mũi tên chỉ kệ |
 
-Nét doodle vẽ bằng `engine_ep10/draw_ep10.py` (nét trắng, nét đứt, rung tay, góc vẽ lố), lưu `doodle_ep10_<ảnh>.npz` theo đúng thứ tự vẽ để engine lộ dần; ảnh xem thử ở `doodle_preview/`. Mỗi ảnh chỉ dùng ở một hoặc hai cảnh; ba không gian trở lên (mặt ngoài, hành lang, phòng khách, phòng ngủ, lối vào).
+Nét doodle vẽ bằng `engine_ep10/draw_ep10.py` (nét trắng, nét đứt, rung tay, góc vẽ lố), lưu `doodle_ep10_<ảnh>.npz` theo đúng thứ tự vẽ để engine lộ dần; ảnh xem thử ở `doodle_preview/`. Mỗi ảnh chỉ dùng ở một hoặc hai cảnh; ba không gian trở lên (mặt ngoài, hành lang, phòng khách, phòng ngủ). Ảnh ArchDaily 35 (cổng lối vào) đã dùng ở bản 3 nhưng bỏ ở giai đoạn B vì chủ Trang bỏ câu "lối vào" khi thu âm..
 
 ## Hạn chế
 - Nhãn gốc vẽ sẵn trên ảnh 11 và 12 của bài nằm sát mép ảnh nên không dùng; thay bằng nét vẽ mới đặt giữa dải an toàn (y 610–1240).

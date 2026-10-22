@@ -29,9 +29,10 @@ HEAD = "AH DECODE · VÂN THÔ Ở XA, VÂN MỊN Ở GẦN"
 END_LINES = [
     (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1088, "và cách chọn đồ decor", 40, 215),
-    (1196, "Bài phân tích về vân to, vân nhỏ", 54, 240),
-    (1258, "của bề mặt, từ sách của Kilmer", 50, 240),
-    (1348, "xem ở phần bình luận", 66, 255),
+    (1180, "Bài phân tích về vân to, vân nhỏ của bề mặt", 44, 240),
+    (1232, "và nguyên tắc phối vật liệu cứng mềm", 44, 240),
+    (1284, "theo luật xa gần, từ sách của Kilmer", 44, 240),
+    (1364, "xem ở phần bình luận", 62, 255),
 ]
 INK = (46, 38, 32)
 PAPER = (229, 215, 191)  # beige print margin
@@ -509,11 +510,12 @@ def text_layout(sc, cam, t):
         warn.append(f"mép trên ảnh (y {top:.0f}) cắt ngang khối tiêu đề: chỉnh cam để mép trên <= {SAFE_Y0 - 30} hoặc >= {TOP_END}")
     if cr_y - 20 < bot < SAFE_Y1 + 30:
         warn.append(f"mép dưới ảnh (y {bot:.0f}) cắt ngang khối phụ đề: chỉnh cam để mép dưới <= {cr_y - 20:.0f} hoặc >= {SAFE_Y1 + 30}")
-    t.put((60, SAFE_Y0 + 4), HEAD, 34, 220)
+    if sc["head"]:
+        t.put((60, SAFE_Y0 + 4), HEAD, 34, 220)
     t.block(60, SAFE_Y0 + 52, sc["head"], 80, 88, TEXT_W)
     put_credit(t, (60, cr_y), 30, 230)
     t.block(60, vo_y, sc["vo"], 56, 72, TEXT_W)
-    return top < TOP_END, bot > cr_y - 20, warn
+    return top < TOP_END and bool(sc["head"]), bot > cr_y - 20 and bool(sc["vo"]), warn
 
 
 def qa_text(i, *masks):
@@ -551,9 +553,9 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.64s", head="Đi qua, nhìn xa: vân thô · Ngồi lâu, ở gần: vân mịn", vo="Tóm lại, chỗ đi qua, nhìn từ xa thì vân thô, chỗ ngồi lâu, ở gần thì vân mịn.",
+    dict(t="0–5.62s", head="", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
-    dict(t="6.64–14.21s", head="end", vo="",
+    dict(t="5.62–13.85s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="push"),
 ]
 END = len(SCENES) - 1

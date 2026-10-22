@@ -1,4 +1,4 @@
-"""Ghép video tập 7: cắt đoạn của từng run (runs.json: cut_from, cut_len) từ vid/<tag>/video/<tag>_silent.mp4 rồi nối
+"""Ghép video tập 10: cắt đoạn của từng run (runs.json: cut_from, cut_len) từ vid/<tag>/video/<tag>_silent.mp4 rồi nối
 bằng hoà tan XF giây (xfade), giữ nguyên mốc thời gian: mỗi run (trừ run đầu) lấy thêm XF giây phía trước điểm cắt
 (cảnh nối của run đó đứng yên trên đúng camera cảnh đầu run, cùng chữ cảnh trước), nên chữ không nhảy khi hoà tan.
 Sau đó ghép giọng đã xử lý audio/bai-007_xu-ly.wav (AAC 48 kHz)."""
@@ -22,10 +22,10 @@ for i in range(1, len(RUNS)):
     chain.append(f"[{cur}][v{i}]xfade=transition={tr}:duration={XF}:offset={acc - XF:.3f}[x{i}]")
     cur, acc = f"x{i}", acc + lens[i] - XF
 fc = ";".join(parts + chain) + f";[{len(RUNS)}:a]apad[a]"
-AUDIO = sys.argv[2] if len(sys.argv) > 2 else OUT + "audio/bai-007_xu-ly.wav"   # đổi theo tập
+AUDIO = sys.argv[2] if len(sys.argv) > 2 else OUT + "audio/van-tho-xa-van-min-gan_xu-ly.wav"   # đổi theo tập
 ins += ["-i", AUDIO]
 subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *ins, "-filter_complex", fc,
                 "-map", f"[{cur}]", "-map", "[a]", "-t", f"{acc:.3f}", "-c:v", "libx264", "-preset", "medium", "-crf", "17",
                 "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart",
-                sys.argv[3] if len(sys.argv) > 3 else OUT + "reel_mem-trong-tam-tay_final.mp4"], check=True)
+                sys.argv[3] if len(sys.argv) > 3 else OUT + "reel_van-tho-xa-van-min-gan_final.mp4"], check=True)
 print("xong", round(acc, 2), "giây")

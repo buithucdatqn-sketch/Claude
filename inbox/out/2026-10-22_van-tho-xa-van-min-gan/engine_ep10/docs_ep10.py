@@ -15,7 +15,7 @@ words = sum(len(s["loi"].split()) for s in sc)
 el = open(OUT + "elevenlabs.txt").read()
 notes = open(HERE + "/script_notes.md").read()
 open(OUT + "script.md", "w").write(
-    "# AH Decode · Vân thô ở xa, vân mịn ở gần · tập 10, bản 2 (chạy lại theo góp ý chủ Trang) · chờ ghi âm\n\n"
+    "# AH Decode · Vân thô ở xa, vân mịn ở gần · tập 10, bản 3 (doodle, ảnh ArchDaily) · đã dựng video theo ghi âm\n\n"
     "Bài: bai-02 (kho AH-Decode-Decor, commit 6d869f9), mục \"Độ thô của bề mặt phải hợp với kích thước phòng và khoảng cách nhìn\".\n\n"
     f"## Bảng cảnh ({len(sc)} cảnh, {words} từ phụ đề; cột thời lượng là bản nháp 3,2 từ/giây, giai đoạn B căn lại theo ghi âm)\n"
     "| # | Khối | Phần | Thời lượng | Ảnh | Tiêu đề trên khung | Phụ đề (loi) | Bản đọc (tts) |\n|---|---|---|---|---|---|---|---|\n"

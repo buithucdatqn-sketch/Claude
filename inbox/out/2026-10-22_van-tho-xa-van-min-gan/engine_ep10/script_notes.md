@@ -49,3 +49,33 @@ Lượt 3 (agent độc lập thứ ba): CẦN SỬA NHẸ (3 câu). Góp ý: ng
 - Thêm nét doodle trắng nét đứt vẽ mới trên ảnh ở 7 cảnh (4, 5, 6, 7, 9, 10, 11): khung bao, vòng bao, mũi tên, nhãn viết tay, lộ dần theo lời (engine_ep10/draw_ep10.py).
 - Chủ Trang cho phép dùng lại ảnh tập trước và lấy ảnh MS House chưa có trong bài: thêm sáu ảnh ArchDaily (mặt ngoài 39, 26; tường nhìn sát 24; phòng khách 29; phòng ngủ con gái 6; cổng lối vào 35). Reel giờ có năm không gian, mỗi ảnh chỉ một hoặc hai cảnh.
 - Nhờ có ảnh phòng khách thật, cảnh 7 trở lại đúng câu của bài: "Còn phòng khách là chỗ ngồi lâu, nên bê tông ở đó đổ bằng ván ép, mặt mịn hơn" (thay cho câu "phòng trong" trên ảnh hành lang ở bản 2). Cảnh 4 (đứng xa) và cảnh 5 (đứng sát) giờ là ảnh chụp thật thay cho diagram. Lời đọc các cảnh còn lại giữ như bản 2 đã qua ba lượt chấm.
+## Giai đoạn B: căn cảnh theo ghi âm van-tho-xa-van-min-gan.mp3
+- File: 66,85 giây, mp3 44,1 kHz mono (ElevenLabs, giọng Tony Hoang). Lời thật nhận dạng bằng sherpa-onnx `sherpa-onnx-zipformer-vi-2025-04-20` (chạy trong máy, theo từng đoạn nói giữa các quãng lặng), đối chiếu với kịch bản.
+- Chủ Trang đã chỉnh lời khi thu:
+  - Câu móc bỏ chữ "bê tông": "Cùng một bức tường, sao đứng xa thấy êm, mà đứng sát lại thấy nặng nề?"
+  - Bỏ hai cảnh gợi ý cho nhà phố (lối vào, giếng trời / phòng ngủ trát vôi mịn), thay bằng câu mới: "Cũng vì vậy, nội thất của những ngôi nhà bê tông trần nếu không khéo cân nhắc vật liệu cho những khu vực tiếp xúc gần, thì cảm giác ở sẽ rất lạnh." Câu này tách hai khung: khung 10 trên ảnh 12 (nhãn theo chú thích gốc của bài "kệ gỗ mặt mịn, trong tầm tay"), khung 11 trên hành lang bê tông trần.
+  - Lời mời cuối: "Bài phân tích về vân to, vân nhỏ của bề mặt và nguyên tắc phối vật liệu cứng mềm theo luật xa gần từ sách của Kilmer, mọi người xem phần bình luận nhá." Chữ khung cuối đổi theo (bốn dòng).
+- ElevenLabs rút ngắn thẻ ngắt (không có quãng lặng ≥ 0,7 giây ở mọi chỗ chuyển), nên chia cảnh theo câu: silencedetect −35 dB, 0,25 giây, ghép với câu theo lời nhận dạng. Mỗi cảnh bắt đầu khoảng 0,35–0,4 giây trước câu của nó; cảnh cuối kéo đến hết giọng + 0,6 giây.
+
+| Cảnh | Đoạn tiếng nói (giây) | Lời nhận dạng (đã sửa chính tả tên riêng) |
+|---|---|---|
+| 1 | 0,00–4,39 | Cùng một bức tường, sao đứng xa thấy êm, mà đứng sát lại thấy nặng nề |
+| 2 | 5,23–12,12 | Sách nội thất của hai tác giả Kilmer lưu ý, đá khối to, tức là vân rất to, xây trong phòng nhỏ thì người ở thấy khó chịu |
+| 3 | 13,42–17,88 | Nghĩa là vân to hay nhỏ phải hợp với độ rộng của phòng, và với khoảng cách mình đứng nhìn |
+| 4 | 18,33–22,10 | Đứng xa, vết cốp pha trên tường chỉ còn là những sọc mảnh, nhìn êm |
+| 5 | 22,64–26,94 | Còn đứng sát, từng gờ bê tông, từng lỗ bọt khí hiện rõ, nên bức tường thấy nặng |
+| 6 | 28,11–34,75 | Ở MS House, một nhà bê tông bên Ấn Độ, tụi mình để ý vân to nhất nằm ở hành lang lối vào, chỗ đi qua, nhìn từ xa |
+| 7 | 35,32–39,36 | Còn phòng khách là chỗ ngồi lâu, nên bê tông ở đó đổ bằng ván ép, mặt mịn hơn |
+| 8 | 39,94–42,10 | Lên tới phòng ngủ trên lầu, vân còn nhỏ hơn nữa |
+| 9 | 42,53–46,37 | Sàn chỉ còn những ô đá nhỏ lặp lại, mắt có chi tiết để nhìn mà không thấy nặng |
+| 10 | 46,93–51,94 | Cũng vì vậy, nội thất của những ngôi nhà bê tông trần nếu không khéo cân nhắc vật liệu cho những khu vực tiếp xúc gần |
+| 11 | 52,24–53,52 | thì cảm giác ở sẽ rất lạnh |
+| 12 | 53,97–59,05 | Tóm lại, chỗ đi qua, nhìn từ xa thì vân thô, chỗ ngồi lâu, ở gần thì vân mịn |
+| 13 | 59,60–66,85 | Bài phân tích về vân to, vân nhỏ… từ sách của Kilmer, mọi người xem phần bình luận nhá |
+
+Ghi chú nhận dạng: máy nghe "Kilmer" thành "Kim/Kimer", "MS House" thành "Mesus", "từng gờ bê tông" thành "từng gông", "vân còn nhỏ" thành "vẫn còn nhỏ"; đã đối chiếu theo kịch bản và độ dài đoạn nói, giữ chữ của kịch bản ở phụ đề.
+
+Âm thanh: lọc dưới 80 Hz, giảm ồn nhẹ (afftdn), tăng 6,2 dB rồi chặn đỉnh; đo bằng ebur128 trên file cuối: −15,0 LUFS, đỉnh −1,6 dBFS; AAC 48 kHz; không nhạc.
+Dựng: 12 run (runs.json) dựng song song bằng render_ep10.sh, cắt và nối hoà tan 0,45 giây bằng ghep_ep10.py. Video cuối: `reel_van-tho-xa-van-min-gan_final.mp4`, 1080×1920, H.264, AAC 48 kHz, 68,38 giây (giọng 66,85 + 1,5 giây). Ảnh bìa: `anh_bia_van-tho-xa-van-min-gan.png`.
+Sửa engine trong lần này: cảnh nối ngay trước khung cuối không còn dải phủ tối (gen_ep10.py: cảnh nối không chữ, engine bỏ header và phủ tối khi không có chữ).
+Kiểm tra bằng mắt: 40 khung (đầu, giữa lúc nét đang vẽ, cuối mỗi cảnh, quanh mọi điểm đổi ảnh, khung cuối) và khung cắt 4:5 bảng tin.

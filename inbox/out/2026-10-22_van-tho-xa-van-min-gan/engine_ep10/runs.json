@@ -6,9 +6,9 @@
   "scenes": [
    1
   ],
-  "t_in_main": 0.0,
+  "t_in_main": 0,
   "cut_from": 0.0,
-  "cut_len": 6.33,
+  "cut_len": 4.85,
   "first_frame": 1
  },
  {
@@ -19,9 +19,9 @@
    2,
    3
   ],
-  "t_in_main": 6.33,
-  "cut_from": 6.33,
-  "cut_len": 16.4,
+  "t_in_main": 4.85,
+  "cut_from": 4.85,
+  "cut_len": 13.1,
   "first_frame": 2
  },
  {
@@ -31,9 +31,9 @@
   "scenes": [
    4
   ],
-  "t_in_main": 22.73,
-  "cut_from": 6.950000000000001,
-  "cut_len": 5.390000000000001,
+  "t_in_main": 17.95,
+  "cut_from": 4.899999999999999,
+  "cut_len": 4.32,
   "first_frame": 2
  },
  {
@@ -43,9 +43,9 @@
   "scenes": [
    5
   ],
-  "t_in_main": 28.12,
-  "cut_from": 5.390000000000001,
-  "cut_len": 6.330000000000002,
+  "t_in_main": 22.27,
+  "cut_from": 4.32,
+  "cut_len": 5.449999999999999,
   "first_frame": 2
  },
  {
@@ -55,9 +55,9 @@
   "scenes": [
    6
   ],
-  "t_in_main": 34.45,
-  "cut_from": 6.330000000000002,
-  "cut_len": 9.759999999999998,
+  "t_in_main": 27.72,
+  "cut_from": 5.449999999999999,
+  "cut_len": 7.230000000000004,
   "first_frame": 2
  },
  {
@@ -67,9 +67,9 @@
   "scenes": [
    7
   ],
-  "t_in_main": 44.21,
-  "cut_from": 9.759999999999998,
-  "cut_len": 6.640000000000001,
+  "t_in_main": 34.95,
+  "cut_from": 7.230000000000004,
+  "cut_len": 4.619999999999997,
   "first_frame": 2
  },
  {
@@ -79,9 +79,9 @@
   "scenes": [
    8
   ],
-  "t_in_main": 50.85,
-  "cut_from": 6.640000000000001,
-  "cut_len": 4.140000000000001,
+  "t_in_main": 39.57,
+  "cut_from": 4.619999999999997,
+  "cut_len": 2.5899999999999963,
   "first_frame": 2
  },
  {
@@ -91,33 +91,33 @@
   "scenes": [
    9
   ],
-  "t_in_main": 54.99,
-  "cut_from": 4.140000000000001,
-  "cut_len": 6.640000000000001,
+  "t_in_main": 42.16,
+  "cut_from": 2.5899999999999963,
+  "cut_len": 4.390000000000001,
   "first_frame": 2
  },
  {
-  "tag": "r09_a35c",
-  "img": "a35c",
-  "src": "source_a35c.png",
-  "scenes": [
-   10
-  ],
-  "t_in_main": 61.63,
-  "cut_from": 6.640000000000001,
-  "cut_len": 6.32,
-  "first_frame": 2
- },
- {
-  "tag": "r10_ph",
+  "tag": "r09_ph",
   "img": "ph",
   "src": "source_ph.png",
   "scenes": [
+   10
+  ],
+  "t_in_main": 46.55,
+  "cut_from": 4.390000000000001,
+  "cut_len": 5.390000000000001,
+  "first_frame": 2
+ },
+ {
+  "tag": "r10_hl",
+  "img": "hl",
+  "src": "source_hl.png",
+  "scenes": [
    11
   ],
-  "t_in_main": 67.95,
-  "cut_from": 6.32,
-  "cut_len": 3.509999999999991,
+  "t_in_main": 51.94,
+  "cut_from": 5.390000000000001,
+  "cut_len": 1.6600000000000037,
   "first_frame": 2
  },
  {
@@ -127,9 +127,9 @@
   "scenes": [
    12
   ],
-  "t_in_main": 71.46,
-  "cut_from": 3.509999999999991,
-  "cut_len": 6.640000000000001,
+  "t_in_main": 53.6,
+  "cut_from": 1.6600000000000037,
+  "cut_len": 5.619999999999997,
   "first_frame": 2
  },
  {
@@ -139,9 +139,9 @@
   "scenes": [
    13
   ],
-  "t_in_main": 78.1,
-  "cut_from": 6.640000000000001,
-  "cut_len": 8.570000000000007,
+  "t_in_main": 59.22,
+  "cut_from": 5.619999999999997,
+  "cut_len": 9.230000000000004,
   "first_frame": 2
  }
 ]

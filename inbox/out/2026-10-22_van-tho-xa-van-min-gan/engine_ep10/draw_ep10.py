@@ -153,11 +153,11 @@ L["a35c"] = dict(
     out=poly([(25, 150), (1575, 140), (1580, 300), (30, 305)], w, DASH(w), 2.5, 11),
     lab=label("vân rõ/ở lối vào", (640, 380), 88),
     arr=arrow([(800, 380), (790, 335)], w, None, 0, 12, head=40))
-# ph: phòng ngủ trên lầu (cảnh 11): nhãn giữa hai kệ, mũi tên chỉ mảng tường vôi
+# ph: phòng ngủ trên lầu (cảnh "chỗ tiếp xúc gần"): nhãn theo chú thích gốc của bài trên ảnh 12, mũi tên chỉ kệ gỗ dưới
 w = 5
 L["ph"] = dict(
-    lab=label("tường trát vôi mịn", (165, 1145), 72),
-    arr=arrow([(260, 1130), (230, 1000), (280, 840)], w, DASH(w), 1.5, 13))
+    lab=label("kệ gỗ mặt mịn,/trong tầm tay", (140, 975), 72),
+    arr=arrow([(300, 1160), (330, 1290), (365, 1395)], w, DASH(w), 1.5, 13))
 
 os.makedirs(OUT + "doodle_preview", exist_ok=True)
 for img, layers in L.items():

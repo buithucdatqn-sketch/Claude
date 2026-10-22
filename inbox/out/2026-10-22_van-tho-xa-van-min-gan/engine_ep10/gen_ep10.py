@@ -29,7 +29,6 @@ IMGS = dict(
     hl=("source_hl.png", "doodle_ep10_hl.npz", PHOTO),         # ảnh 11 của bài: hành lang lối vào (nền sạch, nét mới)
     a29=("source_a29.png", "doodle_ep10_a29.npz", PHOTO),      # ArchDaily 29: phòng khách, bê tông ván ép
     a6c=("source_a6c.png", "doodle_ep10_a6c.npz", PHOTO),      # ArchDaily 6 (cắt nửa dưới): phòng ngủ con gái, sàn ô đá nhỏ
-    a35c=("source_a35c.png", "doodle_ep10_a35c.npz", PHOTO),   # ArchDaily 35 (cắt nửa dưới): cổng lối vào
     ph=("source_ph.png", "doodle_ep10_ph.npz", PHOTO),         # ảnh 12 của bài: phòng ngủ, tường vôi (nền sạch, nét mới)
     dgt=("source_dgt.png", "", "Diagram: Giả Thuyết Kiến Trúc, theo Kilmer & Kilmer (2014)"),   # ảnh 10, hàng trên
     dgc=("source_dgc.png", "", "Diagram: Giả Thuyết Kiến Trúc, theo Kilmer & Kilmer (2014)"),   # ảnh 10, dòng kết
@@ -37,7 +36,7 @@ IMGS = dict(
 )
 SC = [
     dict(move="push", part="A", blk=1, img="a39", head="Cùng một bức tường: xa thì êm, sát thì nặng?", cam=WIDE, dark=False, dd=[],
-         vo="Cùng một bức tường bê tông, sao đứng xa thấy êm, mà đứng sát lại thấy nặng nề?"),
+         vo="Cùng một bức tường, sao đứng xa thấy êm, mà đứng sát lại thấy nặng nề?"),
     dict(move="pan_l", part="B", blk=2, img="dgt", head="Kilmer & Kilmer (2014): đá khối to, phòng nhỏ, khó chịu", cam=((1020, 465), 1.1, (540, 925)), free=True, dark=False, dd=[],
          vo="Sách nội thất của hai tác giả Kilmer lưu ý, đá khối to, tức là vân rất to, xây trong phòng nhỏ thì người ở thấy khó chịu.",
          tts="Sách nội thất của hai tác giả Kin-mơ lưu ý, đá khối to, tức là vân rất to, xây trong phòng nhỏ thì người ở thấy khó chịu."),
@@ -56,15 +55,15 @@ SC = [
          vo="Lên tới phòng ngủ trên lầu, vân còn nhỏ hơn nữa."),
     dict(move="pan_u", part="D", blk=3, img="a6c", head="Phòng ngủ: sàn ô đá nhỏ lặp lại", cam=((800, 625), 0.78, (540, 920)), free=True, dark=False, dd=["lab", "arr", "ring"],
          vo="Sàn chỉ còn những ô đá nhỏ lặp lại, mắt có chi tiết để nhìn mà không thấy nặng."),
-    dict(move="pan_l", part="F", blk=4, img="a35c", head="Gợi ý cho nhà phố: vân rõ ở lối vào", cam=((800, 475), 1.0, (540, 925)), free=True, dark=False, dd=["out", "lab", "arr"],
-         vo="Tụi mình nghĩ nhà phố cũng làm được, bê tông vân rõ để ở lối vào, giếng trời,"),
-    dict(move="push", part="F", blk=4, img="ph", head="Phòng ngủ trên lầu: trát vôi mịn", cam=((420, 900), 2.3, (540, 900)), dark=True, dd=["arr", "lab"],
-         vo="còn phòng ngủ trên lầu thì trát vôi mịn."),
+    dict(move="pan_l", part="E", blk=4, img="ph", head="Chỗ tiếp xúc gần: chọn vật liệu cho khéo", cam=((450, 1150), 2.3, (540, 900)), dark=True, dd=["lab", "arr"],
+         vo="Cũng vì vậy, nội thất của những ngôi nhà bê tông trần nếu không khéo cân nhắc vật liệu cho những khu vực tiếp xúc gần,"),
+    dict(move="push", part="E", blk=4, img="hl", head="Bê tông trần ở sát người: dễ lạnh", cam=((800, 1150), 2.3, (540, 900)), dark=True, dd=[],
+         vo="thì cảm giác ở sẽ rất lạnh."),
     dict(move="pan_r", part="H", blk=5, img="dgc", head="Đi qua, nhìn xa: vân thô · Ngồi lâu, ở gần: vân mịn", cam=((1020, 184), 1.15, (540, 925)), free=True, dark=False, dd=[],
          vo="Tóm lại, chỗ đi qua, nhìn từ xa thì vân thô, chỗ ngồi lâu, ở gần thì vân mịn."),
     dict(move="push", part="I", blk=5, img="a26", head="end", cam="END", dark=False, vo="", dd=[],
-         say="Bài phân tích về vân to, vân nhỏ của bề mặt từ sách của Kilmer, mọi người xem phần bình luận nha.",
-         tts="Bài phân tích về vân to, vân nhỏ của bề mặt từ sách của Kin-mơ, mọi người xem phần bình luận nha."),
+         say="Bài phân tích về vân to, vân nhỏ của bề mặt và nguyên tắc phối vật liệu cứng mềm theo luật xa gần từ sách của Kilmer, mọi người xem phần bình luận nhá.",
+         tts="Bài phân tích về vân to, vân nhỏ của bề mặt và nguyên tắc phối vật liệu cứng mềm theo luật xa gần từ sách của Kin-mơ, mọi người xem phần bình luận nhá."),
 ]
 
 DOODLE = r'''
@@ -105,7 +104,9 @@ def dur(s):
     return max(3.5, TRANS + words(s.get("say", s["vo"])) / WPS)
 
 
-T_AUDIO = []   # giai đoạn B: điền mốc cảnh theo ghi âm
+# Giai đoạn B: mốc cảnh theo ghi âm van-tho-xa-van-min-gan.mp3 (66,85 giây; nhận dạng lời bằng sherpa-onnx zipformer-vi, xem script.md):
+# mỗi cảnh bắt đầu khoảng 0,35–0,4 giây trước câu của nó; cảnh cuối kéo đến hết giọng + 0,6 giây.
+T_AUDIO = [0, 4.85, 13.05, 17.95, 22.27, 27.72, 34.95, 39.57, 42.16, 46.55, 51.94, 53.6, 59.22, 67.45]
 
 
 def times():
@@ -188,6 +189,8 @@ def build_run(T, ks):
         prev = SC[ks[0] - 1]
         d0 = T[ks[0]] - T[ks[0] - 1]
         first = SC[ks[0]]
+        if first["cam"] == "END":   # thẻ ảnh khung cuối đè vùng tiêu đề: cảnh nối không chữ (engine bỏ phủ tối khi không có chữ)
+            prev = dict(prev, head="", vo="")
         lines.append(scene_line(prev, 0, d0, cam_str(first, first["cam"]), [], move="hold"))
         t = d0
     for k in ks:
@@ -209,9 +212,12 @@ def build(src, dst, video, data, img, tag):
            ("CARD_W2, BORDER2 = 1920, 0", f"CARD_W2, BORDER2 = {cw}, 0  # theo tỷ lệ ảnh của run"),
            ("C2 = (B2W / 2, 1810.0)", f"C2 = (B2W / 2, {cy})"),
            ("borderMode=cv2.BORDER_REFLECT)", "borderMode=cv2.BORDER_CONSTANT, borderValue=(255, 255, 255, 0))"),
+           # cảnh nối không chữ (trước khung cuối): không vẽ header, không phủ tối dải chữ
+           ("    t.put((60, SAFE_Y0 + 4), HEAD, 34, 220)\n", "    if sc[\"head\"]:\n        t.put((60, SAFE_Y0 + 4), HEAD, 34, 220)\n"),
+           ("    return top < TOP_END, bot > cr_y - 20, warn", "    return top < TOP_END and bool(sc[\"head\"]), bot > cr_y - 20 and bool(sc[\"vo\"]), warn"),
            # khung cuối: chữ khớp lời mời (mẫu tập 7)
            ('(1196, "Bài viết phân tích đầy đủ", 58, 240),\n    (1260, "xem ở dòng đầu tiên", 58, 240),\n    (1348, "trong phần bình luận", 66, 255),',
-            '(1196, "Bài phân tích về vân to, vân nhỏ", 54, 240),\n    (1258, "của bề mặt, từ sách của Kilmer", 50, 240),\n    (1348, "xem ở phần bình luận", 66, 255),')]
+            '(1180, "Bài phân tích về vân to, vân nhỏ của bề mặt", 44, 240),\n    (1232, "và nguyên tắc phối vật liệu cứng mềm", 44, 240),\n    (1284, "theo luật xa gần, từ sách của Kilmer", 44, 240),\n    (1364, "xem ở phần bình luận", 62, 255),')]
     for a_, b_ in rep:
         assert a_ in s, a_
         s = s.replace(a_, b_)
@@ -241,7 +247,7 @@ for n, ks in enumerate(runs(), 1):
 json.dump(RUNS, open(OUT + "engine_ep10/runs.json", "w"), ensure_ascii=False, indent=1)
 
 # ảnh bìa 1080x1920: cảnh rộng trên ảnh 12 (kệ gỗ, tường vôi, sàn ô đá nhỏ), tiêu đề ngắn + câu móc
-COVER = [dict(img="a26", head="Vân thô ở xa, vân mịn ở gần", vo="Tường bê tông nhám: xa thì đẹp, sát sao lại nặng?", dark=False),
+COVER = [dict(img="a26", head="Vân thô ở xa, vân mịn ở gần", vo="Cùng một bức tường, sao đứng xa thấy êm, mà đứng sát lại thấy nặng nề?", dark=False),
          dict(img="a26", head="end", vo="", dark=False)]
 build("engine_storyboard_v7.py", "cover_ep10.py", False,
       wrap_data([scene_line(COVER[0], 0, 3, "WIDE", []), scene_line(COVER[1], 3, 4, "END_SAFE", [])],

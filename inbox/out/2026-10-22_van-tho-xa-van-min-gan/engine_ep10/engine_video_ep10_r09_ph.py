@@ -29,9 +29,10 @@ HEAD = "AH DECODE · VÂN THÔ Ở XA, VÂN MỊN Ở GẦN"
 END_LINES = [
     (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1088, "và cách chọn đồ decor", 40, 215),
-    (1196, "Bài phân tích về chất cảm vật liệu,", 54, 240),
-    (1258, "độ thô của vân từ sách của Kilmer", 50, 240),
-    (1348, "xem ở phần bình luận", 66, 255),
+    (1180, "Bài phân tích về vân to, vân nhỏ của bề mặt", 44, 240),
+    (1232, "và nguyên tắc phối vật liệu cứng mềm", 44, 240),
+    (1284, "theo luật xa gần, từ sách của Kilmer", 44, 240),
+    (1364, "xem ở phần bình luận", 62, 255),
 ]
 INK = (46, 38, 32)
 PAPER = (229, 215, 191)  # beige print margin
@@ -509,11 +510,12 @@ def text_layout(sc, cam, t):
         warn.append(f"mép trên ảnh (y {top:.0f}) cắt ngang khối tiêu đề: chỉnh cam để mép trên <= {SAFE_Y0 - 30} hoặc >= {TOP_END}")
     if cr_y - 20 < bot < SAFE_Y1 + 30:
         warn.append(f"mép dưới ảnh (y {bot:.0f}) cắt ngang khối phụ đề: chỉnh cam để mép dưới <= {cr_y - 20:.0f} hoặc >= {SAFE_Y1 + 30}")
-    t.put((60, SAFE_Y0 + 4), HEAD, 34, 220)
+    if sc["head"]:
+        t.put((60, SAFE_Y0 + 4), HEAD, 34, 220)
     t.block(60, SAFE_Y0 + 52, sc["head"], 80, 88, TEXT_W)
     put_credit(t, (60, cr_y), 30, 230)
     t.block(60, vo_y, sc["vo"], 56, 72, TEXT_W)
-    return top < TOP_END, bot > cr_y - 20, warn
+    return top < TOP_END and bool(sc["head"]), bot > cr_y - 20 and bool(sc["vo"]), warn
 
 
 def qa_text(i, *masks):
@@ -551,10 +553,12 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–8.82s", head="Vân thô chỗ nhìn xa, vân mịn chỗ ở gần", vo="Tóm lại, vân thô để chỗ nhìn xa, vân mịn để chỗ ở gần, thì mắt vẫn có chi tiết mà căn phòng không nặng nề.",
+    dict(t="0–4.39s", head="Phòng ngủ: sàn ô đá nhỏ lặp lại", vo="Sàn chỉ còn những ô đá nhỏ lặp lại, mắt có chi tiết để nhìn mà không thấy nặng.",
+         cam=((450, 1150), 2.3, (374, 900)), dark=False, dd=[], move="hold"),
+    dict(t="4.39–9.78s", head="Chỗ tiếp xúc gần: chọn vật liệu cho khéo", vo="Cũng vì vậy, nội thất của những ngôi nhà bê tông trần nếu không khéo cân nhắc vật liệu cho những khu vực tiếp xúc gần,",
+         cam=((450, 1150), 2.3, (374, 900)), dark=True, dd=['lab', 'arr'], move="pan_l"),
+    dict(t="9.78–10.28s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
-    dict(t="8.82–16.71s", head="end", vo="",
-         cam=END_SAFE, dark=False, dd=[], move="push"),
 ]
 END = len(SCENES) - 1
 BOARDS = {}
