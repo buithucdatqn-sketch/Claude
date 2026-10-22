@@ -12,5 +12,7 @@ Dữ liệu chi tiết từng tập nằm ở `inbox/series.json`. File này ghi
 | 8 | 2026-10-19 | bai-01 (diagram 01 + ảnh ArchDaily) | Màu đậm trên mảng lớn: diện tích và ánh sáng | "Sơn nguyên một khối tủ to màu xanh, ở lâu có thấy ngộp không?" |
 | 9 | 2026-10-21 | bai-03 (ảnh 11, 10, diagram 01, 09, mặt bằng 02) | Bề mặt đón ánh sáng đầu tiên quyết định phòng sáng tới đâu (lần chạy này tự đặt "Tập 7", đánh số lại) | "Cùng một ô cửa, sao phòng sơn trắng sáng hẳn, còn phòng ốp gỗ lại tối?" |
 
+| 10 | 2026-10-22 | bai-02 (ảnh 10, 03, 12; dùng lại ảnh 11) | Độ thô của vân hợp khoảng cách nhìn: xa sọc mảnh, sát thấy gờ và lỗ bọt khí (bài học 3 của bài 02) | "Cùng bức tường ván khuôn, đứng xa thì êm mắt, sao đứng sát lại nặng?" |
+
 Ý bị cấm (chủ Trang từ chối): "chất cảm chỉ hiện khi ánh sáng xiên" của bài 02 (ảnh 04, 05). Các bản làm lại ý này ngày 19/10 và 21/10 đều huỷ.
-Mã bài tiếp theo: tập 10. Tập 9 dùng bài 03, nên tập 10 lấy bài khác (mục 0.5b). Bài 02 còn ý "độ thô của bề mặt hợp với kích thước phòng và khoảng cách nhìn" (diagram 10, ảnh 12 chưa dùng). Bài 03 còn ý "ánh sáng từ trên cao" (bản nháp tạm dừng `inbox/out/2026-10-21_anh-sang-tu-tren-cao/`) và các ý khác chưa dùng.
+Mã bài tiếp theo: tập 11. Tập 10 dùng bài 02 (ý độ thô theo khoảng cách nhìn), nên tập 11 lấy bài khác bài 02 (mục 0.5b). Bài 02 coi như hết ý và hết ảnh mới. Bài 03 còn ý "ánh sáng từ trên cao" (bản nháp tạm dừng `inbox/out/2026-10-21_anh-sang-tu-tren-cao/`) và các ý khác chưa dùng.

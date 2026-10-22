@@ -365,5 +365,30 @@
   ],
   "ghi_chu": "Chủ Trang chuyển hướng từ 'ánh sáng từ trên cao' sang 'bề mặt phản xạ'. Hai ảnh chụp (11, 10) + sơ đồ 01, 09 + mặt bằng 02. Giai đoạn A, chờ giọng ElevenLabs. | Giai đoạn 2 (2026-10-21): giọng ElevenLabs 54,75 s (inbox/audio/be-mat-hat-sang.mp3). Thẻ ngắt bị rút còn 0,4–0,7 s nên mốc cảnh lấy bằng ghép cụm câu theo khoảng nghỉ (silencedetect -35 dB/0,12 s) và số tiếng; cảnh 1–10 khớp dấu câu. Phần khung cuối chỉ có khoảng 2,5 s tiếng nói (~10 tiếng) thay vì 36 tiếng, cần chủ Trang nghe lại. Âm thanh: lọc dưới 80 Hz, afftdn nhẹ, -14,8 LUFS. Video 56,5 s. | Lần chạy 2026-10-21 (nhánh ftjn7r) đặt tên 'Tập 7' vì main chưa có tập 7, 8; đánh số lại thành tập 9 khi gộp vào main 2026-10-21. Thư mục inbox/out/2026-10-21_anh-sang-tu-tren-cao là bản nháp tạm dừng của cùng lần chạy (ý 'ánh sáng từ trên cao', bài 03, chưa dùng).",
   "video": "inbox/out/2026-10-21_be-mat-hat-sang/reel_be-mat-hat-sang_final.mp4"
+ },
+ {
+  "tap": 10,
+  "slug": "van-tho-xa-van-min-gan",
+  "ngay": "2026-10-22",
+  "nguyen_ly": "Tỷ xích của chất cảm: độ thô của vân hợp với kích thước phòng và khoảng cách nhìn (Kilmer & Kilmer, Designing Interiors 2014, ch.4)",
+  "nhom": "Chất cảm vật liệu: tỷ xích của vân",
+  "bai_kho": {
+   "duong_dan": "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/bai-02.md",
+   "nhanh": "AH-Interior-notes",
+   "commit": "6d869f9a07f7186a0d5a3543bdb027671437b4b4"
+  },
+  "anh_kho": [
+   "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/11-doodle-van-tho-hanh-lang.jpg (dùng lại, đã dùng ở tập 7)",
+   "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/10-diagram-ty-xich-khoang-cach.png",
+   "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/03-mat-bang-tang-mot-ms-house.png",
+   "AH-Decode-Decor/bai-02-3-bai-hoc-chat-cam-vat-lieu-noi-that/anh/12-doodle-van-nho-phong-ngu.jpg"
+  ],
+  "y_bai": {
+   "muc": "Độ thô của bề mặt phải hợp với kích thước phòng và khoảng cách nhìn",
+   "tom_tat": "Đứng xa vân ván khuôn chỉ còn sọc mảnh, đứng sát thấy gờ, lỗ bọt khí nên nặng; MS House để vân to ở chỗ đi qua, vân nhỏ mịn ở chỗ ở gần; vân rõ ở lối vào, phòng ngủ trát vôi mịn."
+  },
+  "trang_thai": "cho_ghi_am",
+  "thu_muc": "inbox/out/2026-10-22_van-tho-xa-van-min-gan",
+  "ghi_chu": "Chỉ 2 không gian (hành lang, phòng ngủ) vì kho hết ảnh mới của bài 02; ảnh 11 dùng lại; không tải ảnh ngoài kho theo prompt."
  }
 ]

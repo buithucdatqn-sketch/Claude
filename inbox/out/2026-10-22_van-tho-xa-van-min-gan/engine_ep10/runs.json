@@ -1,0 +1,111 @@
+[
+ {
+  "tag": "r01_hl",
+  "img": "hl",
+  "src": "source_hl.png",
+  "scenes": [
+   1
+  ],
+  "t_in_main": 0.0,
+  "cut_from": 0.0,
+  "cut_len": 6.64,
+  "first_frame": 1
+ },
+ {
+  "tag": "r02_dgt",
+  "img": "dgt",
+  "src": "source_dgt.png",
+  "scenes": [
+   2
+  ],
+  "t_in_main": 6.64,
+  "cut_from": 6.64,
+  "cut_len": 6.95,
+  "first_frame": 2
+ },
+ {
+  "tag": "r03_dgb",
+  "img": "dgb",
+  "src": "source_dgb.png",
+  "scenes": [
+   3
+  ],
+  "t_in_main": 13.59,
+  "cut_from": 6.95,
+  "cut_len": 5.699999999999998,
+  "first_frame": 2
+ },
+ {
+  "tag": "r04_hl",
+  "img": "hl",
+  "src": "source_hl.png",
+  "scenes": [
+   4,
+   5
+  ],
+  "t_in_main": 19.29,
+  "cut_from": 5.699999999999999,
+  "cut_len": 15.149999999999999,
+  "first_frame": 2
+ },
+ {
+  "tag": "r05_mb",
+  "img": "mb",
+  "src": "source_mb.png",
+  "scenes": [
+   6
+  ],
+  "t_in_main": 34.44,
+  "cut_from": 9.45,
+  "cut_len": 7.890000000000001,
+  "first_frame": 2
+ },
+ {
+  "tag": "r06_ph",
+  "img": "ph",
+  "src": "source_ph.png",
+  "scenes": [
+   7
+  ],
+  "t_in_main": 42.33,
+  "cut_from": 7.890000000000001,
+  "cut_len": 4.140000000000001,
+  "first_frame": 2
+ },
+ {
+  "tag": "r07_hl",
+  "img": "hl",
+  "src": "source_hl.png",
+  "scenes": [
+   8
+  ],
+  "t_in_main": 46.47,
+  "cut_from": 4.140000000000001,
+  "cut_len": 8.509999999999998,
+  "first_frame": 2
+ },
+ {
+  "tag": "r08_dgb",
+  "img": "dgb",
+  "src": "source_dgb.png",
+  "scenes": [
+   9
+  ],
+  "t_in_main": 54.98,
+  "cut_from": 8.509999999999998,
+  "cut_len": 8.82,
+  "first_frame": 2
+ },
+ {
+  "tag": "r09_ph",
+  "img": "ph",
+  "src": "source_ph.png",
+  "scenes": [
+   10
+  ],
+  "t_in_main": 63.8,
+  "cut_from": 8.82,
+  "cut_len": 8.89,
+  "first_frame": 2
+ }
+]
