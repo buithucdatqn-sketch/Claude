@@ -552,11 +552,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–8.51s", head="Kilmer & Kilmer (2014): chặn ngoài, làm dịu trong bằng rèm", vo="Sách của hai tác giả Kilmer cũng khuyên, nắng gắt thì chặn từ ngoài bằng cây, mái hiên, hoặc làm dịu từ trong bằng rèm.",
+    dict(t="0–8.82s", head="Kilmer & Kilmer (2014): chặn ngoài, làm dịu trong bằng rèm", vo="Sách của hai tác giả Kilmer cũng khuyên, nắng tây gắt thì chặn từ ngoài bằng cây, mái hiên, hoặc làm dịu từ trong bằng rèm.",
          cam=((800, 1200), 2.1, (540, 952)), dark=True, dd=[], move="hold"),
-    dict(t="8.51–17.34s", head="Kính hướng tây: rèm mỏng hay vách lam", vo="Nên tụi mình nghĩ, nhà có kính hướng tây không nhất thiết bỏ kính. Bên trong, thử treo rèm mỏng màu sáng hay vách lam gỗ.",
+    dict(t="8.82–17.65s", head="Kính hướng tây: rèm mỏng hay vách lam", vo="Nên tụi mình nghĩ, nhà có kính hướng tây không nhất thiết bỏ kính. Bên trong, thử treo rèm mỏng màu sáng hay vách lam gỗ.",
          cam=((800, 1200), 2.1, (540, 952)), dark=True, dd=['r_out', 'rm_arr', 'lab_rm'], move="pan_d"),
-    dict(t="17.34–17.84s", head="end", vo="",
+    dict(t="17.65–18.15s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

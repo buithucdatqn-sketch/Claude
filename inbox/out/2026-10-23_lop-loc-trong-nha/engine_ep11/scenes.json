@@ -11,8 +11,8 @@
   "blk": 2,
   "t": "8.2–17.02s",
   "head": "Kính ngang tầm mắt: nắng gắt, trời chói",
-  "loi": "Theo cách tụi mình hiểu, kính ngang tầm mắt vừa đưa nắng vào thành vệt gắt trên sàn, vừa đặt mảng trời chói ngay trước mắt.",
-  "tts": "Theo cách tụi mình hiểu, kính ngang tầm mắt vừa đưa nắng vào thành vệt gắt trên sàn, vừa đặt mảng trời chói ngay trước mắt.",
+  "loi": "Theo cách tụi mình hiểu, kính lớn ngang tầm mắt vừa đưa nắng vào thành vệt gắt trên sàn, vừa đặt mảng trời chói trước mắt.",
+  "tts": "Theo cách tụi mình hiểu, kính lớn ngang tầm mắt vừa đưa nắng vào thành vệt gắt trên sàn, vừa đặt mảng trời chói trước mắt.",
   "part": "C"
  },
  {
@@ -41,15 +41,15 @@
  },
  {
   "blk": 3,
-  "t": "40.37–45.76s",
+  "t": "40.37–45.45s",
   "head": "Bàn ăn: không có vệt nắng nào",
-  "loi": "Thế là trong ảnh chụp bàn ăn, mặt bàn không có một vệt nắng nào.",
-  "tts": "Thế là trong ảnh chụp bàn ăn, mặt bàn không có một vệt nắng nào.",
+  "loi": "Nhìn lại ảnh chụp bàn ăn, mặt bàn không có một vệt nắng nào.",
+  "tts": "Nhìn lại ảnh chụp bàn ăn, mặt bàn không có một vệt nắng nào.",
   "part": "D"
  },
  {
   "blk": 4,
-  "t": "45.76–53.96s",
+  "t": "45.45–53.65s",
   "head": "Lam gỗ: lớp lọc ngay trong nhà",
   "loi": "Mà lam gỗ là lớp lọc nằm ngay trong nhà. Chủ nhà thêm được vào một ô cửa sẵn có, không cần đục tường.",
   "tts": "Mà lam gỗ là lớp lọc nằm ngay trong nhà. Chủ nhà thêm được vào một ô cửa sẵn có, không cần đục tường.",
@@ -57,10 +57,10 @@
  },
  {
   "blk": 4,
-  "t": "53.96–62.47s",
+  "t": "53.65–62.47s",
   "head": "Kilmer & Kilmer (2014): chặn ngoài, làm dịu trong bằng rèm",
-  "loi": "Sách của hai tác giả Kilmer cũng khuyên, nắng gắt thì chặn từ ngoài bằng cây, mái hiên, hoặc làm dịu từ trong bằng rèm.",
-  "tts": "Sách của hai tác giả Kin-mơ cũng khuyên, nắng gắt thì chặn từ ngoài bằng cây, mái hiên, hoặc làm dịu từ trong bằng rèm.",
+  "loi": "Sách của hai tác giả Kilmer cũng khuyên, nắng tây gắt thì chặn từ ngoài bằng cây, mái hiên, hoặc làm dịu từ trong bằng rèm.",
+  "tts": "Sách của hai tác giả Kin-mơ cũng khuyên, nắng tây gắt thì chặn từ ngoài bằng cây, mái hiên, hoặc làm dịu từ trong bằng rèm.",
   "part": "B"
  },
  {
@@ -73,15 +73,15 @@
  },
  {
   "blk": 5,
-  "t": "71.3–79.81s",
-  "head": "Không thiếu kính, thiếu một lớp lọc",
-  "loi": "Vậy giữa kính chói và rèm kín, còn một lớp ở giữa: tấm lam hay tấm rèm mỏng, lọc ánh sáng trước khi tới mắt.",
-  "tts": "Vậy giữa kính chói và rèm kín, còn một lớp ở giữa: tấm lam hay tấm rèm mỏng, lọc ánh sáng trước khi tới mắt.",
+  "t": "71.3–80.44s",
+  "head": "Có lẽ không thiếu kính, mà thiếu lớp lọc",
+  "loi": "Vậy giữa kính chói và rèm kín, vẫn còn một lớp lọc: tấm lam hay tấm rèm mỏng, cho ánh sáng dịu đi trước khi tới mắt.",
+  "tts": "Vậy giữa kính chói và rèm kín, vẫn còn một lớp lọc: tấm lam hay tấm rèm mỏng, cho ánh sáng dịu đi trước khi tới mắt.",
   "part": "H"
  },
  {
   "blk": 5,
-  "t": "79.81–88.01s",
+  "t": "80.44–88.64s",
   "head": "end",
   "loi": "Muốn đọc kỹ hơn, mọi người xem bài phân tích đầy đủ về ánh sáng tự nhiên trong nhà ở phần bình luận nha.",
   "tts": "Muốn đọc kỹ hơn, mọi người xem bài phân tích đầy đủ về ánh sáng tự nhiên trong nhà ở phần bình luận nha.",

@@ -156,7 +156,7 @@ L["vuont"] = dict(
 w = 6
 L["vuon"] = dict(
     r_out=poly([(835, 830), (1330, 820), (1335, 1480), (840, 1490)], w, DASH(w), 2.0, 10),
-    lab_rm=label("thêm ở đây:/rèm mỏng,/hay vách lam", (300, 900), 62),
+    lab_rm=label("lớp lọc sau kính:/rèm mỏng,/hay vách lam", (300, 900), 62),
     rm_arr=arrow([(640, 1090), (730, 1105), (825, 1120)], w, DASH(w), 1.5, 11),
 )
 

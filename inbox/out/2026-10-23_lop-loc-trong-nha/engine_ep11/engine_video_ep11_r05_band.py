@@ -554,9 +554,9 @@ WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–6.95s", head="Ánh sáng xuyên qua lam rồi mới xuống", vo="Nên ánh sáng phải xuyên qua vách lam, rơi lên tường gỗ trước, rồi mới xuống bếp và bàn ăn.",
          cam=((1050, 534), 2.05, (540, 887)), dark=True, dd=[], move="hold"),
-    dict(t="6.95–12.34s", head="Bàn ăn: không có vệt nắng nào", vo="Thế là trong ảnh chụp bàn ăn, mặt bàn không có một vệt nắng nào.",
+    dict(t="6.95–12.03s", head="Bàn ăn: không có vệt nắng nào", vo="Nhìn lại ảnh chụp bàn ăn, mặt bàn không có một vệt nắng nào.",
          cam=((1050, 534), 2.05, (540, 887)), dark=True, dd=['t_ring', 't_arr', 'lab_t'], move="pan_r"),
-    dict(t="12.34–12.84s", head="end", vo="",
+    dict(t="12.03–12.53s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

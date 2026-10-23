@@ -420,5 +420,31 @@
   ],
   "thu_muc": "inbox/out/2026-10-23_cho-lam-viec-cho-nghi/",
   "ghi_chu": "Lần chạy 2026-10-23 làm tới lượt chấm 2 thì chủ Trang yêu cầu chọn ý khác, không chọn ý này (TASK_INSTRUCTION mục 0.6e). Bản nháp giữ lại để tham khảo, không dùng."
+ },
+ {
+  "tap": 11,
+  "slug": "lop-loc-trong-nha",
+  "ngay": "2026-10-23",
+  "nguyen_ly": "Lớp lọc ánh sáng ngay trong nhà: ánh sáng chạm lam, tường trước khi tới người thì dịu (Kilmer & Kilmer 2014, ch. 12; diễn giải của bài)",
+  "nhom": "Ánh sáng tự nhiên: rèm, lam, lớp lọc",
+  "bai_kho": {
+   "duong_dan": "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/bai-03.md",
+   "nhanh": "AH-Interior-notes",
+   "commit": "4f984d8cc2d9a4b56c899cc9a3509015a4d4716d"
+  },
+  "anh_kho": [
+   "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/anh/goc/08-goc-hien-vuon-bac.jpg",
+   "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/anh/05-diagram-cua-thap-cua-cao.png",
+   "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/anh/04-mat-cat-doc-union-street.png",
+   "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/anh/goc/06-goc-vach-lam-cau-thang.jpg",
+   "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/anh/goc/07-goc-cua-cao-ban-an.jpg"
+  ],
+  "y_bai": {
+   "muc": "Ánh sáng đi vào từ trên cao… (đoạn 'Lam gỗ ở đây là lớp lọc nằm ngay trong nhà') + mở bài + đoạn lời khuyên cuối bài",
+   "tom_tat": "Giữa kính chói và rèm cản sáng kín còn một lớp lọc: lam gỗ, rèm mỏng màu sáng; Union Street: ánh sáng xuyên vách lam gác lửng rồi mới xuống, mặt bàn ăn không vệt nắng"
+  },
+  "trang_thai": "cho_ghi_am",
+  "thu_muc": "inbox/out/2026-10-23_lop-loc-trong-nha/",
+  "ghi_chu": "Lần chạy 2026-10-23 (chạy lại bằng mô hình mới theo yêu cầu chủ Trang). Bản đầu làm ý 'chỗ làm việc sáng đều, chỗ nghỉ được chênh' bị chủ Trang từ chối (ý cấm, mục 0.6e); chủ Trang duyệt hướng 'lớp lọc ngay trong nhà'. 11 cảnh, 259 từ, hai lượt chấm độc lập (lượt 2 đạt). Ảnh gốc không doodle của bài (anh/goc/) + nét doodle mới. Ý 'ánh sáng từ trên cao' (vị trí ô cửa) vẫn không làm riêng."
  }
 ]

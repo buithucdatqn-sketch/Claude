@@ -554,9 +554,9 @@ WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–8.2s", head="Lam gỗ: lớp lọc ngay trong nhà", vo="Mà lam gỗ là lớp lọc nằm ngay trong nhà. Chủ nhà thêm được vào một ô cửa sẵn có, không cần đục tường.",
          cam=((800, 534), 2.05, (540, 887)), dark=True, dd=[], move="hold"),
-    dict(t="8.2–16.71s", head="Kilmer & Kilmer (2014): chặn ngoài, làm dịu trong bằng rèm", vo="Sách của hai tác giả Kilmer cũng khuyên, nắng gắt thì chặn từ ngoài bằng cây, mái hiên, hoặc làm dịu từ trong bằng rèm.",
+    dict(t="8.2–17.02s", head="Kilmer & Kilmer (2014): chặn ngoài, làm dịu trong bằng rèm", vo="Sách của hai tác giả Kilmer cũng khuyên, nắng tây gắt thì chặn từ ngoài bằng cây, mái hiên, hoặc làm dịu từ trong bằng rèm.",
          cam=((800, 534), 2.05, (540, 887)), dark=True, dd=['lab_h', 'h_arr', 'lab_c', 'c_arr'], move="pan_l"),
-    dict(t="16.71–17.21s", head="end", vo="",
+    dict(t="17.02–17.52s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

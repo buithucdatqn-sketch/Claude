@@ -554,9 +554,9 @@ WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–8.83s", head="Kính hướng tây: rèm mỏng hay vách lam", vo="Nên tụi mình nghĩ, nhà có kính hướng tây không nhất thiết bỏ kính. Bên trong, thử treo rèm mỏng màu sáng hay vách lam gỗ.",
          cam=((800, 1100), 2.1, (540, 884)), dark=True, dd=[], move="hold"),
-    dict(t="8.83–17.34s", head="Không thiếu kính, thiếu một lớp lọc", vo="Vậy giữa kính chói và rèm kín, còn một lớp ở giữa: tấm lam hay tấm rèm mỏng, lọc ánh sáng trước khi tới mắt.",
+    dict(t="8.83–17.97s", head="Có lẽ không thiếu kính, mà thiếu lớp lọc", vo="Vậy giữa kính chói và rèm kín, vẫn còn một lớp lọc: tấm lam hay tấm rèm mỏng, cho ánh sáng dịu đi trước khi tới mắt.",
          cam=((800, 1100), 2.1, (540, 884)), dark=True, dd=[], move="pull"),
-    dict(t="17.34–25.54s", head="end", vo="",
+    dict(t="17.97–26.17s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="push"),
 ]
 END = len(SCENES) - 1
