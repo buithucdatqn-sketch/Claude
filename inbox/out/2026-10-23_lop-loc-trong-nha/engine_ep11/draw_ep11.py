@@ -131,7 +131,7 @@ L["lam"] = dict(
     r_arr=arrow([(470, 1310), (430, 1350), (390, 1395)], w, DASH(w), 1.5, 2),
     # cảnh 9: lam gỗ là lớp lọc nằm ngay trong nhà
     l_out=poly([(1120, 790), (1495, 745), (1495, 1370), (1125, 1380)], w, DASH(w), 2.0, 3),
-    lab_l=label("lớp lọc/ngay trong nhà", (430, 900), 84),
+    lab_l=label("thêm vào/ô cửa sẵn có", (430, 900), 84),
     l_arr=arrow([(950, 1010), (1030, 1030), (1110, 1050)], w, DASH(w), 1.5, 4),
     # cảnh 11: lam gỗ ở xứ nồm ẩm
     lab_m=label("ở xứ nồm ẩm, chọn gỗ/và lớp hoàn thiện kỹ", (560, 960), 62),

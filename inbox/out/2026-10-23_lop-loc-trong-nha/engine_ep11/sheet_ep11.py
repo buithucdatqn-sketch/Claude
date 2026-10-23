@@ -19,7 +19,7 @@ for r in RUNS:
     shutil.rmtree(OUT + "frames_" + r["tag"])
     if os.path.exists(OUT + f"storyboard_{r['tag']}.png"):
         os.remove(OUT + f"storyboard_{r['tag']}.png")
-NAME = dict(vuon="ảnh 08 mặt kính ra vườn (doodle mới)", vuont="ảnh 08, dải trên: mái hiên, tán cây (doodle mới)", dg5="ảnh 05 sơ đồ cửa thấp, cửa cao", mc="ảnh 04 mặt cắt dọc", lam="ảnh 06 vách lam gác lửng (doodle mới)", band="ảnh 07, dải dưới: bàn ăn (doodle mới)", ban="ảnh 07 bàn ăn, ô kính cao")
+NAME = dict(dg5l="ảnh 05 sơ đồ, nửa trái", vuon="ảnh 08 mặt kính ra vườn (doodle mới)", vuont="ảnh 08, dải trên: mái hiên, tán cây (doodle mới)", dg5="ảnh 05 sơ đồ cửa thấp, cửa cao", mc="ảnh 04 mặt cắt dọc", lam="ảnh 06 vách lam gác lửng (doodle mới)", band="ảnh 07, dải dưới: bàn ăn (doodle mới)", ban="ảnh 07 bàn ăn, ô kính cao")
 img_of = {k: r["img"] for r in RUNS for k in r["scenes"]}
 PW, PH, GAP, MX, TOP, cols = 360, 640, 34, 50, 200, 4
 rows = (len(SC) + cols - 1) // cols
@@ -27,7 +27,7 @@ sheet = Image.new("RGB", (MX * 2 + cols * PW + (cols - 1) * GAP, TOP + rows * (P
 d = ImageDraw.Draw(sheet)
 d.text((MX, 38), "AH Decode · Lớp lọc ngay trong nhà", font=F(60), fill=(255, 255, 255))
 d.text((MX, 118), "Ảnh của bài 03: ảnh gốc 08, 06, 07 (anh/goc/), diagram 05, mặt cắt 04 · Union Street House", font=F(34), fill=(200, 194, 186))
-d.text((MX, 158), "Nét doodle trắng nét đứt vẽ mới trên ảnh, lộ dần theo lời (cảnh 6, 7, 8, 9, 10) · camera trôi nhẹ", font=F(34), fill=(200, 194, 186))
+d.text((MX, 158), "Nét doodle trắng nét đứt vẽ mới trên ảnh, lộ dần theo lời (cảnh 6, 7, 8, 9) · camera trôi nhẹ", font=F(34), fill=(200, 194, 186))
 for i, sc in enumerate(SC):
     r, c = divmod(i, cols)
     x, y = MX + c * (PW + GAP), TOP + r * (PH + 120)

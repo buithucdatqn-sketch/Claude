@@ -551,9 +551,9 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–8.83s", head="Giữ kính, đổi cách ánh sáng đi qua", vo="Vì vậy, với nhà phố hướng tây, tụi mình nghĩ không nhất thiết phải bỏ mặt kính, mà nên đổi cách ánh sáng đi qua nó.",
+    dict(t="0–7.58s", head="Vách lam là lớp lọc ngay trong nhà", vo="Vách lam là một lớp lọc nằm ngay trong nhà, thêm được vào ô cửa sẵn có mà không cần đục tường.",
          cam=((800, 534), 2.05, (540, 887)), dark=True, dd=[], move="hold"),
-    dict(t="8.83–16.72s", head="Ngoài nhà, trong nhà và trên trần", vo="Phía ngoài thêm lam che nắng hay hàng cây, phía trong đặt vách lam hay rèm vải mỏng, và sơn trần trắng mờ.",
+    dict(t="7.58–16.72s", head="Giữ kính, đổi cách ánh sáng đi qua", vo="Vì vậy, với nhà phố hướng tây, tụi mình nghĩ không nhất thiết phải bỏ mặt kính. Điều cần đổi là cách ánh sáng đi qua nó.",
          cam=((800, 534), 2.05, (540, 887)), dark=True, dd=['lab_h', 'h_arr', 'lab_c', 'c_arr'], move="pan_l"),
     dict(t="16.72–17.22s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),

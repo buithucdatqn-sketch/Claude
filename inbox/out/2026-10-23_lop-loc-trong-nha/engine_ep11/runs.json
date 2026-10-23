@@ -1,77 +1,76 @@
 [
  {
-  "tag": "r01_dg5",
-  "img": "dg5",
-  "src": "source_dg5.png",
+  "tag": "r01_dg5l",
+  "img": "dg5l",
+  "src": "source_dg5l.png",
   "scenes": [
    1,
    2,
-   3,
-   4
+   3
   ],
   "t_in_main": 0.0,
   "cut_from": 0.0,
-  "cut_len": 31.86,
+  "cut_len": 22.73,
   "first_frame": 1
  },
  {
-  "tag": "r02_mc",
+  "tag": "r02_dg5",
+  "img": "dg5",
+  "src": "source_dg5.png",
+  "scenes": [
+   4
+  ],
+  "t_in_main": 22.73,
+  "cut_from": 9.14,
+  "cut_len": 8.82,
+  "first_frame": 2
+ },
+ {
+  "tag": "r03_mc",
   "img": "mc",
   "src": "source_mc.png",
   "scenes": [
    5
   ],
-  "t_in_main": 31.86,
-  "cut_from": 9.759999999999998,
-  "cut_len": 8.509999999999998,
+  "t_in_main": 31.55,
+  "cut_from": 8.82,
+  "cut_len": 8.830000000000002,
   "first_frame": 2
  },
  {
-  "tag": "r03_lam",
+  "tag": "r04_lam",
   "img": "lam",
   "src": "source_lam.png",
   "scenes": [
    6
   ],
-  "t_in_main": 40.37,
-  "cut_from": 8.509999999999998,
-  "cut_len": 8.82,
+  "t_in_main": 40.38,
+  "cut_from": 8.830000000000002,
+  "cut_len": 9.449999999999996,
   "first_frame": 2
  },
  {
-  "tag": "r04_band",
+  "tag": "r05_band",
   "img": "band",
   "src": "source_band.png",
   "scenes": [
    7
   ],
-  "t_in_main": 49.19,
-  "cut_from": 8.82,
+  "t_in_main": 49.83,
+  "cut_from": 9.449999999999996,
   "cut_len": 4.760000000000005,
   "first_frame": 2
  },
  {
-  "tag": "r05_lam",
+  "tag": "r06_lam",
   "img": "lam",
   "src": "source_lam.png",
   "scenes": [
    8
   ],
-  "t_in_main": 53.95,
+  "t_in_main": 54.59,
   "cut_from": 4.760000000000005,
   "cut_len": 7.579999999999998,
-  "first_frame": 2
- },
- {
-  "tag": "r06_vuon",
-  "img": "vuon",
-  "src": "source_vuon.png",
-  "scenes": [
-   9
-  ],
-  "t_in_main": 61.53,
-  "cut_from": 7.579999999999998,
-  "cut_len": 8.829999999999998,
   "first_frame": 2
  },
  {
@@ -79,11 +78,11 @@
   "img": "vuont",
   "src": "source_vuont.png",
   "scenes": [
-   10
+   9
   ],
-  "t_in_main": 70.36,
-  "cut_from": 8.829999999999998,
-  "cut_len": 7.890000000000001,
+  "t_in_main": 62.17,
+  "cut_from": 7.579999999999998,
+  "cut_len": 9.14,
   "first_frame": 2
  },
  {
@@ -91,12 +90,12 @@
   "img": "ban",
   "src": "source_ban.png",
   "scenes": [
-   11,
-   12
+   10,
+   11
   ],
-  "t_in_main": 78.25,
-  "cut_from": 7.890000000000001,
-  "cut_len": 15.840000000000003,
+  "t_in_main": 71.31,
+  "cut_from": 9.14,
+  "cut_len": 16.769999999999996,
   "first_frame": 2
  }
 ]

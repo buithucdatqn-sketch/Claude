@@ -22,7 +22,7 @@ W, H, SS = 1080, 1920, 2
 FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
 if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
-CREDIT = "Diagram: Giả Thuyết Kiến Trúc, theo Kilmer & Kilmer (2014)"
+CREDIT = "Sơ đồ: Giả Thuyết Kiến Trúc, dựa trên Kilmer & Kilmer (2014)"
 HEAD = "AH DECODE · LỚP LỌC ÁNH SÁNG"
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
@@ -552,15 +552,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–7.58s", head="Kính lớn mà vẫn kéo rèm, bật đèn", vo="Ba giờ chiều, nhà phố hướng tây gần như căn nào cũng kéo kín rèm sau mặt kính lớn, rồi bật đèn.",
-         cam=((1080, 492), 1.0, (540, 863)), dark=True, dd=[], move="hold"),
-    dict(t="7.58–14.84s", head="Nguyên nhân nằm ở đường đi của ánh sáng", vo="Theo cách tụi mình hiểu, nguyên nhân không nằm ở chỗ thiếu rèm, mà nằm ở đường đi của ánh sáng.",
-         cam=((1080, 492), 1.0, (540, 863)), dark=False, dd=[], move="pan_r"),
-    dict(t="14.84–23.35s", head="Kính ngang tầm mắt gây vệt nắng gắt", vo="Mặt kính ngang tầm mắt đưa nắng vào thành vệt gắt trên sàn, đồng thời đặt một mảng trời rất sáng ngay trong tầm nhìn.",
-         cam=((1080, 492), 1.0, (540, 863)), dark=False, dd=[], move="pan_l"),
-    dict(t="23.35–30.93s", head="Ánh sáng chạm tường trước thì dịu hơn", vo="Trong khi đó, ánh sáng rơi lên tường trước rồi mới hắt xuống người thì khi tới mắt đã dịu đi nhiều.",
+    dict(t="0–9.14s", head="Kính ngang tầm mắt gây vệt nắng gắt", vo="Theo tụi mình hiểu, mặt kính ấy ngang tầm mắt nên vừa đưa nắng vào thành vệt gắt trên sàn, vừa đặt mảng trời chói trước mắt.",
          cam=((1080, 492), 1.0, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="30.93–31.43s", head="end", vo="",
+    dict(t="9.14–17.96s", head="Ánh sáng chạm tường trước thì dịu hơn", vo="Còn ánh sáng từ ô kính cao sát trần rơi lên tường và trần trước, nên khi hắt xuống tới mắt người đã dịu đi nhiều.",
+         cam=((1080, 492), 1.0, (540, 863)), dark=False, dd=[], move="pan_r"),
+    dict(t="17.96–18.46s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
