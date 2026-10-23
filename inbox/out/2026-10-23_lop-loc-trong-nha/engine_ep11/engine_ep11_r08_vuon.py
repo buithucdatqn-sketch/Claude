@@ -551,9 +551,9 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–8.2s", head="Lam gỗ: lớp lọc ngay trong nhà", vo="Mà lam gỗ là lớp lọc nằm ngay trong nhà. Chủ nhà thêm được vào một ô cửa sẵn có, không cần đục tường.",
+    dict(t="0–8.51s", head="Kilmer & Kilmer (2014): chặn ngoài, làm dịu trong bằng rèm", vo="Sách của hai tác giả Kilmer cũng khuyên, nắng gắt thì chặn từ ngoài bằng cây, mái hiên, hoặc làm dịu từ trong bằng rèm.",
          cam=((800, 1200), 2.1, (540, 952)), dark=True, dd=[], move="hold"),
-    dict(t="8.2–17.34s", head="Nhà phố hướng tây: rèm mỏng hay vách lam", vo="Nên nhà phố có mặt kính hướng tây không cần bỏ kính. Bên trong, thử treo rèm vải mỏng màu sáng, hay thêm một vách lam gỗ.",
+    dict(t="8.51–17.34s", head="Kính hướng tây: rèm mỏng hay vách lam", vo="Nên tụi mình nghĩ, nhà có kính hướng tây không nhất thiết bỏ kính. Bên trong, thử treo rèm mỏng màu sáng hay vách lam gỗ.",
          cam=((800, 1200), 2.1, (540, 952)), dark=True, dd=['r_out', 'rm_arr', 'lab_rm'], move="pan_d"),
     dict(t="17.34–17.84s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),

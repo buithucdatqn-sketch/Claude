@@ -553,11 +553,11 @@ WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–8.2s", head="Kính chói, rèm kín: có cách nào ở giữa?", vo="Kính lớn thì chói, mà kéo rèm cản sáng kín mít lại phải bật đèn giữa ban ngày. Có cách nào ở giữa không?",
          cam=((1080, 492), 1.0, (540, 863)), dark=True, dd=[], move="hold"),
-    dict(t="8.2–17.34s", head="Kính ngang tầm mắt: nắng gắt, trời chói", vo="Theo cách tụi mình hiểu, ô kính ngang tầm mắt vừa đưa nắng thành vệt gắt trên sàn, vừa đặt mảng trời rất sáng ngay trước mắt.",
+    dict(t="8.2–17.02s", head="Kính ngang tầm mắt: nắng gắt, trời chói", vo="Theo cách tụi mình hiểu, kính ngang tầm mắt vừa đưa nắng vào thành vệt gắt trên sàn, vừa đặt mảng trời chói ngay trước mắt.",
          cam=((1080, 492), 1.0, (540, 863)), dark=False, dd=[], move="pan_r"),
-    dict(t="17.34–25.23s", head="Chạm tường trước, tới mắt đã dịu", vo="Còn khi ánh sáng chạm vào tường hay tấm lam trước rồi mới tới người, thì tới mắt nó đã dịu đi nhiều.",
+    dict(t="17.02–24.91s", head="Chạm tường trước, tới mắt đã dịu", vo="Còn khi ánh sáng chạm vào tường hay tấm lam trước rồi mới tới người, thì tới mắt nó đã dịu đi nhiều.",
          cam=((1080, 492), 1.0, (540, 863)), dark=False, dd=[], move="pan_l"),
-    dict(t="25.23–25.73s", head="end", vo="",
+    dict(t="24.91–25.41s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

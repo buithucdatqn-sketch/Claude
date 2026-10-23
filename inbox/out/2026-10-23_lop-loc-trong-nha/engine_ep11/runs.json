@@ -21,67 +21,67 @@
   ],
   "t_in_main": 8.2,
   "cut_from": 8.2,
-  "cut_len": 17.03,
+  "cut_len": 16.71,
   "first_frame": 2
  },
  {
-  "tag": "r03_vuont",
-  "img": "vuont",
-  "src": "source_vuont.png",
-  "scenes": [
-   4
-  ],
-  "t_in_main": 25.23,
-  "cut_from": 7.890000000000001,
-  "cut_len": 8.2,
-  "first_frame": 2
- },
- {
-  "tag": "r04_mc",
+  "tag": "r03_mc",
   "img": "mc",
   "src": "source_mc.png",
   "scenes": [
-   5
+   4
   ],
-  "t_in_main": 33.43,
-  "cut_from": 8.2,
-  "cut_len": 8.82,
+  "t_in_main": 24.91,
+  "cut_from": 7.890000000000001,
+  "cut_len": 8.510000000000002,
   "first_frame": 2
  },
  {
-  "tag": "r05_lam",
+  "tag": "r04_lam",
   "img": "lam",
   "src": "source_lam.png",
   "scenes": [
-   6
+   5
   ],
-  "t_in_main": 42.25,
-  "cut_from": 8.82,
-  "cut_len": 6.950000000000003,
+  "t_in_main": 33.42,
+  "cut_from": 8.510000000000002,
+  "cut_len": 6.949999999999996,
   "first_frame": 2
  },
  {
-  "tag": "r06_band",
+  "tag": "r05_band",
   "img": "band",
   "src": "source_band.png",
   "scenes": [
-   7
+   6
   ],
-  "t_in_main": 49.2,
-  "cut_from": 6.950000000000003,
-  "cut_len": 5.699999999999996,
+  "t_in_main": 40.37,
+  "cut_from": 6.949999999999996,
+  "cut_len": 5.390000000000001,
   "first_frame": 2
  },
  {
-  "tag": "r07_lam",
+  "tag": "r06_lam",
   "img": "lam",
   "src": "source_lam.png",
   "scenes": [
+   7
+  ],
+  "t_in_main": 45.76,
+  "cut_from": 5.390000000000001,
+  "cut_len": 8.200000000000003,
+  "first_frame": 2
+ },
+ {
+  "tag": "r07_vuont",
+  "img": "vuont",
+  "src": "source_vuont.png",
+  "scenes": [
    8
   ],
-  "t_in_main": 54.9,
-  "cut_from": 5.699999999999996,
-  "cut_len": 8.200000000000003,
+  "t_in_main": 53.96,
+  "cut_from": 8.200000000000003,
+  "cut_len": 8.509999999999998,
   "first_frame": 2
  },
  {
@@ -91,9 +91,9 @@
   "scenes": [
    9
   ],
-  "t_in_main": 63.1,
-  "cut_from": 8.200000000000003,
-  "cut_len": 9.139999999999993,
+  "t_in_main": 62.47,
+  "cut_from": 8.509999999999998,
+  "cut_len": 8.829999999999998,
   "first_frame": 2
  },
  {
@@ -104,8 +104,8 @@
    10,
    11
   ],
-  "t_in_main": 72.24,
-  "cut_from": 9.139999999999993,
+  "t_in_main": 71.3,
+  "cut_from": 8.829999999999998,
   "cut_len": 17.710000000000008,
   "first_frame": 2
  }
