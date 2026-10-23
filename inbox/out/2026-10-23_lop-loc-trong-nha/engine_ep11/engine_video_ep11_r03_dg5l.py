@@ -22,7 +22,7 @@ W, H, SS = 1080, 1920, 2
 FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
 if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
-CREDIT = "Sơ đồ: Giả Thuyết Kiến Trúc, dựa trên Kilmer & Kilmer (2014)"
+CREDIT = "Sơ đồ: Giả Thuyết Kiến Trúc, diễn giải từ Kilmer & Kilmer (2014)"
 HEAD = "AH DECODE · LỚP LỌC ÁNH SÁNG"
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
@@ -552,11 +552,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–7.26s", head="Theo Kilmer & Kilmer (2014), đây là việc của nội thất", vo="Năm 2014, hai tác giả Kilmer coi việc điều khiển ánh sáng tự nhiên là việc của người làm nội thất.",
+    dict(t="0–9.14s", head="Theo Kilmer & Kilmer (2014), mắt thấy ánh sáng hắt lại", vo="Năm 2014, hai tác giả Kilmer nhắc rằng mắt người chỉ thấy ánh sáng khi nó rơi lên một món đồ hay mặt tường rồi hắt lại.",
          cam=((545, 492), 0.58, (540, 863)), dark=True, dd=[], move="hold"),
-    dict(t="7.26–15.46s", head="Kính ngang tầm mắt gây vệt nắng gắt", vo="Theo cách tụi mình hiểu, kính ngang tầm mắt đưa nắng vào thành vệt gắt trên sàn và đặt mảng trời chói trước mắt.",
+    dict(t="9.14–17.34s", head="Kính ngang tầm mắt gây vệt nắng gắt", vo="Theo cách tụi mình hiểu, kính ngang tầm mắt đưa nắng vào thành vệt gắt trên sàn và đặt mảng trời chói trước mắt.",
          cam=((545, 492), 0.58, (540, 863)), dark=False, dd=[], move="push"),
-    dict(t="15.46–15.96s", head="end", vo="",
+    dict(t="17.34–17.84s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

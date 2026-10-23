@@ -552,13 +552,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–9.45s", head="Lớp lọc thêm được vào ô cửa sẵn có", vo="Theo tụi mình, vách lam là một lớp lọc nằm ngay trong nhà, chủ nhà có thể thêm vào ô cửa sẵn có mà không cần đục tường.",
+    dict(t="0–9.14s", head="Vách lam gỗ của gác lửng nhìn từ cầu thang", vo="Theo tụi mình, vách lam là lớp lọc ngay trong nhà, nên chủ nhà có thể lắp vào ô cửa sẵn có mà không cần đục tường.",
          cam=((800, 1100), 2.1, (540, 884)), dark=True, dd=[], move="hold"),
-    dict(t="9.45–18.59s", head="Giữ mặt kính, thêm vách lam phía trong", vo="Vì vậy, với nhà phố hướng tây, tụi mình nghĩ không nhất thiết phải bỏ mặt kính, mà có thể đặt phía trong một vách lam gỗ.",
+    dict(t="9.14–18.28s", head="Nhà phố hướng tây vẫn giữ được mặt kính", vo="Vì vậy, với nhà phố hướng tây, tụi mình nghĩ không nhất thiết phải bỏ mặt kính, mà có thể đặt phía trong một vách lam gỗ.",
          cam=((800, 1100), 2.1, (540, 884)), dark=True, dd=['lab_v', 'v_arr'], move="pan_d"),
-    dict(t="18.59–23.98s", head="Câu trả lời nằm ở đường đi của ánh sáng", vo="Vậy ánh sáng dịu là nhờ chạm vào lam và tường trước khi tới người.",
-         cam=((1000, 1150), 2.1, (616, 925)), dark=True, dd=[], move="pull"),
-    dict(t="23.98–24.48s", head="end", vo="",
+    dict(t="18.28–18.78s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

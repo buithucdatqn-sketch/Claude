@@ -20,7 +20,7 @@
   ],
   "t_in_main": 6.95,
   "cut_from": 6.95,
-  "cut_len": 7.260000000000001,
+  "cut_len": 9.14,
   "first_frame": 2
  },
  {
@@ -30,8 +30,8 @@
   "scenes": [
    3
   ],
-  "t_in_main": 14.21,
-  "cut_from": 7.260000000000001,
+  "t_in_main": 16.09,
+  "cut_from": 9.14,
   "cut_len": 8.2,
   "first_frame": 2
  },
@@ -42,7 +42,7 @@
   "scenes": [
    4
   ],
-  "t_in_main": 22.41,
+  "t_in_main": 24.29,
   "cut_from": 8.2,
   "cut_len": 9.14,
   "first_frame": 2
@@ -54,9 +54,9 @@
   "scenes": [
    5
   ],
-  "t_in_main": 31.55,
+  "t_in_main": 33.43,
   "cut_from": 9.14,
-  "cut_len": 6.949999999999999,
+  "cut_len": 6.950000000000003,
   "first_frame": 2
  },
  {
@@ -66,9 +66,9 @@
   "scenes": [
    6
   ],
-  "t_in_main": 38.5,
-  "cut_from": 6.949999999999999,
-  "cut_len": 8.829999999999998,
+  "t_in_main": 40.38,
+  "cut_from": 6.950000000000003,
+  "cut_len": 8.82,
   "first_frame": 2
  },
  {
@@ -78,9 +78,9 @@
   "scenes": [
    7
   ],
-  "t_in_main": 47.33,
-  "cut_from": 8.829999999999998,
-  "cut_len": 4.760000000000005,
+  "t_in_main": 49.2,
+  "cut_from": 8.82,
+  "cut_len": 4.759999999999998,
   "first_frame": 2
  },
  {
@@ -90,9 +90,9 @@
   "scenes": [
    8
   ],
-  "t_in_main": 52.09,
-  "cut_from": 4.760000000000005,
-  "cut_len": 9.449999999999996,
+  "t_in_main": 53.96,
+  "cut_from": 4.759999999999998,
+  "cut_len": 9.14,
   "first_frame": 2
  },
  {
@@ -100,12 +100,11 @@
   "img": "ban",
   "src": "source_ban.png",
   "scenes": [
-   9,
-   10
+   9
   ],
-  "t_in_main": 61.54,
-  "cut_from": 9.449999999999996,
-  "cut_len": 14.529999999999994,
+  "t_in_main": 63.1,
+  "cut_from": 9.14,
+  "cut_len": 9.139999999999993,
   "first_frame": 2
  },
  {
@@ -113,11 +112,11 @@
   "img": "vuont",
   "src": "source_vuont.png",
   "scenes": [
-   11
+   10
   ],
-  "t_in_main": 76.07,
-  "cut_from": 5.389999999999986,
-  "cut_len": 8.820000000000007,
+  "t_in_main": 72.24,
+  "cut_from": 9.139999999999993,
+  "cut_len": 9.450000000000003,
   "first_frame": 2
  },
  {
@@ -125,10 +124,10 @@
   "img": "ban",
   "src": "source_ban.png",
   "scenes": [
-   12
+   11
   ],
-  "t_in_main": 84.89,
-  "cut_from": 8.820000000000007,
+  "t_in_main": 81.69,
+  "cut_from": 9.450000000000003,
   "cut_len": 7.010000000000005,
   "first_frame": 2
  }

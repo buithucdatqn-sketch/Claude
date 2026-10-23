@@ -551,7 +551,7 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–3s", head="Vì sao ánh sáng qua vách lam dễ chịu hơn?", vo="Ánh sáng chạm vào lam và tường gỗ trước khi tới mắt người.",
+    dict(t="0–3s", head="Vì sao ánh sáng qua vách lam lại dịu hơn?", vo="Ánh sáng tự nhiên trong nội thất, theo Kilmer & Kilmer (2014).",
          cam=WIDE, dark=False, dd=[], move="hold"),
     dict(t="3–4s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),

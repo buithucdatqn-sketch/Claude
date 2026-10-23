@@ -2,22 +2,22 @@
  {
   "blk": 1,
   "t": "0–6.95s",
-  "head": "Ánh sáng từ trên cao và kính ngang tầm mắt",
+  "head": "Vách lam gỗ và mặt kính ngang tầm mắt",
   "loi": "Vì sao ánh sáng từ trên cao qua vách lam lại dịu hơn ánh sáng từ kính ngang tầm mắt?",
   "tts": "Vì sao ánh sáng từ trên cao qua vách lam lại dịu hơn ánh sáng từ kính ngang tầm mắt?",
   "part": "A"
  },
  {
   "blk": 2,
-  "t": "6.95–14.21s",
-  "head": "Theo Kilmer & Kilmer (2014), đây là việc của nội thất",
-  "loi": "Năm 2014, hai tác giả Kilmer coi việc điều khiển ánh sáng tự nhiên là việc của người làm nội thất.",
-  "tts": "Năm hai nghìn không trăm mười bốn, hai tác giả Kin-mơ coi việc điều khiển ánh sáng tự nhiên là việc của người làm nội thất.",
+  "t": "6.95–16.09s",
+  "head": "Theo Kilmer & Kilmer (2014), mắt thấy ánh sáng hắt lại",
+  "loi": "Năm 2014, hai tác giả Kilmer nhắc rằng mắt người chỉ thấy ánh sáng khi nó rơi lên một món đồ hay mặt tường rồi hắt lại.",
+  "tts": "Năm hai nghìn không trăm mười bốn, hai tác giả Kin-mơ nhắc rằng mắt người chỉ thấy ánh sáng khi nó rơi lên một món đồ hay mặt tường rồi hắt lại.",
   "part": "B"
  },
  {
   "blk": 2,
-  "t": "14.21–22.41s",
+  "t": "16.09–24.29s",
   "head": "Kính ngang tầm mắt gây vệt nắng gắt",
   "loi": "Theo cách tụi mình hiểu, kính ngang tầm mắt đưa nắng vào thành vệt gắt trên sàn và đặt mảng trời chói trước mắt.",
   "tts": "Theo cách tụi mình hiểu, kính ngang tầm mắt đưa nắng vào thành vệt gắt trên sàn và đặt mảng trời chói trước mắt.",
@@ -25,15 +25,15 @@
  },
  {
   "blk": 2,
-  "t": "22.41–31.55s",
+  "t": "24.29–33.43s",
   "head": "Ánh sáng chạm tường trước thì dịu hơn",
-  "loi": "Còn ánh sáng từ ô kính cao rơi lên tường, trần hay vách lam trước rồi mới tới người, nên khi tới mắt đã dịu đi nhiều.",
-  "tts": "Còn ánh sáng từ ô kính cao rơi lên tường, trần hay vách lam trước rồi mới tới người, nên khi tới mắt đã dịu đi nhiều.",
+  "loi": "Còn ánh sáng từ ô kính cao rơi lên tường và trần trước rồi mới hắt xuống, nên khi tới mắt người, nó đã dịu đi nhiều.",
+  "tts": "Còn ánh sáng từ ô kính cao rơi lên tường và trần trước rồi mới hắt xuống, nên khi tới mắt người, nó đã dịu đi nhiều.",
   "part": "C"
  },
  {
   "blk": 3,
-  "t": "31.55–38.5s",
+  "t": "33.43–40.38s",
   "head": "Ô kính cao sát mái ở Union Street House",
   "loi": "Ở Union Street House tại Melbourne, ánh sáng xuống bàn ăn đi vào từ một ô kính cao sát mái.",
   "tts": "Ở Diu-ni-ơn Xtrít Hao-xơ tại Meo-bơn, ánh sáng xuống bàn ăn đi vào từ một ô kính cao sát mái.",
@@ -41,7 +41,7 @@
  },
  {
   "blk": 3,
-  "t": "38.5–47.33s",
+  "t": "40.38–49.2s",
   "head": "Đường đi của ánh sáng từ ô kính cao",
   "loi": "Ngay dưới ô kính là vách lam gỗ của gác lửng, nên ánh sáng phải xuyên qua vách lam rồi mới xuống bếp và bàn ăn.",
   "tts": "Ngay dưới ô kính là vách lam gỗ của gác lửng, nên ánh sáng phải xuyên qua vách lam rồi mới xuống bếp và bàn ăn.",
@@ -49,47 +49,39 @@
  },
  {
   "blk": 3,
-  "t": "47.33–52.09s",
-  "head": "Bàn ăn dưới thông tầng",
+  "t": "49.2–53.96s",
+  "head": "Mặt bàn ăn dưới ô kính cao",
   "loi": "Trong ảnh chụp bàn ăn, mặt bàn không có một vệt nắng nào.",
   "tts": "Trong ảnh chụp bàn ăn, mặt bàn không có một vệt nắng nào.",
   "part": "D"
  },
  {
   "blk": 4,
-  "t": "52.09–61.54s",
-  "head": "Lớp lọc thêm được vào ô cửa sẵn có",
-  "loi": "Theo tụi mình, vách lam là một lớp lọc nằm ngay trong nhà, chủ nhà có thể thêm vào ô cửa sẵn có mà không cần đục tường.",
-  "tts": "Theo tụi mình, vách lam là một lớp lọc nằm ngay trong nhà, chủ nhà có thể thêm vào ô cửa sẵn có mà không cần đục tường.",
+  "t": "53.96–63.1s",
+  "head": "Vách lam gỗ của gác lửng nhìn từ cầu thang",
+  "loi": "Theo tụi mình, vách lam là lớp lọc ngay trong nhà, nên chủ nhà có thể lắp vào ô cửa sẵn có mà không cần đục tường.",
+  "tts": "Theo tụi mình, vách lam là lớp lọc ngay trong nhà, nên chủ nhà có thể lắp vào ô cửa sẵn có mà không cần đục tường.",
   "part": "F"
  },
  {
   "blk": 4,
-  "t": "61.54–70.68s",
-  "head": "Giữ mặt kính, thêm vách lam phía trong",
+  "t": "63.1–72.24s",
+  "head": "Nhà phố hướng tây vẫn giữ được mặt kính",
   "loi": "Vì vậy, với nhà phố hướng tây, tụi mình nghĩ không nhất thiết phải bỏ mặt kính, mà có thể đặt phía trong một vách lam gỗ.",
   "tts": "Vì vậy, với nhà phố hướng tây, tụi mình nghĩ không nhất thiết phải bỏ mặt kính, mà có thể đặt phía trong một vách lam gỗ.",
   "part": "F"
  },
  {
   "blk": 5,
-  "t": "70.68–76.07s",
-  "head": "Câu trả lời nằm ở đường đi của ánh sáng",
-  "loi": "Vậy ánh sáng dịu là nhờ chạm vào lam và tường trước khi tới người.",
-  "tts": "Vậy ánh sáng dịu là nhờ chạm vào lam và tường trước khi tới người.",
-  "part": "H"
- },
- {
-  "blk": 5,
-  "t": "76.07–84.89s",
+  "t": "72.24–81.69s",
   "head": "Câu hỏi mỗi khi vẽ một ô cửa",
-  "loi": "Từ nay, mỗi lần vẽ ô cửa, tụi mình sẽ hỏi ánh sáng chạm vào đâu trước, chứ không chỉ hỏi nên mở bao nhiêu kính.",
-  "tts": "Từ nay, mỗi lần vẽ ô cửa, tụi mình sẽ hỏi ánh sáng chạm vào đâu trước, chứ không chỉ hỏi nên mở bao nhiêu kính.",
+  "loi": "Vì vậy, từ nay mỗi lần vẽ ô cửa, tụi mình sẽ hỏi ánh sáng chạm vào đâu trước, chứ không chỉ hỏi nên mở bao nhiêu kính.",
+  "tts": "Vì vậy, từ nay mỗi lần vẽ ô cửa, tụi mình sẽ hỏi ánh sáng chạm vào đâu trước, chứ không chỉ hỏi nên mở bao nhiêu kính.",
   "part": "H"
  },
  {
   "blk": 5,
-  "t": "84.89–90.9s",
+  "t": "81.69–87.7s",
   "head": "end",
   "loi": "Bài phân tích đầy đủ về ánh sáng tự nhiên trong nhà nằm ở phần bình luận.",
   "tts": "Bài phân tích đầy đủ về ánh sáng tự nhiên trong nhà nằm ở phần bình luận.",

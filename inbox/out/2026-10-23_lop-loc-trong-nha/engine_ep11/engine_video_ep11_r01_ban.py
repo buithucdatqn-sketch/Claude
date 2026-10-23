@@ -552,7 +552,7 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.95s", head="Ánh sáng từ trên cao và kính ngang tầm mắt", vo="Vì sao ánh sáng từ trên cao qua vách lam lại dịu hơn ánh sáng từ kính ngang tầm mắt?",
+    dict(t="0–6.95s", head="Vách lam gỗ và mặt kính ngang tầm mắt", vo="Vì sao ánh sáng từ trên cao qua vách lam lại dịu hơn ánh sáng từ kính ngang tầm mắt?",
          cam=((700, 1100), 2.1, (540, 884)), dark=True, dd=[], move="push"),
     dict(t="6.95–7.45s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
