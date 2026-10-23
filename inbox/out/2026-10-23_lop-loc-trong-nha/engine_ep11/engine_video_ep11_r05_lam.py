@@ -552,11 +552,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–8.82s", head="Union Street House: ô kính cao, gác lửng có lam", vo="Thử nhìn nhà Union Street ở Melbourne. Ánh sáng vào từ ô kính cao ở đầu hồi, ngay dưới là gác lửng có vách lam gỗ.",
-         cam=((1000, 1000), 2.2, (592, 840)), dark=False, dd=[], move="hold"),
-    dict(t="8.82–15.77s", head="Ánh sáng xuyên qua lam rồi mới xuống", vo="Nên ánh sáng phải xuyên qua vách lam, rơi lên tường gỗ trước, rồi mới xuống bếp và bàn ăn.",
-         cam=((1000, 1000), 2.2, (592, 840)), dark=True, dd=['lab_x', 'x_arr', 'lab_r', 'r_arr'], move="pull"),
-    dict(t="15.77–16.27s", head="end", vo="",
+    dict(t="0–4.76s", head="Mặt bàn ăn không có vệt nắng", vo="Trong ảnh chụp bàn ăn, mặt bàn không có một vệt nắng nào.",
+         cam=((1250, 1100), 2.2, (812, 925)), dark=True, dd=[], move="hold"),
+    dict(t="4.76–12.34s", head="Vách lam là lớp lọc ngay trong nhà", vo="Vách lam là một lớp lọc nằm ngay trong nhà, thêm được vào ô cửa sẵn có mà không cần đục tường.",
+         cam=((1250, 1100), 2.2, (812, 925)), dark=True, dd=['l_out', 'l_arr', 'lab_l'], move="push"),
+    dict(t="12.34–12.84s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

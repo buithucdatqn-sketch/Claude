@@ -128,7 +128,7 @@ L["lam"] = dict(
     lab_x=label("ánh sáng xuyên/qua vách lam", (420, 790), 76),
     x_arr=arrow([(930, 880), (1030, 920), (1120, 965)], w, DASH(w), 1.5, 1),
     lab_r=label("rơi lên tường gỗ trước,/rồi mới tới người", (400, 1150), 66),
-    r_arr=arrow([(560, 1300), (590, 1345), (620, 1390)], w, DASH(w), 1.5, 2),
+    r_arr=arrow([(470, 1310), (430, 1350), (390, 1395)], w, DASH(w), 1.5, 2),
     # cảnh 9: lam gỗ là lớp lọc nằm ngay trong nhà
     l_out=poly([(1120, 790), (1495, 745), (1495, 1370), (1125, 1380)], w, DASH(w), 2.0, 3),
     lab_l=label("lớp lọc/ngay trong nhà", (430, 900), 84),
@@ -156,7 +156,7 @@ L["vuont"] = dict(
 w = 6
 L["vuon"] = dict(
     r_out=poly([(835, 830), (1330, 820), (1335, 1480), (840, 1490)], w, DASH(w), 2.0, 10),
-    lab_rm=label("rèm mỏng/hay vách lam/đặt phía trong", (300, 900), 62),
+    lab_rm=label("mặt kính/giữ nguyên", (300, 950), 66),
     rm_arr=arrow([(640, 1090), (730, 1105), (825, 1120)], w, DASH(w), 1.5, 11),
 )
 
