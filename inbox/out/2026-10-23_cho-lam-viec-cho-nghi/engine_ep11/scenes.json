@@ -1,15 +1,15 @@
 [
  {
   "blk": 1,
-  "t": "0–5.39s",
-  "head": "Bàn cạnh kính vườn, sao trông tối?",
-  "loi": "Bàn làm việc kê ngay cạnh mảng kính vườn, sao mặt bàn lại trông tối?",
-  "tts": "Bàn làm việc kê ngay cạnh mảng kính vườn, sao mặt bàn lại trông tối?",
+  "t": "0–6.33s",
+  "head": "Thấy kính vườn sáng rực, sao bàn lại tối?",
+  "loi": "Ngồi bàn làm việc mà thấy cả mảng kính vườn sáng rực, sao mặt bàn lại trông tối?",
+  "tts": "Ngồi bàn làm việc mà thấy cả mảng kính vườn sáng rực, sao mặt bàn lại trông tối?",
   "part": "A"
  },
  {
   "blk": 2,
-  "t": "5.39–11.09s",
+  "t": "6.33–12.03s",
   "head": "Mắt chỉnh theo chỗ sáng nhất",
   "loi": "Vì theo cách tụi mình hiểu, mắt tự chỉnh theo chỗ sáng nhất trong tầm nhìn.",
   "tts": "Vì theo cách tụi mình hiểu, mắt tự chỉnh theo chỗ sáng nhất trong tầm nhìn.",
@@ -17,7 +17,7 @@
  },
  {
   "blk": 2,
-  "t": "11.09–18.04s",
+  "t": "12.03–18.98s",
   "head": "Kính sáng quá, mặt bàn trông tối",
   "loi": "Nên mảng kính sáng quá thì mọi thứ còn lại, kể cả trang sách trên bàn, đều trông tối đi.",
   "tts": "Nên mảng kính sáng quá thì mọi thứ còn lại, kể cả trang sách trên bàn, đều trông tối đi.",
@@ -25,23 +25,23 @@
  },
  {
   "blk": 2,
-  "t": "18.04–27.18s",
+  "t": "18.98–27.8s",
   "head": "Kilmer & Kilmer (2014): không chênh quá năm lần",
-  "loi": "Sách nội thất của hai tác giả Kilmer khuyên, lúc làm việc, tường và sàn không nên sáng hơn hay tối hơn trang sách quá năm lần.",
-  "tts": "Sách nội thất của hai tác giả Kin-mơ khuyên, lúc làm việc, tường và sàn không nên sáng hơn hay tối hơn trang sách quá năm lần.",
+  "loi": "Cũng vì vậy, hai tác giả Kilmer khuyên, lúc làm việc, tường và sàn không nên sáng hơn hay tối hơn trang sách quá năm lần.",
+  "tts": "Cũng vì vậy, hai tác giả Kin-mơ khuyên, lúc làm việc, tường và sàn không nên sáng hơn hay tối hơn trang sách quá năm lần.",
   "part": "B"
  },
  {
   "blk": 3,
-  "t": "27.18–35.38s",
+  "t": "27.8–35.69s",
   "head": "Union Street House: bàn trên gác lửng",
-  "loi": "Thử nhìn nhà Union Street ở Melbourne. Bàn làm việc trên gác lửng, sát mép thông tầng, nhìn qua là thấy mảng kính vườn.",
-  "tts": "Thử nhìn nhà Diu-ni-ơn Xtrít ở Meo-bơn. Bàn làm việc trên gác lửng, sát mép thông tầng, nhìn qua là thấy mảng kính vườn.",
+  "loi": "Chiếc bàn lúc nãy ở nhà Union Street, Melbourne, trên gác lửng sát mép thông tầng, nhìn qua là thấy mảng kính vườn.",
+  "tts": "Chiếc bàn lúc nãy ở nhà Diu-ni-ơn Xtrít, Meo-bơn, trên gác lửng sát mép thông tầng, nhìn qua là thấy mảng kính vườn.",
   "part": "D"
  },
  {
   "blk": 3,
-  "t": "35.38–44.52s",
+  "t": "35.69–44.83s",
   "head": "Vách lam kéo kín: chỉ còn tường gỗ",
   "loi": "Nên dọc mép gác có một vách lam gỗ trượt. Kéo kín lại, trong tầm mắt không còn mảng kính nào, trước mặt chỉ còn tường gỗ.",
   "tts": "Nên dọc mép gác có một vách lam gỗ trượt. Kéo kín lại, trong tầm mắt không còn mảng kính nào, trước mặt chỉ còn tường gỗ.",
@@ -49,23 +49,15 @@
  },
  {
   "blk": 3,
-  "t": "44.52–52.72s",
-  "head": "Kín hay mở: người ngồi tự chọn",
-  "loi": "Nhà thiết kế không cố làm chỗ làm việc lúc nào cũng sáng đều, mà để người ngồi tự chọn kéo kín hay mở.",
-  "tts": "Nhà thiết kế không cố làm chỗ làm việc lúc nào cũng sáng đều, mà để người ngồi tự chọn kéo kín hay mở.",
-  "part": "D"
- },
- {
-  "blk": 3,
-  "t": "52.72–61.23s",
+  "t": "44.83–53.34s",
   "head": "Phòng khách: chỗ nghỉ được chênh",
-  "loi": "Còn ghế Togo dưới phòng khách đặt sát kính, tường gỗ quanh ghế tối hơn nhiều. Nhưng đó là chỗ nghỉ, nên chênh vẫn được.",
-  "tts": "Còn ghế Tô-gô dưới phòng khách đặt sát kính, tường gỗ quanh ghế tối hơn nhiều. Nhưng đó là chỗ nghỉ, nên chênh vẫn được.",
+  "loi": "Còn ghế dưới phòng khách đặt sát kính, tường gỗ quanh tối hẳn. Nhưng chỗ nghỉ không ai nhìn kỹ, nên chênh sáng vẫn được.",
+  "tts": "Còn ghế dưới phòng khách đặt sát kính, tường gỗ quanh tối hẳn. Nhưng chỗ nghỉ không ai nhìn kỹ, nên chênh sáng vẫn được.",
   "part": "D"
  },
  {
   "blk": 4,
-  "t": "61.23–69.74s",
+  "t": "53.34–61.85s",
   "head": "Thử ở nhà: nheo mắt nhìn",
   "loi": "Vậy ở nhà, ngồi đúng chỗ làm việc giữa chiều rồi nheo mắt. Nếu chỉ còn thấy rõ ô cửa, chênh sáng đang quá lớn.",
   "tts": "Vậy ở nhà, ngồi đúng chỗ làm việc giữa chiều rồi nheo mắt. Nếu chỉ còn thấy rõ ô cửa, chênh sáng đang quá lớn.",
@@ -73,7 +65,7 @@
  },
  {
   "blk": 4,
-  "t": "69.74–77.63s",
+  "t": "61.85–69.74s",
   "head": "Xoay bàn, thêm rèm hay vách lam",
   "loi": "Khi đó, xoay bàn vuông góc với cửa sổ, hoặc thêm tấm rèm hay vách lam kéo được giữa bàn và mảng kính.",
   "tts": "Khi đó, xoay bàn vuông góc với cửa sổ, hoặc thêm tấm rèm hay vách lam kéo được giữa bàn và mảng kính.",
@@ -81,18 +73,18 @@
  },
  {
   "blk": 5,
-  "t": "77.63–84.89s",
-  "head": "Làm việc: sáng đều. Nghỉ: được chênh",
-  "loi": "Tóm lại, lúc làm việc đừng để mảng kính sáng nằm trong tầm mắt. Còn chỗ nghỉ thì cứ để chênh.",
-  "tts": "Tóm lại, lúc làm việc đừng để mảng kính sáng nằm trong tầm mắt. Còn chỗ nghỉ thì cứ để chênh.",
+  "t": "69.74–79.19s",
+  "head": "Làm việc: che bớt kính. Nghỉ: được chênh",
+  "loi": "Tóm lại, mặt bàn trông tối là vì mảng kính sáng nằm trong tầm mắt. Lúc làm việc thì che bớt, còn chỗ nghỉ cứ để chênh sáng.",
+  "tts": "Tóm lại, mặt bàn trông tối là vì mảng kính sáng nằm trong tầm mắt. Lúc làm việc thì che bớt, còn chỗ nghỉ cứ để chênh sáng.",
   "part": "H"
  },
  {
   "blk": 5,
-  "t": "84.89–91.84s",
+  "t": "79.19–87.39s",
   "head": "end",
-  "loi": "Còn bài phân tích đầy đủ về ánh sáng tự nhiên trong nhà, mọi người xem phần bình luận nha.",
-  "tts": "Còn bài phân tích đầy đủ về ánh sáng tự nhiên trong nhà, mọi người xem phần bình luận nha.",
+  "loi": "Muốn đọc kỹ hơn, mọi người xem bài phân tích đầy đủ về ánh sáng tự nhiên trong nhà ở phần bình luận nha.",
+  "tts": "Muốn đọc kỹ hơn, mọi người xem bài phân tích đầy đủ về ánh sáng tự nhiên trong nhà ở phần bình luận nha.",
   "part": "I"
  }
 ]

@@ -29,8 +29,8 @@ HEAD = "AH DECODE · CHÊNH SÁNG THEO VIỆC"
 END_LINES = [
     (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1088, "và cách chọn đồ decor", 40, 215),
-    (1196, "Bài phân tích về chênh sáng trong nhà", 52, 240),
-    (1256, "từ sách của Kilmer", 52, 240),
+    (1196, "Bài phân tích đầy đủ", 58, 240),
+    (1260, "về ánh sáng tự nhiên trong nhà", 52, 240),
     (1344, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
@@ -551,11 +551,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–10.08s", head="Thử ở nhà: nheo mắt nhìn", vo="Vậy ở nhà, thử ngồi đúng chỗ quen vào giữa chiều rồi nheo mắt lại. Nếu ô cửa là thứ duy nhất còn nhìn rõ, chênh sáng đang quá lớn.",
-         cam=((700, 1350), 2.2, (540, 1036)), dark=False, dd=[], move="hold"),
-    dict(t="10.08–17.97s", head="Xoay bàn, thêm rèm hay vách lam", vo="Khi đó, xoay bàn vuông góc với cửa sổ, hoặc thêm tấm rèm hay vách lam kéo được giữa bàn và mảng kính.",
-         cam=((700, 1350), 2.2, (540, 1036)), dark=True, dd=['b_out', 'b_arr', 'lab_b'], move="pan_d"),
-    dict(t="17.97–18.47s", head="end", vo="",
+    dict(t="0–8.51s", head="Thử ở nhà: nheo mắt nhìn", vo="Vậy ở nhà, ngồi đúng chỗ làm việc giữa chiều rồi nheo mắt. Nếu chỉ còn thấy rõ ô cửa, chênh sáng đang quá lớn.",
+         cam=((900, 1300), 2.2, (540, 992)), dark=True, dd=[], move="hold"),
+    dict(t="8.51–16.4s", head="Xoay bàn, thêm rèm hay vách lam", vo="Khi đó, xoay bàn vuông góc với cửa sổ, hoặc thêm tấm rèm hay vách lam kéo được giữa bàn và mảng kính.",
+         cam=((900, 1300), 2.2, (540, 992)), dark=True, dd=['b_arr', 'lab_b'], move="pan_d"),
+    dict(t="16.4–16.9s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

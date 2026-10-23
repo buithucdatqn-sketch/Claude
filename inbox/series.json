@@ -395,5 +395,30 @@
    "ArchDaily MS House số 39, 26, 24, 29, 6 (https://www.archdaily.com/1032005/ms-house-studio-saransh), ảnh Ishita Sitwala | The Fishy Project"
   ],
   "video": "inbox/out/2026-10-22_van-tho-xa-van-min-gan/reel_van-tho-xa-van-min-gan_final.mp4 (68,38 giây)"
+ },
+ {
+  "tap": null,
+  "slug": "cho-lam-viec-cho-nghi",
+  "ngay": "2026-10-23",
+  "trang_thai": "cam_chu_trang_khong_dung",
+  "bai_kho": {
+   "duong_dan": "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/bai-03.md",
+   "nhanh": "AH-Interior-notes",
+   "commit": "4f984d8cc2d9a4b56c899cc9a3509015a4d4716d"
+  },
+  "y_bai": {
+   "muc": "Chỗ làm việc cần độ sáng gần đều, còn chỗ nghỉ ngơi được phép chênh sáng nhiều hơn",
+   "tom_tat": "Ba vùng sáng, tỷ lệ năm lần; bàn gác lửng Union Street với vách lam trượt; ghế nghỉ sát kính; mẹo nheo mắt"
+  },
+  "anh_kho": [
+   "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/anh/goc/14-goc-ban-lam-viec-vach-mo.jpg",
+   "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/anh/goc/13-goc-ban-lam-viec-vach-kin.jpg",
+   "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/anh/goc/15-goc-ghe-nghi-mat-kinh.jpg",
+   "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/anh/goc/17-goc-anh-tong.jpg",
+   "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/anh/12-diagram-ba-vung-nhin.png",
+   "AH-Decode-Decor/bai-03-3-bai-hoc-anh-sang-tu-nhien-noi-that/anh/03-mat-bang-gac-lung-union-street.png"
+  ],
+  "thu_muc": "inbox/out/2026-10-23_cho-lam-viec-cho-nghi/",
+  "ghi_chu": "Lần chạy 2026-10-23 làm tới lượt chấm 2 thì chủ Trang yêu cầu chọn ý khác, không chọn ý này (TASK_INSTRUCTION mục 0.6e). Bản nháp giữ lại để tham khảo, không dùng."
  }
 ]

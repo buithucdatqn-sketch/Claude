@@ -10,7 +10,7 @@
   ],
   "t_in_main": 0.0,
   "cut_from": 0.0,
-  "cut_len": 18.04,
+  "cut_len": 18.98,
   "first_frame": 1
  },
  {
@@ -20,9 +20,9 @@
   "scenes": [
    4
   ],
-  "t_in_main": 18.04,
-  "cut_from": 6.949999999999999,
-  "cut_len": 9.14,
+  "t_in_main": 18.98,
+  "cut_from": 6.950000000000001,
+  "cut_len": 8.82,
   "first_frame": 2
  },
  {
@@ -32,9 +32,9 @@
   "scenes": [
    5
   ],
-  "t_in_main": 27.18,
-  "cut_from": 9.14,
-  "cut_len": 8.200000000000003,
+  "t_in_main": 27.8,
+  "cut_from": 8.82,
+  "cut_len": 7.889999999999997,
   "first_frame": 2
  },
  {
@@ -44,57 +44,57 @@
   "scenes": [
    6
   ],
-  "t_in_main": 35.38,
-  "cut_from": 8.200000000000003,
+  "t_in_main": 35.69,
+  "cut_from": 7.889999999999997,
   "cut_len": 9.14,
   "first_frame": 2
  },
  {
-  "tag": "r05_mo",
-  "img": "mo",
-  "src": "source_mo.png",
-  "scenes": [
-   7
-  ],
-  "t_in_main": 44.52,
-  "cut_from": 9.14,
-  "cut_len": 8.199999999999996,
-  "first_frame": 2
- },
- {
-  "tag": "r06_togo",
+  "tag": "r05_togo",
   "img": "togo",
   "src": "source_togo.png",
   "scenes": [
-   8
+   7
   ],
-  "t_in_main": 52.72,
-  "cut_from": 8.199999999999996,
-  "cut_len": 8.509999999999998,
+  "t_in_main": 44.83,
+  "cut_from": 9.14,
+  "cut_len": 8.510000000000005,
   "first_frame": 2
  },
  {
-  "tag": "r07_mo",
+  "tag": "r06_mo",
   "img": "mo",
   "src": "source_mo.png",
   "scenes": [
-   9
+   8
   ],
-  "t_in_main": 61.23,
-  "cut_from": 8.509999999999998,
+  "t_in_main": 53.34,
+  "cut_from": 8.510000000000005,
   "cut_len": 8.509999999999998,
   "first_frame": 2
  },
  {
-  "tag": "r08_kin",
+  "tag": "r07_kin",
   "img": "kin",
   "src": "source_kin.png",
+  "scenes": [
+   9
+  ],
+  "t_in_main": 61.85,
+  "cut_from": 8.509999999999998,
+  "cut_len": 7.8899999999999935,
+  "first_frame": 2
+ },
+ {
+  "tag": "r08_togo",
+  "img": "togo",
+  "src": "source_togo.png",
   "scenes": [
    10
   ],
   "t_in_main": 69.74,
-  "cut_from": 8.509999999999998,
-  "cut_len": 7.890000000000001,
+  "cut_from": 7.8899999999999935,
+  "cut_len": 9.450000000000003,
   "first_frame": 2
  },
  {
@@ -102,12 +102,11 @@
   "img": "tong",
   "src": "source_tong.png",
   "scenes": [
-   11,
-   12
+   11
   ],
-  "t_in_main": 77.63,
-  "cut_from": 7.890000000000001,
-  "cut_len": 15.210000000000008,
+  "t_in_main": 79.19,
+  "cut_from": 9.450000000000003,
+  "cut_len": 9.200000000000003,
   "first_frame": 2
  }
 ]

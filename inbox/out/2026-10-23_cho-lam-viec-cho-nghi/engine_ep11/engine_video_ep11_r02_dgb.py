@@ -554,9 +554,9 @@ WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–6.95s", head="Kính sáng quá, mặt bàn trông tối", vo="Nên mảng kính sáng quá thì mọi thứ còn lại, kể cả trang sách trên bàn, đều trông tối đi.",
          cam=((1060, 310), 1.083, (540, 863)), dark=True, dd=[], move="hold"),
-    dict(t="6.95–16.09s", head="Kilmer & Kilmer (2014): không chênh quá năm lần", vo="Sách nội thất của hai tác giả Kilmer khuyên, lúc làm việc, tường và sàn không nên sáng hơn hay tối hơn trang sách quá năm lần.",
+    dict(t="6.95–15.77s", head="Kilmer & Kilmer (2014): không chênh quá năm lần", vo="Cũng vì vậy, hai tác giả Kilmer khuyên, lúc làm việc, tường và sàn không nên sáng hơn hay tối hơn trang sách quá năm lần.",
          cam=((1060, 310), 1.083, (540, 863)), dark=False, dd=[], move="push"),
-    dict(t="16.09–16.59s", head="end", vo="",
+    dict(t="15.77–16.27s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

@@ -29,8 +29,8 @@ HEAD = "AH DECODE · CHÊNH SÁNG THEO VIỆC"
 END_LINES = [
     (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1088, "và cách chọn đồ decor", 40, 215),
-    (1196, "Bài phân tích về chênh sáng trong nhà", 52, 240),
-    (1256, "từ sách của Kilmer", 52, 240),
+    (1196, "Bài phân tích đầy đủ", 58, 240),
+    (1260, "về ánh sáng tự nhiên trong nhà", 52, 240),
     (1344, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
@@ -552,11 +552,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–8.83s", head="Vách lam kéo kín: chỉ còn tường gỗ", vo="Kéo vách kín lại, ánh sáng chỉ lọt qua khe lam, trước mặt người ngồi chỉ còn tường gỗ. Muốn nhìn ra vườn thì kéo ra.",
+    dict(t="0–9.14s", head="Vách lam kéo kín: chỉ còn tường gỗ", vo="Nên dọc mép gác có một vách lam gỗ trượt. Kéo kín lại, trong tầm mắt không còn mảng kính nào, trước mặt chỉ còn tường gỗ.",
          cam=((800, 1250), 2.2, (540, 948)), dark=True, dd=[], move="hold"),
-    dict(t="8.83–18.28s", head="Phòng khách: chỗ nghỉ được chênh", vo="Còn phòng khách bên dưới, ghế Togo đặt sát mặt kính, kính sáng hơn hẳn tường gỗ. Nhưng đó là chỗ ngồi nghỉ, nên chênh nhiều vẫn được.",
+    dict(t="9.14–17.65s", head="Phòng khách: chỗ nghỉ được chênh", vo="Còn ghế dưới phòng khách đặt sát kính, tường gỗ quanh tối hẳn. Nhưng chỗ nghỉ không ai nhìn kỹ, nên chênh sáng vẫn được.",
          cam=((800, 1250), 2.2, (540, 948)), dark=True, dd=['k_arr', 'lab_k', 't_arr', 'lab_t'], move="push"),
-    dict(t="18.28–18.78s", head="end", vo="",
+    dict(t="17.65–18.15s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

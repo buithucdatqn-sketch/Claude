@@ -44,34 +44,32 @@ def STRIP(cx, cy):
 
 
 SC = [
-    dict(move="push", part="A", blk=1, img="mo", head="Bàn cạnh kính vườn, sao trông tối?", cam=MO(1000), free=True, dark=True, dd=[],
-         vo="Bàn làm việc kê ngay cạnh mảng kính vườn, sao mặt bàn lại trông tối?"),
+    dict(move="push", part="A", blk=1, img="mo", head="Thấy kính vườn sáng rực, sao bàn lại tối?", cam=MO(1000), free=True, dark=True, dd=[],
+         vo="Ngồi bàn làm việc mà thấy cả mảng kính vườn sáng rực, sao mặt bàn lại trông tối?"),
     dict(move="pan_r", part="C", blk=2, img="mo", head="Mắt chỉnh theo chỗ sáng nhất", cam=MO(1085), free=True, dark=True, dd=["g_ring", "g_arr", "lab_g"],
          vo="Vì theo cách tụi mình hiểu, mắt tự chỉnh theo chỗ sáng nhất trong tầm nhìn."),
     dict(move="pan_l", part="C", blk=2, img="mo", head="Kính sáng quá, mặt bàn trông tối", cam=MO(640), free=True, dark=True, dd=["d_arr", "lab_d"],
          vo="Nên mảng kính sáng quá thì mọi thứ còn lại, kể cả trang sách trên bàn, đều trông tối đi."),
     dict(move="push", part="B", blk=2, img="dgb", head="Kilmer & Kilmer (2014): không chênh quá năm lần", cam=STRIP(1060, 310), free=True, dark=False, dd=[],
-         vo="Sách nội thất của hai tác giả Kilmer khuyên, lúc làm việc, tường và sàn không nên sáng hơn hay tối hơn trang sách quá năm lần.",
-         tts="Sách nội thất của hai tác giả Kin-mơ khuyên, lúc làm việc, tường và sàn không nên sáng hơn hay tối hơn trang sách quá năm lần."),
+         vo="Cũng vì vậy, hai tác giả Kilmer khuyên, lúc làm việc, tường và sàn không nên sáng hơn hay tối hơn trang sách quá năm lần.",
+         tts="Cũng vì vậy, hai tác giả Kin-mơ khuyên, lúc làm việc, tường và sàn không nên sáng hơn hay tối hơn trang sách quá năm lần."),
     dict(move="pan_u", part="D", blk=3, img="mb", head="Union Street House: bàn trên gác lửng", cam=STRIP(950, 475), free=True, dark=False, dd=[],
-         vo="Thử nhìn nhà Union Street ở Melbourne. Bàn làm việc trên gác lửng, sát mép thông tầng, nhìn qua là thấy mảng kính vườn.",
-         tts="Thử nhìn nhà Diu-ni-ơn Xtrít ở Meo-bơn. Bàn làm việc trên gác lửng, sát mép thông tầng, nhìn qua là thấy mảng kính vườn."),
+         vo="Chiếc bàn lúc nãy ở nhà Union Street, Melbourne, trên gác lửng sát mép thông tầng, nhìn qua là thấy mảng kính vườn.",
+         tts="Chiếc bàn lúc nãy ở nhà Diu-ni-ơn Xtrít, Meo-bơn, trên gác lửng sát mép thông tầng, nhìn qua là thấy mảng kính vườn."),
     dict(move="pull", part="D", blk=3, img="kin", head="Vách lam kéo kín: chỉ còn tường gỗ", cam=((1010, 1100), 2.3, (540, 925)), dark=True, dd=["v_out", "v_arr", "lab_v", "lab_w"],
          vo="Nên dọc mép gác có một vách lam gỗ trượt. Kéo kín lại, trong tầm mắt không còn mảng kính nào, trước mặt chỉ còn tường gỗ."),
-    dict(move="hold", part="D", blk=3, img="mo", head="Kín hay mở: người ngồi tự chọn", cam=MO(1450), free=True, dark=True, dd=["s_out", "s_arr1", "s_arr2", "lab_s"],
-         vo="Nhà thiết kế không cố làm chỗ làm việc lúc nào cũng sáng đều, mà để người ngồi tự chọn kéo kín hay mở."),
     dict(move="push", part="D", blk=3, img="togo", head="Phòng khách: chỗ nghỉ được chênh", cam=((800, 1250), 2.2, (540, 925)), dark=True, dd=["k_arr", "lab_k", "t_arr", "lab_t"],
-         vo="Còn ghế Togo dưới phòng khách đặt sát kính, tường gỗ quanh ghế tối hơn nhiều. Nhưng đó là chỗ nghỉ, nên chênh vẫn được.",
-         tts="Còn ghế Tô-gô dưới phòng khách đặt sát kính, tường gỗ quanh ghế tối hơn nhiều. Nhưng đó là chỗ nghỉ, nên chênh vẫn được."),
+         vo="Còn ghế dưới phòng khách đặt sát kính, tường gỗ quanh tối hẳn. Nhưng chỗ nghỉ không ai nhìn kỹ, nên chênh sáng vẫn được.",
+         tts="Còn ghế dưới phòng khách đặt sát kính, tường gỗ quanh tối hẳn. Nhưng chỗ nghỉ không ai nhìn kỹ, nên chênh sáng vẫn được."),
     dict(move="pan_l", part="F", blk=4, img="mo", head="Thử ở nhà: nheo mắt nhìn", cam=MO(1000), free=True, dark=True, dd=["n_ring", "n_arr", "lab_n"],
          vo="Vậy ở nhà, ngồi đúng chỗ làm việc giữa chiều rồi nheo mắt. Nếu chỉ còn thấy rõ ô cửa, chênh sáng đang quá lớn."),
     dict(move="pan_d", part="F", blk=4, img="kin", head="Xoay bàn, thêm rèm hay vách lam", cam=((900, 1300), 2.2, (540, 925)), dark=True, dd=["b_arr", "lab_b"],
          vo="Khi đó, xoay bàn vuông góc với cửa sổ, hoặc thêm tấm rèm hay vách lam kéo được giữa bàn và mảng kính."),
-    dict(move="pull", part="H", blk=5, img="tong", head="Làm việc: sáng đều. Nghỉ: được chênh", cam=MO(1000), free=True, dark=True, dd=[],
-         vo="Tóm lại, lúc làm việc đừng để mảng kính sáng nằm trong tầm mắt. Còn chỗ nghỉ thì cứ để chênh."),
+    dict(move="pull", part="H", blk=5, img="togo", head="Làm việc: che bớt kính. Nghỉ: được chênh", cam=((800, 1350), 2.15, (540, 925)), dark=True, dd=[],
+         vo="Tóm lại, mặt bàn trông tối là vì mảng kính sáng nằm trong tầm mắt. Lúc làm việc thì che bớt, còn chỗ nghỉ cứ để chênh sáng."),
     dict(move="push", part="I", blk=5, img="tong", head="end", cam="END", dark=False, vo="", dd=[],
-         say="Còn bài phân tích đầy đủ về ánh sáng tự nhiên trong nhà, mọi người xem phần bình luận nha.",
-         tts="Còn bài phân tích đầy đủ về ánh sáng tự nhiên trong nhà, mọi người xem phần bình luận nha."),
+         say="Muốn đọc kỹ hơn, mọi người xem bài phân tích đầy đủ về ánh sáng tự nhiên trong nhà ở phần bình luận nha.",
+         tts="Muốn đọc kỹ hơn, mọi người xem bài phân tích đầy đủ về ánh sáng tự nhiên trong nhà ở phần bình luận nha."),
 ]
 
 DOODLE = r'''
@@ -254,7 +252,7 @@ for n, ks in enumerate(runs(), 1):
 json.dump(RUNS, open(OUT + "engine_ep11/runs.json", "w"), ensure_ascii=False, indent=1)
 
 # ảnh bìa 1080x1920: cảnh rộng trên ảnh 14 (bàn gác lửng nhìn ra kính vườn), tiêu đề ngắn + câu móc
-COVER = [dict(img="mo", head="Bàn cạnh kính vườn, sao trông tối?", vo="Chỗ làm việc nên sáng gần đều, chỗ nghỉ thì được chênh.", dark=False),
+COVER = [dict(img="mo", head="Thấy kính vườn sáng rực, sao bàn lại tối?", vo="Lúc làm việc thì che bớt mảng kính, còn chỗ nghỉ cứ để chênh sáng.", dark=False),
          dict(img="mo", head="end", vo="", dark=False)]
 build("engine_storyboard_v7.py", "cover_ep11.py", False,
       wrap_data([scene_line(COVER[0], 0, 3, "WIDE", []), scene_line(COVER[1], 3, 4, "END_SAFE", [])],

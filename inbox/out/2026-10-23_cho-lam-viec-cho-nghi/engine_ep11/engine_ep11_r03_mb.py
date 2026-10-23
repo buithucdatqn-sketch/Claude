@@ -551,11 +551,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–9.14s", head="Kilmer & Kilmer (2014): không chênh quá năm lần", vo="Sách nội thất của hai tác giả Kilmer khuyên, lúc làm việc, tường và sàn không nên sáng hơn hay tối hơn trang sách quá năm lần.",
+    dict(t="0–8.82s", head="Kilmer & Kilmer (2014): không chênh quá năm lần", vo="Cũng vì vậy, hai tác giả Kilmer khuyên, lúc làm việc, tường và sàn không nên sáng hơn hay tối hơn trang sách quá năm lần.",
          cam=((950, 475), 1.083, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="9.14–17.34s", head="Union Street House: bàn trên gác lửng", vo="Thử nhìn nhà Union Street ở Melbourne. Bàn làm việc trên gác lửng, sát mép thông tầng, nhìn qua là thấy mảng kính vườn.",
+    dict(t="8.82–16.71s", head="Union Street House: bàn trên gác lửng", vo="Chiếc bàn lúc nãy ở nhà Union Street, Melbourne, trên gác lửng sát mép thông tầng, nhìn qua là thấy mảng kính vườn.",
          cam=((950, 475), 1.083, (540, 863)), dark=False, dd=[], move="pan_u"),
-    dict(t="17.34–17.84s", head="end", vo="",
+    dict(t="16.71–17.21s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

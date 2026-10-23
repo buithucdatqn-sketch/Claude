@@ -553,9 +553,9 @@ WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–9.14s", head="Vách lam kéo kín: chỉ còn tường gỗ", vo="Nên dọc mép gác có một vách lam gỗ trượt. Kéo kín lại, trong tầm mắt không còn mảng kính nào, trước mặt chỉ còn tường gỗ.",
          cam=((1450, 666), 2.05, (540, 885)), dark=True, dd=[], move="hold"),
-    dict(t="9.14–17.34s", head="Kín hay mở: người ngồi tự chọn", vo="Nhà thiết kế không cố làm chỗ làm việc lúc nào cũng sáng đều, mà để người ngồi tự chọn kéo kín hay mở.",
+    dict(t="9.14–17.97s", head="Kín hay mở: người ngồi tự chọn", vo="Tức là nhà thiết kế không cố làm chỗ làm việc lúc nào cũng sáng đều, mà để người ngồi tự chọn kéo kín hay mở.",
          cam=((1450, 666), 2.05, (540, 885)), dark=True, dd=['s_out', 's_arr1', 's_arr2', 'lab_s'], move="hold"),
-    dict(t="17.34–17.84s", head="end", vo="",
+    dict(t="17.97–18.47s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

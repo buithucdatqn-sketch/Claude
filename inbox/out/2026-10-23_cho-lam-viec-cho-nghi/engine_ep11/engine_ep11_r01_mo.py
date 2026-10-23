@@ -551,13 +551,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.39s", head="Bàn cạnh kính vườn, sao trông tối?", vo="Bàn làm việc kê ngay cạnh mảng kính vườn, sao mặt bàn lại trông tối?",
+    dict(t="0–6.33s", head="Thấy kính vườn sáng rực, sao bàn lại tối?", vo="Ngồi bàn làm việc mà thấy cả mảng kính vườn sáng rực, sao mặt bàn lại trông tối?",
          cam=((1000, 666), 2.05, (540, 885)), dark=True, dd=[], move="push"),
-    dict(t="5.39–11.09s", head="Mắt chỉnh theo chỗ sáng nhất", vo="Vì theo cách tụi mình hiểu, mắt tự chỉnh theo chỗ sáng nhất trong tầm nhìn.",
+    dict(t="6.33–12.03s", head="Mắt chỉnh theo chỗ sáng nhất", vo="Vì theo cách tụi mình hiểu, mắt tự chỉnh theo chỗ sáng nhất trong tầm nhìn.",
          cam=((1085, 666), 2.05, (540, 885)), dark=True, dd=['g_ring', 'g_arr', 'lab_g'], move="pan_r"),
-    dict(t="11.09–18.04s", head="Kính sáng quá, mặt bàn trông tối", vo="Nên mảng kính sáng quá thì mọi thứ còn lại, kể cả trang sách trên bàn, đều trông tối đi.",
+    dict(t="12.03–18.98s", head="Kính sáng quá, mặt bàn trông tối", vo="Nên mảng kính sáng quá thì mọi thứ còn lại, kể cả trang sách trên bàn, đều trông tối đi.",
          cam=((640, 666), 2.05, (540, 885)), dark=True, dd=['d_arr', 'lab_d'], move="pan_l"),
-    dict(t="18.04–18.54s", head="end", vo="",
+    dict(t="18.98–19.48s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
