@@ -553,9 +553,9 @@ WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–8.2s", head="Kính ngang tầm mắt gây vệt nắng gắt", vo="Theo cách tụi mình hiểu, kính ngang tầm mắt đưa nắng vào thành vệt gắt trên sàn và đặt mảng trời chói trước mắt.",
          cam=((1080, 492), 1.0, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="8.2–16.71s", head="Ánh sáng chạm tường trước thì dịu hơn", vo="Còn ánh sáng chạm vào tường, trần hay tấm lam trước rồi mới hắt xuống người, thì khi tới mắt, nó đã dịu đi nhiều.",
+    dict(t="8.2–17.34s", head="Ánh sáng chạm tường trước thì dịu hơn", vo="Còn ánh sáng từ ô kính cao rơi lên tường, trần hay vách lam trước rồi mới tới người, nên khi tới mắt đã dịu đi nhiều.",
          cam=((1080, 492), 1.0, (540, 863)), dark=False, dd=[], move="pan_r"),
-    dict(t="16.71–17.21s", head="end", vo="",
+    dict(t="17.34–17.84s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

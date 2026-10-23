@@ -32,7 +32,7 @@ IMGS = dict(
     mc=("source_mc.png", "", MCC),                               # ảnh 04: mặt cắt dọc (cắt vùng gác lửng, mái cao)
     lam=("source_lam.png", "doodle_ep11_lam.npz", PHOTO),        # ảnh 06 (goc): vách lam gác lửng nhìn từ cầu thang
     band=("source_band.png", "doodle_ep11_band.npz", PHOTO),     # ảnh 07 (goc), dải dưới: bàn ăn
-    ban=("source_ban.png", "", PHOTO),                           # ảnh 07 (goc): bàn ăn dưới ô kính cao và vách lam
+    ban=("source_ban.png", "doodle_ep11_ban.npz", PHOTO),                           # ảnh 07 (goc): bàn ăn dưới ô kính cao và vách lam
 )
 WW = dict(vuont=1600, band=1600)
 
@@ -49,28 +49,30 @@ def STRIP(cx, cy, z=1.0):
 
 
 SC = [
-    dict(move="push", part="A", blk=1, img="lam", head="Vách lam gỗ và mặt kính trong suốt", cam=((1000, 1100), 2.1, (540, 925)), dark=True, dd=[],
-         vo="Vì sao ánh sáng đi qua một vách lam gỗ lại dễ chịu hơn ánh sáng đi thẳng qua mặt kính?"),
-    dict(move="hold", part="B", blk=2, img="dg5", head="Ánh sáng tự nhiên là việc của nội thất", cam=STRIP(1080, 492), free=True, dark=False, dd=[],
-         vo="Hai tác giả Kilmer coi việc điều khiển ánh sáng tự nhiên là việc của người làm nội thất, chứ không chỉ là chuyện chọn đèn.",
-         tts="Hai tác giả Kin-mơ coi việc điều khiển ánh sáng tự nhiên là việc của người làm nội thất, chứ không chỉ là chuyện chọn đèn."),
+    dict(move="push", part="A", blk=1, img="ban", head="Ánh sáng từ trên cao và kính ngang tầm mắt", cam=((700, 1100), 2.1, (540, 925)), dark=True, dd=[],
+         vo="Vì sao ánh sáng từ trên cao qua vách lam lại dịu hơn ánh sáng từ kính ngang tầm mắt?"),
+    dict(move="pan_r", part="B", blk=2, img="vuon", head="Theo Kilmer & Kilmer (2014), đây là việc của nội thất", cam=((800, 1200), 2.1, (540, 925)), dark=True, dd=[],
+         vo="Năm 2014, hai tác giả Kilmer coi việc điều khiển ánh sáng tự nhiên là việc của người làm nội thất.",
+         tts="Năm hai nghìn không trăm mười bốn, hai tác giả Kin-mơ coi việc điều khiển ánh sáng tự nhiên là việc của người làm nội thất."),
     dict(move="push", part="C", blk=2, img="dg5l", head="Kính ngang tầm mắt gây vệt nắng gắt", cam=STRIP(545, 492, 0.58), free=True, dark=False, dd=[],
          vo="Theo cách tụi mình hiểu, kính ngang tầm mắt đưa nắng vào thành vệt gắt trên sàn và đặt mảng trời chói trước mắt."),
     dict(move="pan_r", part="C", blk=2, img="dg5", head="Ánh sáng chạm tường trước thì dịu hơn", cam=STRIP(1080, 492), free=True, dark=False, dd=[],
-         vo="Còn ánh sáng chạm vào tường, trần hay tấm lam trước rồi mới hắt xuống người, thì khi tới mắt, nó đã dịu đi nhiều."),
+         vo="Còn ánh sáng từ ô kính cao rơi lên tường, trần hay vách lam trước rồi mới tới người, nên khi tới mắt đã dịu đi nhiều."),
     dict(move="pan_u", part="D", blk=3, img="mc", head="Ô kính cao sát mái ở Union Street House", cam=STRIP(1250, 625, 1.04), free=True, dark=False, dd=[],
-         vo="Union Street House ở Melbourne là một ví dụ. Ở đó, ánh sáng xuống bàn ăn đi vào từ một ô kính cao sát mái.",
-         tts="Diu-ni-ơn Xtrít Hao-xơ ở Meo-bơn là một ví dụ. Ở đó, ánh sáng xuống bàn ăn đi vào từ một ô kính cao sát mái."),
-    dict(move="pull", part="D", blk=3, img="lam", head="Ánh sáng qua vách lam rồi mới xuống bàn ăn", cam=((1000, 1000), 2.2, (540, 925)), dark=True, dd=["lab_x", "x_arr", "lab_r", "r_arr"],
-         vo="Ngay dưới ô kính là vách lam gỗ của gác lửng, nên ánh sáng xuyên qua vách lam, rơi lên tường gỗ trước, rồi mới xuống bàn ăn."),
-    dict(move="pan_r", part="D", blk=3, img="band", head="Mặt bàn ăn không có vệt nắng nào", cam=LAND("band", 1050, 534), free=True, dark=True, dd=["t_ring", "t_arr", "lab_t"],
+         vo="Ở Union Street House tại Melbourne, ánh sáng xuống bàn ăn đi vào từ một ô kính cao sát mái.",
+         tts="Ở Diu-ni-ơn Xtrít Hao-xơ tại Meo-bơn, ánh sáng xuống bàn ăn đi vào từ một ô kính cao sát mái."),
+    dict(move="pull", part="D", blk=3, img="lam", head="Đường đi của ánh sáng từ ô kính cao", cam=((1000, 1000), 2.2, (540, 925)), dark=True, dd=["lab_x", "x_arr", "lab_r", "r_arr"],
+         vo="Ngay dưới ô kính là vách lam gỗ của gác lửng, nên ánh sáng phải xuyên qua vách lam rồi mới xuống bếp và bàn ăn."),
+    dict(move="pan_r", part="D", blk=3, img="band", head="Bàn ăn dưới thông tầng", cam=LAND("band", 1050, 534), free=True, dark=True, dd=["t_ring", "t_arr", "lab_t"],
          vo="Trong ảnh chụp bàn ăn, mặt bàn không có một vệt nắng nào."),
-    dict(move="push", part="F", blk=4, img="lam", head="Vách lam là lớp lọc ngay trong nhà", cam=((1250, 1100), 2.2, (540, 925)), dark=True, dd=["l_out", "l_arr", "lab_l"],
-         vo="Nói cách khác, vách lam là một lớp lọc nằm ngay trong nhà, có thể thêm vào ô cửa sẵn có mà không cần đục tường."),
-    dict(move="pan_l", part="F", blk=4, img="vuont", head="Giữ mặt kính và chặn nắng ở phía ngoài", cam=LAND("vuont", 800, 534), free=True, dark=True, dd=["lab_h", "h_arr", "lab_c", "c_arr"],
-         vo="Vì vậy, tụi mình nghĩ nhà hướng tây không nhất thiết phải bỏ kính, mà nên chặn nắng chiều phía ngoài bằng lam hay hàng cây."),
-    dict(move="pull", part="H", blk=5, img="ban", head="Ánh sáng chạm vào đâu trước khi tới mắt", cam=((800, 1100), 2.1, (540, 925)), dark=True, dd=[],
-         vo="Từ đó, mỗi lần làm một ô cửa, tụi mình hỏi ánh sáng sẽ chạm vào đâu trước khi tới mắt người, chứ không chỉ hỏi mở bao nhiêu kính."),
+    dict(move="push", part="F", blk=4, img="lam", head="Lớp lọc thêm được vào ô cửa sẵn có", cam=((1250, 1100), 2.2, (540, 925)), dark=True, dd=["l_out", "l_arr", "lab_l"],
+         vo="Theo tụi mình, vách lam là một lớp lọc nằm ngay trong nhà, chủ nhà có thể thêm vào ô cửa sẵn có mà không cần đục tường."),
+    dict(move="pan_d", part="F", blk=4, img="ban", head="Giữ mặt kính, thêm vách lam phía trong", cam=((800, 1100), 2.1, (540, 925)), dark=True, dd=["lab_v", "v_arr"],
+         vo="Vì vậy, với nhà phố hướng tây, tụi mình nghĩ không nhất thiết phải bỏ mặt kính, mà có thể đặt phía trong một vách lam gỗ."),
+    dict(move="pull", part="H", blk=5, img="ban", head="Câu trả lời nằm ở đường đi của ánh sáng", cam=((1000, 1150), 2.1, (540, 925)), dark=True, dd=[],
+         vo="Vậy ánh sáng dịu là nhờ chạm vào lam và tường trước khi tới người."),
+    dict(move="hold", part="H", blk=5, img="vuont", head="Câu hỏi mỗi khi vẽ một ô cửa", cam=LAND("vuont", 800, 534), free=True, dark=True, dd=[],
+         vo="Từ nay, mỗi lần vẽ ô cửa, tụi mình sẽ hỏi ánh sáng chạm vào đâu trước, chứ không chỉ hỏi nên mở bao nhiêu kính."),
     dict(move="push", part="I", blk=5, img="ban", head="end", cam="END", dark=False, vo="", dd=[],
          say="Bài phân tích đầy đủ về ánh sáng tự nhiên trong nhà nằm ở phần bình luận."),
 ]

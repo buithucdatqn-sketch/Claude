@@ -125,13 +125,13 @@ L = {}
 w = 6
 L["lam"] = dict(
     # cảnh 6: ánh sáng xuyên qua lam rồi mới xuống, rơi lên tường gỗ trước
-    lab_x=label("ánh sáng xuyên/qua vách lam", (420, 790), 76),
+    lab_x=label("phía sau lam/là ô kính sáng", (420, 790), 76),
     x_arr=arrow([(930, 880), (1030, 920), (1120, 965)], w, DASH(w), 1.5, 1),
-    lab_r=label("rơi lên tường gỗ trước,/rồi mới xuống bàn ăn", (400, 1150), 66),
+    lab_r=label("vệt sáng qua lam/in trên tường gỗ", (400, 1150), 66),
     r_arr=arrow([(900, 1310), (860, 1360), (820, 1405)], w, DASH(w), 1.5, 2),
     # cảnh 9: lam gỗ là lớp lọc nằm ngay trong nhà
     l_out=poly([(1120, 790), (1495, 745), (1495, 1370), (1125, 1380)], w, DASH(w), 2.0, 3),
-    lab_l=label("lớp lọc/ngay trong nhà", (430, 900), 84),
+    lab_l=label("vách lam gỗ/của gác lửng", (430, 900), 84),
     l_arr=arrow([(950, 1010), (1030, 1030), (1110, 1050)], w, DASH(w), 1.5, 4),
     # cảnh 11: lam gỗ ở xứ nồm ẩm
     lab_m=label("ở xứ nồm ẩm, chọn gỗ/và lớp hoàn thiện kỹ", (560, 960), 62),
@@ -158,6 +158,13 @@ L["vuon"] = dict(
     r_out=poly([(835, 830), (1330, 820), (1335, 1480), (840, 1490)], w, DASH(w), 2.0, 10),
     lab_rm=label("mặt kính/giữ nguyên", (300, 950), 66),
     rm_arr=arrow([(640, 1090), (730, 1105), (825, 1120)], w, DASH(w), 1.5, 11),
+)
+
+# ban: ảnh 07 gốc, bàn ăn dưới ô kính cao và vách lam gác lửng (1600x2400, zoom kín)
+w = 6
+L["ban"] = dict(
+    lab_v=label("vách lam gỗ/đặt phía trong", (300, 1000), 70),
+    v_arr=arrow([(430, 990), (425, 940), (420, 880)], w, DASH(w), 1.0, 14),
 )
 
 os.makedirs(OUT + "doodle_preview", exist_ok=True)
