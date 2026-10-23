@@ -2,38 +2,38 @@
  {
   "blk": 1,
   "t": "0–7.26s",
-  "head": "Kính lớn mà vẫn kéo rèm cản sáng",
-  "loi": "Ba giờ chiều, ở dãy nhà phố quay về hướng tây, gần như căn nào cũng kéo kín rèm cản sáng.",
-  "tts": "Ba giờ chiều, ở dãy nhà phố quay về hướng tây, gần như căn nào cũng kéo kín rèm cản sáng.",
-  "part": "A"
- },
- {
-  "blk": 1,
-  "t": "7.26–13.59s",
-  "head": "Phòng khách vẫn bật đèn giữa ban ngày",
-  "loi": "Mặt kính lớn vốn làm ra để phòng khách sáng sủa, vậy mà trong nhà vẫn bật đèn.",
-  "tts": "Mặt kính lớn vốn làm ra để phòng khách sáng sủa, vậy mà trong nhà vẫn bật đèn.",
+  "head": "Vách lam gỗ và mặt kính trong suốt",
+  "loi": "Vì sao ánh sáng đi qua một vách lam gỗ lại dễ chịu hơn ánh sáng đi thẳng qua mặt kính?",
+  "tts": "Vì sao ánh sáng đi qua một vách lam gỗ lại dễ chịu hơn ánh sáng đi thẳng qua mặt kính?",
   "part": "A"
  },
  {
   "blk": 2,
-  "t": "13.59–23.04s",
+  "t": "7.26–16.09s",
+  "head": "Ánh sáng tự nhiên là việc của nội thất",
+  "loi": "Hai tác giả Kilmer coi việc điều khiển ánh sáng tự nhiên là việc của người làm nội thất, chứ không chỉ là chuyện chọn đèn.",
+  "tts": "Hai tác giả Kin-mơ coi việc điều khiển ánh sáng tự nhiên là việc của người làm nội thất, chứ không chỉ là chuyện chọn đèn.",
+  "part": "B"
+ },
+ {
+  "blk": 2,
+  "t": "16.09–24.29s",
   "head": "Kính ngang tầm mắt gây vệt nắng gắt",
-  "loi": "Theo tụi mình hiểu, mặt kính ấy ngang tầm mắt nên đưa nắng vào thành vệt gắt trên sàn và làm chói mắt, chủ nhà đành kéo rèm.",
-  "tts": "Theo tụi mình hiểu, mặt kính ấy ngang tầm mắt nên đưa nắng vào thành vệt gắt trên sàn và làm chói mắt, chủ nhà đành kéo rèm.",
+  "loi": "Theo cách tụi mình hiểu, kính ngang tầm mắt đưa nắng vào thành vệt gắt trên sàn và đặt mảng trời chói trước mắt.",
+  "tts": "Theo cách tụi mình hiểu, kính ngang tầm mắt đưa nắng vào thành vệt gắt trên sàn và đặt mảng trời chói trước mắt.",
   "part": "C"
  },
  {
   "blk": 2,
-  "t": "23.04–32.18s",
+  "t": "24.29–32.8s",
   "head": "Ánh sáng chạm tường trước thì dịu hơn",
-  "loi": "Còn ánh sáng từ ô kính cao sát trần rơi lên tường và trần trước, nên khi hắt xuống tới mắt người, nó đã dịu đi nhiều.",
-  "tts": "Còn ánh sáng từ ô kính cao sát trần rơi lên tường và trần trước, nên khi hắt xuống tới mắt người, nó đã dịu đi nhiều.",
+  "loi": "Còn ánh sáng chạm vào tường, trần hay tấm lam trước rồi mới hắt xuống người, thì khi tới mắt, nó đã dịu đi nhiều.",
+  "tts": "Còn ánh sáng chạm vào tường, trần hay tấm lam trước rồi mới hắt xuống người, thì khi tới mắt, nó đã dịu đi nhiều.",
   "part": "C"
  },
  {
   "blk": 3,
-  "t": "32.18–40.69s",
+  "t": "32.8–41.31s",
   "head": "Ô kính cao sát mái ở Union Street House",
   "loi": "Union Street House ở Melbourne là một ví dụ. Ở đó, ánh sáng xuống bàn ăn đi vào từ một ô kính cao sát mái.",
   "tts": "Diu-ni-ơn Xtrít Hao-xơ ở Meo-bơn là một ví dụ. Ở đó, ánh sáng xuống bàn ăn đi vào từ một ô kính cao sát mái.",
@@ -41,7 +41,7 @@
  },
  {
   "blk": 3,
-  "t": "40.69–50.14s",
+  "t": "41.31–50.76s",
   "head": "Ánh sáng qua vách lam rồi mới xuống bàn ăn",
   "loi": "Ngay dưới ô kính là vách lam gỗ của gác lửng, nên ánh sáng xuyên qua vách lam, rơi lên tường gỗ trước, rồi mới xuống bàn ăn.",
   "tts": "Ngay dưới ô kính là vách lam gỗ của gác lửng, nên ánh sáng xuyên qua vách lam, rơi lên tường gỗ trước, rồi mới xuống bàn ăn.",
@@ -49,7 +49,7 @@
  },
  {
   "blk": 3,
-  "t": "50.14–54.9s",
+  "t": "50.76–55.52s",
   "head": "Mặt bàn ăn không có vệt nắng nào",
   "loi": "Trong ảnh chụp bàn ăn, mặt bàn không có một vệt nắng nào.",
   "tts": "Trong ảnh chụp bàn ăn, mặt bàn không có một vệt nắng nào.",
@@ -57,7 +57,7 @@
  },
  {
   "blk": 4,
-  "t": "54.9–63.72s",
+  "t": "55.52–64.34s",
   "head": "Vách lam là lớp lọc ngay trong nhà",
   "loi": "Nói cách khác, vách lam là một lớp lọc nằm ngay trong nhà, có thể thêm vào ô cửa sẵn có mà không cần đục tường.",
   "tts": "Nói cách khác, vách lam là một lớp lọc nằm ngay trong nhà, có thể thêm vào ô cửa sẵn có mà không cần đục tường.",
@@ -65,7 +65,7 @@
  },
  {
   "blk": 4,
-  "t": "63.72–72.55s",
+  "t": "64.34–73.17s",
   "head": "Giữ mặt kính và chặn nắng ở phía ngoài",
   "loi": "Vì vậy, tụi mình nghĩ nhà hướng tây không nhất thiết phải bỏ kính, mà nên chặn nắng chiều phía ngoài bằng lam hay hàng cây.",
   "tts": "Vì vậy, tụi mình nghĩ nhà hướng tây không nhất thiết phải bỏ kính, mà nên chặn nắng chiều phía ngoài bằng lam hay hàng cây.",
@@ -73,15 +73,15 @@
  },
  {
   "blk": 5,
-  "t": "72.55–81.69s",
+  "t": "73.17–83.25s",
   "head": "Ánh sáng chạm vào đâu trước khi tới mắt",
-  "loi": "Vậy dãy nhà phố ấy có lẽ không thiếu kính, mà thiếu một lớp lam để lọc và một mặt tường cho ánh sáng chạm vào trước.",
-  "tts": "Vậy dãy nhà phố ấy có lẽ không thiếu kính, mà thiếu một lớp lam để lọc và một mặt tường cho ánh sáng chạm vào trước.",
+  "loi": "Từ đó, mỗi lần làm một ô cửa, tụi mình hỏi ánh sáng sẽ chạm vào đâu trước khi tới mắt người, chứ không chỉ hỏi mở bao nhiêu kính.",
+  "tts": "Từ đó, mỗi lần làm một ô cửa, tụi mình hỏi ánh sáng sẽ chạm vào đâu trước khi tới mắt người, chứ không chỉ hỏi mở bao nhiêu kính.",
   "part": "H"
  },
  {
   "blk": 5,
-  "t": "81.69–87.7s",
+  "t": "83.25–89.26s",
   "head": "end",
   "loi": "Bài phân tích đầy đủ về ánh sáng tự nhiên trong nhà nằm ở phần bình luận.",
   "tts": "Bài phân tích đầy đủ về ánh sáng tự nhiên trong nhà nằm ở phần bình luận.",

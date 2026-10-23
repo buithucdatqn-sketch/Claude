@@ -552,11 +552,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–9.45s", head="Kính ngang tầm mắt gây vệt nắng gắt", vo="Theo tụi mình hiểu, mặt kính ấy ngang tầm mắt nên đưa nắng vào thành vệt gắt trên sàn và làm chói mắt, chủ nhà đành kéo rèm.",
+    dict(t="0–7.26s", head="Vách lam gỗ và mặt kính trong suốt", vo="Vì sao ánh sáng đi qua một vách lam gỗ lại dễ chịu hơn ánh sáng đi thẳng qua mặt kính?",
+         cam=((1080, 492), 1.0, (540, 863)), dark=True, dd=[], move="hold"),
+    dict(t="7.26–16.09s", head="Ánh sáng tự nhiên là việc của nội thất", vo="Hai tác giả Kilmer coi việc điều khiển ánh sáng tự nhiên là việc của người làm nội thất, chứ không chỉ là chuyện chọn đèn.",
          cam=((1080, 492), 1.0, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="9.45–18.59s", head="Ánh sáng chạm tường trước thì dịu hơn", vo="Còn ánh sáng từ ô kính cao sát trần rơi lên tường và trần trước, nên khi hắt xuống tới mắt người, nó đã dịu đi nhiều.",
-         cam=((1080, 492), 1.0, (540, 863)), dark=False, dd=[], move="pan_r"),
-    dict(t="18.59–19.09s", head="end", vo="",
+    dict(t="16.09–16.59s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

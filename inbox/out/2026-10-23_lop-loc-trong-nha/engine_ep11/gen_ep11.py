@@ -49,14 +49,15 @@ def STRIP(cx, cy, z=1.0):
 
 
 SC = [
-    dict(move="push", part="A", blk=1, img="dg5l", head="Kính lớn mà vẫn kéo rèm cản sáng", cam=STRIP(545, 492, 0.58), free=True, dark=False, dd=[],
-         vo="Ba giờ chiều, ở dãy nhà phố quay về hướng tây, gần như căn nào cũng kéo kín rèm cản sáng."),
-    dict(move="hold", part="A", blk=1, img="dg5l", head="Phòng khách vẫn bật đèn giữa ban ngày", cam=STRIP(545, 492, 0.58), free=True, dark=False, dd=[],
-         vo="Mặt kính lớn vốn làm ra để phòng khách sáng sủa, vậy mà trong nhà vẫn bật đèn."),
-    dict(move="pull", part="C", blk=2, img="dg5l", head="Kính ngang tầm mắt gây vệt nắng gắt", cam=STRIP(545, 492, 0.58), free=True, dark=False, dd=[],
-         vo="Theo tụi mình hiểu, mặt kính ấy ngang tầm mắt nên đưa nắng vào thành vệt gắt trên sàn và làm chói mắt, chủ nhà đành kéo rèm."),
+    dict(move="push", part="A", blk=1, img="lam", head="Vách lam gỗ và mặt kính trong suốt", cam=((1000, 1100), 2.1, (540, 925)), dark=True, dd=[],
+         vo="Vì sao ánh sáng đi qua một vách lam gỗ lại dễ chịu hơn ánh sáng đi thẳng qua mặt kính?"),
+    dict(move="hold", part="B", blk=2, img="dg5", head="Ánh sáng tự nhiên là việc của nội thất", cam=STRIP(1080, 492), free=True, dark=False, dd=[],
+         vo="Hai tác giả Kilmer coi việc điều khiển ánh sáng tự nhiên là việc của người làm nội thất, chứ không chỉ là chuyện chọn đèn.",
+         tts="Hai tác giả Kin-mơ coi việc điều khiển ánh sáng tự nhiên là việc của người làm nội thất, chứ không chỉ là chuyện chọn đèn."),
+    dict(move="push", part="C", blk=2, img="dg5l", head="Kính ngang tầm mắt gây vệt nắng gắt", cam=STRIP(545, 492, 0.58), free=True, dark=False, dd=[],
+         vo="Theo cách tụi mình hiểu, kính ngang tầm mắt đưa nắng vào thành vệt gắt trên sàn và đặt mảng trời chói trước mắt."),
     dict(move="pan_r", part="C", blk=2, img="dg5", head="Ánh sáng chạm tường trước thì dịu hơn", cam=STRIP(1080, 492), free=True, dark=False, dd=[],
-         vo="Còn ánh sáng từ ô kính cao sát trần rơi lên tường và trần trước, nên khi hắt xuống tới mắt người, nó đã dịu đi nhiều."),
+         vo="Còn ánh sáng chạm vào tường, trần hay tấm lam trước rồi mới hắt xuống người, thì khi tới mắt, nó đã dịu đi nhiều."),
     dict(move="pan_u", part="D", blk=3, img="mc", head="Ô kính cao sát mái ở Union Street House", cam=STRIP(1250, 625, 1.04), free=True, dark=False, dd=[],
          vo="Union Street House ở Melbourne là một ví dụ. Ở đó, ánh sáng xuống bàn ăn đi vào từ một ô kính cao sát mái.",
          tts="Diu-ni-ơn Xtrít Hao-xơ ở Meo-bơn là một ví dụ. Ở đó, ánh sáng xuống bàn ăn đi vào từ một ô kính cao sát mái."),
@@ -69,7 +70,7 @@ SC = [
     dict(move="pan_l", part="F", blk=4, img="vuont", head="Giữ mặt kính và chặn nắng ở phía ngoài", cam=LAND("vuont", 800, 534), free=True, dark=True, dd=["lab_h", "h_arr", "lab_c", "c_arr"],
          vo="Vì vậy, tụi mình nghĩ nhà hướng tây không nhất thiết phải bỏ kính, mà nên chặn nắng chiều phía ngoài bằng lam hay hàng cây."),
     dict(move="pull", part="H", blk=5, img="ban", head="Ánh sáng chạm vào đâu trước khi tới mắt", cam=((800, 1100), 2.1, (540, 925)), dark=True, dd=[],
-         vo="Vậy dãy nhà phố ấy có lẽ không thiếu kính, mà thiếu một lớp lam để lọc và một mặt tường cho ánh sáng chạm vào trước."),
+         vo="Từ đó, mỗi lần làm một ô cửa, tụi mình hỏi ánh sáng sẽ chạm vào đâu trước khi tới mắt người, chứ không chỉ hỏi mở bao nhiêu kính."),
     dict(move="push", part="I", blk=5, img="ban", head="end", cam="END", dark=False, vo="", dd=[],
          say="Bài phân tích đầy đủ về ánh sáng tự nhiên trong nhà nằm ở phần bình luận."),
 ]
@@ -254,7 +255,7 @@ for n, ks in enumerate(runs(), 1):
 json.dump(RUNS, open(OUT + "engine_ep11/runs.json", "w"), ensure_ascii=False, indent=1)
 
 # ảnh bìa 1080x1920: cảnh rộng trên ảnh 06 (vách lam gác lửng), tiêu đề ngắn + câu chốt
-COVER = [dict(img="lam", head="Ánh sáng chạm vào đâu trước khi tới mắt người?", vo="Nhà không thiếu kính, mà thiếu một bề mặt để ánh sáng chạm vào trước.", dark=False),
+COVER = [dict(img="lam", head="Vì sao ánh sáng qua vách lam dễ chịu hơn?", vo="Ánh sáng chạm vào lam và tường gỗ trước khi tới mắt người.", dark=False),
          dict(img="lam", head="end", vo="", dark=False)]
 build("engine_storyboard_v7.py", "cover_ep11.py", False,
       wrap_data([scene_line(COVER[0], 0, 3, "WIDE", []), scene_line(COVER[1], 3, 4, "END_SAFE", [])],
