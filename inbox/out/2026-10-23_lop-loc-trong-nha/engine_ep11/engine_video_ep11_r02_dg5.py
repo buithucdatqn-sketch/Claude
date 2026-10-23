@@ -552,13 +552,15 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–8.2s", head="Kính chói, rèm kín: có cách nào ở giữa?", vo="Kính lớn thì chói, mà kéo rèm cản sáng kín mít lại phải bật đèn giữa ban ngày. Có cách nào ở giữa không?",
+    dict(t="0–7.58s", head="Kính lớn mà vẫn kéo rèm, bật đèn", vo="Ba giờ chiều, nhà phố hướng tây gần như căn nào cũng kéo kín rèm sau mặt kính lớn, rồi bật đèn.",
          cam=((1080, 492), 1.0, (540, 863)), dark=True, dd=[], move="hold"),
-    dict(t="8.2–17.02s", head="Kính ngang tầm mắt: nắng gắt, trời chói", vo="Theo cách tụi mình hiểu, kính lớn ngang tầm mắt vừa đưa nắng vào thành vệt gắt trên sàn, vừa đặt mảng trời chói trước mắt.",
+    dict(t="7.58–14.84s", head="Nguyên nhân nằm ở đường đi của ánh sáng", vo="Theo cách tụi mình hiểu, nguyên nhân không nằm ở chỗ thiếu rèm, mà nằm ở đường đi của ánh sáng.",
          cam=((1080, 492), 1.0, (540, 863)), dark=False, dd=[], move="pan_r"),
-    dict(t="17.02–24.91s", head="Chạm tường trước, tới mắt đã dịu", vo="Còn khi ánh sáng chạm vào tường hay tấm lam trước rồi mới tới người, thì tới mắt nó đã dịu đi nhiều.",
+    dict(t="14.84–23.35s", head="Kính ngang tầm mắt gây vệt nắng gắt", vo="Mặt kính ngang tầm mắt đưa nắng vào thành vệt gắt trên sàn, đồng thời đặt một mảng trời rất sáng ngay trong tầm nhìn.",
          cam=((1080, 492), 1.0, (540, 863)), dark=False, dd=[], move="pan_l"),
-    dict(t="24.91–25.41s", head="end", vo="",
+    dict(t="23.35–30.93s", head="Ánh sáng chạm tường trước thì dịu hơn", vo="Trong khi đó, ánh sáng rơi lên tường trước rồi mới hắt xuống người thì khi tới mắt đã dịu đi nhiều.",
+         cam=((1080, 492), 1.0, (540, 863)), dark=False, dd=[], move="hold"),
+    dict(t="30.93–31.43s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

@@ -551,11 +551,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–7.89s", head="Chạm tường trước, tới mắt đã dịu", vo="Còn khi ánh sáng chạm vào tường hay tấm lam trước rồi mới tới người, thì tới mắt nó đã dịu đi nhiều.",
+    dict(t="0–7.58s", head="Ánh sáng chạm tường trước thì dịu hơn", vo="Trong khi đó, ánh sáng rơi lên tường trước rồi mới hắt xuống người thì khi tới mắt đã dịu đi nhiều.",
          cam=((1250, 625), 1.04, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="7.89–16.4s", head="Union Street House: ô kính cao, gác lửng có lam", vo="Thử nhìn nhà Union Street ở Melbourne. Ánh sáng vào từ ô kính cao sát mái, ngay dưới là gác lửng có vách lam gỗ.",
+    dict(t="7.58–17.03s", head="Ô kính cao sát mái ở Union Street House", vo="Ở nhà Union Street tại Melbourne, ánh sáng vào từ một ô kính cao sát mái, và ngay dưới ô kính là gác lửng có vách lam gỗ.",
          cam=((1250, 625), 1.04, (540, 863)), dark=False, dd=[], move="pan_u"),
-    dict(t="16.4–16.9s", head="end", vo="",
+    dict(t="17.03–17.53s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

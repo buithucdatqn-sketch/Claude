@@ -27,7 +27,7 @@ sheet = Image.new("RGB", (MX * 2 + cols * PW + (cols - 1) * GAP, TOP + rows * (P
 d = ImageDraw.Draw(sheet)
 d.text((MX, 38), "AH Decode · Lớp lọc ngay trong nhà", font=F(60), fill=(255, 255, 255))
 d.text((MX, 118), "Ảnh của bài 03: ảnh gốc 08, 06, 07 (anh/goc/), diagram 05, mặt cắt 04 · Union Street House", font=F(34), fill=(200, 194, 186))
-d.text((MX, 158), "Nét doodle trắng nét đứt vẽ mới trên ảnh, lộ dần theo lời (cảnh 5, 6, 7, 8, 9) · camera trôi nhẹ", font=F(34), fill=(200, 194, 186))
+d.text((MX, 158), "Nét doodle trắng nét đứt vẽ mới trên ảnh, lộ dần theo lời (cảnh 6, 7, 8, 9) · camera trôi nhẹ", font=F(34), fill=(200, 194, 186))
 for i, sc in enumerate(SC):
     r, c = divmod(i, cols)
     x, y = MX + c * (PW + GAP), TOP + r * (PH + 120)

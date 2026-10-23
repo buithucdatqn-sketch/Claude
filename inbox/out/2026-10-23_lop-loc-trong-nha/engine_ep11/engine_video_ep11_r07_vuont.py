@@ -22,7 +22,7 @@ W, H, SS = 1080, 1920, 2
 FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
 if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
-CREDIT = "Ảnh dự án: Union Street House, Melbourne · Prior Barraclough · ảnh Ben Hosking"
+CREDIT = "Ảnh: Union Street House · Prior Barraclough · Ben Hosking · Nguồn: Kilmer & Kilmer (2014)"
 HEAD = "AH DECODE · LỚP LỌC ÁNH SÁNG"
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
@@ -552,11 +552,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–8.2s", head="Lam gỗ: lớp lọc ngay trong nhà", vo="Mà lam gỗ là lớp lọc nằm ngay trong nhà. Chủ nhà thêm được vào một ô cửa sẵn có, không cần đục tường.",
+    dict(t="0–8.82s", head="Vách lam là lớp lọc ngay trong nhà", vo="Vách lam ở đây là một lớp lọc nằm ngay trong nhà, có thể thêm vào một ô cửa sẵn có mà không cần đục tường.",
          cam=((800, 534), 2.05, (540, 887)), dark=True, dd=[], move="hold"),
-    dict(t="8.2–17.02s", head="Kilmer & Kilmer (2014): chặn ngoài, làm dịu trong bằng rèm", vo="Sách của hai tác giả Kilmer cũng khuyên, nắng tây gắt thì chặn từ ngoài bằng cây, mái hiên, hoặc làm dịu từ trong bằng rèm.",
+    dict(t="8.82–17.65s", head="Chặn nắng bên ngoài, làm dịu bên trong", vo="Sách hướng dẫn nội thất cũng khuyên chặn nắng tây gắt từ bên ngoài bằng cây, mái hiên, hoặc làm dịu từ bên trong bằng rèm.",
          cam=((800, 534), 2.05, (540, 887)), dark=True, dd=['lab_h', 'h_arr', 'lab_c', 'c_arr'], move="pan_l"),
-    dict(t="17.02–17.52s", head="end", vo="",
+    dict(t="17.65–18.15s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

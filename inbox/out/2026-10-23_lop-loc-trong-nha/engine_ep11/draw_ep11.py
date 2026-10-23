@@ -134,14 +134,14 @@ L["lam"] = dict(
     lab_l=label("lớp lọc/ngay trong nhà", (430, 900), 84),
     l_arr=arrow([(950, 1010), (1030, 1030), (1110, 1050)], w, DASH(w), 1.5, 4),
     # cảnh 11: lam gỗ ở xứ nồm ẩm
-    lab_m=label("xứ nồm ẩm: chọn gỗ/và lớp hoàn thiện kỹ", (560, 960), 62),
+    lab_m=label("ở xứ nồm ẩm, chọn gỗ/và lớp hoàn thiện kỹ", (560, 960), 62),
     m_arr=arrow([(1240, 1080), (1290, 1110), (1340, 1150)], w, DASH(w), 1.0, 5),
 )
 # band: ảnh 07 gốc, cắt dải dưới (bàn ăn), 1600x1067, khung ngang zoom kín
 w = 6
 L["band"] = dict(
     t_ring=loop((1100, 725), 400, 95, w, DASH(w), 2.0, 6, tilt=-2),
-    lab_t=label("mặt bàn:/không vệt nắng nào", (680, 330), 60),
+    lab_t=label("mặt bàn không có/vệt nắng nào", (680, 330), 60),
     t_arr=arrow([(1000, 500), (1040, 560), (1070, 615)], w, DASH(w), 1.0, 7),
 )
 # vuont: ảnh 08 gốc, cắt dải trên (mái hiên, tán cây), 1600x1067, khung ngang zoom kín
@@ -156,7 +156,7 @@ L["vuont"] = dict(
 w = 6
 L["vuon"] = dict(
     r_out=poly([(835, 830), (1330, 820), (1335, 1480), (840, 1490)], w, DASH(w), 2.0, 10),
-    lab_rm=label("lớp lọc sau kính:/rèm mỏng,/hay vách lam", (300, 900), 62),
+    lab_rm=label("rèm mỏng/hay vách lam/đặt phía trong", (300, 900), 62),
     rm_arr=arrow([(640, 1090), (730, 1105), (825, 1120)], w, DASH(w), 1.5, 11),
 )
 

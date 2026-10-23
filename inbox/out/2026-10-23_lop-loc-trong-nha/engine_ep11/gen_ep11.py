@@ -26,7 +26,7 @@ MCC = "Mặt cắt: bản vẽ của Prior Barraclough, nguồn ArchDaily (2023)
 # ảnh làm việc: (file, npz doodle, credit). Ảnh chụp lấy từ anh/goc/ của bài (ảnh gốc không doodle), nét vẽ mới bằng draw_ep11.py
 IMGS = dict(
     vuon=("source_vuon.png", "doodle_ep11_vuon.npz", PHOTO),     # ảnh 08 (goc): mặt kính phía bắc ra vườn
-    vuont=("source_vuont.png", "doodle_ep11_vuont.npz", PHOTO),  # ảnh 08 (goc), dải trên: mái hiên, tán cây
+    vuont=("source_vuont.png", "doodle_ep11_vuont.npz", "Ảnh: Union Street House · Prior Barraclough · Ben Hosking · Nguồn: Kilmer & Kilmer (2014)"),  # ảnh 08 (goc), dải trên: mái hiên, tán cây
     dg5=("source_dg5.png", "", DGC),                             # ảnh 05: diagram cửa ngang tầm mắt / cửa sát trần (cắt dải hình)
     mc=("source_mc.png", "", MCC),                               # ảnh 04: mặt cắt dọc (cắt vùng gác lửng, mái cao)
     lam=("source_lam.png", "doodle_ep11_lam.npz", PHOTO),        # ảnh 06 (goc): vách lam gác lửng nhìn từ cầu thang
@@ -48,30 +48,29 @@ def STRIP(cx, cy, z=1.0):
 
 
 SC = [
-    dict(move="push", part="A", blk=1, img="vuon", head="Kính chói, rèm kín: có cách nào ở giữa?", cam=((800, 1200), 2.1, (540, 925)), dark=True, dd=[],
-         vo="Kính lớn thì chói, mà kéo rèm cản sáng kín mít lại phải bật đèn giữa ban ngày. Có cách nào ở giữa không?"),
-    dict(move="pan_r", part="C", blk=2, img="dg5", head="Kính ngang tầm mắt: nắng gắt, trời chói", cam=STRIP(1080, 492), free=True, dark=False, dd=[],
-         vo="Theo cách tụi mình hiểu, kính lớn ngang tầm mắt vừa đưa nắng vào thành vệt gắt trên sàn, vừa đặt mảng trời chói trước mắt."),
-    dict(move="pan_l", part="C", blk=2, img="dg5", head="Chạm tường trước, tới mắt đã dịu", cam=STRIP(1080, 492), free=True, dark=False, dd=[],
-         vo="Còn khi ánh sáng chạm vào tường hay tấm lam trước rồi mới tới người, thì tới mắt nó đã dịu đi nhiều."),
-    dict(move="pan_u", part="D", blk=3, img="mc", head="Union Street House: ô kính cao, gác lửng có lam", cam=STRIP(1250, 625, 1.04), free=True, dark=False, dd=[],
-         vo="Thử nhìn nhà Union Street ở Melbourne. Ánh sáng vào từ ô kính cao sát mái, ngay dưới là gác lửng có vách lam gỗ.",
-         tts="Thử nhìn nhà Diu-ni-ơn Xtrít ở Meo-bơn. Ánh sáng vào từ ô kính cao sát mái, ngay dưới là gác lửng có vách lam gỗ."),
+    dict(move="push", part="A", blk=1, img="vuon", head="Kính lớn mà vẫn kéo rèm, bật đèn", cam=((800, 1200), 2.1, (540, 925)), dark=True, dd=[],
+         vo="Ba giờ chiều, nhà phố hướng tây gần như căn nào cũng kéo kín rèm sau mặt kính lớn, rồi bật đèn."),
+    dict(move="pan_r", part="C", blk=2, img="dg5", head="Nguyên nhân nằm ở đường đi của ánh sáng", cam=STRIP(1080, 492), free=True, dark=False, dd=[],
+         vo="Theo cách tụi mình hiểu, nguyên nhân không nằm ở chỗ thiếu rèm, mà nằm ở đường đi của ánh sáng."),
+    dict(move="pan_l", part="C", blk=2, img="dg5", head="Kính ngang tầm mắt gây vệt nắng gắt", cam=STRIP(1080, 492), free=True, dark=False, dd=[],
+         vo="Mặt kính ngang tầm mắt đưa nắng vào thành vệt gắt trên sàn, đồng thời đặt một mảng trời rất sáng ngay trong tầm nhìn."),
+    dict(move="hold", part="C", blk=2, img="dg5", head="Ánh sáng chạm tường trước thì dịu hơn", cam=STRIP(1080, 492), free=True, dark=False, dd=[],
+         vo="Trong khi đó, ánh sáng rơi lên tường trước rồi mới hắt xuống người thì khi tới mắt đã dịu đi nhiều."),
+    dict(move="pan_u", part="D", blk=3, img="mc", head="Ô kính cao sát mái ở Union Street House", cam=STRIP(1250, 625, 1.04), free=True, dark=False, dd=[],
+         vo="Ở nhà Union Street tại Melbourne, ánh sáng vào từ một ô kính cao sát mái, và ngay dưới ô kính là gác lửng có vách lam gỗ.",
+         tts="Ở nhà Diu-ni-ơn Xtrít tại Meo-bơn, ánh sáng vào từ một ô kính cao sát mái, và ngay dưới ô kính là gác lửng có vách lam gỗ."),
     dict(move="pull", part="D", blk=3, img="lam", head="Ánh sáng xuyên qua lam rồi mới xuống", cam=((1000, 1000), 2.2, (540, 925)), dark=True, dd=["lab_x", "x_arr", "lab_r", "r_arr"],
-         vo="Nên ánh sáng phải xuyên qua vách lam, rơi lên tường gỗ trước, rồi mới xuống bếp và bàn ăn."),
-    dict(move="pan_r", part="D", blk=3, img="band", head="Bàn ăn: không có vệt nắng nào", cam=LAND("band", 1050, 534), free=True, dark=True, dd=["t_ring", "t_arr", "lab_t"],
-         vo="Nhìn lại ảnh chụp bàn ăn, mặt bàn không có một vệt nắng nào."),
-    dict(move="push", part="F", blk=4, img="lam", head="Lam gỗ: lớp lọc ngay trong nhà", cam=((1250, 1100), 2.2, (540, 925)), dark=True, dd=["l_out", "l_arr", "lab_l"],
-         vo="Mà lam gỗ là lớp lọc nằm ngay trong nhà. Chủ nhà thêm được vào một ô cửa sẵn có, không cần đục tường."),
-    dict(move="pan_l", part="B", blk=4, img="vuont", head="Kilmer & Kilmer (2014): chặn ngoài, làm dịu trong bằng rèm", cam=LAND("vuont", 800, 534), free=True, dark=True, dd=["lab_h", "h_arr", "lab_c", "c_arr"],
-         vo="Sách của hai tác giả Kilmer cũng khuyên, nắng tây gắt thì chặn từ ngoài bằng cây, mái hiên, hoặc làm dịu từ trong bằng rèm.",
-         tts="Sách của hai tác giả Kin-mơ cũng khuyên, nắng tây gắt thì chặn từ ngoài bằng cây, mái hiên, hoặc làm dịu từ trong bằng rèm."),
-    dict(move="pan_d", part="F", blk=4, img="vuon", head="Kính hướng tây: rèm mỏng hay vách lam", cam=((800, 1200), 2.1, (540, 925)), dark=True, dd=["r_out", "rm_arr", "lab_rm"],
-         vo="Nên tụi mình nghĩ, nhà có kính hướng tây không nhất thiết bỏ kính. Bên trong, thử treo rèm mỏng màu sáng hay vách lam gỗ."),
-    dict(move="pull", part="H", blk=5, img="ban", head="Có lẽ không thiếu kính, mà thiếu lớp lọc", cam=((800, 1100), 2.1, (540, 925)), dark=True, dd=[],
-         vo="Vậy giữa kính chói và rèm kín, vẫn còn một lớp lọc: tấm lam hay tấm rèm mỏng, cho ánh sáng dịu đi trước khi tới mắt."),
+         vo="Vì vậy ánh sáng phải xuyên qua vách lam và rơi lên tường gỗ trước, rồi mới xuống bếp và bàn ăn."),
+    dict(move="pan_r", part="D", blk=3, img="band", head="Mặt bàn ăn không có vệt nắng", cam=LAND("band", 1050, 534), free=True, dark=True, dd=["t_ring", "t_arr", "lab_t"],
+         vo="Nhờ đó, trong ảnh chụp bàn ăn, mặt bàn không có một vệt nắng nào."),
+    dict(move="push", part="F", blk=4, img="lam", head="Vách lam là lớp lọc ngay trong nhà", cam=((1250, 1100), 2.2, (540, 925)), dark=True, dd=["l_out", "l_arr", "lab_l"],
+         vo="Vách lam ở đây là một lớp lọc nằm ngay trong nhà, có thể thêm vào một ô cửa sẵn có mà không cần đục tường."),
+    dict(move="pan_d", part="F", blk=4, img="vuon", head="Giữ kính, thêm rèm mỏng hay vách lam", cam=((800, 1200), 2.1, (540, 925)), dark=True, dd=["r_out", "rm_arr", "lab_rm"],
+         vo="Vì vậy, tụi mình nghĩ nhà hướng tây không nhất thiết phải bỏ kính, chỉ cần đặt rèm mỏng màu sáng hay vách lam ở phía trong."),
+    dict(move="pull", part="H", blk=5, img="ban", head="Nhà phố ấy không thiếu kính", cam=((800, 1100), 2.1, (540, 925)), dark=True, dd=[],
+         vo="Nói cách khác, có lẽ các căn nhà ấy không thiếu kính, mà thiếu một lớp lam hay rèm để ánh sáng chạm vào trước khi tới người."),
     dict(move="push", part="I", blk=5, img="ban", head="end", cam="END", dark=False, vo="", dd=[],
-         say="Muốn đọc kỹ hơn, mọi người xem bài phân tích đầy đủ về ánh sáng tự nhiên trong nhà ở phần bình luận nha."),
+         say="Mọi người có thể đọc bài phân tích đầy đủ về ánh sáng tự nhiên trong nhà ở phần bình luận."),
 ]
 
 DOODLE = r'''
@@ -254,7 +253,7 @@ for n, ks in enumerate(runs(), 1):
 json.dump(RUNS, open(OUT + "engine_ep11/runs.json", "w"), ensure_ascii=False, indent=1)
 
 # ảnh bìa 1080x1920: cảnh rộng trên ảnh 06 (vách lam gác lửng), tiêu đề ngắn + câu chốt
-COVER = [dict(img="lam", head="Lớp lọc ngay trong nhà", vo="Giữa kính chói và rèm kín, còn tấm lam hay tấm rèm mỏng.", dark=False),
+COVER = [dict(img="lam", head="Ánh sáng chạm vào đâu trước khi tới mắt người?", vo="Vách lam và rèm mỏng là lớp lọc nằm ngay trong nhà.", dark=False),
          dict(img="lam", head="end", vo="", dark=False)]
 build("engine_storyboard_v7.py", "cover_ep11.py", False,
       wrap_data([scene_line(COVER[0], 0, 3, "WIDE", []), scene_line(COVER[1], 3, 4, "END_SAFE", [])],

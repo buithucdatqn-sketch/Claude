@@ -552,9 +552,9 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–8.2s", head="Kính chói, rèm kín: có cách nào ở giữa?", vo="Kính lớn thì chói, mà kéo rèm cản sáng kín mít lại phải bật đèn giữa ban ngày. Có cách nào ở giữa không?",
+    dict(t="0–7.58s", head="Kính lớn mà vẫn kéo rèm, bật đèn", vo="Ba giờ chiều, nhà phố hướng tây gần như căn nào cũng kéo kín rèm sau mặt kính lớn, rồi bật đèn.",
          cam=((800, 1200), 2.1, (540, 952)), dark=True, dd=[], move="push"),
-    dict(t="8.2–8.7s", head="end", vo="",
+    dict(t="7.58–8.08s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
