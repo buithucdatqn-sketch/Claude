@@ -6,4 +6,4 @@ Năm hai nghìn không trăm mười bốn, hai tác giả Kin-mơ nhắc rằng
 <break time="1.2s" />
 Theo tụi mình, vách lam là lớp lọc ngay trong nhà, nên chủ nhà có thể lắp vào ô cửa sẵn có mà không cần đục tường. Vì vậy, với nhà phố hướng tây, tụi mình nghĩ không nhất thiết phải bỏ mặt kính, mà có thể đặt phía trong một vách lam gỗ.
 <break time="1.2s" />
-Vì vậy, từ nay mỗi lần vẽ ô cửa, tụi mình sẽ hỏi ánh sáng chạm vào đâu trước, chứ không chỉ hỏi nên mở bao nhiêu kính. Bài phân tích đầy đủ về ánh sáng tự nhiên trong nhà nằm ở phần bình luận.
+Bởi thế, từ nay mỗi lần vẽ ô cửa, tụi mình sẽ hỏi ánh sáng chạm vào đâu trước, chứ không chỉ hỏi nên mở bao nhiêu kính. Bài phân tích đầy đủ về ánh sáng tự nhiên trong nhà nằm ở phần bình luận.

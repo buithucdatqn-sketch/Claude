@@ -70,7 +70,7 @@ SC = [
     dict(move="pan_d", part="F", blk=4, img="ban", head="Nhà phố hướng tây vẫn giữ được mặt kính", cam=((800, 1100), 2.1, (540, 925)), dark=True, dd=["lab_v", "v_arr"],
          vo="Vì vậy, với nhà phố hướng tây, tụi mình nghĩ không nhất thiết phải bỏ mặt kính, mà có thể đặt phía trong một vách lam gỗ."),
     dict(move="hold", part="H", blk=5, img="vuont", head="Câu hỏi mỗi khi vẽ một ô cửa", cam=LAND("vuont", 800, 534), free=True, dark=True, dd=[],
-         vo="Vì vậy, từ nay mỗi lần vẽ ô cửa, tụi mình sẽ hỏi ánh sáng chạm vào đâu trước, chứ không chỉ hỏi nên mở bao nhiêu kính."),
+         vo="Bởi thế, từ nay mỗi lần vẽ ô cửa, tụi mình sẽ hỏi ánh sáng chạm vào đâu trước, chứ không chỉ hỏi nên mở bao nhiêu kính."),
     dict(move="push", part="I", blk=5, img="ban", head="end", cam="END", dark=False, vo="", dd=[],
          say="Bài phân tích đầy đủ về ánh sáng tự nhiên trong nhà nằm ở phần bình luận."),
 ]

@@ -18,7 +18,7 @@ Trả lời theo bài: mắt chỉ thấy ánh sáng do bề mặt hắt lại (
 | 7 | D | ảnh 07, dải dưới: bàn ăn (doodle mới) | Mặt bàn ăn dưới ô kính cao | Trong ảnh chụp bàn ăn, mặt bàn không có một vệt nắng nào. | giữ nguyên |
 | 8 | F | ảnh 06 vách lam gác lửng (doodle mới) | Vách lam gỗ của gác lửng nhìn từ cầu thang | Theo tụi mình, vách lam là lớp lọc ngay trong nhà, nên chủ nhà có thể lắp vào ô cửa sẵn có mà không cần đục tường. | giữ nguyên |
 | 9 | F | ảnh 07 bàn ăn dưới ô kính cao | Nhà phố hướng tây vẫn giữ được mặt kính | Vì vậy, với nhà phố hướng tây, tụi mình nghĩ không nhất thiết phải bỏ mặt kính, mà có thể đặt phía trong một vách lam gỗ. | giữ nguyên |
-| 10 | H | ảnh 08, dải trên: mái hiên, tán cây | Câu hỏi mỗi khi vẽ một ô cửa | Vì vậy, từ nay mỗi lần vẽ ô cửa, tụi mình sẽ hỏi ánh sáng chạm vào đâu trước, chứ không chỉ hỏi nên mở bao nhiêu kính. | giữ nguyên |
+| 10 | H | ảnh 08, dải trên: mái hiên, tán cây | Câu hỏi mỗi khi vẽ một ô cửa | Bởi thế, từ nay mỗi lần vẽ ô cửa, tụi mình sẽ hỏi ánh sáng chạm vào đâu trước, chứ không chỉ hỏi nên mở bao nhiêu kính. | giữ nguyên |
 | 11 | I | ảnh 07 bàn ăn dưới ô kính cao | (khung cuối) | Bài phân tích đầy đủ về ánh sáng tự nhiên trong nhà nằm ở phần bình luận. | giữ nguyên |
 
 ## Lời đọc dán vào ElevenLabs
@@ -31,7 +31,7 @@ Năm hai nghìn không trăm mười bốn, hai tác giả Kin-mơ nhắc rằng
 <break time="1.2s" />
 Theo tụi mình, vách lam là lớp lọc ngay trong nhà, nên chủ nhà có thể lắp vào ô cửa sẵn có mà không cần đục tường. Vì vậy, với nhà phố hướng tây, tụi mình nghĩ không nhất thiết phải bỏ mặt kính, mà có thể đặt phía trong một vách lam gỗ.
 <break time="1.2s" />
-Vì vậy, từ nay mỗi lần vẽ ô cửa, tụi mình sẽ hỏi ánh sáng chạm vào đâu trước, chứ không chỉ hỏi nên mở bao nhiêu kính. Bài phân tích đầy đủ về ánh sáng tự nhiên trong nhà nằm ở phần bình luận.
+Bởi thế, từ nay mỗi lần vẽ ô cửa, tụi mình sẽ hỏi ánh sáng chạm vào đâu trước, chứ không chỉ hỏi nên mở bao nhiêu kính. Bài phân tích đầy đủ về ánh sáng tự nhiên trong nhà nằm ở phần bình luận.
 ```
 
 ## Phiên âm cho ElevenLabs
