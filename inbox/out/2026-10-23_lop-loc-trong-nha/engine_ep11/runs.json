@@ -1,0 +1,112 @@
+[
+ {
+  "tag": "r01_vuon",
+  "img": "vuon",
+  "src": "source_vuon.png",
+  "scenes": [
+   1
+  ],
+  "t_in_main": 0.0,
+  "cut_from": 0.0,
+  "cut_len": 8.2,
+  "first_frame": 1
+ },
+ {
+  "tag": "r02_dg5",
+  "img": "dg5",
+  "src": "source_dg5.png",
+  "scenes": [
+   2,
+   3
+  ],
+  "t_in_main": 8.2,
+  "cut_from": 8.2,
+  "cut_len": 17.03,
+  "first_frame": 2
+ },
+ {
+  "tag": "r03_vuont",
+  "img": "vuont",
+  "src": "source_vuont.png",
+  "scenes": [
+   4
+  ],
+  "t_in_main": 25.23,
+  "cut_from": 7.890000000000001,
+  "cut_len": 8.2,
+  "first_frame": 2
+ },
+ {
+  "tag": "r04_mc",
+  "img": "mc",
+  "src": "source_mc.png",
+  "scenes": [
+   5
+  ],
+  "t_in_main": 33.43,
+  "cut_from": 8.2,
+  "cut_len": 8.82,
+  "first_frame": 2
+ },
+ {
+  "tag": "r05_lam",
+  "img": "lam",
+  "src": "source_lam.png",
+  "scenes": [
+   6
+  ],
+  "t_in_main": 42.25,
+  "cut_from": 8.82,
+  "cut_len": 6.950000000000003,
+  "first_frame": 2
+ },
+ {
+  "tag": "r06_band",
+  "img": "band",
+  "src": "source_band.png",
+  "scenes": [
+   7
+  ],
+  "t_in_main": 49.2,
+  "cut_from": 6.950000000000003,
+  "cut_len": 5.699999999999996,
+  "first_frame": 2
+ },
+ {
+  "tag": "r07_lam",
+  "img": "lam",
+  "src": "source_lam.png",
+  "scenes": [
+   8
+  ],
+  "t_in_main": 54.9,
+  "cut_from": 5.699999999999996,
+  "cut_len": 8.200000000000003,
+  "first_frame": 2
+ },
+ {
+  "tag": "r08_vuon",
+  "img": "vuon",
+  "src": "source_vuon.png",
+  "scenes": [
+   9
+  ],
+  "t_in_main": 63.1,
+  "cut_from": 8.200000000000003,
+  "cut_len": 9.139999999999993,
+  "first_frame": 2
+ },
+ {
+  "tag": "r09_ban",
+  "img": "ban",
+  "src": "source_ban.png",
+  "scenes": [
+   10,
+   11
+  ],
+  "t_in_main": 72.24,
+  "cut_from": 9.139999999999993,
+  "cut_len": 17.710000000000008,
+  "first_frame": 2
+ }
+]
