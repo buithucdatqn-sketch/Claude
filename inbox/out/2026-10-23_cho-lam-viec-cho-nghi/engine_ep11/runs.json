@@ -1,0 +1,113 @@
+[
+ {
+  "tag": "r01_mo",
+  "img": "mo",
+  "src": "source_mo.png",
+  "scenes": [
+   1,
+   2,
+   3
+  ],
+  "t_in_main": 0.0,
+  "cut_from": 0.0,
+  "cut_len": 18.04,
+  "first_frame": 1
+ },
+ {
+  "tag": "r02_dgb",
+  "img": "dgb",
+  "src": "source_dgb.png",
+  "scenes": [
+   4
+  ],
+  "t_in_main": 18.04,
+  "cut_from": 6.949999999999999,
+  "cut_len": 9.14,
+  "first_frame": 2
+ },
+ {
+  "tag": "r03_mb",
+  "img": "mb",
+  "src": "source_mb.png",
+  "scenes": [
+   5
+  ],
+  "t_in_main": 27.18,
+  "cut_from": 9.14,
+  "cut_len": 8.200000000000003,
+  "first_frame": 2
+ },
+ {
+  "tag": "r04_kin",
+  "img": "kin",
+  "src": "source_kin.png",
+  "scenes": [
+   6
+  ],
+  "t_in_main": 35.38,
+  "cut_from": 8.200000000000003,
+  "cut_len": 9.14,
+  "first_frame": 2
+ },
+ {
+  "tag": "r05_mo",
+  "img": "mo",
+  "src": "source_mo.png",
+  "scenes": [
+   7
+  ],
+  "t_in_main": 44.52,
+  "cut_from": 9.14,
+  "cut_len": 8.199999999999996,
+  "first_frame": 2
+ },
+ {
+  "tag": "r06_togo",
+  "img": "togo",
+  "src": "source_togo.png",
+  "scenes": [
+   8
+  ],
+  "t_in_main": 52.72,
+  "cut_from": 8.199999999999996,
+  "cut_len": 8.509999999999998,
+  "first_frame": 2
+ },
+ {
+  "tag": "r07_mo",
+  "img": "mo",
+  "src": "source_mo.png",
+  "scenes": [
+   9
+  ],
+  "t_in_main": 61.23,
+  "cut_from": 8.509999999999998,
+  "cut_len": 8.509999999999998,
+  "first_frame": 2
+ },
+ {
+  "tag": "r08_kin",
+  "img": "kin",
+  "src": "source_kin.png",
+  "scenes": [
+   10
+  ],
+  "t_in_main": 69.74,
+  "cut_from": 8.509999999999998,
+  "cut_len": 7.890000000000001,
+  "first_frame": 2
+ },
+ {
+  "tag": "r09_tong",
+  "img": "tong",
+  "src": "source_tong.png",
+  "scenes": [
+   11,
+   12
+  ],
+  "t_in_main": 77.63,
+  "cut_from": 7.890000000000001,
+  "cut_len": 15.210000000000008,
+  "first_frame": 2
+ }
+]
