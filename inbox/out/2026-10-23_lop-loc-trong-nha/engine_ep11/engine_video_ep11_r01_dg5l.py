@@ -556,9 +556,9 @@ SCENES = [
          cam=((545, 492), 0.58, (540, 863)), dark=False, dd=[], move="push"),
     dict(t="7.26–13.59s", head="Phòng khách vẫn bật đèn giữa ban ngày", vo="Mặt kính lớn vốn làm ra để phòng khách sáng sủa, vậy mà trong nhà vẫn bật đèn.",
          cam=((545, 492), 0.58, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="13.59–22.73s", head="Kính ngang tầm mắt gây vệt nắng gắt", vo="Theo tụi mình hiểu, mặt kính ấy ngang tầm mắt nên vừa đưa nắng vào thành vệt gắt trên sàn, vừa đặt mảng trời chói trước mắt.",
+    dict(t="13.59–23.04s", head="Kính ngang tầm mắt gây vệt nắng gắt", vo="Theo tụi mình hiểu, mặt kính ấy ngang tầm mắt nên đưa nắng vào thành vệt gắt trên sàn và làm chói mắt, chủ nhà đành kéo rèm.",
          cam=((545, 492), 0.58, (540, 863)), dark=False, dd=[], move="pull"),
-    dict(t="22.73–23.23s", head="end", vo="",
+    dict(t="23.04–23.54s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

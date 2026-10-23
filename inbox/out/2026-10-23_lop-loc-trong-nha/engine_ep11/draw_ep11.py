@@ -127,11 +127,11 @@ L["lam"] = dict(
     # cảnh 6: ánh sáng xuyên qua lam rồi mới xuống, rơi lên tường gỗ trước
     lab_x=label("ánh sáng xuyên/qua vách lam", (420, 790), 76),
     x_arr=arrow([(930, 880), (1030, 920), (1120, 965)], w, DASH(w), 1.5, 1),
-    lab_r=label("rơi lên tường gỗ trước,/rồi mới tới người", (400, 1150), 66),
-    r_arr=arrow([(470, 1310), (430, 1350), (390, 1395)], w, DASH(w), 1.5, 2),
+    lab_r=label("rơi lên tường gỗ trước,/rồi mới xuống bàn ăn", (400, 1150), 66),
+    r_arr=arrow([(900, 1310), (860, 1360), (820, 1405)], w, DASH(w), 1.5, 2),
     # cảnh 9: lam gỗ là lớp lọc nằm ngay trong nhà
     l_out=poly([(1120, 790), (1495, 745), (1495, 1370), (1125, 1380)], w, DASH(w), 2.0, 3),
-    lab_l=label("thêm vào/ô cửa sẵn có", (430, 900), 84),
+    lab_l=label("lớp lọc/ngay trong nhà", (430, 900), 84),
     l_arr=arrow([(950, 1010), (1030, 1030), (1110, 1050)], w, DASH(w), 1.5, 4),
     # cảnh 11: lam gỗ ở xứ nồm ẩm
     lab_m=label("ở xứ nồm ẩm, chọn gỗ/và lớp hoàn thiện kỹ", (560, 960), 62),
@@ -141,7 +141,7 @@ L["lam"] = dict(
 w = 6
 L["band"] = dict(
     t_ring=loop((1100, 725), 400, 95, w, DASH(w), 2.0, 6, tilt=-2),
-    lab_t=label("mặt bàn không có/vệt nắng nào", (680, 330), 60),
+    lab_t=label("mặt bàn ăn", (700, 400), 66),
     t_arr=arrow([(1000, 500), (1040, 560), (1070, 615)], w, DASH(w), 1.0, 7),
 )
 # vuont: ảnh 08 gốc, cắt dải trên (mái hiên, tán cây), 1600x1067, khung ngang zoom kín
