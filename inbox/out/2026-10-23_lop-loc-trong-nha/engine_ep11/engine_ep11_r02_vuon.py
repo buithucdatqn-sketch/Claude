@@ -29,9 +29,9 @@ HEAD = "AH DECODE · LỚP LỌC ÁNH SÁNG"
 END_LINES = [
     (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1088, "và cách chọn đồ decor", 40, 215),
-    (1196, "Bài phân tích đầy đủ", 58, 240),
-    (1260, "về ánh sáng tự nhiên trong nhà", 52, 240),
-    (1344, "xem ở phần bình luận", 66, 255),
+    (1180, "Bài phân tích đầy đủ về việc lọc", 50, 240),
+    (1236, "và lấy ánh sáng tự nhiên vào nội thất", 50, 240),
+    (1330, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
 PAPER = (229, 215, 191)  # beige print margin
@@ -551,11 +551,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.95s", head="Vách lam gỗ và mặt kính ngang tầm mắt", vo="Vì sao ánh sáng từ trên cao qua vách lam lại dịu hơn ánh sáng từ kính ngang tầm mắt?",
+    dict(t="0–7.58s", head="Vách lam gỗ và các ô kính ngang tầm mắt", vo="Vì sao ánh sáng từ trên cao qua vách lam lại dịu hơn ánh sáng từ các ô kính ngang tầm mắt?",
          cam=((800, 1200), 2.1, (540, 952)), dark=True, dd=[], move="hold"),
-    dict(t="6.95–16.09s", head="Theo Kilmer & Kilmer (2014), mắt thấy ánh sáng hắt lại", vo="Năm 2014, hai tác giả Kilmer nhắc rằng mắt người chỉ thấy ánh sáng khi nó rơi lên một món đồ hay mặt tường rồi hắt lại.",
+    dict(t="7.58–13.59s", head="Theo Kilmer & Kilmer (2014), mắt thấy ánh sáng hắt lại", vo="Năm 2014, trong cuốn giáo trình nội thất kinh điển, hai tác giả Kilmer có nhắc rằng",
          cam=((800, 1200), 2.1, (540, 952)), dark=True, dd=[], move="pan_r"),
-    dict(t="16.09–16.59s", head="end", vo="",
+    dict(t="13.59–20.23s", head="Theo Kilmer & Kilmer (2014), mắt thấy ánh sáng hắt lại", vo="mắt người tiếp nhận ánh sáng khi nó rơi lên một món đồ hay mặt tường rồi hắt lại.",
+         cam=((800, 1200), 2.1, (540, 952)), dark=True, dd=[], move="hold"),
+    dict(t="20.23–20.73s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

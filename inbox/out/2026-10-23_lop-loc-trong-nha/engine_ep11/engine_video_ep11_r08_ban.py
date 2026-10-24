@@ -29,9 +29,9 @@ HEAD = "AH DECODE · LỚP LỌC ÁNH SÁNG"
 END_LINES = [
     (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1088, "và cách chọn đồ decor", 40, 215),
-    (1196, "Bài phân tích đầy đủ", 58, 240),
-    (1260, "về ánh sáng tự nhiên trong nhà", 52, 240),
-    (1344, "xem ở phần bình luận", 66, 255),
+    (1180, "Bài phân tích đầy đủ về việc lọc", 50, 240),
+    (1236, "và lấy ánh sáng tự nhiên vào nội thất", 50, 240),
+    (1330, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
 PAPER = (229, 215, 191)  # beige print margin
@@ -552,17 +552,19 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–8.83s", head="Giữ mặt kính và chặn nắng ở phía ngoài", vo="Vì vậy, tụi mình nghĩ nhà hướng tây không nhất thiết phải bỏ kính, mà nên chặn nắng chiều phía ngoài bằng lam hay hàng cây.",
+    dict(t="0–6.95s", head="Mặt bàn ăn không có vệt nắng gắt", vo="Trong ảnh chụp bàn ăn, mặt bàn không có một vệt nắng gắt nào, ánh sáng tỏa đều dễ chịu.",
          cam=((800, 1100), 2.1, (540, 884)), dark=True, dd=[], move="hold"),
-    dict(t="8.83–17.97s", head="Ánh sáng chạm vào đâu trước khi tới mắt", vo="Vậy dãy nhà phố ấy có lẽ không thiếu kính, mà thiếu một lớp lam để lọc và một mặt tường cho ánh sáng chạm vào trước.",
+    dict(t="6.95–16.4s", head="Ánh sáng chạm vào đâu trước", vo="Mỗi lần thiết kế ô cửa, tụi mình cần xem thử ánh sáng chạm vào đâu trước, nên chọn vật liệu nào cho các bề mặt hứng sáng,",
          cam=((800, 1100), 2.1, (540, 884)), dark=True, dd=[], move="pull"),
-    dict(t="17.97–23.98s", head="end", vo="",
+    dict(t="16.4–21.16s", head="Chọn vật liệu cho bề mặt hứng sáng", vo="chứ không chỉ nghĩ đến chuyện mở bao nhiêu kính cho nhà sáng.",
+         cam=((800, 1100), 2.1, (540, 884)), dark=True, dd=[], move="hold"),
+    dict(t="21.16–29.67s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="push"),
 ]
 END = len(SCENES) - 1
 BOARDS = {}
 
-_P = os.path.join(HERE, "none.npz")
+_P = os.path.join(HERE, "doodle_ep11_ban.npz")
 LAYER = dict(np.load(_P)) if os.path.isfile(_P) else {}   # toạ độ trên ảnh làm việc của run
 RAD = 0.9                              # bán kính chấm bút khi lộ lại nét gốc (px ảnh làm việc)
 

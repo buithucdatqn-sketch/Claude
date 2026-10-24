@@ -29,9 +29,9 @@ HEAD = "AH DECODE · LỚP LỌC ÁNH SÁNG"
 END_LINES = [
     (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1088, "và cách chọn đồ decor", 40, 215),
-    (1196, "Bài phân tích đầy đủ", 58, 240),
-    (1260, "về ánh sáng tự nhiên trong nhà", 52, 240),
-    (1344, "xem ở phần bình luận", 66, 255),
+    (1180, "Bài phân tích đầy đủ về việc lọc", 50, 240),
+    (1236, "và lấy ánh sáng tự nhiên vào nội thất", 50, 240),
+    (1330, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
 PAPER = (229, 215, 191)  # beige print margin
@@ -554,9 +554,9 @@ WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–6.95s", head="Ô kính cao sát mái ở Union Street House", vo="Ở Union Street House tại Melbourne, ánh sáng xuống bàn ăn đi vào từ một ô kính cao sát mái.",
          cam=((1000, 1000), 2.2, (592, 840)), dark=False, dd=[], move="hold"),
-    dict(t="6.95–15.77s", head="Đường đi của ánh sáng từ ô kính cao", vo="Ngay dưới ô kính là vách lam gỗ của gác lửng, nên ánh sáng phải xuyên qua vách lam rồi mới xuống bếp và bàn ăn.",
+    dict(t="6.95–15.46s", head="Vách lam gỗ ngay phía trong ô kính", vo="Ngay phía trong là vách lam gỗ của gác lửng, nên ánh sáng phải xuyên qua vách lam rồi mới xuống bếp và bàn ăn.",
          cam=((1000, 1000), 2.2, (592, 840)), dark=True, dd=['lab_x', 'x_arr', 'lab_r', 'r_arr'], move="pull"),
-    dict(t="15.77–16.27s", head="end", vo="",
+    dict(t="15.46–15.96s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

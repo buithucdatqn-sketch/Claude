@@ -29,9 +29,9 @@ HEAD = "AH DECODE · LỚP LỌC ÁNH SÁNG"
 END_LINES = [
     (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1088, "và cách chọn đồ decor", 40, 215),
-    (1196, "Bài phân tích đầy đủ", 58, 240),
-    (1260, "về ánh sáng tự nhiên trong nhà", 52, 240),
-    (1344, "xem ở phần bình luận", 66, 255),
+    (1180, "Bài phân tích đầy đủ về việc lọc", 50, 240),
+    (1236, "và lấy ánh sáng tự nhiên vào nội thất", 50, 240),
+    (1330, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
 PAPER = (229, 215, 191)  # beige print margin
@@ -552,9 +552,9 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.95s", head="Vách lam gỗ và mặt kính ngang tầm mắt", vo="Vì sao ánh sáng từ trên cao qua vách lam lại dịu hơn ánh sáng từ kính ngang tầm mắt?",
+    dict(t="0–7.58s", head="Vách lam gỗ và các ô kính ngang tầm mắt", vo="Vì sao ánh sáng từ trên cao qua vách lam lại dịu hơn ánh sáng từ các ô kính ngang tầm mắt?",
          cam=((700, 1100), 2.1, (540, 884)), dark=True, dd=[], move="push"),
-    dict(t="6.95–7.45s", head="end", vo="",
+    dict(t="7.58–8.08s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

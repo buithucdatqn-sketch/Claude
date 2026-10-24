@@ -29,9 +29,9 @@ HEAD = "AH DECODE · LỚP LỌC ÁNH SÁNG"
 END_LINES = [
     (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1088, "và cách chọn đồ decor", 40, 215),
-    (1196, "Bài phân tích đầy đủ", 58, 240),
-    (1260, "về ánh sáng tự nhiên trong nhà", 52, 240),
-    (1344, "xem ở phần bình luận", 66, 255),
+    (1180, "Bài phân tích đầy đủ về việc lọc", 50, 240),
+    (1236, "và lấy ánh sáng tự nhiên vào nội thất", 50, 240),
+    (1330, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
 PAPER = (229, 215, 191)  # beige print margin
@@ -552,11 +552,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–9.14s", head="Theo Kilmer & Kilmer (2014), mắt thấy ánh sáng hắt lại", vo="Năm 2014, hai tác giả Kilmer nhắc rằng mắt người chỉ thấy ánh sáng khi nó rơi lên một món đồ hay mặt tường rồi hắt lại.",
+    dict(t="0–6.64s", head="Theo Kilmer & Kilmer (2014), mắt thấy ánh sáng hắt lại", vo="mắt người tiếp nhận ánh sáng khi nó rơi lên một món đồ hay mặt tường rồi hắt lại.",
          cam=((545, 492), 0.58, (540, 863)), dark=True, dd=[], move="hold"),
-    dict(t="9.14–17.34s", head="Kính ngang tầm mắt gây vệt nắng gắt", vo="Theo cách tụi mình hiểu, kính ngang tầm mắt đưa nắng vào thành vệt gắt trên sàn và đặt mảng trời chói trước mắt.",
+    dict(t="6.64–15.15s", head="Vách kính lớn hắt nắng gắt lại mắt", vo="Vì vậy những vách kính lớn đưa nắng vào thành vệt gắt trên sàn và tường rồi hắt lại khiến mắt cảm thấy khó chịu.",
          cam=((545, 492), 0.58, (540, 863)), dark=False, dd=[], move="push"),
-    dict(t="17.34–17.84s", head="end", vo="",
+    dict(t="15.15–15.65s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

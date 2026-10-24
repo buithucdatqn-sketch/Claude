@@ -29,9 +29,9 @@ HEAD = "AH DECODE · LỚP LỌC ÁNH SÁNG"
 END_LINES = [
     (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1088, "và cách chọn đồ decor", 40, 215),
-    (1196, "Bài phân tích đầy đủ", 58, 240),
-    (1260, "về ánh sáng tự nhiên trong nhà", 52, 240),
-    (1344, "xem ở phần bình luận", 66, 255),
+    (1180, "Bài phân tích đầy đủ về việc lọc", 50, 240),
+    (1236, "và lấy ánh sáng tự nhiên vào nội thất", 50, 240),
+    (1330, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
 PAPER = (229, 215, 191)  # beige print margin
@@ -552,11 +552,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–8.2s", head="Kính ngang tầm mắt gây vệt nắng gắt", vo="Theo cách tụi mình hiểu, kính ngang tầm mắt đưa nắng vào thành vệt gắt trên sàn và đặt mảng trời chói trước mắt.",
+    dict(t="0–8.51s", head="Vách kính lớn hắt nắng gắt lại mắt", vo="Vì vậy những vách kính lớn đưa nắng vào thành vệt gắt trên sàn và tường rồi hắt lại khiến mắt cảm thấy khó chịu.",
          cam=((1080, 492), 1.0, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="8.2–17.34s", head="Ánh sáng chạm tường trước thì dịu hơn", vo="Còn ánh sáng từ ô kính cao rơi lên tường và trần trước rồi mới hắt xuống, nên khi tới mắt người, nó đã dịu đi nhiều.",
+    dict(t="8.51–15.77s", head="Qua lớp lam, chạm tường và trần rồi mới xuống", vo="Còn ánh sáng từ ô kính cao, xuyên qua lớp lam, rơi lên tường và trần trước rồi mới hắt xuống,",
          cam=((1080, 492), 1.0, (540, 863)), dark=False, dd=[], move="pan_r"),
-    dict(t="17.34–17.84s", head="end", vo="",
+    dict(t="15.77–19.6s", head="Qua lớp lam, chạm tường và trần rồi mới xuống", vo="nên khi tới mắt người, nó đã dịu đi nhiều.",
+         cam=((1080, 492), 1.0, (540, 863)), dark=False, dd=[], move="hold"),
+    dict(t="19.6–20.1s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

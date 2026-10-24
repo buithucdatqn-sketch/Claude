@@ -2,36 +2,38 @@
 
 Bài: bai-03 (kho AH-Decode-Decor, commit 4f984d8): mục "Mắt người chỉ nhìn thấy ánh sáng mà các bề mặt trong phòng hắt lại" (đoạn đầu), mục "Ánh sáng đi vào từ trên cao…" (đoạn "Lam gỗ ở đây là lớp lọc nằm ngay trong nhà"), đoạn lời khuyên và đoạn kết. Chủ Trang duyệt hướng này ngày 2026-10-23. Viết theo bộ nguyên tắc hành văn (TASK_INSTRUCTION mục 0.6f, bản 9 điểm) và mục 0.6g (câu mở đầu gắn với nguyên tắc nội thất).
 
+## Bản 7 (2026-10-24): lời đọc do chủ Trang viết lại
+Chủ Trang nhận xét sáu bản trước "rất sượng, thiếu tự nhiên, các ý liệt kê cạnh nhau, như văn dịch" và tự viết lại. Bản này dùng NGUYÊN VĂN của chủ Trang, chỉ sửa lỗi gõ ("nghỉ" → "nghĩ") và "các bạn" → "mọi người" theo quy tắc xưng hô. Bốn khối, 250 từ bản đọc, ước khoảng 64 giây lời + 3,6 giây nghỉ. Hai câu dài hơn ba dòng phụ đề được tách thành hai trang phụ đề trong cùng cảnh (cảnh 2–3, 5–6, 10–11), không cắt câu. Khối "lớp lọc lắp thêm vào nhà cũ, nhà phố hướng tây" bị bỏ. Nguyên nhân bản cũ sượng và quy tắc rút ra: TASK_INSTRUCTION mục 0.6h. Bản này không qua lượt chấm độc lập vì là lời của chủ Trang.
+
 ## Câu hỏi trung tâm
 Vì sao ánh sáng từ trên cao qua vách lam lại dịu hơn ánh sáng từ kính ngang tầm mắt?
 Trả lời theo bài: mắt chỉ thấy ánh sáng do bề mặt hắt lại (Kilmer & Kilmer 2014). Kính ngang tầm mắt đưa nắng thẳng vào thành vệt gắt và đặt mảng trời chói trước mắt; ánh sáng từ ô kính cao rơi lên tường, trần trước rồi mới hắt xuống nên dịu hơn (diễn giải của bài). Ở Union Street House, ánh sáng phải xuyên qua vách lam gác lửng rồi mới xuống bếp và bàn ăn; mặt bàn không có vệt nắng. Vách lam là lớp lọc lắp được vào ô cửa sẵn có. Chốt theo câu kết của bài: mỗi lần vẽ ô cửa, hỏi ánh sáng chạm vào đâu trước, chứ không chỉ hỏi mở bao nhiêu kính.
 
-## Bảng cảnh (11 cảnh, 261 từ bản đọc, dự kiến khoảng 67 giây lời + 4,8 giây nghỉ; thời lượng từng cảnh căn lại theo ghi âm ở giai đoạn B)
+## Bảng cảnh (12 cảnh, 250 từ bản đọc; cảnh 2–3, 5–6, 10–11 là hai trang phụ đề của cùng một câu; thời lượng từng cảnh căn lại theo ghi âm ở giai đoạn B)
 | # | Phần | Ảnh | Tiêu đề trên khung | Phụ đề (loi) | Bản đọc (tts) |
 |---|---|---|---|---|---|
-| 1 | A | ảnh 07 bàn ăn dưới ô kính cao | Vách lam gỗ và mặt kính ngang tầm mắt | Vì sao ánh sáng từ trên cao qua vách lam lại dịu hơn ánh sáng từ kính ngang tầm mắt? | giữ nguyên |
-| 2 | B | ảnh 08 mặt kính ra vườn | Theo Kilmer & Kilmer (2014), mắt thấy ánh sáng hắt lại | Năm 2014, hai tác giả Kilmer nhắc rằng mắt người chỉ thấy ánh sáng khi nó rơi lên một món đồ hay mặt tường rồi hắt lại. | Năm hai nghìn không trăm mười bốn, hai tác giả Kin-mơ nhắc rằng mắt người chỉ thấy ánh sáng khi nó rơi lên một món đồ hay mặt tường rồi hắt lại. |
-| 3 | C | ảnh 05 sơ đồ, nửa trái | Kính ngang tầm mắt gây vệt nắng gắt | Theo cách tụi mình hiểu, kính ngang tầm mắt đưa nắng vào thành vệt gắt trên sàn và đặt mảng trời chói trước mắt. | giữ nguyên |
-| 4 | C | ảnh 05 sơ đồ cửa thấp, cửa cao | Ánh sáng chạm tường trước thì dịu hơn | Còn ánh sáng từ ô kính cao rơi lên tường và trần trước rồi mới hắt xuống, nên khi tới mắt người, nó đã dịu đi nhiều. | giữ nguyên |
-| 5 | D | ảnh 04 mặt cắt dọc | Ô kính cao sát mái ở Union Street House | Ở Union Street House tại Melbourne, ánh sáng xuống bàn ăn đi vào từ một ô kính cao sát mái. | Ở Diu-ni-ơn Xtrít Hao-xơ tại Meo-bơn, ánh sáng xuống bàn ăn đi vào từ một ô kính cao sát mái. |
-| 6 | D | ảnh 06 vách lam gác lửng (doodle mới) | Đường đi của ánh sáng từ ô kính cao | Ngay dưới ô kính là vách lam gỗ của gác lửng, nên ánh sáng phải xuyên qua vách lam rồi mới xuống bếp và bàn ăn. | giữ nguyên |
-| 7 | D | ảnh 07, dải dưới: bàn ăn (doodle mới) | Mặt bàn ăn dưới ô kính cao | Trong ảnh chụp bàn ăn, mặt bàn không có một vệt nắng nào. | giữ nguyên |
-| 8 | F | ảnh 06 vách lam gác lửng (doodle mới) | Vách lam gỗ của gác lửng nhìn từ cầu thang | Theo tụi mình, vách lam là lớp lọc ngay trong nhà, nên chủ nhà có thể lắp vào ô cửa sẵn có mà không cần đục tường. | giữ nguyên |
-| 9 | F | ảnh 07 bàn ăn dưới ô kính cao | Nhà phố hướng tây vẫn giữ được mặt kính | Vì vậy, với nhà phố hướng tây, tụi mình nghĩ không nhất thiết phải bỏ mặt kính, mà có thể đặt phía trong một vách lam gỗ. | giữ nguyên |
-| 10 | H | ảnh 08, dải trên: mái hiên, tán cây | Câu hỏi mỗi khi vẽ một ô cửa | Bởi thế, từ nay mỗi lần vẽ ô cửa, tụi mình sẽ hỏi ánh sáng chạm vào đâu trước, chứ không chỉ hỏi nên mở bao nhiêu kính. | giữ nguyên |
-| 11 | I | ảnh 07 bàn ăn dưới ô kính cao | (khung cuối) | Bài phân tích đầy đủ về ánh sáng tự nhiên trong nhà nằm ở phần bình luận. | giữ nguyên |
+| 1 | A | ảnh 07 bàn ăn dưới ô kính cao | Vách lam gỗ và các ô kính ngang tầm mắt | Vì sao ánh sáng từ trên cao qua vách lam lại dịu hơn ánh sáng từ các ô kính ngang tầm mắt? | giữ nguyên |
+| 2 | B | ảnh 08 mặt kính ra vườn | Theo Kilmer & Kilmer (2014), mắt thấy ánh sáng hắt lại | Năm 2014, trong cuốn giáo trình nội thất kinh điển, hai tác giả Kilmer có nhắc rằng | Năm hai nghìn không trăm mười bốn, trong cuốn giáo trình nội thất kinh điển, hai tác giả Kin-mơ có nhắc rằng |
+| 3 | B | ảnh 08 mặt kính ra vườn | Theo Kilmer & Kilmer (2014), mắt thấy ánh sáng hắt lại | mắt người tiếp nhận ánh sáng khi nó rơi lên một món đồ hay mặt tường rồi hắt lại. | giữ nguyên |
+| 4 | C | ảnh 05 sơ đồ, nửa trái | Vách kính lớn hắt nắng gắt lại mắt | Vì vậy những vách kính lớn đưa nắng vào thành vệt gắt trên sàn và tường rồi hắt lại khiến mắt cảm thấy khó chịu. | giữ nguyên |
+| 5 | C | ảnh 05 sơ đồ cửa thấp, cửa cao | Qua lớp lam, chạm tường và trần rồi mới xuống | Còn ánh sáng từ ô kính cao, xuyên qua lớp lam, rơi lên tường và trần trước rồi mới hắt xuống, | giữ nguyên |
+| 6 | C | ảnh 05 sơ đồ cửa thấp, cửa cao | Qua lớp lam, chạm tường và trần rồi mới xuống | nên khi tới mắt người, nó đã dịu đi nhiều. | giữ nguyên |
+| 7 | D | ảnh 04 mặt cắt dọc | Ô kính cao sát mái ở Union Street House | Ở Union Street House tại Melbourne, ánh sáng xuống bàn ăn đi vào từ một ô kính cao sát mái. | Ở Diu-ni-ơn Xtrít Hao-xơ tại Meo-bơn, ánh sáng xuống bàn ăn đi vào từ một ô kính cao sát mái. |
+| 8 | D | ảnh 06 vách lam gác lửng (doodle mới) | Vách lam gỗ ngay phía trong ô kính | Ngay phía trong là vách lam gỗ của gác lửng, nên ánh sáng phải xuyên qua vách lam rồi mới xuống bếp và bàn ăn. | giữ nguyên |
+| 9 | D | ảnh 07, dải dưới: bàn ăn (doodle mới) | Mặt bàn ăn không có vệt nắng gắt | Trong ảnh chụp bàn ăn, mặt bàn không có một vệt nắng gắt nào, ánh sáng tỏa đều dễ chịu. | giữ nguyên |
+| 10 | H | ảnh 07 bàn ăn dưới ô kính cao | Ánh sáng chạm vào đâu trước | Mỗi lần thiết kế ô cửa, tụi mình cần xem thử ánh sáng chạm vào đâu trước, nên chọn vật liệu nào cho các bề mặt hứng sáng, | giữ nguyên |
+| 11 | H | ảnh 07 bàn ăn dưới ô kính cao | Chọn vật liệu cho bề mặt hứng sáng | chứ không chỉ nghĩ đến chuyện mở bao nhiêu kính cho nhà sáng. | giữ nguyên |
+| 12 | I | ảnh 07 bàn ăn dưới ô kính cao | (khung cuối) | Bài phân tích đầy đủ về việc lọc và lấy ánh sáng tự nhiên vào nội thất, mọi người xem ở phần bình luận nhé. | giữ nguyên |
 
 ## Lời đọc dán vào ElevenLabs
 ```
-Vì sao ánh sáng từ trên cao qua vách lam lại dịu hơn ánh sáng từ kính ngang tầm mắt?
+Vì sao ánh sáng từ trên cao qua vách lam lại dịu hơn ánh sáng từ các ô kính ngang tầm mắt?
 <break time="1.2s" />
-Năm hai nghìn không trăm mười bốn, hai tác giả Kin-mơ nhắc rằng mắt người chỉ thấy ánh sáng khi nó rơi lên một món đồ hay mặt tường rồi hắt lại. Theo cách tụi mình hiểu, kính ngang tầm mắt đưa nắng vào thành vệt gắt trên sàn và đặt mảng trời chói trước mắt. Còn ánh sáng từ ô kính cao rơi lên tường và trần trước rồi mới hắt xuống, nên khi tới mắt người, nó đã dịu đi nhiều.
+Năm hai nghìn không trăm mười bốn, trong cuốn giáo trình nội thất kinh điển, hai tác giả Kin-mơ có nhắc rằng mắt người tiếp nhận ánh sáng khi nó rơi lên một món đồ hay mặt tường rồi hắt lại. Vì vậy những vách kính lớn đưa nắng vào thành vệt gắt trên sàn và tường rồi hắt lại khiến mắt cảm thấy khó chịu. Còn ánh sáng từ ô kính cao, xuyên qua lớp lam, rơi lên tường và trần trước rồi mới hắt xuống, nên khi tới mắt người, nó đã dịu đi nhiều.
 <break time="1.2s" />
-Ở Diu-ni-ơn Xtrít Hao-xơ tại Meo-bơn, ánh sáng xuống bàn ăn đi vào từ một ô kính cao sát mái. Ngay dưới ô kính là vách lam gỗ của gác lửng, nên ánh sáng phải xuyên qua vách lam rồi mới xuống bếp và bàn ăn. Trong ảnh chụp bàn ăn, mặt bàn không có một vệt nắng nào.
+Ở Diu-ni-ơn Xtrít Hao-xơ tại Meo-bơn, ánh sáng xuống bàn ăn đi vào từ một ô kính cao sát mái. Ngay phía trong là vách lam gỗ của gác lửng, nên ánh sáng phải xuyên qua vách lam rồi mới xuống bếp và bàn ăn. Trong ảnh chụp bàn ăn, mặt bàn không có một vệt nắng gắt nào, ánh sáng tỏa đều dễ chịu.
 <break time="1.2s" />
-Theo tụi mình, vách lam là lớp lọc ngay trong nhà, nên chủ nhà có thể lắp vào ô cửa sẵn có mà không cần đục tường. Vì vậy, với nhà phố hướng tây, tụi mình nghĩ không nhất thiết phải bỏ mặt kính, mà có thể đặt phía trong một vách lam gỗ.
-<break time="1.2s" />
-Bởi thế, từ nay mỗi lần vẽ ô cửa, tụi mình sẽ hỏi ánh sáng chạm vào đâu trước, chứ không chỉ hỏi nên mở bao nhiêu kính. Bài phân tích đầy đủ về ánh sáng tự nhiên trong nhà nằm ở phần bình luận.
+Mỗi lần thiết kế ô cửa, tụi mình cần xem thử ánh sáng chạm vào đâu trước, nên chọn vật liệu nào cho các bề mặt hứng sáng, chứ không chỉ nghĩ đến chuyện mở bao nhiêu kính cho nhà sáng. Bài phân tích đầy đủ về việc lọc và lấy ánh sáng tự nhiên vào nội thất, mọi người xem ở phần bình luận nhé.
 ```
 
 ## Phiên âm cho ElevenLabs
