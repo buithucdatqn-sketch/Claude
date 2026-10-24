@@ -551,13 +551,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–8.51s", head="Vách kính lớn hắt nắng gắt lại mắt", vo="Vì vậy những vách kính lớn đưa nắng vào thành vệt gắt trên sàn và tường rồi hắt lại khiến mắt cảm thấy khó chịu.",
+    dict(t="0–6.49s", head="Vách kính lớn hắt nắng gắt lại mắt", vo="Vì vậy những vách kính lớn đưa nắng vào thành vệt gắt trên sàn và tường rồi hắt lại khiến mắt cảm thấy khó chịu.",
          cam=((1080, 492), 1.0, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="8.51–15.77s", head="Qua lớp lam, chạm tường và trần rồi mới xuống", vo="Còn ánh sáng từ ô kính cao, xuyên qua lớp lam, rơi lên tường và trần trước rồi mới hắt xuống,",
+    dict(t="6.49–11.58s", head="Qua lớp lam, chạm tường và trần rồi mới xuống", vo="Còn ánh sáng từ ô kính cao, xuyên qua lớp lam, rơi lên tường và trần trước rồi mới hắt xuống,",
          cam=((1080, 492), 1.0, (540, 863)), dark=False, dd=[], move="pan_r"),
-    dict(t="15.77–19.6s", head="Qua lớp lam, chạm tường và trần rồi mới xuống", vo="nên khi tới mắt người, nó đã dịu đi nhiều.",
+    dict(t="11.58–13.83s", head="Qua lớp lam, chạm tường và trần rồi mới xuống", vo="nên khi tới mắt người, nó đã dịu đi nhiều.",
          cam=((1080, 492), 1.0, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="19.6–20.1s", head="end", vo="",
+    dict(t="13.83–14.33s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

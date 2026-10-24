@@ -551,13 +551,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–7.58s", head="Vách lam gỗ và các ô kính ngang tầm mắt", vo="Vì sao ánh sáng từ trên cao qua vách lam lại dịu hơn ánh sáng từ các ô kính ngang tầm mắt?",
+    dict(t="0–5.15s", head="Vách lam gỗ và các ô kính ngang tầm mắt", vo="Vì sao ánh sáng từ trên cao qua vách lam lại dịu hơn ánh sáng từ các ô kính ngang tầm mắt?",
          cam=((800, 1200), 2.1, (540, 952)), dark=True, dd=[], move="hold"),
-    dict(t="7.58–13.59s", head="Theo Kilmer & Kilmer (2014), mắt thấy ánh sáng hắt lại", vo="Năm 2014, trong cuốn giáo trình nội thất kinh điển, hai tác giả Kilmer có nhắc rằng",
+    dict(t="5.15–10.22s", head="Theo Kilmer & Kilmer (2014), mắt thấy ánh sáng hắt lại", vo="Năm 2014, trong cuốn giáo trình nội thất kinh điển, hai tác giả Kilmer có nhắc rằng",
          cam=((800, 1200), 2.1, (540, 952)), dark=True, dd=[], move="pan_r"),
-    dict(t="13.59–20.23s", head="Theo Kilmer & Kilmer (2014), mắt thấy ánh sáng hắt lại", vo="mắt người tiếp nhận ánh sáng khi nó rơi lên một món đồ hay mặt tường rồi hắt lại.",
+    dict(t="10.22–14.24s", head="Theo Kilmer & Kilmer (2014), mắt thấy ánh sáng hắt lại", vo="mắt người tiếp nhận ánh sáng khi nó rơi lên một món đồ hay mặt tường rồi hắt lại.",
          cam=((800, 1200), 2.1, (540, 952)), dark=True, dd=[], move="hold"),
-    dict(t="20.23–20.73s", head="end", vo="",
+    dict(t="14.24–14.74s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

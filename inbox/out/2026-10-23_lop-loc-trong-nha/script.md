@@ -1,4 +1,4 @@
-# AH Decode · Lớp lọc ngay trong nhà · tập 11 · giai đoạn A (chờ giọng ElevenLabs)
+# AH Decode · Lớp lọc ngay trong nhà · tập 11 · đã dựng video theo ghi âm
 
 Bài: bai-03 (kho AH-Decode-Decor, commit 4f984d8): mục "Mắt người chỉ nhìn thấy ánh sáng mà các bề mặt trong phòng hắt lại" (đoạn đầu), mục "Ánh sáng đi vào từ trên cao…" (đoạn "Lam gỗ ở đây là lớp lọc nằm ngay trong nhà"), đoạn lời khuyên và đoạn kết. Chủ Trang duyệt hướng này ngày 2026-10-23. Viết theo bộ nguyên tắc hành văn (TASK_INSTRUCTION mục 0.6f, bản 9 điểm) và mục 0.6g (câu mở đầu gắn với nguyên tắc nội thất).
 
@@ -66,3 +66,26 @@ Nối với tập 9 đúng một câu (cảnh 2, ý "mắt chỉ thấy ánh sá
 ## Cần kiểm tra
 - Dòng nguồn mặt cắt ghi "ArchDaily (2023)" theo chú thích trên bản vẽ của bài; YAML không ghi năm.
 - Bình luận ghim còn câu "dành cho thành viên … Buy Me a Coffee" theo prompt lịch chạy; mục 0.6 của instruction dặn không thêm "gói thành viên" nếu chủ Trang không yêu cầu lại, cần chủ Trang chọn.
+
+## Giai đoạn B: căn cảnh theo ghi âm lop-loc-trong-nha.mp3
+- File: 56,92 giây, mp3 44,1 kHz mono (ElevenLabs, giọng Tony Hoang). Lời nhận dạng bằng sherpa-onnx `sherpa-onnx-zipformer-vi-2025-04-20` (chạy trong máy), từng đoạn nói giữa các quãng lặng (silencedetect −35 dB, 0,25 giây).
+- Lời thu khớp kịch bản, trừ một chỗ: câu bàn ăn đọc "mặt bàn không có một vệt nắng nào" (không có chữ "gắt"); phụ đề cảnh 9 sửa theo, tiêu đề đổi thành "Ánh sáng tỏa đều trên bàn ăn" để không lặp phụ đề. Lời mời cuối đọc "nhá", phụ đề giữ "nhé".
+- ElevenLabs rút thẻ ngắt 1,2 giây còn 0,3–0,8 giây, nên mốc cảnh lấy theo câu: mỗi cảnh bắt đầu khoảng 0,37 giây trước câu của nó; cảnh cuối kéo đến hết giọng + 0,6 giây (T_AUDIO trong gen_ep11.py).
+
+| Cảnh | Bắt đầu cảnh (giây) | Đoạn nói (giây) | Lời nhận dạng (đã sửa chính tả tên riêng) |
+|---|---|---|---|
+| 1 | 0 | 0,00–4,68 | Vì sao ánh sáng từ trên cao qua vách lam lại dịu hơn ánh sáng từ các ô kính ngang tầm mắt |
+| 2 | 5,15 | 5,52–10,29 | Năm hai nghìn không trăm mười bốn, trong cuốn giáo trình nội thất kinh điển, hai tác giả Kilmer có nhắc rằng |
+| 3 | 10,22 | 10,59–14,28 | mắt người tiếp nhận ánh sáng khi nó rơi lên một món đồ hay mặt tường rồi hắt lại |
+| 4 | 14,24 | 14,61–20,65 | Vì vậy những vách kính lớn đưa nắng vào thành vệt gắt trên sàn và tường rồi hắt lại khiến mắt cảm thấy khó chịu |
+| 5 | 20,73 | 21,10–25,86 | Còn ánh sáng từ ô kính cao xuyên qua lớp lam, rơi lên tường và trần trước rồi mới hắt xuống |
+| 6 | 25,82 | 26,19–28,09 | nên khi tới mắt người, nó đã dịu đi nhiều |
+| 7 | 28,07 | 28,44–33,57 | Ở Union Street House tại Melbourne, ánh sáng xuống bàn ăn đi vào từ một ô kính cao sát mái |
+| 8 | 33,66 | 34,03–38,92 | Ngay phía trong là vách lam gỗ của gác lửng, nên ánh sáng phải xuyên qua vách lam rồi mới xuống bếp và bàn ăn |
+| 9 | 38,86 | 39,23–43,45 | Trong ảnh chụp bàn ăn, mặt bàn không có một vệt nắng nào, ánh sáng tỏa đều dễ chịu |
+| 10 | 43,42 | 43,79–49,50 | Mỗi lần thiết kế ô cửa, tụi mình cần xem thử ánh sáng chạm vào đâu trước, nên chọn vật liệu nào cho các bề mặt hứng sáng |
+| 11 | 49,41 | 49,78–52,26 | chứ không chỉ nghĩ đến chuyện mở bao nhiêu kính cho nhà sáng |
+| 12 | 52,19 | 52,54–56,92 | Bài phân tích đầy đủ về việc lọc và lấy ánh sáng tự nhiên vào nội thất, mọi người xem ở phần bình luận nhá |
+
+Ghi chú nhận dạng: máy nghe "Kilmer" thành "Kim", "Union Street House" thành "Union Sreat Hauser", "Melbourne" thành "Mailbon", "vệt" thành "vẹt", "vịt"; đã đối chiếu theo kịch bản.
+Âm thanh: lọc dưới 80 Hz, giảm ồn nhẹ (afftdn nf −30), tăng 5,6 dB, chặn đỉnh (alimiter 0,80); đo bằng ebur128 trên file cuối: −14,7 LUFS, đỉnh −1,5 dBFS; 48 kHz; không nhạc.

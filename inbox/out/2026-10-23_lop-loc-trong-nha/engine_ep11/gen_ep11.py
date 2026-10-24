@@ -70,8 +70,8 @@ SC = [
          tts="Ở Diu-ni-ơn Xtrít Hao-xơ tại Meo-bơn, ánh sáng xuống bàn ăn đi vào từ một ô kính cao sát mái."),
     dict(move="pull", part="D", blk=3, img="lam", head="Vách lam gỗ ngay phía trong ô kính", cam=((1000, 1000), 2.2, (540, 925)), dark=True, dd=["lab_x", "x_arr", "lab_r", "r_arr"],
          vo="Ngay phía trong là vách lam gỗ của gác lửng, nên ánh sáng phải xuyên qua vách lam rồi mới xuống bếp và bàn ăn."),
-    dict(move="pan_r", part="D", blk=3, img="band", head="Mặt bàn ăn không có vệt nắng gắt", cam=LAND("band", 1050, 534), free=True, dark=True, dd=["t_ring", "t_arr", "lab_t"],
-         vo="Trong ảnh chụp bàn ăn, mặt bàn không có một vệt nắng gắt nào, ánh sáng tỏa đều dễ chịu."),
+    dict(move="pan_r", part="D", blk=3, img="band", head="Ánh sáng tỏa đều trên bàn ăn", cam=LAND("band", 1050, 534), free=True, dark=True, dd=["t_ring", "t_arr", "lab_t"],
+         vo="Trong ảnh chụp bàn ăn, mặt bàn không có một vệt nắng nào, ánh sáng tỏa đều dễ chịu."),
     dict(move="pull", part="H", blk=4, img="ban", head="Ánh sáng chạm vào đâu trước", cam=((800, 1100), 2.1, (540, 925)), dark=True, dd=[],
          vo="Mỗi lần thiết kế ô cửa, tụi mình cần xem thử ánh sáng chạm vào đâu trước, nên chọn vật liệu nào cho các bề mặt hứng sáng,"),
     dict(move="hold", part="H", blk=4, img="ban", head="Chọn vật liệu cho bề mặt hứng sáng", cam=((800, 1100), 2.1, (540, 925)), dark=True, dd=[],
@@ -119,7 +119,10 @@ def dur(s):
 
 
 # Giai đoạn B: điền mốc cảnh theo ghi âm (mỗi cảnh bắt đầu khoảng 0,35–0,4 giây trước câu của nó). Giai đoạn A để trống.
-T_AUDIO = []
+# Giai đoạn B (2026-10-24): ghi âm lop-loc-trong-nha.mp3, 56,92 giây (ElevenLabs, giọng Tony Hoang). Lời nhận dạng bằng
+# sherpa-onnx zipformer-vi-2025-04-20; ranh giới đoạn nói theo silencedetect -35 dB / 0,25 giây (xem script.md).
+# Mỗi cảnh bắt đầu khoảng 0,37 giây trước câu của nó; cảnh cuối kéo đến hết giọng + 0,6 giây.
+T_AUDIO = [0, 5.15, 10.22, 14.24, 20.73, 25.82, 28.07, 33.66, 38.86, 43.42, 49.41, 52.19, 57.52]
 
 
 def times():

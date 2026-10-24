@@ -551,11 +551,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.64s", head="Theo Kilmer & Kilmer (2014), mắt thấy ánh sáng hắt lại", vo="mắt người tiếp nhận ánh sáng khi nó rơi lên một món đồ hay mặt tường rồi hắt lại.",
+    dict(t="0–4.02s", head="Theo Kilmer & Kilmer (2014), mắt thấy ánh sáng hắt lại", vo="mắt người tiếp nhận ánh sáng khi nó rơi lên một món đồ hay mặt tường rồi hắt lại.",
          cam=((545, 492), 0.58, (540, 863)), dark=True, dd=[], move="hold"),
-    dict(t="6.64–15.15s", head="Vách kính lớn hắt nắng gắt lại mắt", vo="Vì vậy những vách kính lớn đưa nắng vào thành vệt gắt trên sàn và tường rồi hắt lại khiến mắt cảm thấy khó chịu.",
+    dict(t="4.02–10.51s", head="Vách kính lớn hắt nắng gắt lại mắt", vo="Vì vậy những vách kính lớn đưa nắng vào thành vệt gắt trên sàn và tường rồi hắt lại khiến mắt cảm thấy khó chịu.",
          cam=((545, 492), 0.58, (540, 863)), dark=False, dd=[], move="push"),
-    dict(t="15.15–15.65s", head="end", vo="",
+    dict(t="10.51–11.01s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

@@ -13,3 +13,5 @@ Chép nguyên thư mục này vào `OUT/engine_epNN/`, đổi `ep07` thành `epN
 
 Thứ tự chạy: `make_layers.py` (ảnh có doodle gốc) → `draw_epNN.py` (nét mới) → `gen_epNN.py` → `sheet_epNN.py` (xem storyboard, sửa camera) → (giai đoạn B) đặt `T_AUDIO`, sửa lời theo ghi âm → `gen_epNN.py` → `sheet_epNN.py` → `render_epNN.sh` → `ghep_epNN.py`.
 Đường dẫn engine tự tìm từ vị trí file (thư mục chứa engine/engine_video.py), chạy được ở mọi chỗ clone repo.
+
+**Câu dài hơn ba dòng phụ đề (thêm 2026-10-24, TASK_INSTRUCTION mục 4 bước 4 và mục 0.6h):** viết lời liền trước, cắt cảnh sau; KHÔNG cắt câu cho vừa khung. Tách phụ đề thành hai trang trong cùng một cảnh bằng hai mục `SC` liền nhau: cùng `img`, cùng `cam`, cùng `head`, mục sau `move="hold"`, `dd=[]`; `vo` mỗi mục là một nửa câu (nửa đầu kết bằng dấu phẩy), `tts` hai mục ghép lại đúng câu. `gen_epNN.py` gom hai mục vào cùng một run nên camera không đổi, chỉ phụ đề sang trang. Mẫu: `inbox/out/2026-10-23_lop-loc-trong-nha/engine_ep11/gen_ep11.py` (cảnh 2–3, 5–6, 10–11). Giai đoạn B: mốc trang sau lấy theo chỗ ngắt hơi trong câu (silencedetect hoặc mốc chữ của sherpa-onnx).
