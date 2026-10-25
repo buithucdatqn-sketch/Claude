@@ -17,3 +17,5 @@ Dữ liệu chi tiết từng tập nằm ở `inbox/series.json`. File này ghi
 
 Ý bị cấm (chủ Trang từ chối): "chất cảm chỉ hiện khi ánh sáng xiên" của bài 02 (ảnh 04, 05), các bản làm lại ngày 19/10 và 21/10 đều huỷ; "chỗ làm việc sáng gần đều, chỗ nghỉ được chênh sáng" của bài 03 (ảnh 12–16), từ chối 23/10.
 Mã bài tiếp theo: tập 12. Tập 11 dùng bài 03, nên tập 12 lấy bài khác bài 03 (mục 0.5b). Bài 01 và bài 02 coi như đã hết ý mới; bài 03 chỉ còn ý "ánh sáng từ trên cao" (vị trí ô cửa, chủ Trang đã chuyển hướng khỏi ý này ngày 21/10). Cần chủ Trang thêm bài mới vào AH-Decode-Decor/ trước lần chạy sau.
+
+Lần chạy 2026-10-25: DỪNG, không làm tập 12. Kho `AH-Decode-Decor/` (nhánh AH-Interior-notes, commit ffc360a) vẫn chỉ có bài 01, 02, 03; bài 01 và 02 hết ý mới, bài 03 trùng bài tập 11 (mục 0.5b) và chỉ còn ý đã chuyển hướng. Bài "cân bằng thị giác" mới chỉ là bản nháp trong `draft/` (README kho: không lấy từ draft/). Cần chủ Trang đưa bài mới vào `AH-Decode-Decor/bai-04-.../`. Mã bài tiếp theo vẫn là tập 12.
