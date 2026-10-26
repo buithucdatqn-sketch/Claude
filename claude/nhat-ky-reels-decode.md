@@ -11,6 +11,7 @@ Dữ liệu chi tiết từng tập nằm ở `inbox/series.json`. File này ghi
 | 6b | 2026-10-16 | bai-01 (ảnh 13, 10, 11, 09, 03, 08) | Một màu chủ đạo, hai màu phụ đi vòng quanh | "Thêm màu thứ hai, thứ ba vào nhà, có bị rối mắt không?" |
 | 8 | 2026-10-19 | bai-01 (diagram 01 + ảnh ArchDaily) | Màu đậm trên mảng lớn: diện tích và ánh sáng | "Sơn nguyên một khối tủ to màu xanh, ở lâu có thấy ngộp không?" |
 | 9 | 2026-10-21 | bai-03 (ảnh 11, 10, diagram 01, 09, mặt bằng 02) | Bề mặt đón ánh sáng đầu tiên quyết định phòng sáng tới đâu (lần chạy này tự đặt "Tập 7", đánh số lại) | "Cùng một ô cửa, sao phòng sơn trắng sáng hẳn, còn phòng ốp gỗ lại tối?" |
+| 10 | 2026-10-26 | bai-04 (ảnh 06 + goc/06) | Kê lệch mà vẫn cân: lò sưởi to cùng màu tường cân với tranh sẫm nhỏ xa trục | "Phòng khách kê lệch hẳn một bên, sao nhìn vẫn thấy cân?" |
 
 Ý bị cấm (chủ Trang từ chối): "chất cảm chỉ hiện khi ánh sáng xiên" của bài 02 (ảnh 04, 05). Các bản làm lại ý này ngày 19/10 và 21/10 đều huỷ.
-Mã bài tiếp theo: tập 10. Tập 9 dùng bài 03, nên tập 10 lấy bài khác (mục 0.5b). Bài 02 còn ý "độ thô của bề mặt hợp với kích thước phòng và khoảng cách nhìn" (diagram 10, ảnh 12 chưa dùng). Bài 03 còn ý "ánh sáng từ trên cao" (bản nháp tạm dừng `inbox/out/2026-10-21_anh-sang-tu-tren-cao/`) và các ý khác chưa dùng.
+Mã bài tiếp theo: tập 11. Tập 10 dùng bài 04 (còn ý đầu giường đối xứng, ảnh 04/05/08, và 'kiểm tra từ chỗ đứng', ảnh 07/09), nên tập 11 lấy bài khác (bài 01, 02, 03 còn ý chưa dùng).

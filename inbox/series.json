@@ -365,5 +365,25 @@
   ],
   "ghi_chu": "Chủ Trang chuyển hướng từ 'ánh sáng từ trên cao' sang 'bề mặt phản xạ'. Hai ảnh chụp (11, 10) + sơ đồ 01, 09 + mặt bằng 02. Giai đoạn A, chờ giọng ElevenLabs. | Giai đoạn 2 (2026-10-21): giọng ElevenLabs 54,75 s (inbox/audio/be-mat-hat-sang.mp3). Thẻ ngắt bị rút còn 0,4–0,7 s nên mốc cảnh lấy bằng ghép cụm câu theo khoảng nghỉ (silencedetect -35 dB/0,12 s) và số tiếng; cảnh 1–10 khớp dấu câu. Phần khung cuối chỉ có khoảng 2,5 s tiếng nói (~10 tiếng) thay vì 36 tiếng, cần chủ Trang nghe lại. Âm thanh: lọc dưới 80 Hz, afftdn nhẹ, -14,8 LUFS. Video 56,5 s. | Lần chạy 2026-10-21 (nhánh ftjn7r) đặt tên 'Tập 7' vì main chưa có tập 7, 8; đánh số lại thành tập 9 khi gộp vào main 2026-10-21. Thư mục inbox/out/2026-10-21_anh-sang-tu-tren-cao là bản nháp tạm dừng của cùng lần chạy (ý 'ánh sáng từ trên cao', bài 03, chưa dùng).",
   "video": "inbox/out/2026-10-21_be-mat-hat-sang/reel_be-mat-hat-sang_final.mp4"
+ },
+ {
+  "tap": 10,
+  "slug": "lech-ma-van-can",
+  "ngay": "2026-10-26",
+  "bai_kho": {
+   "duong_dan": "AH-Decode-Decor/bai-04-3-bai-hoc-can-bang-thi-giac-noi-that/bai-04.md",
+   "nhanh": "AH-Interior-notes",
+   "commit": "bd74e5309164916cffb99e784b36711b2b82f7f2"
+  },
+  "y_bai": {
+   "muc": "Đặt một món lớn đối trọng với một nhóm món nhỏ hay một mảng sẫm màu để căn phòng lệch mà vẫn cân",
+   "tom_tat": "Lò sưởi to cùng màu tường cân với tranh sẫm nhỏ treo cao, xa trục (Arnheim; Kilmer)"
+  },
+  "anh_kho": [
+   "anh/06-doodle-lo-suoi-va-tranh.jpg",
+   "anh/goc/06-goc-lo-suoi-va-tranh.jpg"
+  ],
+  "thu_muc": "inbox/out/2026-10-26_lech-ma-van-can/",
+  "trang_thai": "cho_ghi_am"
  }
 ]
