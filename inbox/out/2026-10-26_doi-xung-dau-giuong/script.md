@@ -1,4 +1,4 @@
-# AH Decode · Đối xứng dành cho đầu giường · tập 12 · giai đoạn A, chờ ghi âm
+# AH Decode · Đối xứng dành cho đầu giường · tập 12 · đã dựng video theo ghi âm (71,25 giây)
 
 Bài: bai-04 (kho AH-Decode-Decor, nhánh AH-Interior-notes, commit bd74e53), bài học 1 "Dùng cân bằng đối xứng cho những chỗ cần sự yên ổn, như đầu giường", cùng phần mở "Mắt người cân đồ đạc… bập bênh" làm nguồn gốc. Bài 04 mới duyệt 2026-10-26; tập 11 dùng bài 03 nên đổi bài đúng mục 0.5b. Làm theo bộ khuôn `engine/mau_tap7/` (mã gốc gen_ep11.py), bộ nguyên tắc hành văn mục 0.6f, quy tắc viết lời trước, cắt cảnh sau (mục 0.6h).
 
