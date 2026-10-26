@@ -447,5 +447,34 @@
   "thu_muc": "inbox/out/2026-10-23_lop-loc-trong-nha/",
   "ghi_chu": "Lần chạy 2026-10-23 (chạy lại bằng mô hình mới theo yêu cầu chủ Trang). Bản đầu làm ý 'chỗ làm việc sáng đều, chỗ nghỉ được chênh' bị chủ Trang từ chối (ý cấm, mục 0.6e); chủ Trang duyệt hướng 'lớp lọc ngay trong nhà'. 11 cảnh, 259 từ, hai lượt chấm độc lập (lượt 2 đạt). Ảnh gốc không doodle của bài (anh/goc/) + nét doodle mới. Ý 'ánh sáng từ trên cao' (vị trí ô cửa) vẫn không làm riêng. | Chủ Trang chê câu móc 'cách ở giữa' (đáp án hiển nhiên), ban hành bộ nguyên tắc hành văn (mục 0.6f); viết lại ba lần theo bộ này, 11 cảnh, 256 từ, mở bằng tình huống ba giờ chiều của bài, chốt theo câu kết của bài. | Chủ Trang chê tiếp cảnh mở 'ba giờ chiều, dãy nhà phố' không liên quan nguyên lý nội thất, bỏ điểm 6, 9, 10, 11 của bộ nguyên tắc (mục 0.6f còn 9 điểm, thêm 0.6g). Bản cuối mở bằng câu hỏi về vách lam và kính ngang tầm mắt, nguồn Kilmer & Kilmer (2014) trong lời; 11 cảnh, 261 từ bản đọc. | 2026-10-24: chủ Trang tự viết lại lời (bản 7, 250 từ) vì sáu bản trước sượng, liệt kê; nguyên nhân và quy tắc ghi ở TASK_INSTRUCTION mục 0.6h, mục 4 bước 4, mục 4a, 4b câu M. Giai đoạn B: ghi âm 56,92 giây (Tony Hoang), mốc cảnh theo sherpa-onnx; video 58,48 giây, −14,7 LUFS.",
   "video": "inbox/out/2026-10-23_lop-loc-trong-nha/reel_lop-loc-trong-nha_final.mp4"
+ },
+ {
+  "tap": 12,
+  "slug": "doi-xung-dau-giuong",
+  "ngay": "2026-10-26",
+  "nguyen_ly": "Cân bằng đối xứng dành cho chỗ cần yên, như đầu giường (Kilmer & Kilmer, Designing Interiors 2014, ch. 4, mục Balance; diễn giải của bài)",
+  "nhom": "Bố cục đồ đạc: cân bằng thị giác, đối xứng",
+  "bai_kho": {
+   "duong_dan": "AH-Decode-Decor/bai-04-3-bai-hoc-can-bang-thi-giac-noi-that/bai-04.md",
+   "nhanh": "AH-Interior-notes",
+   "commit": "bd74e5309164916cffb99e784b36711b2b82f7f2"
+  },
+  "y_bai": {
+   "muc": "Dùng cân bằng đối xứng cho những chỗ cần sự yên ổn, như đầu giường",
+   "tom_tat": "Đối xứng mắt nhận ra nhanh nhất, mắt dừng ở trục giữa nên thấy yên; Palmeira chỉ đối xứng ở đầu giường và trong vách tắm, phòng khách kê lệch; Kilmer: đối xứng quá nhiều thì tĩnh, buồn tẻ"
+  },
+  "anh_kho": [
+   "AH-Decode-Decor/bai-04-3-bai-hoc-can-bang-thi-giac-noi-that/anh/goc/04-goc-dau-giuong-doi-xung.jpg (ảnh chính, nét mới)",
+   "AH-Decode-Decor/bai-04-3-bai-hoc-can-bang-thi-giac-noi-that/anh/01-diagram-ba-kieu-can-bang.png",
+   "AH-Decode-Decor/bai-04-3-bai-hoc-can-bang-thi-giac-noi-that/anh/03-mat-bang-palmeira.png",
+   "AH-Decode-Decor/bai-04-3-bai-hoc-can-bang-thi-giac-noi-that/anh/goc/05-goc-hai-voi-sen.jpg (nét mới)",
+   "AH-Decode-Decor/bai-04-3-bai-hoc-can-bang-thi-giac-noi-that/anh/goc/10-goc-anh-tong.jpg (dải dưới, nét mới)"
+  ],
+  "du_an": "Palmeira Apartment, Lisbon",
+  "studio": "Studio Gameiro",
+  "nhiep_anh": "Francisco Nogueira",
+  "thu_muc": "inbox/out/2026-10-26_doi-xung-dau-giuong/",
+  "trang_thai": "cho_ghi_am",
+  "ghi_chu": "Bản làm lại trong ngày: bản đầu (slug lech-ma-van-can, một ảnh, sáu cảnh, ý lò sưởi và tranh sẫm của bài học 2) làm theo prompt lịch chạy, chủ Trang chê 'hoàn toàn không đúng yêu cầu trong instruction', đã bỏ; ý bài học 2 vẫn CHƯA dùng. Ý 'đối xứng chặt chẽ chỉ có tác dụng khi đứng trên trục' (bài học 3) không dùng ở tập này."
  }
 ]

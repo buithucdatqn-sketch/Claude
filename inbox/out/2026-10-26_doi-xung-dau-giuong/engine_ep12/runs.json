@@ -1,0 +1,125 @@
+[
+ {
+  "tag": "r01_ngu",
+  "img": "ngu",
+  "src": "source_ngu.png",
+  "scenes": [
+   1
+  ],
+  "t_in_main": 0.0,
+  "cut_from": 0.0,
+  "cut_len": 6.64,
+  "first_frame": 1
+ },
+ {
+  "tag": "r02_dg",
+  "img": "dg",
+  "src": "source_dg.png",
+  "scenes": [
+   2,
+   3
+  ],
+  "t_in_main": 6.64,
+  "cut_from": 6.64,
+  "cut_len": 13.899999999999999,
+  "first_frame": 2
+ },
+ {
+  "tag": "r03_dgl",
+  "img": "dgl",
+  "src": "source_dgl.png",
+  "scenes": [
+   4,
+   5
+  ],
+  "t_in_main": 20.54,
+  "cut_from": 5.079999999999998,
+  "cut_len": 15.46,
+  "first_frame": 2
+ },
+ {
+  "tag": "r04_mb",
+  "img": "mb",
+  "src": "source_mb.png",
+  "scenes": [
+   6
+  ],
+  "t_in_main": 36.0,
+  "cut_from": 8.82,
+  "cut_len": 7.259999999999998,
+  "first_frame": 2
+ },
+ {
+  "tag": "r05_ngub",
+  "img": "ngub",
+  "src": "source_ngub.png",
+  "scenes": [
+   7
+  ],
+  "t_in_main": 43.26,
+  "cut_from": 7.259999999999998,
+  "cut_len": 7.580000000000005,
+  "first_frame": 2
+ },
+ {
+  "tag": "r06_tam",
+  "img": "tam",
+  "src": "source_tam.png",
+  "scenes": [
+   8
+  ],
+  "t_in_main": 50.84,
+  "cut_from": 7.580000000000005,
+  "cut_len": 6.009999999999998,
+  "first_frame": 2
+ },
+ {
+  "tag": "r07_tamb",
+  "img": "tamb",
+  "src": "source_tamb.png",
+  "scenes": [
+   9
+  ],
+  "t_in_main": 56.85,
+  "cut_from": 6.009999999999998,
+  "cut_len": 6.949999999999996,
+  "first_frame": 2
+ },
+ {
+  "tag": "r08_khachb",
+  "img": "khachb",
+  "src": "source_khachb.png",
+  "scenes": [
+   10,
+   11
+  ],
+  "t_in_main": 63.8,
+  "cut_from": 6.949999999999996,
+  "cut_len": 15.469999999999999,
+  "first_frame": 2
+ },
+ {
+  "tag": "r09_ngub",
+  "img": "ngub",
+  "src": "source_ngub.png",
+  "scenes": [
+   12
+  ],
+  "t_in_main": 79.27,
+  "cut_from": 6.329999999999998,
+  "cut_len": 8.820000000000007,
+  "first_frame": 2
+ },
+ {
+  "tag": "r10_ngu",
+  "img": "ngu",
+  "src": "source_ngu.png",
+  "scenes": [
+   13
+  ],
+  "t_in_main": 88.09,
+  "cut_from": 8.820000000000007,
+  "cut_len": 8.89,
+  "first_frame": 2
+ }
+]
