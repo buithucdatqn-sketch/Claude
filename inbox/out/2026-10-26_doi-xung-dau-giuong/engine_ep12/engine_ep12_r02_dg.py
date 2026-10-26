@@ -551,13 +551,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.64s", head="Một căn hộ, hai cách kê đồ", vo="Phòng khách kê lệch hẳn, vậy vì sao đầu giường trong căn hộ này lại được kê đối xứng?",
+    dict(t="0–6.04s", head="Một căn hộ, hai cách kê đồ", vo="Phòng khách kê lệch hẳn, vậy vì sao đầu giường trong căn hộ này lại được kê đối xứng?",
          cam=((1045, 615), 0.9, (540, 856)), dark=False, dd=[], move="hold"),
-    dict(t="6.64–15.46s", head="Theo Kilmer & Kilmer (2014), mắt cũng giữ thăng bằng", vo="Trong một cuốn sách năm 2014 về thiết kế nội thất, hai tác giả Kilmer cho rằng mắt người cũng giữ thăng bằng như cơ thể.",
+    dict(t="6.04–16.02s", head="Theo Kilmer & Kilmer (2014), mắt cũng giữ thăng bằng", vo="Trong một cuốn sách năm 2014 về thiết kế nội thất, hai tác giả Kilmer cho rằng mắt người cũng giữ thăng bằng như cơ thể.",
          cam=((1045, 615), 0.9, (540, 856)), dark=False, dd=[], move="pan_u"),
-    dict(t="15.46–20.54s", head="Theo Kilmer & Kilmer (2014), mắt cũng giữ thăng bằng", vo="Nhìn vào một căn phòng, mắt thấy món đồ này nặng, món kia nhẹ.",
+    dict(t="16.02–19.7s", head="Theo Kilmer & Kilmer (2014), mắt cũng giữ thăng bằng", vo="Nhìn vào một căn phòng, mắt thấy món đồ này nặng, món kia nhẹ.",
          cam=((1045, 615), 0.9, (540, 856)), dark=False, dd=[], move="hold"),
-    dict(t="20.54–21.04s", head="end", vo="",
+    dict(t="19.7–20.2s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

@@ -551,11 +551,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–7.26s", head="Phòng ngủ và phòng tắm chính nằm sát nhau", vo="Phòng ngủ chính của căn hộ Palmeira tại Lisbon, do Studio Gameiro cải tạo, được kê đúng theo trục giữa ấy.",
+    dict(t="0–6.12s", head="Phòng ngủ và phòng tắm chính nằm sát nhau", vo="Phòng ngủ chính của căn hộ Palmeira tại Lisbon, do Studio Gameiro cải tạo, được kê đúng theo trục giữa ấy.",
          cam=((1200, 584), 1.0, (540, 880)), dark=False, dd=[], move="hold"),
-    dict(t="7.26–14.84s", head="Tấm đầu giường gỗ chạm tay dài hơn giường", vo="Giường nằm giữa một tấm đầu giường bằng gỗ chạm tay, hai bên là hai đèn thả giống nhau, cách đều trục.",
+    dict(t="6.12–11.54s", head="Tấm đầu giường gỗ chạm tay dài hơn giường", vo="Giường nằm giữa một tấm đầu giường bằng gỗ chạm tay, hai bên là hai đèn thả giống nhau, cách đều trục.",
          cam=((1200, 584), 1.0, (540, 880)), dark=False, dd=['ax', 'hb', 'lab_lp', 'lp_l', 'lp_r'], move="push"),
-    dict(t="14.84–15.34s", head="end", vo="",
+    dict(t="11.54–12.04s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

@@ -552,11 +552,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.01s", head="Hai vòi sen trong hai ô kính bằng nhau", vo="Phòng tắm ngay bên cạnh cũng đối xứng, nhưng chỉ ở hai vòi sen trong vách kính,",
+    dict(t="0–3.71s", head="Hai vòi sen trong hai ô kính bằng nhau", vo="Phòng tắm ngay bên cạnh cũng đối xứng, nhưng chỉ ở hai vòi sen trong vách kính,",
          cam=((1200, 530), 1.0, (540, 880)), dark=True, dd=[], move="hold"),
-    dict(t="6.01–12.96s", head="Ngoài vách kính, đồ đặt theo chỗ dùng", vo="còn chậu rửa và bồn vệ sinh bên ngoài thì đặt lệch, chỗ nào tiện dùng thì đặt ở đó.",
+    dict(t="3.71–7.74s", head="Ngoài vách kính, đồ đặt theo chỗ dùng", vo="còn chậu rửa và bồn vệ sinh bên ngoài thì đặt lệch, chỗ nào tiện dùng thì đặt ở đó.",
          cam=((1200, 530), 1.0, (540, 880)), dark=False, dd=['cr', 'bo', 'lab_lech', 'a_cr', 'a_bo'], move="pan_u"),
-    dict(t="12.96–13.46s", head="end", vo="",
+    dict(t="7.74–8.24s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

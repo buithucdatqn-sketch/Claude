@@ -70,3 +70,26 @@ Không trùng các tập trước (bài 04 chưa dùng). Để dành cho tập l
 - Dòng nguồn mặt bằng ghi "ArchDaily (2023)" theo chú thích trên bản vẽ của bài.
 - Chữ chú thích trên mặt bằng hơi nhỏ trên điện thoại (khoảng 26–28 px), vì giữ cả cột chú thích lẫn phòng ngủ, phòng tắm.
 - Bình luận ghim giữ câu "dành cho thành viên … Buy Me a Coffee" như tập 11; chủ Trang dán link.
+
+## Giai đoạn B: căn cảnh theo ghi âm doi-xung-dau-giuong.mp3
+- File: 69,64 giây, mp3 44,1 kHz mono (ElevenLabs, giọng Tony Hoang, `ElevenLabs_2026-10-26T13_31_43_Tony_Hoang__pvc_sp100_s50_sb75_v4.mp3`).
+- Không nhận dạng lại được lời: lệnh cài sherpa-onnx và tải mô hình `sherpa-onnx-zipformer-vi-2025-04-20` từ GitHub bị môi trường chặn (lý do "mã tải từ bên ngoài"), máy không có công cụ nhận dạng giọng nào khác. Vì vậy câu được ghép vào đoạn nói theo độ dài (chế độ ghép cụm câu của prompt): silencedetect −35 dB / 0,25 giây cho 27 đoạn nói; đếm đỉnh năng lượng âm tiết trong từng đoạn (240 đỉnh cho 283 tiếng bản đọc, tỷ lệ 0,85), rồi đặt mỗi ranh giới cảnh ở quãng lặng gần nhất với số tiếng lũy kế của kịch bản. Cả 12 ranh giới rơi đúng một quãng lặng, lệch không quá 3 tiếng, nên lời thu khớp kịch bản về độ dài từng câu; phụ đề giữ nguyên chữ của kịch bản. Nếu chủ Trang có đổi chữ khi thu mà không đổi độ dài câu thì cách này không phát hiện được.
+- ElevenLabs rút thẻ ngắt 1,2 giây còn 0,47–0,71 giây. Mỗi cảnh bắt đầu khoảng 0,37 giây trước câu của nó; cảnh cuối kéo đến hết giọng + 0,6 giây (`T_AUDIO` trong gen_ep12.py).
+
+| Cảnh | Bắt đầu cảnh (giây) | Đoạn nói (giây) | Đỉnh âm tiết đếm được / tiếng bản đọc × 0,85 |
+|---|---|---|---|
+| 1 | 0 | 0,00–5,94 | 15 / 16 |
+| 2 | 6,04 | 6,41–15,94 | 30 / 26 |
+| 3 | 16,02 | 16,39–19,53 | 11 / 12 |
+| 4 | 19,70 | 20,07–23,66 | 15 / 16 |
+| 5 | 23,83 | 24,20–28,79 | 19 / 22 |
+| 6 | 28,87 | 29,24–34,89 | 19 / 18 |
+| 7 | 34,99 | 35,36–40,29 | 20 / 19 |
+| 8 | 40,41 | 40,78–44,13 | 14 / 14 |
+| 9 | 44,12 | 44,49–48,16 | 14 / 17 |
+| 10 | 48,15 | 48,52–54,74 | 28 / 23 |
+| 11 | 54,67 | 55,04–59,18 | 15 / 15 |
+| 12 | 59,29 | 59,66–65,01 | 22 / 22 |
+| 13 | 65,07 | 65,44–69,32 | 18 / 20 |
+
+Âm thanh: lọc dưới 80 Hz, giảm ồn nhẹ (afftdn nf −30), tăng 6,5 dB, chặn đỉnh (alimiter 0,76); đo bằng ebur128 trên file đã xử lý: −14,6 LUFS, đỉnh −1,8 dBFS; 48 kHz; không nhạc.

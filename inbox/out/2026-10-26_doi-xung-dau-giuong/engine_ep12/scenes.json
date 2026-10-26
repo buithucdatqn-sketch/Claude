@@ -1,7 +1,7 @@
 [
  {
   "blk": 1,
-  "t": "0–6.64s",
+  "t": "0–6.04s",
   "head": "Một căn hộ, hai cách kê đồ",
   "loi": "Phòng khách kê lệch hẳn, vậy vì sao đầu giường trong căn hộ này lại được kê đối xứng?",
   "tts": "Phòng khách kê lệch hẳn, vậy vì sao đầu giường trong căn hộ này lại được kê đối xứng?",
@@ -9,7 +9,7 @@
  },
  {
   "blk": 2,
-  "t": "6.64–15.46s",
+  "t": "6.04–16.02s",
   "head": "Theo Kilmer & Kilmer (2014), mắt cũng giữ thăng bằng",
   "loi": "Trong một cuốn sách năm 2014 về thiết kế nội thất, hai tác giả Kilmer cho rằng mắt người cũng giữ thăng bằng như cơ thể.",
   "tts": "Trong một cuốn sách năm hai nghìn không trăm mười bốn về thiết kế nội thất, hai tác giả Kin-mơ cho rằng mắt người cũng giữ thăng bằng như cơ thể.",
@@ -17,7 +17,7 @@
  },
  {
   "blk": 2,
-  "t": "15.46–20.54s",
+  "t": "16.02–19.7s",
   "head": "Theo Kilmer & Kilmer (2014), mắt cũng giữ thăng bằng",
   "loi": "Nhìn vào một căn phòng, mắt thấy món đồ này nặng, món kia nhẹ.",
   "tts": "Nhìn vào một căn phòng, mắt thấy món đồ này nặng, món kia nhẹ.",
@@ -25,7 +25,7 @@
  },
  {
   "blk": 2,
-  "t": "20.54–27.18s",
+  "t": "19.7–23.83s",
   "head": "Hai nửa giống nhau qua một trục",
   "loi": "Hai tác giả cũng cho rằng đối xứng là cách giữ thăng bằng mà mắt nhận ra nhanh nhất.",
   "tts": "Hai tác giả cũng cho rằng đối xứng là cách giữ thăng bằng mà mắt nhận ra nhanh nhất.",
@@ -33,7 +33,7 @@
  },
  {
   "blk": 2,
-  "t": "27.18–36s",
+  "t": "23.83–28.87s",
   "head": "Mắt dừng lại ở trục giữa",
   "loi": "Theo tụi mình, hai bên đã giống hệt nhau thì mắt không phải so bên nào nặng hơn, nên dừng ở trục giữa và thấy yên.",
   "tts": "Theo tụi mình, hai bên đã giống hệt nhau thì mắt không phải so bên nào nặng hơn, nên dừng ở trục giữa và thấy yên.",
@@ -41,7 +41,7 @@
  },
  {
   "blk": 3,
-  "t": "36–43.26s",
+  "t": "28.87–34.99s",
   "head": "Phòng ngủ và phòng tắm chính nằm sát nhau",
   "loi": "Phòng ngủ chính của căn hộ Palmeira tại Lisbon, do Studio Gameiro cải tạo, được kê đúng theo trục giữa ấy.",
   "tts": "Phòng ngủ chính của căn hộ Pan-mây-ra tại Lít-bon, do Xtu-đi-ô Ga-mây-rô cải tạo, được kê đúng theo trục giữa ấy.",
@@ -49,7 +49,7 @@
  },
  {
   "blk": 3,
-  "t": "43.26–50.84s",
+  "t": "34.99–40.41s",
   "head": "Tấm đầu giường gỗ chạm tay dài hơn giường",
   "loi": "Giường nằm giữa một tấm đầu giường bằng gỗ chạm tay, hai bên là hai đèn thả giống nhau, cách đều trục.",
   "tts": "Giường nằm giữa một tấm đầu giường bằng gỗ chạm tay, hai bên là hai đèn thả giống nhau, cách đều trục.",
@@ -57,7 +57,7 @@
  },
  {
   "blk": 3,
-  "t": "50.84–56.85s",
+  "t": "40.41–44.12s",
   "head": "Hai vòi sen trong hai ô kính bằng nhau",
   "loi": "Phòng tắm ngay bên cạnh cũng đối xứng, nhưng chỉ ở hai vòi sen trong vách kính,",
   "tts": "Phòng tắm ngay bên cạnh cũng đối xứng, nhưng chỉ ở hai vòi sen trong vách kính,",
@@ -65,7 +65,7 @@
  },
  {
   "blk": 3,
-  "t": "56.85–63.8s",
+  "t": "44.12–48.15s",
   "head": "Ngoài vách kính, đồ đặt theo chỗ dùng",
   "loi": "còn chậu rửa và bồn vệ sinh bên ngoài thì đặt lệch, chỗ nào tiện dùng thì đặt ở đó.",
   "tts": "còn chậu rửa và bồn vệ sinh bên ngoài thì đặt lệch, chỗ nào tiện dùng thì đặt ở đó.",
@@ -73,7 +73,7 @@
  },
  {
   "blk": 4,
-  "t": "63.8–72.94s",
+  "t": "48.15–54.67s",
   "head": "Sofa và lò sưởi đặt lệch hai bên trục",
   "loi": "Tụi mình thấy cái khéo của căn hộ là chỉ kê đối xứng ở chỗ nằm nghỉ và chỗ đứng tắm, còn phòng khách thì kê lệch.",
   "tts": "Tụi mình thấy cái khéo của căn hộ là chỉ kê đối xứng ở chỗ nằm nghỉ và chỗ đứng tắm, còn phòng khách thì kê lệch.",
@@ -81,7 +81,7 @@
  },
  {
   "blk": 4,
-  "t": "72.94–79.27s",
+  "t": "54.67–59.29s",
   "head": "Theo Kilmer & Kilmer (2014), đối xứng cũng có giới hạn",
   "loi": "Chính Kilmer cũng nhắc rằng dùng đối xứng quá nhiều sẽ làm căn phòng tĩnh và buồn tẻ.",
   "tts": "Chính Kin-mơ cũng nhắc rằng dùng đối xứng quá nhiều sẽ làm căn phòng tĩnh và buồn tẻ.",
@@ -89,7 +89,7 @@
  },
  {
   "blk": 4,
-  "t": "79.27–88.09s",
+  "t": "59.29–65.07s",
   "head": "Đối xứng ở đầu giường, kê lệch ở phòng khác",
   "loi": "Vì vậy, phòng ngủ nên giữ đối xứng ở đầu giường, chỗ người ta cần yên khi nằm nghỉ, còn các phòng khác thì không cần.",
   "tts": "Vì vậy, phòng ngủ nên giữ đối xứng ở đầu giường, chỗ người ta cần yên khi nằm nghỉ, còn các phòng khác thì không cần.",
@@ -97,7 +97,7 @@
  },
  {
   "blk": 4,
-  "t": "88.09–95.98s",
+  "t": "65.07–70.24s",
   "head": "end",
   "loi": "Bài phân tích đầy đủ về cân bằng thị giác khi bày biện nội thất, mọi người xem ở phần bình luận nhé.",
   "tts": "Bài phân tích đầy đủ về cân bằng thị giác khi bày biện nội thất, mọi người xem ở phần bình luận nhé.",

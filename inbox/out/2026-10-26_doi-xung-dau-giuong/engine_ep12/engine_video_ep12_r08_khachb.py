@@ -552,13 +552,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.95s", head="Ngoài vách kính, đồ đặt theo chỗ dùng", vo="còn chậu rửa và bồn vệ sinh bên ngoài thì đặt lệch, chỗ nào tiện dùng thì đặt ở đó.",
+    dict(t="0–4.03s", head="Ngoài vách kính, đồ đặt theo chỗ dùng", vo="còn chậu rửa và bồn vệ sinh bên ngoài thì đặt lệch, chỗ nào tiện dùng thì đặt ở đó.",
          cam=((1200, 579), 1.0, (540, 880)), dark=False, dd=[], move="hold"),
-    dict(t="6.95–16.09s", head="Sofa và lò sưởi đặt lệch hai bên trục", vo="Tụi mình thấy cái khéo của căn hộ là chỉ kê đối xứng ở chỗ nằm nghỉ và chỗ đứng tắm, còn phòng khách thì kê lệch.",
+    dict(t="4.03–10.55s", head="Sofa và lò sưởi đặt lệch hai bên trục", vo="Tụi mình thấy cái khéo của căn hộ là chỉ kê đối xứng ở chỗ nằm nghỉ và chỗ đứng tắm, còn phòng khách thì kê lệch.",
          cam=((1200, 579), 1.0, (540, 880)), dark=False, dd=['sofa', 'ls', 'lab_kl'], move="push"),
-    dict(t="16.09–22.42s", head="Theo Kilmer & Kilmer (2014), đối xứng cũng có giới hạn", vo="Chính Kilmer cũng nhắc rằng dùng đối xứng quá nhiều sẽ làm căn phòng tĩnh và buồn tẻ.",
+    dict(t="10.55–15.17s", head="Theo Kilmer & Kilmer (2014), đối xứng cũng có giới hạn", vo="Chính Kilmer cũng nhắc rằng dùng đối xứng quá nhiều sẽ làm căn phòng tĩnh và buồn tẻ.",
          cam=((1200, 579), 1.0, (540, 880)), dark=False, dd=[], move="hold"),
-    dict(t="22.42–22.92s", head="end", vo="",
+    dict(t="15.17–15.67s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

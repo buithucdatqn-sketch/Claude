@@ -118,7 +118,10 @@ def dur(s):
 # Giai đoạn B (2026-10-24): ghi âm lop-loc-trong-nha.mp3, 56,92 giây (ElevenLabs, giọng Tony Hoang). Lời nhận dạng bằng
 # sherpa-onnx zipformer-vi-2025-04-20; ranh giới đoạn nói theo silencedetect -35 dB / 0,25 giây (xem script.md).
 # Mỗi cảnh bắt đầu khoảng 0,37 giây trước câu của nó; cảnh cuối kéo đến hết giọng + 0,6 giây.
-T_AUDIO = []
+# Giai đoạn B (2026-10-26): ghi âm doi-xung-dau-giuong.mp3, 69,64 giây (ElevenLabs, giọng Tony Hoang). Ranh giới đoạn nói theo
+# silencedetect -35 dB / 0,25 giây; câu ghép vào đoạn theo độ dài (đếm đỉnh âm tiết, xem script.md) vì không chạy được nhận dạng lời.
+# Mỗi cảnh bắt đầu khoảng 0,37 giây trước câu của nó; cảnh cuối kéo đến hết giọng + 0,6 giây.
+T_AUDIO = [0, 6.04, 16.02, 19.70, 23.83, 28.87, 34.99, 40.41, 44.12, 48.15, 54.67, 59.29, 65.07, 70.24]
 
 
 def times():

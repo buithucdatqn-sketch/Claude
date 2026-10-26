@@ -551,11 +551,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.33s", head="Theo Kilmer & Kilmer (2014), đối xứng cũng có giới hạn", vo="Chính Kilmer cũng nhắc rằng dùng đối xứng quá nhiều sẽ làm căn phòng tĩnh và buồn tẻ.",
+    dict(t="0–4.62s", head="Theo Kilmer & Kilmer (2014), đối xứng cũng có giới hạn", vo="Chính Kilmer cũng nhắc rằng dùng đối xứng quá nhiều sẽ làm căn phòng tĩnh và buồn tẻ.",
          cam=((1200, 584), 1.0, (540, 880)), dark=False, dd=[], move="hold"),
-    dict(t="6.33–15.15s", head="Đối xứng ở đầu giường, kê lệch ở phòng khác", vo="Vì vậy, phòng ngủ nên giữ đối xứng ở đầu giường, chỗ người ta cần yên khi nằm nghỉ, còn các phòng khác thì không cần.",
+    dict(t="4.62–10.4s", head="Đối xứng ở đầu giường, kê lệch ở phòng khác", vo="Vì vậy, phòng ngủ nên giữ đối xứng ở đầu giường, chỗ người ta cần yên khi nằm nghỉ, còn các phòng khác thì không cần.",
          cam=((1200, 584), 1.0, (540, 880)), dark=False, dd=['ax', 'lab_ax'], move="pull"),
-    dict(t="15.15–15.65s", head="end", vo="",
+    dict(t="10.4–10.9s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

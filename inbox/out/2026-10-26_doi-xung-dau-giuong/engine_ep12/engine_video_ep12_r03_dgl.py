@@ -552,13 +552,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.08s", head="Theo Kilmer & Kilmer (2014), mắt cũng giữ thăng bằng", vo="Nhìn vào một căn phòng, mắt thấy món đồ này nặng, món kia nhẹ.",
+    dict(t="0–3.68s", head="Theo Kilmer & Kilmer (2014), mắt cũng giữ thăng bằng", vo="Nhìn vào một căn phòng, mắt thấy món đồ này nặng, món kia nhẹ.",
          cam=((365, 615), 0.6, (540, 890)), dark=False, dd=[], move="hold"),
-    dict(t="5.08–11.72s", head="Hai nửa giống nhau qua một trục", vo="Hai tác giả cũng cho rằng đối xứng là cách giữ thăng bằng mà mắt nhận ra nhanh nhất.",
+    dict(t="3.68–7.81s", head="Hai nửa giống nhau qua một trục", vo="Hai tác giả cũng cho rằng đối xứng là cách giữ thăng bằng mà mắt nhận ra nhanh nhất.",
          cam=((365, 615), 0.6, (540, 890)), dark=False, dd=[], move="push"),
-    dict(t="11.72–20.54s", head="Mắt dừng lại ở trục giữa", vo="Theo tụi mình, hai bên đã giống hệt nhau thì mắt không phải so bên nào nặng hơn, nên dừng ở trục giữa và thấy yên.",
+    dict(t="7.81–12.85s", head="Mắt dừng lại ở trục giữa", vo="Theo tụi mình, hai bên đã giống hệt nhau thì mắt không phải so bên nào nặng hơn, nên dừng ở trục giữa và thấy yên.",
          cam=((365, 615), 0.6, (540, 890)), dark=False, dd=[], move="pull"),
-    dict(t="20.54–21.04s", head="end", vo="",
+    dict(t="12.85–13.35s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
