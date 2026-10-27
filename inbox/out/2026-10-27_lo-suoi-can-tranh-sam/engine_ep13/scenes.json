@@ -9,15 +9,15 @@
  },
  {
   "blk": 2,
-  "t": "8.51–18.27s",
+  "t": "8.51–14.21s",
   "head": "Theo Kilmer & Kilmer (2014), mắt cân đồ như cân bập bênh",
-  "loi": "Theo hai tác giả Kilmer, một món to có thể cân với một nhóm món nhỏ, và một món màu rực có thể cân với một món màu xỉn.",
-  "tts": "Theo hai tác giả Kin-mơ, một món to có thể cân với một nhóm món nhỏ, và một món màu rực có thể cân với một món màu xỉn.",
+  "loi": "Theo hai tác giả Kilmer, một món to có thể cân với một nhóm món nhỏ.",
+  "tts": "Theo hai tác giả Kin-mơ, một món to có thể cân với một nhóm món nhỏ.",
   "part": "B"
  },
  {
   "blk": 2,
-  "t": "18.27–26.47s",
+  "t": "14.21–22.41s",
   "head": "Theo Arnheim (1954), điều làm món đồ nặng thêm",
   "loi": "Nhà tâm lý học Rudolf Arnheim giải thích rằng trong mắt người, món càng to, màu càng nổi so với nền thì càng nặng.",
   "tts": "Nhà tâm lý học Ru-đôn Ác-nhai-mơ giải thích rằng trong mắt người, món càng to, màu càng nổi so với nền thì càng nặng.",
@@ -25,15 +25,15 @@
  },
  {
   "blk": 2,
-  "t": "26.47–34.98s",
+  "t": "22.41–28.73s",
   "head": "Theo Arnheim (1954), điều làm món đồ nặng thêm",
-  "loi": "Món ấy càng xa trục, tức đường chia đôi căn phòng, thì càng nặng, như người ngồi xa điểm tựa bập bênh đè mạnh hơn.",
-  "tts": "Món ấy càng xa trục, tức đường chia đôi căn phòng, thì càng nặng, như người ngồi xa điểm tựa bập bênh đè mạnh hơn.",
+  "loi": "Món càng xa trục, tức đường chia đôi căn phòng, cũng càng nặng, như trên chiếc bập bênh.",
+  "tts": "Món càng xa trục, tức đường chia đôi căn phòng, cũng càng nặng, như trên chiếc bập bênh.",
   "part": "C"
  },
  {
   "blk": 3,
-  "t": "34.98–38.48s",
+  "t": "28.73–32.23s",
   "head": "Phòng khách ở Palmeira, Lisbon",
   "loi": "Ở phòng khách căn hộ Palmeira,",
   "tts": "Ở phòng khách căn hộ Pan-mây-ra,",
@@ -41,71 +41,87 @@
  },
  {
   "blk": 3,
-  "t": "38.48–44.18s",
+  "t": "32.23–36.37s",
   "head": "Phía lò sưởi",
-  "loi": "một bên trục là chiếc lò sưởi rất to, đứng sát góc nên cũng xa trục,",
-  "tts": "một bên trục là chiếc lò sưởi rất to, đứng sát góc nên cũng xa trục,",
+  "loi": "chiếc chụp lò sưởi rất to đứng sát tường, xa trục,",
+  "tts": "chiếc chụp lò sưởi rất to đứng sát tường, xa trục,",
   "part": "D"
  },
  {
   "blk": 3,
-  "t": "44.18–48.94s",
+  "t": "36.37–40.2s",
   "head": "Phía lò sưởi",
-  "loi": "nhưng màu kem trùng màu tường, nên chìm vào nền, không nặng lắm.",
-  "tts": "nhưng màu kem trùng màu tường, nên chìm vào nền, không nặng lắm.",
+  "loi": "nhưng màu kem trùng màu tường nên chìm vào nền.",
+  "tts": "nhưng màu kem trùng màu tường nên chìm vào nền.",
   "part": "D"
  },
  {
   "blk": 3,
-  "t": "48.94–54.33s",
+  "t": "40.2–44.96s",
   "head": "Phía bức tranh",
-  "loi": "Bên kia trục, bức tranh nhỏ hơn nhưng là mảng đen xám đậm nhất phòng,",
-  "tts": "Bên kia trục, bức tranh nhỏ hơn nhưng là mảng đen xám đậm nhất phòng,",
+  "loi": "Bên kia trục, bức tranh nhỏ hơn cũng treo sát tường, xa trục,",
+  "tts": "Bên kia trục, bức tranh nhỏ hơn cũng treo sát tường, xa trục,",
   "part": "D"
  },
  {
   "blk": 3,
-  "t": "54.33–58.78s",
+  "t": "44.96–49.72s",
   "head": "Phía bức tranh",
-  "loi": "nổi hẳn trên tường kem, lại treo xa trục, nên nặng lên.",
-  "tts": "nổi hẳn trên tường kem, lại treo xa trục, nên nặng lên.",
+  "loi": "nhưng là mảng đen xám đậm nhất phòng, nổi hẳn trên tường kem.",
+  "tts": "nhưng là mảng đen xám đậm nhất phòng, nổi hẳn trên tường kem.",
   "part": "D"
  },
  {
   "blk": 3,
-  "t": "58.78–67.61s",
-  "head": "Hai món nữa cùng phía với tranh",
-  "loi": "Trước sofa, chiếc ghế gỗ đen tuy nhỏ cũng nổi trên sàn sáng, còn sofa trắng kem thì to mà chìm vào nền như lò sưởi.",
-  "tts": "Trước sô-pha, chiếc ghế gỗ đen tuy nhỏ cũng nổi trên sàn sáng, còn sô-pha trắng kem thì to mà chìm vào nền như lò sưởi.",
+  "t": "49.72–56.98s",
+  "head": "Lò sưởi hơn về độ to, tranh hơn về màu",
+  "loi": "Hai món cùng xa trục gần như nhau, nên lò sưởi hơn về độ to, còn bức tranh hơn về màu.",
+  "tts": "Hai món cùng xa trục gần như nhau, nên lò sưởi hơn về độ to, còn bức tranh hơn về màu.",
   "part": "D"
  },
  {
-  "blk": 3,
-  "t": "67.61–75.19s",
+  "blk": 4,
+  "t": "56.98–65.18s",
+  "head": "Sofa cùng phía với tranh",
+  "loi": "Theo cách tụi mình hiểu, sofa trắng kem dưới tranh cũng to và xa trục, nhưng chìm vào nền, nên không nặng thêm mấy.",
+  "tts": "Theo cách tụi mình hiểu, sô-pha trắng kem dưới tranh cũng to và xa trục, nhưng chìm vào nền, nên không nặng thêm mấy.",
+  "part": "D"
+ },
+ {
+  "blk": 4,
+  "t": "65.18–72.76s",
+  "head": "Chiếc ghế đen trên sàn sáng",
+  "loi": "Chiếc ghế gỗ đen trước sofa thì nhỏ, gần trục hơn tranh, nhưng nổi trên sàn sáng, nên góp thêm sức nặng.",
+  "tts": "Chiếc ghế gỗ đen trước sô-pha thì nhỏ, gần trục hơn tranh, nhưng nổi trên sàn sáng, nên góp thêm sức nặng.",
+  "part": "D"
+ },
+ {
+  "blk": 4,
+  "t": "72.76–77.21s",
+  "head": "Món đậm đứng gần trục",
+  "loi": "Còn chiếc tủ cổ gỗ đậm khá cao, nổi trên tường kem,",
+  "tts": "Còn chiếc tủ cổ gỗ đậm khá cao, nổi trên tường kem,",
+  "part": "D"
+ },
+ {
+  "blk": 4,
+  "t": "77.21–83.53s",
+  "head": "Món đậm đứng gần trục",
+  "loi": "nhưng đứng gần trục, nên gần như không kéo về bên nào, chỉ cho mắt chỗ dừng lại.",
+  "tts": "nhưng đứng gần trục, nên gần như không kéo về bên nào, chỉ cho mắt chỗ dừng lại.",
+  "part": "D"
+ },
+ {
+  "blk": 4,
+  "t": "83.53–90.79s",
   "head": "Cân hai bên trục",
-  "loi": "Vậy lò sưởi to mà chìm vào nền vẫn cân được với cụm món nhỏ màu đậm ở xa trục bên kia.",
-  "tts": "Vậy lò sưởi to mà chìm vào nền vẫn cân được với cụm món nhỏ màu đậm ở xa trục bên kia.",
+  "loi": "Vậy lò sưởi to mà chìm vào nền vẫn cân được với cụm món nhỏ màu đậm ở bên kia trục.",
+  "tts": "Vậy lò sưởi to mà chìm vào nền vẫn cân được với cụm món nhỏ màu đậm ở bên kia trục.",
   "part": "H"
  },
  {
-  "blk": 4,
-  "t": "75.19–80.27s",
-  "head": "Món đậm đứng gần trục",
-  "loi": "Theo cách tụi mình hiểu, chiếc tủ cổ gỗ đậm cũng nổi trên nền,",
-  "tts": "Theo cách tụi mình hiểu, chiếc tủ cổ gỗ đậm cũng nổi trên nền,",
-  "part": "D"
- },
- {
-  "blk": 4,
-  "t": "80.27–85.97s",
-  "head": "Món đậm đứng gần trục",
-  "loi": "nhưng đứng gần trục nên không kéo về bên nào, chỉ cho mắt chỗ dừng lại.",
-  "tts": "nhưng đứng gần trục nên không kéo về bên nào, chỉ cho mắt chỗ dừng lại.",
-  "part": "D"
- },
- {
   "blk": 5,
-  "t": "85.97–91.98s",
+  "t": "90.79–96.8s",
   "head": "Áp dụng cho phòng khách nhà mình",
   "loi": "Ở nhà mình, hãy lấy một trục có sẵn, như ô cửa ban công hay bàn thờ.",
   "tts": "Ở nhà mình, hãy lấy một trục có sẵn, như ô cửa ban công hay bàn thờ.",
@@ -113,7 +129,7 @@
  },
  {
   "blk": 5,
-  "t": "91.98–97.37s",
+  "t": "96.8–102.19s",
   "head": "Chọn món cho phía tường còn trống",
   "loi": "Món to nhất, thường là sofa, cần một món cân lại ở bên kia trục,",
   "tts": "Món to nhất, thường là sô-pha, cần một món cân lại ở bên kia trục,",
@@ -121,7 +137,7 @@
  },
  {
   "blk": 5,
-  "t": "97.37–103.38s",
+  "t": "102.19–108.2s",
   "head": "Chọn món cho phía tường còn trống",
   "loi": "như một bức tranh màu đậm hay một chùm khung ảnh treo sát nhau, đặt xa trục.",
   "tts": "như một bức tranh màu đậm hay một chùm khung ảnh treo sát nhau, đặt xa trục.",
@@ -129,7 +145,7 @@
  },
  {
   "blk": 5,
-  "t": "103.38–110.95s",
+  "t": "108.2–115.78s",
   "head": "end",
   "loi": "Bài phân tích về cân bằng thị giác, từ sách của hai tác giả Kilmer, mọi người xem ở phần bình luận.",
   "tts": "Bài phân tích về cân bằng thị giác, từ sách của hai tác giả Kin-mơ, mọi người xem ở phần bình luận.",

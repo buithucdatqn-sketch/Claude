@@ -554,9 +554,9 @@ WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–8.51s", head="Kê lệch hẳn mà vẫn đứng vững", vo="Một bên phòng khách là chiếc lò sưởi rất to, bên kia treo một bức tranh nhỏ hơn, vậy vì sao căn phòng không nghiêng?",
          cam=((348, 504), 0.52, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="8.51–18.27s", head="Theo Kilmer & Kilmer (2014), mắt cân đồ như cân bập bênh", vo="Theo hai tác giả Kilmer, một món to có thể cân với một nhóm món nhỏ, và một món màu rực có thể cân với một món màu xỉn.",
+    dict(t="8.51–14.21s", head="Theo Kilmer & Kilmer (2014), mắt cân đồ như cân bập bênh", vo="Theo hai tác giả Kilmer, một món to có thể cân với một nhóm món nhỏ.",
          cam=((348, 504), 0.52, (540, 863)), dark=False, dd=[], move="push"),
-    dict(t="18.27–18.77s", head="end", vo="",
+    dict(t="14.21–14.71s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

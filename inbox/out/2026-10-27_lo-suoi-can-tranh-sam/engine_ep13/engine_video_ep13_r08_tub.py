@@ -552,11 +552,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–8.82s", head="Cả nhóm đồ cùng phía với tranh", vo="Cùng phía với tranh còn có sofa, ghế gỗ đen và bình hoa khô, nhìn trong ảnh giống như một mảng liền, cân với lò sưởi.",
+    dict(t="0–7.58s", head="Chiếc ghế đen trên sàn sáng", vo="Chiếc ghế gỗ đen trước sofa thì nhỏ, gần trục hơn tranh, nhưng nổi trên sàn sáng, nên góp thêm sức nặng.",
          cam=((652, 385), 0.74, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="8.82–14.83s", head="Tủ cổ gỗ đậm làm chỗ dừng cho mắt", vo="Còn chiếc tủ cổ màu gỗ đậm, đứng gần trục giữa, giúp mắt có chỗ dừng lại.",
-         cam=((652, 385), 0.74, (540, 863)), dark=False, dd=['tu', 'ax', 'lab_tu', 'lab_ax'], move="push"),
-    dict(t="14.83–15.33s", head="end", vo="",
+    dict(t="7.58–12.03s", head="Món đậm đứng gần trục", vo="Còn chiếc tủ cổ gỗ đậm khá cao, nổi trên tường kem,",
+         cam=((652, 385), 0.74, (540, 863)), dark=False, dd=['tu', 'lab_tu'], move="push"),
+    dict(t="12.03–18.35s", head="Món đậm đứng gần trục", vo="nhưng đứng gần trục, nên gần như không kéo về bên nào, chỉ cho mắt chỗ dừng lại.",
+         cam=((652, 385), 0.74, (540, 863)), dark=False, dd=['ax', 'd_tu', 'lab_ax'], move="hold"),
+    dict(t="18.35–18.85s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

@@ -38,7 +38,7 @@ Trả lời theo bài: sức nặng thị giác (Arnheim 1954) tăng theo độ 
 Mô tả điều nhìn thấy trực tiếp trên ảnh (mục 3.2), đặt cạnh câu của bài để cân từng món theo đủ ba yếu tố của Arnheim (kích thước, màu nổi hay chìm so với nền, khoảng cách tới trục). Trục: đường nét đứt "trục giữa, dưới hoa trần" của doodle gốc ảnh 06 (x khoảng 1000 trên ảnh xem 1932 px).
 | Món | Kích thước | Màu so với nền (nhìn trên ảnh) | Khoảng cách tới trục (nhìn trên ảnh) | Câu của bài |
 |---|---|---|---|---|
-| Lò sưởi | rất to | chụp hình nón màu kem, gần trùng màu tường kem | sát góc tường, xa trục (khoảng cách tới trục gần bằng của bức tranh) | "chụp lò sưởi to hơn nhưng cùng màu với tường nên không nặng lắm" |
+| Lò sưởi | rất to | chụp hình nón màu kem, gần trùng màu tường kem (hộp lửa kính đen và tảng đá màu đất nung ở dưới thì nổi, lời chỉ nói phần chụp) | sát tường bên trái, xa trục (khoảng cách tới trục gần bằng của bức tranh) | "chụp lò sưởi to hơn nhưng cùng màu với tường nên không nặng lắm" |
 | Bức tranh | nhỏ hơn lò sưởi | mảng đen xám, đậm nhất phòng, tương phản mạnh với tường kem | treo cao, sát tường bên kia, xa trục | "bức tranh nhỏ hơn mà đậm nhất phòng, lại treo cao và xa trục"; "nhìn trong ảnh là một mảng đen xám" |
 | Ghế gỗ đen | nhỏ | đen, nổi trên sàn màu sáng | trước sofa, cùng phía với tranh, xa trục hơn tủ | "phía trước có thêm chiếc ghế gỗ đen" |
 | Sofa | dài, to | trắng kem, gần trùng tường và sàn | cùng phía với tranh, sát tường | "bộ sofa Soriana dài và thấp" (màu là quan sát trên ảnh) |
@@ -70,7 +70,7 @@ Kết luận rút ra theo quy tắc của bài (rào một lần "theo cách t�
 [4]–[6] Giáo trình tạo hình trong nước (không dùng).
 
 ## Nghi lỗi / cần kiểm tra trong bài
-- Bài không bàn khoảng cách của lò sưởi tới trục: lò sưởi nằm sát tường bên trái, cũng xa trục, và theo chính quy tắc "xa tâm thì nặng" của Arnheim thì nó cũng nặng thêm. Bài chỉ lập luận bằng kích thước và màu cùng tường ("to hơn nhưng cùng màu với tường nên không nặng lắm"). Lời đọc chỉ nói đúng như bài, không nói thêm về khoảng cách của lò sưởi.
+- Bài không bàn khoảng cách của lò sưởi tới trục: lò sưởi nằm sát tường bên trái, cũng xa trục, và theo chính quy tắc "xa tâm thì nặng" của Arnheim thì nó cũng nặng thêm. Bài chỉ lập luận bằng kích thước và màu cùng tường ("to hơn nhưng cùng màu với tường nên không nặng lắm"). Bản 5–6 của lời đọc nói lò sưởi "đứng sát tường, xa trục" theo quan sát trên ảnh, và nói rõ hai món cùng xa trục gần như nhau nên phần hơn thua nằm ở độ to và màu.
 - Câu "một bức tranh nhỏ màu sẫm treo xa trục có thể cân với một chiếc tủ to màu nhạt đứng gần giữa phòng" nói về tủ đứng gần giữa phòng, còn ở Palmeira đối trọng của tranh là lò sưởi (không đứng gần giữa). Lời đọc không dùng câu này.
 - "Chụp kim loại" (bài) và "cùng màu với tường" (bài): trong ảnh chụp lò sưởi trông như màu kem sáng. Lời đọc không nói chất liệu.
 - Các câu "Có một điều sách không nói mà tụi mình nhận ra" và "xét theo Arnheim" là suy luận của tác giả bài, không phải của Kilmer, Arnheim hay Studio Gameiro.

@@ -142,22 +142,24 @@ L["rong"] = dict(
     sofa=loop((1458, 1000), 330, 185, w, DASH(w), 2.5, 17, tilt=-3),
     lab_sofa=label("món to nhất", (1300, 735), 84),
     lab_tr12=label("tranh màu đậm", (1040, 190), 84))
-# khachb: dải ảnh 06 (y xem 560-1760, y0 = 696), cảnh 6, 7, 9: trục giữa, khoảng cách từ trục tới lò sưởi và tranh, màu so với nền
+# khachb: dải ảnh 06 (y xem 560-1760, y0 = 696): trục giữa, khoảng cách từ trục tới chụp lò sưởi và tranh, màu so với nền
 w = 9
 Y0 = 696
 L["khachb"] = dict(
     ax=stroke(KP([(1002, 580), (1004, 1150), (1002, 1700)], Y0), w, DASH(w), 1.5, 7)[0],
-    ls=poly(KP([(30, 1430), (205, 1040), (530, 1365), (500, 1470), (335, 1520), (305, 1630), (160, 1700), (38, 1690)], Y0), w, DASH(w), 3.0, 5),
-    d_ls=arrow(KP([(990, 1000), (660, 1004), (330, 1012)], Y0), w, DASH(w), 1.5, 21),
+    ls=poly(KP([(35, 1428), (205, 1038), (530, 1362), (300, 1402)], Y0), w, DASH(w), 3.0, 5),
+    d_ls=arrow(KP([(990, 1000), (730, 1003), (470, 1006)], Y0), w, DASH(w), 1.5, 21),
+    lab_dls=label("xa trục", KP([(600, 905)], Y0)[0], 96),
     lab_ls=label("màu kem/trùng màu tường", KP([(45, 730)], Y0)[0], 96),
-    lab_dls=label("xa trục", KP([(560, 905)], Y0)[0], 96),
     tr=poly(KP([(1486, 848), (1742, 684), (1744, 1120), (1488, 1152)], Y0), w, DASH(w), 3.0, 6),
-    d_tr=arrow(KP([(1015, 862), (1250, 860), (1470, 858)], Y0), w, DASH(w), 1.5, 22),
-    lab_tr=label("nhỏ, nhưng đậm/nhất phòng", KP([(1040, 572)], Y0)[0], 92),
-    lab_dtr=label("xa trục", KP([(1150, 760)], Y0)[0], 92),
-    ghe=loop(KP([(1405, 1590)], Y0)[0], 250, 195, w, DASH(w), 3.0, 23, tilt=-4),
+    d_tr=arrow(KP([(1015, 862), (1310, 860), (1600, 858)], Y0), w, DASH(w), 1.5, 22),
+    lab_dtr=label("cũng xa trục", KP([(1110, 760)], Y0)[0], 92),
+    lab_tr=label("đậm nhất,/nổi trên tường kem", KP([(1040, 572)], Y0)[0], 88),
+    lab_big=label("hơn về độ to", KP([(45, 730)], Y0)[0], 100),
+    lab_col=label("hơn về màu", KP([(1080, 600)], Y0)[0], 100),
+    cum=loop(KP([(1580, 1230)], Y0)[0], 460, 640, w, DASH(w), 3.0, 24, tilt=-3),
     lab_ls9=label("to mà chìm/vào nền", KP([(45, 730)], Y0)[0], 104),
-    lab_tr9=label("cụm nhỏ, đậm,/xa trục", KP([(1040, 572)], Y0)[0], 96))
+    lab_cum=label("cụm nhỏ,/màu đậm", KP([(1030, 600)], Y0)[0], 96))
 
 
 def KC(pts, x0, y0):
@@ -165,21 +167,24 @@ def KC(pts, x0, y0):
     return [(round(x * K) - x0, round(y * K) - y0) for x, y in pts]
 
 
-# nhomb: dải ảnh 06 (góc trên trái 1193, 1056): ghế gỗ đen trên sàn sáng, sofa trắng kem. Cảnh 8
+# nhomb: dải ảnh 06 (góc trên trái 1193, 1056): trục ở sát mép trái, sofa trắng kem, ghế gỗ đen trên sàn sáng. Cảnh 11, 12
 w = 9
 NX, NY = 1193, round(850 * K)
 L["nhomb"] = dict(
-    ghe=loop(KC([(1405, 1600)], NX, NY)[0], 250, 225, w, DASH(w), 3.0, 8, tilt=-4),
-    lab_ghe=label("ghế gỗ đen,/nổi trên sàn sáng", KC([(975, 1655)], NX, NY)[0], 62),
+    axn=stroke(KC([(1003, 860), (1004, 1300), (1003, 1780)], NX, NY), w, DASH(w), 1.5, 25)[0],
     sofa=loop(KC([(1560, 1405)], NX, NY)[0], 330, 140, w, DASH(w), 3.0, 9, tilt=-3),
-    lab_sofa=label("sofa trắng kem,/chìm vào nền", KC([(1300, 1170)], NX, NY)[0], 76))
+    lab_sofa=label("to, xa trục,/chìm vào nền", KC([(1290, 1150)], NX, NY)[0], 76),
+    ghe=loop(KC([(1405, 1600)], NX, NY)[0], 250, 225, w, DASH(w), 3.0, 8, tilt=-4),
+    d_ghe=arrow(KC([(1015, 1640), (1120, 1640), (1215, 1640)], NX, NY), w, DASH(w), 1.0, 26, head=50),
+    lab_ghe=label("nhỏ, đen,/nổi trên sàn sáng", KC([(1015, 1445)], NX, NY)[0], 58))
 # tub: dải ảnh 06 (góc trên trái 559, 1093): tủ cổ gỗ đậm gần trục giữa. Cảnh 9
 w = 9
 TX, TY = 559, 1093
 L["tub"] = dict(
     tu=poly(KC([(683, 1072), (915, 1072), (925, 1412), (688, 1415)], TX, TY), w, DASH(w), 3.0, 10),
     ax=stroke(KC([(1002, 905), (1004, 1200), (1002, 1480)], TX, TY), w, DASH(w), 1.5, 11)[0],
-    lab_tu=label("gỗ đậm,/nổi trên nền", KC([(640, 925)], TX, TY)[0], 70),
+    lab_tu=label("gỗ đậm,/nổi trên tường kem", KC([(600, 925)], TX, TY)[0], 64),
+    d_tu=arrow(KC([(925, 1240), (960, 1240), (995, 1240)], TX, TY), w, None, 0, 27, head=30),
     lab_ax=label("gần trục", KC([(1030, 1100)], TX, TY)[0], 76))
 # trucb: dải ảnh 10 (y xem 300-1560, y0 = 373), cảnh 10, 11
 w = 9

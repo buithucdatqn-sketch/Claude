@@ -554,7 +554,7 @@ WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–6.01s", head="", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
-    dict(t="6.01–13.58s", head="end", vo="",
+    dict(t="6.01–13.59s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="push"),
 ]
 END = len(SCENES) - 1
