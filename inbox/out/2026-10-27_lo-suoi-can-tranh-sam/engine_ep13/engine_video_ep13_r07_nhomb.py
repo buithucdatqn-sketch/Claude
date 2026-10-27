@@ -552,11 +552,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–7.26s", head="Món nhỏ mà đậm, xa trục thì nặng", vo="Bức tranh nhỏ hơn mà đậm nhất phòng, lại treo cao và xa trục, nên hai bên gần như ngang nhau.",
-         cam=((603, 441), 0.76, (540, 870)), dark=False, dd=[], move="hold"),
-    dict(t="7.26–16.08s", head="Cả nhóm đồ cùng phía với tranh", vo="Cùng phía với tranh còn có sofa, ghế gỗ đen và bình hoa khô, nhìn trong ảnh giống như một mảng liền, cân với lò sưởi.",
-         cam=((603, 441), 0.76, (540, 870)), dark=False, dd=['lab_tr', 'a_tr', 'grp'], move="pan_d"),
-    dict(t="16.08–16.58s", head="end", vo="",
+    dict(t="0–4.76s", head="Món nhỏ mà đậm, xa trục thì nặng thêm", vo="Bức tranh nhỏ hơn mà màu đậm nhất phòng, lại treo xa trục,",
+         cam=((603, 522), 0.63, (540, 863)), dark=False, dd=[], move="hold"),
+    dict(t="4.76–13.27s", head="Nhiều món gần nhau thành một mảng", vo="và cùng với sofa, ghế gỗ đen, bình hoa khô, nhìn trong ảnh giống như một mảng liền, nên hai bên gần như ngang nhau.",
+         cam=((603, 522), 0.63, (540, 863)), dark=False, dd=['tr_n', 'lab_tr', 'grp'], move="pan_d"),
+    dict(t="13.27–13.77s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

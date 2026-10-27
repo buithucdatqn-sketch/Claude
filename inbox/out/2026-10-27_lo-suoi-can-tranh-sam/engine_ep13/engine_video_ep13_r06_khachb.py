@@ -552,13 +552,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–3.83s", head="Phòng khách ở Palmeira, Lisbon", vo="Xét theo Arnheim, ở phòng khách của căn hộ Palmeira,",
+    dict(t="0–3.5s", head="Phòng khách ở Palmeira, Lisbon", vo="Ở phòng khách của căn hộ Palmeira,",
          cam=((1200, 745), 0.87, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="3.83–11.09s", head="Món to mà nhạt thì nhẹ", vo="chiếc chụp hình nón của lò sưởi tuy to hơn bức tranh, nhưng cùng màu với tường nên không nặng lắm.",
+    dict(t="3.5–9.2s", head="Món to mà cùng màu tường thì không nặng lắm", vo="lò sưởi tuy to hơn bức tranh, nhưng cùng màu với tường nên không nặng lắm.",
          cam=((1200, 745), 0.87, (540, 863)), dark=False, dd=['ls', 'lab_ls'], move="push"),
-    dict(t="11.09–18.35s", head="Món nhỏ mà đậm, xa trục thì nặng", vo="Bức tranh nhỏ hơn mà đậm nhất phòng, lại treo cao và xa trục, nên hai bên gần như ngang nhau.",
+    dict(t="9.2–13.96s", head="Món nhỏ mà đậm, xa trục thì nặng thêm", vo="Bức tranh nhỏ hơn mà màu đậm nhất phòng, lại treo xa trục,",
          cam=((1200, 745), 0.87, (540, 863)), dark=False, dd=['tr', 'ax', 'lab_tr', 'lab_ax'], move="pan_r"),
-    dict(t="18.35–18.85s", head="end", vo="",
+    dict(t="13.96–14.46s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

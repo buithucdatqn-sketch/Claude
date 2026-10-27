@@ -552,11 +552,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.39s", head="Theo Arnheim (1954), điều làm món đồ nặng thêm", vo="và càng nằm xa trục giữa phòng thì càng nặng, giống hệt chuyện đòn bẩy.",
+    dict(t="0–4.76s", head="Theo Arnheim (1954), điều làm món đồ nặng thêm", vo="như người ngồi càng xa điểm tựa bập bênh thì càng đè mạnh.",
          cam=((976, 665), 0.9, (540, 900)), dark=False, dd=[], move="hold"),
-    dict(t="5.39–9.22s", head="Phòng khách ở Palmeira, Lisbon", vo="Xét theo Arnheim, ở phòng khách của căn hộ Palmeira,",
+    dict(t="4.76–8.26s", head="Phòng khách ở Palmeira, Lisbon", vo="Ở phòng khách của căn hộ Palmeira,",
          cam=((976, 665), 0.9, (540, 900)), dark=False, dd=[], move="pan_u"),
-    dict(t="9.22–9.72s", head="end", vo="",
+    dict(t="8.26–8.76s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

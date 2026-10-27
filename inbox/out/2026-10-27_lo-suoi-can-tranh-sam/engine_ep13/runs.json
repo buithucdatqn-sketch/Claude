@@ -20,7 +20,7 @@
   ],
   "t_in_main": 8.51,
   "cut_from": 8.51,
-  "cut_len": 6.640000000000001,
+  "cut_len": 6.950000000000001,
   "first_frame": 2
  },
  {
@@ -30,9 +30,9 @@
   "scenes": [
    3
   ],
-  "t_in_main": 15.15,
-  "cut_from": 6.640000000000001,
-  "cut_len": 8.51,
+  "t_in_main": 15.46,
+  "cut_from": 6.950000000000001,
+  "cut_len": 8.509999999999998,
   "first_frame": 2
  },
  {
@@ -40,11 +40,12 @@
   "img": "dg",
   "src": "source_dg.png",
   "scenes": [
-   4
+   4,
+   5
   ],
-  "t_in_main": 23.66,
-  "cut_from": 8.51,
-  "cut_len": 5.390000000000001,
+  "t_in_main": 23.97,
+  "cut_from": 8.509999999999998,
+  "cut_len": 10.149999999999999,
   "first_frame": 2
  },
  {
@@ -52,11 +53,11 @@
   "img": "mb",
   "src": "source_mb.png",
   "scenes": [
-   5
+   6
   ],
-  "t_in_main": 29.05,
-  "cut_from": 5.390000000000001,
-  "cut_len": 3.830000000000002,
+  "t_in_main": 34.12,
+  "cut_from": 4.759999999999998,
+  "cut_len": 3.5,
   "first_frame": 2
  },
  {
@@ -64,12 +65,12 @@
   "img": "khachb",
   "src": "source_khachb.png",
   "scenes": [
-   6,
-   7
+   7,
+   8
   ],
-  "t_in_main": 32.88,
-  "cut_from": 3.830000000000002,
-  "cut_len": 14.519999999999996,
+  "t_in_main": 37.62,
+  "cut_from": 3.5,
+  "cut_len": 10.46,
   "first_frame": 2
  },
  {
@@ -77,51 +78,62 @@
   "img": "nhomb",
   "src": "source_nhomb.png",
   "scenes": [
-   8
-  ],
-  "t_in_main": 47.4,
-  "cut_from": 7.259999999999998,
-  "cut_len": 8.82,
-  "first_frame": 2
- },
- {
-  "tag": "r08_tub",
-  "img": "tub",
-  "src": "source_tub.png",
-  "scenes": [
    9
   ],
-  "t_in_main": 56.22,
-  "cut_from": 8.82,
-  "cut_len": 6.009999999999998,
+  "t_in_main": 48.08,
+  "cut_from": 4.759999999999998,
+  "cut_len": 8.510000000000005,
   "first_frame": 2
  },
  {
-  "tag": "r09_trucb",
+  "tag": "r08_trucb",
   "img": "trucb",
   "src": "source_trucb.png",
   "scenes": [
    10,
    11
   ],
-  "t_in_main": 62.23,
-  "cut_from": 6.009999999999998,
-  "cut_len": 13.280000000000008,
+  "t_in_main": 56.59,
+  "cut_from": 8.510000000000005,
+  "cut_len": 14.519999999999996,
   "first_frame": 2
  },
  {
-  "tag": "r10_rong",
+  "tag": "r09_tub",
+  "img": "tub",
+  "src": "source_tub.png",
+  "scenes": [
+   12
+  ],
+  "t_in_main": 71.11,
+  "cut_from": 6.010000000000005,
+  "cut_len": 5.079999999999998,
+  "first_frame": 2
+ },
+ {
+  "tag": "r10_bat",
+  "img": "bat",
+  "src": "source_bat.png",
+  "scenes": [
+   13,
+   14
+  ],
+  "t_in_main": 76.19,
+  "cut_from": 5.079999999999998,
+  "cut_len": 16.090000000000003,
+  "first_frame": 2
+ },
+ {
+  "tag": "r11_rong",
   "img": "rong",
   "src": "source_rong.png",
   "scenes": [
-   12,
-   13,
-   14,
-   15
+   15,
+   16
   ],
-  "t_in_main": 75.51,
+  "t_in_main": 92.28,
   "cut_from": 7.890000000000001,
-  "cut_len": 31.61,
+  "cut_len": 15.530000000000001,
   "first_frame": 2
  }
 ]

@@ -551,15 +551,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.01s", head="Tủ cổ gỗ đậm đứng gần trục giữa", vo="Còn chiếc tủ cổ màu gỗ đậm, đứng gần trục giữa, giúp mắt có chỗ dừng lại.",
+    dict(t="0–8.51s", head="Nhiều món gần nhau thành một mảng", vo="và cùng với sofa, ghế gỗ đen, bình hoa khô, nhìn trong ảnh giống như một mảng liền, nên hai bên gần như ngang nhau.",
          cam=((1200, 782), 0.8, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="6.01–12.96s", head="Vỏ nhà đã có sẵn trục", vo="Có một điều sách không nói, là phòng khách ấy kê lệch được nhờ vỏ nhà đã có sẵn trục,",
+    dict(t="8.51–17.02s", head="Mắt cần điểm tựa, đó là trục giữa phòng", vo="Theo cách tụi mình hiểu, mắt người cần một điểm tựa, chính là trục giữa phòng, và kê lệch thì nên lệch quanh trục ấy.",
          cam=((1200, 782), 0.8, (540, 863)), dark=False, dd=['ax', 'lab_ax'], move="pull"),
-    dict(t="12.96–18.35s", head="Vỏ nhà đã có sẵn trục", vo="với hoa trần ở giữa và hai hốc kệ giống nhau hai bên lỗ cửa.",
-         cam=((1200, 782), 0.8, (540, 863)), dark=False, dd=['hk_l', 'hk_r', 'lab_ht', 'lab_hk'], move="hold"),
-    dict(t="18.35–27.18s", head="Tìm trục có sẵn trước khi kê lệch", vo="Vì vậy, muốn kê lệch mà vẫn cân, mọi người nên tìm trước một cái trục có sẵn, như ô cửa ban công hay bàn thờ.",
-         cam=((1200, 782), 0.8, (540, 863)), dark=False, dd=['ax2'], move="hold"),
-    dict(t="27.18–27.68s", head="end", vo="",
+    dict(t="17.02–23.03s", head="Hoa trần và hai hốc kệ giữ trục", vo="Phòng khách này có sẵn trục nhờ hoa trần ở giữa và hai hốc kệ giống nhau.",
+         cam=((1200, 782), 0.8, (540, 863)), dark=False, dd=['ht', 'lab_ht', 'hk_l', 'hk_r', 'lab_hk'], move="hold"),
+    dict(t="23.03–23.53s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

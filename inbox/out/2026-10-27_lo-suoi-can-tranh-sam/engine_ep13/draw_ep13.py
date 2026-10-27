@@ -159,21 +159,20 @@ def KC(pts, x0, y0):
     return [(round(x * K) - x0, round(y * K) - y0) for x, y in pts]
 
 
-# nhomb: dải ảnh 06 (góc trên trái 1193, 1342): sofa, ghế gỗ đen, bình hoa khô; mép dưới bức tranh ở sát mép trên dải. Cảnh 8
+# nhomb: dải ảnh 06 (góc trên trái 1193, 1180): phần dưới bức tranh, sofa, ghế gỗ đen, bình hoa khô. Cảnh 9
 w = 9
-NX, NY = 1193, 1342
+NX, NY = 1193, 1180
 L["nhomb"] = dict(
-    grp=loop((770, 600), 430, 275, w, DASH(w), 3.0, 8),
-    lab_tr=label("cùng bức tranh/phía trên", KC([(1325, 1165)], NX, NY)[0], 84),
-    a_tr=arrow(KC([(1590, 1165), (1610, 1145), (1625, 1122)], NX, NY), w, None, 1.0, 9, head=50),
-    lab_grp=label("một mảng liền", (715, 195), 92))
+    tr_n=poly(KC([(1488, 962), (1743, 962), (1744, 1120), (1488, 1152)], NX, NY), w, DASH(w), 3.0, 8),
+    lab_tr=label("bức tranh", KC([(1280, 985)], NX, NY)[0], 84),
+    grp=loop((770, 745), 405, 235, w, DASH(w), 3.0, 9))
 # tub: dải ảnh 06 (góc trên trái 559, 1093): tủ cổ gỗ đậm gần trục giữa. Cảnh 9
 w = 9
 TX, TY = 559, 1093
 L["tub"] = dict(
     tu=poly(KC([(683, 1072), (915, 1072), (925, 1412), (688, 1415)], TX, TY), w, DASH(w), 3.0, 10),
     ax=stroke(KC([(1002, 905), (1004, 1200), (1002, 1480)], TX, TY), w, DASH(w), 1.5, 11)[0],
-    lab_tu=label("tủ gỗ đậm/gần trục,/mắt dừng lại", KC([(632, 902)], TX, TY)[0], 62),
+    lab_tu=label("tủ gỗ đậm/gần trục", KC([(640, 925)], TX, TY)[0], 70),
     lab_ax=label("trục giữa", KC([(1030, 1100)], TX, TY)[0], 76))
 # trucb: dải ảnh 10 (y xem 300-1560, y0 = 373), cảnh 10, 11
 w = 9
@@ -183,7 +182,8 @@ L["trucb"] = dict(
     lab_ax=label("trục", KP([(975, 560)], Y0)[0], 100),
     hk_l=poly(KP([(478, 985), (778, 985), (778, 1455), (478, 1455)], Y0), w, DASH(w), 3.0, 14),
     hk_r=poly(KP([(1128, 985), (1428, 985), (1428, 1455), (1128, 1455)], Y0), w, DASH(w), 3.0, 15),
-    lab_ht=label("hoa trần ở giữa", KP([(1010, 318)], Y0)[0], 100),
+    ht=loop(KP([(952, 340)], Y0)[0], 330, 120, w, DASH(w), 2.5, 18, tilt=0),
+    lab_ht=label("hoa trần ở giữa", KP([(1130, 318)], Y0)[0], 100),
     lab_hk=label("hai hốc kệ/giống nhau", KP([(1150, 735)], Y0)[0], 92))
 
 os.makedirs(OUT + "doodle_preview", exist_ok=True)
