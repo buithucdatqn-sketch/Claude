@@ -552,13 +552,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.39s", head="Một món đậm cạnh trục", vo="và chiếc tủ cổ gỗ đậm đứng gần trục giúp mắt có chỗ dừng lại.",
+    dict(t="0–5.39s", head="Tủ cổ ở gần chính giữa phòng", vo="Gần điểm tựa ấy, chiếc tủ cổ gỗ đậm giúp mắt có chỗ dừng lại.",
          cam=((348, 504), 0.52, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="5.39–13.59s", head="Ở nhà mình, bắt đầu từ trục có sẵn", vo="Ở nhà mình, muốn kê lệch mà vẫn cân thì nên tìm một trục có sẵn, như ô cửa ban công hay bàn thờ,",
+    dict(t="5.39–13.59s", head="Áp dụng cho phòng khách nhà mình", vo="Ở nhà mình, muốn kê lệch mà vẫn cân thì nên tìm một trục có sẵn, như ô cửa ban công hay bàn thờ,",
          cam=((348, 504), 0.52, (540, 863)), dark=False, dd=[], move="pan_u"),
-    dict(t="13.59–19.6s", head="Phía bên kia sô-pha", vo="rồi đặt bên kia trục một món cân lại cho sofa, như một bức tranh màu đậm.",
+    dict(t="13.59–21.17s", head="Chọn món cho phía tường còn trống", vo="rồi đặt bên kia trục một món cân lại cho món to nhất, thường là sofa, như một bức tranh màu đậm.",
          cam=((348, 504), 0.52, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="19.6–20.1s", head="end", vo="",
+    dict(t="21.17–21.67s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

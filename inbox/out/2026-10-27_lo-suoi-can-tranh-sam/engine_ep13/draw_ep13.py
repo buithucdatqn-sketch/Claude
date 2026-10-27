@@ -151,7 +151,7 @@ L["khachb"] = dict(
     tr=poly(KP([(1486, 848), (1742, 684), (1744, 1120), (1488, 1152)], Y0), w, DASH(w), 3.0, 6),
     ax=stroke(KP([(1002, 580), (1004, 1150), (1002, 1700)], Y0), w, DASH(w), 1.5, 7)[0],
     lab_tr=label("nhỏ mà đậm nhất,/treo cao, xa trục", KP([(1020, 572)], Y0)[0], 96),
-    lab_ax=label("trục giữa", KP([(610, 880)], Y0)[0], 104))
+    lab_ax=label("chính giữa/phòng", KP([(580, 850)], Y0)[0], 104))
 
 
 def KC(pts, x0, y0):
@@ -161,10 +161,10 @@ def KC(pts, x0, y0):
 
 # nhomb: dải ảnh 06 (góc trên trái 1193, 1180): phần dưới bức tranh, sofa, ghế gỗ đen, bình hoa khô. Cảnh 9
 w = 9
-NX, NY = 1193, 1180
+NX, NY = 1193, round(850 * K)
 L["nhomb"] = dict(
-    tr_n=poly(KC([(1488, 962), (1743, 962), (1744, 1120), (1488, 1152)], NX, NY), w, DASH(w), 3.0, 8),
-    grp=loop((770, 745), 405, 235, w, DASH(w), 3.0, 9))
+    tr_n=poly(KC([(1488, 856), (1743, 856), (1744, 1120), (1488, 1152)], NX, NY), w, DASH(w), 3.0, 8),
+    grp=loop((770, 960), 410, 235, w, DASH(w), 3.0, 9))
 # tub: dải ảnh 06 (góc trên trái 559, 1093): tủ cổ gỗ đậm gần trục giữa. Cảnh 9
 w = 9
 TX, TY = 559, 1093
@@ -178,6 +178,9 @@ w = 9
 Y0 = round(160 * K)
 L["trucb"] = dict(
     ax=stroke(KP([(952, 335), (954, 900), (952, 1480)], Y0), w, DASH(w), 1.5, 12)[0],
+    ax2=stroke(KP([(952, 335), (954, 900), (952, 1480)], Y0), w, DASH(w), 1.5, 13)[0],
+    lab_ls10=label("lò sưởi", KP([(1520, 1425)], Y0)[0], 90),
+    lab_tr10=label("tranh", KP([(150, 540)], Y0)[0], 90),
     lab_ax=label("trục", KP([(975, 560)], Y0)[0], 100),
     hk_l=poly(KP([(478, 985), (778, 985), (778, 1455), (478, 1455)], Y0), w, DASH(w), 3.0, 14),
     hk_r=poly(KP([(1128, 985), (1428, 985), (1428, 1455), (1128, 1455)], Y0), w, DASH(w), 3.0, 15),

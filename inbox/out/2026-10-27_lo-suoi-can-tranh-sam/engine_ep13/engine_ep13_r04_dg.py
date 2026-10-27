@@ -551,13 +551,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–8.2s", head="Theo Arnheim (1954), điều làm món đồ nặng thêm", vo="Còn nhà tâm lý học Rudolf Arnheim cho rằng món càng to, màu càng nổi so với nền thì trong mắt người càng nặng,",
+    dict(t="0–8.51s", head="Theo Arnheim (1954), điều làm món đồ nặng thêm", vo="Nhà tâm lý học Rudolf Arnheim giải thích thêm rằng món càng to, màu càng nổi so với nền thì trong mắt người càng nặng.",
          cam=((1080, 660), 0.88, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="8.2–12.02s", head="Theo Arnheim (1954), điều làm món đồ nặng thêm", vo="và càng xa chính giữa phòng thì càng nặng thêm,",
+    dict(t="8.51–12.96s", head="Theo Arnheim (1954), điều làm món đồ nặng thêm", vo="Món ấy đặt càng xa chính giữa phòng thì càng nặng thêm,",
          cam=((1080, 660), 0.88, (540, 863)), dark=False, dd=[], move="push"),
-    dict(t="12.02–16.78s", head="Theo Arnheim (1954), điều làm món đồ nặng thêm", vo="như người ngồi càng xa điểm tựa bập bênh thì càng đè mạnh.",
+    dict(t="12.96–17.72s", head="Theo Arnheim (1954), điều làm món đồ nặng thêm", vo="như người ngồi càng xa điểm tựa bập bênh thì càng đè mạnh.",
          cam=((1080, 660), 0.88, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="16.78–17.28s", head="end", vo="",
+    dict(t="17.72–18.22s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
