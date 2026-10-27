@@ -1,0 +1,122 @@
+[
+ {
+  "blk": 1,
+  "t": "0–9.45s",
+  "head": "Lò sưởi rất to một bên, tranh nhỏ bên kia",
+  "loi": "Một bên phòng khách là chiếc lò sưởi rất to, bên kia chỉ có một bức tranh nhỏ hơn nhiều, vậy vì sao hai bên vẫn ngang nhau?",
+  "tts": "Một bên phòng khách là chiếc lò sưởi rất to, bên kia chỉ có một bức tranh nhỏ hơn nhiều, vậy vì sao hai bên vẫn ngang nhau?",
+  "part": "A"
+ },
+ {
+  "blk": 2,
+  "t": "9.45–17.65s",
+  "head": "Theo Kilmer & Kilmer (2014), không cần giống nhau",
+  "loi": "Theo sách năm 2014 của hai tác giả Kilmer, hai bên căn phòng không cần giống nhau, miễn là vẫn giữ được thăng bằng.",
+  "tts": "Theo sách năm hai nghìn không trăm mười bốn của hai tác giả Kin-mơ, hai bên căn phòng không cần giống nhau, miễn là vẫn giữ được thăng bằng.",
+  "part": "B"
+ },
+ {
+  "blk": 2,
+  "t": "17.65–23.35s",
+  "head": "Theo Arnheim (1954), sức nặng của một món đồ",
+  "loi": "Còn món nào nặng, tụi mình dựa vào nhà tâm lý học Rudolf Arnheim, năm 1954.",
+  "tts": "Còn món nào nặng, tụi mình dựa vào nhà tâm lý học Ru-đôn Ác-nhai-mơ, năm một nghìn chín trăm năm mươi bốn.",
+  "part": "C"
+ },
+ {
+  "blk": 2,
+  "t": "23.35–30.61s",
+  "head": "To, nổi màu và xa trục thì nặng thêm",
+  "loi": "Theo ông, vật càng to, màu càng nổi, càng xa tâm bố cục thì càng nặng, giống hệt chuyện đòn bẩy.",
+  "tts": "Theo ông, vật càng to, màu càng nổi, càng xa tâm bố cục thì càng nặng, giống hệt chuyện đòn bẩy.",
+  "part": "C"
+ },
+ {
+  "blk": 3,
+  "t": "30.61–34.75s",
+  "head": "Phòng khách ở Palmeira, Lisbon",
+  "loi": "Xét theo Arnheim, trong phòng khách căn hộ Palmeira ở Lisbon,",
+  "tts": "Xét theo Ác-nhai-mơ, trong phòng khách căn hộ Pan-mây-ra ở Lít-bon,",
+  "part": "D"
+ },
+ {
+  "blk": 3,
+  "t": "34.75–42.01s",
+  "head": "Lò sưởi to nhưng cùng màu tường",
+  "loi": "chiếc chụp hình nón của lò sưởi tuy to hơn bức tranh, nhưng cùng màu với tường nên không nặng lắm.",
+  "tts": "chiếc chụp hình nón của lò sưởi tuy to hơn bức tranh, nhưng cùng màu với tường nên không nặng lắm.",
+  "part": "D"
+ },
+ {
+  "blk": 3,
+  "t": "42.01–49.27s",
+  "head": "Tranh nhỏ nhưng sẫm, treo cao, xa trục",
+  "loi": "Bức tranh nhỏ hơn nhưng đậm nhất phòng, lại treo cao và xa trục, nên hai bên gần như ngang nhau.",
+  "tts": "Bức tranh nhỏ hơn nhưng đậm nhất phòng, lại treo cao và xa trục, nên hai bên gần như ngang nhau.",
+  "part": "D"
+ },
+ {
+  "blk": 3,
+  "t": "49.27–57.16s",
+  "head": "Phía bên tranh là một nhóm đồ sát nhau",
+  "loi": "Phía đối diện là cả nhóm sofa, bức tranh, ghế gỗ đen và bình hoa khô đứng sát nhau thành một mảng liền.",
+  "tts": "Phía đối diện là cả nhóm sô-pha, bức tranh, ghế gỗ đen và bình hoa khô đứng sát nhau thành một mảng liền.",
+  "part": "D"
+ },
+ {
+  "blk": 3,
+  "t": "57.16–63.17s",
+  "head": "Tủ cổ gỗ đậm đứng gần trục giữa",
+  "loi": "Còn chiếc tủ cổ màu gỗ đậm, đứng gần trục giữa, giúp mắt có chỗ dừng lại.",
+  "tts": "Còn chiếc tủ cổ màu gỗ đậm, đứng gần trục giữa, giúp mắt có chỗ dừng lại.",
+  "part": "D"
+ },
+ {
+  "blk": 4,
+  "t": "63.17–70.12s",
+  "head": "Vỏ nhà đã có sẵn trục",
+  "loi": "Có một điều sách không nói, là phòng khách ấy kê lệch được nhờ vỏ nhà đã có sẵn trục,",
+  "tts": "Có một điều sách không nói, là phòng khách ấy kê lệch được nhờ vỏ nhà đã có sẵn trục,",
+  "part": "E"
+ },
+ {
+  "blk": 4,
+  "t": "70.12–75.51s",
+  "head": "Vỏ nhà đã có sẵn trục",
+  "loi": "với hoa trần ở giữa và hai hốc kệ giống nhau hai bên lỗ cửa.",
+  "tts": "với hoa trần ở giữa và hai hốc kệ giống nhau hai bên lỗ cửa.",
+  "part": "E"
+ },
+ {
+  "blk": 5,
+  "t": "75.51–84.34s",
+  "head": "Tìm trục có sẵn trước khi kê lệch",
+  "loi": "Vì vậy, muốn kê lệch mà vẫn cân, mọi người nên tìm trước một cái trục có sẵn, như ô cửa ban công hay bàn thờ.",
+  "tts": "Vì vậy, muốn kê lệch mà vẫn cân, mọi người nên tìm trước một cái trục có sẵn, như ô cửa ban công hay bàn thờ.",
+  "part": "F"
+ },
+ {
+  "blk": 5,
+  "t": "84.34–90.35s",
+  "head": "Món to nhất cần một đối trọng",
+  "loi": "Quanh trục ấy, món to nhất, thường là sofa, cần một đối trọng ở phía bên kia,",
+  "tts": "Quanh trục ấy, món to nhất, thường là sô-pha, cần một đối trọng ở phía bên kia,",
+  "part": "F"
+ },
+ {
+  "blk": 5,
+  "t": "90.35–95.42s",
+  "head": "Món to nhất cần một đối trọng",
+  "loi": "như một bức tranh màu đậm hay một chùm khung ảnh treo sát nhau.",
+  "tts": "như một bức tranh màu đậm hay một chùm khung ảnh treo sát nhau.",
+  "part": "F"
+ },
+ {
+  "blk": 5,
+  "t": "95.42–103s",
+  "head": "end",
+  "loi": "Bài phân tích về cân bằng thị giác, từ sách của hai tác giả Kilmer, mọi người xem ở phần bình luận.",
+  "tts": "Bài phân tích về cân bằng thị giác, từ sách của hai tác giả Kin-mơ, mọi người xem ở phần bình luận.",
+  "part": "I"
+ }
+]

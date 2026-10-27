@@ -477,5 +477,34 @@
   "trang_thai": "da_dung_video",
   "ghi_chu": "Bản làm lại trong ngày: bản đầu (slug lech-ma-van-can, một ảnh, sáu cảnh, ý lò sưởi và tranh sẫm của bài học 2) làm theo prompt lịch chạy, chủ Trang chê 'hoàn toàn không đúng yêu cầu trong instruction', đã bỏ; ý bài học 2 vẫn CHƯA dùng. Ý 'đối xứng chặt chẽ chỉ có tác dụng khi đứng trên trục' (bài học 3) không dùng ở tập này. | Giai đoạn B 2026-10-26: ghi âm 69,64 giây, video 71,25 giây, −14,6 LUFS. Không nhận dạng lại được lời (cài sherpa-onnx bị môi trường chặn); câu ghép vào đoạn nói theo độ dài, phụ đề giữ chữ kịch bản.",
   "video": "inbox/out/2026-10-26_doi-xung-dau-giuong/reel_doi-xung-dau-giuong_final.mp4"
+ },
+ {
+  "tap": 13,
+  "slug": "lo-suoi-can-tranh-sam",
+  "ngay": "2026-10-27",
+  "nguyen_ly": "Cân bằng bất đối xứng: sức nặng thị giác theo kích thước, độ nổi của màu và khoảng cách tới trục (Arnheim 1954; Kilmer & Kilmer, Designing Interiors 2014, ch. 4, mục Balance); lò sưởi to cùng màu tường cân với tranh nhỏ sẫm treo cao xa trục; kê lệch nhờ vỏ nhà có sẵn trục",
+  "nhom": "Bố cục đồ đạc: cân bằng thị giác, bất đối xứng, đối trọng",
+  "bai_kho": {
+   "duong_dan": "AH-Decode-Decor/bai-04-3-bai-hoc-can-bang-thi-giac-noi-that/bai-04.md",
+   "nhanh": "AH-Interior-notes",
+   "commit": "bd74e5309164916cffb99e784b36711b2b82f7f2"
+  },
+  "y_bai": {
+   "muc": "Đặt một món lớn đối trọng với một nhóm món nhỏ hay một mảng sẫm màu để căn phòng lệch mà vẫn cân (bài học 2) + phần mở 'Mắt người cân đồ đạc… bập bênh' làm nguồn gốc và cơ chế + đoạn cuối bài (tìm trục có sẵn, đối trọng cho món to nhất)",
+   "tom_tat": "Sức nặng thị giác tăng theo độ to, độ nổi của màu, khoảng cách tới trục; lò sưởi to cùng màu tường nhẹ, tranh nhỏ sẫm treo cao xa trục nặng nên hai bên ngang nhau; phía tranh có nhóm sofa, ghế gỗ đen, bình hoa khô; tủ cổ gỗ đậm gần trục cho mắt chỗ dừng; Palmeira kê lệch được nhờ vỏ nhà có sẵn trục (hoa trần, hai hốc kệ); ở nhà mình tìm trục có sẵn và đặt đối trọng cho món to nhất"
+  },
+  "anh_kho": [
+   "AH-Decode-Decor/bai-04-3-bai-hoc-can-bang-thi-giac-noi-that/anh/goc/06-goc-lo-suoi-va-tranh.jpg (ảnh chính, nét mới, ba dải cắt)",
+   "AH-Decode-Decor/bai-04-3-bai-hoc-can-bang-thi-giac-noi-that/anh/goc/10-goc-anh-tong.jpg (dải giữa: hoa trần, hai hốc kệ, nét mới)",
+   "AH-Decode-Decor/bai-04-3-bai-hoc-can-bang-thi-giac-noi-that/anh/02-diagram-suc-nang-thi-giac.png",
+   "AH-Decode-Decor/bai-04-3-bai-hoc-can-bang-thi-giac-noi-that/anh/03-mat-bang-palmeira.png",
+   "ArchDaily palmeira-apartment-studio-gameiro_21.jpg (ngoài kho, mục 0.6d, nét mới ở cảnh 13–14)"
+  ],
+  "du_an": "Palmeira Apartment, Lisbon",
+  "studio": "Studio Gameiro",
+  "nhiep_anh": "Francisco Nogueira",
+  "thu_muc": "inbox/out/2026-10-27_lo-suoi-can-tranh-sam/",
+  "trang_thai": "cho_ghi_am",
+  "ghi_chu": "Chủ Trang chọn ý ngày 2026-10-27 (bài 04 bài học 2, 'tương tự sofa, tủ gỗ…') sau khi lần chạy báo hết ý để xen kẽ bài (mục 0.5b); ngoại lệ có chủ ý: làm bài 04 hai ngày liền. Bài học 3 của bài 04 (kiểm tra cân bằng từ chỗ đứng và ngồi) vẫn CHƯA dùng. Giai đoạn A: chưa có ghi âm."
  }
 ]
