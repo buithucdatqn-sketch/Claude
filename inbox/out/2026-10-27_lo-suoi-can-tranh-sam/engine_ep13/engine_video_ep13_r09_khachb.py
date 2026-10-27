@@ -552,11 +552,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.32s", head="Món đậm đứng gần trục", vo="nhưng đứng gần trục, nên gần như không kéo về bên nào, chỉ cho mắt chỗ dừng lại.",
+    dict(t="0–4.39s", head="Món đậm đứng gần trục", vo="nhưng đứng gần trục, nên gần như không kéo về bên nào, chỉ cho mắt chỗ dừng lại.",
          cam=((1200, 745), 0.87, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="6.32–13.58s", head="Cân hai bên trục", vo="Vậy lò sưởi to mà chìm vào nền vẫn cân được với cụm món nhỏ màu đậm ở bên kia trục.",
+    dict(t="4.39–9.21s", head="Cân hai bên trục", vo="Vậy lò sưởi to mà chìm vào nền vẫn cân được với cụm món nhỏ màu đậm ở bên kia trục.",
          cam=((1200, 745), 0.87, (540, 863)), dark=False, dd=['ax', 'ls', 'cum', 'lab_ls9', 'lab_cum'], move="pull"),
-    dict(t="13.58–14.08s", head="end", vo="",
+    dict(t="9.21–9.71s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

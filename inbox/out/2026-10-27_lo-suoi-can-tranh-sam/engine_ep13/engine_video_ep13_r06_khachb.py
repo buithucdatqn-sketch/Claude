@@ -552,19 +552,19 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–3.5s", head="Phòng khách ở Palmeira, Lisbon", vo="Ở phòng khách căn hộ Palmeira,",
+    dict(t="0–1.74s", head="Phòng khách ở Palmeira, Lisbon", vo="Ở phòng khách căn hộ Palmeira,",
          cam=((1200, 745), 0.87, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="3.5–7.64s", head="Phía lò sưởi", vo="chiếc chụp lò sưởi rất to đứng sát tường, xa trục,",
+    dict(t="1.74–4.78s", head="Phía lò sưởi", vo="chiếc chụp lò sưởi rất to đứng sát tường, xa trục,",
          cam=((1200, 745), 0.87, (540, 863)), dark=False, dd=['ax', 'ls', 'd_ls', 'lab_dls'], move="push"),
-    dict(t="7.64–11.47s", head="Phía lò sưởi", vo="nhưng màu kem trùng màu tường nên chìm vào nền.",
+    dict(t="4.78–7.47s", head="Phía lò sưởi", vo="nhưng màu kem trùng màu tường nên chìm vào nền.",
          cam=((1200, 745), 0.87, (540, 863)), dark=False, dd=['ls', 'lab_ls'], move="hold"),
-    dict(t="11.47–16.23s", head="Phía bức tranh", vo="Bên kia trục, bức tranh nhỏ hơn cũng treo sát tường, xa trục,",
+    dict(t="7.47–10.95s", head="Phía bức tranh", vo="Bên kia trục, bức tranh nhỏ hơn cũng treo sát tường, xa trục,",
          cam=((1200, 745), 0.87, (540, 863)), dark=False, dd=['ax', 'tr', 'd_tr', 'lab_dtr'], move="pan_r"),
-    dict(t="16.23–20.99s", head="Phía bức tranh", vo="nhưng là mảng đen xám đậm nhất phòng, nổi hẳn trên tường kem.",
+    dict(t="10.95–14.15s", head="Phía bức tranh", vo="nhưng là mảng đen xám đậm nhất phòng, nổi hẳn trên tường kem.",
          cam=((1200, 745), 0.87, (540, 863)), dark=False, dd=['tr', 'lab_tr'], move="hold"),
-    dict(t="20.99–28.25s", head="Lò sưởi hơn về độ to, tranh hơn về màu", vo="Hai món cùng xa trục gần như nhau, nên lò sưởi hơn về độ to, còn bức tranh hơn về màu.",
+    dict(t="14.15–19.93s", head="Lò sưởi hơn về độ to, tranh hơn về màu", vo="Hai món cùng xa trục gần như nhau, nên lò sưởi hơn về độ to, còn bức tranh hơn về màu.",
          cam=((1200, 745), 0.87, (540, 863)), dark=False, dd=['ax', 'ls', 'tr', 'd_ls', 'd_tr', 'lab_big', 'lab_col'], move="pull"),
-    dict(t="28.25–28.75s", head="end", vo="",
+    dict(t="19.93–20.43s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

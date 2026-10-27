@@ -551,13 +551,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–7.26s", head="Lò sưởi hơn về độ to, tranh hơn về màu", vo="Hai món cùng xa trục gần như nhau, nên lò sưởi hơn về độ to, còn bức tranh hơn về màu.",
+    dict(t="0–5.78s", head="Lò sưởi hơn về độ to, tranh hơn về màu", vo="Hai món cùng xa trục gần như nhau, nên lò sưởi hơn về độ to, còn bức tranh hơn về màu.",
          cam=((603, 584), 0.56, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="7.26–15.46s", head="Sofa cùng phía với tranh", vo="Theo cách tụi mình hiểu, sofa trắng kem dưới tranh cũng to và xa trục, nhưng chìm vào nền, nên không nặng thêm mấy.",
+    dict(t="5.78–12s", head="Sofa cùng phía với tranh", vo="Theo cách tụi mình hiểu, sofa trắng kem dưới tranh cũng to và xa trục, nhưng chìm vào nền, nên không nặng thêm mấy.",
          cam=((603, 584), 0.56, (540, 863)), dark=False, dd=['axn', 'sofa', 'lab_sofa'], move="pan_d"),
-    dict(t="15.46–23.04s", head="Chiếc ghế đen trên sàn sáng", vo="Chiếc ghế gỗ đen trước sofa thì nhỏ, gần trục hơn tranh, nhưng nổi trên sàn sáng, nên góp thêm sức nặng.",
+    dict(t="12–17.7s", head="Chiếc ghế đen trên sàn sáng", vo="Chiếc ghế gỗ đen trước sofa thì nhỏ, gần trục hơn tranh, nhưng nổi trên sàn sáng, nên góp thêm sức nặng.",
          cam=((603, 584), 0.56, (540, 863)), dark=False, dd=['axn', 'ghe', 'd_ghe', 'lab_ghe'], move="hold"),
-    dict(t="23.04–23.54s", head="end", vo="",
+    dict(t="17.7–18.2s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

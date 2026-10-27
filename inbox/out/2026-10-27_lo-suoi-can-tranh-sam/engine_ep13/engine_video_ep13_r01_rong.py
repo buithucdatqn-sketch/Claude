@@ -552,9 +552,9 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–8.51s", head="Kê lệch hẳn mà vẫn đứng vững", vo="Một bên phòng khách là chiếc lò sưởi rất to, bên kia treo một bức tranh nhỏ hơn, vậy vì sao căn phòng không nghiêng?",
+    dict(t="0–6.48s", head="Kê lệch hẳn mà vẫn đứng vững", vo="Một bên phòng khách là chiếc lò sưởi rất to, bên kia treo một bức tranh nhỏ hơn, vậy vì sao căn phòng trông vẫn cân đối?",
          cam=((1000, 667), 0.81, (540, 863)), dark=False, dd=[], move="push"),
-    dict(t="8.51–9.01s", head="end", vo="",
+    dict(t="6.48–6.98s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

@@ -1,15 +1,15 @@
 [
  {
   "blk": 1,
-  "t": "0–8.51s",
+  "t": "0–6.48s",
   "head": "Kê lệch hẳn mà vẫn đứng vững",
-  "loi": "Một bên phòng khách là chiếc lò sưởi rất to, bên kia treo một bức tranh nhỏ hơn, vậy vì sao căn phòng không nghiêng?",
-  "tts": "Một bên phòng khách là chiếc lò sưởi rất to, bên kia treo một bức tranh nhỏ hơn, vậy vì sao căn phòng không nghiêng?",
+  "loi": "Một bên phòng khách là chiếc lò sưởi rất to, bên kia treo một bức tranh nhỏ hơn, vậy vì sao căn phòng trông vẫn cân đối?",
+  "tts": "Một bên phòng khách là chiếc lò sưởi rất to, bên kia treo một bức tranh nhỏ hơn, vậy vì sao căn phòng trông vẫn cân đối?",
   "part": "A"
  },
  {
   "blk": 2,
-  "t": "8.51–14.21s",
+  "t": "6.48–10.62s",
   "head": "Theo Kilmer & Kilmer (2014), mắt cân đồ như cân bập bênh",
   "loi": "Theo hai tác giả Kilmer, một món to có thể cân với một nhóm món nhỏ.",
   "tts": "Theo hai tác giả Kin-mơ, một món to có thể cân với một nhóm món nhỏ.",
@@ -17,7 +17,7 @@
  },
  {
   "blk": 2,
-  "t": "14.21–22.41s",
+  "t": "10.62–17.36s",
   "head": "Theo Arnheim (1954), điều làm món đồ nặng thêm",
   "loi": "Nhà tâm lý học Rudolf Arnheim giải thích rằng trong mắt người, món càng to, màu càng nổi so với nền thì càng nặng.",
   "tts": "Nhà tâm lý học Ru-đôn Ác-nhai-mơ giải thích rằng trong mắt người, món càng to, màu càng nổi so với nền thì càng nặng.",
@@ -25,7 +25,7 @@
  },
  {
   "blk": 2,
-  "t": "22.41–28.73s",
+  "t": "17.36–21.88s",
   "head": "Theo Arnheim (1954), điều làm món đồ nặng thêm",
   "loi": "Món càng xa trục, tức đường chia đôi căn phòng, cũng càng nặng, như trên chiếc bập bênh.",
   "tts": "Món càng xa trục, tức đường chia đôi căn phòng, cũng càng nặng, như trên chiếc bập bênh.",
@@ -33,7 +33,7 @@
  },
  {
   "blk": 3,
-  "t": "28.73–32.23s",
+  "t": "21.88–23.62s",
   "head": "Phòng khách ở Palmeira, Lisbon",
   "loi": "Ở phòng khách căn hộ Palmeira,",
   "tts": "Ở phòng khách căn hộ Pan-mây-ra,",
@@ -41,7 +41,7 @@
  },
  {
   "blk": 3,
-  "t": "32.23–36.37s",
+  "t": "23.62–26.66s",
   "head": "Phía lò sưởi",
   "loi": "chiếc chụp lò sưởi rất to đứng sát tường, xa trục,",
   "tts": "chiếc chụp lò sưởi rất to đứng sát tường, xa trục,",
@@ -49,7 +49,7 @@
  },
  {
   "blk": 3,
-  "t": "36.37–40.2s",
+  "t": "26.66–29.35s",
   "head": "Phía lò sưởi",
   "loi": "nhưng màu kem trùng màu tường nên chìm vào nền.",
   "tts": "nhưng màu kem trùng màu tường nên chìm vào nền.",
@@ -57,7 +57,7 @@
  },
  {
   "blk": 3,
-  "t": "40.2–44.96s",
+  "t": "29.35–32.83s",
   "head": "Phía bức tranh",
   "loi": "Bên kia trục, bức tranh nhỏ hơn cũng treo sát tường, xa trục,",
   "tts": "Bên kia trục, bức tranh nhỏ hơn cũng treo sát tường, xa trục,",
@@ -65,7 +65,7 @@
  },
  {
   "blk": 3,
-  "t": "44.96–49.72s",
+  "t": "32.83–36.03s",
   "head": "Phía bức tranh",
   "loi": "nhưng là mảng đen xám đậm nhất phòng, nổi hẳn trên tường kem.",
   "tts": "nhưng là mảng đen xám đậm nhất phòng, nổi hẳn trên tường kem.",
@@ -73,7 +73,7 @@
  },
  {
   "blk": 3,
-  "t": "49.72–56.98s",
+  "t": "36.03–41.81s",
   "head": "Lò sưởi hơn về độ to, tranh hơn về màu",
   "loi": "Hai món cùng xa trục gần như nhau, nên lò sưởi hơn về độ to, còn bức tranh hơn về màu.",
   "tts": "Hai món cùng xa trục gần như nhau, nên lò sưởi hơn về độ to, còn bức tranh hơn về màu.",
@@ -81,7 +81,7 @@
  },
  {
   "blk": 4,
-  "t": "56.98–65.18s",
+  "t": "41.81–48.03s",
   "head": "Sofa cùng phía với tranh",
   "loi": "Theo cách tụi mình hiểu, sofa trắng kem dưới tranh cũng to và xa trục, nhưng chìm vào nền, nên không nặng thêm mấy.",
   "tts": "Theo cách tụi mình hiểu, sô-pha trắng kem dưới tranh cũng to và xa trục, nhưng chìm vào nền, nên không nặng thêm mấy.",
@@ -89,7 +89,7 @@
  },
  {
   "blk": 4,
-  "t": "65.18–72.76s",
+  "t": "48.03–53.73s",
   "head": "Chiếc ghế đen trên sàn sáng",
   "loi": "Chiếc ghế gỗ đen trước sofa thì nhỏ, gần trục hơn tranh, nhưng nổi trên sàn sáng, nên góp thêm sức nặng.",
   "tts": "Chiếc ghế gỗ đen trước sô-pha thì nhỏ, gần trục hơn tranh, nhưng nổi trên sàn sáng, nên góp thêm sức nặng.",
@@ -97,7 +97,7 @@
  },
  {
   "blk": 4,
-  "t": "72.76–77.21s",
+  "t": "53.73–56.75s",
   "head": "Món đậm đứng gần trục",
   "loi": "Còn chiếc tủ cổ gỗ đậm khá cao, nổi trên tường kem,",
   "tts": "Còn chiếc tủ cổ gỗ đậm khá cao, nổi trên tường kem,",
@@ -105,7 +105,7 @@
  },
  {
   "blk": 4,
-  "t": "77.21–83.53s",
+  "t": "56.75–61.14s",
   "head": "Món đậm đứng gần trục",
   "loi": "nhưng đứng gần trục, nên gần như không kéo về bên nào, chỉ cho mắt chỗ dừng lại.",
   "tts": "nhưng đứng gần trục, nên gần như không kéo về bên nào, chỉ cho mắt chỗ dừng lại.",
@@ -113,7 +113,7 @@
  },
  {
   "blk": 4,
-  "t": "83.53–90.79s",
+  "t": "61.14–65.96s",
   "head": "Cân hai bên trục",
   "loi": "Vậy lò sưởi to mà chìm vào nền vẫn cân được với cụm món nhỏ màu đậm ở bên kia trục.",
   "tts": "Vậy lò sưởi to mà chìm vào nền vẫn cân được với cụm món nhỏ màu đậm ở bên kia trục.",
@@ -121,7 +121,7 @@
  },
  {
   "blk": 5,
-  "t": "90.79–96.8s",
+  "t": "65.96–69.89s",
   "head": "Áp dụng cho phòng khách nhà mình",
   "loi": "Ở nhà mình, hãy lấy một trục có sẵn, như ô cửa ban công hay bàn thờ.",
   "tts": "Ở nhà mình, hãy lấy một trục có sẵn, như ô cửa ban công hay bàn thờ.",
@@ -129,7 +129,7 @@
  },
  {
   "blk": 5,
-  "t": "96.8–102.19s",
+  "t": "69.89–73.57s",
   "head": "Chọn món cho phía tường còn trống",
   "loi": "Món to nhất, thường là sofa, cần một món cân lại ở bên kia trục,",
   "tts": "Món to nhất, thường là sô-pha, cần một món cân lại ở bên kia trục,",
@@ -137,7 +137,7 @@
  },
  {
   "blk": 5,
-  "t": "102.19–108.2s",
+  "t": "73.57–77.47s",
   "head": "Chọn món cho phía tường còn trống",
   "loi": "như một bức tranh màu đậm hay một chùm khung ảnh treo sát nhau, đặt xa trục.",
   "tts": "như một bức tranh màu đậm hay một chùm khung ảnh treo sát nhau, đặt xa trục.",
@@ -145,7 +145,7 @@
  },
  {
   "blk": 5,
-  "t": "108.2–115.78s",
+  "t": "77.47–82.89s",
   "head": "end",
   "loi": "Bài phân tích về cân bằng thị giác, từ sách của hai tác giả Kilmer, mọi người xem ở phần bình luận.",
   "tts": "Bài phân tích về cân bằng thị giác, từ sách của hai tác giả Kin-mơ, mọi người xem ở phần bình luận.",

@@ -551,15 +551,15 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–7.26s", head="Cân hai bên trục", vo="Vậy lò sưởi to mà chìm vào nền vẫn cân được với cụm món nhỏ màu đậm ở bên kia trục.",
+    dict(t="0–4.82s", head="Cân hai bên trục", vo="Vậy lò sưởi to mà chìm vào nền vẫn cân được với cụm món nhỏ màu đậm ở bên kia trục.",
          cam=((348, 504), 0.52, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="7.26–13.27s", head="Áp dụng cho phòng khách nhà mình", vo="Ở nhà mình, hãy lấy một trục có sẵn, như ô cửa ban công hay bàn thờ.",
+    dict(t="4.82–8.75s", head="Áp dụng cho phòng khách nhà mình", vo="Ở nhà mình, hãy lấy một trục có sẵn, như ô cửa ban công hay bàn thờ.",
          cam=((348, 504), 0.52, (540, 863)), dark=False, dd=[], move="pan_u"),
-    dict(t="13.27–18.66s", head="Chọn món cho phía tường còn trống", vo="Món to nhất, thường là sofa, cần một món cân lại ở bên kia trục,",
+    dict(t="8.75–12.43s", head="Chọn món cho phía tường còn trống", vo="Món to nhất, thường là sofa, cần một món cân lại ở bên kia trục,",
          cam=((348, 504), 0.52, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="18.66–24.67s", head="Chọn món cho phía tường còn trống", vo="như một bức tranh màu đậm hay một chùm khung ảnh treo sát nhau, đặt xa trục.",
+    dict(t="12.43–16.33s", head="Chọn món cho phía tường còn trống", vo="như một bức tranh màu đậm hay một chùm khung ảnh treo sát nhau, đặt xa trục.",
          cam=((348, 504), 0.52, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="24.67–25.17s", head="end", vo="",
+    dict(t="16.33–16.83s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

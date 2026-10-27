@@ -551,13 +551,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–7.58s", head="Chiếc ghế đen trên sàn sáng", vo="Chiếc ghế gỗ đen trước sofa thì nhỏ, gần trục hơn tranh, nhưng nổi trên sàn sáng, nên góp thêm sức nặng.",
+    dict(t="0–5.7s", head="Chiếc ghế đen trên sàn sáng", vo="Chiếc ghế gỗ đen trước sofa thì nhỏ, gần trục hơn tranh, nhưng nổi trên sàn sáng, nên góp thêm sức nặng.",
          cam=((652, 385), 0.74, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="7.58–12.03s", head="Món đậm đứng gần trục", vo="Còn chiếc tủ cổ gỗ đậm khá cao, nổi trên tường kem,",
+    dict(t="5.7–8.72s", head="Món đậm đứng gần trục", vo="Còn chiếc tủ cổ gỗ đậm khá cao, nổi trên tường kem,",
          cam=((652, 385), 0.74, (540, 863)), dark=False, dd=['tu', 'lab_tu'], move="push"),
-    dict(t="12.03–18.35s", head="Món đậm đứng gần trục", vo="nhưng đứng gần trục, nên gần như không kéo về bên nào, chỉ cho mắt chỗ dừng lại.",
+    dict(t="8.72–13.11s", head="Món đậm đứng gần trục", vo="nhưng đứng gần trục, nên gần như không kéo về bên nào, chỉ cho mắt chỗ dừng lại.",
          cam=((652, 385), 0.74, (540, 863)), dark=False, dd=['ax', 'd_tu', 'lab_ax'], move="hold"),
-    dict(t="18.35–18.85s", head="end", vo="",
+    dict(t="13.11–13.61s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

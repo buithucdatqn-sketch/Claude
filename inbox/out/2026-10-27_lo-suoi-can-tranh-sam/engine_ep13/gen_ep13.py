@@ -47,7 +47,7 @@ def STRIP(cx, cy, z=1.0, ay=880):
 # (ngang nhau → thăng bằng → nặng → trục → trục có sẵn). Thẻ ngắt 1,2 giây giữa các khối (prompt lịch chạy, như tập 11, 12).
 SC = [
     dict(move="push", part="A", blk=1, img="rong", head="Kê lệch hẳn mà vẫn đứng vững", cam=STRIP(1000, 667, 0.81, 863), free=True, dark=False, dd=[],
-         vo="Một bên phòng khách là chiếc lò sưởi rất to, bên kia treo một bức tranh nhỏ hơn, vậy vì sao căn phòng không nghiêng?"),
+         vo="Một bên phòng khách là chiếc lò sưởi rất to, bên kia treo một bức tranh nhỏ hơn, vậy vì sao căn phòng trông vẫn cân đối?"),
     dict(move="push", part="B", blk=2, img="bat", head="Theo Kilmer & Kilmer (2014), mắt cân đồ như cân bập bênh", cam=STRIP(348, 504, 0.52, 863), free=True, dark=False, dd=[],
          vo="Theo hai tác giả Kilmer, một món to có thể cân với một nhóm món nhỏ.",
          tts="Theo hai tác giả Kin-mơ, một món to có thể cân với một nhóm món nhỏ."),
@@ -132,7 +132,7 @@ def dur(s):
 
 
 # Giai đoạn B: điền mốc cảnh theo ghi âm (mỗi cảnh bắt đầu khoảng 0,35–0,4 giây trước câu của nó). Giai đoạn A để trống.
-T_AUDIO = []
+T_AUDIO = [0, 6.48, 10.62, 17.36, 21.88, 23.62, 26.66, 29.35, 32.83, 36.03, 41.81, 48.03, 53.73, 56.75, 61.14, 65.96, 69.89, 73.57, 77.47, 82.89]
 
 
 def times():
