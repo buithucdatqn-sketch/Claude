@@ -136,7 +136,12 @@ L["rong"] = dict(
     tr=poly([(1458, 412), (1695, 258), (1698, 688), (1460, 708)], w, DASH(w), 2.5, 2),
     a_ls=arrow([(760, 400), (560, 520), (345, 635)], w, DASH(w), 2.0, 3),
     a_tr=arrow([(1370, 265), (1420, 330), (1448, 392)], w, DASH(w), 2.0, 4),
-    lab_dt=label("to mà nhạt cân với/nhỏ mà sẫm", (700, 175), 88))
+    lab_dt=label("to mà nhạt cân với/nhỏ mà sẫm", (700, 175), 88),
+    ax_r=stroke([(1170, 395), (1172, 800), (1170, 1190)], w, DASH(w), 1.5, 16)[0],
+    lab_axr=label("ô cửa làm trục", (1110, 215), 84),
+    sofa=loop((1458, 1000), 330, 185, w, DASH(w), 2.5, 17, tilt=-3),
+    lab_sofa=label("món to nhất", (1300, 735), 84),
+    lab_tr12=label("tranh màu đậm", (1040, 190), 84))
 # khachb: dải ảnh 06 (y xem 560-1760, y0 = 696), cảnh 6, 7
 w = 9
 Y0 = 696
@@ -175,12 +180,11 @@ w = 9
 Y0 = 373
 L["trucb"] = dict(
     ax=stroke(KP([(952, 335), (954, 900), (952, 1480)], Y0), w, DASH(w), 1.5, 12)[0],
-    ax2=stroke(KP([(952, 335), (954, 900), (952, 1480)], Y0), w, DASH(w), 1.5, 13)[0],
     lab_ax=label("trục", KP([(975, 560)], Y0)[0], 100),
     hk_l=poly(KP([(478, 985), (778, 985), (778, 1455), (478, 1455)], Y0), w, DASH(w), 3.0, 14),
     hk_r=poly(KP([(1128, 985), (1428, 985), (1428, 1455), (1128, 1455)], Y0), w, DASH(w), 3.0, 15),
     lab_ht=label("hoa trần ở giữa", KP([(1010, 318)], Y0)[0], 100),
-    lab_hk=label("hai hốc kệ/giống nhau,/hai bên lỗ cửa", KP([(1150, 722)], Y0)[0], 88))
+    lab_hk=label("hai hốc kệ/giống nhau", KP([(1150, 735)], Y0)[0], 92))
 
 os.makedirs(OUT + "doodle_preview", exist_ok=True)
 for img, layers in L.items():

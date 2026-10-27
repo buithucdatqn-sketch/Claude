@@ -551,13 +551,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–8.2s", head="Theo Kilmer & Kilmer (2014), không cần giống nhau", vo="Theo sách năm 2014 của hai tác giả Kilmer, hai bên căn phòng không cần giống nhau, miễn là vẫn giữ được thăng bằng.",
+    dict(t="0–6.64s", head="Theo Kilmer & Kilmer (2014), mắt cân đồ như cân bập bênh", vo="Theo hai tác giả Kilmer, hai bên căn phòng không cần giống nhau, miễn là giữ được thăng bằng.",
          cam=((1080, 530), 1.1, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="8.2–13.9s", head="Theo Arnheim (1954), sức nặng của một món đồ", vo="Còn món nào nặng, tụi mình dựa vào nhà tâm lý học Rudolf Arnheim, năm 1954.",
-         cam=((1080, 530), 1.1, (540, 863)), dark=False, dd=[], move="push"),
-    dict(t="13.9–21.16s", head="To, nổi màu và xa trục thì nặng thêm", vo="Theo ông, vật càng to, màu càng nổi, càng xa tâm bố cục thì càng nặng, giống hệt chuyện đòn bẩy.",
-         cam=((1080, 530), 1.1, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="21.16–21.66s", head="end", vo="",
+    dict(t="6.64–15.15s", head="Theo Arnheim (1954), điều làm món đồ nặng thêm", vo="Nhà tâm lý học Rudolf Arnheim, năm 1954, cho rằng trong mắt người, món đồ càng to, màu càng nổi trên nền thì càng nặng,",
+         cam=((1080, 530), 1.1, (540, 863)), dark=False, dd=[], move="pan_l"),
+    dict(t="15.15–15.65s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

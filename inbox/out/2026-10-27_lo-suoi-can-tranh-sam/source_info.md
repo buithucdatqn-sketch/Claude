@@ -6,16 +6,16 @@ Một ảnh ngoài kho (mục 0.6d: được lấy thêm ảnh của chính côn
 ## Bảng ảnh của bài 04 và việc dùng ở tập 13
 | Ảnh | Loại | Dùng ở tập 13 | Đã dùng ở tập 12? |
 |---|---|---|---|
-| 01-diagram-ba-kieu-can-bang.png | diagram | không | có (cảnh 2–5) |
-| 02-diagram-suc-nang-thi-giac.png | diagram | cảnh 2 (`source_dg.png`, phần hình đòn bẩy, bỏ tiêu đề lớn), cảnh 3–4 (`source_dgb.png`, phần nhãn "xa trục, nên nặng thêm" và dòng ba yếu tố, bỏ tiêu đề lớn) | không |
+| 01-diagram-ba-kieu-can-bang.png | diagram | cảnh 2 (`source_bat.png`, khung "bất đối xứng": khối lớn bên này, nhóm nhỏ sẫm bên kia, điểm tựa bập bênh) | có (cảnh 2–5, hai khung khác) |
+| 02-diagram-suc-nang-thi-giac.png | diagram | cảnh 3 (`source_dgb.png`, phần nhãn "xa trục, nên nặng thêm" và dòng bốn yếu tố), cảnh 4 (`source_dg.png`, phần hình đòn bẩy), bỏ tiêu đề lớn | không |
 | 03-mat-bang-palmeira.png | mặt bằng | cảnh 5 (`source_mb.png`, cắt vùng phòng khách, lỗ cửa giữa, phòng ăn) | có (vùng phòng ngủ chính, cảnh 6) |
 | 06-doodle-lo-suoi-va-tranh.jpg + goc/06 | ảnh doodle (mực ĐEN) + ảnh gốc sạch, phòng khách | ẢNH CHÍNH. Dùng ảnh gốc `goc/06`: cảnh 6–7 (`source_khachb.png`, dải y 560–1760 của ảnh xem), cảnh 8 (`source_nhomb.png`, dải dưới bên phải), cảnh 9 (`source_tub.png`, dải giữa có tủ cổ) | không |
-| 10-doodle-anh-tong.jpg + goc/10 | ảnh doodle + ảnh gốc sạch, phòng khách nhìn từ đầu kia | cảnh 10–12 (`source_trucb.png`, dải y 300–1560: đáy hoa trần, lỗ cửa giữa, hai hốc kệ giống nhau) | có (dải dưới: sofa, ghế đen, lò sưởi, cảnh 10–11) |
-| ArchDaily 21 | ảnh chụp ngoài kho, phòng khách nhìn từ cửa vào | cảnh 1 (mở, sạch), 13–14 (doodle mới nối lò sưởi và tranh), 15 (khung cuối) | không |
+| 10-doodle-anh-tong.jpg + goc/10 | ảnh doodle + ảnh gốc sạch, phòng khách nhìn từ đầu kia | cảnh 10–11 (`source_trucb.png`, dải y 300–1560: đáy hoa trần, lỗ cửa giữa, hai hốc kệ giống nhau) | có (dải dưới: sofa, ghế đen, lò sưởi, cảnh 10–11) |
+| ArchDaily 21 | ảnh chụp ngoài kho, phòng khách nhìn từ cửa vào | cảnh 1 (mở, sạch), 12–14 (doodle mới: ô cửa làm trục, sofa và tranh màu đậm, lò sưởi cân với tranh), 15 (khung cuối) | không |
 | 04, 05, 08, 09 | ảnh doodle/gốc phòng ngủ, phòng tắm, bài học 3 | không | 04, 05: có |
 | 07-diagram-hai-cho-dung.png | diagram (bài học 3) | không | không |
 
-Đạt mục 2d: một diagram (02), mặt bằng (03) đặt ngay trước cảnh ảnh chụp phòng khách, ảnh nhiều góc của phòng khách. Không ảnh nào quá khoảng nửa số cảnh: ảnh 06 (cảnh 6–9, bốn dải) = 4/15; ArchDaily 21 = 4/15 (kể cả khung cuối); ảnh 10 = 3/15; sơ đồ 02 = 3/15.
+Đạt mục 2d (trừ ba không gian, xem hạn chế): hai diagram (01, 02), mặt bằng (03) đặt ngay trước cảnh ảnh chụp phòng khách, ảnh nhiều góc của phòng khách. Không ảnh nào quá khoảng nửa số cảnh: ảnh 06 (cảnh 6–9, bốn dải) = 4/15; ArchDaily 21 = 5/15 (kể cả khung cuối); ảnh 10 = 2/15; sơ đồ 02 = 2/15, sơ đồ 01 = 1/15.
 
 ## Hạn chế (trung thực)
 - **Mục 2d yêu cầu ảnh của ít nhất BA không gian khác nhau của công trình; tập này chỉ có phòng khách (từ ba góc: ảnh 06, ảnh 10 nhìn từ đầu kia, ArchDaily 21) và chỗ thông sang phòng ăn nhìn qua lỗ cửa giữa (ảnh 10).** Lý do: bài học 2 chỉ nói về phòng khách, và chủ Trang chọn ý cụ thể này. Thêm ảnh phòng ngủ, phòng tắm, bếp hay sân chỉ để đủ số sẽ làm reel gánh thêm chủ đề (mục 0.6b, 0.6h) và trùng tập 12. Xin chủ Trang xác nhận có chấp nhận ngoại lệ này.
