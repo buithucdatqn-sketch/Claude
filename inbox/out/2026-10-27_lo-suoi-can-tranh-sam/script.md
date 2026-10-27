@@ -99,3 +99,7 @@ Bản 1–4 qua bốn lượt chấm (lịch sử trong các commit trước). C
 | 17 | 69,89 | 70,26–73,62 | khớp |
 | 18 | 73,57 | 73,94–77,45 | khớp |
 | 19 | 77,47 | 77,84–82,29 | khung cuối, nói tới 82,29 s |
+
+Âm thanh: lọc dưới 80 Hz, giảm ồn nhẹ (afftdn nf −30), tăng 6,5 dB, chặn đỉnh (alimiter 0,74), 48 kHz, không nhạc. Giọng gốc đo −17,5 LUFS, đỉnh −0,5 dBFS; đo bằng ebur128 trên video cuối: −14,9 LUFS, đỉnh −1,8 dBFS.
+
+Video `reel_lo-suoi-can-tranh-sam_final.mp4`: ffprobe 1080×1920, h264, AAC 48 kHz, 83,9 giây (giọng 82,29 + 1,6 giây). Engine dựng 11 run không có dòng LỖI. Đã trích 33 khung (quanh mọi điểm đổi ảnh, chuyển trang phụ đề, lúc nét đang vẽ, khung cuối) và khung cắt 4:5 (y 285–1635): header, tiêu đề, phụ đề đều nằm trong khung cắt; nhãn nét trắng đọc được; phụ đề khớp lời thu ở mọi cảnh; khung cuối "Bài phân tích về cân bằng thị giác / từ sách của Kilmer & Kilmer (2014) / xem ở phần bình luận".
