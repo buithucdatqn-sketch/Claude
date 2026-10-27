@@ -9,39 +9,31 @@
  },
  {
   "blk": 2,
-  "t": "8.51–14.84s",
+  "t": "8.51–18.27s",
   "head": "Theo Kilmer & Kilmer (2014), mắt cân đồ như cân bập bênh",
-  "loi": "Theo sách của hai tác giả Kilmer, một món to có thể cân với một nhóm món nhỏ.",
-  "tts": "Theo sách của hai tác giả Kin-mơ, một món to có thể cân với một nhóm món nhỏ.",
+  "loi": "Theo hai tác giả Kilmer, một món to có thể cân với một nhóm món nhỏ, và một món màu rực có thể cân với một món màu xỉn.",
+  "tts": "Theo hai tác giả Kin-mơ, một món to có thể cân với một nhóm món nhỏ, và một món màu rực có thể cân với một món màu xỉn.",
   "part": "B"
  },
  {
   "blk": 2,
-  "t": "14.84–23.35s",
+  "t": "18.27–26.47s",
   "head": "Theo Arnheim (1954), điều làm món đồ nặng thêm",
-  "loi": "Nhà tâm lý học Rudolf Arnheim giải thích thêm rằng món càng to, màu càng nổi so với nền thì trong mắt người càng nặng.",
-  "tts": "Nhà tâm lý học Ru-đôn Ác-nhai-mơ giải thích thêm rằng món càng to, màu càng nổi so với nền thì trong mắt người càng nặng.",
+  "loi": "Nhà tâm lý học Rudolf Arnheim giải thích rằng trong mắt người, món càng to, màu càng nổi so với nền thì càng nặng.",
+  "tts": "Nhà tâm lý học Ru-đôn Ác-nhai-mơ giải thích rằng trong mắt người, món càng to, màu càng nổi so với nền thì càng nặng.",
   "part": "C"
  },
  {
   "blk": 2,
-  "t": "23.35–27.8s",
+  "t": "26.47–34.98s",
   "head": "Theo Arnheim (1954), điều làm món đồ nặng thêm",
-  "loi": "Món ấy đặt càng xa chính giữa phòng thì càng nặng thêm,",
-  "tts": "Món ấy đặt càng xa chính giữa phòng thì càng nặng thêm,",
-  "part": "C"
- },
- {
-  "blk": 2,
-  "t": "27.8–32.56s",
-  "head": "Theo Arnheim (1954), điều làm món đồ nặng thêm",
-  "loi": "như người ngồi càng xa điểm tựa bập bênh thì càng đè mạnh.",
-  "tts": "như người ngồi càng xa điểm tựa bập bênh thì càng đè mạnh.",
+  "loi": "Món ấy càng xa trục, tức đường chia đôi căn phòng, thì càng nặng, như người ngồi xa điểm tựa bập bênh đè mạnh hơn.",
+  "tts": "Món ấy càng xa trục, tức đường chia đôi căn phòng, thì càng nặng, như người ngồi xa điểm tựa bập bênh đè mạnh hơn.",
   "part": "C"
  },
  {
   "blk": 3,
-  "t": "32.56–36.06s",
+  "t": "34.98–38.48s",
   "head": "Phòng khách ở Palmeira, Lisbon",
   "loi": "Ở phòng khách căn hộ Palmeira,",
   "tts": "Ở phòng khách căn hộ Pan-mây-ra,",
@@ -49,95 +41,95 @@
  },
  {
   "blk": 3,
-  "t": "36.06–40.82s",
+  "t": "38.48–44.18s",
   "head": "Phía lò sưởi",
-  "loi": "lò sưởi tuy to nhưng cùng màu với tường, nên không nặng lắm.",
-  "tts": "lò sưởi tuy to nhưng cùng màu với tường, nên không nặng lắm.",
+  "loi": "một bên trục là chiếc lò sưởi rất to, đứng sát góc nên cũng xa trục,",
+  "tts": "một bên trục là chiếc lò sưởi rất to, đứng sát góc nên cũng xa trục,",
   "part": "D"
  },
  {
   "blk": 3,
-  "t": "40.82–46.83s",
+  "t": "44.18–48.94s",
+  "head": "Phía lò sưởi",
+  "loi": "nhưng màu kem trùng màu tường, nên chìm vào nền, không nặng lắm.",
+  "tts": "nhưng màu kem trùng màu tường, nên chìm vào nền, không nặng lắm.",
+  "part": "D"
+ },
+ {
+  "blk": 3,
+  "t": "48.94–54.33s",
   "head": "Phía bức tranh",
-  "loi": "Bức tranh nhỏ hơn mà màu đậm nhất phòng, lại treo xa chính giữa, nên nặng thêm.",
-  "tts": "Bức tranh nhỏ hơn mà màu đậm nhất phòng, lại treo xa chính giữa, nên nặng thêm.",
+  "loi": "Bên kia trục, bức tranh nhỏ hơn nhưng là mảng đen xám đậm nhất phòng,",
+  "tts": "Bên kia trục, bức tranh nhỏ hơn nhưng là mảng đen xám đậm nhất phòng,",
   "part": "D"
  },
  {
   "blk": 3,
-  "t": "46.83–55.66s",
-  "head": "Một nhóm món nhỏ cân với món to",
-  "loi": "Quanh bức tranh còn có sofa, ghế gỗ đen và bình hoa khô đứng gần nhau thành một nhóm, nên hai bên gần như ngang nhau.",
-  "tts": "Quanh bức tranh còn có sô-pha, ghế gỗ đen và bình hoa khô đứng gần nhau thành một nhóm, nên hai bên gần như ngang nhau.",
+  "t": "54.33–58.78s",
+  "head": "Phía bức tranh",
+  "loi": "nổi hẳn trên tường kem, lại treo xa trục, nên nặng lên.",
+  "tts": "nổi hẳn trên tường kem, lại treo xa trục, nên nặng lên.",
+  "part": "D"
+ },
+ {
+  "blk": 3,
+  "t": "58.78–67.61s",
+  "head": "Hai món nữa cùng phía với tranh",
+  "loi": "Trước sofa, chiếc ghế gỗ đen tuy nhỏ cũng nổi trên sàn sáng, còn sofa trắng kem thì to mà chìm vào nền như lò sưởi.",
+  "tts": "Trước sô-pha, chiếc ghế gỗ đen tuy nhỏ cũng nổi trên sàn sáng, còn sô-pha trắng kem thì to mà chìm vào nền như lò sưởi.",
+  "part": "D"
+ },
+ {
+  "blk": 3,
+  "t": "67.61–75.19s",
+  "head": "Cân hai bên trục",
+  "loi": "Vậy lò sưởi to mà chìm vào nền vẫn cân được với cụm món nhỏ màu đậm ở xa trục bên kia.",
+  "tts": "Vậy lò sưởi to mà chìm vào nền vẫn cân được với cụm món nhỏ màu đậm ở xa trục bên kia.",
+  "part": "H"
+ },
+ {
+  "blk": 4,
+  "t": "75.19–80.27s",
+  "head": "Món đậm đứng gần trục",
+  "loi": "Theo cách tụi mình hiểu, chiếc tủ cổ gỗ đậm cũng nổi trên nền,",
+  "tts": "Theo cách tụi mình hiểu, chiếc tủ cổ gỗ đậm cũng nổi trên nền,",
   "part": "D"
  },
  {
   "blk": 4,
-  "t": "55.66–60.11s",
-  "head": "Vỏ phòng đối xứng, đồ kê lệch",
-  "loi": "Hai bên ấy nằm hai phía của một đường chính giữa phòng,",
-  "tts": "Hai bên ấy nằm hai phía của một đường chính giữa phòng,",
-  "part": "E"
- },
- {
-  "blk": 4,
-  "t": "60.11–65.19s",
-  "head": "Vỏ phòng đối xứng, đồ kê lệch",
-  "loi": "đi qua hoa trần và ô cửa giữa hai hốc kệ, gọi là trục.",
-  "tts": "đi qua hoa trần và ô cửa giữa hai hốc kệ, gọi là trục.",
-  "part": "E"
- },
- {
-  "blk": 4,
-  "t": "65.19–72.77s",
-  "head": "Vì sao kê lệch cần trục",
-  "loi": "Theo cách tụi mình hiểu, mắt người cần trục ấy làm điểm tựa, vì vậy kê lệch thì nên lệch quanh trục.",
-  "tts": "Theo cách tụi mình hiểu, mắt người cần trục ấy làm điểm tựa, vì vậy kê lệch thì nên lệch quanh trục.",
-  "part": "E"
- },
- {
-  "blk": 4,
-  "t": "72.77–78.16s",
-  "head": "Tủ cổ ở gần chính giữa phòng",
-  "loi": "Gần điểm tựa ấy, chiếc tủ cổ gỗ đậm giúp mắt có chỗ dừng lại.",
-  "tts": "Gần điểm tựa ấy, chiếc tủ cổ gỗ đậm giúp mắt có chỗ dừng lại.",
-  "part": "E"
+  "t": "80.27–85.97s",
+  "head": "Món đậm đứng gần trục",
+  "loi": "nhưng đứng gần trục nên không kéo về bên nào, chỉ cho mắt chỗ dừng lại.",
+  "tts": "nhưng đứng gần trục nên không kéo về bên nào, chỉ cho mắt chỗ dừng lại.",
+  "part": "D"
  },
  {
   "blk": 5,
-  "t": "78.16–86.36s",
+  "t": "85.97–91.98s",
   "head": "Áp dụng cho phòng khách nhà mình",
-  "loi": "Ở nhà mình, muốn kê lệch mà vẫn cân thì nên tìm một trục có sẵn, như ô cửa ban công hay bàn thờ,",
-  "tts": "Ở nhà mình, muốn kê lệch mà vẫn cân thì nên tìm một trục có sẵn, như ô cửa ban công hay bàn thờ,",
+  "loi": "Ở nhà mình, hãy lấy một trục có sẵn, như ô cửa ban công hay bàn thờ.",
+  "tts": "Ở nhà mình, hãy lấy một trục có sẵn, như ô cửa ban công hay bàn thờ.",
   "part": "F"
  },
  {
   "blk": 5,
-  "t": "86.36–93.94s",
+  "t": "91.98–97.37s",
   "head": "Chọn món cho phía tường còn trống",
-  "loi": "rồi đặt bên kia trục một món cân lại cho món to nhất, thường là sofa, như một bức tranh màu đậm.",
-  "tts": "rồi đặt bên kia trục một món cân lại cho món to nhất, thường là sô-pha, như một bức tranh màu đậm.",
+  "loi": "Món to nhất, thường là sofa, cần một món cân lại ở bên kia trục,",
+  "tts": "Món to nhất, thường là sô-pha, cần một món cân lại ở bên kia trục,",
   "part": "F"
  },
  {
   "blk": 5,
-  "t": "93.94–97.44s",
-  "head": "Hai bên không cần giống nhau",
-  "loi": "Món ấy không cần to bằng sofa.",
-  "tts": "Món ấy không cần to bằng sô-pha.",
-  "part": "H"
+  "t": "97.37–103.38s",
+  "head": "Chọn món cho phía tường còn trống",
+  "loi": "như một bức tranh màu đậm hay một chùm khung ảnh treo sát nhau, đặt xa trục.",
+  "tts": "như một bức tranh màu đậm hay một chùm khung ảnh treo sát nhau, đặt xa trục.",
+  "part": "F"
  },
  {
   "blk": 5,
-  "t": "97.44–104.7s",
-  "head": "Hai bên không cần giống nhau",
-  "loi": "Như lò sưởi và bức tranh ở đây, căn phòng không nghiêng khi hai bên nặng ngang nhau trong mắt người.",
-  "tts": "Như lò sưởi và bức tranh ở đây, căn phòng không nghiêng khi hai bên nặng ngang nhau trong mắt người.",
-  "part": "H"
- },
- {
-  "blk": 5,
-  "t": "104.7–112.28s",
+  "t": "103.38–110.95s",
   "head": "end",
   "loi": "Bài phân tích về cân bằng thị giác, từ sách của hai tác giả Kilmer, mọi người xem ở phần bình luận.",
   "tts": "Bài phân tích về cân bằng thị giác, từ sách của hai tác giả Kin-mơ, mọi người xem ở phần bình luận.",

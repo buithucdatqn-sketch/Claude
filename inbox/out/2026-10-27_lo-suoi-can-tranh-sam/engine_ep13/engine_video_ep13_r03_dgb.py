@@ -552,11 +552,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.33s", head="Theo Kilmer & Kilmer (2014), mắt cân đồ như cân bập bênh", vo="Theo sách của hai tác giả Kilmer, một món to có thể cân với một nhóm món nhỏ.",
+    dict(t="0–9.76s", head="Theo Kilmer & Kilmer (2014), mắt cân đồ như cân bập bênh", vo="Theo hai tác giả Kilmer, một món to có thể cân với một nhóm món nhỏ, và một món màu rực có thể cân với một món màu xỉn.",
          cam=((1080, 564), 1.0, (540, 866)), dark=False, dd=[], move="hold"),
-    dict(t="6.33–14.84s", head="Theo Arnheim (1954), điều làm món đồ nặng thêm", vo="Nhà tâm lý học Rudolf Arnheim giải thích thêm rằng món càng to, màu càng nổi so với nền thì trong mắt người càng nặng.",
+    dict(t="9.76–17.96s", head="Theo Arnheim (1954), điều làm món đồ nặng thêm", vo="Nhà tâm lý học Rudolf Arnheim giải thích rằng trong mắt người, món càng to, màu càng nổi so với nền thì càng nặng.",
          cam=((1080, 564), 1.0, (540, 866)), dark=False, dd=[], move="pan_l"),
-    dict(t="14.84–15.34s", head="end", vo="",
+    dict(t="17.96–18.46s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

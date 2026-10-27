@@ -554,11 +554,15 @@ WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–3.5s", head="Phòng khách ở Palmeira, Lisbon", vo="Ở phòng khách căn hộ Palmeira,",
          cam=((1200, 745), 0.87, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="3.5–8.26s", head="Phía lò sưởi", vo="lò sưởi tuy to nhưng cùng màu với tường, nên không nặng lắm.",
-         cam=((1200, 745), 0.87, (540, 863)), dark=False, dd=['ls', 'lab_ls'], move="push"),
-    dict(t="8.26–14.27s", head="Phía bức tranh", vo="Bức tranh nhỏ hơn mà màu đậm nhất phòng, lại treo xa chính giữa, nên nặng thêm.",
-         cam=((1200, 745), 0.87, (540, 863)), dark=False, dd=['tr', 'ax', 'lab_tr', 'lab_ax'], move="pan_r"),
-    dict(t="14.27–14.77s", head="end", vo="",
+    dict(t="3.5–9.2s", head="Phía lò sưởi", vo="một bên trục là chiếc lò sưởi rất to, đứng sát góc nên cũng xa trục,",
+         cam=((1200, 745), 0.87, (540, 863)), dark=False, dd=['ax', 'ls', 'd_ls', 'lab_dls'], move="push"),
+    dict(t="9.2–13.96s", head="Phía lò sưởi", vo="nhưng màu kem trùng màu tường, nên chìm vào nền, không nặng lắm.",
+         cam=((1200, 745), 0.87, (540, 863)), dark=False, dd=['ls', 'lab_ls'], move="hold"),
+    dict(t="13.96–19.35s", head="Phía bức tranh", vo="Bên kia trục, bức tranh nhỏ hơn nhưng là mảng đen xám đậm nhất phòng,",
+         cam=((1200, 745), 0.87, (540, 863)), dark=False, dd=['tr', 'lab_tr'], move="pan_r"),
+    dict(t="19.35–23.8s", head="Phía bức tranh", vo="nổi hẳn trên tường kem, lại treo xa trục, nên nặng lên.",
+         cam=((1200, 745), 0.87, (540, 863)), dark=False, dd=['ax', 'd_tr', 'lab_dtr'], move="hold"),
+    dict(t="23.8–24.3s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

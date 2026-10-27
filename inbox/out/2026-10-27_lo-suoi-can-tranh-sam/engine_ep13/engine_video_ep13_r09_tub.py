@@ -552,11 +552,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–7.58s", head="Vì sao kê lệch cần trục", vo="Theo cách tụi mình hiểu, mắt người cần trục ấy làm điểm tựa, vì vậy kê lệch thì nên lệch quanh trục.",
+    dict(t="0–7.58s", head="Cân hai bên trục", vo="Vậy lò sưởi to mà chìm vào nền vẫn cân được với cụm món nhỏ màu đậm ở xa trục bên kia.",
          cam=((652, 385), 0.74, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="7.58–12.97s", head="Tủ cổ ở gần chính giữa phòng", vo="Gần điểm tựa ấy, chiếc tủ cổ gỗ đậm giúp mắt có chỗ dừng lại.",
-         cam=((652, 385), 0.74, (540, 863)), dark=False, dd=['tu', 'ax', 'lab_tu', 'lab_ax'], move="push"),
-    dict(t="12.97–13.47s", head="end", vo="",
+    dict(t="7.58–12.66s", head="Món đậm đứng gần trục", vo="Theo cách tụi mình hiểu, chiếc tủ cổ gỗ đậm cũng nổi trên nền,",
+         cam=((652, 385), 0.74, (540, 863)), dark=False, dd=['tu', 'lab_tu'], move="push"),
+    dict(t="12.66–18.36s", head="Món đậm đứng gần trục", vo="nhưng đứng gần trục nên không kéo về bên nào, chỉ cho mắt chỗ dừng lại.",
+         cam=((652, 385), 0.74, (540, 863)), dark=False, dd=['ax', 'lab_ax'], move="hold"),
+    dict(t="18.36–18.86s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

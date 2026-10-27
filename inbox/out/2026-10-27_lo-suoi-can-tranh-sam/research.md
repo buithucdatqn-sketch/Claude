@@ -34,6 +34,18 @@ Trả lời theo bài: sức nặng thị giác (Arnheim 1954) tăng theo độ 
 - Nhãn doodle gốc ảnh 06 (chữ trên ảnh): "chụp lò sưởi rất lớn nhưng cùng màu tường", "tranh sẫm nhỏ hơn mà tương phản mạnh nhất, treo cao, xa trục", "trục giữa, dưới hoa trần", "tủ cổ gỗ đậm đứng gần trục".
 - Mặt bằng 03 (chữ trên bản vẽ): "vỏ nhà cũ giữ trục đối xứng, hoa trần ở giữa phòng khách và lỗ cửa giữa có hai hốc kệ; đồ đạc trong phòng khách đặt lệch quanh trục ấy"; chú thích "lò sưởi sát tường", "sofa dọc tường bên kia", "lỗ cửa giữa, hai hốc kệ hai bên", "phòng ăn".
 
+## Quan sát trên ảnh 06 (màu so với nền, vị trí so với trục) · dùng cho bản 5 sau góp ý chủ Trang 2026-10-27
+Mô tả điều nhìn thấy trực tiếp trên ảnh (mục 3.2), đặt cạnh câu của bài để cân từng món theo đủ ba yếu tố của Arnheim (kích thước, màu nổi hay chìm so với nền, khoảng cách tới trục). Trục: đường nét đứt "trục giữa, dưới hoa trần" của doodle gốc ảnh 06 (x khoảng 1000 trên ảnh xem 1932 px).
+| Món | Kích thước | Màu so với nền (nhìn trên ảnh) | Khoảng cách tới trục (nhìn trên ảnh) | Câu của bài |
+|---|---|---|---|---|
+| Lò sưởi | rất to | chụp hình nón màu kem, gần trùng màu tường kem | sát góc tường, xa trục (khoảng cách tới trục gần bằng của bức tranh) | "chụp lò sưởi to hơn nhưng cùng màu với tường nên không nặng lắm" |
+| Bức tranh | nhỏ hơn lò sưởi | mảng đen xám, đậm nhất phòng, tương phản mạnh với tường kem | treo cao, sát tường bên kia, xa trục | "bức tranh nhỏ hơn mà đậm nhất phòng, lại treo cao và xa trục"; "nhìn trong ảnh là một mảng đen xám" |
+| Ghế gỗ đen | nhỏ | đen, nổi trên sàn màu sáng | trước sofa, cùng phía với tranh, xa trục hơn tủ | "phía trước có thêm chiếc ghế gỗ đen" |
+| Sofa | dài, to | trắng kem, gần trùng tường và sàn | cùng phía với tranh, sát tường | "bộ sofa Soriana dài và thấp" (màu là quan sát trên ảnh) |
+| Tủ cổ | vừa | gỗ đậm, nổi trên tường kem | đứng gần trục | "Chiếc tủ cổ màu gỗ đậm đứng gần trục giữa thì giúp mắt có chỗ dừng lại" |
+| Bình hoa khô | nhỏ | hoa khô nâu, bình trắng có hình chim đen | sát góc bên phía tranh | (không đưa vào lời để giữ thời lượng) |
+Kết luận rút ra theo quy tắc của bài (rào một lần "theo cách tụi mình hiểu" ở câu tủ cổ): lò sưởi và tranh cùng xa trục, nên phần quyết định là màu so với nền; món to mà chìm vào nền (lò sưởi, sofa) nhẹ trong mắt, các món nhỏ mà đậm (tranh, ghế đen) nặng lên, nên lò sưởi to vẫn cân được với cụm món nhỏ màu đậm ở bên kia trục; tủ đậm nhưng gần trục nên không kéo lệch (theo câu của bài: "một bức tranh nhỏ màu sẫm treo xa trục hoàn toàn có thể cân với một chiếc tủ to màu nhạt đứng gần giữa phòng", tức món gần giữa phòng có sức kéo nhỏ).
+
 ## E. Lỗi hay gặp
 - Mục 2: "Lỗi tụi mình hay gặp ở nhà phố là kê lệch mà chẳng có gì đối trọng, sofa, bàn trà, kệ tivi dồn hết về một phía, phía kia chỉ có bức tường trống. Kê lệch kiểu ấy thì căn phòng nghiêng hẳn đi." (không dùng trong lời để giữ một bài học; đưa vào caption)
 

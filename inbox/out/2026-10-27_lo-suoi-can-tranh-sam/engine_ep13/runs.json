@@ -20,7 +20,7 @@
   ],
   "t_in_main": 8.51,
   "cut_from": 8.51,
-  "cut_len": 6.33,
+  "cut_len": 9.76,
   "first_frame": 2
  },
  {
@@ -30,9 +30,9 @@
   "scenes": [
    3
   ],
-  "t_in_main": 14.84,
-  "cut_from": 6.33,
-  "cut_len": 8.510000000000002,
+  "t_in_main": 18.27,
+  "cut_from": 9.76,
+  "cut_len": 8.200000000000001,
   "first_frame": 2
  },
  {
@@ -40,12 +40,11 @@
   "img": "dg",
   "src": "source_dg.png",
   "scenes": [
-   4,
-   5
+   4
   ],
-  "t_in_main": 23.35,
-  "cut_from": 8.510000000000002,
-  "cut_len": 9.21,
+  "t_in_main": 26.47,
+  "cut_from": 8.2,
+  "cut_len": 8.509999999999998,
   "first_frame": 2
  },
  {
@@ -53,10 +52,10 @@
   "img": "mb",
   "src": "source_mb.png",
   "scenes": [
-   6
+   5
   ],
-  "t_in_main": 32.56,
-  "cut_from": 4.760000000000002,
+  "t_in_main": 34.98,
+  "cut_from": 8.509999999999998,
   "cut_len": 3.5,
   "first_frame": 2
  },
@@ -65,12 +64,14 @@
   "img": "khachb",
   "src": "source_khachb.png",
   "scenes": [
+   6,
    7,
-   8
+   8,
+   9
   ],
-  "t_in_main": 36.06,
+  "t_in_main": 38.48,
   "cut_from": 3.5,
-  "cut_len": 10.769999999999996,
+  "cut_len": 20.300000000000004,
   "first_frame": 2
  },
  {
@@ -78,25 +79,23 @@
   "img": "nhomb",
   "src": "source_nhomb.png",
   "scenes": [
-   9
+   10
   ],
-  "t_in_main": 46.83,
-  "cut_from": 6.009999999999998,
+  "t_in_main": 58.78,
+  "cut_from": 4.450000000000003,
   "cut_len": 8.829999999999998,
   "first_frame": 2
  },
  {
-  "tag": "r08_trucb",
-  "img": "trucb",
-  "src": "source_trucb.png",
+  "tag": "r08_khachb",
+  "img": "khachb",
+  "src": "source_khachb.png",
   "scenes": [
-   10,
-   11,
-   12
+   11
   ],
-  "t_in_main": 55.66,
+  "t_in_main": 67.61,
   "cut_from": 8.829999999999998,
-  "cut_len": 17.11,
+  "cut_len": 7.579999999999998,
   "first_frame": 2
  },
  {
@@ -104,11 +103,12 @@
   "img": "tub",
   "src": "source_tub.png",
   "scenes": [
+   12,
    13
   ],
-  "t_in_main": 72.77,
+  "t_in_main": 75.19,
   "cut_from": 7.579999999999998,
-  "cut_len": 5.390000000000001,
+  "cut_len": 10.780000000000001,
   "first_frame": 2
  },
  {
@@ -117,11 +117,12 @@
   "src": "source_bat.png",
   "scenes": [
    14,
-   15
+   15,
+   16
   ],
-  "t_in_main": 78.16,
-  "cut_from": 5.390000000000001,
-  "cut_len": 15.780000000000001,
+  "t_in_main": 85.97,
+  "cut_from": 5.700000000000003,
+  "cut_len": 17.409999999999997,
   "first_frame": 2
  },
  {
@@ -129,13 +130,11 @@
   "img": "rong",
   "src": "source_rong.png",
   "scenes": [
-   16,
-   17,
-   18
+   17
   ],
-  "t_in_main": 93.94,
-  "cut_from": 7.579999999999998,
-  "cut_len": 19.340000000000003,
+  "t_in_main": 103.38,
+  "cut_from": 6.009999999999991,
+  "cut_len": 8.570000000000007,
   "first_frame": 2
  }
 ]

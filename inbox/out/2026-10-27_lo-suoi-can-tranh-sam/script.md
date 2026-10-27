@@ -1,36 +1,46 @@
-# AH Decode · Lò sưởi to cân với tranh nhỏ · tập 13 · giai đoạn A, chờ ghi âm
+# AH Decode · Lò sưởi to cân với tranh nhỏ · tập 13 · bản 5 (làm lại theo góp ý chủ Trang 2026-10-27) · giai đoạn A, chờ ghi âm
 
-Bài: bai-04 (kho AH-Decode-Decor, nhánh AH-Interior-notes, commit bd74e53), bài học 2 "Đặt một món lớn đối trọng với một nhóm món nhỏ hay một mảng sẫm màu để căn phòng lệch mà vẫn cân", cùng phần mở "Mắt người cân đồ đạc… bập bênh" làm nguồn gốc và cơ chế, và đoạn cuối bài làm lời khuyên. Chủ Trang chọn ý này ngày 2026-10-27 sau khi báo cáo rằng kho hết ý để xen kẽ bài (bài 01–03 đã dùng hết, bài 04 vừa làm ở tập 12) và yêu cầu thêm các món khác như sofa, tủ gỗ cũng được đọc theo cùng nguyên lý (cảnh 9 và 13). Làm theo bộ khuôn `engine/mau_tap7/` (mã gốc gen_ep12.py), bộ nguyên tắc hành văn mục 0.6f, quy tắc viết lời trước, cắt cảnh sau (mục 0.6h).
+Bài: bai-04 (kho AH-Decode-Decor, nhánh AH-Interior-notes, commit bd74e53), bài học 2 "Đặt một món lớn đối trọng với một nhóm món nhỏ hay một mảng sẫm màu để căn phòng lệch mà vẫn cân", cùng phần mở "Mắt người cân đồ đạc… bập bênh" làm nguồn gốc và cơ chế, và đoạn cuối bài làm lời khuyên. Chủ Trang chọn ý này ngày 2026-10-27 và yêu cầu đọc cả sofa, tủ gỗ theo cùng nguyên lý.
+
+**Góp ý của chủ Trang cho bản 4 (2026-10-27)**: "nội dung script gây khó hiểu vì chỉ mới đề cập đến kích thước món to, món nhỏ mà quên chi tiết màu đậm và màu hòa vào nền của chúng. Cụm món nhỏ nhưng màu đậm có thể cân qua trục với một món to nhưng màu lẫn vào nền. Các chi tiết bức tranh, tủ, ghế… đang bị nêu kiểu liệt kê chứ không thực sự phân tích về màu, và khoảng cách với trục chính. Làm lại." Đã ghi thành quy tắc mục 0.6i trong TASK_INSTRUCTION.md. Bản 5 viết lại cả lời: câu nguồn nêu đủ ba yếu tố (to nhỏ, màu nổi hay chìm so với nền, khoảng cách tới trục), rồi cân TỪNG món theo đủ ba yếu tố; doodle vẽ trục, mũi tên khoảng cách và nhãn màu so với nền.
 
 ## Câu hỏi trung tâm
 Một bên phòng khách là chiếc lò sưởi rất to, bên kia treo một bức tranh nhỏ hơn, vậy vì sao căn phòng không nghiêng?
-Kể lại bằng một câu: vì cái nặng trong mắt người tăng theo độ to, độ nổi của màu và khoảng cách tới trục giữa phòng (như người ngồi xa điểm tựa bập bênh), nên lò sưởi to mà cùng màu tường cân được với bức tranh nhỏ mà đậm cùng cả nhóm đồ gần đó; và vì mắt cần trục làm điểm tựa nên kê lệch thì nên lệch quanh một cái trục, rồi cho món to nhất một món cân lại ở phía bên kia.
-Chuỗi từ khóa nối các khối: không nghiêng → cân (nhóm món nhỏ cân món to) → nặng → chính giữa, điểm tựa bập bênh → hai bên ngang nhau → hai bên, chính giữa, trục → trục, điểm tựa → trục có sẵn → món cân lại → hai bên nặng ngang nhau.
+Kể lại bằng một câu: vì trong mắt người, món đồ nặng lên khi to, khi màu nổi trên nền và khi đặt xa trục, nên chiếc lò sưởi to mà chìm vào tường kem nhẹ đi, còn cụm món nhỏ màu đậm bên kia trục (bức tranh đen xám, ghế gỗ đen) nặng lên, và hai bên cân nhau; tủ cổ gỗ đậm đứng gần trục nên không kéo lệch.
+Chuỗi từ khóa: không nghiêng → cân (to/nhỏ, màu rực/màu xỉn) → nặng (to, màu nổi so với nền) → xa trục → lò sưởi: to, xa trục, chìm vào nền → tranh: nhỏ, đậm, nổi, xa trục → ghế đen nổi, sofa chìm → cân được → tủ đậm gần trục → trục có sẵn → món cân lại đậm, xa trục.
 
-## Bảng cảnh (18 cảnh; 314 từ bản đọc; thời lượng tính nháp 3,2 từ/giây trong engine, giai đoạn B căn lại theo ghi âm; ước giọng thật khoảng 76–80 giây)
+## Bảng cảnh (17 cảnh; 314 từ bản đọc; thời lượng tính nháp 3,2 từ/giây trong engine, giai đoạn B căn lại theo ghi âm; ước giọng thật khoảng 76–79 giây)
 | # | Phần | Ảnh | Tiêu đề trên khung | Phụ đề (loi) | Bản đọc (tts) |
 |---|---|---|---|---|---|
 | 1 | A | ảnh ArchDaily 21 (phòng khách, ảnh gốc) | Kê lệch hẳn mà vẫn đứng vững | Một bên phòng khách là chiếc lò sưởi rất to, bên kia treo một bức tranh nhỏ hơn, vậy vì sao căn phòng không nghiêng? | giữ nguyên |
-| 2 | B | ảnh 01 sơ đồ (khung bất đối xứng) | Theo Kilmer & Kilmer (2014), mắt cân đồ như cân bập bênh | Theo sách của hai tác giả Kilmer, một món to có thể cân với một nhóm món nhỏ. | Theo sách của hai tác giả Kin-mơ, một món to có thể cân với một nhóm món nhỏ. |
-| 3 | C | ảnh 02 sơ đồ (phần nhãn và dòng bốn yếu tố) | Theo Arnheim (1954), điều làm món đồ nặng thêm | Nhà tâm lý học Rudolf Arnheim giải thích thêm rằng món càng to, màu càng nổi so với nền thì trong mắt người càng nặng. | Nhà tâm lý học Ru-đôn Ác-nhai-mơ giải thích thêm rằng món càng to, màu càng nổi so với nền thì trong mắt người càng nặng. |
-| 4 | C | ảnh 02 sơ đồ (phần hình đòn bẩy) | Theo Arnheim (1954), điều làm món đồ nặng thêm | Món ấy đặt càng xa chính giữa phòng thì càng nặng thêm, | giữ nguyên |
-| 5 | C | ảnh 02 sơ đồ (phần hình đòn bẩy) | Theo Arnheim (1954), điều làm món đồ nặng thêm | như người ngồi càng xa điểm tựa bập bênh thì càng đè mạnh. | giữ nguyên |
-| 6 | D | ảnh 03 mặt bằng (vùng phòng khách) | Phòng khách ở Palmeira, Lisbon | Ở phòng khách căn hộ Palmeira, | Ở phòng khách căn hộ Pan-mây-ra, |
-| 7 | D | ảnh 06 gốc, dải lò sưởi–tranh (doodle mới) | Phía lò sưởi | lò sưởi tuy to nhưng cùng màu với tường, nên không nặng lắm. | giữ nguyên |
-| 8 | D | ảnh 06 gốc, dải lò sưởi–tranh (doodle mới) | Phía bức tranh | Bức tranh nhỏ hơn mà màu đậm nhất phòng, lại treo xa chính giữa, nên nặng thêm. | giữ nguyên |
-| 9 | D | ảnh 06 gốc, dải tranh–sofa–ghế đen–bình hoa (doodle mới) | Một nhóm món nhỏ cân với món to | Quanh bức tranh còn có sofa, ghế gỗ đen và bình hoa khô đứng gần nhau thành một nhóm, nên hai bên gần như ngang nhau. | Quanh bức tranh còn có sô-pha, ghế gỗ đen và bình hoa khô đứng gần nhau thành một nhóm, nên hai bên gần như ngang nhau. |
-| 10 | E | ảnh 10 gốc, dải hoa trần–hai hốc kệ (doodle mới) | Vỏ phòng đối xứng, đồ kê lệch | Hai bên ấy nằm hai phía của một đường chính giữa phòng, | giữ nguyên |
-| 11 | E | ảnh 10 gốc, dải hoa trần–hai hốc kệ (doodle mới) | Vỏ phòng đối xứng, đồ kê lệch | đi qua hoa trần và ô cửa giữa hai hốc kệ, gọi là trục. | giữ nguyên |
-| 12 | E | ảnh 10 gốc, dải hoa trần–hai hốc kệ (doodle mới) | Vì sao kê lệch cần trục | Theo cách tụi mình hiểu, mắt người cần trục ấy làm điểm tựa, vì vậy kê lệch thì nên lệch quanh trục. | giữ nguyên |
-| 13 | E | ảnh 06 gốc, dải tủ cổ (doodle mới) | Tủ cổ ở gần chính giữa phòng | Gần điểm tựa ấy, chiếc tủ cổ gỗ đậm giúp mắt có chỗ dừng lại. | giữ nguyên |
-| 14 | F | ảnh 01 sơ đồ (khung bất đối xứng) | Áp dụng cho phòng khách nhà mình | Ở nhà mình, muốn kê lệch mà vẫn cân thì nên tìm một trục có sẵn, như ô cửa ban công hay bàn thờ, | giữ nguyên |
-| 15 | F | ảnh 01 sơ đồ (khung bất đối xứng) | Chọn món cho phía tường còn trống | rồi đặt bên kia trục một món cân lại cho món to nhất, thường là sofa, như một bức tranh màu đậm. | rồi đặt bên kia trục một món cân lại cho món to nhất, thường là sô-pha, như một bức tranh màu đậm. |
-| 16 | H | ảnh ArchDaily 21 (phòng khách, ảnh gốc) | Hai bên không cần giống nhau | Món ấy không cần to bằng sofa. | Món ấy không cần to bằng sô-pha. |
-| 17 | H | ảnh ArchDaily 21 (phòng khách, ảnh gốc) | Hai bên không cần giống nhau | Như lò sưởi và bức tranh ở đây, căn phòng không nghiêng khi hai bên nặng ngang nhau trong mắt người. | giữ nguyên |
-| 18 | I | ảnh ArchDaily 21 (phòng khách, ảnh gốc) | end | Bài phân tích về cân bằng thị giác, từ sách của hai tác giả Kilmer, mọi người xem ở phần bình luận. | Bài phân tích về cân bằng thị giác, từ sách của hai tác giả Kin-mơ, mọi người xem ở phần bình luận. |
+| 2 | B | ảnh 01 sơ đồ (khung bất đối xứng) | Theo Kilmer & Kilmer (2014), mắt cân đồ như cân bập bênh | Theo hai tác giả Kilmer, một món to có thể cân với một nhóm món nhỏ, và một món màu rực có thể cân với một món màu xỉn. | Theo hai tác giả Kin-mơ, một món to có thể cân với một nhóm món nhỏ, và một món màu rực có thể cân với một món màu xỉn. |
+| 3 | C | ảnh 02 sơ đồ (vật lớn màu nhạt cùng màu nền / vật nhỏ màu sẫm tương phản) | Theo Arnheim (1954), điều làm món đồ nặng thêm | Nhà tâm lý học Rudolf Arnheim giải thích rằng trong mắt người, món càng to, màu càng nổi so với nền thì càng nặng. | Nhà tâm lý học Ru-đôn Ác-nhai-mơ giải thích rằng trong mắt người, món càng to, màu càng nổi so với nền thì càng nặng. |
+| 4 | C | ảnh 02 sơ đồ (phần hình đòn bẩy) | Theo Arnheim (1954), điều làm món đồ nặng thêm | Món ấy càng xa trục, tức đường chia đôi căn phòng, thì càng nặng, như người ngồi xa điểm tựa bập bênh đè mạnh hơn. | giữ nguyên |
+| 5 | D | ảnh 03 mặt bằng (vùng phòng khách) | Phòng khách ở Palmeira, Lisbon | Ở phòng khách căn hộ Palmeira, | Ở phòng khách căn hộ Pan-mây-ra, |
+| 6 | D | ảnh 06 gốc, dải lò sưởi–trục–tranh (doodle mới) | Phía lò sưởi | một bên trục là chiếc lò sưởi rất to, đứng sát góc nên cũng xa trục, | giữ nguyên |
+| 7 | D | ảnh 06 gốc, dải lò sưởi–trục–tranh (doodle mới) | Phía lò sưởi | nhưng màu kem trùng màu tường, nên chìm vào nền, không nặng lắm. | giữ nguyên |
+| 8 | D | ảnh 06 gốc, dải lò sưởi–trục–tranh (doodle mới) | Phía bức tranh | Bên kia trục, bức tranh nhỏ hơn nhưng là mảng đen xám đậm nhất phòng, | giữ nguyên |
+| 9 | D | ảnh 06 gốc, dải lò sưởi–trục–tranh (doodle mới) | Phía bức tranh | nổi hẳn trên tường kem, lại treo xa trục, nên nặng lên. | giữ nguyên |
+| 10 | D | ảnh 06 gốc, dải ghế đen–sofa (doodle mới) | Hai món nữa cùng phía với tranh | Trước sofa, chiếc ghế gỗ đen tuy nhỏ cũng nổi trên sàn sáng, còn sofa trắng kem thì to mà chìm vào nền như lò sưởi. | Trước sô-pha, chiếc ghế gỗ đen tuy nhỏ cũng nổi trên sàn sáng, còn sô-pha trắng kem thì to mà chìm vào nền như lò sưởi. |
+| 11 | H | ảnh 06 gốc, dải lò sưởi–trục–tranh (doodle mới) | Cân hai bên trục | Vậy lò sưởi to mà chìm vào nền vẫn cân được với cụm món nhỏ màu đậm ở xa trục bên kia. | giữ nguyên |
+| 12 | D | ảnh 06 gốc, dải tủ cổ (doodle mới) | Món đậm đứng gần trục | Theo cách tụi mình hiểu, chiếc tủ cổ gỗ đậm cũng nổi trên nền, | giữ nguyên |
+| 13 | D | ảnh 06 gốc, dải tủ cổ (doodle mới) | Món đậm đứng gần trục | nhưng đứng gần trục nên không kéo về bên nào, chỉ cho mắt chỗ dừng lại. | giữ nguyên |
+| 14 | F | ảnh 01 sơ đồ (khung bất đối xứng) | Áp dụng cho phòng khách nhà mình | Ở nhà mình, hãy lấy một trục có sẵn, như ô cửa ban công hay bàn thờ. | giữ nguyên |
+| 15 | F | ảnh 01 sơ đồ (khung bất đối xứng) | Chọn món cho phía tường còn trống | Món to nhất, thường là sofa, cần một món cân lại ở bên kia trục, | Món to nhất, thường là sô-pha, cần một món cân lại ở bên kia trục, |
+| 16 | F | ảnh 01 sơ đồ (khung bất đối xứng) | Chọn món cho phía tường còn trống | như một bức tranh màu đậm hay một chùm khung ảnh treo sát nhau, đặt xa trục. | giữ nguyên |
+| 17 | I | ảnh ArchDaily 21 (phòng khách, ảnh gốc) | end | Bài phân tích về cân bằng thị giác, từ sách của hai tác giả Kilmer, mọi người xem ở phần bình luận. | Bài phân tích về cân bằng thị giác, từ sách của hai tác giả Kin-mơ, mọi người xem ở phần bình luận. |
+
+## Phép cân từng món (đọc trên ảnh 06; quan sát màu và vị trí ghi trong research.md)
+| Món | To hay nhỏ | Màu so với nền | Khoảng cách tới trục | Kết quả trong mắt |
+|---|---|---|---|---|
+| Lò sưởi | rất to | màu kem trùng tường, chìm vào nền | sát góc, xa trục | không nặng lắm |
+| Bức tranh | nhỏ hơn | đen xám đậm nhất phòng, nổi hẳn trên tường kem | treo xa trục | nặng lên |
+| Ghế gỗ đen | nhỏ | đen, nổi trên sàn sáng | cùng phía tranh | góp thêm sức nặng |
+| Sofa | to | trắng kem, chìm vào nền | cùng phía tranh | nhẹ, như lò sưởi |
+| Tủ cổ | vừa | gỗ đậm, nổi trên nền | gần trục | không kéo về bên nào, cho mắt chỗ dừng |
 
 ## Lời đọc dán vào ElevenLabs
-Xem `elevenlabs.txt` (năm khối nối bằng thẻ ngắt 1,2 giây, như tập 11 và 12).
+Xem `elevenlabs.txt` (năm khối nối bằng thẻ ngắt 1,2 giây).
 
 ## Phiên âm cho ElevenLabs
 | Chính tả gốc | Phiên âm |
@@ -39,30 +49,20 @@ Xem `elevenlabs.txt` (năm khối nối bằng thẻ ngắt 1,2 giây, như tậ
 | Rudolf Arnheim | Ru-đôn Ác-nhai-mơ |
 | Palmeira | Pan-mây-ra |
 | sofa | sô-pha |
-| 1954 | một nghìn chín trăm năm mươi bốn |
-(Các cách phiên âm Kin-mơ, Pan-mây-ra, sô-pha giữ như tập 12. Lisbon và Studio Gameiro không đọc trong lời, chỉ hiện ở dòng credit và tiêu đề cảnh.)
 
 ## Ba điều người xem học được
-1. Cái nặng của món đồ là cái nặng trong mắt, tăng theo độ to, độ nổi của màu trên nền và khoảng cách tới trục giữa phòng, như người ngồi xa điểm tựa bập bênh.
-2. Món to mà cùng màu tường (lò sưởi) có thể nhẹ hơn món nhỏ mà đậm treo xa trục (bức tranh), và nhiều món đứng gần nhau thành một nhóm cũng cân được với món to.
-3. Kê lệch vẫn cân khi có một cái trục làm điểm tựa cho mắt (hoa trần, hai hốc kệ, tủ cổ ở Palmeira; ô cửa ban công, bàn thờ ở nhà mình) và món to nhất có một món cân lại ở phía bên kia; món ấy không cần to bằng, chỉ cần nặng ngang trong mắt.
-Khác tập 12: tập 12 nói đầu giường đối xứng vì cần yên, mắt dừng ở trục giữa; tập 13 nói phòng khách kê lệch mà vẫn cân nhờ sức nặng thị giác và trục. Không lặp câu móc, câu chốt, ảnh chính hay nhận xét trên ảnh của tập 12 (tập 12 dùng ảnh 04, 05 và dải dưới ảnh 10 với sofa, ghế đen, lò sưởi hai bên trục; tập 13 dùng ảnh 06, dải giữa ảnh 10 với hai hốc kệ, ảnh ArchDaily 21, sơ đồ 01 khung bất đối xứng và sơ đồ 02).
+1. Trong mắt người, món đồ nặng lên khi to, khi màu nổi trên nền và khi đặt xa trục (như người ngồi xa điểm tựa bập bênh).
+2. Món to mà màu chìm vào nền (lò sưởi kem trên tường kem, sofa trắng kem) nhẹ đi; cụm món nhỏ mà đậm (tranh đen xám, ghế gỗ đen) nặng lên, nên cân được qua trục; món đậm mà đứng gần trục (tủ cổ) không kéo lệch.
+3. Ở nhà mình, lấy một trục có sẵn, rồi cho món to nhất (thường là sofa) một món cân lại màu đậm, đặt xa trục ở bên kia.
 
-## Cần chủ Trang kiểm tra (chỗ bài có vẻ vênh, KHÔNG tự sửa, lời đọc chỉ nói đúng như bài)
-- Lò sưởi nằm sát tường bên trái, cũng xa trục. Theo chính quy tắc "xa tâm bố cục thì nặng" của Arnheim, nó cũng nặng thêm, nhưng bài chỉ lập luận bằng kích thước và màu cùng tường. Lời đọc không nói gì về khoảng cách của lò sưởi tới trục.
-- Arnheim nói vật "đứng riêng một mình cũng nặng hơn khi lẫn trong một đám", trong khi bài lại dùng cả nhóm đồ làm đối trọng. Lời đọc bỏ yếu tố "đứng riêng".
-- Bài dùng "ô cửa ban công" làm ví dụ trục (đoạn cuối) nhưng đoạn trước nói cửa ban công chung cư thường nằm lệch về một bên nên người thiết kế phải tự tạo trục. Lời đọc chỉ lấy ví dụ ở đoạn cuối.
-- Ở Palmeira, bức tranh treo ngay phía trên sofa, cùng một phía. Lời khuyên cuối bài ("sofa có đối trọng ở phía bên kia") nói về nhà mình, nên cảnh lời khuyên dùng sơ đồ 01 (một khối lớn bên này, một nhóm nhỏ sẫm bên kia) thay vì ảnh Palmeira. Mối liên hệ giữa nhóm sofa–tranh với lò sưởi (cảnh 9) là suy ra từ câu Kilmer "một vật lớn có thể cân với một nhóm vật nhỏ" mà bài đặt ngay cạnh.
-- Câu "Xét theo Arnheim" ở bài (phần ví dụ) và "Theo cách tụi mình hiểu" (phần trục, điểm tựa) là phân tích của tác giả bài, không phải của Kilmer, Arnheim hay Studio Gameiro. Lời đọc rào một lần ở khối trục.
-- Các nhãn trên ảnh (cảnh 11: "hoa trần", "hai hốc kệ giống nhau"; cảnh 13: "tủ gỗ đậm gần trục") là nhãn tự đặt theo lời bài, không phải nhãn gốc của ảnh 06, 10 (nhãn gốc vẽ mực đen).
-- Bài tự thừa nhận (mục cuối) rằng phần lớn ví dụ của Arnheim là tranh vẽ trên mặt phẳng, không phải căn phòng ba chiều; lời đọc áp quy tắc của ông vào phòng khách theo đúng cách bài làm ("Xét theo Arnheim"), và dòng "Còn nhà tâm lý học Rudolf Arnheim cho rằng…" không nói thêm.
-- Độ dài: bản đọc 314 từ, ước 76–80 giây (tập 12: 277 từ, 69,6 giây). Vượt mục tiêu 75 giây một chút (chủ Trang cho phép dài hơn một chút nếu cần để câu trọn nghĩa). Nếu ghi âm quá 78 giây, bỏ vế bập bênh ở cảnh 5 (một ý, 13 từ), không bỏ chữ nối, không bỏ câu nhóm sofa hay tủ cổ (chủ Trang yêu cầu). Năm của hai nguồn (2014, 1954) hiện trên tiêu đề nhưng không đọc trong lời; thêm lại khi ghi âm nếu muốn (khoảng +14 từ, đẩy reel lên khoảng 85 giây).
-- Hạn chế ảnh: chỉ có một không gian (phòng khách, từ ba góc) thay vì ba không gian (xem source_info.md).
+## Cần chủ Trang kiểm tra
+- Bài không bàn khoảng cách của lò sưởi tới trục. Lời đọc nói "đứng sát góc nên cũng xa trục" theo quan sát trên ảnh, để làm rõ rằng phần quyết định là màu so với nền; đây là đọc ảnh theo quy tắc của bài, không phải câu của bài.
+- Màu sàn sáng, sofa trắng kem, lò sưởi màu kem là quan sát trên ảnh (bài ghi "chụp kim loại", "cùng màu với tường").
+- Câu tủ cổ "không kéo về bên nào" suy ra từ quy tắc xa/gần trục của bài, rào "theo cách tụi mình hiểu".
+- Arnheim nói món "đứng riêng một mình cũng nặng hơn khi lẫn trong một đám", trong khi bài dùng cả cụm món làm đối trọng; lời đọc bỏ yếu tố "đứng riêng".
+- Bài lấy ô cửa ban công làm ví dụ trục ở đoạn cuối, nhưng đoạn trước nói cửa ban công chung cư thường nằm lệch.
+- Độ dài: 314 từ, ước 76–79 giây (tập 12: 277 từ, 69,6 giây). Nếu ghi âm quá 78 giây, bỏ vế bập bênh ở cảnh 4 (một ý). Năm của Kilmer (2014) và Arnheim (1954) chỉ hiện trên tiêu đề cảnh, không đọc trong lời.
+- Hạn chế ảnh: chỉ có một không gian (phòng khách) thay vì ba (xem source_info.md); ảnh 10 (hoa trần, hai hốc kệ) không còn dùng ở bản 5.
 
 ## Kết quả chấm độc lập
-Người chấm (agent chưa thấy quá trình làm) đọc bài gốc, research, script, sources, scenes và storyboard. Cả bốn lượt đều KHÔNG ĐẠT (nhưng bản sau tốt hơn hẳn bản trước: lượt 3 là "gần đạt", lượt 4 chỉ còn lỗi chữ trong lời và chi tiết hình); mỗi lượt viết lại cả khối lời, không vá từng câu (mục 0.6h).
-**Lượt 1 (bản 1)**. Lỗi: câu móc nói quá bài ("chỉ có một bức tranh", "nhỏ hơn nhiều", "vẫn ngang nhau") và ảnh cảnh 1 cãi lại; lời không nói "nặng" là nặng trong mắt; từ khóa chuyển từ "nặng" sang "trục" mà trục chưa giải nghĩa; không có câu chốt trả lời câu móc; hai nguồn và hai chỗ rào đón; từ khó nghe ("tâm bố cục", "vỏ nhà", "lỗ cửa", "đối trọng"); tiêu đề lặp phụ đề; hình cảnh 13 chỉ sai món. Đã sửa: câu móc đúng bài; nói "nặng trong mắt"; trục giải nghĩa; thêm câu chốt; đổi "đối trọng" thành "món cân lại" trong lời; bỏ "vỏ nhà", "lỗ cửa", "tâm bố cục"; bớt rào đón.
-**Lượt 2 (bản 2)**. Lỗi: câu Kilmer và Arnheim không có câu bắc cầu ("nặng" là do mắt cảm thấy); "trục" dùng trước khi giải nghĩa; câu nhóm sofa tính trùng với câu tranh (hai khoản cộng dồn); tủ cổ nói "chỗ dừng" còn khối sau nói "điểm tựa" (hai từ cho một ý); câu chốt chưa trả lời lại câu móc; lời khuyên "đặt đối trọng ở phía bên kia" ngược với ảnh Palmeira (sofa và tranh cùng một phía) và mũi tên cảnh 13 khoanh nhầm; nhãn "ô cửa làm trục" gán nhầm cho cửa sổ phòng khách, ba đường trục khác nhau ở ba cảnh; hoa trần không được khoanh; ghi chú sai trong sources.md; dài hơn 75 giây. Đã sửa (bản 3): bắc cầu "mắt thấy được thăng bằng" và "trong mắt người càng nặng"; trục giải nghĩa ngay ở lần đầu ("tức đường chia đôi căn phòng") và nối với "điểm tựa bập bênh" của bài; nhóm sofa gộp vào câu tranh thành một phía ("và cùng với sofa… nên hai bên gần như ngang nhau"); tủ cổ chuyển vào khối trục, cùng từ khóa "điểm tựa", "trục"; câu chốt "căn phòng không nghiêng khi hai bên nặng ngang nhau trong mắt người" (theo chú thích ảnh 10); cảnh lời khuyên dùng sơ đồ 01; bỏ nhãn "ô cửa làm trục"; khoanh hoa trần; mở rộng khung cảnh nhóm đồ để thấy bức tranh; tiêu đề cảnh viết lại không lặp phụ đề; sửa sources.md. Tiêu đề giữ dạng "Theo Kilmer & Kilmer (2014), …" theo mục 0.6f; nhãn credit "Ảnh dự án:" giữ nguyên theo quy cách mục 6.
-Người chấm lượt 2 đề nghị bỏ câu tủ cổ và nhóm sofa cho ngắn; giữ lại vì chủ Trang đã yêu cầu hai món này (2026-10-27), chỉ gộp lại cho mạch.
-**Lượt 3 (bản 3)**: "gần đạt", còn bốn vướng: câu Kilmer chưa nói ý cốt lõi của bài học ("một món lớn cân với một nhóm món nhỏ") nên nhóm sofa ở cảnh sau không có nguồn; câu năm dài, đọc năm tốn 9 từ; chỗ chuyển giữa khối 3 và 4 gãy ("ngang nhau" sang "điểm tựa") và "Vì vậy" sau câu tủ cổ sai quan hệ; câu tủ cổ chưa gắn với trục; tiêu đề cảnh còn lặp phụ đề; hình: băng keo đè hoa trần, vòng khoanh lò sưởi lấn đệm cam, nhóm đồ khoanh hai nét riêng, cảnh lời khuyên nói tranh còn sơ đồ vẽ chùm khung ảnh. Đã sửa (bản 4): câu Kilmer thành "một món to có thể cân với một nhóm món nhỏ" (đúng câu bài, gọi lại ở câu nhóm đồ); không đọc năm trong lời (năm còn trên tiêu đề); tách câu Arnheim thành ba mảnh nói "chính giữa phòng" rồi giải nghĩa; khối 4 mở bằng "Hai bên ấy" để nối với "hai bên gần như ngang nhau", định nghĩa trục bằng hoa trần và hai hốc kệ, rồi "Theo cách tụi mình hiểu" và tủ cổ nằm cùng khối trục; bỏ "Vì vậy" sai chỗ, đổi "Ở nhà mình"; câu chốt quay về lò sưởi và bức tranh; tiêu đề cảnh đổi thành nhãn chỉ chỗ ("Phía lò sưởi", "Phía bức tranh"…); hình: dời vòng hoa trần khỏi băng keo (dải ảnh 10 mở rộng lên trên), bỏ đệm cam khỏi vòng lò sưởi, vòng chung cho nhóm đồ. Chưa sửa: số vị trí chụp 03, 05, 06 trên mặt bằng của bài (nằm trong bản vẽ gốc, không xoá); băng keo che chữ "gần trục" ở sơ đồ 02.
-**Lượt 4 (bản 4)**: KHÔNG ĐẠT, nhưng phần nội dung được xác nhận (trung thành với bài, đúng trọng tâm, có hình ảnh cụ thể, câu chốt trả lời được câu móc, năm chỉ hiện trên tiêu đề được chấp nhận cho bản này). Sáu lỗi bắt buộc đều là chữ: câu Arnheim 50 từ, bảy chữ "càng" và "Còn" sai quan hệ; câu "đi qua hoa trần và hai hốc kệ" sai vị trí (trục đi qua ô cửa nằm giữa hai hốc kệ); "nên… thì nên" và tủ cổ gắn bằng "và"; sofa đổi vai (ở Palmeira nằm trong nhóm cân với lò sưởi, ở nhà mình là món to nhất); câu chốt lồng kiểu văn dịch; câu liệt kê rời. Đã sửa cả sáu theo đúng đề xuất: tách câu Arnheim thành hai; "đi qua hoa trần và ô cửa giữa hai hốc kệ, gọi là trục"; "Theo cách tụi mình hiểu, mắt người cần trục ấy làm điểm tựa, vì vậy kê lệch thì nên lệch quanh trục. Gần điểm tựa ấy, chiếc tủ cổ gỗ đậm giúp mắt có chỗ dừng lại"; "một món cân lại cho món to nhất, thường là sofa"; chốt tách thành hai câu ("Món ấy không cần to bằng sofa. Như lò sưởi và bức tranh ở đây, căn phòng không nghiêng khi hai bên nặng ngang nhau trong mắt người"); câu nhóm đồ viết lại "Quanh bức tranh còn có sofa, …". Phần hình và tiêu đề đã sửa theo mục (B): nhãn "chính giữa phòng" thay "trục giữa" ở cảnh 8; tiêu đề cảnh 9, 10–11, 13–17 đổi để không lặp phụ đề; nhãn "lò sưởi", "tranh" ở cảnh 10 vì ảnh chụp ngược hướng; nét trục vẽ lại ở cảnh 12; vòng chung cho nhóm đồ; sơ đồ 02 cắt lùi để băng keo không đè chữ; lời cảnh 17 gắn với nét lò sưởi ↔ tranh. Chưa chạy lượt chấm 5; còn lại là mức (B), (C) của người chấm lượt 4 (chi tiết hình như số 05 trên mặt bằng và băng keo che đỉnh điểm tựa ở sơ đồ 02, "sofa/sô-pha", "đậm/sẫm" trong chữ gốc của sơ đồ).
+Bản 1–4 qua bốn lượt chấm (lịch sử trong commit trước). Chủ Trang đọc bản 4 và yêu cầu làm lại (xem đầu file). Bản 5: chờ lượt chấm (cập nhật sau).
