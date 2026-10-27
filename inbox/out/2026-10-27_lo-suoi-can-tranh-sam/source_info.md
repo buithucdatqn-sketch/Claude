@@ -6,21 +6,21 @@ Một ảnh ngoài kho (mục 0.6d: được lấy thêm ảnh của chính côn
 ## Bảng ảnh của bài 04 và việc dùng ở tập 13
 | Ảnh | Loại | Dùng ở tập 13 | Đã dùng ở tập 12? |
 |---|---|---|---|
-| 01-diagram-ba-kieu-can-bang.png | diagram | cảnh 2 (`source_bat.png`, khung "bất đối xứng": khối lớn bên này, nhóm nhỏ sẫm bên kia, điểm tựa bập bênh) | có (cảnh 2–5, hai khung khác) |
-| 02-diagram-suc-nang-thi-giac.png | diagram | cảnh 3 (`source_dgb.png`, phần nhãn "xa trục, nên nặng thêm" và dòng bốn yếu tố), cảnh 4 (`source_dg.png`, phần hình đòn bẩy), bỏ tiêu đề lớn | không |
-| 03-mat-bang-palmeira.png | mặt bằng | cảnh 5 (`source_mb.png`, cắt vùng phòng khách, lỗ cửa giữa, phòng ăn) | có (vùng phòng ngủ chính, cảnh 6) |
-| 06-doodle-lo-suoi-va-tranh.jpg + goc/06 | ảnh doodle (mực ĐEN) + ảnh gốc sạch, phòng khách | ẢNH CHÍNH. Dùng ảnh gốc `goc/06`: cảnh 6–7 (`source_khachb.png`, dải y 560–1760 của ảnh xem), cảnh 8 (`source_nhomb.png`, dải dưới bên phải), cảnh 9 (`source_tub.png`, dải giữa có tủ cổ) | không |
-| 10-doodle-anh-tong.jpg + goc/10 | ảnh doodle + ảnh gốc sạch, phòng khách nhìn từ đầu kia | cảnh 10–11 (`source_trucb.png`, dải y 300–1560: đáy hoa trần, lỗ cửa giữa, hai hốc kệ giống nhau) | có (dải dưới: sofa, ghế đen, lò sưởi, cảnh 10–11) |
-| ArchDaily 21 | ảnh chụp ngoài kho, phòng khách nhìn từ cửa vào | cảnh 1 (mở, sạch), 12–14 (doodle mới: ô cửa làm trục, sofa và tranh màu đậm, lò sưởi cân với tranh), 15 (khung cuối) | không |
+| 01-diagram-ba-kieu-can-bang.png | diagram | cảnh 2 và cảnh 14–15 (`source_bat.png`, khung "bất đối xứng": khối lớn bên này, nhóm nhỏ sẫm bên kia, điểm tựa bập bênh) | có (cảnh 2–5, hai khung khác: ba kiểu cân bằng, khung đối xứng) |
+| 02-diagram-suc-nang-thi-giac.png | diagram | cảnh 3 (`source_dgb.png`, phần nhãn "xa trục, nên nặng thêm" và dòng bốn yếu tố), cảnh 4–5 (`source_dg.png`, phần hình đòn bẩy), bỏ tiêu đề lớn | không |
+| 03-mat-bang-palmeira.png | mặt bằng | cảnh 6 (`source_mb.png`, cắt vùng phòng khách, lỗ cửa giữa, phòng ăn) | có (vùng phòng ngủ chính, cảnh 6) |
+| 06-doodle-lo-suoi-va-tranh.jpg + goc/06 | ảnh doodle (mực ĐEN) + ảnh gốc sạch, phòng khách | ẢNH CHÍNH. Dùng ảnh gốc `goc/06`: cảnh 7–8 (`source_khachb.png`, dải y 560–1760 của ảnh xem), cảnh 9 (`source_nhomb.png`, phần dưới bức tranh, sofa, ghế đen, bình hoa), cảnh 13 (`source_tub.png`, dải giữa có tủ cổ) | không |
+| 10-doodle-anh-tong.jpg + goc/10 | ảnh doodle + ảnh gốc sạch, phòng khách nhìn từ đầu kia | cảnh 10–12 (`source_trucb.png`, dải y 160–1560: đáy hoa trần, lỗ cửa giữa, hai hốc kệ giống nhau) | có (dải dưới: sofa, ghế đen, lò sưởi, cảnh 10–11) |
+| ArchDaily 21 | ảnh chụp ngoài kho, phòng khách nhìn từ cửa vào | cảnh 1 (mở, sạch), 16–17 (doodle mới: lò sưởi cân với tranh), 18 (khung cuối) | không |
 | 04, 05, 08, 09 | ảnh doodle/gốc phòng ngủ, phòng tắm, bài học 3 | không | 04, 05: có |
 | 07-diagram-hai-cho-dung.png | diagram (bài học 3) | không | không |
 
-Đạt mục 2d (trừ ba không gian, xem hạn chế): hai diagram (01, 02), mặt bằng (03) đặt ngay trước cảnh ảnh chụp phòng khách, ảnh nhiều góc của phòng khách. Không ảnh nào quá khoảng nửa số cảnh: ảnh 06 (cảnh 6–9, bốn dải) = 4/15; ArchDaily 21 = 5/15 (kể cả khung cuối); ảnh 10 = 2/15; sơ đồ 02 = 2/15, sơ đồ 01 = 1/15.
+Đạt mục 2d (trừ ba không gian, xem hạn chế): hai diagram (01, 02), mặt bằng (03) đặt ngay trước cảnh ảnh chụp phòng khách, ảnh nhiều góc của phòng khách. Không ảnh nào quá khoảng nửa số cảnh (18 cảnh): ảnh 06 (cảnh 7–9, 13: bốn dải) = 4/18; ArchDaily 21 = 4/18 (kể cả khung cuối); ảnh 10 = 3/18; sơ đồ 01 = 3/18; sơ đồ 02 = 3/18.
 
 ## Hạn chế (trung thực)
 - **Mục 2d yêu cầu ảnh của ít nhất BA không gian khác nhau của công trình; tập này chỉ có phòng khách (từ ba góc: ảnh 06, ảnh 10 nhìn từ đầu kia, ArchDaily 21) và chỗ thông sang phòng ăn nhìn qua lỗ cửa giữa (ảnh 10).** Lý do: bài học 2 chỉ nói về phòng khách, và chủ Trang chọn ý cụ thể này. Thêm ảnh phòng ngủ, phòng tắm, bếp hay sân chỉ để đủ số sẽ làm reel gánh thêm chủ đề (mục 0.6b, 0.6h) và trùng tập 12. Xin chủ Trang xác nhận có chấp nhận ngoại lệ này.
 - Doodle gốc của bài 04 vẽ mực ĐEN (và nhãn đen sát mép), không hợp quy cách nét trắng nét đứt và dải nhãn y 610–1240 (mục 6, 0.6d). Vì vậy không lộ nét gốc mà dùng ảnh gốc sạch `goc/06`, `goc/10` và vẽ nét trắng mới bằng `engine_ep13/draw_ep13.py`, giữ đúng chỗ khoanh và lời nhãn của bài (lò sưởi cùng màu tường, tranh sẫm nhỏ treo cao xa trục, trục giữa, tủ cổ gần trục, hoa trần, hai hốc kệ).
-- Các ảnh phòng khách đều sáng, nét trắng trên tường kem kém nổi; engine có viền tối nhẹ quanh nét (halo) nên vẫn đọc được. Chữ nhãn khá nhỏ trên thẻ ảnh (thẻ cao khoảng 440–520 px để chừa chỗ phụ đề ba dòng).
+- Các ảnh phòng khách đều sáng, nét trắng trên tường kem kém nổi; engine có viền tối nhẹ quanh nét (halo) nên vẫn đọc được. Chữ nhãn khá nhỏ trên thẻ ảnh (thẻ cao khoảng 440–520 px để chừa chỗ phụ đề ba dòng). Băng keo ở giữa mép trên thẻ có thể che một phần đỉnh ảnh (đã dời vòng "hoa trần" xuống dưới băng keo ở cảnh 11).
 - Ảnh ArchDaily 21 có lò sưởi bên trái, tranh bên phải (cùng hướng nhìn với ảnh 06). Ảnh 10 nhìn từ đầu kia nên lò sưởi nằm bên phải, sofa và tranh bên trái; lời đọc không nói "bên trái/bên phải" để khỏi sai hướng khi đổi ảnh.
 - Ảnh 06 gốc (2500 px) và ArchDaily 21 (2000 px) đủ nét; dải cắt nhỏ (`source_nhomb.png` 1207×882, `source_tub.png` 1304×770) hơi mềm khi phóng trên thẻ 960 px nhưng vẫn rõ.
 
@@ -28,3 +28,4 @@ Một ảnh ngoài kho (mục 0.6d: được lấy thêm ảnh của chính côn
 - Ảnh chụp: Palmeira Apartment, Lisbon · Studio Gameiro · ảnh Francisco Nogueira (YAML `cong_trinh`; ArchDaily ghi cùng nhiếp ảnh gia).
 - Sơ đồ 02: Giả Thuyết Kiến Trúc, theo Kilmer & Kilmer (2014) (chú thích trên chính sơ đồ: "Arnheim, 1954; Kilmer & Kilmer, 2014").
 - Mặt bằng: Studio Gameiro, nguồn ArchDaily (2023), ghi chú Giả Thuyết Kiến Trúc (chú thích trên bản vẽ của bài).
+- Mặt bằng 03 giữ nguyên nhãn và các số vị trí chụp 03, 05, 06 của bài (không xoá khỏi bản vẽ gốc).

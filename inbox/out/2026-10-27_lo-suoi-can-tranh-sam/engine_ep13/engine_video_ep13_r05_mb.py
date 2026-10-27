@@ -554,7 +554,7 @@ WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–4.76s", head="Theo Arnheim (1954), điều làm món đồ nặng thêm", vo="như người ngồi càng xa điểm tựa bập bênh thì càng đè mạnh.",
          cam=((976, 665), 0.9, (540, 900)), dark=False, dd=[], move="hold"),
-    dict(t="4.76–8.26s", head="Phòng khách ở Palmeira, Lisbon", vo="Ở phòng khách của căn hộ Palmeira,",
+    dict(t="4.76–8.26s", head="Phòng khách ở Palmeira, Lisbon", vo="Ở phòng khách căn hộ Palmeira,",
          cam=((976, 665), 0.9, (540, 900)), dark=False, dd=[], move="pan_u"),
     dict(t="8.26–8.76s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),

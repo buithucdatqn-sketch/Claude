@@ -551,13 +551,15 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–8.51s", head="Nhiều món gần nhau thành một mảng", vo="và cùng với sofa, ghế gỗ đen, bình hoa khô, nhìn trong ảnh giống như một mảng liền, nên hai bên gần như ngang nhau.",
-         cam=((1200, 782), 0.8, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="8.51–17.02s", head="Mắt cần điểm tựa, đó là trục giữa phòng", vo="Theo cách tụi mình hiểu, mắt người cần một điểm tựa, chính là trục giữa phòng, và kê lệch thì nên lệch quanh trục ấy.",
-         cam=((1200, 782), 0.8, (540, 863)), dark=False, dd=['ax', 'lab_ax'], move="pull"),
-    dict(t="17.02–23.03s", head="Hoa trần và hai hốc kệ giữ trục", vo="Phòng khách này có sẵn trục nhờ hoa trần ở giữa và hai hốc kệ giống nhau.",
-         cam=((1200, 782), 0.8, (540, 863)), dark=False, dd=['ht', 'lab_ht', 'hk_l', 'hk_r', 'lab_hk'], move="hold"),
-    dict(t="23.03–23.53s", head="end", vo="",
+    dict(t="0–8.2s", head="Những món quanh bức tranh", vo="Quanh bức tranh, sofa, ghế gỗ đen và bình hoa khô đứng gần nhau thành một nhóm, nên hai bên gần như ngang nhau.",
+         cam=((1200, 870), 0.74, (540, 863)), dark=False, dd=[], move="hold"),
+    dict(t="8.2–12.65s", head="Chính giữa phòng khách", vo="Hai bên ấy nằm hai phía của một đường chính giữa phòng,",
+         cam=((1200, 870), 0.74, (540, 863)), dark=False, dd=['ax', 'lab_ax'], move="pull"),
+    dict(t="12.65–17.41s", head="Chính giữa phòng khách", vo="đi qua hoa trần và hai hốc kệ giống nhau, gọi là trục.",
+         cam=((1200, 870), 0.74, (540, 863)), dark=False, dd=['ht', 'lab_ht', 'hk_l', 'hk_r', 'lab_hk'], move="hold"),
+    dict(t="17.41–24.67s", head="Vì sao kê lệch cần trục", vo="Theo cách tụi mình hiểu, mắt người cần trục làm điểm tựa, nên kê lệch thì nên lệch quanh trục ấy,",
+         cam=((1200, 870), 0.74, (540, 863)), dark=False, dd=[], move="hold"),
+    dict(t="24.67–25.17s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
