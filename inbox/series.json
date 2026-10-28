@@ -519,10 +519,10 @@
   },
   "y_bai": {
    "muc": "Chương 1 · 1.2 Mặt bao quanh càng sáng, phòng càng rộng + 1.3 bước 2 + 1.4 Pawson House",
-   "tom_tat": "Sơn trắng chỉ làm phòng hẹp trông rộng thêm vài cm (von Castell 2018: tường bên sáng hơn, rộng thêm ~7,9 cm), nhờ độ sáng chứ không nhờ ít tương phản (Oberfeld & Hecht 2011); dùng một mã màu sáng cho tường, phào, len, khuôn cửa; màu chỉ giữ ánh sáng đã vào nhà: Pawson House mở vách kính ra vườn trước, tường trắng nhiều lớp, sàn đá giữ ánh sáng lại; thứ tự ánh sáng → độ sáng → sắc màu"
+   "tom_tat": "Bản 5 (viết lại cho dễ hiểu theo góp ý chủ Trang): sơn tường sáng hơn chỉ làm phòng trông rộng thêm gần 8 cm, chưa tới nửa gang tay (von Castell 2018); vẫn nên sơn tường và trần thật sáng, tường, khuôn cửa, len chân tường cùng một màu sáng; sơn chỉ giữ ánh sáng đã vào nhà: Pawson House mở vách kính ra vườn, tường trắng, sàn đá giữ ánh sáng lại; với phòng hẹp đưa ánh sáng vào trước (bỏ bớt vách ngăn, đèn hắt tường cuối phòng) rồi mới chọn màu sáng"
   },
   "nguyen_ly": "Độ sáng bề mặt và kích thước cảm nhận của phòng",
-  "cau_moc": "Sơn trắng cho phòng hẹp trông rộng hơn, nhưng rộng thêm được bao nhiêu, và nhờ đâu mà rộng?",
+  "cau_moc": "Sơn trắng cho phòng hẹp trông rộng hơn, nhưng rộng thêm được bao nhiêu?",
   "anh_kho": [
    "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/02-chuong-1-khong-gian-hep.pdf (pdfimages): trang tên chương hành lang (Unsplash), Hình 1.2, ảnh mục 1.3 góc tường trắng (Unsplash), Pawson House bàn ăn, cầu thang một vế, bếp (Todd Eberle / John Pawson)"
   ],
@@ -538,6 +538,6 @@
    "Phụ lục: bảng tra nhanh 17 tình huống"
   ],
   "trang_thai": "cho_ghi_am",
-  "ghi_chu": "Chủ Trang yêu cầu 2026-10-28 chọn nội dung từ sổ tay AH+ Công thức chọn màu nội thất vừa tải lên kho. Ba lượt chấm độc lập. Lời mời cuối giữ 'dành cho thành viên' theo prompt lịch chạy (mâu thuẫn mục 0.6 điểm 6, chờ chủ Trang duyệt). Ảnh Pawson House chưa có giấy phép đăng công khai (sổ tay lưu hành nội bộ)."
+  "ghi_chu": "Chủ Trang yêu cầu 2026-10-28 chọn nội dung từ sổ tay AH+ Công thức chọn màu nội thất vừa tải lên kho. Ba lượt chấm độc lập. Lời mời cuối giữ 'dành cho thành viên' theo prompt lịch chạy (mâu thuẫn mục 0.6 điểm 6, chờ chủ Trang duyệt). Ảnh Pawson House chưa có giấy phép đăng công khai (sổ tay lưu hành nội bộ). Chủ Trang góp ý bản 3 'nội dung hơi phức tạp khó hiểu ngay': bản 5 bỏ phần tương phản, nghiên cứu Oberfeld & Hecht, kích thước phòng thí nghiệm; 214 từ, khoảng 57 giây; năm lượt chấm."
  }
 ]

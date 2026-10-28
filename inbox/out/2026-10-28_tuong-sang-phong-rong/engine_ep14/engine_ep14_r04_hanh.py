@@ -551,7 +551,7 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.39s", head="Tường và trần càng sáng càng tốt", vo="Dù vậy, chính nhóm này vẫn khuyên sơn tường và trần sáng nhất có thể.",
+    dict(t="0–5.39s", head="Vẫn nên sơn tường và trần thật sáng", vo="Dù vậy, chính nhóm này vẫn khuyên sơn tường và trần sáng nhất có thể.",
          cam=((600, 715), 0.545, (540, 865)), dark=True, dd=[], move="hold"),
     dict(t="5.39–12.65s", head="Áp dụng ở nhà mình", vo="Ở nhà mình, nên sơn tường, khuôn cửa và len chân tường cùng một màu sáng, để cả phòng cùng sáng.",
          cam=((600, 715), 0.545, (540, 865)), dark=True, dd=['khuon', 'len_l', 'len_r', 'lab_cung'], move="push"),
