@@ -184,6 +184,8 @@ L["hanh"]["lab_twh"] = label("xem độ sáng/trước", O([(440, 1250)], HX, HY
 os.makedirs(OUT + "doodle_preview", exist_ok=True)
 for img, layers in L.items():
     np.savez(os.path.join(HERE, f"doodle_ep14_{img}.npz"), **{k: np.array(v, np.float32) for k, v in layers.items()})
+    if not os.path.isfile(OUT + f"source_{img}.png"):     # ảnh của bản cũ (Pawson House) không còn dùng ở bản 7
+        continue
     im = Image.open(OUT + f"source_{img}.png").convert("RGB")
     a = np.array(im)
     for k, v in layers.items():
