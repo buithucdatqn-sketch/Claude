@@ -41,26 +41,26 @@
  },
  {
   "blk": 3,
-  "t": "29.42–36.68s",
-  "head": "Theo Oberfeld và Hecht (2011), với chiều cao trần",
-  "loi": "Một nghiên cứu khác về chiều cao trần cũng thấy độ sáng của trần và tường mới là điều quan trọng,",
-  "tts": "Một nghiên cứu khác về chiều cao trần cũng thấy độ sáng của trần và tường mới là điều quan trọng,",
+  "t": "29.42–35.43s",
+  "head": "Lời khuyên của nhóm von Castell",
+  "loi": "Vì vậy, nhóm này khuyên sơn mọi bức tường và trần bằng màu sáng nhất có thể.",
+  "tts": "Vì vậy, nhóm này khuyên sơn mọi bức tường và trần bằng màu sáng nhất có thể.",
   "part": "C"
  },
  {
   "blk": 3,
-  "t": "36.68–40.82s",
-  "head": "Theo Oberfeld và Hecht (2011), với chiều cao trần",
+  "t": "35.43–43.32s",
+  "head": "Trần trông cao hơn nhờ độ sáng",
+  "loi": "Năm 2011, Oberfeld và Hecht cũng thấy rằng với chiều cao trần, độ sáng của trần và tường mới là điều quan trọng,",
+  "tts": "Năm hai nghìn không trăm mười một, Ô-bơ-phen và Hếch cũng thấy rằng với chiều cao trần, độ sáng của trần và tường mới là điều quan trọng,",
+  "part": "C"
+ },
+ {
+  "blk": 3,
+  "t": "43.32–47.46s",
+  "head": "Trần trông cao hơn nhờ độ sáng",
   "loi": "còn tương phản giữa chúng không có ảnh hưởng đáng kể.",
   "tts": "còn tương phản giữa chúng không có ảnh hưởng đáng kể.",
-  "part": "C"
- },
- {
-  "blk": 3,
-  "t": "40.82–47.46s",
-  "head": "Lời khuyên của nhóm von Castell",
-  "loi": "Vì vậy, nhóm của von Castell khuyên sơn mọi bức tường và trần bằng màu sáng nhất có thể.",
-  "tts": "Vì vậy, nhóm của phôn Cát-xten khuyên sơn mọi bức tường và trần bằng màu sáng nhất có thể.",
   "part": "C"
  },
  {
@@ -98,7 +98,7 @@
  {
   "blk": 5,
   "t": "67.45–72.53s",
-  "head": "Màu sơn chỉ giữ ánh sáng có sẵn",
+  "head": "Ánh sáng phải vào nhà trước",
   "loi": "Nhưng màu sơn chỉ giữ lại được ánh sáng đã vào tới trong nhà.",
   "tts": "Nhưng màu sơn chỉ giữ lại được ánh sáng đã vào tới trong nhà.",
   "part": "D"
@@ -121,31 +121,39 @@
  },
  {
   "blk": 5,
-  "t": "82.99–88.69s",
-  "head": "Bếp ở tầng sát vườn",
-  "loi": "Sau đó, tường sơn trắng nhiều lớp và sàn lát đá giữ ánh sáng ấy lại.",
-  "tts": "Sau đó, tường sơn trắng nhiều lớp và sàn lát đá giữ ánh sáng ấy lại.",
+  "t": "82.99–86.49s",
+  "head": "Cầu thang và bếp tầng sát vườn",
+  "loi": "Còn tường sơn trắng nhiều lớp",
+  "tts": "Còn tường sơn trắng nhiều lớp",
+  "part": "D"
+ },
+ {
+  "blk": 5,
+  "t": "86.49–90.31s",
+  "head": "Cầu thang và bếp tầng sát vườn",
+  "loi": "và sàn lát đá thì giữ ánh sáng ấy lại.",
+  "tts": "và sàn lát đá thì giữ ánh sáng ấy lại.",
   "part": "D"
  },
  {
   "blk": 6,
-  "t": "88.69–92.83s",
+  "t": "90.31–94.45s",
   "head": "Thứ tự sổ tay rút ra",
-  "loi": "Sổ tay rút ra từ ngôi nhà này một thứ tự,",
-  "tts": "Sổ tay rút ra từ ngôi nhà này một thứ tự,",
+  "loi": "Sổ tay rút ra từ ngôi nhà này một thứ tự.",
+  "tts": "Sổ tay rút ra từ ngôi nhà này một thứ tự.",
   "part": "H"
  },
  {
   "blk": 6,
-  "t": "92.83–99.78s",
+  "t": "94.45–101.09s",
   "head": "Thứ tự sổ tay rút ra",
-  "loi": "đưa ánh sáng vào trước, chọn độ sáng của bề mặt sau, còn chọn sắc màu thì để sau cùng.",
-  "tts": "đưa ánh sáng vào trước, chọn độ sáng của bề mặt sau, còn chọn sắc màu thì để sau cùng.",
+  "loi": "Ánh sáng đưa vào trước, độ sáng của bề mặt chọn sau, còn sắc màu thì chọn sau cùng.",
+  "tts": "Ánh sáng đưa vào trước, độ sáng của bề mặt chọn sau, còn sắc màu thì chọn sau cùng.",
   "part": "H"
  },
  {
   "blk": 6,
-  "t": "99.78–111.11s",
+  "t": "101.09–112.42s",
   "head": "end",
   "loi": "Sổ tay Công thức chọn màu nội thất dành cho thành viên có bảng tra nhanh mười bảy tình huống, trong đó có phòng hẹp thiếu sáng, mọi người xem ở phần bình luận.",
   "tts": "Sổ tay Công thức chọn màu nội thất dành cho thành viên có bảng tra nhanh mười bảy tình huống, trong đó có phòng hẹp thiếu sáng, mọi người xem ở phần bình luận.",

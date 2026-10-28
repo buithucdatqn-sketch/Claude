@@ -557,13 +557,9 @@ SCENES = [
          cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="push"),
     dict(t="12.32–15.83s", head="Mức nới thêm đo được", vo="Người xem thấy phòng rộng thêm khoảng 7,9 cm.",
          cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="pan_r"),
-    dict(t="15.83–23.09s", head="Theo Oberfeld và Hecht (2011), với chiều cao trần", vo="Một nghiên cứu khác về chiều cao trần cũng thấy độ sáng của trần và tường mới là điều quan trọng,",
+    dict(t="15.83–21.84s", head="Lời khuyên của nhóm von Castell", vo="Vì vậy, nhóm này khuyên sơn mọi bức tường và trần bằng màu sáng nhất có thể.",
          cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="pull"),
-    dict(t="23.09–27.23s", head="Theo Oberfeld và Hecht (2011), với chiều cao trần", vo="còn tương phản giữa chúng không có ảnh hưởng đáng kể.",
-         cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="27.23–33.87s", head="Lời khuyên của nhóm von Castell", vo="Vì vậy, nhóm của von Castell khuyên sơn mọi bức tường và trần bằng màu sáng nhất có thể.",
-         cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="33.87–34.37s", head="end", vo="",
+    dict(t="21.84–22.34s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

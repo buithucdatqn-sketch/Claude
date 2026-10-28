@@ -133,7 +133,11 @@ w = 12
 L["khe"] = dict(
     ranh1=stroke([(30, 262), (360, 275), (690, 292)], w, DASH(w), 2.0, 1)[0],
     ranh2=stroke([(694, 300), (697, 650), (700, 1060)], w, DASH(w), 2.0, 2)[0],
-    lab_ranh=label("đường ranh/mờ đi?", (120, 520), 90))
+    lab_ranh=label("đường ranh/mờ đi?", (120, 520), 90),
+    a_tran=stroke([(320, 178), (500, 184), (680, 188)], w, DASH(w), 1.2, 11)[0],
+    lab_tran=label("trần sáng", (330, 45), 90),
+    a_tuong=stroke([(140, 728), (330, 732), (520, 736)], w, DASH(w), 1.2, 12)[0],
+    lab_tuong=label("tường sáng", (140, 590), 90))
 # hanh: hành lang, dải cắt (100, 470, 1300, 1900), cảnh 6: khuôn cửa và len chân tường cùng màu tường
 w = 13
 HX, HY = 100, 470
@@ -153,14 +157,16 @@ L["banan"] = dict(
 w = 6
 L["thang"] = dict(
     a_khe=arrow([(352, 15), (350, 160), (332, 300)], w, DASH(w), 0.8, 8, head=34),
-    lab_khe=label("ánh sáng từ/khe kính trên mái", (10, 330), 44))
+    lab_khe=label("ánh sáng từ/khe kính trên mái", (10, 330), 44),
+    tw=poly([(330, 8), (590, 8), (590, 330), (330, 330)], w, DASH(w), 1.0, 13),
+    lab_tw=label("tường trắng/nhiều lớp", (360, 345), 46))
 # bep: Pawson House, bếp (1200x948), cảnh 10: tường trắng và sàn đá
 w = 9
 L["bep"] = dict(
     tuong=poly([(300, 215), (760, 215), (760, 495), (300, 495)], w, DASH(w), 1.5, 9),
-    san=loop((420, 875), 380, 50, w, DASH(w), 1.5, 10, tilt=0),
+    san=loop((330, 870), 320, 55, w, DASH(w), 1.5, 10, tilt=0),
     lab_tuong=label("tường trắng/nhiều lớp", (360, 270), 70),
-    lab_san=label("sàn lát đá", (560, 790), 64))
+    lab_san=label("sàn lát đá/sát vách kính", (300, 640), 64))
 
 os.makedirs(OUT + "doodle_preview", exist_ok=True)
 for img, layers in L.items():

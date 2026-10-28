@@ -54,11 +54,11 @@ SW, SH = src.size
 
 # ---------------- board geometry (2x master, 1x = reel canvas) ----------------
 B2W, B2H = W * 2, H * 2
-CARD_W2, BORDER2 = 1517, 0  # theo tỷ lệ ảnh của run
+CARD_W2, BORDER2 = 1920, 0  # theo tỷ lệ ảnh của run
 PH_W2 = CARD_W2 - 2 * BORDER2
 PH_H2 = int(round(PH_W2 * SH / SW))
 CARD_H2 = PH_H2 + 2 * BORDER2
-C2 = (B2W / 2, 1880.0)
+C2 = (B2W / 2, 1810.0)
 ANGLE = 1.2  # degrees, counter-clockwise (card is hung very slightly crooked)
 S2 = PH_W2 / SW
 ROT = cv2.getRotationMatrix2D(C2, ANGLE, 1.0)
@@ -551,11 +551,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–9.14s", head="Pawson House, London (1997–1999)", vo="Nhà riêng của John Pawson ở London từng có nhiều phòng nhỏ và tối, nên ánh sáng được mở đường vào trước, bằng vách kính ra vườn",
-         cam=((316, 400), 1.0, (540, 880)), dark=False, dd=[], move="hold"),
-    dict(t="9.14–12.64s", head="Khe kính trên mái của giếng thang", vo="và khe kính trên mái của giếng thang.",
-         cam=((316, 400), 1.0, (540, 880)), dark=False, dd=['a_khe', 'lab_khe'], move="pan_d"),
-    dict(t="12.64–13.14s", head="end", vo="",
+    dict(t="0–4.45s", head="Pawson House, London (1997–1999)", vo="nên ông mở vách kính ra vườn cho ánh sáng vào trước.",
+         cam=((316, 280), 0.57, (540, 863)), dark=True, dd=[], move="hold"),
+    dict(t="4.45–7.95s", head="Cầu thang và bếp tầng sát vườn", vo="Còn tường sơn trắng nhiều lớp",
+         cam=((316, 280), 0.57, (540, 863)), dark=True, dd=['tw', 'lab_tw'], move="push"),
+    dict(t="7.95–8.45s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

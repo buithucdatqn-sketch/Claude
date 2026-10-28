@@ -54,7 +54,7 @@ SW, SH = src.size
 
 # ---------------- board geometry (2x master, 1x = reel canvas) ----------------
 B2W, B2H = W * 2, H * 2
-CARD_W2, BORDER2 = 1280, 0  # theo tỷ lệ ảnh của run
+CARD_W2, BORDER2 = 1611, 0  # theo tỷ lệ ảnh của run
 PH_W2 = CARD_W2 - 2 * BORDER2
 PH_H2 = int(round(PH_W2 * SH / SW))
 CARD_H2 = PH_H2 + 2 * BORDER2
@@ -551,11 +551,17 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–8.51s", head="Đọc độ sáng bằng chỉ số phản xạ ánh sáng", vo="Độ sáng ấy nên đọc bằng chỉ số phản xạ ánh sáng ghi trong bảng thông số của hãng sơn, thay vì đoán bằng mắt.",
-         cam=((680, 1150), 0.86, (540, 880)), dark=False, dd=[], move="hold"),
-    dict(t="8.51–18.9s", head="Khuôn cửa và len chân tường cùng màu tường", vo="Ở nhà mình, nên dùng cùng một mã màu, hoặc các mã sáng gần bằng nhau, cho tường, phào, len chân tường và khuôn cửa, để các mặt bao cùng sáng.",
-         cam=((680, 1150), 0.86, (540, 880)), dark=False, dd=['khuon', 'len_l', 'len_r', 'lab_khuon', 'lab_len'], move="push"),
-    dict(t="18.9–19.4s", head="end", vo="",
+    dict(t="0–4.14s", head="Trần trông cao hơn nhờ độ sáng", vo="còn tương phản giữa chúng không có ảnh hưởng đáng kể.",
+         cam=((600, 715), 0.545, (540, 865)), dark=True, dd=[], move="hold"),
+    dict(t="4.14–8.9s", head="Câu trả lời cho phòng hẹp", vo="Nghĩa là sơn trắng chỉ làm phòng hẹp trông rộng thêm vài xăng-ti-mét,",
+         cam=((600, 715), 0.545, (540, 865)), dark=False, dd=[], move="pan_u"),
+    dict(t="8.9–14.6s", head="Câu trả lời cho phòng hẹp", vo="nhờ độ sáng của tường và trần, còn ít tương phản chỉ là lợi ích phụ.",
+         cam=((600, 715), 0.545, (540, 865)), dark=False, dd=[], move="hold"),
+    dict(t="14.6–18.43s", head="Áp dụng ở nhà mình", vo="Ở nhà mình, muốn các mặt quanh phòng cùng sáng,",
+         cam=((600, 715), 0.545, (540, 865)), dark=True, dd=[], move="push"),
+    dict(t="18.43–24.13s", head="Áp dụng ở nhà mình", vo="nên dùng cùng một mã màu sáng cho tường, phào, len chân tường và khuôn cửa.",
+         cam=((600, 715), 0.545, (540, 865)), dark=True, dd=['khuon', 'len_l', 'len_r', 'lab_cung'], move="hold"),
+    dict(t="24.13–24.63s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
