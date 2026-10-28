@@ -551,15 +551,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.7s", head="Áp dụng ở nhà mình", vo="nên dùng cùng một mã màu sáng cho tường, phào, len chân tường và khuôn cửa.",
+    dict(t="0–7.26s", head="Áp dụng ở nhà mình", vo="Ở nhà mình, nên sơn tường, khuôn cửa và len chân tường cùng một màu sáng, để cả phòng cùng sáng.",
          cam=((600, 474), 0.68, (540, 863)), dark=True, dd=[], move="hold"),
-    dict(t="5.7–10.78s", head="Màu sơn chỉ giữ ánh sáng có sẵn", vo="Nhưng màu sơn chỉ giữ lại được ánh sáng đã vào tới trong nhà.",
+    dict(t="7.26–11.4s", head="Ánh sáng phải vào nhà trước", vo="Nhưng sơn chỉ giữ lại được ánh sáng đã vào nhà.",
          cam=((600, 474), 0.68, (540, 863)), dark=True, dd=['a_kinh', 'lab_vao'], move="push"),
-    dict(t="10.78–16.79s", head="Pawson House, London (1997–1999)", vo="Nhà riêng của kiến trúc sư John Pawson ở London từng có nhiều phòng nhỏ và tối,",
-         cam=((600, 474), 0.68, (540, 863)), dark=True, dd=['a_kinh'], move="pan_l"),
-    dict(t="16.79–21.24s", head="Pawson House, London (1997–1999)", vo="nên ông mở vách kính ra vườn cho ánh sáng vào trước.",
+    dict(t="11.4–18.04s", head="Pawson House, London (1997–1999)", vo="Ở nhà riêng của kiến trúc sư John Pawson tại London, ánh sáng vào qua vách kính ra vườn,",
          cam=((600, 474), 0.68, (540, 863)), dark=True, dd=['kinh', 'lab_kinh'], move="hold"),
-    dict(t="21.24–21.74s", head="end", vo="",
+    dict(t="18.04–18.54s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

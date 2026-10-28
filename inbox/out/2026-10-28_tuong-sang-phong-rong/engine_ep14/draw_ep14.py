@@ -159,7 +159,7 @@ L["thang"] = dict(
     a_khe=arrow([(352, 15), (350, 160), (332, 300)], w, DASH(w), 0.8, 8, head=34),
     lab_khe=label("ánh sáng từ/khe kính trên mái", (10, 330), 44),
     tw=poly([(330, 8), (590, 8), (590, 330), (330, 330)], w, DASH(w), 1.0, 13),
-    lab_tw=label("tường trắng/nhiều lớp", (360, 345), 46))
+    lab_tw=label("tường trắng", (380, 350), 50))
 # bep: Pawson House, bếp (1200x948), cảnh 10: tường trắng và sàn đá
 w = 9
 L["bep"] = dict(

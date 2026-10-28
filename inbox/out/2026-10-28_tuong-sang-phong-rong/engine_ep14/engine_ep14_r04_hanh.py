@@ -551,17 +551,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.64s", head="Lời khuyên của nhóm von Castell", vo="Vì vậy, nhóm của von Castell khuyên sơn mọi bức tường và trần bằng màu sáng nhất có thể.",
-         cam=((600, 715), 0.545, (540, 865)), dark=False, dd=[], move="hold"),
-    dict(t="6.64–11.4s", head="Câu trả lời cho phòng hẹp", vo="Nghĩa là sơn trắng chỉ làm phòng hẹp trông rộng thêm vài xăng-ti-mét,",
-         cam=((600, 715), 0.545, (540, 865)), dark=False, dd=[], move="pan_u"),
-    dict(t="11.4–17.1s", head="Câu trả lời cho phòng hẹp", vo="nhờ độ sáng của tường và trần, còn ít tương phản chỉ là lợi ích phụ.",
-         cam=((600, 715), 0.545, (540, 865)), dark=False, dd=[], move="hold"),
-    dict(t="17.1–20.93s", head="Áp dụng ở nhà mình", vo="Ở nhà mình, muốn các mặt quanh phòng cùng sáng,",
-         cam=((600, 715), 0.545, (540, 865)), dark=True, dd=[], move="push"),
-    dict(t="20.93–26.63s", head="Áp dụng ở nhà mình", vo="nên dùng cùng một mã màu sáng cho tường, phào, len chân tường và khuôn cửa.",
-         cam=((600, 715), 0.545, (540, 865)), dark=True, dd=['khuon', 'len_l', 'len_r', 'lab_cung'], move="hold"),
-    dict(t="26.63–27.13s", head="end", vo="",
+    dict(t="0–7.89s", head="Tường và trần càng sáng càng tốt", vo="Nghĩa là sơn trắng có giúp, nhưng chỉ giúp một chút, và nhóm này khuyên sơn tường và trần sáng nhất có thể.",
+         cam=((600, 715), 0.545, (540, 865)), dark=True, dd=[], move="hold"),
+    dict(t="7.89–15.15s", head="Áp dụng ở nhà mình", vo="Ở nhà mình, nên sơn tường, khuôn cửa và len chân tường cùng một màu sáng, để cả phòng cùng sáng.",
+         cam=((600, 715), 0.545, (540, 865)), dark=True, dd=['khuon', 'len_l', 'len_r', 'lab_cung'], move="push"),
+    dict(t="15.15–15.65s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
