@@ -23,7 +23,7 @@ FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
 if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
 CREDIT = "Ảnh: Nhà Rietveld Schröder (1924) · Stijn Poelstra / Centraal Museum, qua Dezeen"
-HEAD = "AH DECODE · PHÂN VÙNG BẰNG MÀU"
+HEAD = "AH DECODE · CĂN HỘ MỞ"
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
 END_LINES = [
@@ -552,13 +552,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–4.45s", head="Khu vực chỉ nhận ra nhờ đồ đạc", vo="nên người ở chỉ nhận ra từng khu vực nhờ đồ đạc.",
-         cam=((473, 709), 0.62, (540, 906)), dark=True, dd=[], move="hold"),
-    dict(t="4.45–8.9s", head="Theo sổ tay, nhà Rietveld Schröder (1924)", vo="Nhà Rietveld Schröder ở Utrecht, do Gerrit Rietveld thiết kế năm 1924,",
-         cam=((473, 709), 0.62, (540, 906)), dark=False, dd=[], move="pull"),
-    dict(t="8.9–14.29s", head="Theo sổ tay, nhà Rietveld Schröder (1924)", vo="là ví dụ kinh điển về một mặt bằng mở được tổ chức bằng màu.",
-         cam=((473, 709), 0.62, (540, 906)), dark=False, dd=[], move="hold"),
-    dict(t="14.29–14.79s", head="end", vo="",
+    dict(t="0–6.64s", head="Khu vực chỉ nhận ra nhờ đồ đạc", vo="nên người ở chỉ nhận ra từng khu nhờ đồ đạc, và cả căn dễ loang thành một khoảng.",
+         cam=((473, 709), 0.5, (540, 878)), dark=True, dd=[], move="hold"),
+    dict(t="6.64–15.46s", head="Theo sổ tay, nhà Rietveld Schröder (1924)", vo="Muốn biết khi vách mất thì lấy gì chia chỗ, sổ tay dẫn tới nhà Rietveld Schröder ở Utrecht, do Gerrit Rietveld thiết kế năm 1924,",
+         cam=((473, 709), 0.5, (540, 878)), dark=False, dd=[], move="pull"),
+    dict(t="15.46–20.53s", head="Theo sổ tay, nhà Rietveld Schröder (1924)", vo="một ví dụ kinh điển về mặt bằng mở dùng màu để chia chỗ.",
+         cam=((473, 709), 0.5, (540, 878)), dark=False, dd=[], move="hold"),
+    dict(t="20.53–21.03s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

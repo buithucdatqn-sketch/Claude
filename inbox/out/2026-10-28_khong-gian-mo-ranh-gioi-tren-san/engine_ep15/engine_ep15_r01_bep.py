@@ -23,7 +23,7 @@ FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
 if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
 CREDIT = "Ảnh: Nhà Rietveld Schröder (1924) · Stijn Poelstra / Centraal Museum, qua Dezeen"
-HEAD = "AH DECODE · PHÂN VÙNG BẰNG MÀU"
+HEAD = "AH DECODE · CĂN HỘ MỞ"
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
 END_LINES = [
@@ -551,13 +551,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.7s", head="Phân vùng căn hộ mở bằng màu", vo="Căn hộ mở không còn vách ngăn, vậy bếp và phòng khách tách nhau bằng gì?",
+    dict(t="0–6.01s", head="Căn hộ mở, bỏ vách ngăn", vo="Bỏ vách ngăn cho căn hộ thoáng, vậy bếp với phòng khách còn tách nhau bằng gì?",
          cam=((591, 394), 0.9, (540, 897)), dark=False, dd=[], move="push"),
-    dict(t="5.7–11.09s", head="Bỏ vách, cả sàn là một nền màu", vo="Khi bỏ vách, phòng khách, bếp và bàn ăn cùng nằm trên một nền màu,",
+    dict(t="6.01–11.09s", head="Bỏ vách, cả sàn là một nền màu", vo="Bỏ vách xong, phòng khách, bếp và bàn ăn nằm chung một nền màu,",
          cam=((591, 394), 0.9, (540, 897)), dark=True, dd=['san', 'lab_san'], move="pan_r"),
-    dict(t="11.09–15.54s", head="Khu vực chỉ nhận ra nhờ đồ đạc", vo="nên người ở chỉ nhận ra từng khu vực nhờ đồ đạc.",
+    dict(t="11.09–17.73s", head="Khu vực chỉ nhận ra nhờ đồ đạc", vo="nên người ở chỉ nhận ra từng khu nhờ đồ đạc, và cả căn dễ loang thành một khoảng.",
          cam=((591, 394), 0.9, (540, 897)), dark=True, dd=['ghe', 'lab_ghe', 'quay', 'lab_quay', 'ban', 'lab_ban'], move="hold"),
-    dict(t="15.54–16.04s", head="end", vo="",
+    dict(t="17.73–18.23s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

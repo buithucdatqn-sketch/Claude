@@ -1,114 +1,98 @@
 [
  {
   "blk": 1,
-  "t": "0–5.7s",
-  "head": "Phân vùng căn hộ mở bằng màu",
-  "loi": "Căn hộ mở không còn vách ngăn, vậy bếp và phòng khách tách nhau bằng gì?",
-  "tts": "Căn hộ mở không còn vách ngăn, vậy bếp và phòng khách tách nhau bằng gì?",
+  "t": "0–6.01s",
+  "head": "Căn hộ mở, bỏ vách ngăn",
+  "loi": "Bỏ vách ngăn cho căn hộ thoáng, vậy bếp với phòng khách còn tách nhau bằng gì?",
+  "tts": "Bỏ vách ngăn cho căn hộ thoáng, vậy bếp với phòng khách còn tách nhau bằng gì?",
   "part": "A"
  },
  {
   "blk": 2,
-  "t": "5.7–11.09s",
+  "t": "6.01–11.09s",
   "head": "Bỏ vách, cả sàn là một nền màu",
-  "loi": "Khi bỏ vách, phòng khách, bếp và bàn ăn cùng nằm trên một nền màu,",
-  "tts": "Khi bỏ vách, phòng khách, bếp và bàn ăn cùng nằm trên một nền màu,",
+  "loi": "Bỏ vách xong, phòng khách, bếp và bàn ăn nằm chung một nền màu,",
+  "tts": "Bỏ vách xong, phòng khách, bếp và bàn ăn nằm chung một nền màu,",
   "part": "C"
  },
  {
   "blk": 2,
-  "t": "11.09–15.54s",
+  "t": "11.09–17.73s",
   "head": "Khu vực chỉ nhận ra nhờ đồ đạc",
-  "loi": "nên người ở chỉ nhận ra từng khu vực nhờ đồ đạc.",
-  "tts": "nên người ở chỉ nhận ra từng khu vực nhờ đồ đạc.",
+  "loi": "nên người ở chỉ nhận ra từng khu nhờ đồ đạc, và cả căn dễ loang thành một khoảng.",
+  "tts": "nên người ở chỉ nhận ra từng khu nhờ đồ đạc, và cả căn dễ loang thành một khoảng.",
   "part": "C"
  },
  {
   "blk": 3,
-  "t": "15.54–19.99s",
+  "t": "17.73–26.55s",
   "head": "Theo sổ tay, nhà Rietveld Schröder (1924)",
-  "loi": "Nhà Rietveld Schröder ở Utrecht, do Gerrit Rietveld thiết kế năm 1924,",
-  "tts": "Nhà Rít-ve-lơ Xờ-rô-đơ ở Ú-trếch, do Hê-rít Rít-ve-lơ thiết kế năm một nghìn chín trăm hai mươi bốn,",
+  "loi": "Muốn biết khi vách mất thì lấy gì chia chỗ, sổ tay dẫn tới nhà Rietveld Schröder ở Utrecht, do Gerrit Rietveld thiết kế năm 1924,",
+  "tts": "Muốn biết khi vách mất thì lấy gì chia chỗ, sổ tay dẫn tới nhà Rít-ve-lơ Xờ-rô-đơ ở Ú-trếch, do Hê-rít Rít-ve-lơ thiết kế năm một nghìn chín trăm hai mươi bốn,",
   "part": "B"
  },
  {
   "blk": 3,
-  "t": "19.99–25.38s",
+  "t": "26.55–31.62s",
   "head": "Theo sổ tay, nhà Rietveld Schröder (1924)",
-  "loi": "là ví dụ kinh điển về một mặt bằng mở được tổ chức bằng màu.",
-  "tts": "là ví dụ kinh điển về một mặt bằng mở được tổ chức bằng màu.",
+  "loi": "một ví dụ kinh điển về mặt bằng mở dùng màu để chia chỗ.",
+  "tts": "một ví dụ kinh điển về mặt bằng mở dùng màu để chia chỗ.",
   "part": "B"
  },
  {
   "blk": 3,
-  "t": "25.38–32.02s",
-  "head": "Tầng trên: ban ngày để mở, tối kéo vách",
-  "loi": "Ban ngày, tầng trên được để mở, còn buổi tối gia đình kéo vách để chia thành ba phòng.",
-  "tts": "Ban ngày, tầng trên được để mở, còn buổi tối gia đình kéo vách để chia thành ba phòng.",
+  "t": "31.62–38.57s",
+  "head": "Ban ngày tầng trên để mở",
+  "loi": "Tầng trên ban ngày để mở, tối mới kéo vách chia phòng. Ảnh này chụp lúc vách đã thu lại,",
+  "tts": "Tầng trên ban ngày để mở, tối mới kéo vách chia phòng. Ảnh này chụp lúc vách đã thu lại,",
   "part": "C"
  },
  {
   "blk": 3,
-  "t": "32.02–38.97s",
-  "head": "Không còn vách, sàn vẫn chia mảng",
-  "loi": "Dù không còn vách, mặt sàn vẫn được chia thành những mảng đỏ, đen, trắng và xám có biên rõ,",
-  "tts": "Dù không còn vách, mặt sàn vẫn được chia thành những mảng đỏ, đen, trắng và xám có biên rõ,",
+  "t": "38.57–43.33s",
+  "head": "Vách thu lại, sàn vẫn chia mảng",
+  "loi": "mà sàn vẫn chia thành các mảng đỏ, đen, trắng có viền rõ,",
+  "tts": "mà sàn vẫn chia thành các mảng đỏ, đen, trắng có viền rõ,",
   "part": "D"
  },
  {
   "blk": 3,
-  "t": "38.97–43.11s",
+  "t": "43.33–46.84s",
   "head": "Trần cũng có thanh màu",
-  "loi": "còn trên trần có vài thanh màu đỏ, lam và vàng.",
-  "tts": "còn trên trần có vài thanh màu đỏ, lam và vàng.",
+  "loi": "còn trên trần có vài thanh đỏ, lam, vàng.",
+  "tts": "còn trên trần có vài thanh đỏ, lam, vàng.",
   "part": "D"
  },
  {
   "blk": 4,
-  "t": "43.11–50.69s",
-  "head": "Vách mất đi, ranh giới nằm lại trên sàn",
-  "loi": "Theo cách hiểu của sổ tay, đó là cách giữ cho các khu vực của mặt bằng linh hoạt vẫn tách nhau,",
-  "tts": "Theo cách hiểu của sổ tay, đó là cách giữ cho các khu vực của mặt bằng linh hoạt vẫn tách nhau,",
+  "t": "46.84–53.79s",
+  "head": "Vách thu lại, ranh giới ở lại trên sàn",
+  "loi": "Sổ tay hiểu rằng vách thì thu lại được, còn ranh giới giữa các khu vẫn ở lại trên sàn.",
+  "tts": "Sổ tay hiểu rằng vách thì thu lại được, còn ranh giới giữa các khu vẫn ở lại trên sàn.",
   "part": "C"
  },
  {
   "blk": 4,
-  "t": "50.69–55.77s",
-  "head": "Vách mất đi, ranh giới nằm lại trên sàn",
-  "loi": "vì vách có thể biến mất nhưng ranh giới vẫn nằm lại trên sàn.",
-  "tts": "vì vách có thể biến mất nhưng ranh giới vẫn nằm lại trên sàn.",
+  "t": "53.79–61.37s",
+  "head": "Màu là cách báo hiệu rẻ nhất",
+  "loi": "Theo kinh nghiệm của sổ tay, màu là cách báo hiệu từng khu với chi phí thấp nhất và dễ đổi nhất.",
+  "tts": "Theo kinh nghiệm của sổ tay, màu là cách báo hiệu từng khu với chi phí thấp nhất và dễ đổi nhất.",
   "part": "C"
  },
  {
   "blk": 4,
-  "t": "55.77–63.03s",
+  "t": "61.37–69.26s",
   "head": "Đặt màu xuống sàn hoặc lên trần",
-  "loi": "Vì vậy, khi phân vùng một căn hộ mở, mọi người có thể thử đặt màu xuống sàn hoặc lên trần,",
-  "tts": "Vì vậy, khi phân vùng một căn hộ mở, mọi người có thể thử đặt màu xuống sàn hoặc lên trần,",
-  "part": "F"
- },
- {
-  "blk": 4,
-  "t": "63.03–66.54s",
-  "head": "Đặt màu xuống sàn hoặc lên trần",
-  "loi": "thay vì chỉ giới hạn ở những vách ngăn.",
-  "tts": "thay vì chỉ giới hạn ở những vách ngăn.",
+  "loi": "Vì vậy, nếu bỏ vách, mọi người có thể thử đặt màu xuống sàn hoặc lên trần, chứ đừng chỉ trông vào vách.",
+  "tts": "Vì vậy, nếu bỏ vách, mọi người có thể thử đặt màu xuống sàn hoặc lên trần, chứ đừng chỉ trông vào vách.",
   "part": "F"
  },
  {
   "blk": 5,
-  "t": "66.54–73.49s",
-  "head": "Câu trả lời",
-  "loi": "Vậy bếp và phòng khách có thể tách nhau bằng chính màu của sàn và trần, dù không còn vách.",
-  "tts": "Vậy bếp và phòng khách có thể tách nhau bằng chính màu của sàn và trần, dù không còn vách.",
-  "part": "H"
- },
- {
-  "blk": 5,
-  "t": "73.49–83.88s",
+  "t": "69.26–79.34s",
   "head": "end",
-  "loi": "Sổ tay Công thức chọn màu nội thất dành cho thành viên có chương không gian mở với danh mục kiểm tra phân vùng, mọi người xem ở phần bình luận.",
-  "tts": "Sổ tay Công thức chọn màu nội thất dành cho thành viên có chương không gian mở với danh mục kiểm tra phân vùng, mọi người xem ở phần bình luận.",
+  "loi": "Chương không gian mở trong sổ tay Công thức chọn màu nội thất, kèm bảng kiểm tra phân vùng, dành cho thành viên, mọi người xem ở phần bình luận.",
+  "tts": "Chương không gian mở trong sổ tay Công thức chọn màu nội thất, kèm bảng kiểm tra phân vùng, dành cho thành viên, mọi người xem ở phần bình luận.",
   "part": "I"
  }
 ]

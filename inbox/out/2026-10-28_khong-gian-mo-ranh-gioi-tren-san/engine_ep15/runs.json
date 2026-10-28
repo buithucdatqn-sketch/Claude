@@ -10,7 +10,7 @@
   ],
   "t_in_main": 0.0,
   "cut_from": 0.0,
-  "cut_len": 15.54,
+  "cut_len": 17.73,
   "first_frame": 1
  },
  {
@@ -21,9 +21,9 @@
    4,
    5
   ],
-  "t_in_main": 15.54,
-  "cut_from": 4.449999999999999,
-  "cut_len": 9.84,
+  "t_in_main": 17.73,
+  "cut_from": 6.640000000000001,
+  "cut_len": 13.89,
   "first_frame": 2
  },
  {
@@ -35,9 +35,9 @@
    7,
    8
   ],
-  "t_in_main": 25.38,
-  "cut_from": 5.390000000000001,
-  "cut_len": 17.73,
+  "t_in_main": 31.62,
+  "cut_from": 5.07,
+  "cut_len": 15.220000000000002,
   "first_frame": 2
  },
  {
@@ -47,36 +47,23 @@
   "scenes": [
    9,
    10,
-   11,
-   12
+   11
   ],
-  "t_in_main": 43.11,
-  "cut_from": 4.140000000000001,
-  "cut_len": 23.430000000000007,
-  "first_frame": 2
- },
- {
-  "tag": "r05_tang",
-  "img": "tang",
-  "src": "source_tang.png",
-  "scenes": [
-   13
-  ],
-  "t_in_main": 66.54,
+  "t_in_main": 46.84,
   "cut_from": 3.510000000000005,
-  "cut_len": 6.949999999999989,
+  "cut_len": 22.42,
   "first_frame": 2
  },
  {
-  "tag": "r06_ebook",
+  "tag": "r05_ebook",
   "img": "ebook",
   "src": "source_ebook.png",
   "scenes": [
-   14
+   12
   ],
-  "t_in_main": 73.49,
-  "cut_from": 6.949999999999989,
-  "cut_len": 11.39,
+  "t_in_main": 69.26,
+  "cut_from": 7.890000000000008,
+  "cut_len": 11.079999999999998,
   "first_frame": 2
  }
 ]

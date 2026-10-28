@@ -23,7 +23,7 @@ FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
 if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
 CREDIT = "Ảnh: Nhà Rietveld Schröder (1924) · Stijn Poelstra / Centraal Museum, qua Dezeen"
-HEAD = "AH DECODE · PHÂN VÙNG BẰNG MÀU"
+HEAD = "AH DECODE · CĂN HỘ MỞ"
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
 END_LINES = [
@@ -552,15 +552,15 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.39s", head="Theo sổ tay, nhà Rietveld Schröder (1924)", vo="là ví dụ kinh điển về một mặt bằng mở được tổ chức bằng màu.",
+    dict(t="0–5.07s", head="Theo sổ tay, nhà Rietveld Schröder (1924)", vo="một ví dụ kinh điển về mặt bằng mở dùng màu để chia chỗ.",
          cam=((591, 394), 0.9, (540, 897)), dark=False, dd=[], move="hold"),
-    dict(t="5.39–12.03s", head="Tầng trên: ban ngày để mở, tối kéo vách", vo="Ban ngày, tầng trên được để mở, còn buổi tối gia đình kéo vách để chia thành ba phòng.",
+    dict(t="5.07–12.02s", head="Ban ngày tầng trên để mở", vo="Tầng trên ban ngày để mở, tối mới kéo vách chia phòng. Ảnh này chụp lúc vách đã thu lại,",
          cam=((591, 394), 0.9, (540, 897)), dark=True, dd=['chung', 'lab_chung'], move="pan_l"),
-    dict(t="12.03–18.98s", head="Không còn vách, sàn vẫn chia mảng", vo="Dù không còn vách, mặt sàn vẫn được chia thành những mảng đỏ, đen, trắng và xám có biên rõ,",
+    dict(t="12.02–16.78s", head="Vách thu lại, sàn vẫn chia mảng", vo="mà sàn vẫn chia thành các mảng đỏ, đen, trắng có viền rõ,",
          cam=((591, 394), 0.9, (540, 897)), dark=True, dd=['do', 'lab_do', 'den', 'lab_den', 'a_trang', 'lab_trang'], move="push"),
-    dict(t="18.98–23.12s", head="Trần cũng có thanh màu", vo="còn trên trần có vài thanh màu đỏ, lam và vàng.",
+    dict(t="16.78–20.29s", head="Trần cũng có thanh màu", vo="còn trên trần có vài thanh đỏ, lam, vàng.",
          cam=((591, 394), 0.9, (540, 897)), dark=True, dd=['t_do', 't_den', 't_vang', 'lab_tran'], move="hold"),
-    dict(t="23.12–23.62s", head="end", vo="",
+    dict(t="20.29–20.79s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

@@ -23,7 +23,7 @@ FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
 if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
 CREDIT = "Ảnh: Nhà Rietveld Schröder (1924) · Stijn Poelstra / Centraal Museum, qua Dezeen"
-HEAD = "AH DECODE · PHÂN VÙNG BẰNG MÀU"
+HEAD = "AH DECODE · CĂN HỘ MỞ"
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
 END_LINES = [
@@ -551,17 +551,15 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–4.14s", head="Trần cũng có thanh màu", vo="còn trên trần có vài thanh màu đỏ, lam và vàng.",
+    dict(t="0–3.51s", head="Trần cũng có thanh màu", vo="còn trên trần có vài thanh đỏ, lam, vàng.",
          cam=((591, 394), 0.9, (540, 897)), dark=True, dd=[], move="hold"),
-    dict(t="4.14–11.72s", head="Vách mất đi, ranh giới nằm lại trên sàn", vo="Theo cách hiểu của sổ tay, đó là cách giữ cho các khu vực của mặt bằng linh hoạt vẫn tách nhau,",
+    dict(t="3.51–10.46s", head="Vách thu lại, ranh giới ở lại trên sàn", vo="Sổ tay hiểu rằng vách thì thu lại được, còn ranh giới giữa các khu vẫn ở lại trên sàn.",
          cam=((591, 394), 0.9, (540, 897)), dark=True, dd=['mang', 'lab_ranh'], move="pan_d"),
-    dict(t="11.72–16.8s", head="Vách mất đi, ranh giới nằm lại trên sàn", vo="vì vách có thể biến mất nhưng ranh giới vẫn nằm lại trên sàn.",
+    dict(t="10.46–18.04s", head="Màu là cách báo hiệu rẻ nhất", vo="Theo kinh nghiệm của sổ tay, màu là cách báo hiệu từng khu với chi phí thấp nhất và dễ đổi nhất.",
          cam=((591, 394), 0.9, (540, 897)), dark=True, dd=[], move="hold"),
-    dict(t="16.8–24.06s", head="Đặt màu xuống sàn hoặc lên trần", vo="Vì vậy, khi phân vùng một căn hộ mở, mọi người có thể thử đặt màu xuống sàn hoặc lên trần,",
+    dict(t="18.04–25.93s", head="Đặt màu xuống sàn hoặc lên trần", vo="Vì vậy, nếu bỏ vách, mọi người có thể thử đặt màu xuống sàn hoặc lên trần, chứ đừng chỉ trông vào vách.",
          cam=((591, 394), 0.9, (540, 897)), dark=True, dd=['tran_l', 'a_tran', 'lab_lt', 'lab_xs'], move="push"),
-    dict(t="24.06–27.57s", head="Đặt màu xuống sàn hoặc lên trần", vo="thay vì chỉ giới hạn ở những vách ngăn.",
-         cam=((591, 394), 0.9, (540, 897)), dark=True, dd=[], move="hold"),
-    dict(t="27.57–28.07s", head="end", vo="",
+    dict(t="25.93–26.43s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
