@@ -101,9 +101,9 @@
   "first_frame": 2
  },
  {
-  "tag": "r09_banan",
-  "img": "banan",
-  "src": "source_banan.png",
+  "tag": "r09_ebook",
+  "img": "ebook",
+  "src": "source_ebook.png",
   "scenes": [
    14
   ],

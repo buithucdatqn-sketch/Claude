@@ -35,7 +35,8 @@ IMGS = dict(
     lrv=("source_lrv.png", "", LRVC),                            # Hình M.1 "LRV: phần ánh sáng bề mặt trả lại" (648x621)
     banan=("source_banan.png", "doodle_ep14_banan.npz", PAW),    # Pawson House: bàn ăn, vách kính ra vườn (1200x948)
     thang=("source_thang.png", "doodle_ep14_thang.npz", PAW),    # Pawson House: cầu thang một vế, dải cắt (0, 0, 632, 560) của ảnh 632x800
-    bep=("source_bep.png", "doodle_ep14_bep.npz", PAW),          # Pawson House: bếp tầng sát vườn, tường trắng, sàn đá (1200x948)
+    bep=("source_bep.png", "doodle_ep14_bep.npz", PAW),
+    ebook=("source_ebook.png", "", "Ảnh: sổ tay AH+ Công thức chọn màu nội thất · Giả Thuyết Kiến Trúc"),  # ảnh chủ Trang gửi 2026-10-28 cho khung cuối (800x1000), cắt vuông (120, 180, 800, 860) để máy tính bảng nằm giữa thẻ          # Pawson House: bếp tầng sát vườn, tường trắng, sàn đá (1200x948)
 )
 
 
@@ -76,7 +77,7 @@ SC = [
          vo="Vậy với phòng hẹp, hãy lo đưa ánh sáng vào trước,"),
     dict(move="hold", part="H", blk=5, img="hanh", head="Thứ tự cho phòng hẹp", cam=STRIP(600, 715, 0.545, 865), free=True, dark=False, dd=[],
          vo="như bỏ bớt vách ngăn hay thêm đèn hắt tường ở cuối phòng, rồi mới chọn màu sơn thật sáng."),
-    dict(move="push", part="I", blk=5, img="banan", head="end", cam="END", dark=False, vo="", dd=[],
+    dict(move="push", part="I", blk=5, img="ebook", head="end", cam="END", dark=False, vo="", dd=[],
          say="Sổ tay Công thức chọn màu nội thất dành cho thành viên có bảng tra nhanh mười bảy tình huống chọn màu, mọi người xem ở phần bình luận."),
 ]
 
@@ -225,12 +226,16 @@ def build(src, dst, video, data, img, tag):
            ("CARD_W2, BORDER2 = 1920, 0", f"CARD_W2, BORDER2 = {cw}, 0  # theo tỷ lệ ảnh của run"),
            ("C2 = (B2W / 2, 1810.0)", f"C2 = (B2W / 2, {cy})"),
            ("borderMode=cv2.BORDER_REFLECT)", "borderMode=cv2.BORDER_CONSTANT, borderValue=(255, 255, 255, 0))"),
+           # khung cuối: thẻ ảnh nằm gọn giữa y ~340–960 (trong khung 4:5 của bảng tin, không bị cắt góc), giữa màn hình theo chiều ngang
+           ('(1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),\n    (1088, "và cách chọn đồ decor", 40, 215),', '(1124, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),\n    (1170, "và cách chọn đồ decor", 40, 215),'),
+           ("END_Z = min(0.8, 760.0 / (CARD_H2 / 2), 960.0 / (CARD_W2 / 2))", "END_Z = min(0.8, 640.0 / (CARD_H2 / 2), 960.0 / (CARD_W2 / 2))"),
+           ("END_SAFE = ((SW / 2, SH / 2), END_Z, (540, 944 - END_Z * CARD_H2 / 4))", "END_SAFE = ((SW / 2, SH / 2), END_Z, (540, 1040 - END_Z * CARD_H2 / 4))"),
            # cảnh nối không chữ (trước khung cuối): không vẽ header, không phủ tối dải chữ
            ("    t.put((60, SAFE_Y0 + 4), HEAD, 34, 220)\n", "    if sc[\"head\"]:\n        t.put((60, SAFE_Y0 + 4), HEAD, 34, 220)\n"),
            ("    return top < TOP_END, bot > cr_y - 20, warn", "    return top < TOP_END and bool(sc[\"head\"]), bot > cr_y - 20 and bool(sc[\"vo\"]), warn"),
            # khung cuối: chữ khớp lời mời (mẫu tập 7)
            ('(1196, "Bài viết phân tích đầy đủ", 58, 240),\n    (1260, "xem ở dòng đầu tiên", 58, 240),\n    (1348, "trong phần bình luận", 66, 255),',
-            '(1180, "Sổ tay Công thức chọn màu nội thất", 54, 240),\n    (1244, "bảng tra nhanh 17 tình huống chọn màu", 48, 240),\n    (1330, "xem ở phần bình luận", 66, 255),')]
+            '(1252, "Sổ tay Công thức chọn màu nội thất", 54, 240),\n    (1314, "bảng tra nhanh 17 tình huống chọn màu", 48, 240),\n    (1398, "xem ở phần bình luận", 66, 255),')]
     for a_, b_ in rep:
         assert a_ in s, a_
         s = s.replace(a_, b_)

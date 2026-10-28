@@ -24,7 +24,7 @@ Kể lại bằng một câu: vì tường sơn sáng hơn chỉ làm phòng tr�
 | 11 | D | 53.55–57.06s | Pawson House, bếp | Tường trắng và sàn đá | và sàn lát đá giữ ánh sáng ấy lại. | giữ nguyên |
 | 12 | H | 57.06–61.2s | hành lang (Unsplash, trang tên ch. 1) | Thứ tự cho phòng hẹp | Vậy với phòng hẹp, hãy lo đưa ánh sáng vào trước, | giữ nguyên |
 | 13 | H | 61.2–68.15s | hành lang (Unsplash, trang tên ch. 1) | Thứ tự cho phòng hẹp | như bỏ bớt vách ngăn hay thêm đèn hắt tường ở cuối phòng, rồi mới chọn màu sơn thật sáng. | giữ nguyên |
-| 14 | I | 68.15–77.91s | Pawson House, bàn ăn | (khung cuối) | Sổ tay Công thức chọn màu nội thất dành cho thành viên có bảng tra nhanh mười bảy tình huống chọn màu, mọi người xem ở phần bình luận. | giữ nguyên |
+| 14 | I | 68.15–77.91s | ảnh sổ tay AH+ (chủ Trang gửi) | (khung cuối) | Sổ tay Công thức chọn màu nội thất dành cho thành viên có bảng tra nhanh mười bảy tình huống chọn màu, mọi người xem ở phần bình luận. | giữ nguyên |
 
 Nét doodle (trắng, nét đứt, nhãn viết tay, lộ dần): cảnh 5 "trần sáng", "tường sáng"; cảnh 6 khuôn cửa và len chân tường "cùng màu sáng"; cảnh 7 mũi tên "ánh sáng từ vườn"; cảnh 9 khung "vách kính ra vườn"; cảnh 10 khung "tường trắng"; cảnh 11 vòng "sàn lát đá sát vách kính". Cảnh 1, 4, 8, 12–13 ảnh sạch; cảnh 2–3 là Hình 1.2 của sổ tay.
 
@@ -57,3 +57,5 @@ Người chấm được đưa bản chữ của chương 1, phần mở đầu,
 - Lượt 5: một sửa (hai câu liền mở bằng từ nối "Nghĩa là", "Dù vậy"), đã bỏ "Nghĩa là". Người chấm ghi ĐẠT khi sửa xong.
 
 Ba điều người xem học được: (1) tường sơn sáng hơn chỉ làm phòng trông rộng thêm gần 8 cm, chưa tới nửa gang tay; (2) dù vậy vẫn nên sơn tường và trần thật sáng, và sơn tường, khuôn cửa, len chân tường cùng một màu sáng; (3) sơn chỉ giữ được ánh sáng đã vào nhà, nên đưa ánh sáng vào trước (bỏ bớt vách ngăn, đèn hắt tường cuối phòng), rồi mới chọn màu.
+
+Khung cuối (cảnh 14): theo yêu cầu chủ Trang 2026-10-28, thay ảnh bàn ăn bằng ảnh cuốn sổ tay AH+ trên máy tính bảng, cắt vuông để máy tính bảng nằm giữa thẻ, thẻ 640 px đặt ở y 400–1040 (giữa màn hình theo chiều ngang, trọn trong khung 4:5 của bảng tin); các dòng chữ khung cuối dời xuống y 1124–1398.

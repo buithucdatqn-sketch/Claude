@@ -19,7 +19,7 @@ for r in RUNS:
     shutil.rmtree(OUT + "frames_" + r["tag"])
     if os.path.exists(OUT + f"storyboard_{r['tag']}.png"):
         os.remove(OUT + f"storyboard_{r['tag']}.png")
-NAME = dict(hanh="trang tên chương 1, hành lang (Unsplash)", khe="mục 1.3, góc tường trắng (Unsplash)", dg="Hình 1.2 tường sáng nới phòng", banan="Pawson House, bàn ăn", thang="Pawson House, cầu thang", bep="Pawson House, bếp")
+NAME = dict(hanh="trang tên chương 1, hành lang (Unsplash)", khe="mục 1.3, góc tường trắng (Unsplash)", dg="Hình 1.2 tường sáng nới phòng", banan="Pawson House, bàn ăn", thang="Pawson House, cầu thang", bep="Pawson House, bếp", ebook="ảnh sổ tay AH+ (chủ Trang gửi)")
 img_of = {k: r["img"] for r in RUNS for k in r["scenes"]}
 PW, PH, GAP, MX, TOP, cols = 360, 640, 34, 50, 200, 4
 rows = (len(SC) + cols - 1) // cols
