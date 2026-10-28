@@ -23,15 +23,15 @@ for r in RUNS:
 _cands = [OUT + "original/chu-trang/" + f for f in sorted(os.listdir(OUT + "original/chu-trang")) if f.endswith((".mp4", ".gif"))] + [OUT + "original/chu-trang/ebook-so-tay-ah-plus.webp"]
 _out = subprocess.run(["/usr/bin/python3", "-I", os.path.join(HERE, "end_ep14.py"), _cands[0], OUT], capture_output=True, text=True)
 print(_out.stdout.strip(), _out.stderr.strip())
-NAME = dict(hanh="trang tên chương 1, hành lang (Unsplash)", khe="mục 1.3, góc tường trắng (Unsplash)", dg="Hình 1.2 tường sáng nới phòng", banan="Pawson House, bàn ăn", thang="Pawson House, cầu thang", bep="Pawson House, bếp", ebook="sổ tay AH+ toàn màn hình (chủ Trang gửi)")
+NAME = dict(hanh="trang tên chương 1, hành lang (Unsplash)", khe="mục 1.3, góc tường trắng (Unsplash)", dg="Hình 1.2 tường sáng nới phòng", banan="Pawson House, bàn ăn", thang="Pawson House, cầu thang", bep="Pawson House, bếp", ebook="sổ tay AH+ toàn màn hình (chủ Trang gửi)", mau="khối mẫu màu Cover Story (mở đầu)", lrv="Hình M.1 chỉ số phản xạ ánh sáng")
 img_of = {k: r["img"] for r in RUNS for k in r["scenes"]}
 PW, PH, GAP, MX, TOP, cols = 360, 640, 34, 50, 200, 4
 rows = (len(SC) + cols - 1) // cols
 sheet = Image.new("RGB", (MX * 2 + cols * PW + (cols - 1) * GAP, TOP + rows * (PH + 120) + 200), (30, 27, 24))
 d = ImageDraw.Draw(sheet)
-d.text((MX, 38), "AH Decode · Sơn trắng nới phòng hẹp được bao nhiêu?", font=F(60), fill=(255, 255, 255))
-d.text((MX, 118), "Ảnh của sổ tay AH+ Công thức chọn màu nội thất, chương 1: Hình 1.2, hành lang, góc tường trắng, ba ảnh Pawson House", font=F(34), fill=(200, 194, 186))
-d.text((MX, 158), "Nét doodle trắng nét đứt vẽ mới trên ảnh, lộ dần theo lời (cảnh 4–9) · camera trôi nhẹ", font=F(34), fill=(200, 194, 186))
+d.text((MX, 38), "AH Decode · Vì sao nhà nhỏ hay được khuyên sơn trắng?", font=F(60), fill=(255, 255, 255))
+d.text((MX, 118), "Ảnh của sổ tay AH+ Công thức chọn màu nội thất (mở đầu, chương 1): hành lang, góc tường trắng, Hình 1.2, khối mẫu màu, Hình M.1; video sổ tay", font=F(34), fill=(200, 194, 186))
+d.text((MX, 158), "Nét doodle trắng nét đứt vẽ mới trên ảnh, lộ dần theo lời (cảnh 2, 5, 6, 8) · camera trôi nhẹ", font=F(34), fill=(200, 194, 186))
 for i, sc in enumerate(SC):
     r, c = divmod(i, cols)
     x, y = MX + c * (PW + GAP), TOP + r * (PH + 120)

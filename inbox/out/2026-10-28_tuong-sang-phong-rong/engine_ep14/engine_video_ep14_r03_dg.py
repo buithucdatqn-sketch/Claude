@@ -27,11 +27,11 @@ HEAD = "AH DECODE · MÀU CHO PHÒNG HẸP"
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
 END_LINES = [
-    (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
-    (1088, "và cách chọn đồ decor", 40, 215),
-    (1180, "Sổ tay Công thức chọn màu nội thất", 54, 240),
-    (1244, "bảng tra nhanh 17 tình huống chọn màu", 48, 240),
-    (1330, "xem ở phần bình luận", 66, 255),
+    (1124, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
+    (1170, "và cách chọn đồ decor", 40, 215),
+    (1252, "Sổ tay Công thức chọn màu nội thất", 54, 240),
+    (1314, "bảng tra nhanh 17 tình huống chọn màu", 48, 240),
+    (1398, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
 PAPER = (229, 215, 191)  # beige print margin
@@ -75,8 +75,8 @@ TOP_END = 600         # khối tiêu đề chiếm y 340–590; ảnh muốn ch�
 WIDE_Z = min(1.0, 600.0 / (CARD_H2 / 2), 960.0 / (CARD_W2 / 2))
 WIDE_SAFE = ((SW / 2, SH / 2), WIDE_Z, (540, 910))
 # khung cuối an toàn: thẻ ảnh kết thúc ở y ~944, credit và END_LINES nằm trong y 974–1440
-END_Z = min(0.8, 760.0 / (CARD_H2 / 2), 960.0 / (CARD_W2 / 2))
-END_SAFE = ((SW / 2, SH / 2), END_Z, (540, 944 - END_Z * CARD_H2 / 4))
+END_Z = min(0.8, 640.0 / (CARD_H2 / 2), 960.0 / (CARD_W2 / 2))
+END_SAFE = ((SW / 2, SH / 2), END_Z, (540, 1040 - END_Z * CARD_H2 / 4))
 
 
 def src_to_b2(p):
@@ -552,15 +552,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–3.5s", head="Cách giải thích quen thuộc", vo="nhưng thí nghiệm lại cho kết quả khác.",
+    dict(t="0–5.07s", head="Mặt sáng trông lùi ra xa", vo="Vì tường và trần càng sáng thì mắt càng thấy chúng lùi ra xa.",
          cam=((324, 303), 0.56, (540, 863)), dark=True, dd=[], move="hold"),
-    dict(t="3.5–12.32s", head="Thí nghiệm của von Castell và cộng sự (2018)", vo="Năm 2018, nhóm của von Castell sơn sáng hơn hai bức tường bên của một căn phòng ảo cỡ thật, rộng 4,5 m, sâu 6 m.",
+    dict(t="5.07–12.02s", head="Thí nghiệm của von Castell và cộng sự (2018)", vo="Năm 2018, nhóm của von Castell sơn sáng hơn hai bức tường bên của một căn phòng ảo cỡ thật,",
          cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="push"),
-    dict(t="12.32–15.83s", head="Mức nới thêm đo được", vo="Người xem thấy phòng rộng thêm khoảng 7,9 cm.",
-         cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="pan_r"),
-    dict(t="15.83–21.84s", head="Lời khuyên của nhóm von Castell", vo="Vì vậy, nhóm này khuyên sơn mọi bức tường và trần bằng màu sáng nhất có thể.",
-         cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="pull"),
-    dict(t="21.84–22.34s", head="end", vo="",
+    dict(t="12.02–15.84s", head="Tường bên sáng hơn, phòng trông rộng hơn", vo="và người xem thấy phòng rộng thêm gần 8 cm.",
+         cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="hold"),
+    dict(t="15.84–16.34s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

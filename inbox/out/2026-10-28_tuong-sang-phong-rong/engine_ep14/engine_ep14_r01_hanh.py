@@ -551,9 +551,9 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.08s", head="Phòng hẹp và màu sơn trắng", vo="Sơn trắng cho phòng hẹp trông rộng hơn, nhưng rộng thêm được bao nhiêu?",
+    dict(t="0–4.14s", head="Phòng nhỏ và màu sơn trắng", vo="Vì sao nhà nhỏ thì người ta hay khuyên sơn trắng?",
          cam=((600, 715), 0.545, (540, 865)), dark=False, dd=[], move="push"),
-    dict(t="5.08–5.58s", head="end", vo="",
+    dict(t="4.14–4.64s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

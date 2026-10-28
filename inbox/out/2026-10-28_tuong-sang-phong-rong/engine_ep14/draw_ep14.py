@@ -168,6 +168,19 @@ L["bep"] = dict(
     lab_tuong=label("tường trắng/nhiều lớp", (360, 270), 70),
     lab_san=label("sàn lát đá/sát vách kính", (300, 640), 64))
 
+# mau: khối mẫu màu cửa hàng Cover Story (512x512), cảnh 5–6: ba đặc tính của màu; ô sáng và ô tối hơn
+w = 4
+L["mau"] = dict(
+    grid=poly([(104, 131), (210, 131), (210, 226), (104, 226)], w, DASH(w), 0.8, 30),
+    lab_grid=label("màu gì, sáng hay tối,/tươi hay ngả xám", (14, 20), 44),
+    o_sang=loop((123, 156), 20, 26, w, DASH(w), 0.6, 31, tilt=0),
+    o_toi=loop((157, 156), 20, 26, w, DASH(w), 0.6, 32, tilt=0),
+    lab_st=label("sáng  tối hơn", (86, 228), 42))
+# hanh (thêm cho bản 6): mảng tường sáng bên trái hành lang, cảnh 8
+w = 13
+L["hanh"]["tw_h"] = poly(O([(215, 520), (395, 520), (395, 1600), (215, 1600)], HX, HY), w, DASH(w), 2.0, 33)
+L["hanh"]["lab_twh"] = label("xem độ sáng/trước", O([(440, 1250)], HX, HY)[0], 84)
+
 os.makedirs(OUT + "doodle_preview", exist_ok=True)
 for img, layers in L.items():
     np.savez(os.path.join(HERE, f"doodle_ep14_{img}.npz"), **{k: np.array(v, np.float32) for k, v in layers.items()})

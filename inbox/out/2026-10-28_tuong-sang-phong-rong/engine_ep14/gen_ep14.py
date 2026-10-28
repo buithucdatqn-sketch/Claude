@@ -36,6 +36,7 @@ IMGS = dict(
     banan=("source_banan.png", "doodle_ep14_banan.npz", PAW),    # Pawson House: bàn ăn, vách kính ra vườn (1200x948)
     thang=("source_thang.png", "doodle_ep14_thang.npz", PAW),    # Pawson House: cầu thang một vế, dải cắt (0, 0, 632, 560) của ảnh 632x800
     bep=("source_bep.png", "doodle_ep14_bep.npz", PAW),
+    mau=("source_mau.png", "doodle_ep14_mau.npz", "Ảnh: Cover Story, Helsinki · Paavo Lehtonen / Dezeen, qua sổ tay AH+"),  # phần mở đầu sổ tay, 512x512
     ebook=("source_ebook.png", "", "Ảnh: sổ tay AH+ Công thức chọn màu nội thất · Giả Thuyết Kiến Trúc"),  # ảnh chủ Trang gửi 2026-10-28 cho khung cuối (800x1000), cắt vuông (120, 180, 800, 860) để máy tính bảng nằm giữa thẻ          # Pawson House: bếp tầng sát vườn, tường trắng, sàn đá (1200x948)
 )
 
@@ -48,35 +49,27 @@ def STRIP(cx, cy, z=1.0, ay=880):
 # Lời đọc: viết liền thành sáu khối trước (mục 0.6h), rồi mới cắt cảnh. Khối nối bằng từ khóa
 # (rộng → tương phản → sáng hơn → độ sáng → cùng sáng → giữ ánh sáng → vài xăng-ti-mét). Thẻ ngắt 1,2 giây giữa các khối (prompt lịch chạy).
 SC = [
-    dict(move="push", part="A", blk=1, img="hanh", head="Phòng hẹp và màu sơn trắng", cam=STRIP(600, 715, 0.545, 865), free=True, dark=False, dd=[],
-         vo="Sơn trắng cho phòng hẹp trông rộng hơn, nhưng rộng thêm được bao nhiêu?"),
+    dict(move="push", part="A", blk=1, img="hanh", head="Phòng nhỏ và màu sơn trắng", cam=STRIP(600, 715, 0.545, 865), free=True, dark=False, dd=[],
+         vo="Vì sao nhà nhỏ thì người ta hay khuyên sơn trắng?"),
+    dict(move="pan_d", part="C", blk=2, img="khe", head="Mặt sáng trông lùi ra xa", cam=STRIP(582, 550, 0.57, 863), free=True, dark=True, dd=["a_tran", "lab_tran", "a_tuong", "lab_tuong"],
+         vo="Vì tường và trần càng sáng thì mắt càng thấy chúng lùi ra xa."),
     dict(move="push", part="C", blk=2, img="dg", head="Thí nghiệm của von Castell và cộng sự (2018)", cam=STRIP(324, 303, 0.56, 863), free=True, dark=False, dd=[],
-         vo="Năm 2018, nhóm của von Castell thử sơn sáng hơn hai bức tường bên của một căn phòng ảo cỡ thật.",
-         tts="Năm hai nghìn không trăm mười tám, nhóm của phôn Cát-xten thử sơn sáng hơn hai bức tường bên của một căn phòng ảo cỡ thật."),
-    dict(move="pan_r", part="C", blk=2, img="dg", head="Rộng thêm chưa tới nửa gang tay", cam=STRIP(324, 303, 0.56, 863), free=True, dark=False, dd=[],
-         vo="Người xem thấy phòng rộng thêm gần 8 cm, tức là chưa tới nửa gang tay.",
-         tts="Người xem thấy phòng rộng thêm gần tám xăng-ti-mét, tức là chưa tới nửa gang tay."),
-    dict(move="pan_d", part="C", blk=3, img="khe", head="Câu trả lời cho câu hỏi đầu", cam=STRIP(582, 550, 0.57, 863), free=True, dark=True, dd=[],
-         vo="Sơn sáng có làm phòng trông rộng hơn, nhưng chỉ một chút."),
-    dict(move="hold", part="C", blk=3, img="khe", head="Vẫn nên sơn tường và trần thật sáng", cam=STRIP(582, 550, 0.57, 863), free=True, dark=True, dd=["a_tran", "lab_tran", "a_tuong", "lab_tuong"],
-         vo="Dù vậy, chính nhóm này vẫn khuyên sơn tường và trần sáng nhất có thể."),
-    dict(move="push", part="F", blk=3, img="hanh", head="Áp dụng ở nhà mình", cam=STRIP(600, 715, 0.545, 865), free=True, dark=True, dd=["khuon", "len_l", "len_r", "lab_cung"],
-         vo="Ở nhà mình, nên sơn tường, khuôn cửa và len chân tường cùng một màu sáng, để cả phòng cùng sáng."),
-    dict(move="push", part="D", blk=4, img="banan", head="Ánh sáng phải vào nhà trước", cam=STRIP(600, 474, 0.68, 863), free=True, dark=True, dd=["a_kinh", "lab_vao"],
-         vo="Nhưng sơn chỉ giữ lại được ánh sáng đã vào nhà."),
-    dict(move="hold", part="D", blk=4, img="banan", head="Pawson House, London (1997–1999)", cam=STRIP(600, 474, 0.68, 863), free=True, dark=True, dd=[],
-         vo="Nhà riêng của kiến trúc sư John Pawson ở London từng có nhiều phòng nhỏ và tối.",
-         tts="Nhà riêng của kiến trúc sư Giôn Pô-xơn ở Luân Đôn từng có nhiều phòng nhỏ và tối."),
-    dict(move="hold", part="D", blk=4, img="banan", head="Pawson House, London (1997–1999)", cam=STRIP(600, 474, 0.68, 863), free=True, dark=True, dd=["kinh", "lab_kinh"],
-         vo="Khi cải tạo, ông mở vách kính ra vườn cho ánh sáng vào,"),
-    dict(move="push", part="D", blk=4, img="thang", head="Tường trắng và sàn đá", cam=STRIP(316, 280, 0.57, 863), free=True, dark=True, dd=["tw", "lab_tw"],
-         vo="rồi tường sơn trắng"),
-    dict(move="pan_r", part="D", blk=4, img="bep", head="Tường trắng và sàn đá", cam=STRIP(600, 474, 0.68, 863), free=True, dark=True, dd=["san", "lab_san"],
-         vo="và sàn lát đá giữ ánh sáng ấy lại."),
-    dict(move="pull", part="H", blk=5, img="hanh", head="Thứ tự cho phòng hẹp", cam=STRIP(600, 715, 0.545, 865), free=True, dark=False, dd=[],
-         vo="Vậy với phòng hẹp, hãy lo đưa ánh sáng vào trước,"),
-    dict(move="hold", part="H", blk=5, img="hanh", head="Thứ tự cho phòng hẹp", cam=STRIP(600, 715, 0.545, 865), free=True, dark=False, dd=[],
-         vo="như bỏ bớt vách ngăn hay thêm đèn hắt tường ở cuối phòng, rồi mới chọn màu sơn thật sáng."),
+         vo="Năm 2018, nhóm của von Castell sơn sáng hơn hai bức tường bên của một căn phòng ảo cỡ thật,",
+         tts="Năm hai nghìn không trăm mười tám, nhóm của phôn Cát-xten sơn sáng hơn hai bức tường bên của một căn phòng ảo cỡ thật,"),
+    dict(move="hold", part="C", blk=2, img="dg", head="Tường bên sáng hơn, phòng trông rộng hơn", cam=STRIP(324, 303, 0.56, 863), free=True, dark=False, dd=[],
+         vo="và người xem thấy phòng rộng thêm gần 8 cm.",
+         tts="và người xem thấy phòng rộng thêm gần tám xăng-ti-mét."),
+    dict(move="pan_r", part="C", blk=3, img="mau", head="Theo Munsell (1907), ba đặc tính của một màu", cam=STRIP(256, 256, 0.56, 870), free=True, dark=True, dd=["grid", "lab_grid"],
+         vo="Từ năm 1907, Munsell đã tách một màu thành ba đặc tính, là màu gì, sáng hay tối, và tươi hay ngả xám.",
+         tts="Từ năm một nghìn chín trăm linh bảy, Mun-xen đã tách một màu thành ba đặc tính, là màu gì, sáng hay tối, và tươi hay ngả xám."),
+    dict(move="hold", part="C", blk=3, img="mau", head="Điều quyết định cảm giác rộng hẹp", cam=STRIP(256, 256, 0.56, 870), free=True, dark=True, dd=["o_sang", "o_toi", "lab_st"],
+         vo="Trong ba đặc tính ấy, sáng hay tối là điều có tác động rõ nhất tới cảm giác rộng hẹp của căn phòng."),
+    dict(move="push", part="C", blk=4, img="lrv", head="Độ sáng ghi trên bảng thông số", cam=STRIP(324, 303, 0.56, 863), free=True, dark=False, dd=[],
+         vo="Độ sáng này hãng sơn ghi sẵn bằng chỉ số phản xạ ánh sáng, từ không tới một trăm, và màu trắng nằm gần mức cao nhất."),
+    dict(move="push", part="F", blk=4, img="hanh", head="Chọn sơn cho phòng nhỏ", cam=STRIP(600, 715, 0.545, 865), free=True, dark=True, dd=["tw_h", "lab_twh"],
+         vo="Vì vậy, khi chọn sơn cho phòng nhỏ, nên xem màu ấy sáng tới đâu trước, còn màu gì thì để cho cảm xúc của căn phòng."),
+    dict(move="pull", part="H", blk=5, img="hanh", head="Câu trả lời", cam=STRIP(600, 715, 0.545, 865), free=True, dark=False, dd=[],
+         vo="Vậy người ta khuyên sơn trắng vì trắng là màu sáng nhất, mà chính độ sáng mới làm phòng nhỏ trông rộng hơn."),
     dict(move="push", part="I", blk=5, img="ebook", head="end", cam="END", dark=False, vo="", dd=[],
          say="Sổ tay Công thức chọn màu nội thất dành cho thành viên có bảng tra nhanh mười bảy tình huống chọn màu, mọi người xem ở phần bình luận."),
 ]
@@ -285,7 +278,7 @@ print("runs", [(r["tag"], r["scenes"]) for r in RUNS])
 print("tổng engine", T[-1], "giây; từ lời đọc", nw, "; ước tính giọng đọc ~", round(nw / 3.4 + 5 * 1.0, 1), "giây")
 for k, x in enumerate(SC):
     print(k + 1, x["blk"], x["part"], x["t"], words(shown[k]), x["head"])
-FOREIGN = ["Oberfeld", "Hecht", "Itten", "Johannes", "Castell", "von", "Pawson", "John", "London", "AH", "Decode", "Bauhaus", "LRV", "cm"]
+FOREIGN = ["Munsell", "Oberfeld", "Hecht", "Itten", "Johannes", "Castell", "von", "Pawson", "John", "London", "AH", "Decode", "Bauhaus", "LRV", "cm"]
 bad = re.findall(r"\d", " ".join(spoken)) + [w for w in FOREIGN if re.search(r"\b" + w + r"\b", " ".join(spoken))]
 print("chữ số / tên nước ngoài chưa phiên âm trong bản đọc:", bad)
 json.dump([dict(blk=x["blk"], t=x["t"], head=x["head"], loi=shown[k], tts=spoken[k], part=x["part"]) for k, x in enumerate(SC)],

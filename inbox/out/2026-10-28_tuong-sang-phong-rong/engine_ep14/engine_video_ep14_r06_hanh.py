@@ -22,7 +22,7 @@ W, H, SS = 1080, 1920, 2
 FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
 if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
-CREDIT = "Ảnh dự án: Pawson House, London (1997–1999) · John Pawson · ảnh Todd Eberle"
+CREDIT = "Ảnh: Ryunosuke Kikuno / Unsplash, qua sổ tay AH+ Công thức chọn màu nội thất"
 HEAD = "AH DECODE · MÀU CHO PHÒNG HẸP"
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
@@ -54,11 +54,11 @@ SW, SH = src.size
 
 # ---------------- board geometry (2x master, 1x = reel canvas) ----------------
 B2W, B2H = W * 2, H * 2
-CARD_W2, BORDER2 = 1920, 0  # theo tỷ lệ ảnh của run
+CARD_W2, BORDER2 = 1611, 0  # theo tỷ lệ ảnh của run
 PH_W2 = CARD_W2 - 2 * BORDER2
 PH_H2 = int(round(PH_W2 * SH / SW))
 CARD_H2 = PH_H2 + 2 * BORDER2
-C2 = (B2W / 2, 1810.0)
+C2 = (B2W / 2, 1880.0)
 ANGLE = 1.2  # degrees, counter-clockwise (card is hung very slightly crooked)
 S2 = PH_W2 / SW
 ROT = cv2.getRotationMatrix2D(C2, ANGLE, 1.0)
@@ -552,21 +552,19 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–7.26s", head="Áp dụng ở nhà mình", vo="Ở nhà mình, nên sơn tường, khuôn cửa và len chân tường cùng một màu sáng, để cả phòng cùng sáng.",
-         cam=((600, 474), 0.68, (540, 863)), dark=True, dd=[], move="hold"),
-    dict(t="7.26–11.4s", head="Ánh sáng phải vào nhà trước", vo="Nhưng sơn chỉ giữ lại được ánh sáng đã vào nhà.",
-         cam=((600, 474), 0.68, (540, 863)), dark=True, dd=['a_kinh', 'lab_vao'], move="push"),
-    dict(t="11.4–17.41s", head="Pawson House, London (1997–1999)", vo="Nhà riêng của kiến trúc sư John Pawson ở London từng có nhiều phòng nhỏ và tối.",
-         cam=((600, 474), 0.68, (540, 863)), dark=True, dd=[], move="hold"),
-    dict(t="17.41–22.17s", head="Pawson House, London (1997–1999)", vo="Khi cải tạo, ông mở vách kính ra vườn cho ánh sáng vào,",
-         cam=((600, 474), 0.68, (540, 863)), dark=True, dd=['kinh', 'lab_kinh'], move="hold"),
-    dict(t="22.17–22.67s", head="end", vo="",
+    dict(t="0–9.14s", head="Độ sáng ghi trên bảng thông số", vo="Độ sáng này hãng sơn ghi sẵn bằng chỉ số phản xạ ánh sáng, từ không tới một trăm, và màu trắng nằm gần mức cao nhất.",
+         cam=((600, 715), 0.545, (540, 865)), dark=False, dd=[], move="hold"),
+    dict(t="9.14–18.28s", head="Chọn sơn cho phòng nhỏ", vo="Vì vậy, khi chọn sơn cho phòng nhỏ, nên xem màu ấy sáng tới đâu trước, còn màu gì thì để cho cảm xúc của căn phòng.",
+         cam=((600, 715), 0.545, (540, 865)), dark=True, dd=['tw_h', 'lab_twh'], move="push"),
+    dict(t="18.28–26.17s", head="Câu trả lời", vo="Vậy người ta khuyên sơn trắng vì trắng là màu sáng nhất, mà chính độ sáng mới làm phòng nhỏ trông rộng hơn.",
+         cam=((600, 715), 0.545, (540, 865)), dark=False, dd=[], move="pull"),
+    dict(t="26.17–26.67s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
 BOARDS = {}
 
-_P = os.path.join(HERE, "doodle_ep14_banan.npz")
+_P = os.path.join(HERE, "doodle_ep14_hanh.npz")
 LAYER = dict(np.load(_P)) if os.path.isfile(_P) else {}   # toạ độ trên ảnh làm việc của run
 RAD = 0.9                              # bán kính chấm bút khi lộ lại nét gốc (px ảnh làm việc)
 
@@ -722,7 +720,7 @@ proc = subprocess.Popen(
     ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
      "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-t", f"{TOTAL:.2f}",
      "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-pix_fmt", "yuv420p", "-movflags", "+faststart",
-     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "r05_banan_silent.mp4")], stdin=subprocess.PIPE)
+     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "r06_hanh_silent.mp4")], stdin=subprocess.PIPE)
 
 nframes = int(TOTAL * FPS)
 cur = -1

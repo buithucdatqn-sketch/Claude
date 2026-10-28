@@ -16,22 +16,22 @@ from silhouette import loose_contour  # noqa: E402
 
 SRC = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "source.png")
 OUT = sys.argv[2] if len(sys.argv) > 2 else HERE
-os.makedirs(os.path.join(OUT, "frames_r07_banan"), exist_ok=True)
+os.makedirs(os.path.join(OUT, "frames_r05_lrv"), exist_ok=True)
 
 W, H, SS = 1080, 1920, 2
 FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
 if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
-CREDIT = "Ảnh dự án: Pawson House, London (1997–1999) · John Pawson · ảnh Todd Eberle"
+CREDIT = "Hình M.1: AH+, số liệu Dulux Australia, dải TCVN 7114-1"
 HEAD = "AH DECODE · MÀU CHO PHÒNG HẸP"
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
 END_LINES = [
-    (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
-    (1088, "và cách chọn đồ decor", 40, 215),
-    (1180, "Sổ tay Công thức chọn màu nội thất", 54, 240),
-    (1244, "bảng tra nhanh 17 tình huống chọn màu", 48, 240),
-    (1330, "xem ở phần bình luận", 66, 255),
+    (1124, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
+    (1170, "và cách chọn đồ decor", 40, 215),
+    (1252, "Sổ tay Công thức chọn màu nội thất", 54, 240),
+    (1314, "bảng tra nhanh 17 tình huống chọn màu", 48, 240),
+    (1398, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
 PAPER = (229, 215, 191)  # beige print margin
@@ -75,8 +75,8 @@ TOP_END = 600         # khối tiêu đề chiếm y 340–590; ảnh muốn ch�
 WIDE_Z = min(1.0, 600.0 / (CARD_H2 / 2), 960.0 / (CARD_W2 / 2))
 WIDE_SAFE = ((SW / 2, SH / 2), WIDE_Z, (540, 910))
 # khung cuối an toàn: thẻ ảnh kết thúc ở y ~944, credit và END_LINES nằm trong y 974–1440
-END_Z = min(0.8, 760.0 / (CARD_H2 / 2), 960.0 / (CARD_W2 / 2))
-END_SAFE = ((SW / 2, SH / 2), END_Z, (540, 944 - END_Z * CARD_H2 / 4))
+END_Z = min(0.8, 640.0 / (CARD_H2 / 2), 960.0 / (CARD_W2 / 2))
+END_SAFE = ((SW / 2, SH / 2), END_Z, (540, 1040 - END_Z * CARD_H2 / 4))
 
 
 def src_to_b2(p):
@@ -551,19 +551,17 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.7s", head="Bếp ở tầng sát vườn", vo="Sau đó, tường sơn trắng nhiều lớp và sàn lát đá giữ ánh sáng ấy lại.",
-         cam=((600, 474), 0.68, (540, 863)), dark=True, dd=[], move="hold"),
-    dict(t="5.7–9.84s", head="Thứ tự sổ tay rút ra", vo="Sổ tay rút ra từ ngôi nhà này một thứ tự,",
-         cam=((600, 474), 0.68, (540, 863)), dark=False, dd=[], move="pull"),
-    dict(t="9.84–16.79s", head="Thứ tự sổ tay rút ra", vo="đưa ánh sáng vào trước, chọn độ sáng của bề mặt sau, còn chọn sắc màu thì để sau cùng.",
-         cam=((600, 474), 0.68, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="16.79–28.12s", head="end", vo="",
-         cam=END_SAFE, dark=False, dd=[], move="push"),
+    dict(t="0–7.89s", head="Điều quyết định cảm giác rộng hẹp", vo="Trong ba đặc tính ấy, sáng hay tối là điều có tác động rõ nhất tới cảm giác rộng hẹp của căn phòng.",
+         cam=((324, 303), 0.56, (540, 863)), dark=True, dd=[], move="hold"),
+    dict(t="7.89–17.03s", head="Độ sáng ghi trên bảng thông số", vo="Độ sáng này hãng sơn ghi sẵn bằng chỉ số phản xạ ánh sáng, từ không tới một trăm, và màu trắng nằm gần mức cao nhất.",
+         cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="push"),
+    dict(t="17.03–17.53s", head="end", vo="",
+         cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
 BOARDS = {}
 
-_P = os.path.join(HERE, "doodle_ep14_banan.npz")
+_P = os.path.join(HERE, "none.npz")
 LAYER = dict(np.load(_P)) if os.path.isfile(_P) else {}   # toạ độ trên ảnh làm việc của run
 RAD = 0.9                              # bán kính chấm bút khi lộ lại nét gốc (px ảnh làm việc)
 
@@ -628,7 +626,7 @@ BOARDS["clean"] = make_board(1.0)
 frames = []
 for i in range(len(SCENES)):
     im = render_scene(i)
-    im.save(os.path.join(OUT, "frames_r07_banan", f"scene_{i + 1}.png"))
+    im.save(os.path.join(OUT, "frames_r05_lrv", f"scene_{i + 1}.png"))
     frames.append(im)
 
 # ---------------- contact sheet ----------------
@@ -653,5 +651,5 @@ fy = TOP + rows * (PH + 86) + 10
 d.text((MX, fy), "Nền trắng trơn · băng keo giấy thay ghim · header AH DECODE · bỏ “Bước n”", font=F(32), fill=(255, 255, 255))
 d.text((MX, fy + 44), "Cảnh zoom kín ảnh: chữ trắng viết lên ảnh (có phủ tối nhẹ).", font=F(32), fill=(225, 220, 212))
 d.text((MX, fy + 88), "Ảnh tối ~14% ở cảnh có nét vẽ; cảnh 1, 6, 7 giữ ảnh nguyên bản.", font=F(32), fill=(225, 220, 212))
-sheet.save(os.path.join(OUT, "storyboard_r07_banan.png"))
+sheet.save(os.path.join(OUT, "storyboard_r05_lrv.png"))
 print("fabric", tuple(int(x) for x in FAB), "sheet", sheet.size)

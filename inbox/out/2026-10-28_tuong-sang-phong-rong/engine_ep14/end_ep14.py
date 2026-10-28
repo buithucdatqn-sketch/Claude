@@ -3,15 +3,16 @@ Video đã đúng tỷ lệ 4:5 nên đặt nguyên cỡ vào đúng khung 4:5 c
 lấp bằng vải nền phản chiếu để phủ kín khung 1080x1920. iPad (video x 208–1055, y 372–1032, đứng yên) nằm ở khung y 657–1317.
 Chữ ngắn đặt ngoài vùng iPad: ba dòng mời ở mảng vải phía trên iPad, credit nhỏ ở dải tối phía dưới. Có kiểm tự động.
 Vẫn nhận ảnh tĩnh hoặc GIF (bố cục cũ cho ảnh 800x1000).
-Chạy: python3 -I end_ep14.py <video|gif|ảnh> <OUT> [giây]  ->  OUT/frames/scene_14.png (khung đầu),
+Chạy: python3 -I end_ep14.py <video|gif|ảnh> <OUT> [giây]  ->  OUT/frames/scene_<cảnh cuối>.png (khung đầu),
 và nếu có [giây]: OUT/end_ep14.mp4 (30 fps) để ghép thay đoạn khung cuối ở giai đoạn B."""
-import os, subprocess, sys
+import json, os, subprocess, sys
 import cv2
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont, ImageSequence
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
+LAST = "frames/scene_%d.png" % len(json.load(open(os.path.join(HERE, "scenes.json"))))   # khung cuối là cảnh cuối của scenes.json
 W, H = 1080, 1920
 # bố cục theo nguồn: video 1080x1350 (mặc định) hoặc ảnh tĩnh/GIF 800x1000
 S, OX, OY = 1.0, 0, -285            # X = S*x - OX, Y = S*y - OY
@@ -98,7 +99,7 @@ def main():
         n = max(1, int(round(dur * 30)))
         vf = video_frames(src, n)
         print("số khung đọc từ video:", len(vf))
-        render(vf[0], t, sh).save(out + "frames/scene_14.png")
+        render(vf[0], t, sh).save(out + LAST)
         if dur:
             p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
                                   "-r", "30", "-i", "-", "-c:v", "libx264", "-crf", "17", "-pix_fmt", "yuv420p", out + "end_ep14.mp4"],
@@ -113,7 +114,7 @@ def main():
     frames = [(f.copy(), f.info.get("duration", 100) or 100) for f in ImageSequence.Iterator(im)]
     print("số khung của ảnh nguồn:", len(frames))
     os.makedirs(out + "frames", exist_ok=True)
-    render(frames[0][0], t, sh).save(out + "frames/scene_14.png")
+    render(frames[0][0], t, sh).save(out + LAST)
     if dur:
         p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
                               "-r", "30", "-i", "-", "-c:v", "libx264", "-crf", "17", "-pix_fmt", "yuv420p", out + "end_ep14.mp4"],

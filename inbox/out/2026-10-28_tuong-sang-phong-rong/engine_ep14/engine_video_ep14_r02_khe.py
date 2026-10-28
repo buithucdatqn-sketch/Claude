@@ -27,11 +27,11 @@ HEAD = "AH DECODE · MÀU CHO PHÒNG HẸP"
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
 END_LINES = [
-    (1040, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
-    (1088, "và cách chọn đồ decor", 40, 215),
-    (1180, "Sổ tay Công thức chọn màu nội thất", 54, 240),
-    (1244, "bảng tra nhanh 17 tình huống chọn màu", 48, 240),
-    (1330, "xem ở phần bình luận", 66, 255),
+    (1124, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
+    (1170, "và cách chọn đồ decor", 40, 215),
+    (1252, "Sổ tay Công thức chọn màu nội thất", 54, 240),
+    (1314, "bảng tra nhanh 17 tình huống chọn màu", 48, 240),
+    (1398, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
 PAPER = (229, 215, 191)  # beige print margin
@@ -75,8 +75,8 @@ TOP_END = 600         # khối tiêu đề chiếm y 340–590; ảnh muốn ch�
 WIDE_Z = min(1.0, 600.0 / (CARD_H2 / 2), 960.0 / (CARD_W2 / 2))
 WIDE_SAFE = ((SW / 2, SH / 2), WIDE_Z, (540, 910))
 # khung cuối an toàn: thẻ ảnh kết thúc ở y ~944, credit và END_LINES nằm trong y 974–1440
-END_Z = min(0.8, 760.0 / (CARD_H2 / 2), 960.0 / (CARD_W2 / 2))
-END_SAFE = ((SW / 2, SH / 2), END_Z, (540, 944 - END_Z * CARD_H2 / 4))
+END_Z = min(0.8, 640.0 / (CARD_H2 / 2), 960.0 / (CARD_W2 / 2))
+END_SAFE = ((SW / 2, SH / 2), END_Z, (540, 1040 - END_Z * CARD_H2 / 4))
 
 
 def src_to_b2(p):
@@ -552,13 +552,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.64s", head="Phòng hẹp và màu sơn trắng", vo="Sơn trắng cho phòng hẹp trông rộng hơn, nhưng rộng thêm được bao nhiêu, và nhờ đâu mà rộng?",
+    dict(t="0–4.14s", head="Phòng nhỏ và màu sơn trắng", vo="Vì sao nhà nhỏ thì người ta hay khuyên sơn trắng?",
          cam=((582, 550), 0.57, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="6.64–13.59s", head="Cách giải thích quen thuộc", vo="Nhiều người cho rằng nhờ sàn, tường và trần ít tương phản, nên đường ranh giữa các mặt mờ đi,",
-         cam=((582, 550), 0.57, (540, 863)), dark=True, dd=['ranh1', 'ranh2', 'lab_ranh'], move="pan_d"),
-    dict(t="13.59–17.09s", head="Cách giải thích quen thuộc", vo="nhưng thí nghiệm lại cho kết quả khác.",
-         cam=((582, 550), 0.57, (540, 863)), dark=True, dd=[], move="hold"),
-    dict(t="17.09–17.59s", head="end", vo="",
+    dict(t="4.14–9.21s", head="Mặt sáng trông lùi ra xa", vo="Vì tường và trần càng sáng thì mắt càng thấy chúng lùi ra xa.",
+         cam=((582, 550), 0.57, (540, 863)), dark=True, dd=['a_tran', 'lab_tran', 'a_tuong', 'lab_tuong'], move="pan_d"),
+    dict(t="9.21–9.71s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
