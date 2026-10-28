@@ -552,11 +552,17 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–8.2s", head="Làm sáng, chứ không giảm tương phản", vo="Vì vậy, chính nhóm này khuyên sơn mọi bức tường và trần bằng màu sáng nhất có thể, chứ không khuyên giảm tương phản.",
-         cam=((600, 715), 0.553, (540, 870)), dark=False, dd=[], move="hold"),
-    dict(t="8.2–16.4s", head="Khuôn cửa và len chân tường cùng màu tường", vo="Ở nhà mình, nên dùng cùng một mã màu cho tường, phào, len chân tường và khuôn cửa, để các mặt bao cùng sáng.",
-         cam=((600, 715), 0.553, (540, 870)), dark=True, dd=['khuon', 'len_l', 'len_r', 'lab_cung'], move="push"),
-    dict(t="16.4–16.9s", head="end", vo="",
+    dict(t="0–6.64s", head="Lời khuyên của nhóm von Castell", vo="Vì vậy, nhóm của von Castell khuyên sơn mọi bức tường và trần bằng màu sáng nhất có thể.",
+         cam=((600, 715), 0.545, (540, 865)), dark=False, dd=[], move="hold"),
+    dict(t="6.64–11.4s", head="Câu trả lời cho phòng hẹp", vo="Nghĩa là sơn trắng chỉ làm phòng hẹp trông rộng thêm vài xăng-ti-mét,",
+         cam=((600, 715), 0.545, (540, 865)), dark=False, dd=[], move="pan_u"),
+    dict(t="11.4–17.1s", head="Câu trả lời cho phòng hẹp", vo="nhờ độ sáng của tường và trần, còn ít tương phản chỉ là lợi ích phụ.",
+         cam=((600, 715), 0.545, (540, 865)), dark=False, dd=[], move="hold"),
+    dict(t="17.1–20.93s", head="Áp dụng ở nhà mình", vo="Ở nhà mình, muốn các mặt quanh phòng cùng sáng,",
+         cam=((600, 715), 0.545, (540, 865)), dark=True, dd=[], move="push"),
+    dict(t="20.93–26.63s", head="Áp dụng ở nhà mình", vo="nên dùng cùng một mã màu sáng cho tường, phào, len chân tường và khuôn cửa.",
+         cam=((600, 715), 0.545, (540, 865)), dark=True, dd=['khuon', 'len_l', 'len_r', 'lab_cung'], move="hold"),
+    dict(t="26.63–27.13s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

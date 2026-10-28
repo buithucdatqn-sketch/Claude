@@ -554,13 +554,17 @@ WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–3.5s", head="Cách giải thích quen thuộc", vo="nhưng thí nghiệm lại cho kết quả khác.",
          cam=((324, 303), 0.56, (540, 863)), dark=True, dd=[], move="hold"),
-    dict(t="3.5–10.14s", head="Theo von Castell và cộng sự (2018)", vo="Nhóm nghiên cứu của von Castell sơn sáng hơn hai bức tường bên của một căn phòng mô phỏng,",
+    dict(t="3.5–12.32s", head="Thí nghiệm của von Castell và cộng sự (2018)", vo="Năm 2018, nhóm của von Castell sơn sáng hơn hai bức tường bên của một căn phòng ảo cỡ thật, rộng 4,5 m, sâu 6 m.",
          cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="push"),
-    dict(t="10.14–13.96s", head="Hai tường bên sơn sáng hơn", vo="và người xem thấy phòng rộng thêm khoảng 7,9 cm.",
+    dict(t="12.32–15.83s", head="Mức nới thêm đo được", vo="Người xem thấy phòng rộng thêm khoảng 7,9 cm.",
          cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="pan_r"),
-    dict(t="13.96–22.16s", head="Làm sáng, chứ không giảm tương phản", vo="Vì vậy, chính nhóm này khuyên sơn mọi bức tường và trần bằng màu sáng nhất có thể, chứ không khuyên giảm tương phản.",
+    dict(t="15.83–23.09s", head="Theo Oberfeld và Hecht (2011), với chiều cao trần", vo="Một nghiên cứu khác về chiều cao trần cũng thấy độ sáng của trần và tường mới là điều quan trọng,",
          cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="pull"),
-    dict(t="22.16–22.66s", head="end", vo="",
+    dict(t="23.09–27.23s", head="Theo Oberfeld và Hecht (2011), với chiều cao trần", vo="còn tương phản giữa chúng không có ảnh hưởng đáng kể.",
+         cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="hold"),
+    dict(t="27.23–33.87s", head="Lời khuyên của nhóm von Castell", vo="Vì vậy, nhóm của von Castell khuyên sơn mọi bức tường và trần bằng màu sáng nhất có thể.",
+         cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="hold"),
+    dict(t="33.87–34.37s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

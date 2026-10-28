@@ -141,13 +141,14 @@ L["hanh"] = dict(
     khuon=stroke(O([(405, 1690), (406, 1100), (408, 548), (680, 546), (952, 548), (953, 1100), (955, 1690)], HX, HY), w, DASH(w), 2.5, 3)[0],
     len_l=stroke(O([(215, 1652), (310, 1650), (398, 1652)], HX, HY), w, DASH(w), 1.5, 4)[0],
     len_r=stroke(O([(962, 1640), (1000, 1640), (1035, 1641)], HX, HY), w, None, 1.0, 5)[0],
-    lab_cung=label("khuôn cửa,/len chân tường/cùng màu tường", O([(462, 1240)], HX, HY)[0], 64))
+    lab_cung=label("khuôn cửa,/len chân tường/cùng màu sáng", O([(445, 1215)], HX, HY)[0], 84))
 # banan: Pawson House, bàn ăn (1200x948), cảnh 8: vách kính ra vườn, ánh sáng vào nhà
 w = 9
 L["banan"] = dict(
     kinh=poly([(230, 199), (463, 199), (463, 538), (230, 538)], w, DASH(w), 1.5, 6),
     a_kinh=arrow([(475, 470), (560, 540), (640, 600)], w, DASH(w), 1.0, 7, head=50),
-    lab_kinh=label("vách kính ra vườn", (240, 610), 66))
+    lab_kinh=label("vách kính ra vườn", (240, 610), 66),
+    lab_vao=label("ánh sáng từ vườn", (480, 640), 66))
 # thang: Pawson House, cầu thang một vế, dải cắt (0, 0, 632, 560), cảnh 9: ánh sáng từ khe kính trên mái đổ xuống dọc tường
 w = 6
 L["thang"] = dict(
@@ -156,10 +157,10 @@ L["thang"] = dict(
 # bep: Pawson House, bếp (1200x948), cảnh 10: tường trắng và sàn đá
 w = 9
 L["bep"] = dict(
-    tuong=poly([(320, 215), (1150, 215), (1150, 495), (320, 495)], w, DASH(w), 1.5, 9),
-    san=loop((690, 870), 420, 48, w, DASH(w), 1.5, 10, tilt=0),
-    lab_tuong=label("tường trắng nhiều lớp", (390, 290), 70),
-    lab_san=label("sàn lát đá", (300, 800), 64))
+    tuong=poly([(300, 215), (760, 215), (760, 495), (300, 495)], w, DASH(w), 1.5, 9),
+    san=loop((420, 875), 380, 50, w, DASH(w), 1.5, 10, tilt=0),
+    lab_tuong=label("tường trắng/nhiều lớp", (360, 270), 70),
+    lab_san=label("sàn lát đá", (560, 790), 64))
 
 os.makedirs(OUT + "doodle_preview", exist_ok=True)
 for img, layers in L.items():

@@ -552,7 +552,7 @@ OBJ = {}
 WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–6.64s", head="Phòng hẹp và màu sơn trắng", vo="Sơn trắng cho phòng hẹp trông rộng hơn, nhưng rộng thêm được bao nhiêu, và nhờ đâu mà rộng?",
-         cam=((600, 715), 0.553, (540, 870)), dark=False, dd=[], move="push"),
+         cam=((600, 715), 0.545, (540, 865)), dark=False, dd=[], move="push"),
     dict(t="6.64–7.14s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]

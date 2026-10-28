@@ -551,14 +551,14 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–7.26s", head="Sơn mờ cho tường và trần", vo="Tường và trần nên dùng sơn mờ, vì sơn bóng dễ để lộ vệt sáng của ô cửa hay bóng đèn.",
-         cam=((600, 474), 0.86, (540, 880)), dark=False, dd=[], move="hold"),
-    dict(t="7.26–12.34s", head="Ánh sáng phải vào nhà trước", vo="Nhưng màu sơn chỉ giữ lại được ánh sáng đã vào tới trong nhà.",
-         cam=((600, 474), 0.86, (540, 880)), dark=False, dd=[], move="push"),
-    dict(t="12.34–23.04s", head="Pawson House, London (1997–1999)", vo="Nhà riêng của kiến trúc sư John Pawson ở London từng chủ yếu là những phòng nhỏ và tối, nên ánh sáng được mở đường vào trước, bằng vách kính ra vườn",
-         cam=((600, 474), 0.86, (540, 880)), dark=False, dd=['kinh', 'a_kinh', 'lab_kinh'], move="pan_l"),
-    dict(t="23.04–23.54s", head="end", vo="",
-         cam=END_SAFE, dark=False, dd=[], move="hold"),
+    dict(t="0–5.7s", head="Bếp ở tầng sát vườn", vo="Sau đó, tường sơn trắng nhiều lớp và sàn lát đá giữ ánh sáng ấy lại.",
+         cam=((600, 474), 0.68, (540, 863)), dark=True, dd=[], move="hold"),
+    dict(t="5.7–9.84s", head="Thứ tự sổ tay rút ra", vo="Sổ tay rút ra từ ngôi nhà này một thứ tự,",
+         cam=((600, 474), 0.68, (540, 863)), dark=False, dd=[], move="pull"),
+    dict(t="9.84–16.79s", head="Thứ tự sổ tay rút ra", vo="đưa ánh sáng vào trước, chọn độ sáng của bề mặt sau, còn chọn sắc màu thì để sau cùng.",
+         cam=((600, 474), 0.68, (540, 863)), dark=False, dd=[], move="hold"),
+    dict(t="16.79–28.12s", head="end", vo="",
+         cam=END_SAFE, dark=False, dd=[], move="push"),
 ]
 END = len(SCENES) - 1
 BOARDS = {}
