@@ -1,0 +1,114 @@
+[
+ {
+  "tag": "r01_ngu",
+  "img": "ngu",
+  "src": "source_ngu.png",
+  "scenes": [
+   1
+  ],
+  "t_in_main": 0.0,
+  "cut_from": 0.0,
+  "cut_len": 6.95,
+  "first_frame": 1
+ },
+ {
+  "tag": "r02_d7t",
+  "img": "d7t",
+  "src": "source_d7t.png",
+  "scenes": [
+   2
+  ],
+  "t_in_main": 6.95,
+  "cut_from": 6.95,
+  "cut_len": 6.95,
+  "first_frame": 2
+ },
+ {
+  "tag": "r03_d7b",
+  "img": "d7b",
+  "src": "source_d7b.png",
+  "scenes": [
+   3
+  ],
+  "t_in_main": 13.9,
+  "cut_from": 6.95,
+  "cut_len": 9.450000000000003,
+  "first_frame": 2
+ },
+ {
+  "tag": "r04_v08",
+  "img": "v08",
+  "src": "source_v08.png",
+  "scenes": [
+   4
+  ],
+  "t_in_main": 23.35,
+  "cut_from": 9.450000000000001,
+  "cut_len": 6.639999999999995,
+  "first_frame": 2
+ },
+ {
+  "tag": "r05_ngub",
+  "img": "ngub",
+  "src": "source_ngub.png",
+  "scenes": [
+   5
+  ],
+  "t_in_main": 29.99,
+  "cut_from": 6.639999999999997,
+  "cut_len": 5.699999999999999,
+  "first_frame": 2
+ },
+ {
+  "tag": "r06_lech",
+  "img": "lech",
+  "src": "source_lech.png",
+  "scenes": [
+   6,
+   7
+  ],
+  "t_in_main": 35.69,
+  "cut_from": 5.699999999999999,
+  "cut_len": 11.090000000000003,
+  "first_frame": 2
+ },
+ {
+  "tag": "r07_loso",
+  "img": "loso",
+  "src": "source_loso.png",
+  "scenes": [
+   8,
+   9
+  ],
+  "t_in_main": 46.78,
+  "cut_from": 6.640000000000001,
+  "cut_len": 14.839999999999996,
+  "first_frame": 2
+ },
+ {
+  "tag": "r08_ngu",
+  "img": "ngu",
+  "src": "source_ngu.png",
+  "scenes": [
+   10
+  ],
+  "t_in_main": 61.62,
+  "cut_from": 7.579999999999998,
+  "cut_len": 7.890000000000008,
+  "first_frame": 2
+ },
+ {
+  "tag": "r09_tong",
+  "img": "tong",
+  "src": "source_tong.png",
+  "scenes": [
+   11,
+   12,
+   13
+  ],
+  "t_in_main": 69.51,
+  "cut_from": 7.890000000000008,
+  "cut_len": 25.909999999999997,
+  "first_frame": 2
+ }
+]

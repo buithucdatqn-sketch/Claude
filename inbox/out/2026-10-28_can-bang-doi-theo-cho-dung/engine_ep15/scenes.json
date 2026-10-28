@@ -1,0 +1,106 @@
+[
+ {
+  "blk": 1,
+  "t": "0–6.95s",
+  "head": "Cân trong ảnh, lệch khi bước vào",
+  "loi": "Một căn phòng trông rất cân trong ảnh, vậy vì sao bước vào tận nơi, có khi lại thấy lệch?",
+  "tts": "Một căn phòng trông rất cân trong ảnh, vậy vì sao bước vào tận nơi, có khi lại thấy lệch?",
+  "part": "A"
+ },
+ {
+  "blk": 2,
+  "t": "6.95–13.9s",
+  "head": "Theo Kilmer & Kilmer (2014), cân bằng đổi khi ta đi lại",
+  "loi": "Theo hai tác giả Kilmer, cân bằng của một căn phòng thay đổi khi người ta đi lại trong đó.",
+  "tts": "Theo hai tác giả Kin-mơ, cân bằng của một căn phòng thay đổi khi người ta đi lại trong đó.",
+  "part": "B"
+ },
+ {
+  "blk": 2,
+  "t": "13.9–23.35s",
+  "head": "Vật ở gần to ra, vật ở xa nhỏ lại",
+  "loi": "Người đi tới đâu, vật ở gần to ra, vật ở xa nhỏ lại, nên món nào nặng, món nào nhẹ trong mắt cũng đổi theo chỗ đứng.",
+  "tts": "Người đi tới đâu, vật ở gần to ra, vật ở xa nhỏ lại, nên món nào nặng, món nào nhẹ trong mắt cũng đổi theo chỗ đứng.",
+  "part": "C"
+ },
+ {
+  "blk": 3,
+  "t": "23.35–29.99s",
+  "head": "Phòng ngủ chính ở Palmeira, Lisbon",
+  "loi": "Phòng ngủ chính của căn hộ Palmeira ở Lisbon cho thấy cân bằng đổi theo chỗ đứng ra sao.",
+  "tts": "Phòng ngủ chính của căn hộ Pan-mây-ra ở Lít-bon cho thấy cân bằng đổi theo chỗ đứng ra sao.",
+  "part": "D"
+ },
+ {
+  "blk": 3,
+  "t": "29.99–35.69s",
+  "head": "Đứng ở chân giường, đúng trên trục",
+  "loi": "Đứng ở chân giường, đúng trên trục, ta thấy hai đèn thả ở hai bên giường.",
+  "tts": "Đứng ở chân giường, đúng trên trục, ta thấy hai đèn thả ở hai bên giường.",
+  "part": "D"
+ },
+ {
+  "blk": 3,
+  "t": "35.69–40.14s",
+  "head": "Sang góc phòng, chỉ còn một đèn",
+  "loi": "Bước sang một góc phòng thì chỉ còn thấy một chiếc đèn.",
+  "tts": "Bước sang một góc phòng thì chỉ còn thấy một chiếc đèn.",
+  "part": "D"
+ },
+ {
+  "blk": 3,
+  "t": "40.14–46.78s",
+  "head": "Khung tranh lệch, đầu giường bị cắt",
+  "loi": "Khung tranh lúc này nằm lệch sang phải, còn tấm đầu giường bị khung ảnh cắt mất một đầu.",
+  "tts": "Khung tranh lúc này nằm lệch sang phải, còn tấm đầu giường bị khung ảnh cắt mất một đầu.",
+  "part": "D"
+ },
+ {
+  "blk": 3,
+  "t": "46.78–54.04s",
+  "head": "Lại gần lò sưởi trong phòng khách",
+  "loi": "Phòng khách cũng vậy, khi đứng lại gần lò sưởi thì chiếc chụp hình nón thành món to nhất trước mắt.",
+  "tts": "Phòng khách cũng vậy, khi đứng lại gần lò sưởi thì chiếc chụp hình nón thành món to nhất trước mắt.",
+  "part": "D"
+ },
+ {
+  "blk": 3,
+  "t": "54.04–61.62s",
+  "head": "Đối trọng đã ra ngoài tầm nhìn",
+  "loi": "Còn bộ sofa và bức tranh sẫm, vốn là đối trọng của nó ở phía bên kia, đã nằm ngoài tầm nhìn.",
+  "tts": "Còn bộ sô-pha và bức tranh sẫm, vốn là đối trọng của nó ở phía bên kia, đã nằm ngoài tầm nhìn.",
+  "part": "D"
+ },
+ {
+  "blk": 4,
+  "t": "61.62–69.51s",
+  "head": "Ảnh chỉ cân ở một chỗ đứng",
+  "loi": "Một tấm ảnh chỉ chụp từ một chỗ đứng, nên căn phòng trông cân trong ảnh mới chỉ cân ở đúng chỗ ấy.",
+  "tts": "Một tấm ảnh chỉ chụp từ một chỗ đứng, nên căn phòng trông cân trong ảnh mới chỉ cân ở đúng chỗ ấy.",
+  "part": "H"
+ },
+ {
+  "blk": 4,
+  "t": "69.51–78.96s",
+  "head": "Chụp từ cửa, từ sofa, từ bàn ăn",
+  "loi": "Ở nhà mình, có thể chụp căn phòng từ cửa ra vào, từ chỗ ngồi sofa và từ bàn ăn, rồi lật từng tấm ảnh như soi gương.",
+  "tts": "Ở nhà mình, có thể chụp căn phòng từ cửa ra vào, từ chỗ ngồi sô-pha và từ bàn ăn, rồi lật từng tấm ảnh như soi gương.",
+  "part": "F"
+ },
+ {
+  "blk": 4,
+  "t": "78.96–86.85s",
+  "head": "Lật ảnh để tìm chỗ thiếu đối trọng",
+  "loi": "Tấm nào lật xong tự dưng thấy lệch hẳn về một bên thì ở chỗ đứng ấy, căn phòng đang thiếu đối trọng.",
+  "tts": "Tấm nào lật xong tự dưng thấy lệch hẳn về một bên thì ở chỗ đứng ấy, căn phòng đang thiếu đối trọng.",
+  "part": "F"
+ },
+ {
+  "blk": 5,
+  "t": "86.85–94.42s",
+  "head": "end",
+  "loi": "Bài phân tích về cân bằng thị giác, từ sách của hai tác giả Kilmer, mọi người xem ở phần bình luận.",
+  "tts": "Bài phân tích về cân bằng thị giác, từ sách của hai tác giả Kin-mơ, mọi người xem ở phần bình luận.",
+  "part": "I"
+ }
+]
