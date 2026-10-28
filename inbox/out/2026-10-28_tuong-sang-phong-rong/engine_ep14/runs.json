@@ -6,9 +6,9 @@
   "scenes": [
    1
   ],
-  "t_in_main": 0.0,
+  "t_in_main": 0,
   "cut_from": 0.0,
-  "cut_len": 4.14,
+  "cut_len": 3.43,
   "first_frame": 1
  },
  {
@@ -19,9 +19,9 @@
    2,
    3
   ],
-  "t_in_main": 4.14,
-  "cut_from": 4.14,
-  "cut_len": 15.780000000000001,
+  "t_in_main": 3.43,
+  "cut_from": 3.43,
+  "cut_len": 13.059999999999999,
   "first_frame": 2
  },
  {
@@ -31,9 +31,9 @@
   "scenes": [
    4
   ],
-  "t_in_main": 19.92,
-  "cut_from": 7.890000000000002,
-  "cut_len": 5.699999999999999,
+  "t_in_main": 16.49,
+  "cut_from": 4.969999999999999,
+  "cut_len": 3.9700000000000024,
   "first_frame": 2
  },
  {
@@ -42,11 +42,12 @@
   "src": "source_dg.png",
   "scenes": [
    5,
-   6
+   6,
+   7
   ],
-  "t_in_main": 25.62,
-  "cut_from": 5.699999999999999,
-  "cut_len": 10.779999999999998,
+  "t_in_main": 20.46,
+  "cut_from": 3.9700000000000024,
+  "cut_len": 11.149999999999999,
   "first_frame": 2
  },
  {
@@ -54,12 +55,12 @@
   "img": "lrv",
   "src": "source_lrv.png",
   "scenes": [
-   7,
-   8
+   8,
+   9
   ],
-  "t_in_main": 36.4,
-  "cut_from": 3.8299999999999983,
-  "cut_len": 12.030000000000001,
+  "t_in_main": 31.61,
+  "cut_from": 4.16,
+  "cut_len": 7.689999999999998,
   "first_frame": 2
  },
  {
@@ -67,13 +68,15 @@
   "img": "hanh",
   "src": "source_hanh.png",
   "scenes": [
-   9,
    10,
-   11
+   11,
+   12,
+   13,
+   14
   ],
-  "t_in_main": 48.43,
-  "cut_from": 5.079999999999998,
-  "cut_len": 17.740000000000002,
+  "t_in_main": 39.3,
+  "cut_from": 4.959999999999994,
+  "cut_len": 15.520000000000003,
   "first_frame": 2
  },
  {
@@ -81,11 +84,11 @@
   "img": "ebook",
   "src": "source_ebook.png",
   "scenes": [
-   12
+   15
   ],
-  "t_in_main": 66.17,
-  "cut_from": 7.579999999999998,
-  "cut_len": 10.760000000000005,
+  "t_in_main": 54.82,
+  "cut_from": 2.3699999999999974,
+  "cut_len": 9.380000000000003,
   "first_frame": 2
  }
 ]

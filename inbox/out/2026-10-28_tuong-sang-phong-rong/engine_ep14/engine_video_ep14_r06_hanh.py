@@ -552,15 +552,19 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.08s", head="Tra độ sáng trong bảng thông số", vo="tính từ không tới một trăm, và màu trắng nằm gần mức cao nhất.",
+    dict(t="0–4.96s", head="Tra độ sáng trong bảng thông số", vo="qua chỉ số phản xạ ánh sáng, tính từ không tới một trăm, và màu trắng nằm gần mức cao nhất.",
          cam=((600, 715), 0.545, (540, 865)), dark=False, dd=[], move="hold"),
-    dict(t="5.08–10.16s", head="Chọn sơn cho phòng nhỏ", vo="Khi chọn sơn cho phòng nhỏ, nên xem màu ấy sáng tới đâu trước,",
+    dict(t="4.96–8.25s", head="Chọn sơn cho phòng nhỏ", vo="Khi chọn sơn cho phòng nhỏ, nên xem màu ấy sáng tới đâu trước,",
          cam=((600, 715), 0.545, (540, 865)), dark=True, dd=['tw_h', 'lab_twh'], move="push"),
-    dict(t="10.16–15.24s", head="Chọn sơn cho phòng nhỏ", vo="còn chọn màu gì thì tùy cảm xúc mọi người muốn cho căn phòng.",
+    dict(t="8.25–10.94s", head="Chọn sơn cho phòng nhỏ", vo="còn chọn màu gì thì tùy cảm xúc mọi người muốn cho căn phòng,",
          cam=((600, 715), 0.545, (540, 865)), dark=True, dd=[], move="hold"),
-    dict(t="15.24–22.82s", head="Câu trả lời", vo="Người ta khuyên sơn trắng vì đó là màu sáng nhất, dù nó chỉ giúp phòng nhỏ trông rộng hơn một chút.",
+    dict(t="10.94–13.92s", head="Không nhất thiết phải là màu trắng", vo="chứ không nhất thiết phải chọn màu trắng mới khiến phòng rộng hơn.",
+         cam=((600, 715), 0.545, (540, 865)), dark=True, dd=[], move="hold"),
+    dict(t="13.92–18.11s", head="Câu trả lời", vo="Người ta khuyên sơn trắng vì đó là màu có chỉ số độ sáng cao nhất,",
          cam=((600, 715), 0.545, (540, 865)), dark=False, dd=[], move="pull"),
-    dict(t="22.82–23.32s", head="end", vo="",
+    dict(t="18.11–20.48s", head="Câu trả lời", vo="dù nó chỉ giúp phòng nhỏ trông rộng hơn một chút.",
+         cam=((600, 715), 0.545, (540, 865)), dark=False, dd=[], move="hold"),
+    dict(t="20.48–20.98s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

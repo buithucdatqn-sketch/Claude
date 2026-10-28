@@ -552,13 +552,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–4.14s", head="Phòng nhỏ và màu sơn trắng", vo="Vì sao nhà nhỏ thì người ta hay khuyên sơn trắng?",
+    dict(t="0–3.43s", head="Phòng nhỏ và màu sơn trắng", vo="Vì sao nhà nhỏ thì người ta hay khuyên sơn trắng?",
          cam=((256, 256), 0.56, (540, 870)), dark=False, dd=[], move="hold"),
-    dict(t="4.14–12.03s", head="Theo Munsell (1907), ba đặc tính của một màu", vo="Từ năm 1907, Munsell đã tách một màu thành ba đặc tính, là màu gì, sáng hay tối, và tươi hay ngả xám.",
+    dict(t="3.43–11.52s", head="Theo Munsell (1907), ba đặc tính của một màu", vo="Từ năm 1907, Munsell đã tách một màu thành ba đặc tính, là màu gì, sáng hay tối, và tươi hay ngả xám.",
          cam=((256, 256), 0.56, (540, 870)), dark=True, dd=['grid', 'lab_grid'], move="pan_r"),
-    dict(t="12.03–19.92s", head="Độ sáng tác động rõ nhất", vo="Trong ba đặc tính ấy, sáng hay tối là điều có tác động rõ nhất tới cảm giác rộng hẹp của căn phòng.",
+    dict(t="11.52–16.49s", head="Độ sáng tác động rõ nhất", vo="Trong ba đặc tính ấy, sáng hay tối là điều có tác động rõ nhất tới cảm giác rộng hẹp của căn phòng.",
          cam=((256, 256), 0.56, (540, 870)), dark=True, dd=['o_sang', 'o_toi', 'lab_st'], move="hold"),
-    dict(t="19.92–20.42s", head="end", vo="",
+    dict(t="16.49–16.99s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

@@ -552,13 +552,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–3.83s", head="Tường bên sáng hơn, phòng trông rộng hơn", vo="và người xem thấy phòng rộng thêm gần 8 cm.",
+    dict(t="0–4.16s", head="Tường bên sáng hơn, phòng trông rộng hơn", vo="nhiều người tham gia cảm nhận phòng rộng thêm gần 8 cm khi sơn màu.",
          cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="3.83–10.78s", head="Tra độ sáng trong bảng thông số", vo="Độ sáng này có thể tra trong bảng thông số của hãng sơn, qua chỉ số phản xạ ánh sáng,",
+    dict(t="4.16–6.89s", head="Tra độ sáng trong bảng thông số", vo="Độ sáng này có thể tra trong bảng thông số của hãng sơn,",
          cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="push"),
-    dict(t="10.78–15.86s", head="Tra độ sáng trong bảng thông số", vo="tính từ không tới một trăm, và màu trắng nằm gần mức cao nhất.",
+    dict(t="6.89–11.85s", head="Tra độ sáng trong bảng thông số", vo="qua chỉ số phản xạ ánh sáng, tính từ không tới một trăm, và màu trắng nằm gần mức cao nhất.",
          cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="15.86–16.36s", head="end", vo="",
+    dict(t="11.85–12.35s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

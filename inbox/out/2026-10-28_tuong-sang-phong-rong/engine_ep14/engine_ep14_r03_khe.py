@@ -551,11 +551,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–7.89s", head="Độ sáng tác động rõ nhất", vo="Trong ba đặc tính ấy, sáng hay tối là điều có tác động rõ nhất tới cảm giác rộng hẹp của căn phòng.",
+    dict(t="0–4.97s", head="Độ sáng tác động rõ nhất", vo="Trong ba đặc tính ấy, sáng hay tối là điều có tác động rõ nhất tới cảm giác rộng hẹp của căn phòng.",
          cam=((582, 550), 0.57, (540, 863)), dark=True, dd=[], move="hold"),
-    dict(t="7.89–13.59s", head="Mặt sáng trông lùi ra xa", vo="Đó là vì tường và trần sáng hơn thì mắt thấy chúng lùi ra xa hơn.",
+    dict(t="4.97–8.94s", head="Mặt sáng trông lùi ra xa", vo="Đó là vì tường và trần sáng hơn thì mắt thấy chúng lùi ra xa hơn.",
          cam=((582, 550), 0.57, (540, 863)), dark=True, dd=['a_tran', 'lab_tran', 'a_tuong', 'lab_tuong'], move="pan_d"),
-    dict(t="13.59–14.09s", head="end", vo="",
+    dict(t="8.94–9.44s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

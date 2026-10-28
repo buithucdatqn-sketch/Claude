@@ -551,13 +551,15 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.7s", head="Mặt sáng trông lùi ra xa", vo="Đó là vì tường và trần sáng hơn thì mắt thấy chúng lùi ra xa hơn.",
+    dict(t="0–3.97s", head="Mặt sáng trông lùi ra xa", vo="Đó là vì tường và trần sáng hơn thì mắt thấy chúng lùi ra xa hơn.",
          cam=((324, 303), 0.56, (540, 863)), dark=True, dd=[], move="hold"),
-    dict(t="5.7–12.65s", head="Thí nghiệm của von Castell và cộng sự (2018)", vo="Năm 2018, nhóm của von Castell sơn sáng hơn hai bức tường bên của một căn phòng ảo cỡ thật,",
+    dict(t="3.97–9.79s", head="Thí nghiệm của von Castell và cộng sự (2018)", vo="Năm 2018, nhóm của von Castell sơn sáng hơn hai bức tường bên của một căn phòng dựng bằng cỡ thật,",
          cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="push"),
-    dict(t="12.65–16.48s", head="Tường bên sáng hơn, phòng trông rộng hơn", vo="và người xem thấy phòng rộng thêm gần 8 cm.",
+    dict(t="9.79–10.96s", head="Tường bên sáng hơn, phòng trông rộng hơn", vo="và kết quả khảo sát cho thấy",
          cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="16.48–16.98s", head="end", vo="",
+    dict(t="10.96–15.12s", head="Tường bên sáng hơn, phòng trông rộng hơn", vo="nhiều người tham gia cảm nhận phòng rộng thêm gần 8 cm khi sơn màu.",
+         cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="hold"),
+    dict(t="15.12–15.62s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

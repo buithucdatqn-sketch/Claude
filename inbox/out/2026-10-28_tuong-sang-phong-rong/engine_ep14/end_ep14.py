@@ -17,9 +17,9 @@ W, H = 1080, 1920
 # bố cục theo nguồn: video 1080x1350 (mặc định) hoặc ảnh tĩnh/GIF 800x1000
 S, OX, OY = 1.0, 0, -285            # X = S*x - OX, Y = S*y - OY
 IPAD = [(210, 560), (630, 375), (1052, 780), (600, 1030)]   # bốn góc iPad trên video
-LINES = [(384, "Sổ tay Công thức chọn màu nội thất", 56, 255),
-         (450, "bảng tra nhanh 17 tình huống chọn màu", 48, 240),
-         (528, "xem ở phần bình luận", 64, 255)]
+LINES = [(380, "Sổ tay Công thức chọn màu kiến trúc nội thất", 48, 255),
+         (440, "bảng tra nhanh 17 tình huống chọn màu khi thiết kế", 40, 240),
+         (512, "mọi người xem ở phần bình luận nha", 58, 255)]
 CREDIT = (1440, "Video: sổ tay AH+ Công thức chọn màu nội thất · Giả Thuyết Kiến Trúc", 28, 215)
 STILL = dict(S=1.55, OX=185, OY=-72, IPAD=[(155, 405), (480, 275), (780, 580), (430, 768)],
              LINES=[(1280, "Sổ tay Công thức chọn màu nội thất", 54, 255), (1340, "bảng tra nhanh 17 tình huống chọn màu", 46, 240),

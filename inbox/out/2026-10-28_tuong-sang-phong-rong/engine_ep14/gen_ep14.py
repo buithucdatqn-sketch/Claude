@@ -48,6 +48,7 @@ def STRIP(cx, cy, z=1.0, ay=880):
 
 # Lời đọc: viết liền thành sáu khối trước (mục 0.6h), rồi mới cắt cảnh. Khối nối bằng từ khóa
 # (rộng → tương phản → sáng hơn → độ sáng → cùng sáng → giữ ánh sáng → vài xăng-ti-mét). Thẻ ngắt 1,2 giây giữa các khối (prompt lịch chạy).
+# Giai đoạn B: lời sửa theo ghi âm của chủ Trang (audio/tuong-sang-phong-rong.mp3, nhận dạng bằng sherpa-onnx zipformer-vi), cắt cảnh tại quãng nghỉ
 SC = [
     dict(move="push", part="A", blk=1, img="hanh", head="Phòng nhỏ và màu sơn trắng", cam=STRIP(600, 715, 0.545, 865), free=True, dark=False, dd=[],
          vo="Vì sao nhà nhỏ thì người ta hay khuyên sơn trắng?"),
@@ -59,23 +60,29 @@ SC = [
     dict(move="pan_d", part="C", blk=3, img="khe", head="Mặt sáng trông lùi ra xa", cam=STRIP(582, 550, 0.57, 863), free=True, dark=True, dd=["a_tran", "lab_tran", "a_tuong", "lab_tuong"],
          vo="Đó là vì tường và trần sáng hơn thì mắt thấy chúng lùi ra xa hơn."),
     dict(move="push", part="C", blk=3, img="dg", head="Thí nghiệm của von Castell và cộng sự (2018)", cam=STRIP(324, 303, 0.56, 863), free=True, dark=False, dd=[],
-         vo="Năm 2018, nhóm của von Castell sơn sáng hơn hai bức tường bên của một căn phòng ảo cỡ thật,",
-         tts="Năm hai nghìn không trăm mười tám, nhóm của phôn Cát-xten sơn sáng hơn hai bức tường bên của một căn phòng ảo cỡ thật,"),
+         vo="Năm 2018, nhóm của von Castell sơn sáng hơn hai bức tường bên của một căn phòng dựng bằng cỡ thật,",
+         tts="Năm hai nghìn không trăm mười tám, nhóm của phôn Cát-xten sơn sáng hơn hai bức tường bên của một căn phòng dựng bằng cỡ thật,"),
     dict(move="hold", part="C", blk=3, img="dg", head="Tường bên sáng hơn, phòng trông rộng hơn", cam=STRIP(324, 303, 0.56, 863), free=True, dark=False, dd=[],
-         vo="và người xem thấy phòng rộng thêm gần 8 cm.",
-         tts="và người xem thấy phòng rộng thêm gần tám xăng-ti-mét."),
+         vo="và kết quả khảo sát cho thấy"),
+    dict(move="hold", part="C", blk=3, img="dg", head="Tường bên sáng hơn, phòng trông rộng hơn", cam=STRIP(324, 303, 0.56, 863), free=True, dark=False, dd=[],
+         vo="nhiều người tham gia cảm nhận phòng rộng thêm gần 8 cm khi sơn màu.",
+         tts="nhiều người tham gia cảm nhận phòng rộng thêm gần tám xăng-ti-mét khi sơn màu."),
     dict(move="push", part="C", blk=4, img="lrv", head="Tra độ sáng trong bảng thông số", cam=STRIP(324, 303, 0.56, 863), free=True, dark=False, dd=[],
-         vo="Độ sáng này có thể tra trong bảng thông số của hãng sơn, qua chỉ số phản xạ ánh sáng,"),
+         vo="Độ sáng này có thể tra trong bảng thông số của hãng sơn,"),
     dict(move="hold", part="C", blk=4, img="lrv", head="Tra độ sáng trong bảng thông số", cam=STRIP(324, 303, 0.56, 863), free=True, dark=False, dd=[],
-         vo="tính từ không tới một trăm, và màu trắng nằm gần mức cao nhất."),
+         vo="qua chỉ số phản xạ ánh sáng, tính từ không tới một trăm, và màu trắng nằm gần mức cao nhất."),
     dict(move="push", part="F", blk=4, img="hanh", head="Chọn sơn cho phòng nhỏ", cam=STRIP(600, 715, 0.545, 865), free=True, dark=True, dd=["tw_h", "lab_twh"],
          vo="Khi chọn sơn cho phòng nhỏ, nên xem màu ấy sáng tới đâu trước,"),
     dict(move="hold", part="F", blk=4, img="hanh", head="Chọn sơn cho phòng nhỏ", cam=STRIP(600, 715, 0.545, 865), free=True, dark=True, dd=[],
-         vo="còn chọn màu gì thì tùy cảm xúc mọi người muốn cho căn phòng."),
+         vo="còn chọn màu gì thì tùy cảm xúc mọi người muốn cho căn phòng,"),
+    dict(move="hold", part="F", blk=4, img="hanh", head="Không nhất thiết phải là màu trắng", cam=STRIP(600, 715, 0.545, 865), free=True, dark=True, dd=[],
+         vo="chứ không nhất thiết phải chọn màu trắng mới khiến phòng rộng hơn."),
     dict(move="pull", part="H", blk=5, img="hanh", head="Câu trả lời", cam=STRIP(600, 715, 0.545, 865), free=True, dark=False, dd=[],
-         vo="Người ta khuyên sơn trắng vì đó là màu sáng nhất, dù nó chỉ giúp phòng nhỏ trông rộng hơn một chút."),
+         vo="Người ta khuyên sơn trắng vì đó là màu có chỉ số độ sáng cao nhất,"),
+    dict(move="hold", part="H", blk=5, img="hanh", head="Câu trả lời", cam=STRIP(600, 715, 0.545, 865), free=True, dark=False, dd=[],
+         vo="dù nó chỉ giúp phòng nhỏ trông rộng hơn một chút."),
     dict(move="push", part="I", blk=5, img="ebook", head="end", cam="END", dark=False, vo="", dd=[],
-         say="Sổ tay Công thức chọn màu nội thất dành cho thành viên có bảng tra nhanh mười bảy tình huống chọn màu, mọi người xem ở phần bình luận."),
+         say="Sổ tay Công thức chọn màu kiến trúc nội thất dành cho thành viên có bảng tra nhanh mười bảy tình huống chọn màu khi thiết kế, mọi người xem ở phần bình luận nha."),
 ]
 
 DOODLE = r'''
@@ -117,7 +124,7 @@ def dur(s):
 
 
 # Giai đoạn B: điền mốc cảnh theo ghi âm (mỗi cảnh bắt đầu khoảng 0,35–0,4 giây trước câu của nó). Giai đoạn A để trống.
-T_AUDIO = []
+T_AUDIO = [0, 3.43, 11.52, 16.49, 20.46, 26.28, 27.45, 31.61, 34.34, 39.3, 42.59, 45.28, 48.26, 52.45, 54.82, 63.2]
 
 
 def times():
