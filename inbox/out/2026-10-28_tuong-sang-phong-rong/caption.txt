@@ -1,0 +1,14 @@
+Sơn trắng có làm phòng hẹp trông rộng hơn, nhưng mức tác động khá khiêm tốn. Trong thí nghiệm của von Castell, Hecht và Oberfeld (2018) với một căn phòng mô phỏng rộng 4,5 m, sâu 6 m, hai tường bên sơn sáng hơn làm phòng trông rộng thêm khoảng 7,9 cm, còn tường cuối sáng hơn làm phòng trông sâu thêm khoảng 6,8 cm. Một nghiên cứu khác của Oberfeld và Hecht (2011) cho thấy với chiều cao trần, độ sáng của trần và tường mới là yếu tố quan trọng, còn tương phản giữa trần và tường không có ảnh hưởng đáng kể. Vì vậy, muốn phòng hẹp trông rộng hơn thì làm sáng các mặt bao, còn giảm tương phản chỉ là lợi ích phụ.
+
+Độ sáng ấy nên đọc bằng chỉ số phản xạ ánh sáng (Light Reflectance Value, LRV) trong bảng thông số của hãng sơn, thay vì đoán bằng mắt hay tính từ mã màu. Tiêu chuẩn TCVN 7114-1 cho dải khoảng 60–90 với trần, 30–80 với tường và 10–50 với sàn; nhà ống thiếu sáng nên chọn trần và tường ở nửa trên của dải. Dùng một mã màu, hoặc các mã có LRV rất gần nhau, cho tường, phào, len chân tường và khuôn cửa, giữ trần sáng bằng hoặc sáng hơn tường, và chọn sơn mờ hoặc bán mờ, vì sơn bóng dễ để lộ vệt sáng của ô cửa hay bóng đèn trên mặt tường.
+
+Ở nhà riêng của John Pawson tại London (1997–1999), ánh sáng được đưa vào trước bằng vách kính mở ra khu vườn và khe kính trên giếng thang, sau đó tường sơn trắng nhiều lớp và sàn lát đá mới giữ ánh sáng ấy lại. Các tài liệu chỉ mô tả giải pháp, không nói Pawson chọn màu để "nới rộng" căn nhà, nhưng thứ tự xử lý thì rõ, ánh sáng trước, độ sáng bề mặt sau, sắc độ sau cùng.
+
+Với một phòng hẹp cụ thể, mọi người thường chọn màu tường trước, hay xem ánh sáng vào được tới đâu trước?
+
+AH Decode là series của Giả Thuyết Kiến Trúc, phân tích các nguyên tắc thiết kế và cách chọn màu, chọn đồ cho nội thất. Sổ tay AH+ Công thức chọn màu nội thất dành cho thành viên, có bảng tra nhanh 17 tình huống chọn màu thường gặp, xem ở phần bình luận.
+
+Nguồn (theo sổ tay AH+ Công thức chọn màu nội thất, chương 1): von Castell, C., Hecht, H. và Oberfeld, D. (2018). Bright paint makes interior-space surfaces appear farther away. PLOS ONE. Oberfeld, D. và Hecht, H. (2011). Fashion versus perception. Human Factors. Bộ Khoa học và Công nghệ (2008). TCVN 7114-1:2008.
+Ảnh: Pawson House, London (1997–1999) · John Pawson · ảnh Todd Eberle. Hành lang: Ryunosuke Kikuno / Unsplash. Góc tường trắng: Danielle-Claude Bélanger / Unsplash. Hình 1.2: AH+, theo von Castell, Hecht và Oberfeld (2018).
+
+#AHDecode #mausonnoithat #nhaong #phonghep #giathuyetkientruc

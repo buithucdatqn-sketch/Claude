@@ -1,0 +1,116 @@
+[
+ {
+  "tag": "r01_hanh",
+  "img": "hanh",
+  "src": "source_hanh.png",
+  "scenes": [
+   1
+  ],
+  "t_in_main": 0.0,
+  "cut_from": 0.0,
+  "cut_len": 6.64,
+  "first_frame": 1
+ },
+ {
+  "tag": "r02_khe",
+  "img": "khe",
+  "src": "source_khe.png",
+  "scenes": [
+   2,
+   3
+  ],
+  "t_in_main": 6.64,
+  "cut_from": 6.64,
+  "cut_len": 10.45,
+  "first_frame": 2
+ },
+ {
+  "tag": "r03_dg",
+  "img": "dg",
+  "src": "source_dg.png",
+  "scenes": [
+   4,
+   5,
+   6
+  ],
+  "t_in_main": 17.09,
+  "cut_from": 3.5,
+  "cut_len": 18.66,
+  "first_frame": 2
+ },
+ {
+  "tag": "r04_hanh",
+  "img": "hanh",
+  "src": "source_hanh.png",
+  "scenes": [
+   7
+  ],
+  "t_in_main": 35.75,
+  "cut_from": 8.2,
+  "cut_len": 8.200000000000003,
+  "first_frame": 2
+ },
+ {
+  "tag": "r05_banan",
+  "img": "banan",
+  "src": "source_banan.png",
+  "scenes": [
+   8,
+   9,
+   10
+  ],
+  "t_in_main": 43.95,
+  "cut_from": 8.200000000000003,
+  "cut_len": 14.919999999999995,
+  "first_frame": 2
+ },
+ {
+  "tag": "r06_thang",
+  "img": "thang",
+  "src": "source_thang.png",
+  "scenes": [
+   11
+  ],
+  "t_in_main": 58.87,
+  "cut_from": 4.759999999999998,
+  "cut_len": 3.5,
+  "first_frame": 2
+ },
+ {
+  "tag": "r07_bep",
+  "img": "bep",
+  "src": "source_bep.png",
+  "scenes": [
+   12
+  ],
+  "t_in_main": 62.37,
+  "cut_from": 3.5,
+  "cut_len": 6.009999999999998,
+  "first_frame": 2
+ },
+ {
+  "tag": "r08_hanh",
+  "img": "hanh",
+  "src": "source_hanh.png",
+  "scenes": [
+   13,
+   14
+  ],
+  "t_in_main": 68.38,
+  "cut_from": 6.009999999999998,
+  "cut_len": 14.530000000000001,
+  "first_frame": 2
+ },
+ {
+  "tag": "r09_banan",
+  "img": "banan",
+  "src": "source_banan.png",
+  "scenes": [
+   15
+  ],
+  "t_in_main": 82.91,
+  "cut_from": 6.329999999999998,
+  "cut_len": 10.14,
+  "first_frame": 2
+ }
+]
