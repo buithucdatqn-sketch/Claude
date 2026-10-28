@@ -551,13 +551,15 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–9.14s", head="Độ sáng ghi trên bảng thông số", vo="Độ sáng này hãng sơn ghi sẵn bằng chỉ số phản xạ ánh sáng, từ không tới một trăm, và màu trắng nằm gần mức cao nhất.",
+    dict(t="0–5.08s", head="Tra độ sáng trong bảng thông số", vo="tính từ không tới một trăm, và màu trắng nằm gần mức cao nhất.",
          cam=((600, 715), 0.545, (540, 865)), dark=False, dd=[], move="hold"),
-    dict(t="9.14–18.28s", head="Chọn sơn cho phòng nhỏ", vo="Vì vậy, khi chọn sơn cho phòng nhỏ, nên xem màu ấy sáng tới đâu trước, còn màu gì thì để cho cảm xúc của căn phòng.",
+    dict(t="5.08–10.16s", head="Chọn sơn cho phòng nhỏ", vo="Khi chọn sơn cho phòng nhỏ, nên xem màu ấy sáng tới đâu trước,",
          cam=((600, 715), 0.545, (540, 865)), dark=True, dd=['tw_h', 'lab_twh'], move="push"),
-    dict(t="18.28–26.17s", head="Câu trả lời", vo="Vậy người ta khuyên sơn trắng vì trắng là màu sáng nhất, mà chính độ sáng mới làm phòng nhỏ trông rộng hơn.",
+    dict(t="10.16–15.24s", head="Chọn sơn cho phòng nhỏ", vo="còn chọn màu gì thì tùy cảm xúc mọi người muốn cho căn phòng.",
+         cam=((600, 715), 0.545, (540, 865)), dark=True, dd=[], move="hold"),
+    dict(t="15.24–22.82s", head="Câu trả lời", vo="Người ta khuyên sơn trắng vì đó là màu sáng nhất, dù nó chỉ giúp phòng nhỏ trông rộng hơn một chút.",
          cam=((600, 715), 0.545, (540, 865)), dark=False, dd=[], move="pull"),
-    dict(t="26.17–26.67s", head="end", vo="",
+    dict(t="22.82–23.32s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

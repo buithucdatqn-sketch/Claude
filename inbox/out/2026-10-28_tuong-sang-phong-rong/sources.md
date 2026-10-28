@@ -4,25 +4,24 @@ Nguồn: sổ tay AH+ "Công thức chọn màu nội thất" (6.2026), kho `bui
 
 | Cảnh | Nhận định trong lời | Vị trí trong sổ tay (trích ngắn) | Mức chắc chắn theo sổ tay | Nguồn sổ tay dẫn |
 |---|---|---|---|---|
-| 1 | Sơn trắng cho phòng hẹp trông rộng hơn, nhưng rộng thêm được bao nhiêu | Ch.1, 1.2 "Mặt bao quanh càng sáng, phòng càng rộng"; 1.5 "màu chỉ làm phòng trông rộng hơn vài centimet" | Thí nghiệm | [6] |
-| 2 | Năm 2018, nhóm của von Castell thử sơn sáng hơn hai bức tường bên của một căn phòng ảo cỡ thật | Ch.1, 1.2: "phòng mô phỏng lập thể rộng 4,5 m và sâu 6 m, khi hai tường bên được sơn sáng hơn"; PL nhóm A: "phòng mô phỏng lập thể cỡ thật chứ không phải phòng thật" | Thí nghiệm | [6] von Castell, Hecht, Oberfeld (2018b) |
-| 3 | Người xem thấy phòng rộng thêm gần 8 cm, chưa tới nửa gang tay | Ch.1, 1.2: "người xem thấy phòng rộng hơn khoảng 7,9 cm". "Chưa tới nửa gang tay" là phép so đời thường của reel (gang tay khoảng 18–20 cm), không phải thông tin của sổ tay | Thí nghiệm | [6] |
-| 4 | Sơn sáng có làm phòng trông rộng hơn, nhưng chỉ một chút | M: "mức tác động này khá khiêm tốn"; 1.5: "màu chỉ làm phòng trông rộng hơn vài centimet" | Kết luận của sổ tay | [5]M, [6] |
-| 5 | Dù vậy, chính nhóm này vẫn khuyên sơn tường và trần sáng nhất có thể | Ch.1, 1.2: "Chính nhóm tác giả… đề nghị sơn tất cả các bức tường và trần bằng màu sáng nhất có thể" | Khuyến nghị của nhóm nghiên cứu | [6] |
-| 6 | Ở nhà mình, nên sơn tường, khuôn cửa và len chân tường cùng một màu sáng, để cả phòng cùng sáng | Ch.1, 1.3 bước 2: "dùng cùng một mã màu… cho tường, phào, len chân tường và khuôn cửa… giữ độ sáng chung của các mặt bao ở mức cao" | Khuyến nghị của sổ tay | [6], [7] |
-| 7 | Nhưng sơn chỉ giữ lại được ánh sáng đã vào nhà | Ch.1, 1.4: "mở đường cho ánh sáng vào trước, rồi mới chọn màu để giữ ánh sáng lại"; 1.5: màu "không thay thế được ánh sáng" | Nhận định của sổ tay | — |
-| 8–9 | Nhà riêng của kiến trúc sư John Pawson ở London từng có nhiều phòng nhỏ và tối; khi cải tạo, ông mở vách kính ra vườn cho ánh sáng vào | Ch.1, 1.4: "bốn tầng nhà chủ yếu gồm những phòng nhỏ và tối"; "tầng hầm có vách kính mở ra khu vườn có tường bao" | Mô tả công trình | [12], [13] |
-| 10–11 | Rồi tường sơn trắng và sàn lát đá giữ ánh sáng ấy lại | Ch.1, 1.4: "tường… được sơn nhiều lớp màu Quiet White… còn sàn được lát đá"; "dùng các bề mặt sáng và liền mạch để giữ ánh sáng ấy lại" | Mô tả công trình và cách sổ tay đọc | [14] |
-| 12–13 | Với phòng hẹp, hãy lo đưa ánh sáng vào trước, như bỏ bớt vách ngăn hay thêm đèn hắt tường ở cuối phòng, rồi mới chọn màu sơn thật sáng | Ch.1, 1.4: "Xử lý ánh sáng trước, độ sáng bề mặt sau"; "bỏ bớt vách ngăn"; 1.5 checklist: "Đã lên phương án đèn hắt tường cho đới cuối", "giải pháp kiến trúc đưa sáng vào sâu… trước khi bàn tới màu" | Khuyến nghị của sổ tay | — |
-| 14 | Sổ tay dành cho thành viên, có bảng tra nhanh mười bảy tình huống chọn màu | Bìa: "MEMBERS ONLY"; PL: "Mười bảy tình huống thường gặp" | Thông tin về sổ tay | — |
+| 1 | Vì sao nhà nhỏ thì người ta hay khuyên sơn trắng | Câu hỏi của chủ Trang; Ch.1, 1.2 "Khi cần làm một căn phòng nhỏ trông rộng hơn…" | — | — |
+| 2 | Từ năm 1907, Munsell đã tách một màu thành ba đặc tính, là màu gì, sáng hay tối, và tươi hay ngả xám | M: "Vấn đề này đã được Munsell giải quyết từ năm 1907. Theo ông, mỗi màu có thể mô tả bằng ba đặc tính độc lập… Sắc độ (hue) cho biết đó là màu gì… Độ sáng (value) cho biết màu sáng hay tối. Độ rực (chroma) cho biết màu còn tươi hay đã ngả xám" | Lý thuyết màu | [1] Munsell (1907), [2] Kuehni (2002) |
+| 3 | Trong ba đặc tính ấy, sáng hay tối là điều có tác động rõ nhất tới cảm giác rộng hẹp của căn phòng | M: "Khi muốn không gian trông cao hơn hay rộng hơn, độ sáng là yếu tố có tác động rõ rệt nhất"; "Độ rực hầu như không có tác động đến cảm nhận về độ rộng hẹp" | Thí nghiệm | [3]–[6] |
+| 4 | Đó là vì tường và trần sáng hơn thì mắt thấy chúng lùi ra xa hơn | M: "trần và tường sáng hơn làm căn phòng trông cao hơn; tường bên sáng hơn làm phòng trông rộng hơn, còn tường cuối sáng hơn làm phòng trông sâu hơn"; tên nghiên cứu [4]: "Bright paint makes interior-space surfaces appear farther away" | Thí nghiệm | [3], [4] |
+| 5–6 | Năm 2018, nhóm của von Castell sơn sáng hơn hai tường bên của một căn phòng ảo cỡ thật, người xem thấy phòng rộng thêm gần 8 cm | Ch.1, 1.2: "phòng mô phỏng lập thể rộng 4,5 m và sâu 6 m… rộng hơn khoảng 7,9 cm"; PL: "phòng mô phỏng lập thể cỡ thật chứ không phải phòng thật" | Thí nghiệm | Ch.1 [6] von Castell và cộng sự (2018b) |
+| 7–8 | Độ sáng này có thể tra trong bảng thông số của hãng sơn, qua chỉ số phản xạ ánh sáng, tính từ không tới một trăm, và màu trắng nằm gần mức cao nhất | M: "LRV… thang từ 0… đến 100"; "bảng màu gửi sang thường chỉ có tên màu và mã màu"; "bạn nên tra LRV trong tài liệu của hãng sơn"; "màu Vivid White có LRV 94 còn màu Black có LRV 3"; "Hãy hỏi hãng sơn chỉ số LRV trước khi hỏi mã màu" | Tiêu chuẩn, số liệu hãng | [7] BS 8493, [8], [9] Dulux Australia |
+| 9–10 | Khi chọn sơn cho phòng nhỏ, nên xem màu ấy sáng tới đâu trước, còn chọn màu gì thì tùy cảm xúc mọi người muốn cho căn phòng | M: "Muốn không gian trông cao hơn hay rộng hơn, hãy điều chỉnh độ sáng trước. Sắc độ và độ rực dành cho cảm xúc và dấu ấn riêng của căn phòng" | Khuyến nghị của sổ tay | — |
+| 11 | Người ta khuyên sơn trắng vì đó là màu sáng nhất, dù nó chỉ giúp phòng nhỏ trông rộng hơn một chút | M: "Tuy vậy, mức tác động này khá khiêm tốn… trần màu sáng chỉ khiến người xem cảm thấy trần cao hơn chừng 4,5 cm"; Vivid White LRV 94 | Kết luận của sổ tay | [5], [8] |
+| 12 | Sổ tay dành cho thành viên, có bảng tra nhanh mười bảy tình huống chọn màu | Bìa: "MEMBERS ONLY"; PL: "Mười bảy tình huống thường gặp" | Thông tin về sổ tay | — |
 
-Nhãn trên ảnh: "trần sáng", "tường sáng", "khuôn cửa, len chân tường cùng màu sáng", "ánh sáng từ vườn", "vách kính ra vườn", "tường trắng", "sàn lát đá sát vách kính". Đây là nhãn chỉ chỗ cho lời đọc của cảnh, không thêm thông tin. Nhãn hành lang là lời khuyên, không khẳng định ảnh Unsplash đã sơn như vậy.
+Nhãn trên ảnh: "màu gì, sáng hay tối, tươi hay ngả xám", "sáng", "tối hơn", "trần sáng", "tường sáng", "xem độ sáng trước". Đây là nhãn chỉ chỗ cho lời đọc của cảnh, không thêm thông tin.
 
 ## Danh mục nguồn sổ tay dẫn (chép từ sổ tay)
-- [5] Itten, J. (1961). The art of color. Reinhold / John Wiley & Sons.
-- [6] von Castell, C., Hecht, H. và Oberfeld, D. (2018b). Bright paint makes interior-space surfaces appear farther away. PLOS ONE.
-- [7] Oberfeld, D. và Hecht, H. (2011). Fashion versus perception. Human Factors.
-- [12] Zevon, S. (2000). [Bài về nhà John Pawson ở Notting Hill]. House Beautiful.
-- [13] John Pawson (không ghi năm-a). Pawson House, London 1997-1999.
-- [14] Livingetc (không ghi năm). John Pawson explains the new rules for minimalism.
-- TCVN 7114-1:2008 (Bộ Khoa học và Công nghệ), dùng trong caption.
+- Mở đầu [1] Munsell, A. H. (1907). A color notation (bản 2), chương II, đoạn 21-23.
+- Mở đầu [2] Kuehni, R. G. (2002). The early development of the Munsell system. Color Research & Application.
+- Mở đầu [3] Oberfeld, D., Hecht, H. và Gamer, M. (2010). Surface lightness influences perceived room height. Quarterly Journal of Experimental Psychology.
+- Mở đầu [4] von Castell, C., Hecht, H. và Oberfeld, D. (2018b). Bright paint makes interior-space surfaces appear farther away. PLOS ONE.
+- Mở đầu [5] Oberfeld, D. và Hecht, H. (2011). Fashion versus perception. Human Factors.
+- Mở đầu [6] von Castell, C., Hecht, H. và Oberfeld, D. (2018a). Which attribute of ceiling color influences perceived room height? Human Factors.
+- Mở đầu [7] British Standards Institution (2008). BS 8493:2008+A1:2010 Light reflectance value (LRV) of a surface - Method of test.
+- Mở đầu [8], [9] Dulux Australia (không ghi năm). Vivid White; Black (SG6) - thông số màu cho nhà chỉ định.

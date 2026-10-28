@@ -9,71 +9,87 @@
  },
  {
   "blk": 2,
-  "t": "4.14–9.21s",
-  "head": "Mặt sáng trông lùi ra xa",
-  "loi": "Vì tường và trần càng sáng thì mắt càng thấy chúng lùi ra xa.",
-  "tts": "Vì tường và trần càng sáng thì mắt càng thấy chúng lùi ra xa.",
-  "part": "C"
- },
- {
-  "blk": 2,
-  "t": "9.21–16.16s",
-  "head": "Thí nghiệm của von Castell và cộng sự (2018)",
-  "loi": "Năm 2018, nhóm của von Castell sơn sáng hơn hai bức tường bên của một căn phòng ảo cỡ thật,",
-  "tts": "Năm hai nghìn không trăm mười tám, nhóm của phôn Cát-xten sơn sáng hơn hai bức tường bên của một căn phòng ảo cỡ thật,",
-  "part": "C"
- },
- {
-  "blk": 2,
-  "t": "16.16–19.98s",
-  "head": "Tường bên sáng hơn, phòng trông rộng hơn",
-  "loi": "và người xem thấy phòng rộng thêm gần 8 cm.",
-  "tts": "và người xem thấy phòng rộng thêm gần tám xăng-ti-mét.",
-  "part": "C"
- },
- {
-  "blk": 3,
-  "t": "19.98–27.87s",
+  "t": "4.14–12.03s",
   "head": "Theo Munsell (1907), ba đặc tính của một màu",
   "loi": "Từ năm 1907, Munsell đã tách một màu thành ba đặc tính, là màu gì, sáng hay tối, và tươi hay ngả xám.",
   "tts": "Từ năm một nghìn chín trăm linh bảy, Mun-xen đã tách một màu thành ba đặc tính, là màu gì, sáng hay tối, và tươi hay ngả xám.",
   "part": "C"
  },
  {
-  "blk": 3,
-  "t": "27.87–35.76s",
-  "head": "Điều quyết định cảm giác rộng hẹp",
+  "blk": 2,
+  "t": "12.03–19.92s",
+  "head": "Độ sáng tác động rõ nhất",
   "loi": "Trong ba đặc tính ấy, sáng hay tối là điều có tác động rõ nhất tới cảm giác rộng hẹp của căn phòng.",
   "tts": "Trong ba đặc tính ấy, sáng hay tối là điều có tác động rõ nhất tới cảm giác rộng hẹp của căn phòng.",
   "part": "C"
  },
  {
-  "blk": 4,
-  "t": "35.76–44.9s",
-  "head": "Độ sáng ghi trên bảng thông số",
-  "loi": "Độ sáng này hãng sơn ghi sẵn bằng chỉ số phản xạ ánh sáng, từ không tới một trăm, và màu trắng nằm gần mức cao nhất.",
-  "tts": "Độ sáng này hãng sơn ghi sẵn bằng chỉ số phản xạ ánh sáng, từ không tới một trăm, và màu trắng nằm gần mức cao nhất.",
+  "blk": 3,
+  "t": "19.92–25.62s",
+  "head": "Mặt sáng trông lùi ra xa",
+  "loi": "Đó là vì tường và trần sáng hơn thì mắt thấy chúng lùi ra xa hơn.",
+  "tts": "Đó là vì tường và trần sáng hơn thì mắt thấy chúng lùi ra xa hơn.",
+  "part": "C"
+ },
+ {
+  "blk": 3,
+  "t": "25.62–32.57s",
+  "head": "Thí nghiệm của von Castell và cộng sự (2018)",
+  "loi": "Năm 2018, nhóm của von Castell sơn sáng hơn hai bức tường bên của một căn phòng ảo cỡ thật,",
+  "tts": "Năm hai nghìn không trăm mười tám, nhóm của phôn Cát-xten sơn sáng hơn hai bức tường bên của một căn phòng ảo cỡ thật,",
+  "part": "C"
+ },
+ {
+  "blk": 3,
+  "t": "32.57–36.4s",
+  "head": "Tường bên sáng hơn, phòng trông rộng hơn",
+  "loi": "và người xem thấy phòng rộng thêm gần 8 cm.",
+  "tts": "và người xem thấy phòng rộng thêm gần tám xăng-ti-mét.",
   "part": "C"
  },
  {
   "blk": 4,
-  "t": "44.9–54.04s",
+  "t": "36.4–43.35s",
+  "head": "Tra độ sáng trong bảng thông số",
+  "loi": "Độ sáng này có thể tra trong bảng thông số của hãng sơn, qua chỉ số phản xạ ánh sáng,",
+  "tts": "Độ sáng này có thể tra trong bảng thông số của hãng sơn, qua chỉ số phản xạ ánh sáng,",
+  "part": "C"
+ },
+ {
+  "blk": 4,
+  "t": "43.35–48.43s",
+  "head": "Tra độ sáng trong bảng thông số",
+  "loi": "tính từ không tới một trăm, và màu trắng nằm gần mức cao nhất.",
+  "tts": "tính từ không tới một trăm, và màu trắng nằm gần mức cao nhất.",
+  "part": "C"
+ },
+ {
+  "blk": 4,
+  "t": "48.43–53.51s",
   "head": "Chọn sơn cho phòng nhỏ",
-  "loi": "Vì vậy, khi chọn sơn cho phòng nhỏ, nên xem màu ấy sáng tới đâu trước, còn màu gì thì để cho cảm xúc của căn phòng.",
-  "tts": "Vì vậy, khi chọn sơn cho phòng nhỏ, nên xem màu ấy sáng tới đâu trước, còn màu gì thì để cho cảm xúc của căn phòng.",
+  "loi": "Khi chọn sơn cho phòng nhỏ, nên xem màu ấy sáng tới đâu trước,",
+  "tts": "Khi chọn sơn cho phòng nhỏ, nên xem màu ấy sáng tới đâu trước,",
+  "part": "F"
+ },
+ {
+  "blk": 4,
+  "t": "53.51–58.59s",
+  "head": "Chọn sơn cho phòng nhỏ",
+  "loi": "còn chọn màu gì thì tùy cảm xúc mọi người muốn cho căn phòng.",
+  "tts": "còn chọn màu gì thì tùy cảm xúc mọi người muốn cho căn phòng.",
   "part": "F"
  },
  {
   "blk": 5,
-  "t": "54.04–61.93s",
+  "t": "58.59–66.17s",
   "head": "Câu trả lời",
-  "loi": "Vậy người ta khuyên sơn trắng vì trắng là màu sáng nhất, mà chính độ sáng mới làm phòng nhỏ trông rộng hơn.",
-  "tts": "Vậy người ta khuyên sơn trắng vì trắng là màu sáng nhất, mà chính độ sáng mới làm phòng nhỏ trông rộng hơn.",
+  "loi": "Người ta khuyên sơn trắng vì đó là màu sáng nhất, dù nó chỉ giúp phòng nhỏ trông rộng hơn một chút.",
+  "tts": "Người ta khuyên sơn trắng vì đó là màu sáng nhất, dù nó chỉ giúp phòng nhỏ trông rộng hơn một chút.",
   "part": "H"
  },
  {
   "blk": 5,
-  "t": "61.93–71.69s",
+  "t": "66.17–75.93s",
   "head": "end",
   "loi": "Sổ tay Công thức chọn màu nội thất dành cho thành viên có bảng tra nhanh mười bảy tình huống chọn màu, mọi người xem ở phần bình luận.",
   "tts": "Sổ tay Công thức chọn màu nội thất dành cho thành viên có bảng tra nhanh mười bảy tình huống chọn màu, mọi người xem ở phần bình luận.",

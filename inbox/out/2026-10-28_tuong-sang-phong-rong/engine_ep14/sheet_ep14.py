@@ -31,7 +31,7 @@ sheet = Image.new("RGB", (MX * 2 + cols * PW + (cols - 1) * GAP, TOP + rows * (P
 d = ImageDraw.Draw(sheet)
 d.text((MX, 38), "AH Decode · Vì sao nhà nhỏ hay được khuyên sơn trắng?", font=F(60), fill=(255, 255, 255))
 d.text((MX, 118), "Ảnh của sổ tay AH+ Công thức chọn màu nội thất (mở đầu, chương 1): hành lang, góc tường trắng, Hình 1.2, khối mẫu màu, Hình M.1; video sổ tay", font=F(34), fill=(200, 194, 186))
-d.text((MX, 158), "Nét doodle trắng nét đứt vẽ mới trên ảnh, lộ dần theo lời (cảnh 2, 5, 6, 8) · camera trôi nhẹ", font=F(34), fill=(200, 194, 186))
+d.text((MX, 158), "Nét doodle trắng nét đứt vẽ mới trên ảnh, lộ dần theo lời (cảnh 2–4, 9) · camera trôi nhẹ", font=F(34), fill=(200, 194, 186))
 for i, sc in enumerate(SC):
     r, c = divmod(i, cols)
     x, y = MX + c * (PW + GAP), TOP + r * (PH + 120)

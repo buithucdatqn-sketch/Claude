@@ -12,41 +12,41 @@
   "first_frame": 1
  },
  {
-  "tag": "r02_khe",
-  "img": "khe",
-  "src": "source_khe.png",
+  "tag": "r02_mau",
+  "img": "mau",
+  "src": "source_mau.png",
   "scenes": [
-   2
+   2,
+   3
   ],
   "t_in_main": 4.14,
   "cut_from": 4.14,
-  "cut_len": 5.070000000000001,
+  "cut_len": 15.780000000000001,
   "first_frame": 2
  },
  {
-  "tag": "r03_dg",
-  "img": "dg",
-  "src": "source_dg.png",
+  "tag": "r03_khe",
+  "img": "khe",
+  "src": "source_khe.png",
   "scenes": [
-   3,
    4
   ],
-  "t_in_main": 9.21,
-  "cut_from": 5.070000000000001,
-  "cut_len": 10.77,
+  "t_in_main": 19.92,
+  "cut_from": 7.890000000000002,
+  "cut_len": 5.699999999999999,
   "first_frame": 2
  },
  {
-  "tag": "r04_mau",
-  "img": "mau",
-  "src": "source_mau.png",
+  "tag": "r04_dg",
+  "img": "dg",
+  "src": "source_dg.png",
   "scenes": [
    5,
    6
   ],
-  "t_in_main": 19.98,
-  "cut_from": 3.8200000000000003,
-  "cut_len": 15.779999999999998,
+  "t_in_main": 25.62,
+  "cut_from": 5.699999999999999,
+  "cut_len": 10.779999999999998,
   "first_frame": 2
  },
  {
@@ -54,11 +54,12 @@
   "img": "lrv",
   "src": "source_lrv.png",
   "scenes": [
-   7
+   7,
+   8
   ],
-  "t_in_main": 35.76,
-  "cut_from": 7.889999999999997,
-  "cut_len": 9.14,
+  "t_in_main": 36.4,
+  "cut_from": 3.8299999999999983,
+  "cut_len": 12.030000000000001,
   "first_frame": 2
  },
  {
@@ -66,12 +67,13 @@
   "img": "hanh",
   "src": "source_hanh.png",
   "scenes": [
-   8,
-   9
+   9,
+   10,
+   11
   ],
-  "t_in_main": 44.9,
-  "cut_from": 9.14,
-  "cut_len": 17.03,
+  "t_in_main": 48.43,
+  "cut_from": 5.079999999999998,
+  "cut_len": 17.740000000000002,
   "first_frame": 2
  },
  {
@@ -79,11 +81,11 @@
   "img": "ebook",
   "src": "source_ebook.png",
   "scenes": [
-   10
+   12
   ],
-  "t_in_main": 61.93,
-  "cut_from": 7.890000000000001,
-  "cut_len": 10.759999999999998,
+  "t_in_main": 66.17,
+  "cut_from": 7.579999999999998,
+  "cut_len": 10.760000000000005,
   "first_frame": 2
  }
 ]

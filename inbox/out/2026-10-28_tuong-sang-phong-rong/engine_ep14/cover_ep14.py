@@ -551,7 +551,7 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–3s", head="Sơn trắng nới phòng được bao nhiêu?", vo="Màu cho không gian hẹp, theo sổ tay AH+ Công thức chọn màu nội thất.",
+    dict(t="0–3s", head="Vì sao nhà nhỏ hay sơn trắng?", vo="Độ sáng của màu và phòng nhỏ, theo sổ tay AH+ Công thức chọn màu nội thất.",
          cam=WIDE, dark=False, dd=[], move="hold"),
     dict(t="3–4s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),

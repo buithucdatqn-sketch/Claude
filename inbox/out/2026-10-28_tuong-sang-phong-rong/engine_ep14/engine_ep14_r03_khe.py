@@ -16,7 +16,7 @@ from silhouette import loose_contour  # noqa: E402
 
 SRC = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "source.png")
 OUT = sys.argv[2] if len(sys.argv) > 2 else HERE
-os.makedirs(os.path.join(OUT, "frames_r02_khe"), exist_ok=True)
+os.makedirs(os.path.join(OUT, "frames_r03_khe"), exist_ok=True)
 
 W, H, SS = 1080, 1920, 2
 FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
@@ -551,11 +551,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–4.14s", head="Phòng nhỏ và màu sơn trắng", vo="Vì sao nhà nhỏ thì người ta hay khuyên sơn trắng?",
-         cam=((582, 550), 0.57, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="4.14–9.21s", head="Mặt sáng trông lùi ra xa", vo="Vì tường và trần càng sáng thì mắt càng thấy chúng lùi ra xa.",
+    dict(t="0–7.89s", head="Độ sáng tác động rõ nhất", vo="Trong ba đặc tính ấy, sáng hay tối là điều có tác động rõ nhất tới cảm giác rộng hẹp của căn phòng.",
+         cam=((582, 550), 0.57, (540, 863)), dark=True, dd=[], move="hold"),
+    dict(t="7.89–13.59s", head="Mặt sáng trông lùi ra xa", vo="Đó là vì tường và trần sáng hơn thì mắt thấy chúng lùi ra xa hơn.",
          cam=((582, 550), 0.57, (540, 863)), dark=True, dd=['a_tran', 'lab_tran', 'a_tuong', 'lab_tuong'], move="pan_d"),
-    dict(t="9.21–9.71s", head="end", vo="",
+    dict(t="13.59–14.09s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
@@ -626,7 +626,7 @@ BOARDS["clean"] = make_board(1.0)
 frames = []
 for i in range(len(SCENES)):
     im = render_scene(i)
-    im.save(os.path.join(OUT, "frames_r02_khe", f"scene_{i + 1}.png"))
+    im.save(os.path.join(OUT, "frames_r03_khe", f"scene_{i + 1}.png"))
     frames.append(im)
 
 # ---------------- contact sheet ----------------
@@ -651,5 +651,5 @@ fy = TOP + rows * (PH + 86) + 10
 d.text((MX, fy), "Nền trắng trơn · băng keo giấy thay ghim · header AH DECODE · bỏ “Bước n”", font=F(32), fill=(255, 255, 255))
 d.text((MX, fy + 44), "Cảnh zoom kín ảnh: chữ trắng viết lên ảnh (có phủ tối nhẹ).", font=F(32), fill=(225, 220, 212))
 d.text((MX, fy + 88), "Ảnh tối ~14% ở cảnh có nét vẽ; cảnh 1, 6, 7 giữ ảnh nguyên bản.", font=F(32), fill=(225, 220, 212))
-sheet.save(os.path.join(OUT, "storyboard_r02_khe.png"))
+sheet.save(os.path.join(OUT, "storyboard_r03_khe.png"))
 print("fabric", tuple(int(x) for x in FAB), "sheet", sheet.size)

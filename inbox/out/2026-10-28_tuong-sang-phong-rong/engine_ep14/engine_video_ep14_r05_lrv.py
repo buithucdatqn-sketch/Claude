@@ -552,11 +552,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–7.89s", head="Điều quyết định cảm giác rộng hẹp", vo="Trong ba đặc tính ấy, sáng hay tối là điều có tác động rõ nhất tới cảm giác rộng hẹp của căn phòng.",
-         cam=((324, 303), 0.56, (540, 863)), dark=True, dd=[], move="hold"),
-    dict(t="7.89–17.03s", head="Độ sáng ghi trên bảng thông số", vo="Độ sáng này hãng sơn ghi sẵn bằng chỉ số phản xạ ánh sáng, từ không tới một trăm, và màu trắng nằm gần mức cao nhất.",
+    dict(t="0–3.83s", head="Tường bên sáng hơn, phòng trông rộng hơn", vo="và người xem thấy phòng rộng thêm gần 8 cm.",
+         cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="hold"),
+    dict(t="3.83–10.78s", head="Tra độ sáng trong bảng thông số", vo="Độ sáng này có thể tra trong bảng thông số của hãng sơn, qua chỉ số phản xạ ánh sáng,",
          cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="push"),
-    dict(t="17.03–17.53s", head="end", vo="",
+    dict(t="10.78–15.86s", head="Tra độ sáng trong bảng thông số", vo="tính từ không tới một trăm, và màu trắng nằm gần mức cao nhất.",
+         cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="hold"),
+    dict(t="15.86–16.36s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

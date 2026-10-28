@@ -512,22 +512,23 @@
   "ngay": "2026-10-28",
   "slug": "tuong-sang-phong-rong",
   "bai_kho": {
-   "duong_dan": "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/02-chuong-1-khong-gian-hep.pdf",
+   "duong_dan": "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/01-mo-dau-ba-dac-tinh-cua-mau.pdf + 02-chuong-1-khong-gian-hep.pdf",
    "commit": "acfe39329e2d291c0828c519dc01a8227b673e04",
    "nhanh": "AH-Interior-notes",
    "tai_lieu": "Sổ tay AH+ Công thức chọn màu nội thất (6.2026)"
   },
   "y_bai": {
-   "muc": "Chương 1 · 1.2 Mặt bao quanh càng sáng, phòng càng rộng + 1.3 bước 2 + 1.4 Pawson House",
-   "tom_tat": "Bản 5 (viết lại cho dễ hiểu theo góp ý chủ Trang): sơn tường sáng hơn chỉ làm phòng trông rộng thêm gần 8 cm, chưa tới nửa gang tay (von Castell 2018); vẫn nên sơn tường và trần thật sáng, tường, khuôn cửa, len chân tường cùng một màu sáng; sơn chỉ giữ ánh sáng đã vào nhà: Pawson House mở vách kính ra vườn, tường trắng, sàn đá giữ ánh sáng lại; với phòng hẹp đưa ánh sáng vào trước (bỏ bớt vách ngăn, đèn hắt tường cuối phòng) rồi mới chọn màu sáng"
+   "muc": "Mở đầu · Ba đặc tính của màu, LRV + chương 1 mục 1.2 (thí nghiệm von Castell 2018b)",
+   "tom_tat": "Bản 7 (làm lại theo chủ Trang, một ý): nhà nhỏ hay được khuyên sơn trắng vì trong ba đặc tính của màu (Munsell 1907), độ sáng tác động rõ nhất tới cảm giác rộng hẹp; mặt sáng hơn trông lùi xa hơn (von Castell 2018: rộng thêm gần 8 cm); độ sáng tra bằng chỉ số phản xạ ánh sáng của hãng sơn, trắng gần mức cao nhất; chọn sơn phòng nhỏ xem độ sáng trước; trắng chỉ giúp một chút"
   },
-  "nguyen_ly": "Độ sáng bề mặt và kích thước cảm nhận của phòng",
-  "cau_moc": "Sơn trắng cho phòng hẹp trông rộng hơn, nhưng rộng thêm được bao nhiêu?",
+  "nguyen_ly": "Độ sáng của màu (value) và kích thước cảm nhận của phòng",
+  "cau_moc": "Vì sao nhà nhỏ thì người ta hay khuyên sơn trắng? (câu chủ Trang chọn)",
   "anh_kho": [
-   "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/02-chuong-1-khong-gian-hep.pdf (pdfimages): trang tên chương hành lang (Unsplash), Hình 1.2, ảnh mục 1.3 góc tường trắng (Unsplash), Pawson House bàn ăn, cầu thang một vế, bếp (Todd Eberle / John Pawson)"
+   "so-tay .../02-chuong-1-khong-gian-hep.pdf (pdfimages): hành lang (Unsplash), góc tường trắng (Unsplash), Hình 1.2",
+   "so-tay .../01-mo-dau-ba-dac-tinh-cua-mau.pdf (pdfimages): khối mẫu màu Cover Story (Paavo Lehtonen / Dezeen), Hình M.1",
+   "video AH_mockup_tablet.mp4 chủ Trang gửi (khung cuối)"
   ],
   "y_con_lai_cua_bai": [
-   "Mở đầu: ba đặc tính của màu, LRV (nền lý thuyết)",
    "Ch.1 mục 1.1 ánh sáng không vào tới cuối nhà ống (thiên về kiến trúc)",
    "Ch.1 bước 3 sơn mờ, bán mờ (đã vào caption, chưa làm reel)",
    "Chương 2 không gian mở: hình và nền, 60-30-10, Maison La Roche",
@@ -535,9 +536,10 @@
    "Chương 4 hướng nắng, Kelvin, Casa Gilardi",
    "Chương 5 AI và bảng màu",
    "Phần kết: ba phép thử tại công trường",
-   "Phụ lục: bảng tra nhanh 17 tình huống"
+   "Phụ lục: bảng tra nhanh 17 tình huống",
+   "Ch.1 mục 1.3–1.4: một màu cho tường, phào, len, khuôn cửa; Pawson House, ánh sáng vào trước (có trong bản 1–5, chưa thành reel)"
   ],
   "trang_thai": "cho_ghi_am",
-  "ghi_chu": "Chủ Trang yêu cầu 2026-10-28 chọn nội dung từ sổ tay AH+ Công thức chọn màu nội thất vừa tải lên kho. Ba lượt chấm độc lập. Lời mời cuối giữ 'dành cho thành viên' theo prompt lịch chạy (mâu thuẫn mục 0.6 điểm 6, chờ chủ Trang duyệt). Ảnh Pawson House chưa có giấy phép đăng công khai (sổ tay lưu hành nội bộ). Chủ Trang góp ý bản 3 'nội dung hơi phức tạp khó hiểu ngay': bản 5 bỏ phần tương phản, nghiên cứu Oberfeld & Hecht, kích thước phòng thí nghiệm; 214 từ, khoảng 57 giây; năm lượt chấm."
+  "ghi_chu": "Chủ Trang yêu cầu 2026-10-28 chọn nội dung từ sổ tay AH+ Công thức chọn màu nội thất vừa tải lên kho. Ba lượt chấm độc lập. Lời mời cuối giữ 'dành cho thành viên' theo prompt lịch chạy (mâu thuẫn mục 0.6 điểm 6, chờ chủ Trang duyệt). Ảnh Pawson House chưa có giấy phép đăng công khai (sổ tay lưu hành nội bộ). Chủ Trang góp ý bản 3 'nội dung hơi phức tạp khó hiểu ngay': bản 5 bỏ phần tương phản, nghiên cứu Oberfeld & Hecht, kích thước phòng thí nghiệm; 214 từ, khoảng 57 giây; năm lượt chấm. Chủ Trang 2026-10-28 (sau bản 5): 'vẫn còn khá lủng củng vì lồng ghép nhiều ý… làm lại, bắt đầu bằng câu hỏi Vì sao nhà nhỏ thì người ta hay khuyên sơn trắng? … xoáy vào một ý'. Bản 7: một ý (độ sáng của màu), bỏ Pawson; đạt lượt chấm 7. Khung cuối: video sổ tay chủ Trang gửi, toàn màn hình."
  }
 ]

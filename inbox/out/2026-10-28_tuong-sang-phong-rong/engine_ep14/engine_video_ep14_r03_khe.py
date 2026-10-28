@@ -22,7 +22,7 @@ W, H, SS = 1080, 1920, 2
 FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
 if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
-CREDIT = "Ảnh: Cover Story, Helsinki · Paavo Lehtonen / Dezeen, qua sổ tay AH+"
+CREDIT = "Ảnh: Danielle-Claude Bélanger / Unsplash, qua sổ tay AH+ Công thức chọn màu nội thất"
 HEAD = "AH DECODE · MÀU CHO PHÒNG HẸP"
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
@@ -58,7 +58,7 @@ CARD_W2, BORDER2 = 1920, 0  # theo tỷ lệ ảnh của run
 PH_W2 = CARD_W2 - 2 * BORDER2
 PH_H2 = int(round(PH_W2 * SH / SW))
 CARD_H2 = PH_H2 + 2 * BORDER2
-C2 = (B2W / 2, 1880.0)
+C2 = (B2W / 2, 1810.0)
 ANGLE = 1.2  # degrees, counter-clockwise (card is hung very slightly crooked)
 S2 = PH_W2 / SW
 ROT = cv2.getRotationMatrix2D(C2, ANGLE, 1.0)
@@ -552,19 +552,17 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–3.82s", head="Tường bên sáng hơn, phòng trông rộng hơn", vo="và người xem thấy phòng rộng thêm gần 8 cm.",
-         cam=((256, 256), 0.56, (540, 870)), dark=False, dd=[], move="hold"),
-    dict(t="3.82–11.71s", head="Theo Munsell (1907), ba đặc tính của một màu", vo="Từ năm 1907, Munsell đã tách một màu thành ba đặc tính, là màu gì, sáng hay tối, và tươi hay ngả xám.",
-         cam=((256, 256), 0.56, (540, 870)), dark=True, dd=['grid', 'lab_grid'], move="pan_r"),
-    dict(t="11.71–19.6s", head="Điều quyết định cảm giác rộng hẹp", vo="Trong ba đặc tính ấy, sáng hay tối là điều có tác động rõ nhất tới cảm giác rộng hẹp của căn phòng.",
-         cam=((256, 256), 0.56, (540, 870)), dark=True, dd=['o_sang', 'o_toi', 'lab_st'], move="hold"),
-    dict(t="19.6–20.1s", head="end", vo="",
+    dict(t="0–7.89s", head="Độ sáng tác động rõ nhất", vo="Trong ba đặc tính ấy, sáng hay tối là điều có tác động rõ nhất tới cảm giác rộng hẹp của căn phòng.",
+         cam=((582, 550), 0.57, (540, 863)), dark=True, dd=[], move="hold"),
+    dict(t="7.89–13.59s", head="Mặt sáng trông lùi ra xa", vo="Đó là vì tường và trần sáng hơn thì mắt thấy chúng lùi ra xa hơn.",
+         cam=((582, 550), 0.57, (540, 863)), dark=True, dd=['a_tran', 'lab_tran', 'a_tuong', 'lab_tuong'], move="pan_d"),
+    dict(t="13.59–14.09s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
 BOARDS = {}
 
-_P = os.path.join(HERE, "doodle_ep14_mau.npz")
+_P = os.path.join(HERE, "doodle_ep14_khe.npz")
 LAYER = dict(np.load(_P)) if os.path.isfile(_P) else {}   # toạ độ trên ảnh làm việc của run
 RAD = 0.9                              # bán kính chấm bút khi lộ lại nét gốc (px ảnh làm việc)
 
@@ -720,7 +718,7 @@ proc = subprocess.Popen(
     ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
      "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-t", f"{TOTAL:.2f}",
      "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-pix_fmt", "yuv420p", "-movflags", "+faststart",
-     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "r04_mau_silent.mp4")], stdin=subprocess.PIPE)
+     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "r03_khe_silent.mp4")], stdin=subprocess.PIPE)
 
 nframes = int(TOTAL * FPS)
 cur = -1
