@@ -9,31 +9,39 @@
  },
  {
   "blk": 2,
-  "t": "5.08–11.41s",
+  "t": "5.08–12.34s",
   "head": "Thí nghiệm của von Castell và cộng sự (2018)",
-  "loi": "Năm 2018, nhóm của von Castell thử sơn sáng hơn hai bức tường bên của một căn phòng.",
-  "tts": "Năm hai nghìn không trăm mười tám, nhóm của phôn Cát-xten thử sơn sáng hơn hai bức tường bên của một căn phòng.",
+  "loi": "Năm 2018, nhóm của von Castell thử sơn sáng hơn hai bức tường bên của một căn phòng ảo cỡ thật.",
+  "tts": "Năm hai nghìn không trăm mười tám, nhóm của phôn Cát-xten thử sơn sáng hơn hai bức tường bên của một căn phòng ảo cỡ thật.",
   "part": "C"
  },
  {
   "blk": 2,
-  "t": "11.41–17.11s",
-  "head": "Rộng thêm chưa tới một gang tay",
-  "loi": "Người xem thấy phòng rộng thêm khoảng 8 cm, tức là chưa tới một gang tay.",
-  "tts": "Người xem thấy phòng rộng thêm khoảng tám xăng-ti-mét, tức là chưa tới một gang tay.",
+  "t": "12.34–18.04s",
+  "head": "Rộng thêm chưa tới nửa gang tay",
+  "loi": "Người xem thấy phòng rộng thêm gần 8 cm, tức là chưa tới nửa gang tay.",
+  "tts": "Người xem thấy phòng rộng thêm gần tám xăng-ti-mét, tức là chưa tới nửa gang tay.",
   "part": "C"
  },
  {
   "blk": 3,
-  "t": "17.11–25s",
+  "t": "18.04–23.11s",
+  "head": "Sơn sáng chỉ nới phòng một chút",
+  "loi": "Nghĩa là sơn sáng có làm phòng trông rộng hơn, nhưng chỉ một chút.",
+  "tts": "Nghĩa là sơn sáng có làm phòng trông rộng hơn, nhưng chỉ một chút.",
+  "part": "C"
+ },
+ {
+  "blk": 3,
+  "t": "23.11–28.5s",
   "head": "Tường và trần càng sáng càng tốt",
-  "loi": "Nghĩa là sơn trắng có giúp, nhưng chỉ giúp một chút, và nhóm này khuyên sơn tường và trần sáng nhất có thể.",
-  "tts": "Nghĩa là sơn trắng có giúp, nhưng chỉ giúp một chút, và nhóm này khuyên sơn tường và trần sáng nhất có thể.",
+  "loi": "Dù vậy, chính nhóm này vẫn khuyên sơn tường và trần sáng nhất có thể.",
+  "tts": "Dù vậy, chính nhóm này vẫn khuyên sơn tường và trần sáng nhất có thể.",
   "part": "C"
  },
  {
   "blk": 3,
-  "t": "25–32.26s",
+  "t": "28.5–35.76s",
   "head": "Áp dụng ở nhà mình",
   "loi": "Ở nhà mình, nên sơn tường, khuôn cửa và len chân tường cùng một màu sáng, để cả phòng cùng sáng.",
   "tts": "Ở nhà mình, nên sơn tường, khuôn cửa và len chân tường cùng một màu sáng, để cả phòng cùng sáng.",
@@ -41,7 +49,7 @@
  },
  {
   "blk": 4,
-  "t": "32.26–36.4s",
+  "t": "35.76–39.9s",
   "head": "Ánh sáng phải vào nhà trước",
   "loi": "Nhưng sơn chỉ giữ lại được ánh sáng đã vào nhà.",
   "tts": "Nhưng sơn chỉ giữ lại được ánh sáng đã vào nhà.",
@@ -49,15 +57,23 @@
  },
  {
   "blk": 4,
-  "t": "36.4–43.04s",
+  "t": "39.9–45.91s",
   "head": "Pawson House, London (1997–1999)",
-  "loi": "Ở nhà riêng của kiến trúc sư John Pawson tại London, ánh sáng vào qua vách kính ra vườn,",
-  "tts": "Ở nhà riêng của kiến trúc sư Giôn Pô-xơn tại Luân Đôn, ánh sáng vào qua vách kính ra vườn,",
+  "loi": "Nhà riêng của kiến trúc sư John Pawson ở London từng có nhiều phòng nhỏ và tối.",
+  "tts": "Nhà riêng của kiến trúc sư Giôn Pô-xơn ở Luân Đôn từng có nhiều phòng nhỏ và tối.",
   "part": "D"
  },
  {
   "blk": 4,
-  "t": "43.04–46.54s",
+  "t": "45.91–50.67s",
+  "head": "Pawson House, London (1997–1999)",
+  "loi": "Khi cải tạo, ông mở vách kính ra vườn cho ánh sáng vào,",
+  "tts": "Khi cải tạo, ông mở vách kính ra vườn cho ánh sáng vào,",
+  "part": "D"
+ },
+ {
+  "blk": 4,
+  "t": "50.67–54.17s",
   "head": "Tường trắng và sàn đá",
   "loi": "rồi tường sơn trắng",
   "tts": "rồi tường sơn trắng",
@@ -65,7 +81,7 @@
  },
  {
   "blk": 4,
-  "t": "46.54–50.05s",
+  "t": "54.17–57.68s",
   "head": "Tường trắng và sàn đá",
   "loi": "và sàn lát đá giữ ánh sáng ấy lại.",
   "tts": "và sàn lát đá giữ ánh sáng ấy lại.",
@@ -73,15 +89,23 @@
  },
  {
   "blk": 5,
-  "t": "50.05–55.75s",
+  "t": "57.68–61.82s",
   "head": "Thứ tự cho phòng hẹp",
-  "loi": "Vậy với phòng hẹp, hãy lo ánh sáng trước, rồi mới chọn màu sơn thật sáng.",
-  "tts": "Vậy với phòng hẹp, hãy lo ánh sáng trước, rồi mới chọn màu sơn thật sáng.",
+  "loi": "Vậy với phòng hẹp, hãy lo đưa ánh sáng vào trước,",
+  "tts": "Vậy với phòng hẹp, hãy lo đưa ánh sáng vào trước,",
   "part": "H"
  },
  {
   "blk": 5,
-  "t": "55.75–65.51s",
+  "t": "61.82–68.77s",
+  "head": "Thứ tự cho phòng hẹp",
+  "loi": "như bỏ bớt vách ngăn hay thêm đèn hắt tường ở cuối phòng, rồi mới chọn màu sơn thật sáng.",
+  "tts": "như bỏ bớt vách ngăn hay thêm đèn hắt tường ở cuối phòng, rồi mới chọn màu sơn thật sáng.",
+  "part": "H"
+ },
+ {
+  "blk": 5,
+  "t": "68.77–78.53s",
   "head": "end",
   "loi": "Sổ tay Công thức chọn màu nội thất dành cho thành viên có bảng tra nhanh mười bảy tình huống chọn màu, mọi người xem ở phần bình luận.",
   "tts": "Sổ tay Công thức chọn màu nội thất dành cho thành viên có bảng tra nhanh mười bảy tình huống chọn màu, mọi người xem ở phần bình luận.",

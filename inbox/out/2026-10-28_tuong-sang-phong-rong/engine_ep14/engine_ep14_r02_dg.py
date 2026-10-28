@@ -553,11 +553,11 @@ WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–5.08s", head="Phòng hẹp và màu sơn trắng", vo="Sơn trắng cho phòng hẹp trông rộng hơn, nhưng rộng thêm được bao nhiêu?",
          cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="hold"),
-    dict(t="5.08–11.41s", head="Thí nghiệm của von Castell và cộng sự (2018)", vo="Năm 2018, nhóm của von Castell thử sơn sáng hơn hai bức tường bên của một căn phòng.",
+    dict(t="5.08–12.34s", head="Thí nghiệm của von Castell và cộng sự (2018)", vo="Năm 2018, nhóm của von Castell thử sơn sáng hơn hai bức tường bên của một căn phòng ảo cỡ thật.",
          cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="push"),
-    dict(t="11.41–17.11s", head="Rộng thêm chưa tới một gang tay", vo="Người xem thấy phòng rộng thêm khoảng 8 cm, tức là chưa tới một gang tay.",
+    dict(t="12.34–18.04s", head="Rộng thêm chưa tới nửa gang tay", vo="Người xem thấy phòng rộng thêm gần 8 cm, tức là chưa tới nửa gang tay.",
          cam=((324, 303), 0.56, (540, 863)), dark=False, dd=[], move="pan_r"),
-    dict(t="17.11–17.61s", head="end", vo="",
+    dict(t="18.04–18.54s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

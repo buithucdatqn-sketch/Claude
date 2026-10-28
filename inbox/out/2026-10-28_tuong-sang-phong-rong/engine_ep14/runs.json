@@ -21,7 +21,7 @@
   ],
   "t_in_main": 5.08,
   "cut_from": 5.08,
-  "cut_len": 12.03,
+  "cut_len": 12.959999999999999,
   "first_frame": 2
  },
  {
@@ -29,11 +29,12 @@
   "img": "khe",
   "src": "source_khe.png",
   "scenes": [
-   4
+   4,
+   5
   ],
-  "t_in_main": 17.11,
+  "t_in_main": 18.04,
   "cut_from": 5.699999999999999,
-  "cut_len": 7.890000000000001,
+  "cut_len": 10.46,
   "first_frame": 2
  },
  {
@@ -41,10 +42,10 @@
   "img": "hanh",
   "src": "source_hanh.png",
   "scenes": [
-   5
+   6
   ],
-  "t_in_main": 25.0,
-  "cut_from": 7.890000000000001,
+  "t_in_main": 28.5,
+  "cut_from": 5.390000000000001,
   "cut_len": 7.259999999999998,
   "first_frame": 2
  },
@@ -53,12 +54,13 @@
   "img": "banan",
   "src": "source_banan.png",
   "scenes": [
-   6,
-   7
+   7,
+   8,
+   9
   ],
-  "t_in_main": 32.26,
+  "t_in_main": 35.76,
   "cut_from": 7.259999999999998,
-  "cut_len": 10.780000000000001,
+  "cut_len": 14.910000000000004,
   "first_frame": 2
  },
  {
@@ -66,10 +68,10 @@
   "img": "thang",
   "src": "source_thang.png",
   "scenes": [
-   8
+   10
   ],
-  "t_in_main": 43.04,
-  "cut_from": 6.640000000000001,
+  "t_in_main": 50.67,
+  "cut_from": 4.760000000000005,
   "cut_len": 3.5,
   "first_frame": 2
  },
@@ -78,9 +80,9 @@
   "img": "bep",
   "src": "source_bep.png",
   "scenes": [
-   9
+   11
   ],
-  "t_in_main": 46.54,
+  "t_in_main": 54.17,
   "cut_from": 3.5,
   "cut_len": 3.509999999999998,
   "first_frame": 2
@@ -90,11 +92,12 @@
   "img": "hanh",
   "src": "source_hanh.png",
   "scenes": [
-   10
+   12,
+   13
   ],
-  "t_in_main": 50.05,
+  "t_in_main": 57.68,
   "cut_from": 3.509999999999998,
-  "cut_len": 5.700000000000003,
+  "cut_len": 11.089999999999996,
   "first_frame": 2
  },
  {
@@ -102,10 +105,10 @@
   "img": "banan",
   "src": "source_banan.png",
   "scenes": [
-   11
+   14
   ],
-  "t_in_main": 55.75,
-  "cut_from": 5.700000000000003,
+  "t_in_main": 68.77,
+  "cut_from": 6.949999999999996,
   "cut_len": 10.760000000000005,
   "first_frame": 2
  }

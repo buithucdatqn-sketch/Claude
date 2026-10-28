@@ -552,11 +552,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.64s", head="Pawson House, London (1997–1999)", vo="Ở nhà riêng của kiến trúc sư John Pawson tại London, ánh sáng vào qua vách kính ra vườn,",
+    dict(t="0–4.76s", head="Pawson House, London (1997–1999)", vo="Khi cải tạo, ông mở vách kính ra vườn cho ánh sáng vào,",
          cam=((316, 280), 0.57, (540, 863)), dark=True, dd=[], move="hold"),
-    dict(t="6.64–10.14s", head="Tường trắng và sàn đá", vo="rồi tường sơn trắng",
+    dict(t="4.76–8.26s", head="Tường trắng và sàn đá", vo="rồi tường sơn trắng",
          cam=((316, 280), 0.57, (540, 863)), dark=True, dd=['tw', 'lab_tw'], move="push"),
-    dict(t="10.14–10.64s", head="end", vo="",
+    dict(t="8.26–8.76s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

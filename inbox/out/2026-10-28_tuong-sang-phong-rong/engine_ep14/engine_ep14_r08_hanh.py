@@ -553,9 +553,11 @@ WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–3.51s", head="Tường trắng và sàn đá", vo="và sàn lát đá giữ ánh sáng ấy lại.",
          cam=((600, 715), 0.545, (540, 865)), dark=True, dd=[], move="hold"),
-    dict(t="3.51–9.21s", head="Thứ tự cho phòng hẹp", vo="Vậy với phòng hẹp, hãy lo ánh sáng trước, rồi mới chọn màu sơn thật sáng.",
+    dict(t="3.51–7.65s", head="Thứ tự cho phòng hẹp", vo="Vậy với phòng hẹp, hãy lo đưa ánh sáng vào trước,",
          cam=((600, 715), 0.545, (540, 865)), dark=False, dd=[], move="pull"),
-    dict(t="9.21–9.71s", head="end", vo="",
+    dict(t="7.65–14.6s", head="Thứ tự cho phòng hẹp", vo="như bỏ bớt vách ngăn hay thêm đèn hắt tường ở cuối phòng, rồi mới chọn màu sơn thật sáng.",
+         cam=((600, 715), 0.545, (540, 865)), dark=False, dd=[], move="hold"),
+    dict(t="14.6–15.1s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

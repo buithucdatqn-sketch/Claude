@@ -555,9 +555,11 @@ SCENES = [
          cam=((600, 474), 0.68, (540, 863)), dark=True, dd=[], move="hold"),
     dict(t="7.26–11.4s", head="Ánh sáng phải vào nhà trước", vo="Nhưng sơn chỉ giữ lại được ánh sáng đã vào nhà.",
          cam=((600, 474), 0.68, (540, 863)), dark=True, dd=['a_kinh', 'lab_vao'], move="push"),
-    dict(t="11.4–18.04s", head="Pawson House, London (1997–1999)", vo="Ở nhà riêng của kiến trúc sư John Pawson tại London, ánh sáng vào qua vách kính ra vườn,",
+    dict(t="11.4–17.41s", head="Pawson House, London (1997–1999)", vo="Nhà riêng của kiến trúc sư John Pawson ở London từng có nhiều phòng nhỏ và tối.",
+         cam=((600, 474), 0.68, (540, 863)), dark=True, dd=[], move="hold"),
+    dict(t="17.41–22.17s", head="Pawson House, London (1997–1999)", vo="Khi cải tạo, ông mở vách kính ra vườn cho ánh sáng vào,",
          cam=((600, 474), 0.68, (540, 863)), dark=True, dd=['kinh', 'lab_kinh'], move="hold"),
-    dict(t="18.04–18.54s", head="end", vo="",
+    dict(t="22.17–22.67s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
