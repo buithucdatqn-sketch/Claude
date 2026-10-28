@@ -1,9 +1,10 @@
-"""Tập 14: khung cuối toàn màn hình từ ảnh sổ tay AH+ chủ Trang gửi (ảnh tĩnh hoặc GIF động).
-Ảnh 800x1000 phóng x1,55 phủ kín khung 1080x1920; phần thiếu ở mép (trên, dưới, phải) lấp bằng vải nền phản chiếu.
-iPad (ảnh gốc x 155–780, y 275–768) nằm ở khung x 55–1024, y 498–1262: trọn trong khung 4:5 của bảng tin (y 285–1635).
-Chữ ngắn đặt ngoài vùng iPad: credit nhỏ ở trên, ba dòng mời ở dải vải tối phía dưới (y 1280–1480).
-Chạy: python3 -I end_ep14.py <ảnh hoặc gif> <OUT> [giây]  ->  OUT/frames/scene_14.png (khung đầu),
-và nếu có [giây]: OUT/end_ep14.mp4 (30 fps, GIF lặp theo thời lượng từng khung) để ghép thay đoạn khung cuối ở giai đoạn B."""
+"""Tập 14: khung cuối toàn màn hình từ video sổ tay AH+ chủ Trang gửi (AH_mockup_tablet.mp4, 1080x1350, 28 giây, lật trang trên iPad).
+Video đã đúng tỷ lệ 4:5 nên đặt nguyên cỡ vào đúng khung 4:5 của bảng tin (y 285–1635); hai dải trên, dưới (0–285, 1635–1920)
+lấp bằng vải nền phản chiếu để phủ kín khung 1080x1920. iPad (video x 208–1055, y 372–1032, đứng yên) nằm ở khung y 657–1317.
+Chữ ngắn đặt ngoài vùng iPad: ba dòng mời ở mảng vải phía trên iPad, credit nhỏ ở dải tối phía dưới. Có kiểm tự động.
+Vẫn nhận ảnh tĩnh hoặc GIF (bố cục cũ cho ảnh 800x1000).
+Chạy: python3 -I end_ep14.py <video|gif|ảnh> <OUT> [giây]  ->  OUT/frames/scene_14.png (khung đầu),
+và nếu có [giây]: OUT/end_ep14.mp4 (30 fps) để ghép thay đoạn khung cuối ở giai đoạn B."""
 import os, subprocess, sys
 import cv2
 import numpy as np
@@ -12,12 +13,17 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont, ImageSequence
 HERE = os.path.dirname(os.path.abspath(__file__))
 FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
 W, H = 1080, 1920
-S, OX, OY = 1.55, 185, -72          # X = S*x - OX, Y = S*y - OY
-IPAD = [(155, 405), (480, 275), (780, 580), (430, 768)]   # bốn góc iPad trên ảnh gốc
-LINES = [(1280, "Sổ tay Công thức chọn màu nội thất", 54, 255),
-         (1340, "bảng tra nhanh 17 tình huống chọn màu", 46, 240),
-         (1400, "xem ở phần bình luận", 62, 255)]
-CREDIT = (352, "Ảnh: sổ tay AH+ Công thức chọn màu nội thất · Giả Thuyết Kiến Trúc", 28, 225)
+# bố cục theo nguồn: video 1080x1350 (mặc định) hoặc ảnh tĩnh/GIF 800x1000
+S, OX, OY = 1.0, 0, -285            # X = S*x - OX, Y = S*y - OY
+IPAD = [(210, 560), (630, 375), (1052, 780), (600, 1030)]   # bốn góc iPad trên video
+LINES = [(384, "Sổ tay Công thức chọn màu nội thất", 56, 255),
+         (450, "bảng tra nhanh 17 tình huống chọn màu", 48, 240),
+         (528, "xem ở phần bình luận", 64, 255)]
+CREDIT = (1440, "Video: sổ tay AH+ Công thức chọn màu nội thất · Giả Thuyết Kiến Trúc", 28, 215)
+STILL = dict(S=1.55, OX=185, OY=-72, IPAD=[(155, 405), (480, 275), (780, 580), (430, 768)],
+             LINES=[(1280, "Sổ tay Công thức chọn màu nội thất", 54, 255), (1340, "bảng tra nhanh 17 tình huống chọn màu", 46, 240),
+                    (1400, "xem ở phần bình luận", 62, 255)],
+             CREDIT=(352, "Ảnh: sổ tay AH+ Công thức chọn màu nội thất · Giả Thuyết Kiến Trúc", 28, 225))
 
 
 def place(frame):
@@ -69,12 +75,41 @@ def render(frame, t, sh):
     return Image.composite(Image.new("RGB", (W, H), (255, 255, 255)), base, t)
 
 
+def video_frames(src, n):
+    """đọc n khung đầu của video (1080x1350) qua ffmpeg; video ngắn hơn thì lặp lại"""
+    w, h = 1080, 1350
+    p = subprocess.run(["ffmpeg", "-v", "error", "-stream_loop", "-1", "-i", src, "-frames:v", str(n), "-f", "rawvideo",
+                        "-pix_fmt", "rgb24", "-"], capture_output=True)
+    b = p.stdout
+    return [Image.frombytes("RGB", (w, h), b[i * w * h * 3:(i + 1) * w * h * 3]) for i in range(len(b) // (w * h * 3))]
+
+
 def main():
+    global S, OX, OY, IPAD, LINES, CREDIT
     src, out = sys.argv[1], os.path.abspath(sys.argv[2]) + "/"
     dur = float(sys.argv[3]) if len(sys.argv) > 3 else 0
-    im = Image.open(src)
+    is_video = src.lower().endswith((".mp4", ".mov", ".m4v", ".webm"))
+    if not is_video:
+        S, OX, OY, IPAD, LINES, CREDIT = (STILL[k] for k in ("S", "OX", "OY", "IPAD", "LINES", "CREDIT"))
     t, sh = text_layer()
     check(t)
+    os.makedirs(out + "frames", exist_ok=True)
+    if is_video:
+        n = max(1, int(round(dur * 30)))
+        vf = video_frames(src, n)
+        print("số khung đọc từ video:", len(vf))
+        render(vf[0], t, sh).save(out + "frames/scene_14.png")
+        if dur:
+            p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
+                                  "-r", "30", "-i", "-", "-c:v", "libx264", "-crf", "17", "-pix_fmt", "yuv420p", out + "end_ep14.mp4"],
+                                 stdin=subprocess.PIPE)
+            for f in vf:
+                p.stdin.write(np.array(render(f, t, sh)).tobytes())
+            p.stdin.close()
+            p.wait()
+            print("end_ep14.mp4", len(vf), "khung")
+        return
+    im = Image.open(src)
     frames = [(f.copy(), f.info.get("duration", 100) or 100) for f in ImageSequence.Iterator(im)]
     print("số khung của ảnh nguồn:", len(frames))
     os.makedirs(out + "frames", exist_ok=True)

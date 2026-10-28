@@ -19,8 +19,8 @@ for r in RUNS:
     shutil.rmtree(OUT + "frames_" + r["tag"])
     if os.path.exists(OUT + f"storyboard_{r['tag']}.png"):
         os.remove(OUT + f"storyboard_{r['tag']}.png")
-# khung cuối toàn màn hình từ ảnh sổ tay chủ Trang gửi (GIF gốc nếu có, không thì bản WebP tĩnh nhận trong phiên)
-_cands = [OUT + "original/chu-trang/" + f for f in sorted(os.listdir(OUT + "original/chu-trang")) if f.endswith(".gif")] + [OUT + "original/chu-trang/ebook-so-tay-ah-plus.webp"]
+# khung cuối toàn màn hình từ video sổ tay chủ Trang gửi (AH_mockup_tablet.mp4; không có thì GIF, rồi bản WebP tĩnh)
+_cands = [OUT + "original/chu-trang/" + f for f in sorted(os.listdir(OUT + "original/chu-trang")) if f.endswith((".mp4", ".gif"))] + [OUT + "original/chu-trang/ebook-so-tay-ah-plus.webp"]
 _out = subprocess.run(["/usr/bin/python3", "-I", os.path.join(HERE, "end_ep14.py"), _cands[0], OUT], capture_output=True, text=True)
 print(_out.stdout.strip(), _out.stderr.strip())
 NAME = dict(hanh="trang tên chương 1, hành lang (Unsplash)", khe="mục 1.3, góc tường trắng (Unsplash)", dg="Hình 1.2 tường sáng nới phòng", banan="Pawson House, bàn ăn", thang="Pawson House, cầu thang", bep="Pawson House, bếp", ebook="sổ tay AH+ toàn màn hình (chủ Trang gửi)")
