@@ -542,5 +542,26 @@
   "trang_thai": "da_dung_video",
   "ghi_chu": "Chủ Trang yêu cầu 2026-10-28 chọn nội dung từ sổ tay AH+ Công thức chọn màu nội thất vừa tải lên kho. Ba lượt chấm độc lập. Lời mời cuối giữ 'dành cho thành viên' theo prompt lịch chạy (mâu thuẫn mục 0.6 điểm 6, chờ chủ Trang duyệt). Ảnh Pawson House chưa có giấy phép đăng công khai (sổ tay lưu hành nội bộ). Chủ Trang góp ý bản 3 'nội dung hơi phức tạp khó hiểu ngay': bản 5 bỏ phần tương phản, nghiên cứu Oberfeld & Hecht, kích thước phòng thí nghiệm; 214 từ, khoảng 57 giây; năm lượt chấm. Chủ Trang 2026-10-28 (sau bản 5): 'vẫn còn khá lủng củng vì lồng ghép nhiều ý… làm lại, bắt đầu bằng câu hỏi Vì sao nhà nhỏ thì người ta hay khuyên sơn trắng? … xoáy vào một ý'. Bản 7: một ý (độ sáng của màu), bỏ Pawson; đạt lượt chấm 7. Khung cuối: video sổ tay chủ Trang gửi, toàn màn hình. | Giai đoạn B 2026-10-28: giọng ElevenLabs 62,12 s; chủ Trang chỉnh lời ở 4 chỗ (dựng bằng cỡ thật; kết quả khảo sát… khi sơn màu; chứ không nhất thiết phải chọn màu trắng; màu có chỉ số độ sáng cao nhất; lời mời 'chọn màu kiến trúc nội thất… khi thiết kế… nha'), phụ đề sửa theo; -15,0 LUFS; video 64,2 s, khung cuối là video sổ tay.",
   "video": "inbox/out/2026-10-28_tuong-sang-phong-rong/reel_tuong-sang-phong-rong_final.mp4"
+ },
+ {
+  "tap": 15,
+  "slug": "khong-gian-mo-ranh-gioi-tren-san",
+  "ngay": "2026-10-28",
+  "nguyen_ly": "Căn hộ mở bỏ vách: ranh giới nằm lại trên sàn và trần (màu phân vùng)",
+  "bai_kho": {
+   "duong_dan": "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/03-chuong-2-khong-gian-mo.pdf",
+   "nhanh": "AH-Interior-notes",
+   "commit": "acfe39329e2d291c0828c519dc01a8227b673e04"
+  },
+  "y_bai": {
+   "muc": "Chương 2 mục 2.1 + 2.3 (nhà Rietveld Schröder)",
+   "tom_tat": "Bỏ vách thì mọi khu cùng một nền màu; nhà Rietveld Schröder vách trượt thu lại nhưng sàn vẫn chia mảng màu, trần có thanh màu; thử đặt màu xuống sàn hoặc lên trần"
+  },
+  "anh_kho": [
+   "ch2: bếp bàn ăn, hộp kính cầu thang, tầng trên vách mở, phòng sàn đỏ (trích từ PDF chương 2)"
+  ],
+  "trang_thai": "cho_ghi_am",
+  "thu_muc": "inbox/out/2026-10-28_khong-gian-mo-ranh-gioi-tren-san/",
+  "ghi_chu": "Giai đoạn A, bản 1, lần chạy lịch tự động. Chương khác của sổ tay với tập 14 (chương 1); cần chủ Trang xác nhận việc xen kẽ theo chương. Chờ ghi âm."
  }
 ]

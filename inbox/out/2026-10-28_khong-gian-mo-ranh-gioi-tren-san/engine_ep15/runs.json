@@ -1,0 +1,82 @@
+[
+ {
+  "tag": "r01_bep",
+  "img": "bep",
+  "src": "source_bep.png",
+  "scenes": [
+   1,
+   2,
+   3
+  ],
+  "t_in_main": 0.0,
+  "cut_from": 0.0,
+  "cut_len": 15.54,
+  "first_frame": 1
+ },
+ {
+  "tag": "r02_thang",
+  "img": "thang",
+  "src": "source_thang.png",
+  "scenes": [
+   4,
+   5
+  ],
+  "t_in_main": 15.54,
+  "cut_from": 4.449999999999999,
+  "cut_len": 9.84,
+  "first_frame": 2
+ },
+ {
+  "tag": "r03_tang",
+  "img": "tang",
+  "src": "source_tang.png",
+  "scenes": [
+   6,
+   7,
+   8
+  ],
+  "t_in_main": 25.38,
+  "cut_from": 5.390000000000001,
+  "cut_len": 17.73,
+  "first_frame": 2
+ },
+ {
+  "tag": "r04_phong",
+  "img": "phong",
+  "src": "source_phong.png",
+  "scenes": [
+   9,
+   10,
+   11,
+   12
+  ],
+  "t_in_main": 43.11,
+  "cut_from": 4.140000000000001,
+  "cut_len": 23.430000000000007,
+  "first_frame": 2
+ },
+ {
+  "tag": "r05_tang",
+  "img": "tang",
+  "src": "source_tang.png",
+  "scenes": [
+   13
+  ],
+  "t_in_main": 66.54,
+  "cut_from": 3.510000000000005,
+  "cut_len": 6.949999999999989,
+  "first_frame": 2
+ },
+ {
+  "tag": "r06_ebook",
+  "img": "ebook",
+  "src": "source_ebook.png",
+  "scenes": [
+   14
+  ],
+  "t_in_main": 73.49,
+  "cut_from": 6.949999999999989,
+  "cut_len": 11.39,
+  "first_frame": 2
+ }
+]
