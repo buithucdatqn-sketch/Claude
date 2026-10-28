@@ -44,7 +44,7 @@
   ],
   "t_in_main": 23.35,
   "cut_from": 9.450000000000001,
-  "cut_len": 7.26,
+  "cut_len": 8.820000000000002,
   "first_frame": 2
  },
  {
@@ -54,9 +54,9 @@
   "scenes": [
    5
   ],
-  "t_in_main": 30.61,
-  "cut_from": 7.259999999999998,
-  "cut_len": 4.759999999999998,
+  "t_in_main": 32.17,
+  "cut_from": 8.82,
+  "cut_len": 5.390000000000001,
   "first_frame": 2
  },
  {
@@ -65,12 +65,11 @@
   "src": "source_lech.png",
   "scenes": [
    6,
-   7,
-   8
+   7
   ],
-  "t_in_main": 35.37,
-  "cut_from": 4.759999999999998,
-  "cut_len": 17.730000000000004,
+  "t_in_main": 37.56,
+  "cut_from": 5.390000000000001,
+  "cut_len": 11.399999999999999,
   "first_frame": 2
  },
  {
@@ -78,12 +77,12 @@
   "img": "loso",
   "src": "source_loso.png",
   "scenes": [
-   9,
-   10
+   8,
+   9
   ],
-  "t_in_main": 53.1,
-  "cut_from": 6.640000000000001,
-  "cut_len": 17.029999999999994,
+  "t_in_main": 48.96,
+  "cut_from": 6.950000000000003,
+  "cut_len": 17.339999999999996,
   "first_frame": 2
  },
  {
@@ -91,10 +90,10 @@
   "img": "ngu",
   "src": "source_ngu.png",
   "scenes": [
-   11
+   10
   ],
-  "t_in_main": 70.13,
-  "cut_from": 9.139999999999993,
+  "t_in_main": 66.3,
+  "cut_from": 9.449999999999996,
   "cut_len": 8.820000000000007,
   "first_frame": 2
  },
@@ -103,11 +102,11 @@
   "img": "tong",
   "src": "source_tong.png",
   "scenes": [
+   11,
    12,
-   13,
-   14
+   13
   ],
-  "t_in_main": 78.95,
+  "t_in_main": 75.12,
   "cut_from": 8.820000000000007,
   "cut_len": 28.72,
   "first_frame": 2

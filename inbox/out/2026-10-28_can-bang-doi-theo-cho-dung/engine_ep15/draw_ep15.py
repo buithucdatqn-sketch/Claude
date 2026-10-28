@@ -150,7 +150,7 @@ w = 9
 L["loso"] = dict(
     chup=poly([(860, 990), (1180, 640), (1460, 505), (1786, 545), (1786, 1000)], w, DASH(w), 1.5, 9),
     a_chup=arrow([(1380, 270), (1420, 400), (1440, 540)], w, DASH(w), 1.0, 10, head=55),
-    lab_chup=label("chụp lò sưởi giờ là/vật lớn nhất trong khung", (1010, 70), 78),
+    lab_chup=label("lò sưởi giờ là/vật lớn nhất trong khung", (1010, 70), 78),
     a_ngoai=arrow([(800, 740), (420, 760), (40, 770)], w, DASH(w), 1.0, 11, head=60),
     lab_ngoai=label("sofa và tranh sẫm/đã ra ngoài tầm nhìn", (60, 810), 78))
 # tong: ảnh 10 gốc, dải y 840-2300 của bản 2400 px. Cảnh 11: chụp từ cửa, từ sofa, từ bàn ăn; cảnh 12: lật ảnh như soi gương

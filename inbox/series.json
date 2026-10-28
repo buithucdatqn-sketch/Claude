@@ -542,5 +542,31 @@
   "trang_thai": "da_dung_video",
   "ghi_chu": "Chủ Trang yêu cầu 2026-10-28 chọn nội dung từ sổ tay AH+ Công thức chọn màu nội thất vừa tải lên kho. Ba lượt chấm độc lập. Lời mời cuối giữ 'dành cho thành viên' theo prompt lịch chạy (mâu thuẫn mục 0.6 điểm 6, chờ chủ Trang duyệt). Ảnh Pawson House chưa có giấy phép đăng công khai (sổ tay lưu hành nội bộ). Chủ Trang góp ý bản 3 'nội dung hơi phức tạp khó hiểu ngay': bản 5 bỏ phần tương phản, nghiên cứu Oberfeld & Hecht, kích thước phòng thí nghiệm; 214 từ, khoảng 57 giây; năm lượt chấm. Chủ Trang 2026-10-28 (sau bản 5): 'vẫn còn khá lủng củng vì lồng ghép nhiều ý… làm lại, bắt đầu bằng câu hỏi Vì sao nhà nhỏ thì người ta hay khuyên sơn trắng? … xoáy vào một ý'. Bản 7: một ý (độ sáng của màu), bỏ Pawson; đạt lượt chấm 7. Khung cuối: video sổ tay chủ Trang gửi, toàn màn hình. | Giai đoạn B 2026-10-28: giọng ElevenLabs 62,12 s; chủ Trang chỉnh lời ở 4 chỗ (dựng bằng cỡ thật; kết quả khảo sát… khi sơn màu; chứ không nhất thiết phải chọn màu trắng; màu có chỉ số độ sáng cao nhất; lời mời 'chọn màu kiến trúc nội thất… khi thiết kế… nha'), phụ đề sửa theo; -15,0 LUFS; video 64,2 s, khung cuối là video sổ tay.",
   "video": "inbox/out/2026-10-28_tuong-sang-phong-rong/reel_tuong-sang-phong-rong_final.mp4"
+ },
+ {
+  "tap": 15,
+  "slug": "can-bang-doi-theo-cho-dung",
+  "ngay": "2026-10-28",
+  "nguyen_ly": "Cân bằng thị giác đổi theo chỗ đứng (Kilmer & Kilmer 2014)",
+  "bai_kho": {
+   "duong_dan": "AH-Decode-Decor/bai-04-3-bai-hoc-can-bang-thi-giac-noi-that/bai-04.md",
+   "nhanh": "AH-Interior-notes",
+   "commit": "acfe39329e2d291c0828c519dc01a8227b673e04"
+  },
+  "y_bai": {
+   "muc": "Kiểm tra cân bằng từ những chỗ người sẽ đứng và ngồi, không chỉ từ một tấm ảnh",
+   "tom_tat": "Cân bằng đổi khi đi lại; chân giường thấy hai đèn, góc phòng còn một; sát lò sưởi thì sofa, tranh ra ngoài tầm nhìn; chụp từ cửa, sofa, bàn ăn rồi lật như soi gương"
+  },
+  "anh_kho": [
+   "AH-Decode-Decor/bai-04-3-bai-hoc-can-bang-thi-giac-noi-that/anh/goc/08-goc-dau-giuong-dung-lech.jpg (ảnh chính, nét mới)",
+   "AH-Decode-Decor/bai-04-3-bai-hoc-can-bang-thi-giac-noi-that/anh/goc/09-goc-sat-lo-suoi.jpg (nét mới)",
+   "AH-Decode-Decor/bai-04-3-bai-hoc-can-bang-thi-giac-noi-that/anh/07-diagram-hai-cho-dung.png",
+   "AH-Decode-Decor/bai-04-3-bai-hoc-can-bang-thi-giac-noi-that/anh/vi-tri-chup/08-vi-tri-chup.png",
+   "AH-Decode-Decor/bai-04-3-bai-hoc-can-bang-thi-giac-noi-that/anh/goc/04-goc-dau-giuong-doi-xung.jpg (dùng lại, nét mới)",
+   "AH-Decode-Decor/bai-04-3-bai-hoc-can-bang-thi-giac-noi-that/anh/goc/10-goc-anh-tong.jpg (dùng lại, nét mới)"
+  ],
+  "trang_thai": "cho_ghi_am",
+  "thu_muc": "inbox/out/2026-10-28_can-bang-doi-theo-cho-dung/",
+  "ghi_chu": "Làm lại từ đầu theo yêu cầu chủ Trang trong phiên (2026-10-28): bản trước của tập 15 (sổ tay chương 2, khong-gian-mo-ranh-gioi-tren-san) bỏ, chưa tính là đã dùng. Ba lượt chấm độc lập."
  }
 ]

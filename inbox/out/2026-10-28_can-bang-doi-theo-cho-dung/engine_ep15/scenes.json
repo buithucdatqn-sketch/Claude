@@ -25,23 +25,23 @@
  },
  {
   "blk": 3,
-  "t": "23.35–30.61s",
-  "head": "Phòng ngủ chính ở Palmeira, Lisbon",
-  "loi": "Ở phòng ngủ chính của căn hộ Palmeira tại Lisbon, giường được kê đối xứng giữa hai đèn thả giống nhau.",
-  "tts": "Ở phòng ngủ chính của căn hộ Pan-mây-ra tại Lít-bon, giường được kê đối xứng giữa hai đèn thả giống nhau.",
+  "t": "23.35–32.17s",
+  "head": "Đổi chỗ đứng trong phòng ngủ chính",
+  "loi": "Thử đổi chỗ đứng trong phòng ngủ chính của căn hộ Palmeira tại Lisbon, nơi giường được kê đối xứng giữa hai đèn thả giống nhau.",
+  "tts": "Thử đổi chỗ đứng trong phòng ngủ chính của căn hộ Pan-mây-ra tại Lít-bon, nơi giường được kê đối xứng giữa hai đèn thả giống nhau.",
   "part": "D"
  },
  {
   "blk": 3,
-  "t": "30.61–35.37s",
+  "t": "32.17–37.56s",
   "head": "Đứng ở chân giường, đúng trên trục",
-  "loi": "Đứng ở chân giường, đúng trên trục, mọi người thấy đủ hai đèn.",
-  "tts": "Đứng ở chân giường, đúng trên trục, mọi người thấy đủ hai đèn.",
+  "loi": "Đứng ở chân giường, đúng trên trục giữa giường, mọi người thấy đủ hai đèn.",
+  "tts": "Đứng ở chân giường, đúng trên trục giữa giường, mọi người thấy đủ hai đèn.",
   "part": "D"
  },
  {
   "blk": 3,
-  "t": "35.37–39.82s",
+  "t": "37.56–42.01s",
   "head": "Sang góc phòng, chỉ còn một đèn",
   "loi": "Bước sang một góc phòng thì chỉ còn thấy một chiếc đèn.",
   "tts": "Bước sang một góc phòng thì chỉ còn thấy một chiếc đèn.",
@@ -49,39 +49,31 @@
  },
  {
   "blk": 3,
-  "t": "39.82–46.46s",
-  "head": "Khung tranh lệch, đầu giường bị cắt",
-  "loi": "Từ góc ấy, khung tranh nằm lệch sang phải, còn tấm đầu giường dài chỉ còn thấy một đoạn.",
-  "tts": "Từ góc ấy, khung tranh nằm lệch sang phải, còn tấm đầu giường dài chỉ còn thấy một đoạn.",
-  "part": "D"
- },
- {
-  "blk": 3,
-  "t": "46.46–53.1s",
+  "t": "42.01–48.96s",
   "head": "Đối xứng chỉ hiện rõ ở một chỗ đứng",
-  "loi": "Nghĩa là cách kê đối xứng kỹ nhất trong nhà cũng chỉ hiện rõ khi đứng ở một chỗ.",
-  "tts": "Nghĩa là cách kê đối xứng kỹ nhất trong nhà cũng chỉ hiện rõ khi đứng ở một chỗ.",
+  "loi": "Nghĩa là cách kê đối xứng kỹ nhất trong căn hộ cũng chỉ hiện rõ khi đứng ở một chỗ.",
+  "tts": "Nghĩa là cách kê đối xứng kỹ nhất trong căn hộ cũng chỉ hiện rõ khi đứng ở một chỗ.",
   "part": "C"
  },
  {
   "blk": 3,
-  "t": "53.1–60.99s",
+  "t": "48.96–56.85s",
   "head": "Lại gần lò sưởi trong phòng khách",
-  "loi": "Phòng khách cũng vậy, khi đứng lại gần lò sưởi thì chiếc chụp lò sưởi hình nón thành món to nhất trước mắt.",
-  "tts": "Phòng khách cũng vậy, khi đứng lại gần lò sưởi thì chiếc chụp lò sưởi hình nón thành món to nhất trước mắt.",
+  "loi": "Phòng khách kê lệch cũng đổi theo chỗ đứng. Khi lại gần, chiếc lò sưởi hình nón thành món to nhất trước mắt.",
+  "tts": "Phòng khách kê lệch cũng đổi theo chỗ đứng. Khi lại gần, chiếc lò sưởi hình nón thành món to nhất trước mắt.",
   "part": "D"
  },
  {
   "blk": 3,
-  "t": "60.99–70.13s",
-  "head": "Món cân lại đã ra ngoài tầm nhìn",
-  "loi": "Còn bộ sofa và bức tranh sẫm ở phía bên kia, hai món cân lại chiếc lò sưởi, đã ra ngoài tầm nhìn từ chỗ đứng ấy.",
-  "tts": "Còn bộ sô-pha và bức tranh sẫm ở phía bên kia, hai món cân lại chiếc lò sưởi, đã ra ngoài tầm nhìn từ chỗ đứng ấy.",
+  "t": "56.85–66.3s",
+  "head": "Hai món giữ cân đã ra ngoài tầm nhìn",
+  "loi": "Còn bộ sofa và bức tranh sẫm ở phía bên kia, hai món giữ cân cho chiếc lò sưởi, đã ra ngoài tầm nhìn từ chỗ đứng ấy.",
+  "tts": "Còn bộ sô-pha và bức tranh sẫm ở phía bên kia, hai món giữ cân cho chiếc lò sưởi, đã ra ngoài tầm nhìn từ chỗ đứng ấy.",
   "part": "D"
  },
  {
   "blk": 4,
-  "t": "70.13–78.95s",
+  "t": "66.3–75.12s",
   "head": "Ảnh chỉ chắc cân ở chỗ chụp",
   "loi": "Một tấm ảnh cũng chỉ chụp từ một chỗ đứng, nên căn phòng trông cân trong ảnh mới chỉ chắc là cân ở đúng chỗ ấy.",
   "tts": "Một tấm ảnh cũng chỉ chụp từ một chỗ đứng, nên căn phòng trông cân trong ảnh mới chỉ chắc là cân ở đúng chỗ ấy.",
@@ -89,7 +81,7 @@
  },
  {
   "blk": 4,
-  "t": "78.95–90.59s",
+  "t": "75.12–86.76s",
   "head": "Chụp từ cửa, từ sofa, từ bàn ăn",
   "loi": "Muốn kiểm tra ở nhà mình, tụi mình gợi ý chụp căn phòng từ cửa ra vào, từ chỗ ngồi sofa và từ bàn ăn, rồi lật trái phải từng tấm ảnh như soi gương.",
   "tts": "Muốn kiểm tra ở nhà mình, tụi mình gợi ý chụp căn phòng từ cửa ra vào, từ chỗ ngồi sô-pha và từ bàn ăn, rồi lật trái phải từng tấm ảnh như soi gương.",
@@ -97,7 +89,7 @@
  },
  {
   "blk": 4,
-  "t": "90.59–99.1s",
+  "t": "86.76–95.27s",
   "head": "Lật ảnh để tìm chỗ thiếu món cân lại",
   "loi": "Tấm nào lật xong tự dưng thấy lệch hẳn về một bên thì ở chỗ đứng ấy, căn phòng đang thiếu một món cân lại.",
   "tts": "Tấm nào lật xong tự dưng thấy lệch hẳn về một bên thì ở chỗ đứng ấy, căn phòng đang thiếu một món cân lại.",
@@ -105,7 +97,7 @@
  },
  {
   "blk": 5,
-  "t": "99.1–106.67s",
+  "t": "95.27–102.84s",
   "head": "end",
   "loi": "Bài phân tích về cân bằng thị giác, từ sách của hai tác giả Kilmer, mọi người xem ở phần bình luận.",
   "tts": "Bài phân tích về cân bằng thị giác, từ sách của hai tác giả Kin-mơ, mọi người xem ở phần bình luận.",
