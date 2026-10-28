@@ -554,9 +554,9 @@ WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–9.45s", head="Vật ở gần to ra, vật ở xa nhỏ lại", vo="Người đi tới đâu, vật ở gần to ra, vật ở xa nhỏ lại, nên món nào nặng, món nào nhẹ trong mắt cũng đổi theo chỗ đứng.",
          cam=((395, 555), 0.6, (540, 890)), dark=False, dd=[], move="hold"),
-    dict(t="9.45–16.09s", head="Phòng ngủ chính ở Palmeira, Lisbon", vo="Phòng ngủ chính của căn hộ Palmeira ở Lisbon cho thấy cân bằng đổi theo chỗ đứng ra sao.",
+    dict(t="9.45–16.71s", head="Phòng ngủ chính ở Palmeira, Lisbon", vo="Ở phòng ngủ chính của căn hộ Palmeira tại Lisbon, giường được kê đối xứng giữa hai đèn thả giống nhau.",
          cam=((395, 555), 0.6, (540, 890)), dark=False, dd=[], move="pan_u"),
-    dict(t="16.09–16.59s", head="end", vo="",
+    dict(t="16.71–17.21s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

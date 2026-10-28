@@ -553,7 +553,7 @@ WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–6.95s", head="Cân trong ảnh, lệch khi bước vào", vo="Một căn phòng trông rất cân trong ảnh, vậy vì sao bước vào tận nơi, có khi lại thấy lệch?",
          cam=((800, 475), 0.98, (540, 890)), dark=False, dd=[], move="hold"),
-    dict(t="6.95–13.9s", head="Theo Kilmer & Kilmer (2014), cân bằng đổi khi ta đi lại", vo="Theo hai tác giả Kilmer, cân bằng của một căn phòng thay đổi khi người ta đi lại trong đó.",
+    dict(t="6.95–13.9s", head="Theo Kilmer & Kilmer (2014), cân bằng đổi khi người ta đi lại", vo="Theo hai tác giả Kilmer, cân bằng của một căn phòng thay đổi khi người ta đi lại trong đó.",
          cam=((800, 475), 0.98, (540, 890)), dark=False, dd=[], move="pan_r"),
     dict(t="13.9–14.4s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),

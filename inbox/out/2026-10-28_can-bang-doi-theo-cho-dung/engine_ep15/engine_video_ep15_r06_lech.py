@@ -552,13 +552,15 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.7s", head="Đứng ở chân giường, đúng trên trục", vo="Đứng ở chân giường, đúng trên trục, ta thấy hai đèn thả ở hai bên giường.",
+    dict(t="0–4.76s", head="Đứng ở chân giường, đúng trên trục", vo="Đứng ở chân giường, đúng trên trục, mọi người thấy đủ hai đèn.",
          cam=((893, 575), 0.92, (540, 890)), dark=True, dd=[], move="hold"),
-    dict(t="5.7–10.15s", head="Sang góc phòng, chỉ còn một đèn", vo="Bước sang một góc phòng thì chỉ còn thấy một chiếc đèn.",
+    dict(t="4.76–9.21s", head="Sang góc phòng, chỉ còn một đèn", vo="Bước sang một góc phòng thì chỉ còn thấy một chiếc đèn.",
          cam=((893, 575), 0.92, (540, 890)), dark=True, dd=['a_den', 'lab_den'], move="pan_l"),
-    dict(t="10.15–16.79s", head="Khung tranh lệch, đầu giường bị cắt", vo="Khung tranh lúc này nằm lệch sang phải, còn tấm đầu giường bị khung ảnh cắt mất một đầu.",
+    dict(t="9.21–15.85s", head="Khung tranh lệch, đầu giường bị cắt", vo="Từ góc ấy, khung tranh nằm lệch sang phải, còn tấm đầu giường dài chỉ còn thấy một đoạn.",
          cam=((893, 575), 0.92, (540, 890)), dark=True, dd=['tranh', 'a_tranh', 'lab_tranh', 'dau', 'lab_dau'], move="push"),
-    dict(t="16.79–17.29s", head="end", vo="",
+    dict(t="15.85–22.49s", head="Đối xứng chỉ hiện rõ ở một chỗ đứng", vo="Nghĩa là cách kê đối xứng kỹ nhất trong nhà cũng chỉ hiện rõ khi đứng ở một chỗ.",
+         cam=((893, 575), 0.92, (540, 890)), dark=True, dd=[], move="hold"),
+    dict(t="22.49–22.99s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

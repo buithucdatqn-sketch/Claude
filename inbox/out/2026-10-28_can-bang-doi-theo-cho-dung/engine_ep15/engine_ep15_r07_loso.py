@@ -551,13 +551,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.64s", head="Khung tranh lệch, đầu giường bị cắt", vo="Khung tranh lúc này nằm lệch sang phải, còn tấm đầu giường bị khung ảnh cắt mất một đầu.",
+    dict(t="0–6.64s", head="Đối xứng chỉ hiện rõ ở một chỗ đứng", vo="Nghĩa là cách kê đối xứng kỹ nhất trong nhà cũng chỉ hiện rõ khi đứng ở một chỗ.",
          cam=((893, 650), 0.8, (540, 890)), dark=True, dd=[], move="hold"),
-    dict(t="6.64–13.9s", head="Lại gần lò sưởi trong phòng khách", vo="Phòng khách cũng vậy, khi đứng lại gần lò sưởi thì chiếc chụp hình nón thành món to nhất trước mắt.",
+    dict(t="6.64–14.53s", head="Lại gần lò sưởi trong phòng khách", vo="Phòng khách cũng vậy, khi đứng lại gần lò sưởi thì chiếc chụp lò sưởi hình nón thành món to nhất trước mắt.",
          cam=((893, 650), 0.8, (540, 890)), dark=True, dd=['chup', 'a_chup', 'lab_chup'], move="pan_r"),
-    dict(t="13.9–21.48s", head="Đối trọng đã ra ngoài tầm nhìn", vo="Còn bộ sofa và bức tranh sẫm, vốn là đối trọng của nó ở phía bên kia, đã nằm ngoài tầm nhìn.",
+    dict(t="14.53–23.67s", head="Món cân lại đã ra ngoài tầm nhìn", vo="Còn bộ sofa và bức tranh sẫm ở phía bên kia, hai món cân lại chiếc lò sưởi, đã ra ngoài tầm nhìn từ chỗ đứng ấy.",
          cam=((893, 650), 0.8, (540, 890)), dark=True, dd=['a_ngoai', 'lab_ngoai'], move="hold"),
-    dict(t="21.48–21.98s", head="end", vo="",
+    dict(t="23.67–24.17s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
