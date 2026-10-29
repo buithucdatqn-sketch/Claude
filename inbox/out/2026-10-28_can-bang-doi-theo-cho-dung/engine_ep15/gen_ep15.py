@@ -58,7 +58,7 @@ SC = [
     dict(move="pan_u", part="D", blk=3, img="v08", head="Đổi chỗ đứng trong phòng ngủ chính", cam=STRIP(*CEN["v08"], 0.5, 862), free=True, dark=False, dd=[],
          vo="Thử đổi chỗ đứng trong phòng ngủ chính của căn hộ Palmeira tại Lisbon, nơi giường được kê đối xứng giữa hai đèn thả giống nhau.",
          tts="Thử đổi chỗ đứng trong phòng ngủ chính của căn hộ Pan-mây-ra tại Lít-bon, nơi giường được kê đối xứng giữa hai đèn thả giống nhau."),
-    dict(move="push", part="D", blk=3, img="ngub", head="Đứng ở chân giường, đúng trên trục", cam=STRIP(*CEN["ngub"], 1.0, 890), free=True, dark=True, dd=["truc", "den_t", "den_p", "lab_hai"],
+    dict(move="push", part="D", blk=3, img="ngub", head="Đứng ở chân giường, đúng trên trục", cam=STRIP(*CEN["ngub"], 0.92, 870), free=True, dark=True, dd=["truc", "den_t", "den_p", "lab_hai"],
          vo="Đứng ở chân giường, đúng trên trục giữa giường, mọi người thấy đủ hai đèn."),
     dict(move="pan_l", part="D", blk=3, img="lech", head="Sang góc phòng, chỉ còn một đèn", cam=STRIP(*CEN["lech"], 0.92, 890), free=True, dark=True, dd=["a_den", "lab_den"],
          vo="Bước sang một góc phòng thì chỉ còn thấy một chiếc đèn."),

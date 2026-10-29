@@ -553,9 +553,9 @@ OBJ = {}
 WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–7.04s", head="Đổi chỗ đứng trong phòng ngủ chính", vo="Thử đổi chỗ đứng trong phòng ngủ chính của căn hộ Palmeira tại Lisbon, nơi giường được kê đối xứng giữa hai đèn thả giống nhau.",
-         cam=((1200, 675), 1.0, (540, 890)), dark=False, dd=[], move="hold"),
+         cam=((1200, 675), 0.92, (540, 870)), dark=False, dd=[], move="hold"),
     dict(t="7.04–11.02s", head="Đứng ở chân giường, đúng trên trục", vo="Đứng ở chân giường, đúng trên trục giữa giường, mọi người thấy đủ hai đèn.",
-         cam=((1200, 675), 1.0, (540, 890)), dark=True, dd=['truc', 'den_t', 'den_p', 'lab_hai'], move="push"),
+         cam=((1200, 675), 0.92, (540, 870)), dark=True, dd=['truc', 'den_t', 'den_p', 'lab_hai'], move="push"),
     dict(t="11.02–11.52s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]

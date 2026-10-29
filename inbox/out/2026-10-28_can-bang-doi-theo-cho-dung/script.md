@@ -86,3 +86,5 @@ Kém hơn tập 7: chưa có cảnh phóng kín ảnh (dải ảnh 08, 09 chỉ 
 | 11 | 53.04–61.35s | Chụp từ cửa, từ sofa, từ bàn ăn | Muốn kiểm tra ở nhà mình, tụi mình gợi ý chụp căn phòng từ cửa ra vào, từ chỗ ngồi sofa và từ bàn ăn, rồi lật trái phải từng tấm ảnh như soi gương. |
 | 12 | 61.35–66.83s | Lật ảnh để tìm chỗ thiếu món cân lại | Tấm nào lật xong tự dưng thấy lệch hẳn về một bên thì ở chỗ đứng ấy, căn phòng đang thiếu một món cân lại. |
 | 13 | 66.83–72.4s | (khung cuối) | Bài phân tích về cân bằng thị giác, từ sách của hai tác giả Kilmer, mọi người xem ở phần bình luận nhá. |
+
+Video: `reel_can-bang-doi-theo-cho-dung_final.mp4`, 73,37 giây (giọng 71,81 giây + 1,56 giây), 1080×1920 H.264, AAC 48 kHz, đo lại trên file cuối −14,6 LUFS, đỉnh −1,6 dBFS. Kiểm 26 khung kèm khung cắt 4:5 (mọi điểm đổi cảnh, lúc nét đang vẽ, khung cuối): header, tiêu đề, phụ đề còn đủ trong khung bảng tin; nét lộ dần đúng cảnh. Sửa một lỗi sau lượt kiểm: lúc hoà tan vào cảnh 5, phụ đề ba dòng của cảnh 4 đè lên thẻ ảnh nên hiện dải tối; thu nhỏ thẻ ảnh cảnh 5 (zoom 0,92), dựng lại đoạn đó.
