@@ -552,13 +552,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–4.76s", head="Ánh sáng trời ngả xanh: màu be xám đi", vo="Ngày trời quang, ánh sáng ấy ngả xanh, làm màu be xám đi.",
+    dict(t="0–3.41s", head="Ánh sáng trời ngả xanh: màu be xám đi", vo="Ngày trời quang, ánh sáng ấy ngả xanh, làm màu be xám đi.",
          cam=((600, 900), 0.6, (540, 900)), dark=False, dd=[], move="hold"),
-    dict(t="4.76–9.52s", head="Nhà Gilardi, Thành phố Mexico · Luis Barragán (1975–1977)", vo="Kiến trúc sư Luis Barragán thì dùng màu để đổi chính ánh sáng.",
+    dict(t="3.41–6.91s", head="Nhà Gilardi, Thành phố Mexico · Luis Barragán (1975–1977)", vo="Kiến trúc sư Luis Barragán thì dùng màu để đổi chính ánh sáng.",
          cam=((600, 900), 0.6, (540, 900)), dark=False, dd=[], move="push"),
-    dict(t="9.52–15.85s", head="Nhà Gilardi, Thành phố Mexico · Luis Barragán (1975–1977)", vo="Ở nhà Gilardi tại Thành phố Mexico, hành lang ra hồ bơi sơn vàng cả tường lẫn trần,",
+    dict(t="6.91–11.78s", head="Nhà Gilardi, Thành phố Mexico · Luis Barragán (1975–1977)", vo="Ở nhà Gilardi tại Thành phố Mexico, hành lang ra hồ bơi sơn vàng cả tường lẫn trần,",
          cam=((600, 900), 0.6, (540, 900)), dark=False, dd=['tran', 'lab_tran', 'tuong', 'lab_tuong'], move="hold"),
-    dict(t="15.85–16.35s", head="end", vo="",
+    dict(t="11.78–12.28s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

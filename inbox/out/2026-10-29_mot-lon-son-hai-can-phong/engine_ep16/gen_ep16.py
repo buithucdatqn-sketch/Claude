@@ -61,7 +61,7 @@ SC = [
     dict(move="push", part="C", blk=4, img="hf", head="Nắng cam gặp màu ấm", cam=STRIP(450, 450, 0.6, 900), free=True, dark=True, dd=["m1", "m2", "lab_m"],
          vo="Nắng chiều vốn ngả cam, lại gặp màu be cũng ấm, nên phòng hướng Tây càng cam hơn."),
     dict(move="pan_l", part="C", blk=4, img="d41", head="Phòng Bắc: phần lớn chỉ có ánh sáng trời", cam=STRIP(432, 432, 0.6, 900), free=True, dark=False, dd=[],
-         vo="Phòng hướng Bắc thì phần lớn thời gian khuất nắng, chỉ nhận ánh sáng trời."),
+         vo="Hướng Bắc thì phần lớn thời gian khuất nắng, chỉ nhận ánh sáng trời."),
     dict(move="hold", part="C", blk=4, img="d41", head="Ánh sáng trời ngả xanh: màu be xám đi", cam=STRIP(432, 432, 0.6, 900), free=True, dark=False, dd=[],
          vo="Ngày trời quang, ánh sáng ấy ngả xanh, làm màu be xám đi."),
     dict(move="push", part="D", blk=5, img="hanh", head="Nhà Gilardi, Thành phố Mexico · Luis Barragán (1975–1977)", cam=STRIP(600, 900, 0.6, 900), free=True, dark=False, dd=[],
@@ -75,15 +75,17 @@ SC = [
     dict(move="pull", part="D", blk=5, img="hanh", head="Nhìn từ sảnh: hành lang chìm trong ánh vàng", cam=STRIP(600, 900, 0.6, 900), free=True, dark=False, dd=[],
          vo="Nhìn từ sảnh, cả hành lang chìm trong ánh vàng."),
     dict(move="push", part="F", blk=6, img="d48", head="Phòng Tây: màu mát pha xám", cam=STRIP(324, 354, 0.6, 900), free=True, dark=False, dd=[],
-         vo="Ở nhà mình thì chọn màu ngược tông với ánh sáng. Phòng hướng Tây chọn màu mát pha xám,"),
+         vo="Ở nhà mình thì chọn màu ngược với ánh sáng. Phòng hướng Tây chọn màu mát pha xám,"),
     dict(move="hold", part="F", blk=6, img="d48", head="Phòng khuất nắng: màu đất ấm, đủ rực", cam=STRIP(324, 354, 0.6, 900), free=True, dark=False, dd=[],
          vo="còn phòng khuất nắng chọn màu đất ấm, đủ rực để không bị xám đi."),
-    dict(move="pull", part="H", blk=7, img="hf", head="Lon sơn không đổi, ánh sáng mới đổi", cam=STRIP(450, 450, 0.6, 900), free=True, dark=False, dd=[],
-         vo="Vậy lon sơn không đổi, ánh sáng mới đổi."),
+    dict(move="pull", part="H", blk=7, img="hf", head="Lon sơn không sai màu", cam=STRIP(450, 450, 0.6, 900), free=True, dark=False, dd=[],
+         vo="Vậy lon sơn không bị sai màu,"),
+    dict(move="hold", part="H", blk=7, img="hf", head="Lúc thiết kế chưa để ý ánh sáng", cam=STRIP(450, 450, 0.6, 900), free=True, dark=False, dd=[],
+         vo="mà do lúc thiết kế chưa để ý đến ánh sáng tác động vào mặt tường."),
     dict(move="pan_r", part="F", blk=7, img="d412", head="Thử mảng lớn trên tường thật, đúng giờ", cam=STRIP(324, 327, 0.6, 900), free=True, dark=False, dd=[],
          vo="Nên trước khi sơn, mọi người thử một mảng lớn trên tường thật, vào đúng giờ hay dùng phòng."),
     dict(move="push", part="I", blk=7, img="ebook", head="end", cam="END", dark=False, vo="", dd=[],
-         say="Bảng màu theo bốn nhóm hướng cửa ở Việt Nam có trong sổ tay cho thành viên, mọi người xem ở phần bình luận nha."),
+         say="Bảng màu theo bốn nhóm hướng cửa ở Việt Nam có trong sổ tay Công thức chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha."),
 ]
 
 DOODLE = r'''
@@ -125,7 +127,7 @@ def dur(s):
 
 
 # Giai đoạn B: điền mốc cảnh theo ghi âm (mỗi cảnh bắt đầu khoảng 0,35–0,4 giây trước câu của nó). Giai đoạn A để trống.
-T_AUDIO = []
+T_AUDIO = [0, 4.02, 7.06, 10.45, 13.82, 17.42, 22.1, 25.53, 28.94, 32.44, 37.31, 39.58, 42.22, 46.71, 50.1, 52.04, 55.26, 59.56, 66.7]
 
 
 def times():

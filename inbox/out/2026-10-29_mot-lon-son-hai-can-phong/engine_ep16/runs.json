@@ -6,9 +6,9 @@
   "scenes": [
    1
   ],
-  "t_in_main": 0.0,
+  "t_in_main": 0,
   "cut_from": 0.0,
-  "cut_len": 5.08,
+  "cut_len": 4.02,
   "first_frame": 1
  },
  {
@@ -19,9 +19,9 @@
    2,
    3
   ],
-  "t_in_main": 5.08,
-  "cut_from": 5.08,
-  "cut_len": 8.59,
+  "t_in_main": 4.02,
+  "cut_from": 4.02,
+  "cut_len": 6.43,
   "first_frame": 2
  },
  {
@@ -32,9 +32,9 @@
    4,
    5
   ],
-  "t_in_main": 13.67,
-  "cut_from": 4.140000000000001,
-  "cut_len": 10.459999999999999,
+  "t_in_main": 10.45,
+  "cut_from": 3.3899999999999997,
+  "cut_len": 6.970000000000003,
   "first_frame": 2
  },
  {
@@ -44,9 +44,9 @@
   "scenes": [
    6
   ],
-  "t_in_main": 24.13,
-  "cut_from": 5.699999999999999,
-  "cut_len": 6.32,
+  "t_in_main": 17.42,
+  "cut_from": 3.6000000000000014,
+  "cut_len": 4.68,
   "first_frame": 2
  },
  {
@@ -57,9 +57,9 @@
    7,
    8
   ],
-  "t_in_main": 30.45,
-  "cut_from": 6.32,
-  "cut_len": 10.150000000000002,
+  "t_in_main": 22.1,
+  "cut_from": 4.68,
+  "cut_len": 6.84,
   "first_frame": 2
  },
  {
@@ -70,9 +70,9 @@
    9,
    10
   ],
-  "t_in_main": 40.6,
-  "cut_from": 4.759999999999998,
-  "cut_len": 11.089999999999996,
+  "t_in_main": 28.94,
+  "cut_from": 3.41,
+  "cut_len": 8.370000000000001,
   "first_frame": 2
  },
  {
@@ -82,9 +82,9 @@
   "scenes": [
    11
   ],
-  "t_in_main": 51.69,
-  "cut_from": 6.329999999999998,
-  "cut_len": 3.8300000000000054,
+  "t_in_main": 37.31,
+  "cut_from": 4.8700000000000045,
+  "cut_len": 2.269999999999996,
   "first_frame": 2
  },
  {
@@ -94,9 +94,9 @@
   "scenes": [
    12
   ],
-  "t_in_main": 55.52,
-  "cut_from": 3.8300000000000054,
-  "cut_len": 3.8299999999999983,
+  "t_in_main": 39.58,
+  "cut_from": 2.269999999999996,
+  "cut_len": 2.6400000000000006,
   "first_frame": 2
  },
  {
@@ -107,9 +107,9 @@
    13,
    14
   ],
-  "t_in_main": 59.35,
-  "cut_from": 3.8299999999999983,
-  "cut_len": 12.029999999999994,
+  "t_in_main": 42.22,
+  "cut_from": 2.6400000000000006,
+  "cut_len": 7.880000000000003,
   "first_frame": 2
  },
  {
@@ -117,11 +117,12 @@
   "img": "hf",
   "src": "source_hf.png",
   "scenes": [
-   15
+   15,
+   16
   ],
-  "t_in_main": 71.38,
-  "cut_from": 5.390000000000001,
-  "cut_len": 3.510000000000005,
+  "t_in_main": 50.1,
+  "cut_from": 3.3900000000000006,
+  "cut_len": 5.159999999999997,
   "first_frame": 2
  },
  {
@@ -129,11 +130,11 @@
   "img": "d412",
   "src": "source_d412.png",
   "scenes": [
-   16
+   17
   ],
-  "t_in_main": 74.89,
-  "cut_from": 3.510000000000005,
-  "cut_len": 6.640000000000001,
+  "t_in_main": 55.26,
+  "cut_from": 3.219999999999999,
+  "cut_len": 4.300000000000004,
   "first_frame": 2
  },
  {
@@ -141,11 +142,11 @@
   "img": "ebook",
   "src": "source_ebook.png",
   "scenes": [
-   17
+   18
   ],
-  "t_in_main": 81.53,
-  "cut_from": 6.640000000000001,
-  "cut_len": 9.510000000000005,
+  "t_in_main": 59.56,
+  "cut_from": 4.300000000000004,
+  "cut_len": 8.14,
   "first_frame": 2
  }
 ]

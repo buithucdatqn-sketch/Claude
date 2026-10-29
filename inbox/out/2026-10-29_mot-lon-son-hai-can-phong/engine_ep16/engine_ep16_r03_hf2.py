@@ -551,13 +551,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–4.14s", head="Phòng Bắc trời quang: xám đi", vo="còn ở phòng ngủ hướng Bắc lại xám, thiếu sức sống.",
+    dict(t="0–3.39s", head="Phòng Bắc trời quang: xám đi", vo="còn ở phòng ngủ hướng Bắc lại xám, thiếu sức sống.",
          cam=((450, 450), 0.6, (540, 900)), dark=False, dd=[], move="hold"),
-    dict(t="4.14–8.9s", head="D. H. Foster (2011): tường không có một màu cố định", vo="Theo nhà nghiên cứu Foster, bức tường không có một màu cố định,",
+    dict(t="3.39–6.76s", head="D. H. Foster (2011): tường không có một màu cố định", vo="Theo nhà nghiên cứu Foster, bức tường không có một màu cố định,",
          cam=((450, 450), 0.6, (540, 900)), dark=True, dd=['v_nang', 'lab_nang'], move="pull"),
-    dict(t="8.9–14.6s", head="Màu mình thấy: lớp sơn và ánh sáng", vo="vì màu mình thấy tùy vào cả lớp sơn lẫn ánh sáng chiếu vào lúc đó.",
+    dict(t="6.76–10.36s", head="Màu mình thấy: lớp sơn và ánh sáng", vo="vì màu mình thấy tùy vào cả lớp sơn lẫn ánh sáng chiếu vào lúc đó.",
          cam=((450, 450), 0.6, (540, 900)), dark=True, dd=['v_xam', 'lab_xam'], move="hold"),
-    dict(t="14.6–15.1s", head="end", vo="",
+    dict(t="10.36–10.86s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

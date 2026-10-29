@@ -86,3 +86,34 @@ Ba điều người xem học được: (1) tường không có một màu cố 
 - Nguồn trên màn hình: "D. H. Foster (2011)" ở cảnh 4; tên công trình, kiến trúc sư, năm ở cảnh 9–10; credit ảnh và hình vẽ dưới mỗi thẻ.
 - Giọng: "mọi người", "mình", "nhà mình"; không "bạn", "anh em"; không dùng "hệ thống", "yếu tố", "giải pháp", "cấu trúc", "trật tự", "logic", "mảnh ghép".
 - Bản đọc: không chữ số, không tiếng Anh, không ký hiệu; tên nước ngoài đã phiên âm.
+
+
+## Giai đoạn B (2026-10-29): ghép giọng chủ Trang
+- File giọng: `audio/mot-lon-son-hai-can-phong.mp3` (ElevenLabs, giọng Tony Hoang, 65,57 giây). Xử lý: lọc dưới 80 Hz, `afftdn` nhẹ, chặn đỉnh, `loudnorm` hai lượt tuyến tính → `audio/mot-lon-son-hai-can-phong_xu-ly.wav`; đo `ebur128`: −14,5 LUFS, đỉnh −1,5 dBFS, 48 kHz.
+- Nhận dạng lời: sherpa-onnx, mô hình `sherpa-onnx-zipformer-vi-2025-04-20`, cắt theo quãng nghỉ (silencedetect −35 dB / 0,25 giây, 23 quãng), lấy mốc từng chữ. Chủ Trang chỉnh lời khi thu ở bốn chỗ, phụ đề và chữ khung cuối sửa theo đúng lời thu:
+  1. "Phòng hướng Bắc thì…" → "Hướng Bắc thì phần lớn thời gian khuất nắng…";
+  2. "chọn màu ngược tông với ánh sáng" → "chọn màu ngược với ánh sáng";
+  3. câu chốt "Vậy lon sơn không đổi, ánh sáng mới đổi." → "Vậy lon sơn không bị sai màu, mà do lúc thiết kế chưa để ý đến ánh sáng tác động vào mặt tường." (khớp tr. 42 sổ tay, tách hai trang phụ đề);
+  4. lời mời → "…có trong sổ tay Công thức chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha".
+- Mốc cảnh `T_AUDIO`: mỗi cảnh bắt đầu khoảng 0,37 giây trước câu của nó, đều rơi vào quãng nghỉ (không cần chia theo mốc chữ). Khung cuối 59,56–66,7 giây, video sổ tay toàn màn hình.
+
+| # | Mốc (giây) | Tiêu đề | Phụ đề theo ghi âm |
+|---|---|---|---|
+| 1 | 0–4.02s | Một lon sơn, hai căn phòng | Cùng một lon sơn, sao phòng này ngả cam, phòng kia lại xám xịt? |
+| 2 | 4.02–7.06s | Phòng Tây cuối chiều: ngả cam | Màu be ở phòng khách hướng Tây, chiều xuống là ngả cam, |
+| 3 | 7.06–10.45s | Phòng Bắc trời quang: xám đi | còn ở phòng ngủ hướng Bắc lại xám, thiếu sức sống. |
+| 4 | 10.45–13.82s | D. H. Foster (2011): tường không có một màu cố định | Theo nhà nghiên cứu Foster, bức tường không có một màu cố định, |
+| 5 | 13.82–17.42s | Màu mình thấy: lớp sơn và ánh sáng | vì màu mình thấy tùy vào cả lớp sơn lẫn ánh sáng chiếu vào lúc đó. |
+| 6 | 17.42–22.1s | Nắng cam gặp màu ấm | Nắng chiều vốn ngả cam, lại gặp màu be cũng ấm, nên phòng hướng Tây càng cam hơn. |
+| 7 | 22.1–25.53s | Phòng Bắc: phần lớn chỉ có ánh sáng trời | Hướng Bắc thì phần lớn thời gian khuất nắng, chỉ nhận ánh sáng trời. |
+| 8 | 25.53–28.94s | Ánh sáng trời ngả xanh: màu be xám đi | Ngày trời quang, ánh sáng ấy ngả xanh, làm màu be xám đi. |
+| 9 | 28.94–32.44s | Nhà Gilardi, Thành phố Mexico · Luis Barragán (1975–1977) | Kiến trúc sư Luis Barragán thì dùng màu để đổi chính ánh sáng. |
+| 10 | 32.44–37.31s | Nhà Gilardi, Thành phố Mexico · Luis Barragán (1975–1977) | Ở nhà Gilardi tại Thành phố Mexico, hành lang ra hồ bơi sơn vàng cả tường lẫn trần, |
+| 11 | 37.31–39.58s | Ô kính trên tường cũng sơn vàng | và cả những ô kính trên tường cũng sơn vàng. |
+| 12 | 39.58–42.22s | Nhìn từ sảnh: hành lang chìm trong ánh vàng | Nhìn từ sảnh, cả hành lang chìm trong ánh vàng. |
+| 13 | 42.22–46.71s | Phòng Tây: màu mát pha xám | Ở nhà mình thì chọn màu ngược với ánh sáng. Phòng hướng Tây chọn màu mát pha xám, |
+| 14 | 46.71–50.1s | Phòng khuất nắng: màu đất ấm, đủ rực | còn phòng khuất nắng chọn màu đất ấm, đủ rực để không bị xám đi. |
+| 15 | 50.1–52.04s | Lon sơn không sai màu | Vậy lon sơn không bị sai màu, |
+| 16 | 52.04–55.26s | Lúc thiết kế chưa để ý ánh sáng | mà do lúc thiết kế chưa để ý đến ánh sáng tác động vào mặt tường. |
+| 17 | 55.26–59.56s | Thử mảng lớn trên tường thật, đúng giờ | Nên trước khi sơn, mọi người thử một mảng lớn trên tường thật, vào đúng giờ hay dùng phòng. |
+| 18 | 59.56–66.7s | end | Bảng màu theo bốn nhóm hướng cửa ở Việt Nam có trong sổ tay Công thức chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha. |

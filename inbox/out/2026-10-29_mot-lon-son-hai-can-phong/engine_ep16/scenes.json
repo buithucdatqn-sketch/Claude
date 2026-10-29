@@ -1,7 +1,7 @@
 [
  {
   "blk": 1,
-  "t": "0–5.08s",
+  "t": "0–4.02s",
   "head": "Một lon sơn, hai căn phòng",
   "loi": "Cùng một lon sơn, sao phòng này ngả cam, phòng kia lại xám xịt?",
   "tts": "Cùng một lon sơn, sao phòng này ngả cam, phòng kia lại xám xịt?",
@@ -9,7 +9,7 @@
  },
  {
   "blk": 2,
-  "t": "5.08–9.53s",
+  "t": "4.02–7.06s",
   "head": "Phòng Tây cuối chiều: ngả cam",
   "loi": "Màu be ở phòng khách hướng Tây, chiều xuống là ngả cam,",
   "tts": "Màu be ở phòng khách hướng Tây, chiều xuống là ngả cam,",
@@ -17,7 +17,7 @@
  },
  {
   "blk": 2,
-  "t": "9.53–13.67s",
+  "t": "7.06–10.45s",
   "head": "Phòng Bắc trời quang: xám đi",
   "loi": "còn ở phòng ngủ hướng Bắc lại xám, thiếu sức sống.",
   "tts": "còn ở phòng ngủ hướng Bắc lại xám, thiếu sức sống.",
@@ -25,7 +25,7 @@
  },
  {
   "blk": 3,
-  "t": "13.67–18.43s",
+  "t": "10.45–13.82s",
   "head": "D. H. Foster (2011): tường không có một màu cố định",
   "loi": "Theo nhà nghiên cứu Foster, bức tường không có một màu cố định,",
   "tts": "Theo nhà nghiên cứu Phốt-xtơ, bức tường không có một màu cố định,",
@@ -33,7 +33,7 @@
  },
  {
   "blk": 3,
-  "t": "18.43–24.13s",
+  "t": "13.82–17.42s",
   "head": "Màu mình thấy: lớp sơn và ánh sáng",
   "loi": "vì màu mình thấy tùy vào cả lớp sơn lẫn ánh sáng chiếu vào lúc đó.",
   "tts": "vì màu mình thấy tùy vào cả lớp sơn lẫn ánh sáng chiếu vào lúc đó.",
@@ -41,7 +41,7 @@
  },
  {
   "blk": 4,
-  "t": "24.13–30.45s",
+  "t": "17.42–22.1s",
   "head": "Nắng cam gặp màu ấm",
   "loi": "Nắng chiều vốn ngả cam, lại gặp màu be cũng ấm, nên phòng hướng Tây càng cam hơn.",
   "tts": "Nắng chiều vốn ngả cam, lại gặp màu be cũng ấm, nên phòng hướng Tây càng cam hơn.",
@@ -49,15 +49,15 @@
  },
  {
   "blk": 4,
-  "t": "30.45–35.84s",
+  "t": "22.1–25.53s",
   "head": "Phòng Bắc: phần lớn chỉ có ánh sáng trời",
-  "loi": "Phòng hướng Bắc thì phần lớn thời gian khuất nắng, chỉ nhận ánh sáng trời.",
-  "tts": "Phòng hướng Bắc thì phần lớn thời gian khuất nắng, chỉ nhận ánh sáng trời.",
+  "loi": "Hướng Bắc thì phần lớn thời gian khuất nắng, chỉ nhận ánh sáng trời.",
+  "tts": "Hướng Bắc thì phần lớn thời gian khuất nắng, chỉ nhận ánh sáng trời.",
   "part": "C"
  },
  {
   "blk": 4,
-  "t": "35.84–40.6s",
+  "t": "25.53–28.94s",
   "head": "Ánh sáng trời ngả xanh: màu be xám đi",
   "loi": "Ngày trời quang, ánh sáng ấy ngả xanh, làm màu be xám đi.",
   "tts": "Ngày trời quang, ánh sáng ấy ngả xanh, làm màu be xám đi.",
@@ -65,7 +65,7 @@
  },
  {
   "blk": 5,
-  "t": "40.6–45.36s",
+  "t": "28.94–32.44s",
   "head": "Nhà Gilardi, Thành phố Mexico · Luis Barragán (1975–1977)",
   "loi": "Kiến trúc sư Luis Barragán thì dùng màu để đổi chính ánh sáng.",
   "tts": "Kiến trúc sư Lu-ít Ba-ra-gan thì dùng màu để đổi chính ánh sáng.",
@@ -73,7 +73,7 @@
  },
  {
   "blk": 5,
-  "t": "45.36–51.69s",
+  "t": "32.44–37.31s",
   "head": "Nhà Gilardi, Thành phố Mexico · Luis Barragán (1975–1977)",
   "loi": "Ở nhà Gilardi tại Thành phố Mexico, hành lang ra hồ bơi sơn vàng cả tường lẫn trần,",
   "tts": "Ở nhà Hi-lác-đi tại Thành phố Mê-hi-cô, hành lang ra hồ bơi sơn vàng cả tường lẫn trần,",
@@ -81,7 +81,7 @@
  },
  {
   "blk": 5,
-  "t": "51.69–55.52s",
+  "t": "37.31–39.58s",
   "head": "Ô kính trên tường cũng sơn vàng",
   "loi": "và cả những ô kính trên tường cũng sơn vàng.",
   "tts": "và cả những ô kính trên tường cũng sơn vàng.",
@@ -89,7 +89,7 @@
  },
  {
   "blk": 5,
-  "t": "55.52–59.35s",
+  "t": "39.58–42.22s",
   "head": "Nhìn từ sảnh: hành lang chìm trong ánh vàng",
   "loi": "Nhìn từ sảnh, cả hành lang chìm trong ánh vàng.",
   "tts": "Nhìn từ sảnh, cả hành lang chìm trong ánh vàng.",
@@ -97,15 +97,15 @@
  },
  {
   "blk": 6,
-  "t": "59.35–65.99s",
+  "t": "42.22–46.71s",
   "head": "Phòng Tây: màu mát pha xám",
-  "loi": "Ở nhà mình thì chọn màu ngược tông với ánh sáng. Phòng hướng Tây chọn màu mát pha xám,",
-  "tts": "Ở nhà mình thì chọn màu ngược tông với ánh sáng. Phòng hướng Tây chọn màu mát pha xám,",
+  "loi": "Ở nhà mình thì chọn màu ngược với ánh sáng. Phòng hướng Tây chọn màu mát pha xám,",
+  "tts": "Ở nhà mình thì chọn màu ngược với ánh sáng. Phòng hướng Tây chọn màu mát pha xám,",
   "part": "F"
  },
  {
   "blk": 6,
-  "t": "65.99–71.38s",
+  "t": "46.71–50.1s",
   "head": "Phòng khuất nắng: màu đất ấm, đủ rực",
   "loi": "còn phòng khuất nắng chọn màu đất ấm, đủ rực để không bị xám đi.",
   "tts": "còn phòng khuất nắng chọn màu đất ấm, đủ rực để không bị xám đi.",
@@ -113,15 +113,23 @@
  },
  {
   "blk": 7,
-  "t": "71.38–74.89s",
-  "head": "Lon sơn không đổi, ánh sáng mới đổi",
-  "loi": "Vậy lon sơn không đổi, ánh sáng mới đổi.",
-  "tts": "Vậy lon sơn không đổi, ánh sáng mới đổi.",
+  "t": "50.1–52.04s",
+  "head": "Lon sơn không sai màu",
+  "loi": "Vậy lon sơn không bị sai màu,",
+  "tts": "Vậy lon sơn không bị sai màu,",
   "part": "H"
  },
  {
   "blk": 7,
-  "t": "74.89–81.53s",
+  "t": "52.04–55.26s",
+  "head": "Lúc thiết kế chưa để ý ánh sáng",
+  "loi": "mà do lúc thiết kế chưa để ý đến ánh sáng tác động vào mặt tường.",
+  "tts": "mà do lúc thiết kế chưa để ý đến ánh sáng tác động vào mặt tường.",
+  "part": "H"
+ },
+ {
+  "blk": 7,
+  "t": "55.26–59.56s",
   "head": "Thử mảng lớn trên tường thật, đúng giờ",
   "loi": "Nên trước khi sơn, mọi người thử một mảng lớn trên tường thật, vào đúng giờ hay dùng phòng.",
   "tts": "Nên trước khi sơn, mọi người thử một mảng lớn trên tường thật, vào đúng giờ hay dùng phòng.",
@@ -129,10 +137,10 @@
  },
  {
   "blk": 7,
-  "t": "81.53–90.04s",
+  "t": "59.56–66.7s",
   "head": "end",
-  "loi": "Bảng màu theo bốn nhóm hướng cửa ở Việt Nam có trong sổ tay cho thành viên, mọi người xem ở phần bình luận nha.",
-  "tts": "Bảng màu theo bốn nhóm hướng cửa ở Việt Nam có trong sổ tay cho thành viên, mọi người xem ở phần bình luận nha.",
+  "loi": "Bảng màu theo bốn nhóm hướng cửa ở Việt Nam có trong sổ tay Công thức chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha.",
+  "tts": "Bảng màu theo bốn nhóm hướng cửa ở Việt Nam có trong sổ tay Công thức chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha.",
   "part": "I"
  }
 ]
