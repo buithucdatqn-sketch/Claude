@@ -1,0 +1,151 @@
+[
+ {
+  "tag": "r01_hf",
+  "img": "hf",
+  "src": "source_hf.png",
+  "scenes": [
+   1
+  ],
+  "t_in_main": 0.0,
+  "cut_from": 0.0,
+  "cut_len": 5.08,
+  "first_frame": 1
+ },
+ {
+  "tag": "r02_d41",
+  "img": "d41",
+  "src": "source_d41.png",
+  "scenes": [
+   2,
+   3
+  ],
+  "t_in_main": 5.08,
+  "cut_from": 5.08,
+  "cut_len": 8.59,
+  "first_frame": 2
+ },
+ {
+  "tag": "r03_hf2",
+  "img": "hf2",
+  "src": "source_hf2.png",
+  "scenes": [
+   4,
+   5
+  ],
+  "t_in_main": 13.67,
+  "cut_from": 4.140000000000001,
+  "cut_len": 10.459999999999999,
+  "first_frame": 2
+ },
+ {
+  "tag": "r04_hf",
+  "img": "hf",
+  "src": "source_hf.png",
+  "scenes": [
+   6
+  ],
+  "t_in_main": 24.13,
+  "cut_from": 5.699999999999999,
+  "cut_len": 6.32,
+  "first_frame": 2
+ },
+ {
+  "tag": "r05_d41",
+  "img": "d41",
+  "src": "source_d41.png",
+  "scenes": [
+   7,
+   8
+  ],
+  "t_in_main": 30.45,
+  "cut_from": 6.32,
+  "cut_len": 10.150000000000002,
+  "first_frame": 2
+ },
+ {
+  "tag": "r06_hanh",
+  "img": "hanh",
+  "src": "source_hanh.png",
+  "scenes": [
+   9,
+   10
+  ],
+  "t_in_main": 40.6,
+  "cut_from": 4.759999999999998,
+  "cut_len": 11.089999999999996,
+  "first_frame": 2
+ },
+ {
+  "tag": "r07_khe",
+  "img": "khe",
+  "src": "source_khe.png",
+  "scenes": [
+   11
+  ],
+  "t_in_main": 51.69,
+  "cut_from": 6.329999999999998,
+  "cut_len": 3.8300000000000054,
+  "first_frame": 2
+ },
+ {
+  "tag": "r08_hanh",
+  "img": "hanh",
+  "src": "source_hanh.png",
+  "scenes": [
+   12
+  ],
+  "t_in_main": 55.52,
+  "cut_from": 3.8300000000000054,
+  "cut_len": 3.8299999999999983,
+  "first_frame": 2
+ },
+ {
+  "tag": "r09_d48",
+  "img": "d48",
+  "src": "source_d48.png",
+  "scenes": [
+   13,
+   14
+  ],
+  "t_in_main": 59.35,
+  "cut_from": 3.8299999999999983,
+  "cut_len": 12.029999999999994,
+  "first_frame": 2
+ },
+ {
+  "tag": "r10_hf",
+  "img": "hf",
+  "src": "source_hf.png",
+  "scenes": [
+   15
+  ],
+  "t_in_main": 71.38,
+  "cut_from": 5.390000000000001,
+  "cut_len": 3.510000000000005,
+  "first_frame": 2
+ },
+ {
+  "tag": "r11_d412",
+  "img": "d412",
+  "src": "source_d412.png",
+  "scenes": [
+   16
+  ],
+  "t_in_main": 74.89,
+  "cut_from": 3.510000000000005,
+  "cut_len": 6.640000000000001,
+  "first_frame": 2
+ },
+ {
+  "tag": "r12_ebook",
+  "img": "ebook",
+  "src": "source_ebook.png",
+  "scenes": [
+   17
+  ],
+  "t_in_main": 81.53,
+  "cut_from": 6.640000000000001,
+  "cut_len": 9.510000000000005,
+  "first_frame": 2
+ }
+]

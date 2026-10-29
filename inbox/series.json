@@ -568,5 +568,33 @@
   "trang_thai": "cho_ghi_am",
   "thu_muc": "inbox/out/2026-10-28_can-bang-doi-theo-cho-dung/",
   "ghi_chu": "Làm lại từ đầu theo yêu cầu chủ Trang trong phiên (2026-10-28): bản trước của tập 15 (sổ tay chương 2, khong-gian-mo-ranh-gioi-tren-san) bỏ, chưa tính là đã dùng. Ba lượt chấm độc lập."
+ },
+ {
+  "tap": 16,
+  "slug": "mot-lon-son-hai-can-phong",
+  "ngay": "2026-10-29",
+  "nguyen_ly": "Màu thấy được = lớp sơn và ánh sáng (Foster 2011); màu cùng tông ánh sáng khuếch đại, ngược tông trung hoà (sổ tay AH+ chương 4)",
+  "bai_kho": {
+   "duong_dan": "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/05-chuong-4-huong-nang-va-vi-khi-hau.pdf",
+   "nhanh": "AH-Interior-notes",
+   "commit": "acfe39329e2d291c0828c519dc01a8227b673e04"
+  },
+  "y_bai": {
+   "muc": "Chương 4 mục 4.1 'Cùng một mã sơn trong hai căn phòng' + 4.2 (phòng khuất nắng ngả xanh) + 4.5 (khuếch đại, trung hoà) + 4.6 (thử mẫu đúng giờ) + 4.7 Casa Gilardi (hành lang vàng)",
+   "tom_tat": "Một lon sơn be: phòng Tây ngả cam vì nắng cam gặp màu ấm, phòng Bắc phần lớn chỉ có ánh sáng trời ngả xanh nên xám; Barragán dùng màu để đổi ánh sáng (hành lang vàng); nhà mình chọn màu ngược tông ánh sáng, thử mảng lớn đúng giờ"
+  },
+  "anh_kho": [
+   "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/05-chuong-4-huong-nang-va-vi-khi-hau.pdf · pdfimages ảnh 3 (Home Farm, nắng tây 1; ảnh chính, nét mới)",
+   "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/05-chuong-4-huong-nang-va-vi-khi-hau.pdf · ảnh 4 (Home Farm 2, nét mới)",
+   "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/05-chuong-4-huong-nang-va-vi-khi-hau.pdf · ảnh 1 (Hình 4.1)",
+   "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/05-chuong-4-huong-nang-va-vi-khi-hau.pdf · ảnh 0 (trang tên, Casa Gilardi hành lang vàng, nét mới)",
+   "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/05-chuong-4-huong-nang-va-vi-khi-hau.pdf · ảnh 14 (Casa Gilardi khe kính vàng, nét mới)",
+   "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/05-chuong-4-huong-nang-va-vi-khi-hau.pdf · ảnh 11 (Hình 4.8)",
+   "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/05-chuong-4-huong-nang-va-vi-khi-hau.pdf · ảnh 19 (Hình 4.12)",
+   "inbox/out/2026-10-28_tuong-sang-phong-rong/original/chu-trang/AH_mockup_tablet.mp4 (khung cuối, dùng lại)"
+  ],
+  "trang_thai": "cho_ghi_am",
+  "thu_muc": "inbox/out/2026-10-29_mot-lon-son-hai-can-phong/",
+  "ghi_chu": "Chủ Trang yêu cầu trong phiên 2026-10-29: chạy lại instruction, khai thác sổ tay AH+, ví dụ có thể ngoài sách nhưng nguyên lý phải có trong sách. Dùng Casa Gilardi (công trình trong chương 4). Hai lượt chấm độc lập. Ý chưa dùng của chương 4: số Kelvin theo hướng (4.2), hướng Bắc ở Việt Nam có nắng (4.3), màu và cảm giác nóng lạnh (4.4), hằng định màu không trọn."
  }
 ]
