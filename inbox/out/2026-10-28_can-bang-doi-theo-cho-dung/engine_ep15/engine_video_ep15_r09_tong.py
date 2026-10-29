@@ -552,13 +552,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–8.82s", head="Ảnh chỉ chắc cân ở chỗ chụp", vo="Một tấm ảnh cũng chỉ chụp từ một chỗ đứng, nên căn phòng trông cân trong ảnh mới chỉ chắc là cân ở đúng chỗ ấy.",
+    dict(t="0–5.7s", head="Ảnh chỉ chắc cân ở chỗ chụp", vo="Một tấm ảnh cũng chỉ chụp từ một chỗ đứng, nên căn phòng trông cân trong ảnh mới chỉ chắc là cân ở đúng chỗ.",
          cam=((1200, 730), 0.86, (540, 870)), dark=True, dd=[], move="hold"),
-    dict(t="8.82–20.46s", head="Chụp từ cửa, từ sofa, từ bàn ăn", vo="Muốn kiểm tra ở nhà mình, tụi mình gợi ý chụp căn phòng từ cửa ra vào, từ chỗ ngồi sofa và từ bàn ăn, rồi lật trái phải từng tấm ảnh như soi gương.",
+    dict(t="5.7–14.01s", head="Chụp từ cửa, từ sofa, từ bàn ăn", vo="Muốn kiểm tra ở nhà mình, tụi mình gợi ý chụp căn phòng từ cửa ra vào, từ chỗ ngồi sofa và từ bàn ăn, rồi lật trái phải từng tấm ảnh như soi gương.",
          cam=((1200, 730), 0.86, (540, 870)), dark=True, dd=['sofa', 'lab_sofa', 'an', 'lab_an', 'cua', 'lab_cua'], move="push"),
-    dict(t="20.46–28.97s", head="Lật ảnh để tìm chỗ thiếu món cân lại", vo="Tấm nào lật xong tự dưng thấy lệch hẳn về một bên thì ở chỗ đứng ấy, căn phòng đang thiếu một món cân lại.",
+    dict(t="14.01–19.49s", head="Lật ảnh để tìm chỗ thiếu món cân lại", vo="Tấm nào lật xong tự dưng thấy lệch hẳn về một bên thì ở chỗ đứng ấy, căn phòng đang thiếu một món cân lại.",
          cam=((1200, 730), 0.86, (540, 870)), dark=True, dd=['lat1', 'lat2', 'lab_lat'], move="pan_l"),
-    dict(t="28.97–36.54s", head="end", vo="",
+    dict(t="19.49–25.06s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="push"),
 ]
 END = len(SCENES) - 1

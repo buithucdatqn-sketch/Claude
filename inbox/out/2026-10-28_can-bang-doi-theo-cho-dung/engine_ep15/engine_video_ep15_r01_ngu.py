@@ -552,9 +552,9 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.95s", head="Cân trong ảnh, lệch khi bước vào", vo="Một căn phòng trông rất cân trong ảnh, vậy vì sao bước vào tận nơi, có khi lại thấy lệch?",
+    dict(t="0–5.48s", head="Cân trong ảnh, lệch khi bước vào", vo="Một căn phòng trông rất cân trong ảnh, vậy vì sao bước vào tận nơi, có khi lại thấy lệch?",
          cam=((1200, 1200), 0.6, (540, 890)), dark=False, dd=[], move="push"),
-    dict(t="6.95–7.45s", head="end", vo="",
+    dict(t="5.48–5.98s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

@@ -1,4 +1,4 @@
-# AH Decode · Cân trong ảnh, lệch khi bước vào · tập 15 · giai đoạn A (bản 3, làm lại từ đầu)
+# AH Decode · Cân trong ảnh, lệch khi bước vào · tập 15 · bản 3, làm lại từ đầu · giai đoạn B, đã ghép giọng
 
 Bài: `AH-Decode-Decor/bai-04-3-bai-hoc-can-bang-thi-giac-noi-that/bai-04.md` (commit acfe393), bài học 3 "Kiểm tra cân bằng từ những chỗ người sẽ đứng và ngồi, không chỉ từ một tấm ảnh" và đoạn áp dụng cuối bài.
 
@@ -61,3 +61,28 @@ Kém hơn tập 7: chưa có cảnh phóng kín ảnh (dải ảnh 08, 09 chỉ 
 - Ảnh vị trí chụp `vi-tri-chup/08-vi-tri-chup.png` ghi "ảnh 04", còn `09-vi-tri-chup.png` ghi "ảnh 05" (theo số vị trí máy trên mặt bằng 03, không theo tên file). Bản làm việc đã che nhãn số.
 - Câu "vật ở gần to ra, vật ở xa nhỏ lại…" là diễn giải của bài đặt ngay sau ý của Kilmer; lời đọc giữ đúng thứ tự đó nên người nghe có thể coi cả hai là ý của sách.
 - Lời mời cuối dùng mẫu tập 12, 13 (mục 0.6), không phải mẫu "gói thành viên" của prompt lịch chạy.
+
+## Giai đoạn B (2026-10-29): ghép giọng chủ Trang
+- File giọng: `audio/can-bang-doi-theo-cho-dung.mp3` (ElevenLabs, giọng Tony Hoang, 71,81 giây, 44,1 kHz mono). Bản gốc chủ Trang gửi: `ElevenLabs_2026-10-29T12_09_31_Tony_Hoang__pvc_sp100_s50_sb75_v4.mp3`.
+- Xử lý: lọc dưới 80 Hz, `afftdn` nhẹ (nf −25), tăng 5,8 dB, chặn đỉnh (`alimiter` 0,82), 48 kHz → `audio/can-bang-doi-theo-cho-dung_xu-ly.wav`. Đo `ebur128`: −14,6 LUFS, đỉnh −1,7 dBFS. (Hai lượt `loudnorm` tuyến tính chỉ đạt −15,3 LUFS vì giới hạn đỉnh, nên đổi sang tăng âm lượng có chặn đỉnh.)
+- Nhận dạng lời: sherpa-onnx 2.0.1, mô hình `sherpa-onnx-zipformer-vi-2025-04-20`, cắt theo quãng nghỉ (silencedetect −35 dB / 0,25 giây, 30 quãng), lấy mốc từng chữ. So với `elevenlabs.txt` đã gửi:
+  1. Câu chốt thu thành "…mới chỉ chắc là cân ở đúng chỗ" (không có "ấy": chữ "chỗ" bắt đầu ở 52,75 giây, quãng nghỉ bắt đầu 52,93 giây). Phụ đề sửa theo.
+  2. Lời mời cuối thêm "nhá" ("…mọi người xem ở phần bình luận nhá"). Khung cuối là chữ cố định, không đổi.
+  3. Mô hình không nghe ra "Pan-mây-ra" và "kê" ("phòng khách kê lệch"), nhưng giữa hai chữ liền kề có khoảng trống 0,76 giây và 0,56 giây, đủ cho các chữ đó, nên coi là đã đọc và giữ phụ đề. "Kin-mơ" được nhận thành "Kim", giữ "Kilmer".
+- Mốc cảnh `T_AUDIO`: mỗi cảnh bắt đầu khoảng 0,37 giây trước câu của nó, đặt tại quãng nghỉ (mốc câu lấy theo `silence_end`). Khung cuối 66,83–72,4 giây, video thêm 1 giây giữ khung cuối.
+
+| # | Mốc (giây) | Tiêu đề | Phụ đề theo ghi âm |
+|---|---|---|---|
+| 1 | 0–5.48s | Cân trong ảnh, lệch khi bước vào | Một căn phòng trông rất cân trong ảnh, vậy vì sao bước vào tận nơi, có khi lại thấy lệch? |
+| 2 | 5.48–10.26s | Theo Kilmer & Kilmer (2014), cân bằng đổi khi người ta đi lại | Theo hai tác giả Kilmer, cân bằng của một căn phòng thay đổi khi người ta đi lại trong đó. |
+| 3 | 10.26–17.22s | Vật ở gần to ra, vật ở xa nhỏ lại | Người đi tới đâu, vật ở gần to ra, vật ở xa nhỏ lại, nên món nào nặng, món nào nhẹ trong mắt cũng đổi theo chỗ đứng. |
+| 4 | 17.22–24.26s | Đổi chỗ đứng trong phòng ngủ chính | Thử đổi chỗ đứng trong phòng ngủ chính của căn hộ Palmeira tại Lisbon, nơi giường được kê đối xứng giữa hai đèn thả giống nhau. |
+| 5 | 24.26–28.24s | Đứng ở chân giường, đúng trên trục | Đứng ở chân giường, đúng trên trục giữa giường, mọi người thấy đủ hai đèn. |
+| 6 | 28.24–30.97s | Sang góc phòng, chỉ còn một đèn | Bước sang một góc phòng thì chỉ còn thấy một chiếc đèn. |
+| 7 | 30.97–35.5s | Đối xứng chỉ hiện rõ ở một chỗ đứng | Nghĩa là cách kê đối xứng kỹ nhất trong căn hộ cũng chỉ hiện rõ khi đứng ở một chỗ. |
+| 8 | 35.5–41.09s | Lại gần lò sưởi trong phòng khách | Phòng khách kê lệch cũng đổi theo chỗ đứng. Khi lại gần, chiếc lò sưởi hình nón thành món to nhất trước mắt. |
+| 9 | 41.09–47.34s | Hai món giữ cân đã ra ngoài tầm nhìn | Còn bộ sofa và bức tranh sẫm ở phía bên kia, hai món giữ cân cho chiếc lò sưởi, đã ra ngoài tầm nhìn từ chỗ đứng ấy. |
+| 10 | 47.34–53.04s | Ảnh chỉ chắc cân ở chỗ chụp | Một tấm ảnh cũng chỉ chụp từ một chỗ đứng, nên căn phòng trông cân trong ảnh mới chỉ chắc là cân ở đúng chỗ. |
+| 11 | 53.04–61.35s | Chụp từ cửa, từ sofa, từ bàn ăn | Muốn kiểm tra ở nhà mình, tụi mình gợi ý chụp căn phòng từ cửa ra vào, từ chỗ ngồi sofa và từ bàn ăn, rồi lật trái phải từng tấm ảnh như soi gương. |
+| 12 | 61.35–66.83s | Lật ảnh để tìm chỗ thiếu món cân lại | Tấm nào lật xong tự dưng thấy lệch hẳn về một bên thì ở chỗ đứng ấy, căn phòng đang thiếu một món cân lại. |
+| 13 | 66.83–72.4s | (khung cuối) | Bài phân tích về cân bằng thị giác, từ sách của hai tác giả Kilmer, mọi người xem ở phần bình luận nhá. |

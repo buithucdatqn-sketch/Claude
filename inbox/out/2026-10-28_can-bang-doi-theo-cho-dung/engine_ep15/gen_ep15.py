@@ -70,15 +70,15 @@ SC = [
          vo="Còn bộ sofa và bức tranh sẫm ở phía bên kia, hai món giữ cân cho chiếc lò sưởi, đã ra ngoài tầm nhìn từ chỗ đứng ấy.",
          tts="Còn bộ sô-pha và bức tranh sẫm ở phía bên kia, hai món giữ cân cho chiếc lò sưởi, đã ra ngoài tầm nhìn từ chỗ đứng ấy."),
     dict(move="pull", part="H", blk=4, img="ngu", head="Ảnh chỉ chắc cân ở chỗ chụp", cam=STRIP(*CEN["ngu"], 0.6, 890), free=True, dark=True, dd=["khung", "lab_mot"],
-         vo="Một tấm ảnh cũng chỉ chụp từ một chỗ đứng, nên căn phòng trông cân trong ảnh mới chỉ chắc là cân ở đúng chỗ ấy."),
+         vo="Một tấm ảnh cũng chỉ chụp từ một chỗ đứng, nên căn phòng trông cân trong ảnh mới chỉ chắc là cân ở đúng chỗ."),
     dict(move="push", part="F", blk=4, img="tong", head="Chụp từ cửa, từ sofa, từ bàn ăn", cam=STRIP(*CEN["tong"], 0.86, 870), free=True, dark=True, dd=["sofa", "lab_sofa", "an", "lab_an", "cua", "lab_cua"],
          vo="Muốn kiểm tra ở nhà mình, tụi mình gợi ý chụp căn phòng từ cửa ra vào, từ chỗ ngồi sofa và từ bàn ăn, rồi lật trái phải từng tấm ảnh như soi gương.",
          tts="Muốn kiểm tra ở nhà mình, tụi mình gợi ý chụp căn phòng từ cửa ra vào, từ chỗ ngồi sô-pha và từ bàn ăn, rồi lật trái phải từng tấm ảnh như soi gương."),
     dict(move="pan_l", part="F", blk=4, img="tong", head="Lật ảnh để tìm chỗ thiếu món cân lại", cam=STRIP(*CEN["tong"], 0.86, 870), free=True, dark=True, dd=["lat1", "lat2", "lab_lat"],
          vo="Tấm nào lật xong tự dưng thấy lệch hẳn về một bên thì ở chỗ đứng ấy, căn phòng đang thiếu một món cân lại."),
     dict(move="push", part="I", blk=5, img="tong", head="end", cam="END", dark=False, vo="", dd=[],
-         say="Bài phân tích về cân bằng thị giác, từ sách của hai tác giả Kilmer, mọi người xem ở phần bình luận.",
-         tts="Bài phân tích về cân bằng thị giác, từ sách của hai tác giả Kin-mơ, mọi người xem ở phần bình luận."),
+         say="Bài phân tích về cân bằng thị giác, từ sách của hai tác giả Kilmer, mọi người xem ở phần bình luận nhá.",
+         tts="Bài phân tích về cân bằng thị giác, từ sách của hai tác giả Kin-mơ, mọi người xem ở phần bình luận nhá."),
 ]
 
 DOODLE = r'''
@@ -120,7 +120,7 @@ def dur(s):
 
 
 # Giai đoạn B: điền mốc cảnh theo ghi âm (mỗi cảnh bắt đầu khoảng 0,35–0,4 giây trước câu của nó). Giai đoạn A để trống.
-T_AUDIO = []
+T_AUDIO = [0, 5.48, 10.26, 17.22, 24.26, 28.24, 30.97, 35.5, 41.09, 47.34, 53.04, 61.35, 66.83, 72.4]
 
 
 def times():
