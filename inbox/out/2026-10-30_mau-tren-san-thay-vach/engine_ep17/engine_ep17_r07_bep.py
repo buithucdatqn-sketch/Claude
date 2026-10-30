@@ -23,7 +23,7 @@ FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
 if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
 CREDIT = "Ảnh: nhà Rietveld Schröder · Stijn Poelstra / Centraal Museum, qua sổ tay AH+"
-HEAD = "AH DECODE · PHÂN VÙNG NHÀ MỞ BẰNG MÀU"
+HEAD = "AH DECODE · CHIA KHU NHÀ MỞ BẰNG MÀU"
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
 END_LINES = [
@@ -551,11 +551,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–4.76s", head="Màu xuống sàn, lên trần, thay cho vách", vo="và có thể đặt màu xuống sàn hay lên trần thay cho vách.",
+    dict(t="0–3.83s", head="Ranh giới nằm trên sàn, không cần vách", vo="và có thể đặt màu xuống sàn thay cho vách.",
          cam=((591, 394), 0.9, (540, 900)), dark=False, dd=[], move="hold"),
-    dict(t="4.76–12.65s", head="Có hình thì hết lẫn lộn", vo="Vậy nhà mở lẫn lộn không phải vì thiếu vách, mà vì cả nhà chỉ có nền, chưa có khu nào thành hình.",
+    dict(t="3.83–11.72s", head="Có hình thì hết lẫn lộn", vo="Vậy nhà mở lẫn lộn không phải vì thiếu vách, mà vì cả nhà chỉ có nền, chưa có khu nào thành hình.",
          cam=((591, 394), 0.9, (540, 900)), dark=False, dd=[], move="push"),
-    dict(t="12.65–13.15s", head="end", vo="",
+    dict(t="11.72–12.22s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

@@ -23,7 +23,7 @@ FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
 if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
 CREDIT = "Ảnh: nhà Rietveld Schröder · Stijn Poelstra / Centraal Museum, qua sổ tay AH+"
-HEAD = "AH DECODE · PHÂN VÙNG NHÀ MỞ BẰNG MÀU"
+HEAD = "AH DECODE · CHIA KHU NHÀ MỞ BẰNG MÀU"
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
 END_LINES = [

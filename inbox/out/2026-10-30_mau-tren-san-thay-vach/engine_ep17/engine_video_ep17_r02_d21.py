@@ -23,7 +23,7 @@ FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
 if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
 CREDIT = "Hình 2.1: AH+, sổ tay Công thức chọn màu nội thất"
-HEAD = "AH DECODE · PHÂN VÙNG NHÀ MỞ BẰNG MÀU"
+HEAD = "AH DECODE · CHIA KHU NHÀ MỞ BẰNG MÀU"
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
 END_LINES = [
@@ -556,15 +556,15 @@ SCENES = [
          cam=((270, 190), 0.86, (540, 905)), dark=False, dd=[], move="hold"),
     dict(t="6.95–16.4s", head="Cả nhà chung một màu sàn, màu tường", vo="Lý do thường là phòng khách, bếp và bàn ăn chung một màu sàn, một màu tường, nên mỗi khu chỉ còn được nhận ra nhờ đồ đạc.",
          cam=((270, 190), 0.86, (540, 905)), dark=False, dd=[], move="pan_r"),
-    dict(t="16.4–23.97s", head="Hình và nền theo tâm lý học Gestalt", vo="Theo tâm lý học Gestalt, mắt tách một vùng nổi lên làm hình, còn phần còn lại lùi ra sau làm nền.",
+    dict(t="16.4–26.16s", head="Hình và nền theo tâm lý học Gestalt", vo="Theo tâm lý học Gestalt, mắt nhận ra một khu riêng khi tách được vùng ấy nổi lên làm hình, còn phần còn lại lùi ra sau làm nền.",
          cam=((270, 190), 0.86, (540, 905)), dark=False, dd=[], move="hold"),
-    dict(t="23.97–33.11s", head="Wagemans và cộng sự (2012)", vo="Năm 2012, nhóm của Wagemans rà lại các nghiên cứu cũ và thấy vùng nào nhỏ, có biên rõ và tương phản cao thì dễ thành hình,",
+    dict(t="26.16–35.3s", head="Wagemans và cộng sự (2012)", vo="Năm 2012, nhóm của Wagemans rà lại các nghiên cứu cũ và thấy vùng nào nhỏ, có biên rõ và tương phản cao thì dễ thành hình,",
          cam=((270, 190), 0.86, (540, 905)), dark=False, dd=[], move="push"),
-    dict(t="33.11–36.62s", head="Dấu hiệu của nền", vo="còn màu đồng nhất là dấu hiệu của nền.",
+    dict(t="35.3–39.44s", head="Sàn, tường một màu thành nền", vo="còn mảng màu đồng nhất thì mắt dễ coi là nền.",
          cam=((270, 190), 0.86, (540, 905)), dark=False, dd=[], move="hold"),
-    dict(t="36.62–45.76s", head="Phần áp dụng là suy luận", vo="Tụi mình chưa tìm thấy thí nghiệm nào chứng minh mảng màu chia được khu trong nhà, nên phần sau đây là suy ra từ nguyên lý.",
+    dict(t="39.44–48.58s", head="Phần áp dụng là suy luận", vo="Tụi mình chưa tìm thấy thí nghiệm nào chứng minh mảng màu chia được khu trong nhà, nên phần sau đây là suy ra từ nguyên lý.",
          cam=((270, 190), 0.86, (540, 905)), dark=False, dd=[], move="pull"),
-    dict(t="45.76–46.26s", head="end", vo="",
+    dict(t="48.58–49.08s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

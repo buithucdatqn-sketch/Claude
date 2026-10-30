@@ -23,7 +23,7 @@ FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
 if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
 CREDIT = "Hình 2.3 (phần nên làm): AH+, sổ tay Công thức chọn màu nội thất"
-HEAD = "AH DECODE · PHÂN VÙNG NHÀ MỞ BẰNG MÀU"
+HEAD = "AH DECODE · CHIA KHU NHÀ MỞ BẰNG MÀU"
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
 END_LINES = [
@@ -552,11 +552,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–3.83s", head="Mặt lớn lùi làm nền", vo="còn bức tường lớn màu xám lùi lại làm nền.",
+    dict(t="0–3.82s", head="Bức tường lớn để xám", vo="còn bức tường lớn màu xám lùi lại làm nền.",
          cam=((270, 208), 0.76, (540, 905)), dark=False, dd=[], move="hold"),
-    dict(t="3.83–12.03s", head="Khối tủ một màu, biên trùng mép tủ", vo="Ở nhà mình, muốn tách khu bếp thì cho khối tủ một mảng màu tương phản với sàn và tường, biên trùng mép tủ,",
+    dict(t="3.82–13.27s", head="Khối tủ bếp thành hình", vo="Ở nhà mình, muốn tách khu bếp thì cho cả khối tủ một màu tương phản với sàn và tường, sao cho mép màu trùng đúng mép tủ,",
          cam=((270, 208), 0.76, (540, 905)), dark=False, dd=[], move="pan_d"),
-    dict(t="12.03–12.53s", head="end", vo="",
+    dict(t="13.27–13.77s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

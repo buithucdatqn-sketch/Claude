@@ -23,7 +23,7 @@ FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
 if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
 CREDIT = "Ảnh: nhà Rietveld Schröder · Stijn Poelstra / Centraal Museum, qua sổ tay AH+"
-HEAD = "AH DECODE · PHÂN VÙNG NHÀ MỞ BẰNG MÀU"
+HEAD = "AH DECODE · CHIA KHU NHÀ MỞ BẰNG MÀU"
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
 END_LINES = [
@@ -554,11 +554,11 @@ WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–8.51s", head="Vách mở, sàn vẫn chia khu", vo="nhưng sàn vẫn chia thành những mảng đỏ, đen, trắng và xám có biên rõ, nên ranh giới các khu vẫn nằm lại trên sàn.",
          cam=((591, 394), 0.9, (540, 900)), dark=False, dd=[], move="hold"),
-    dict(t="8.51–17.65s", head="Mảng nhỏ nổi thành hình", vo="Trong phòng sàn đỏ, màu mạnh chỉ nằm ở những mảng nhỏ như mảng sàn đỏ và chiếc ghế đỏ lam, nên chúng nổi lên thành hình,",
+    dict(t="8.51–17.65s", head="Sàn đỏ và ghế, nhỏ mà rực", vo="Trong phòng sàn đỏ, màu mạnh chỉ nằm ở những mảng nhỏ như mảng sàn đỏ và chiếc ghế đỏ lam, nên chúng nổi lên thành hình,",
          cam=((591, 394), 0.9, (540, 900)), dark=False, dd=['san', 'lab_san', 'ghe', 'lab_ghe'], move="push"),
-    dict(t="17.65–21.48s", head="Mặt lớn lùi làm nền", vo="còn bức tường lớn màu xám lùi lại làm nền.",
+    dict(t="17.65–21.47s", head="Bức tường lớn để xám", vo="còn bức tường lớn màu xám lùi lại làm nền.",
          cam=((591, 394), 0.9, (540, 900)), dark=False, dd=['xam', 'lab_xam'], move="hold"),
-    dict(t="21.48–21.98s", head="end", vo="",
+    dict(t="21.47–21.97s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

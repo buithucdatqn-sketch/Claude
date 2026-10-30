@@ -23,7 +23,7 @@ FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
 if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
 CREDIT = "Ảnh: nhà Rietveld Schröder · Stijn Poelstra / Centraal Museum, qua sổ tay AH+"
-HEAD = "AH DECODE · PHÂN VÙNG NHÀ MỞ BẰNG MÀU"
+HEAD = "AH DECODE · CHIA KHU NHÀ MỞ BẰNG MÀU"
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
 END_LINES = [
@@ -552,11 +552,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–8.2s", head="Khối tủ một màu, biên trùng mép tủ", vo="Ở nhà mình, muốn tách khu bếp thì cho khối tủ một mảng màu tương phản với sàn và tường, biên trùng mép tủ,",
+    dict(t="0–9.45s", head="Khối tủ bếp thành hình", vo="Ở nhà mình, muốn tách khu bếp thì cho cả khối tủ một màu tương phản với sàn và tường, sao cho mép màu trùng đúng mép tủ,",
          cam=((591, 394), 0.9, (540, 900)), dark=False, dd=[], move="hold"),
-    dict(t="8.2–12.96s", head="Màu xuống sàn, lên trần, thay cho vách", vo="và có thể đặt màu xuống sàn hay lên trần thay cho vách.",
-         cam=((591, 394), 0.9, (540, 900)), dark=False, dd=['tran', 'lab_tran'], move="pull"),
-    dict(t="12.96–13.46s", head="end", vo="",
+    dict(t="9.45–13.28s", head="Ranh giới nằm trên sàn, không cần vách", vo="và có thể đặt màu xuống sàn thay cho vách.",
+         cam=((591, 394), 0.9, (540, 900)), dark=False, dd=['sando', 'lab_sando'], move="pull"),
+    dict(t="13.28–13.78s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

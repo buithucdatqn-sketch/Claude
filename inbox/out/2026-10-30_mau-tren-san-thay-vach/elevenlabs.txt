@@ -1,11 +1,11 @@
 Nhà bỏ hết vách cho thoáng, sao nhìn lại lẫn lộn, không rõ đâu là bếp, đâu là chỗ ngồi?
 <break time="1.2s" />
-Lý do thường là phòng khách, bếp và bàn ăn chung một màu sàn, một màu tường, nên mỗi khu chỉ còn được nhận ra nhờ đồ đạc. Theo tâm lý học Ghe-xtan, mắt tách một vùng nổi lên làm hình, còn phần còn lại lùi ra sau làm nền.
+Lý do thường là phòng khách, bếp và bàn ăn chung một màu sàn, một màu tường, nên mỗi khu chỉ còn được nhận ra nhờ đồ đạc. Theo tâm lý học Ghe-xtan, mắt nhận ra một khu riêng khi tách được vùng ấy nổi lên làm hình, còn phần còn lại lùi ra sau làm nền.
 <break time="1.2s" />
-Năm hai nghìn không trăm mười hai, nhóm của Va-khơ-man rà lại các nghiên cứu cũ và thấy vùng nào nhỏ, có biên rõ và tương phản cao thì dễ thành hình, còn màu đồng nhất là dấu hiệu của nền. Tụi mình chưa tìm thấy thí nghiệm nào chứng minh mảng màu chia được khu trong nhà, nên phần sau đây là suy ra từ nguyên lý.
+Năm hai nghìn không trăm mười hai, nhóm của Va-khơ-man rà lại các nghiên cứu cũ và thấy vùng nào nhỏ, có biên rõ và tương phản cao thì dễ thành hình, còn mảng màu đồng nhất thì mắt dễ coi là nền. Tụi mình chưa tìm thấy thí nghiệm nào chứng minh mảng màu chia được khu trong nhà, nên phần sau đây là suy ra từ nguyên lý.
 <break time="1.2s" />
-Ở tầng trên nhà Rít-ven Srơ-đơ tại U-tréc, ban ngày các vách trượt được thu lại, nhưng sàn vẫn chia thành những mảng đỏ, đen, trắng và xám có biên rõ, nên ranh giới các khu vẫn nằm lại trên sàn. Trong phòng sàn đỏ, màu mạnh chỉ nằm ở những mảng nhỏ như mảng sàn đỏ và chiếc ghế đỏ lam, nên chúng nổi lên thành hình, còn bức tường lớn màu xám lùi lại làm nền.
+Thử nhìn tầng trên nhà Rít-ven Srơ-đơ ở U-tréc. Ban ngày các vách trượt được thu lại, nhưng sàn vẫn chia thành những mảng đỏ, đen, trắng và xám có biên rõ, nên ranh giới các khu vẫn nằm lại trên sàn. Trong phòng sàn đỏ, màu mạnh chỉ nằm ở những mảng nhỏ như mảng sàn đỏ và chiếc ghế đỏ lam, nên chúng nổi lên thành hình, còn bức tường lớn màu xám lùi lại làm nền.
 <break time="1.2s" />
-Ở nhà mình, muốn tách khu bếp thì cho khối tủ một mảng màu tương phản với sàn và tường, biên trùng mép tủ, và có thể đặt màu xuống sàn hay lên trần thay cho vách.
+Ở nhà mình, muốn tách khu bếp thì cho cả khối tủ một màu tương phản với sàn và tường, sao cho mép màu trùng đúng mép tủ, và có thể đặt màu xuống sàn thay cho vách.
 <break time="1.2s" />
 Vậy nhà mở lẫn lộn không phải vì thiếu vách, mà vì cả nhà chỉ có nền, chưa có khu nào thành hình. Các bước chia khu nhà mở bằng màu có trong sổ tay Công thức chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha.

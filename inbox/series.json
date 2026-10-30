@@ -598,5 +598,31 @@
   "thu_muc": "inbox/out/2026-10-29_mot-lon-son-hai-can-phong/",
   "ghi_chu": "Chủ Trang yêu cầu trong phiên 2026-10-29: chạy lại instruction, khai thác sổ tay AH+, ví dụ có thể ngoài sách nhưng nguyên lý phải có trong sách. Dùng Casa Gilardi (công trình trong chương 4). Hai lượt chấm độc lập. Ý chưa dùng của chương 4: số Kelvin theo hướng (4.2), hướng Bắc ở Việt Nam có nắng (4.3), màu và cảm giác nóng lạnh (4.4), hằng định màu không trọn.",
   "video": "inbox/out/2026-10-29_mot-lon-son-hai-can-phong/reel_mot-lon-son-hai-can-phong_final.mp4 (67,8 giây, giọng 65,6 giây, −14,5 LUFS)"
+ },
+ {
+  "tap": 17,
+  "slug": "mau-tren-san-thay-vach",
+  "ngay": "2026-10-30",
+  "nguyen_ly": "Hình và nền (Gestalt; Wagemans và cộng sự 2012): vùng nhỏ, biên rõ, tương phản thành hình, màu đồng nhất thành nền; dùng màu để chia khu nhà mở (sổ tay AH+ chương 2, suy luận từ nguyên lý)",
+  "bai_kho": {
+   "duong_dan": "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/03-chuong-2-khong-gian-mo.pdf",
+   "nhanh": "AH-Interior-notes",
+   "commit": "28c7cfa0e47c697875f10cca000d5762c5be94a8"
+  },
+  "y_bai": {
+   "muc": "Chương 2 mục 2.1 'Mặt bằng mở dễ thành một khoảng loang' + 2.2 'Quy luật hình và nền' + 2.3 nhà Rietveld Schröder (ranh giới nằm lại trên sàn; màu mạnh cho mảng nhỏ) + Hình 2.3 (khối màu trùng mép tủ)",
+   "tom_tat": "Nhà mở lẫn lộn vì cả nhà chung một màu sàn, màu tường nên chỉ còn nền; mảng nhỏ, biên rõ, tương phản thì thành hình; Rietveld Schröder thu vách nhưng sàn vẫn chia mảng màu; khối tủ bếp một màu, mép trùng mép tủ, màu xuống sàn thay vách"
+  },
+  "anh_kho": [
+   "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/03-chuong-2-khong-gian-mo.pdf · pdfimages ảnh 5 (tầng trên khi vách mở; ảnh chính, nét mới)",
+   "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/03-chuong-2-khong-gian-mo.pdf · ảnh 3 (Hình 2.1 hình và nền)",
+   "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/03-chuong-2-khong-gian-mo.pdf · ảnh 6 (phòng sàn đỏ, nét mới)",
+   "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/03-chuong-2-khong-gian-mo.pdf · ảnh 14 (Hình 2.3, cắt phần nên làm)",
+   "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/03-chuong-2-khong-gian-mo.pdf · ảnh 2 (bếp ăn Rietveld)",
+   "inbox/out/2026-10-28_tuong-sang-phong-rong/original/chu-trang/AH_mockup_tablet.mp4 (khung cuối, dùng lại)"
+  ],
+  "trang_thai": "cho_ghi_am",
+  "thu_muc": "inbox/out/2026-10-30_mau-tren-san-thay-vach/",
+  "ghi_chu": "Chủ Trang yêu cầu trong phiên 2026-10-30: chạy lại toàn bộ instruction, khai thác nội dung từ sách AH+. Ba lượt chấm độc lập. Ý chưa dùng của chương 2: 60-30-10 và chênh LRV 30 điểm (2.4), Maison La Roche gán vai trò cho từng màu (2.5), hộp kính cầu thang và vách tối kéo ra (2.3), khối lam cạnh giường, màu trên trần."
  }
 ]
