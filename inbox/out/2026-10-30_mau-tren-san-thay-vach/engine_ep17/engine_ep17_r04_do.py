@@ -30,7 +30,7 @@ END_LINES = [
     (1124, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1170, "và cách chọn đồ decor", 40, 215),
     (1252, "Sổ tay Công thức chọn màu nội thất", 54, 240),
-    (1314, "các bước phân vùng nhà mở bằng màu", 48, 240),
+    (1314, "các bước chia khu nhà mở bằng màu", 48, 240),
     (1398, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
@@ -551,13 +551,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–8.51s", head="Ranh giới nằm lại trên sàn", vo="nhưng sàn vẫn chia thành những mảng đỏ, đen, trắng và xám có biên rõ, nên ranh giới các khu vẫn nằm lại trên sàn.",
+    dict(t="0–8.51s", head="Vách mở, sàn vẫn chia khu", vo="nhưng sàn vẫn chia thành những mảng đỏ, đen, trắng và xám có biên rõ, nên ranh giới các khu vẫn nằm lại trên sàn.",
          cam=((591, 394), 0.9, (540, 900)), dark=False, dd=[], move="hold"),
-    dict(t="8.51–15.46s", head="Màu mạnh chỉ ở mảng nhỏ", vo="Màu mạnh chỉ nằm ở mảng nhỏ, như mảng sàn đỏ, khối lam cạnh giường và chiếc ghế đỏ lam,",
-         cam=((591, 394), 0.9, (540, 900)), dark=False, dd=['san', 'lab_san', 'lam', 'lab_lam', 'ghe', 'lab_ghe'], move="push"),
-    dict(t="15.46–18.96s", head="Tường lớn giữ màu xám", vo="còn bức tường lớn giữ màu xám.",
+    dict(t="8.51–17.65s", head="Mảng nhỏ nổi thành hình", vo="Trong phòng sàn đỏ, màu mạnh chỉ nằm ở những mảng nhỏ như mảng sàn đỏ và chiếc ghế đỏ lam, nên chúng nổi lên thành hình,",
+         cam=((591, 394), 0.9, (540, 900)), dark=False, dd=['san', 'lab_san', 'ghe', 'lab_ghe'], move="push"),
+    dict(t="17.65–21.48s", head="Mặt lớn lùi làm nền", vo="còn bức tường lớn màu xám lùi lại làm nền.",
          cam=((591, 394), 0.9, (540, 900)), dark=False, dd=['xam', 'lab_xam'], move="hold"),
-    dict(t="18.96–19.46s", head="end", vo="",
+    dict(t="21.48–21.98s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

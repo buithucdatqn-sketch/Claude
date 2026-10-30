@@ -30,7 +30,7 @@ END_LINES = [
     (1124, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1170, "và cách chọn đồ decor", 40, 215),
     (1252, "Sổ tay Công thức chọn màu nội thất", 54, 240),
-    (1314, "các bước phân vùng nhà mở bằng màu", 48, 240),
+    (1314, "các bước chia khu nhà mở bằng màu", 48, 240),
     (1398, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
@@ -553,17 +553,17 @@ WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–6.95s", head="Nhà mở bỏ vách, vì sao dễ lẫn lộn", vo="Nhà bỏ hết vách cho thoáng, sao nhìn lại lẫn lộn, không rõ đâu là bếp, đâu là chỗ ngồi?",
          cam=((270, 190), 0.86, (540, 905)), dark=False, dd=[], move="hold"),
-    dict(t="6.95–14.53s", head="Cả nhà nằm trên một nền màu", vo="Lý do thường là cả nhà nằm trên một nền màu, nên mỗi khu chỉ còn được nhận ra nhờ đồ đạc.",
+    dict(t="6.95–16.4s", head="Cả nhà chung một màu sàn, màu tường", vo="Lý do thường là phòng khách, bếp và bàn ăn chung một màu sàn, một màu tường, nên mỗi khu chỉ còn được nhận ra nhờ đồ đạc.",
          cam=((270, 190), 0.86, (540, 905)), dark=False, dd=[], move="pan_r"),
-    dict(t="14.53–22.42s", head="Hình và nền theo tâm lý học Gestalt", vo="Theo tâm lý học Gestalt, mắt luôn tách một vùng nổi lên làm hình, còn phần còn lại lùi ra sau làm nền.",
+    dict(t="16.4–23.97s", head="Hình và nền theo tâm lý học Gestalt", vo="Theo tâm lý học Gestalt, mắt tách một vùng nổi lên làm hình, còn phần còn lại lùi ra sau làm nền.",
          cam=((270, 190), 0.86, (540, 905)), dark=False, dd=[], move="hold"),
-    dict(t="22.42–30.62s", head="Theo Wagemans và cộng sự (2012)", vo="Một tổng quan năm 2012 cho thấy vùng nào nhỏ hơn, có biên rõ và tương phản với xung quanh thì dễ thành hình,",
+    dict(t="23.97–33.11s", head="Wagemans và cộng sự (2012)", vo="Năm 2012, nhóm của Wagemans rà lại các nghiên cứu cũ và thấy vùng nào nhỏ, có biên rõ và tương phản cao thì dễ thành hình,",
          cam=((270, 190), 0.86, (540, 905)), dark=False, dd=[], move="push"),
-    dict(t="30.62–34.76s", head="Màu đồng nhất được đọc là nền", vo="còn một mảng màu đồng nhất thường được đọc là nền.",
+    dict(t="33.11–36.62s", head="Dấu hiệu của nền", vo="còn màu đồng nhất là dấu hiệu của nền.",
          cam=((270, 190), 0.86, (540, 905)), dark=False, dd=[], move="hold"),
-    dict(t="34.76–43.27s", head="Suy luận từ nguyên lý, chưa có thí nghiệm", vo="Sổ tay nói rõ, dùng điều này để chia khu trong nhà là suy luận từ nguyên lý, chưa có thí nghiệm nào chứng minh.",
+    dict(t="36.62–45.76s", head="Phần áp dụng là suy luận", vo="Tụi mình chưa tìm thấy thí nghiệm nào chứng minh mảng màu chia được khu trong nhà, nên phần sau đây là suy ra từ nguyên lý.",
          cam=((270, 190), 0.86, (540, 905)), dark=False, dd=[], move="pull"),
-    dict(t="43.27–43.77s", head="end", vo="",
+    dict(t="45.76–46.26s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

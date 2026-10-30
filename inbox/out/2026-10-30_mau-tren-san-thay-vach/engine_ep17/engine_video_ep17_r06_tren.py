@@ -30,7 +30,7 @@ END_LINES = [
     (1124, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1170, "và cách chọn đồ decor", 40, 215),
     (1252, "Sổ tay Công thức chọn màu nội thất", 54, 240),
-    (1314, "các bước phân vùng nhà mở bằng màu", 48, 240),
+    (1314, "các bước chia khu nhà mở bằng màu", 48, 240),
     (1398, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
@@ -552,11 +552,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–8.83s", head="Cho khu cần tách thành hình", vo="Ở nhà mình, muốn tách khu bếp hay hốc tường sau sofa thì cho khu ấy nhỏ hơn, biên rõ hơn và tương phản hơn nền,",
+    dict(t="0–8.2s", head="Khối tủ một màu, biên trùng mép tủ", vo="Ở nhà mình, muốn tách khu bếp thì cho khối tủ một mảng màu tương phản với sàn và tường, biên trùng mép tủ,",
          cam=((591, 394), 0.9, (540, 900)), dark=False, dd=[], move="hold"),
-    dict(t="8.83–13.59s", head="Màu xuống sàn, lên trần, thay cho vách", vo="và có thể đặt màu xuống sàn hay lên trần thay cho vách.",
+    dict(t="8.2–12.96s", head="Màu xuống sàn, lên trần, thay cho vách", vo="và có thể đặt màu xuống sàn hay lên trần thay cho vách.",
          cam=((591, 394), 0.9, (540, 900)), dark=False, dd=['tran', 'lab_tran'], move="pull"),
-    dict(t="13.59–14.09s", head="end", vo="",
+    dict(t="12.96–13.46s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

@@ -17,12 +17,12 @@ W, H = 1080, 1920
 # bố cục theo nguồn: video 1080x1350 (mặc định) hoặc ảnh tĩnh/GIF 800x1000
 S, OX, OY = 1.0, 0, -285            # X = S*x - OX, Y = S*y - OY
 IPAD = [(210, 560), (630, 375), (1052, 780), (600, 1030)]   # bốn góc iPad trên video
-LINES = [(380, "Các bước phân vùng nhà mở bằng màu", 50, 255),
+LINES = [(380, "Các bước chia khu nhà mở bằng màu", 50, 255),
          (440, "trong sổ tay Công thức chọn màu kiến trúc nội thất", 40, 240),
          (512, "mọi người xem ở phần bình luận nha", 58, 255)]
 CREDIT = (1440, "Video: sổ tay AH+ Công thức chọn màu nội thất · Giả Thuyết Kiến Trúc", 28, 215)
 STILL = dict(S=1.55, OX=185, OY=-72, IPAD=[(155, 405), (480, 275), (780, 580), (430, 768)],
-             LINES=[(1280, "Sổ tay Công thức chọn màu nội thất", 54, 255), (1340, "các bước phân vùng nhà mở bằng màu", 46, 240),
+             LINES=[(1280, "Sổ tay Công thức chọn màu nội thất", 54, 255), (1340, "các bước chia khu nhà mở bằng màu", 46, 240),
                     (1400, "xem ở phần bình luận", 62, 255)],
              CREDIT=(352, "Ảnh: sổ tay AH+ Công thức chọn màu nội thất · Giả Thuyết Kiến Trúc", 28, 225))
 

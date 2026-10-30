@@ -30,7 +30,7 @@ END_LINES = [
     (1124, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1170, "và cách chọn đồ decor", 40, 215),
     (1252, "Sổ tay Công thức chọn màu nội thất", 54, 240),
-    (1314, "các bước phân vùng nhà mở bằng màu", 48, 240),
+    (1314, "các bước chia khu nhà mở bằng màu", 48, 240),
     (1398, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)
@@ -551,13 +551,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–8.51s", head="Suy luận từ nguyên lý, chưa có thí nghiệm", vo="Sổ tay nói rõ, dùng điều này để chia khu trong nhà là suy luận từ nguyên lý, chưa có thí nghiệm nào chứng minh.",
+    dict(t="0–9.14s", head="Phần áp dụng là suy luận", vo="Tụi mình chưa tìm thấy thí nghiệm nào chứng minh mảng màu chia được khu trong nhà, nên phần sau đây là suy ra từ nguyên lý.",
          cam=((591, 394), 0.9, (540, 900)), dark=False, dd=[], move="hold"),
-    dict(t="8.51–15.15s", head="Nhà Rietveld Schröder, Utrecht (1924)", vo="Ở tầng trên nhà Rietveld Schröder tại Utrecht, xây năm 1924, ban ngày các vách trượt được thu lại,",
+    dict(t="9.14–14.84s", head="Nhà Rietveld Schröder, Utrecht (1924)", vo="Ở tầng trên nhà Rietveld Schröder tại Utrecht, ban ngày các vách trượt được thu lại,",
          cam=((591, 394), 0.9, (540, 900)), dark=False, dd=['vach', 'lab_vach'], move="pan_l"),
-    dict(t="15.15–23.66s", head="Ranh giới nằm lại trên sàn", vo="nhưng sàn vẫn chia thành những mảng đỏ, đen, trắng và xám có biên rõ, nên ranh giới các khu vẫn nằm lại trên sàn.",
+    dict(t="14.84–23.35s", head="Vách mở, sàn vẫn chia khu", vo="nhưng sàn vẫn chia thành những mảng đỏ, đen, trắng và xám có biên rõ, nên ranh giới các khu vẫn nằm lại trên sàn.",
          cam=((591, 394), 0.9, (540, 900)), dark=False, dd=['sando', 'lab_sando', 'sanden', 'lab_sanden'], move="hold"),
-    dict(t="23.66–24.16s", head="end", vo="",
+    dict(t="23.35–23.85s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

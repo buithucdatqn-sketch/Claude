@@ -30,7 +30,7 @@ END_LINES = [
     (1124, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1170, "và cách chọn đồ decor", 40, 215),
     (1252, "Sổ tay Công thức chọn màu nội thất", 54, 240),
-    (1314, "các bước phân vùng nhà mở bằng màu", 48, 240),
+    (1314, "các bước chia khu nhà mở bằng màu", 48, 240),
     (1398, "xem ở phần bình luận", 66, 255),
 ]
 INK = (46, 38, 32)

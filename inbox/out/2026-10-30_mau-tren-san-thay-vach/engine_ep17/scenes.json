@@ -9,87 +9,87 @@
  },
  {
   "blk": 2,
-  "t": "6.95–14.53s",
-  "head": "Cả nhà nằm trên một nền màu",
-  "loi": "Lý do thường là cả nhà nằm trên một nền màu, nên mỗi khu chỉ còn được nhận ra nhờ đồ đạc.",
-  "tts": "Lý do thường là cả nhà nằm trên một nền màu, nên mỗi khu chỉ còn được nhận ra nhờ đồ đạc.",
+  "t": "6.95–16.4s",
+  "head": "Cả nhà chung một màu sàn, màu tường",
+  "loi": "Lý do thường là phòng khách, bếp và bàn ăn chung một màu sàn, một màu tường, nên mỗi khu chỉ còn được nhận ra nhờ đồ đạc.",
+  "tts": "Lý do thường là phòng khách, bếp và bàn ăn chung một màu sàn, một màu tường, nên mỗi khu chỉ còn được nhận ra nhờ đồ đạc.",
   "part": "A"
  },
  {
   "blk": 2,
-  "t": "14.53–22.42s",
+  "t": "16.4–23.97s",
   "head": "Hình và nền theo tâm lý học Gestalt",
-  "loi": "Theo tâm lý học Gestalt, mắt luôn tách một vùng nổi lên làm hình, còn phần còn lại lùi ra sau làm nền.",
-  "tts": "Theo tâm lý học Ghe-xtan, mắt luôn tách một vùng nổi lên làm hình, còn phần còn lại lùi ra sau làm nền.",
+  "loi": "Theo tâm lý học Gestalt, mắt tách một vùng nổi lên làm hình, còn phần còn lại lùi ra sau làm nền.",
+  "tts": "Theo tâm lý học Ghe-xtan, mắt tách một vùng nổi lên làm hình, còn phần còn lại lùi ra sau làm nền.",
   "part": "B"
  },
  {
   "blk": 3,
-  "t": "22.42–30.62s",
-  "head": "Theo Wagemans và cộng sự (2012)",
-  "loi": "Một tổng quan năm 2012 cho thấy vùng nào nhỏ hơn, có biên rõ và tương phản với xung quanh thì dễ thành hình,",
-  "tts": "Một tổng quan năm hai nghìn không trăm mười hai cho thấy vùng nào nhỏ hơn, có biên rõ và tương phản với xung quanh thì dễ thành hình,",
+  "t": "23.97–33.11s",
+  "head": "Wagemans và cộng sự (2012)",
+  "loi": "Năm 2012, nhóm của Wagemans rà lại các nghiên cứu cũ và thấy vùng nào nhỏ, có biên rõ và tương phản cao thì dễ thành hình,",
+  "tts": "Năm hai nghìn không trăm mười hai, nhóm của Va-khơ-man rà lại các nghiên cứu cũ và thấy vùng nào nhỏ, có biên rõ và tương phản cao thì dễ thành hình,",
   "part": "C"
  },
  {
   "blk": 3,
-  "t": "30.62–34.76s",
-  "head": "Màu đồng nhất được đọc là nền",
-  "loi": "còn một mảng màu đồng nhất thường được đọc là nền.",
-  "tts": "còn một mảng màu đồng nhất thường được đọc là nền.",
+  "t": "33.11–36.62s",
+  "head": "Dấu hiệu của nền",
+  "loi": "còn màu đồng nhất là dấu hiệu của nền.",
+  "tts": "còn màu đồng nhất là dấu hiệu của nền.",
   "part": "C"
  },
  {
   "blk": 3,
-  "t": "34.76–43.27s",
-  "head": "Suy luận từ nguyên lý, chưa có thí nghiệm",
-  "loi": "Sổ tay nói rõ, dùng điều này để chia khu trong nhà là suy luận từ nguyên lý, chưa có thí nghiệm nào chứng minh.",
-  "tts": "Sổ tay nói rõ, dùng điều này để chia khu trong nhà là suy luận từ nguyên lý, chưa có thí nghiệm nào chứng minh.",
+  "t": "36.62–45.76s",
+  "head": "Phần áp dụng là suy luận",
+  "loi": "Tụi mình chưa tìm thấy thí nghiệm nào chứng minh mảng màu chia được khu trong nhà, nên phần sau đây là suy ra từ nguyên lý.",
+  "tts": "Tụi mình chưa tìm thấy thí nghiệm nào chứng minh mảng màu chia được khu trong nhà, nên phần sau đây là suy ra từ nguyên lý.",
   "part": "C"
  },
  {
   "blk": 4,
-  "t": "43.27–49.91s",
+  "t": "45.76–51.46s",
   "head": "Nhà Rietveld Schröder, Utrecht (1924)",
-  "loi": "Ở tầng trên nhà Rietveld Schröder tại Utrecht, xây năm 1924, ban ngày các vách trượt được thu lại,",
-  "tts": "Ở tầng trên nhà Rít-ven Srơ-đơ tại U-tréc, xây năm một nghìn chín trăm hai mươi tư, ban ngày các vách trượt được thu lại,",
+  "loi": "Ở tầng trên nhà Rietveld Schröder tại Utrecht, ban ngày các vách trượt được thu lại,",
+  "tts": "Ở tầng trên nhà Rít-ven Srơ-đơ tại U-tréc, ban ngày các vách trượt được thu lại,",
   "part": "D"
  },
  {
   "blk": 4,
-  "t": "49.91–58.42s",
-  "head": "Ranh giới nằm lại trên sàn",
+  "t": "51.46–59.97s",
+  "head": "Vách mở, sàn vẫn chia khu",
   "loi": "nhưng sàn vẫn chia thành những mảng đỏ, đen, trắng và xám có biên rõ, nên ranh giới các khu vẫn nằm lại trên sàn.",
   "tts": "nhưng sàn vẫn chia thành những mảng đỏ, đen, trắng và xám có biên rõ, nên ranh giới các khu vẫn nằm lại trên sàn.",
   "part": "D"
  },
  {
   "blk": 4,
-  "t": "58.42–65.37s",
-  "head": "Màu mạnh chỉ ở mảng nhỏ",
-  "loi": "Màu mạnh chỉ nằm ở mảng nhỏ, như mảng sàn đỏ, khối lam cạnh giường và chiếc ghế đỏ lam,",
-  "tts": "Màu mạnh chỉ nằm ở mảng nhỏ, như mảng sàn đỏ, khối lam cạnh giường và chiếc ghế đỏ lam,",
+  "t": "59.97–69.11s",
+  "head": "Mảng nhỏ nổi thành hình",
+  "loi": "Trong phòng sàn đỏ, màu mạnh chỉ nằm ở những mảng nhỏ như mảng sàn đỏ và chiếc ghế đỏ lam, nên chúng nổi lên thành hình,",
+  "tts": "Trong phòng sàn đỏ, màu mạnh chỉ nằm ở những mảng nhỏ như mảng sàn đỏ và chiếc ghế đỏ lam, nên chúng nổi lên thành hình,",
   "part": "D"
  },
  {
   "blk": 4,
-  "t": "65.37–68.87s",
-  "head": "Tường lớn giữ màu xám",
-  "loi": "còn bức tường lớn giữ màu xám.",
-  "tts": "còn bức tường lớn giữ màu xám.",
+  "t": "69.11–72.94s",
+  "head": "Mặt lớn lùi làm nền",
+  "loi": "còn bức tường lớn màu xám lùi lại làm nền.",
+  "tts": "còn bức tường lớn màu xám lùi lại làm nền.",
   "part": "D"
  },
  {
   "blk": 5,
-  "t": "68.87–77.7s",
-  "head": "Cho khu cần tách thành hình",
-  "loi": "Ở nhà mình, muốn tách khu bếp hay hốc tường sau sofa thì cho khu ấy nhỏ hơn, biên rõ hơn và tương phản hơn nền,",
-  "tts": "Ở nhà mình, muốn tách khu bếp hay hốc tường sau sofa thì cho khu ấy nhỏ hơn, biên rõ hơn và tương phản hơn nền,",
+  "t": "72.94–81.14s",
+  "head": "Khối tủ một màu, biên trùng mép tủ",
+  "loi": "Ở nhà mình, muốn tách khu bếp thì cho khối tủ một mảng màu tương phản với sàn và tường, biên trùng mép tủ,",
+  "tts": "Ở nhà mình, muốn tách khu bếp thì cho khối tủ một mảng màu tương phản với sàn và tường, biên trùng mép tủ,",
   "part": "F"
  },
  {
   "blk": 5,
-  "t": "77.7–82.46s",
+  "t": "81.14–85.9s",
   "head": "Màu xuống sàn, lên trần, thay cho vách",
   "loi": "và có thể đặt màu xuống sàn hay lên trần thay cho vách.",
   "tts": "và có thể đặt màu xuống sàn hay lên trần thay cho vách.",
@@ -97,7 +97,7 @@
  },
  {
   "blk": 6,
-  "t": "82.46–90.35s",
+  "t": "85.9–93.79s",
   "head": "Có hình thì hết lẫn lộn",
   "loi": "Vậy nhà mở lẫn lộn không phải vì thiếu vách, mà vì cả nhà chỉ có nền, chưa có khu nào thành hình.",
   "tts": "Vậy nhà mở lẫn lộn không phải vì thiếu vách, mà vì cả nhà chỉ có nền, chưa có khu nào thành hình.",
@@ -105,10 +105,10 @@
  },
  {
   "blk": 6,
-  "t": "90.35–99.8s",
+  "t": "93.79–103.24s",
   "head": "end",
-  "loi": "Các bước phân vùng nhà mở bằng màu có trong sổ tay Công thức chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha.",
-  "tts": "Các bước phân vùng nhà mở bằng màu có trong sổ tay Công thức chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha.",
+  "loi": "Các bước chia khu nhà mở bằng màu có trong sổ tay Công thức chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha.",
+  "tts": "Các bước chia khu nhà mở bằng màu có trong sổ tay Công thức chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha.",
   "part": "I"
  }
 ]

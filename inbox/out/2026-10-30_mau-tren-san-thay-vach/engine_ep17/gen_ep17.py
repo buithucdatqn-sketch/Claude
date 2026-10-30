@@ -40,7 +40,7 @@ def STRIP(cx, cy, z=1.0, ay=900):
 
 L_ = STRIP(591, 394, 0.9, 900)      # ảnh ngang 1182x788
 D21 = STRIP(270, 190, 0.86, 905)      # Hình 2.1, 540x380
-D23 = STRIP(270, 235, 0.69, 905)     # Hình 2.3 cắt phần "Nên" (bỏ tiêu đề lớn), 540x470
+D23 = STRIP(270, 208, 0.76, 905)     # Hình 2.3 cắt phần "Nên" (bỏ tiêu đề lớn), 540x470
 # Một câu hỏi trung tâm: nhà bỏ hết vách cho thoáng, sao nhìn lại loang, không rõ đâu là bếp, đâu là chỗ ngồi?
 # Mạch: móc → lý do (2.1: cả nhà chung một nền màu) → hình và nền (Rubin 1915) → điều kiện thành hình (Wagemans 2012) → hệ quả: cả nhà chỉ còn nền
 # (rào một lần: suy luận từ nguyên lý) → Rietveld Schröder: vách thu lại, ranh giới nằm trên sàn; màu mạnh ở mảng nhỏ, mặt lớn làm nền
@@ -48,35 +48,35 @@ D23 = STRIP(270, 235, 0.69, 905)     # Hình 2.3 cắt phần "Nên" (bỏ tiêu
 SC = [
     dict(move="push", part="A", blk=1, img="tren", head="Nhà mở bỏ vách, vì sao dễ lẫn lộn", cam=L_, free=True, dark=False, dd=[],
          vo="Nhà bỏ hết vách cho thoáng, sao nhìn lại lẫn lộn, không rõ đâu là bếp, đâu là chỗ ngồi?"),
-    dict(move="pan_r", part="A", blk=2, img="d21", head="Cả nhà nằm trên một nền màu", cam=D21, free=True, dark=False, dd=[],
-         vo="Lý do thường là cả nhà nằm trên một nền màu, nên mỗi khu chỉ còn được nhận ra nhờ đồ đạc."),
+    dict(move="pan_r", part="A", blk=2, img="d21", head="Cả nhà chung một màu sàn, màu tường", cam=D21, free=True, dark=False, dd=[],
+         vo="Lý do thường là phòng khách, bếp và bàn ăn chung một màu sàn, một màu tường, nên mỗi khu chỉ còn được nhận ra nhờ đồ đạc."),
     dict(move="hold", part="B", blk=2, img="d21", head="Hình và nền theo tâm lý học Gestalt", cam=D21, free=True, dark=False, dd=[],
-         vo="Theo tâm lý học Gestalt, mắt luôn tách một vùng nổi lên làm hình, còn phần còn lại lùi ra sau làm nền.",
-         tts="Theo tâm lý học Ghe-xtan, mắt luôn tách một vùng nổi lên làm hình, còn phần còn lại lùi ra sau làm nền."),
-    dict(move="push", part="C", blk=3, img="d21", head="Theo Wagemans và cộng sự (2012)", cam=D21, free=True, dark=False, dd=[],
-         vo="Một tổng quan năm 2012 cho thấy vùng nào nhỏ hơn, có biên rõ và tương phản với xung quanh thì dễ thành hình,",
-         tts="Một tổng quan năm hai nghìn không trăm mười hai cho thấy vùng nào nhỏ hơn, có biên rõ và tương phản với xung quanh thì dễ thành hình,"),
-    dict(move="hold", part="C", blk=3, img="d21", head="Màu đồng nhất được đọc là nền", cam=D21, free=True, dark=False, dd=[],
-         vo="còn một mảng màu đồng nhất thường được đọc là nền."),
-    dict(move="pull", part="C", blk=3, img="d21", head="Suy luận từ nguyên lý, chưa có thí nghiệm", cam=D21, free=True, dark=False, dd=[],
-         vo="Sổ tay nói rõ, dùng điều này để chia khu trong nhà là suy luận từ nguyên lý, chưa có thí nghiệm nào chứng minh."),
+         vo="Theo tâm lý học Gestalt, mắt tách một vùng nổi lên làm hình, còn phần còn lại lùi ra sau làm nền.",
+         tts="Theo tâm lý học Ghe-xtan, mắt tách một vùng nổi lên làm hình, còn phần còn lại lùi ra sau làm nền."),
+    dict(move="push", part="C", blk=3, img="d21", head="Wagemans và cộng sự (2012)", cam=D21, free=True, dark=False, dd=[],
+         vo="Năm 2012, nhóm của Wagemans rà lại các nghiên cứu cũ và thấy vùng nào nhỏ, có biên rõ và tương phản cao thì dễ thành hình,",
+         tts="Năm hai nghìn không trăm mười hai, nhóm của Va-khơ-man rà lại các nghiên cứu cũ và thấy vùng nào nhỏ, có biên rõ và tương phản cao thì dễ thành hình,"),
+    dict(move="hold", part="C", blk=3, img="d21", head="Dấu hiệu của nền", cam=D21, free=True, dark=False, dd=[],
+         vo="còn màu đồng nhất là dấu hiệu của nền."),
+    dict(move="pull", part="C", blk=3, img="d21", head="Phần áp dụng là suy luận", cam=D21, free=True, dark=False, dd=[],
+         vo="Tụi mình chưa tìm thấy thí nghiệm nào chứng minh mảng màu chia được khu trong nhà, nên phần sau đây là suy ra từ nguyên lý."),
     dict(move="pan_l", part="D", blk=4, img="tren", head="Nhà Rietveld Schröder, Utrecht (1924)", cam=L_, free=True, dark=False, dd=["vach", "lab_vach"],
-         vo="Ở tầng trên nhà Rietveld Schröder tại Utrecht, xây năm 1924, ban ngày các vách trượt được thu lại,",
-         tts="Ở tầng trên nhà Rít-ven Srơ-đơ tại U-tréc, xây năm một nghìn chín trăm hai mươi tư, ban ngày các vách trượt được thu lại,"),
-    dict(move="hold", part="D", blk=4, img="tren", head="Ranh giới nằm lại trên sàn", cam=L_, free=True, dark=False, dd=["sando", "lab_sando", "sanden", "lab_sanden"],
+         vo="Ở tầng trên nhà Rietveld Schröder tại Utrecht, ban ngày các vách trượt được thu lại,",
+         tts="Ở tầng trên nhà Rít-ven Srơ-đơ tại U-tréc, ban ngày các vách trượt được thu lại,"),
+    dict(move="hold", part="D", blk=4, img="tren", head="Vách mở, sàn vẫn chia khu", cam=L_, free=True, dark=False, dd=["sando", "lab_sando", "sanden", "lab_sanden"],
          vo="nhưng sàn vẫn chia thành những mảng đỏ, đen, trắng và xám có biên rõ, nên ranh giới các khu vẫn nằm lại trên sàn."),
-    dict(move="push", part="D", blk=4, img="do", head="Màu mạnh chỉ ở mảng nhỏ", cam=L_, free=True, dark=False, dd=["san", "lab_san", "lam", "lab_lam", "ghe", "lab_ghe"],
-         vo="Màu mạnh chỉ nằm ở mảng nhỏ, như mảng sàn đỏ, khối lam cạnh giường và chiếc ghế đỏ lam,"),
-    dict(move="hold", part="D", blk=4, img="do", head="Tường lớn giữ màu xám", cam=L_, free=True, dark=False, dd=["xam", "lab_xam"],
-         vo="còn bức tường lớn giữ màu xám."),
-    dict(move="pan_d", part="F", blk=5, img="d23", head="Cho khu cần tách thành hình", cam=D23, free=True, dark=False, dd=[],
-         vo="Ở nhà mình, muốn tách khu bếp hay hốc tường sau sofa thì cho khu ấy nhỏ hơn, biên rõ hơn và tương phản hơn nền,"),
+    dict(move="push", part="D", blk=4, img="do", head="Mảng nhỏ nổi thành hình", cam=L_, free=True, dark=False, dd=["san", "lab_san", "ghe", "lab_ghe"],
+         vo="Trong phòng sàn đỏ, màu mạnh chỉ nằm ở những mảng nhỏ như mảng sàn đỏ và chiếc ghế đỏ lam, nên chúng nổi lên thành hình,"),
+    dict(move="hold", part="D", blk=4, img="do", head="Mặt lớn lùi làm nền", cam=L_, free=True, dark=False, dd=["xam", "lab_xam"],
+         vo="còn bức tường lớn màu xám lùi lại làm nền."),
+    dict(move="pan_d", part="F", blk=5, img="d23", head="Khối tủ một màu, biên trùng mép tủ", cam=D23, free=True, dark=False, dd=[],
+         vo="Ở nhà mình, muốn tách khu bếp thì cho khối tủ một mảng màu tương phản với sàn và tường, biên trùng mép tủ,"),
     dict(move="pull", part="F", blk=5, img="tren", head="Màu xuống sàn, lên trần, thay cho vách", cam=L_, free=True, dark=False, dd=["tran", "lab_tran"],
          vo="và có thể đặt màu xuống sàn hay lên trần thay cho vách."),
     dict(move="push", part="H", blk=6, img="bep", head="Có hình thì hết lẫn lộn", cam=L_, free=True, dark=False, dd=[],
          vo="Vậy nhà mở lẫn lộn không phải vì thiếu vách, mà vì cả nhà chỉ có nền, chưa có khu nào thành hình."),
     dict(move="hold", part="I", blk=6, img="ebook", head="end", cam="END", dark=False, vo="", dd=[],
-         say="Các bước phân vùng nhà mở bằng màu có trong sổ tay Công thức chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha."),
+         say="Các bước chia khu nhà mở bằng màu có trong sổ tay Công thức chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha."),
 ]
 
 DOODLE = r'''
@@ -233,7 +233,7 @@ def build(src, dst, video, data, img, tag):
            ("    return top < TOP_END, bot > cr_y - 20, warn", "    return top < TOP_END and bool(sc[\"head\"]), bot > cr_y - 20 and bool(sc[\"vo\"]), warn"),
            # khung cuối: chữ khớp lời mời (mẫu tập 7)
            ('(1196, "Bài viết phân tích đầy đủ", 58, 240),\n    (1260, "xem ở dòng đầu tiên", 58, 240),\n    (1348, "trong phần bình luận", 66, 255),',
-            '(1252, "Sổ tay Công thức chọn màu nội thất", 54, 240),\n    (1314, "các bước phân vùng nhà mở bằng màu", 48, 240),\n    (1398, "xem ở phần bình luận", 66, 255),')]
+            '(1252, "Sổ tay Công thức chọn màu nội thất", 54, 240),\n    (1314, "các bước chia khu nhà mở bằng màu", 48, 240),\n    (1398, "xem ở phần bình luận", 66, 255),')]
     for a_, b_ in rep:
         assert a_ in s, a_
         s = s.replace(a_, b_)
@@ -283,7 +283,7 @@ print("runs", [(r["tag"], r["scenes"]) for r in RUNS])
 print("tổng engine", T[-1], "giây; từ lời đọc", nw, "; ước tính giọng đọc ~", round(nw / 3.4 + 5 * 1.0, 1), "giây")
 for k, x in enumerate(SC):
     print(k + 1, x["blk"], x["part"], x["t"], words(shown[k]), x["head"])
-FOREIGN = ["Rietveld", "Schröder", "Utrecht", "Edgar", "Rubin", "Wagemans", "Gestalt", "Checklist", "checklist", "Stijl", "Foster", "Barragán", "Gilardi", "Casa", "Luis", "Mexico", "Munsell", "Oberfeld", "Hecht", "Itten", "Johannes", "Castell", "von", "Pawson", "John", "London", "AH", "Decode", "Bauhaus", "LRV", "cm"]
+FOREIGN = ["sofa", "Rietveld", "Schröder", "Utrecht", "Edgar", "Rubin", "Wagemans", "Gestalt", "Checklist", "checklist", "Stijl", "Foster", "Barragán", "Gilardi", "Casa", "Luis", "Mexico", "Munsell", "Oberfeld", "Hecht", "Itten", "Johannes", "Castell", "von", "Pawson", "John", "London", "AH", "Decode", "Bauhaus", "LRV", "cm"]
 bad = re.findall(r"\d", " ".join(spoken)) + [w for w in FOREIGN if re.search(r"\b" + w + r"\b", " ".join(spoken))]
 print("chữ số / tên nước ngoài chưa phiên âm trong bản đọc:", bad)
 json.dump([dict(blk=x["blk"], t=x["t"], head=x["head"], loi=shown[k], tts=spoken[k], part=x["part"]) for k, x in enumerate(SC)],
