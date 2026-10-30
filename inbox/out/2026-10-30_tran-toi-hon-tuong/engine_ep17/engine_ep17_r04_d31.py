@@ -569,9 +569,9 @@ SCENES = [
          cam=((378, 267), 0.88, (540, 900)), dark=True, dd=[], keep=[], move="hold"),
     dict(t="4.45–11.4s", head="Hai hành lang giống hệt nhau", vo="Sổ tay vẽ hai hành lang giống hệt nhau để thấy điều này, tường cuối sáng thì trông xa hơn,",
          cam=((378, 267), 0.88, (540, 900)), dark=False, dd=['trai', 'lab_trai'], keep=[], move="hold"),
-    dict(t="11.4–16.16s", head="Tối hơn thì trông gần hơn", vo="còn tường cuối tối hơn thì trông gần hơn, và trần cũng thế.",
+    dict(t="11.4–17.1s", head="Tối hơn thì trông gần hơn", vo="còn tường cuối tối hơn hai tường bên thì trông gần hơn, và trần cũng thế.",
          cam=((378, 267), 0.88, (540, 900)), dark=False, dd=['phai', 'lab_phai'], keep=['trai', 'lab_trai'], move="hold"),
-    dict(t="16.16–16.66s", head="end", vo="",
+    dict(t="17.1–17.6s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1

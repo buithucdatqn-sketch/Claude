@@ -19,13 +19,13 @@ Mạch: móc → thói quen sơn trần màu ấm (màu nóng tiến) → hiện
 | 5 | C | 32.5–41.64s | von Castell, Hecht và Oberfeld (2018) | Năm 2018, nhóm von Castell tách riêng độ sáng tối, màu gì và độ tươi của màu trần, và thấy độ sáng tối quyết định gần hết, | Năm hai nghìn không trăm mười tám, nhóm phôn Cát-xten tách riêng độ sáng tối, màu gì và độ tươi của màu trần, và thấy độ sáng tối quyết định gần hết, |
 | 6 | C | 41.64–46.09s | Trần đỏ hay xanh lam cao gần như nhau | còn trần đỏ và trần xanh lam trông cao gần như nhau. | giữ nguyên |
 | 7 | C | 46.09–53.04s | Hai hành lang giống hệt nhau | Sổ tay vẽ hai hành lang giống hệt nhau để thấy điều này, tường cuối sáng thì trông xa hơn, | giữ nguyên |
-| 8 | C | 53.04–57.8s | Tối hơn thì trông gần hơn | còn tường cuối tối hơn thì trông gần hơn, và trần cũng thế. | giữ nguyên |
+| 8 | C | 53.04–57.8s | Tối hơn thì trông gần hơn | còn tường cuối tối hơn hai tường bên thì trông gần hơn, và trần cũng thế. | giữ nguyên |
 | 9 | F | 57.8–62.56s | Trần tối hơn tường | Vì vậy, muốn trần cao thấp xuống thì sơn trần tối hơn tường, | giữ nguyên |
 | 10 | F | 62.56–68.89s | Màu gì thì theo bảng màu của nhà | còn màu gì thì chọn theo bảng màu chung của nhà, như xám than hay gỗ tối màu. | giữ nguyên |
 | 11 | D | 68.89–74.59s | Klinker Apartment, Barcelona (2019) | Phòng ngủ này ở Barcelona có trần xanh xám đậm, tối hẳn so với tường kem. | Phòng ngủ này ở Bác-xê-lô-na có trần xanh xám đậm, tối hẳn so với tường kem. |
 | 12 | F | 74.59–80.29s | Báo trước với chủ nhà | Sổ tay dặn nên báo trước với chủ nhà rằng trần chỉ thấp đi vài xăng-ti-mét, | giữ nguyên |
-| 13 | F | 80.29–85.37s | Cái thấy rõ là ấm cúng, êm hơn | còn điều họ thường thấy rõ hơn là phòng ấm cúng và êm hơn. | giữ nguyên |
-| 14 | H | 85.37–95.13s | Đổi độ sáng tối, không chỉ đổi màu nóng lạnh | Vậy muốn phòng trần cao ấm lại, điều cần đổi là độ sáng tối của trần so với tường, còn nóng hay lạnh thì tùy bảng màu của nhà. | giữ nguyên |
+| 13 | F | 80.29–85.37s | Chủ nhà thấy rõ hơn là phòng ấm cúng | còn điều họ thường thấy rõ hơn là phòng ấm cúng và êm hơn. | giữ nguyên |
+| 14 | H | 85.37–95.13s | Đổi độ sáng tối, không chỉ đổi màu nóng lạnh | Vậy muốn phòng trần cao ấm lại, điều cần đổi là độ sáng tối của trần so với tường, chứ không chỉ là màu nóng hay lạnh. | giữ nguyên |
 | 15 | I | 95.13–105.83s | end | Ba cách chỉnh cao thấp, nông sâu của căn phòng bằng màu có trong sổ tay Công thức chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha. | giữ nguyên |
 
 ## Bảng phân cảnh
@@ -48,11 +48,11 @@ Nhiều người sẽ sơn trần màu ấm, vì quen câu màu nóng tiến l�
 <break time="1.2s" />
 Khi thử trên mô hình phòng, nhóm Ô-bơ-phen thấy trần và tường càng sáng thì phòng trông càng cao. Năm hai nghìn không trăm mười tám, nhóm phôn Cát-xten tách riêng độ sáng tối, màu gì và độ tươi của màu trần, và thấy độ sáng tối quyết định gần hết, còn trần đỏ và trần xanh lam trông cao gần như nhau.
 <break time="1.2s" />
-Sổ tay vẽ hai hành lang giống hệt nhau để thấy điều này, tường cuối sáng thì trông xa hơn, còn tường cuối tối hơn thì trông gần hơn, và trần cũng thế.
+Sổ tay vẽ hai hành lang giống hệt nhau để thấy điều này, tường cuối sáng thì trông xa hơn, còn tường cuối tối hơn hai tường bên thì trông gần hơn, và trần cũng thế.
 <break time="1.2s" />
 Vì vậy, muốn trần cao thấp xuống thì sơn trần tối hơn tường, còn màu gì thì chọn theo bảng màu chung của nhà, như xám than hay gỗ tối màu. Phòng ngủ này ở Bác-xê-lô-na có trần xanh xám đậm, tối hẳn so với tường kem. Sổ tay dặn nên báo trước với chủ nhà rằng trần chỉ thấp đi vài xăng-ti-mét, còn điều họ thường thấy rõ hơn là phòng ấm cúng và êm hơn.
 <break time="1.2s" />
-Vậy muốn phòng trần cao ấm lại, điều cần đổi là độ sáng tối của trần so với tường, còn nóng hay lạnh thì tùy bảng màu của nhà. Ba cách chỉnh cao thấp, nông sâu của căn phòng bằng màu có trong sổ tay Công thức chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha.
+Vậy muốn phòng trần cao ấm lại, điều cần đổi là độ sáng tối của trần so với tường, chứ không chỉ là màu nóng hay lạnh. Ba cách chỉnh cao thấp, nông sâu của căn phòng bằng màu có trong sổ tay Công thức chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha.
 ```
 
 ## Phiên âm cho ElevenLabs
@@ -66,7 +66,7 @@ Vậy muốn phòng trần cao ấm lại, điều cần đổi là độ sáng 
 
 ## Người chấm độc lập
 - Lượt 1: CHƯA ĐẠT. Câu móc hỏi "màu gì" mà reel không trả lời; khối hành lang thành bài học thứ hai, trùng tập 14 (con số 6,8 cm vênh với gần 8 cm); "chỉ đo được" và bỏ chữ "thường" nói quá sổ tay; "sắc độ, độ rực" chưa nói nghĩa; câu chốt lặp câu cơ chế. Đã sửa: khối 2, 3, 4 và câu chốt theo đề xuất (độ sáng tối, màu gì, độ tươi; màu gì theo bảng màu của nhà, như xám than hay gỗ tối màu; giữ "thường"); "sô-pha". Không làm theo đề xuất bỏ hẳn khối hành lang vì chủ Trang yêu cầu cảnh sơ đồ vẽ dần; khối này đổi thành hình minh hoạ cơ chế ("tối hơn thì trông gần hơn, và trần cũng thế") ngay trước "Vì vậy", bỏ con số 6,8 cm. Để giữ độ dài, bỏ hai ý phụ: "trên nền trắng thì yếu đi, đảo chiều" và "sàn gần như không ảnh hưởng" (đưa vào caption).
-- Lượt 2: xem cuối file.
+- Lượt 2: ĐẠT (mạch kể, thuyết phục, dễ hiểu; "và trần cũng thế" có căn cứ ở mục 3.2 và kỹ thuật 1; trùng tập 14 chấp nhận được vì chỉ còn một vế nối). Hai sửa bắt buộc đã làm: câu chốt bỏ lặp "bảng màu của nhà" → "chứ không chỉ là màu nóng hay lạnh"; thêm mốc so sánh "tối hơn hai tường bên". Nhận gợi ý đổi tiêu đề cảnh 13. Gợi ý dự phòng: nếu bản thu quá 77 giây thì bỏ ý Oberfeld, gộp vào câu von Castell.
 
 Ba điều người xem học được: (1) màu nóng hay lạnh gần như không đổi chiều cao cảm nhận của trần, trần đỏ và trần xanh lam trông cao như nhau; (2) độ sáng tối mới quyết định, nên muốn trần cao thấp xuống thì sơn trần tối hơn tường, màu gì thì theo bảng màu của nhà; (3) mức thay đổi chỉ vài xăng-ti-mét, cái chủ nhà thường thấy rõ hơn là phòng ấm cúng, êm hơn. Không trùng tập 14 (sơn sáng để phòng nhỏ rộng hơn, chỉ số phản xạ).
 

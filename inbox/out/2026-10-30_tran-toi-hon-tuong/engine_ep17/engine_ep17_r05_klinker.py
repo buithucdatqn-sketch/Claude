@@ -565,19 +565,19 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–4.76s", head="Tối hơn thì trông gần hơn", vo="còn tường cuối tối hơn thì trông gần hơn, và trần cũng thế.",
+    dict(t="0–5.7s", head="Tối hơn thì trông gần hơn", vo="còn tường cuối tối hơn hai tường bên thì trông gần hơn, và trần cũng thế.",
          cam=((264.5, 380), 2.1, (540, 925)), dark=False, dd=[], keep=[], move="hold"),
-    dict(t="4.76–9.52s", head="Trần tối hơn tường", vo="Vì vậy, muốn trần cao thấp xuống thì sơn trần tối hơn tường,",
+    dict(t="5.7–10.46s", head="Trần tối hơn tường", vo="Vì vậy, muốn trần cao thấp xuống thì sơn trần tối hơn tường,",
          cam=((264.5, 380), 2.1, (540, 925)), dark=True, dd=['tranx', 'lab_tranx'], keep=[], move="push"),
-    dict(t="9.52–15.85s", head="Màu gì thì theo bảng màu của nhà", vo="còn màu gì thì chọn theo bảng màu chung của nhà, như xám than hay gỗ tối màu.",
+    dict(t="10.46–16.79s", head="Màu gì thì theo bảng màu của nhà", vo="còn màu gì thì chọn theo bảng màu chung của nhà, như xám than hay gỗ tối màu.",
          cam=((264.5, 380), 2.1, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="15.85–21.55s", head="Klinker Apartment, Barcelona (2019)", vo="Phòng ngủ này ở Barcelona có trần xanh xám đậm, tối hẳn so với tường kem.",
+    dict(t="16.79–22.49s", head="Klinker Apartment, Barcelona (2019)", vo="Phòng ngủ này ở Barcelona có trần xanh xám đậm, tối hẳn so với tường kem.",
          cam=((264.5, 380), 2.1, (540, 925)), dark=True, dd=['kem', 'lab_kem'], keep=[], move="pan_u"),
-    dict(t="21.55–27.25s", head="Báo trước với chủ nhà", vo="Sổ tay dặn nên báo trước với chủ nhà rằng trần chỉ thấp đi vài xăng-ti-mét,",
+    dict(t="22.49–28.19s", head="Báo trước với chủ nhà", vo="Sổ tay dặn nên báo trước với chủ nhà rằng trần chỉ thấp đi vài xăng-ti-mét,",
          cam=((264.5, 380), 2.1, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="27.25–32.33s", head="Cái thấy rõ là ấm cúng, êm hơn", vo="còn điều họ thường thấy rõ hơn là phòng ấm cúng và êm hơn.",
+    dict(t="28.19–33.27s", head="Chủ nhà thấy rõ hơn là phòng ấm cúng", vo="còn điều họ thường thấy rõ hơn là phòng ấm cúng và êm hơn.",
          cam=((264.5, 380), 2.1, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="32.33–32.83s", head="end", vo="",
+    dict(t="33.27–33.77s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1

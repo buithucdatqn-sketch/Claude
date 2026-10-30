@@ -57,15 +57,15 @@
  },
  {
   "blk": 4,
-  "t": "53.04–57.8s",
+  "t": "53.04–58.74s",
   "head": "Tối hơn thì trông gần hơn",
-  "loi": "còn tường cuối tối hơn thì trông gần hơn, và trần cũng thế.",
-  "tts": "còn tường cuối tối hơn thì trông gần hơn, và trần cũng thế.",
+  "loi": "còn tường cuối tối hơn hai tường bên thì trông gần hơn, và trần cũng thế.",
+  "tts": "còn tường cuối tối hơn hai tường bên thì trông gần hơn, và trần cũng thế.",
   "part": "C"
  },
  {
   "blk": 5,
-  "t": "57.8–62.56s",
+  "t": "58.74–63.5s",
   "head": "Trần tối hơn tường",
   "loi": "Vì vậy, muốn trần cao thấp xuống thì sơn trần tối hơn tường,",
   "tts": "Vì vậy, muốn trần cao thấp xuống thì sơn trần tối hơn tường,",
@@ -73,7 +73,7 @@
  },
  {
   "blk": 5,
-  "t": "62.56–68.89s",
+  "t": "63.5–69.83s",
   "head": "Màu gì thì theo bảng màu của nhà",
   "loi": "còn màu gì thì chọn theo bảng màu chung của nhà, như xám than hay gỗ tối màu.",
   "tts": "còn màu gì thì chọn theo bảng màu chung của nhà, như xám than hay gỗ tối màu.",
@@ -81,7 +81,7 @@
  },
  {
   "blk": 5,
-  "t": "68.89–74.59s",
+  "t": "69.83–75.53s",
   "head": "Klinker Apartment, Barcelona (2019)",
   "loi": "Phòng ngủ này ở Barcelona có trần xanh xám đậm, tối hẳn so với tường kem.",
   "tts": "Phòng ngủ này ở Bác-xê-lô-na có trần xanh xám đậm, tối hẳn so với tường kem.",
@@ -89,7 +89,7 @@
  },
  {
   "blk": 5,
-  "t": "74.59–80.29s",
+  "t": "75.53–81.23s",
   "head": "Báo trước với chủ nhà",
   "loi": "Sổ tay dặn nên báo trước với chủ nhà rằng trần chỉ thấp đi vài xăng-ti-mét,",
   "tts": "Sổ tay dặn nên báo trước với chủ nhà rằng trần chỉ thấp đi vài xăng-ti-mét,",
@@ -97,23 +97,23 @@
  },
  {
   "blk": 5,
-  "t": "80.29–85.37s",
-  "head": "Cái thấy rõ là ấm cúng, êm hơn",
+  "t": "81.23–86.31s",
+  "head": "Chủ nhà thấy rõ hơn là phòng ấm cúng",
   "loi": "còn điều họ thường thấy rõ hơn là phòng ấm cúng và êm hơn.",
   "tts": "còn điều họ thường thấy rõ hơn là phòng ấm cúng và êm hơn.",
   "part": "F"
  },
  {
   "blk": 6,
-  "t": "85.37–95.13s",
+  "t": "86.31–95.45s",
   "head": "Đổi độ sáng tối, không chỉ đổi màu nóng lạnh",
-  "loi": "Vậy muốn phòng trần cao ấm lại, điều cần đổi là độ sáng tối của trần so với tường, còn nóng hay lạnh thì tùy bảng màu của nhà.",
-  "tts": "Vậy muốn phòng trần cao ấm lại, điều cần đổi là độ sáng tối của trần so với tường, còn nóng hay lạnh thì tùy bảng màu của nhà.",
+  "loi": "Vậy muốn phòng trần cao ấm lại, điều cần đổi là độ sáng tối của trần so với tường, chứ không chỉ là màu nóng hay lạnh.",
+  "tts": "Vậy muốn phòng trần cao ấm lại, điều cần đổi là độ sáng tối của trần so với tường, chứ không chỉ là màu nóng hay lạnh.",
   "part": "H"
  },
  {
   "blk": 6,
-  "t": "95.13–105.83s",
+  "t": "95.45–106.15s",
   "head": "end",
   "loi": "Ba cách chỉnh cao thấp, nông sâu của căn phòng bằng màu có trong sổ tay Công thức chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha.",
   "tts": "Ba cách chỉnh cao thấp, nông sâu của căn phòng bằng màu có trong sổ tay Công thức chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha.",

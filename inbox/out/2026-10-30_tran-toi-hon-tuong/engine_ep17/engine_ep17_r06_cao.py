@@ -565,11 +565,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.08s", head="Cái thấy rõ là ấm cúng, êm hơn", vo="còn điều họ thường thấy rõ hơn là phòng ấm cúng và êm hơn.",
+    dict(t="0–5.08s", head="Chủ nhà thấy rõ hơn là phòng ấm cúng", vo="còn điều họ thường thấy rõ hơn là phòng ấm cúng và êm hơn.",
          cam=((667, 950), 2.2, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="5.08–14.84s", head="Đổi độ sáng tối, không chỉ đổi màu nóng lạnh", vo="Vậy muốn phòng trần cao ấm lại, điều cần đổi là độ sáng tối của trần so với tường, còn nóng hay lạnh thì tùy bảng màu của nhà.",
+    dict(t="5.08–14.22s", head="Đổi độ sáng tối, không chỉ đổi màu nóng lạnh", vo="Vậy muốn phòng trần cao ấm lại, điều cần đổi là độ sáng tối của trần so với tường, chứ không chỉ là màu nóng hay lạnh.",
          cam=((667, 950), 2.2, (540, 925)), dark=True, dd=[], keep=[], move="pull"),
-    dict(t="14.84–15.34s", head="end", vo="",
+    dict(t="14.22–14.72s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1

@@ -565,9 +565,9 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–9.76s", head="", vo="",
+    dict(t="0–9.14s", head="", vo="",
          cam=END_SAFE, dark=True, dd=[], keep=[], move="hold"),
-    dict(t="9.76–20.46s", head="end", vo="",
+    dict(t="9.14–19.84s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1
