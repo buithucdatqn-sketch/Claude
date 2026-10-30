@@ -1,0 +1,94 @@
+[
+ {
+  "tag": "r01_cao",
+  "img": "cao",
+  "src": "source_cao.png",
+  "scenes": [
+   1
+  ],
+  "t_in_main": 0.0,
+  "cut_from": 0.0,
+  "cut_len": 7.58,
+  "first_frame": 1
+ },
+ {
+  "tag": "r02_dailly",
+  "img": "dailly",
+  "src": "source_dailly.png",
+  "scenes": [
+   2,
+   3
+  ],
+  "t_in_main": 7.58,
+  "cut_from": 7.58,
+  "cut_len": 13.28,
+  "first_frame": 2
+ },
+ {
+  "tag": "r03_cao",
+  "img": "cao",
+  "src": "source_cao.png",
+  "scenes": [
+   4,
+   5,
+   6,
+   7
+  ],
+  "t_in_main": 20.86,
+  "cut_from": 6.639999999999999,
+  "cut_len": 23.11,
+  "first_frame": 2
+ },
+ {
+  "tag": "r04_klinker",
+  "img": "klinker",
+  "src": "source_klinker.png",
+  "scenes": [
+   8,
+   9,
+   10,
+   11
+  ],
+  "t_in_main": 43.97,
+  "cut_from": 4.449999999999996,
+  "cut_len": 20.61,
+  "first_frame": 2
+ },
+ {
+  "tag": "r05_d31",
+  "img": "d31",
+  "src": "source_d31.png",
+  "scenes": [
+   12,
+   13
+  ],
+  "t_in_main": 64.58,
+  "cut_from": 4.759999999999998,
+  "cut_len": 11.090000000000003,
+  "first_frame": 2
+ },
+ {
+  "tag": "r06_klinker",
+  "img": "klinker",
+  "src": "source_klinker.png",
+  "scenes": [
+   14
+  ],
+  "t_in_main": 75.67,
+  "cut_from": 5.700000000000003,
+  "cut_len": 6.950000000000003,
+  "first_frame": 2
+ },
+ {
+  "tag": "r07_ebook",
+  "img": "ebook",
+  "src": "source_ebook.png",
+  "scenes": [
+   15
+  ],
+  "t_in_main": 82.62,
+  "cut_from": 6.950000000000003,
+  "cut_len": 12.329999999999998,
+  "first_frame": 2
+ }
+]

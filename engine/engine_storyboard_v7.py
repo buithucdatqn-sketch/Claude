@@ -24,6 +24,8 @@ if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
 CREDIT = "Ảnh dự án: [tên dự án] · [studio] · [nhiếp ảnh gia]"
 HEAD = "AH DECODE · CÂN BẰNG THỊ GIÁC"
+TAPE = True     # False: ảnh phóng phủ kín khung, không vẽ băng keo ở mép trên (chủ Trang yêu cầu 2026-10-30)
+SKETCH = False  # True: sơ đồ (sketch) hiện ra theo từng nét trên nền trắng, không thẻ ảnh, không băng keo (chủ Trang yêu cầu 2026-10-30)
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
 END_LINES = [
@@ -240,6 +242,15 @@ _LINEN = None
 
 def make_board(dark, swatches=False):
     global _LINEN
+    if SKETCH:  # nền trắng trơn; ảnh sơ đồ chỉ là nguồn màu mực, phần nào lộ ra do mặt nạ nét quyết định; alpha 0 để chữ nâu
+        out = np.full((B2H, B2W, 3), 255.0, np.float32)
+        x0, y0 = int(C2[0] - CARD_W2 / 2), int(C2[1] - CARD_H2 / 2)
+        ph = np.array(src.convert("RGB").resize((PH_W2, PH_H2), Image.LANCZOS)).astype(np.float32)
+        xa, ya, xb, yb = max(0, x0), max(0, y0), min(B2W, x0 + PH_W2), min(B2H, y0 + PH_H2)
+        out[ya:yb, xa:xb] = ph[ya - y0:yb - y0, xa - x0:xb - x0]
+        out = cv2.warpAffine(out, ROT, (B2W, B2H), flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_CONSTANT, borderValue=(255, 255, 255))  # cùng phép xoay với src_to_b2 để mặt nạ nét trùng nét mực
+        b2 = np.concatenate([out, np.zeros((B2H, B2W, 1), np.float32)], 2).astype(np.uint8)
+        return cv2.resize(b2, (W, H), interpolation=cv2.INTER_AREA), b2
     if _LINEN is None:
         _LINEN = linen()
     fab = np.full((B2H, B2W, 3), 255.0, np.float32)  # plain white background
@@ -271,7 +282,8 @@ def make_board(dark, swatches=False):
     cx, cy = C2[0], y0 + 6  # tape centred on the top edge
     px = ROT[0, 0] * cx + ROT[0, 1] * cy + ROT[0, 2]
     py = ROT[1, 0] * cx + ROT[1, 1] * cy + ROT[1, 2]
-    draw_tape(out, (px, py), ANGLE - 3.0)
+    if TAPE:
+        draw_tape(out, (px, py), ANGLE - 3.0)
     b2 = np.concatenate([np.clip(out, 0, 255), (al * 255)[..., None]], 2).astype(np.uint8)
     b1 = cv2.resize(b2, (W, H), interpolation=cv2.INTER_AREA)
     return b1, b2
@@ -496,6 +508,8 @@ def scrim(base, top=False, bottom=False):
 def text_layout(sc, cam, t):
     """vẽ header, tiêu đề, credit, phụ đề vào t (chữ trắng trên ảnh, nâu trên nền tự đổi theo nền); trả (phủ trên, phủ dưới, cảnh báo)"""
     top, bot = cam.card_top, cam.card_bottom
+    if SKETCH:  # không có mép thẻ ảnh: chữ nâu trên giấy trắng, không phủ tối
+        top, bot = TOP_END, -1.0
     n = len(t.wrap(sc["vo"], 56, TEXT_W))
     vo_y = SAFE_Y1 - 8 - n * 72
     cr_y = vo_y - 48
@@ -642,6 +656,9 @@ def render_scene(i):
     for w_ in warn:
         print(f"CẢNH BÁO cảnh {i + 1}: {w_}", flush=True)
     qa_text(i, np.array(text.img, np.float32) / 255)
+    if SKETCH:  # khung tĩnh: sơ đồ đã vẽ xong phần của cảnh này (và các cảnh trước trong run) trên giấy trắng
+        mk = np.maximum(wb.mask(), keep_mask(i, cam))[..., None]
+        return compose(255.0 * (1 - mk) + base * mk, np.array(text.img, np.float32) / 255, fabm)
     base = scrim(base, top=st, bottom=sb)
     white = np.maximum(wb.mask(), np.array(text.img, np.float32) / 255)
     return compose(base, white, fabm)
