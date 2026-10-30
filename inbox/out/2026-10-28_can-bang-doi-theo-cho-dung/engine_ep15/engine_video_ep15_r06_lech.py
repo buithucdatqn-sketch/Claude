@@ -552,13 +552,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.39s", head="Đứng ở chân giường, đúng trên trục", vo="Đứng ở chân giường, đúng trên trục giữa giường, mọi người thấy đủ hai đèn.",
+    dict(t="0–3.98s", head="Đứng ở chân giường, đúng trên trục", vo="Đứng ở chân giường, đúng trên trục giữa giường, mọi người thấy đủ hai đèn.",
          cam=((893, 575), 0.92, (540, 890)), dark=True, dd=[], move="hold"),
-    dict(t="5.39–9.84s", head="Sang góc phòng, chỉ còn một đèn", vo="Bước sang một góc phòng thì chỉ còn thấy một chiếc đèn.",
+    dict(t="3.98–6.71s", head="Sang góc phòng, chỉ còn một đèn", vo="Bước sang một góc phòng thì chỉ còn thấy một chiếc đèn.",
          cam=((893, 575), 0.92, (540, 890)), dark=True, dd=['a_den', 'lab_den'], move="pan_l"),
-    dict(t="9.84–16.79s", head="Đối xứng chỉ hiện rõ ở một chỗ đứng", vo="Nghĩa là cách kê đối xứng kỹ nhất trong căn hộ cũng chỉ hiện rõ khi đứng ở một chỗ.",
+    dict(t="6.71–11.24s", head="Đối xứng chỉ hiện rõ ở một chỗ đứng", vo="Nghĩa là cách kê đối xứng kỹ nhất trong căn hộ cũng chỉ hiện rõ khi đứng ở một chỗ.",
          cam=((893, 575), 0.92, (540, 890)), dark=True, dd=[], move="push"),
-    dict(t="16.79–17.29s", head="end", vo="",
+    dict(t="11.24–11.74s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

@@ -1,0 +1,104 @@
+[
+ {
+  "tag": "r01_tren",
+  "img": "tren",
+  "src": "source_tren.png",
+  "scenes": [
+   1
+  ],
+  "t_in_main": 0.0,
+  "cut_from": 0.0,
+  "cut_len": 6.95,
+  "first_frame": 1
+ },
+ {
+  "tag": "r02_d21",
+  "img": "d21",
+  "src": "source_d21.png",
+  "scenes": [
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "t_in_main": 6.95,
+  "cut_from": 6.95,
+  "cut_len": 36.32,
+  "first_frame": 2
+ },
+ {
+  "tag": "r03_tren",
+  "img": "tren",
+  "src": "source_tren.png",
+  "scenes": [
+   7,
+   8
+  ],
+  "t_in_main": 43.27,
+  "cut_from": 8.510000000000005,
+  "cut_len": 15.149999999999999,
+  "first_frame": 2
+ },
+ {
+  "tag": "r04_do",
+  "img": "do",
+  "src": "source_do.png",
+  "scenes": [
+   9,
+   10
+  ],
+  "t_in_main": 58.42,
+  "cut_from": 8.510000000000005,
+  "cut_len": 10.450000000000003,
+  "first_frame": 2
+ },
+ {
+  "tag": "r05_d23",
+  "img": "d23",
+  "src": "source_d23.png",
+  "scenes": [
+   11
+  ],
+  "t_in_main": 68.87,
+  "cut_from": 3.5,
+  "cut_len": 8.829999999999998,
+  "first_frame": 2
+ },
+ {
+  "tag": "r06_tren",
+  "img": "tren",
+  "src": "source_tren.png",
+  "scenes": [
+   12
+  ],
+  "t_in_main": 77.7,
+  "cut_from": 8.829999999999998,
+  "cut_len": 4.759999999999991,
+  "first_frame": 2
+ },
+ {
+  "tag": "r07_bep",
+  "img": "bep",
+  "src": "source_bep.png",
+  "scenes": [
+   13
+  ],
+  "t_in_main": 82.46,
+  "cut_from": 4.759999999999991,
+  "cut_len": 7.890000000000001,
+  "first_frame": 2
+ },
+ {
+  "tag": "r08_ebook",
+  "img": "ebook",
+  "src": "source_ebook.png",
+  "scenes": [
+   14
+  ],
+  "t_in_main": 90.35,
+  "cut_from": 7.890000000000001,
+  "cut_len": 10.450000000000003,
+  "first_frame": 2
+ }
+]

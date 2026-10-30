@@ -552,13 +552,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.95s", head="Đối xứng chỉ hiện rõ ở một chỗ đứng", vo="Nghĩa là cách kê đối xứng kỹ nhất trong căn hộ cũng chỉ hiện rõ khi đứng ở một chỗ.",
+    dict(t="0–4.53s", head="Đối xứng chỉ hiện rõ ở một chỗ đứng", vo="Nghĩa là cách kê đối xứng kỹ nhất trong căn hộ cũng chỉ hiện rõ khi đứng ở một chỗ.",
          cam=((893, 650), 0.8, (540, 890)), dark=True, dd=[], move="hold"),
-    dict(t="6.95–14.84s", head="Lại gần lò sưởi trong phòng khách", vo="Phòng khách kê lệch cũng đổi theo chỗ đứng. Khi lại gần, chiếc lò sưởi hình nón thành món to nhất trước mắt.",
+    dict(t="4.53–10.12s", head="Lại gần lò sưởi trong phòng khách", vo="Phòng khách kê lệch cũng đổi theo chỗ đứng. Khi lại gần, chiếc lò sưởi hình nón thành món to nhất trước mắt.",
          cam=((893, 650), 0.8, (540, 890)), dark=True, dd=['chup', 'a_chup', 'lab_chup'], move="pan_r"),
-    dict(t="14.84–24.29s", head="Hai món giữ cân đã ra ngoài tầm nhìn", vo="Còn bộ sofa và bức tranh sẫm ở phía bên kia, hai món giữ cân cho chiếc lò sưởi, đã ra ngoài tầm nhìn từ chỗ đứng ấy.",
+    dict(t="10.12–16.37s", head="Hai món giữ cân đã ra ngoài tầm nhìn", vo="Còn bộ sofa và bức tranh sẫm ở phía bên kia, hai món giữ cân cho chiếc lò sưởi, đã ra ngoài tầm nhìn từ chỗ đứng ấy.",
          cam=((893, 650), 0.8, (540, 890)), dark=True, dd=['a_ngoai', 'lab_ngoai'], move="hold"),
-    dict(t="24.29–24.79s", head="end", vo="",
+    dict(t="16.37–16.87s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1

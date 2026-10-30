@@ -551,11 +551,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–9.45s", head="Hai món giữ cân đã ra ngoài tầm nhìn", vo="Còn bộ sofa và bức tranh sẫm ở phía bên kia, hai món giữ cân cho chiếc lò sưởi, đã ra ngoài tầm nhìn từ chỗ đứng ấy.",
+    dict(t="0–6.25s", head="Hai món giữ cân đã ra ngoài tầm nhìn", vo="Còn bộ sofa và bức tranh sẫm ở phía bên kia, hai món giữ cân cho chiếc lò sưởi, đã ra ngoài tầm nhìn từ chỗ đứng ấy.",
          cam=((1200, 1200), 0.6, (540, 890)), dark=True, dd=[], move="hold"),
-    dict(t="9.45–18.27s", head="Ảnh chỉ chắc cân ở chỗ chụp", vo="Một tấm ảnh cũng chỉ chụp từ một chỗ đứng, nên căn phòng trông cân trong ảnh mới chỉ chắc là cân ở đúng chỗ ấy.",
+    dict(t="6.25–11.95s", head="Ảnh chỉ chắc cân ở chỗ chụp", vo="Một tấm ảnh cũng chỉ chụp từ một chỗ đứng, nên căn phòng trông cân trong ảnh mới chỉ chắc là cân ở đúng chỗ.",
          cam=((1200, 1200), 0.6, (540, 890)), dark=True, dd=['khung', 'lab_mot'], move="pull"),
-    dict(t="18.27–18.77s", head="end", vo="",
+    dict(t="11.95–12.45s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], move="hold"),
 ]
 END = len(SCENES) - 1
