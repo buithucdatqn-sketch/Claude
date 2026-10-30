@@ -565,17 +565,15 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.64s", head="Chỉ đo được trên mảng màu nhỏ", vo="Màu tiến, màu lùi có thật, nhưng chỉ đo được trên những mảng màu nhỏ trong phòng thí nghiệm.",
+    dict(t="0–8.83s", head="Đo trên mảng màu nhỏ, không đo trên căn phòng", vo="Màu tiến, màu lùi có thật, nhưng chỉ được đo trên những mảng màu nhỏ trong phòng thí nghiệm, chứ không đo trên một căn phòng.",
          cam=((667, 950), 2.2, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="6.64–13.28s", head="Oberfeld, Hecht và Gamer (2010)", vo="Khi thử trên mô hình phòng, nhóm Oberfeld thấy trần và tường càng sáng thì phòng trông càng cao,",
+    dict(t="8.83–15.47s", head="Oberfeld, Hecht và Gamer (2010)", vo="Khi thử trên mô hình phòng, nhóm Oberfeld thấy trần và tường càng sáng thì phòng trông càng cao.",
          cam=((667, 950), 2.2, (540, 925)), dark=True, dd=['tran', 'lab_tran', 'tuong', 'lab_tuong'], keep=[], move="pull"),
-    dict(t="13.28–17.1s", head="Oberfeld, Hecht và Gamer (2010)", vo="còn sàn sáng hay tối gần như không ảnh hưởng.",
-         cam=((667, 950), 2.2, (540, 925)), dark=True, dd=['san', 'lab_san'], keep=[], move="hold"),
-    dict(t="17.1–25.3s", head="von Castell, Hecht và Oberfeld (2018)", vo="Năm 2018, nhóm von Castell tách riêng độ sáng, sắc độ và độ rực của trần, và thấy độ sáng quyết định gần hết,",
-         cam=((667, 950), 2.2, (540, 925)), dark=True, dd=['dosang', 'lab_dosang'], keep=[], move="hold"),
-    dict(t="25.3–29.75s", head="Trần đỏ hay xanh lam cao gần như nhau", vo="còn trần đỏ và trần xanh lam trông cao gần như nhau.",
+    dict(t="15.47–24.61s", head="von Castell, Hecht và Oberfeld (2018)", vo="Năm 2018, nhóm von Castell tách riêng độ sáng tối, màu gì và độ tươi của màu trần, và thấy độ sáng tối quyết định gần hết,",
+         cam=((667, 950), 2.2, (540, 925)), dark=True, dd=['dosang', 'lab_dosang'], keep=[], move="push"),
+    dict(t="24.61–29.06s", head="Trần đỏ hay xanh lam cao gần như nhau", vo="còn trần đỏ và trần xanh lam trông cao gần như nhau.",
          cam=((667, 950), 2.2, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="29.75–30.25s", head="end", vo="",
+    dict(t="29.06–29.56s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1

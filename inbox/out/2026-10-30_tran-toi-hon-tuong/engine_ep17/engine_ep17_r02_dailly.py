@@ -567,11 +567,11 @@ WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–7.58s", head="Trần cao, phòng trống và lạnh", vo="Trần cao làm sofa trông nhỏ lại, phòng ngồi lâu thấy trống và lạnh. Sơn trần màu gì để phòng ấm lại?",
          cam=((380, 420), 2.1, (540, 677)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="7.58–14.22s", head="Thói quen chọn màu ấm", vo="Nhiều người sẽ chọn màu ấm, vì quen câu màu nóng tiến lại gần, màu lạnh lùi ra xa.",
+    dict(t="7.58–17.03s", head="Thói quen sơn trần màu ấm", vo="Nhiều người sẽ sơn trần màu ấm, vì quen câu màu nóng tiến lại gần, màu lạnh lùi ra xa, nên nghĩ trần màu ấm sẽ thấp xuống.",
          cam=((380, 420), 2.1, (540, 677)), dark=True, dd=['gach', 'lab_gach'], keep=[], move="pan_d"),
-    dict(t="14.22–20.86s", head="Chỉ đo được trên mảng màu nhỏ", vo="Màu tiến, màu lùi có thật, nhưng chỉ đo được trên những mảng màu nhỏ trong phòng thí nghiệm.",
+    dict(t="17.03–25.86s", head="Đo trên mảng màu nhỏ, không đo trên căn phòng", vo="Màu tiến, màu lùi có thật, nhưng chỉ được đo trên những mảng màu nhỏ trong phòng thí nghiệm, chứ không đo trên một căn phòng.",
          cam=((380, 420), 2.1, (540, 677)), dark=True, dd=['hoi', 'lab_hoi'], keep=[], move="hold"),
-    dict(t="20.86–21.36s", head="end", vo="",
+    dict(t="25.86–26.36s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1

@@ -16,13 +16,13 @@ from silhouette import loose_contour  # noqa: E402
 
 SRC = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "source.png")
 OUT = sys.argv[2] if len(sys.argv) > 2 else HERE
-os.makedirs(os.path.join(OUT, "frames_r04_klinker"), exist_ok=True)
+os.makedirs(os.path.join(OUT, "frames_r06_cao"), exist_ok=True)
 
 W, H, SS = 1080, 1920, 2
 FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
 if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
-CREDIT = "Ảnh dự án: Klinker Apartment · Colombo and Serboli · ảnh Roberto Ruiz / Divisare"
+CREDIT = "Ảnh: phòng khách trần cao · Ivan Santos / Unsplash, qua sổ tay AH+"
 HEAD = "AH DECODE · MÀU CHO PHÒNG TRẦN CAO"
 TAPE = False    # False: ảnh phóng phủ kín khung, không vẽ băng keo ở mép trên (chủ Trang yêu cầu 2026-10-30)
 SKETCH = False  # True: sơ đồ (sketch) hiện ra theo từng nét trên nền trắng, không thẻ ảnh, không băng keo (chủ Trang yêu cầu 2026-10-30)
@@ -565,23 +565,17 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–4.45s", head="Trần đỏ hay xanh lam cao gần như nhau", vo="còn trần đỏ và trần xanh lam trông cao gần như nhau.",
-         cam=((264.5, 380), 2.1, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="4.45–9.21s", head="Klinker Apartment, Barcelona (2019)", vo="Vì vậy, muốn trần cao thấp xuống thì sơn trần tối hơn tường,",
-         cam=((264.5, 380), 2.1, (540, 925)), dark=True, dd=['tranx', 'lab_tranx'], keep=[], move="push"),
-    dict(t="9.21–14.91s", head="Klinker Apartment, Barcelona (2019)", vo="như phòng ngủ này ở Barcelona, trần xanh xám đậm tối hẳn so với tường kem.",
-         cam=((264.5, 380), 2.1, (540, 925)), dark=True, dd=['kem', 'lab_kem'], keep=[], move="hold"),
-    dict(t="14.91–20.3s", head="Báo trước với chủ nhà", vo="Sổ tay dặn nói trước với chủ nhà rằng trần chỉ thấp đi vài xăng-ti-mét,",
-         cam=((264.5, 380), 2.1, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="20.3–25.06s", head="Báo trước với chủ nhà", vo="còn điều họ thấy rõ hơn là phòng ấm cúng và êm hơn.",
-         cam=((264.5, 380), 2.1, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="25.06–25.56s", head="end", vo="",
+    dict(t="0–5.08s", head="Cái thấy rõ là ấm cúng, êm hơn", vo="còn điều họ thường thấy rõ hơn là phòng ấm cúng và êm hơn.",
+         cam=((667, 950), 2.2, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
+    dict(t="5.08–14.84s", head="Đổi độ sáng tối, không chỉ đổi màu nóng lạnh", vo="Vậy muốn phòng trần cao ấm lại, điều cần đổi là độ sáng tối của trần so với tường, còn nóng hay lạnh thì tùy bảng màu của nhà.",
+         cam=((667, 950), 2.2, (540, 925)), dark=True, dd=[], keep=[], move="pull"),
+    dict(t="14.84–15.34s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1
 BOARDS = {}
 
-_P = os.path.join(HERE, "doodle_ep17_klinker.npz")
+_P = os.path.join(HERE, "doodle_ep17_cao.npz")
 LAYER = dict(np.load(_P)) if os.path.isfile(_P) else {}   # toạ độ trên ảnh làm việc của run
 RAD = 0.9                              # bán kính chấm bút khi lộ lại nét gốc (px ảnh làm việc)
 RAD_SK = 0.95                          # sơ đồ vẽ dần: chấm bút phủ đúng điểm mực của sơ đồ
@@ -663,7 +657,7 @@ BOARDS["clean"] = make_board(1.0)
 frames = []
 for i in range(len(SCENES)):
     im = render_scene(i)
-    im.save(os.path.join(OUT, "frames_r04_klinker", f"scene_{i + 1}.png"))
+    im.save(os.path.join(OUT, "frames_r06_cao", f"scene_{i + 1}.png"))
     frames.append(im)
 
 # ---------------- contact sheet ----------------
@@ -688,5 +682,5 @@ fy = TOP + rows * (PH + 86) + 10
 d.text((MX, fy), "Nền trắng trơn · băng keo giấy thay ghim · header AH DECODE · bỏ “Bước n”", font=F(32), fill=(255, 255, 255))
 d.text((MX, fy + 44), "Cảnh zoom kín ảnh: chữ trắng viết lên ảnh (có phủ tối nhẹ).", font=F(32), fill=(225, 220, 212))
 d.text((MX, fy + 88), "Ảnh tối ~14% ở cảnh có nét vẽ; cảnh 1, 6, 7 giữ ảnh nguyên bản.", font=F(32), fill=(225, 220, 212))
-sheet.save(os.path.join(OUT, "storyboard_r04_klinker.png"))
+sheet.save(os.path.join(OUT, "storyboard_r06_cao.png"))
 print("fabric", tuple(int(x) for x in FAB), "sheet", sheet.size)

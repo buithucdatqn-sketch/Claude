@@ -566,17 +566,19 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–4.45s", head="Trần đỏ hay xanh lam cao gần như nhau", vo="còn trần đỏ và trần xanh lam trông cao gần như nhau.",
-         cam=((264.5, 380), 2.1, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="4.45–9.21s", head="Klinker Apartment, Barcelona (2019)", vo="Vì vậy, muốn trần cao thấp xuống thì sơn trần tối hơn tường,",
+    dict(t="0–4.76s", head="Tối hơn thì trông gần hơn", vo="còn tường cuối tối hơn thì trông gần hơn, và trần cũng thế.",
+         cam=((264.5, 380), 2.1, (540, 925)), dark=False, dd=[], keep=[], move="hold"),
+    dict(t="4.76–9.52s", head="Trần tối hơn tường", vo="Vì vậy, muốn trần cao thấp xuống thì sơn trần tối hơn tường,",
          cam=((264.5, 380), 2.1, (540, 925)), dark=True, dd=['tranx', 'lab_tranx'], keep=[], move="push"),
-    dict(t="9.21–14.91s", head="Klinker Apartment, Barcelona (2019)", vo="như phòng ngủ này ở Barcelona, trần xanh xám đậm tối hẳn so với tường kem.",
-         cam=((264.5, 380), 2.1, (540, 925)), dark=True, dd=['kem', 'lab_kem'], keep=[], move="hold"),
-    dict(t="14.91–20.3s", head="Báo trước với chủ nhà", vo="Sổ tay dặn nói trước với chủ nhà rằng trần chỉ thấp đi vài xăng-ti-mét,",
+    dict(t="9.52–15.85s", head="Màu gì thì theo bảng màu của nhà", vo="còn màu gì thì chọn theo bảng màu chung của nhà, như xám than hay gỗ tối màu.",
          cam=((264.5, 380), 2.1, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="20.3–25.06s", head="Báo trước với chủ nhà", vo="còn điều họ thấy rõ hơn là phòng ấm cúng và êm hơn.",
+    dict(t="15.85–21.55s", head="Klinker Apartment, Barcelona (2019)", vo="Phòng ngủ này ở Barcelona có trần xanh xám đậm, tối hẳn so với tường kem.",
+         cam=((264.5, 380), 2.1, (540, 925)), dark=True, dd=['kem', 'lab_kem'], keep=[], move="pan_u"),
+    dict(t="21.55–27.25s", head="Báo trước với chủ nhà", vo="Sổ tay dặn nên báo trước với chủ nhà rằng trần chỉ thấp đi vài xăng-ti-mét,",
          cam=((264.5, 380), 2.1, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="25.06–25.56s", head="end", vo="",
+    dict(t="27.25–32.33s", head="Cái thấy rõ là ấm cúng, êm hơn", vo="còn điều họ thường thấy rõ hơn là phòng ấm cúng và êm hơn.",
+         cam=((264.5, 380), 2.1, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
+    dict(t="32.33–32.83s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1
@@ -753,7 +755,7 @@ proc = subprocess.Popen(
     ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
      "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-t", f"{TOTAL:.2f}",
      "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-pix_fmt", "yuv420p", "-movflags", "+faststart",
-     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "r04_klinker_silent.mp4")], stdin=subprocess.PIPE)
+     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "r05_klinker_silent.mp4")], stdin=subprocess.PIPE)
 
 nframes = int(TOTAL * FPS)
 cur = -1

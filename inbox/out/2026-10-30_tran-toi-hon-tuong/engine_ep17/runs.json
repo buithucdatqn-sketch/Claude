@@ -21,7 +21,7 @@
   ],
   "t_in_main": 7.58,
   "cut_from": 7.58,
-  "cut_len": 13.28,
+  "cut_len": 18.28,
   "first_frame": 2
  },
  {
@@ -31,52 +31,52 @@
   "scenes": [
    4,
    5,
-   6,
-   7
+   6
   ],
-  "t_in_main": 20.86,
-  "cut_from": 6.639999999999999,
-  "cut_len": 23.11,
+  "t_in_main": 25.86,
+  "cut_from": 8.829999999999998,
+  "cut_len": 20.230000000000004,
   "first_frame": 2
  },
  {
-  "tag": "r04_klinker",
-  "img": "klinker",
-  "src": "source_klinker.png",
-  "scenes": [
-   8,
-   9,
-   10,
-   11
-  ],
-  "t_in_main": 43.97,
-  "cut_from": 4.449999999999996,
-  "cut_len": 20.61,
-  "first_frame": 2
- },
- {
-  "tag": "r05_d31",
+  "tag": "r04_d31",
   "img": "d31",
   "src": "source_d31.png",
   "scenes": [
-   12,
-   13
+   7,
+   8
   ],
-  "t_in_main": 64.58,
-  "cut_from": 4.759999999999998,
-  "cut_len": 11.090000000000003,
+  "t_in_main": 46.09,
+  "cut_from": 4.450000000000003,
+  "cut_len": 11.709999999999994,
   "first_frame": 2
  },
  {
-  "tag": "r06_klinker",
+  "tag": "r05_klinker",
   "img": "klinker",
   "src": "source_klinker.png",
   "scenes": [
+   9,
+   10,
+   11,
+   12,
+   13
+  ],
+  "t_in_main": 57.8,
+  "cut_from": 4.759999999999998,
+  "cut_len": 27.570000000000007,
+  "first_frame": 2
+ },
+ {
+  "tag": "r06_cao",
+  "img": "cao",
+  "src": "source_cao.png",
+  "scenes": [
    14
   ],
-  "t_in_main": 75.67,
-  "cut_from": 5.700000000000003,
-  "cut_len": 6.950000000000003,
+  "t_in_main": 85.37,
+  "cut_from": 5.079999999999998,
+  "cut_len": 9.759999999999991,
   "first_frame": 2
  },
  {
@@ -86,9 +86,9 @@
   "scenes": [
    15
   ],
-  "t_in_main": 82.62,
-  "cut_from": 6.950000000000003,
-  "cut_len": 12.329999999999998,
+  "t_in_main": 95.13,
+  "cut_from": 9.759999999999991,
+  "cut_len": 11.700000000000003,
   "first_frame": 2
  }
 ]

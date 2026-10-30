@@ -624,5 +624,30 @@
   "trang_thai": "chu_trang_bo_lam_lai",
   "thu_muc": "inbox/out/2026-10-30_mau-tren-san-thay-vach/",
   "ghi_chu": "Chủ Trang yêu cầu trong phiên 2026-10-30: chạy lại toàn bộ instruction, khai thác nội dung từ sách AH+. Ba lượt chấm độc lập. Ý chưa dùng của chương 2: 60-30-10 và chênh LRV 30 điểm (2.4), Maison La Roche gán vai trò cho từng màu (2.5), hộp kính cầu thang và vách tối kéo ra (2.3), khối lam cạnh giường, màu trên trần. Chủ Trang 2026-10-30: \"chủ đề này thiếu thuyết phục\", làm lại bằng chủ đề khác (tập 17 bản 2 tran-toi-hon-tuong); ý chương 2 chưa coi là đã đăng."
+ },
+ {
+  "tap": 17,
+  "slug": "tran-toi-hon-tuong",
+  "ngay": "2026-10-30",
+  "nguyen_ly": "Chiều cao cảm nhận của trần do độ sáng tối quyết định, sắc độ nóng lạnh gần như không (Oberfeld, Hecht và Gamer 2010; von Castell, Hecht và Oberfeld 2018a); trần tối hơn tường thì thấp xuống (sổ tay AH+ chương 3, kỹ thuật 1)",
+  "bai_kho": {
+   "duong_dan": "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/04-chuong-3-khoi-tich-lon.pdf",
+   "nhanh": "AH-Interior-notes",
+   "commit": "28c7cfa0e47c697875f10cca000d5762c5be94a8"
+  },
+  "y_bai": {
+   "muc": "Chương 3 mở chương + mục 3.2 'Những gì đã được kiểm chứng về màu tiến và màu lùi' + 3.4 kỹ thuật 1 (hạ trần bằng độ sáng, Klinker Apartment) + Hình 3.1 làm hình minh hoạ cơ chế",
+   "tom_tat": "Phòng trần cao lạnh: đừng chỉ sơn trần màu ấm vì màu tiến lùi chỉ đo trên mảng màu nhỏ; độ sáng tối quyết định; sơn trần tối hơn tường, màu theo bảng màu nhà; báo chủ nhà chỉ vài cm"
+  },
+  "anh_kho": [
+   "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/04-chuong-3-khoi-tich-lon.pdf · pdfimages ảnh 0 (phòng khách trần cao, nét mới)",
+   "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/04-chuong-3-khoi-tich-lon.pdf · ảnh 1 (nhà Dailly, nét mới)",
+   "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/04-chuong-3-khoi-tich-lon.pdf · ảnh 3 (Klinker Apartment; ảnh chính, nét mới)",
+   "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/04-chuong-3-khoi-tich-lon.pdf · ảnh 4 (Hình 3.1, vẽ dần trên nền trắng)",
+   "inbox/out/2026-10-28_tuong-sang-phong-rong/original/chu-trang/AH_mockup_tablet.mp4 (khung cuối, dùng lại)"
+  ],
+  "trang_thai": "cho_ghi_am",
+  "thu_muc": "inbox/out/2026-10-30_tran-toi-hon-tuong/",
+  "ghi_chu": "Bản 2 của tập 17 theo góp ý chủ Trang 2026-10-30 (bản 1 mau-tren-san-thay-vach bị bỏ). Lần đầu dùng chế độ SKETCH (sơ đồ vẽ dần trên nền trắng) và ảnh phủ kín khung. Ý chưa dùng của chương 3: Goethe (3.3), đường chân trời nội thất và sọc (kỹ thuật 3), Barragán (3.5), kỹ thuật 2 làm ý chính."
  }
 ]

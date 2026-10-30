@@ -4,52 +4,44 @@
   "t": "0–7.58s",
   "head": "Trần cao, phòng trống và lạnh",
   "loi": "Trần cao làm sofa trông nhỏ lại, phòng ngồi lâu thấy trống và lạnh. Sơn trần màu gì để phòng ấm lại?",
-  "tts": "Trần cao làm sofa trông nhỏ lại, phòng ngồi lâu thấy trống và lạnh. Sơn trần màu gì để phòng ấm lại?",
+  "tts": "Trần cao làm sô-pha trông nhỏ lại, phòng ngồi lâu thấy trống và lạnh. Sơn trần màu gì để phòng ấm lại?",
   "part": "A"
  },
  {
   "blk": 2,
-  "t": "7.58–14.22s",
-  "head": "Thói quen chọn màu ấm",
-  "loi": "Nhiều người sẽ chọn màu ấm, vì quen câu màu nóng tiến lại gần, màu lạnh lùi ra xa.",
-  "tts": "Nhiều người sẽ chọn màu ấm, vì quen câu màu nóng tiến lại gần, màu lạnh lùi ra xa.",
+  "t": "7.58–17.03s",
+  "head": "Thói quen sơn trần màu ấm",
+  "loi": "Nhiều người sẽ sơn trần màu ấm, vì quen câu màu nóng tiến lại gần, màu lạnh lùi ra xa, nên nghĩ trần màu ấm sẽ thấp xuống.",
+  "tts": "Nhiều người sẽ sơn trần màu ấm, vì quen câu màu nóng tiến lại gần, màu lạnh lùi ra xa, nên nghĩ trần màu ấm sẽ thấp xuống.",
   "part": "B"
  },
  {
   "blk": 2,
-  "t": "14.22–20.86s",
-  "head": "Chỉ đo được trên mảng màu nhỏ",
-  "loi": "Màu tiến, màu lùi có thật, nhưng chỉ đo được trên những mảng màu nhỏ trong phòng thí nghiệm.",
-  "tts": "Màu tiến, màu lùi có thật, nhưng chỉ đo được trên những mảng màu nhỏ trong phòng thí nghiệm.",
+  "t": "17.03–25.86s",
+  "head": "Đo trên mảng màu nhỏ, không đo trên căn phòng",
+  "loi": "Màu tiến, màu lùi có thật, nhưng chỉ được đo trên những mảng màu nhỏ trong phòng thí nghiệm, chứ không đo trên một căn phòng.",
+  "tts": "Màu tiến, màu lùi có thật, nhưng chỉ được đo trên những mảng màu nhỏ trong phòng thí nghiệm, chứ không đo trên một căn phòng.",
   "part": "C"
  },
  {
   "blk": 3,
-  "t": "20.86–27.5s",
+  "t": "25.86–32.5s",
   "head": "Oberfeld, Hecht và Gamer (2010)",
-  "loi": "Khi thử trên mô hình phòng, nhóm Oberfeld thấy trần và tường càng sáng thì phòng trông càng cao,",
-  "tts": "Khi thử trên mô hình phòng, nhóm Ô-bơ-phen thấy trần và tường càng sáng thì phòng trông càng cao,",
+  "loi": "Khi thử trên mô hình phòng, nhóm Oberfeld thấy trần và tường càng sáng thì phòng trông càng cao.",
+  "tts": "Khi thử trên mô hình phòng, nhóm Ô-bơ-phen thấy trần và tường càng sáng thì phòng trông càng cao.",
   "part": "C"
  },
  {
   "blk": 3,
-  "t": "27.5–31.32s",
-  "head": "Oberfeld, Hecht và Gamer (2010)",
-  "loi": "còn sàn sáng hay tối gần như không ảnh hưởng.",
-  "tts": "còn sàn sáng hay tối gần như không ảnh hưởng.",
-  "part": "C"
- },
- {
-  "blk": 3,
-  "t": "31.32–39.52s",
+  "t": "32.5–41.64s",
   "head": "von Castell, Hecht và Oberfeld (2018)",
-  "loi": "Năm 2018, nhóm von Castell tách riêng độ sáng, sắc độ và độ rực của trần, và thấy độ sáng quyết định gần hết,",
-  "tts": "Năm hai nghìn không trăm mười tám, nhóm phôn Cát-xten tách riêng độ sáng, sắc độ và độ rực của trần, và thấy độ sáng quyết định gần hết,",
+  "loi": "Năm 2018, nhóm von Castell tách riêng độ sáng tối, màu gì và độ tươi của màu trần, và thấy độ sáng tối quyết định gần hết,",
+  "tts": "Năm hai nghìn không trăm mười tám, nhóm phôn Cát-xten tách riêng độ sáng tối, màu gì và độ tươi của màu trần, và thấy độ sáng tối quyết định gần hết,",
   "part": "C"
  },
  {
   "blk": 3,
-  "t": "39.52–43.97s",
+  "t": "41.64–46.09s",
   "head": "Trần đỏ hay xanh lam cao gần như nhau",
   "loi": "còn trần đỏ và trần xanh lam trông cao gần như nhau.",
   "tts": "còn trần đỏ và trần xanh lam trông cao gần như nhau.",
@@ -57,66 +49,74 @@
  },
  {
   "blk": 4,
-  "t": "43.97–48.73s",
-  "head": "Klinker Apartment, Barcelona (2019)",
+  "t": "46.09–53.04s",
+  "head": "Hai hành lang giống hệt nhau",
+  "loi": "Sổ tay vẽ hai hành lang giống hệt nhau để thấy điều này, tường cuối sáng thì trông xa hơn,",
+  "tts": "Sổ tay vẽ hai hành lang giống hệt nhau để thấy điều này, tường cuối sáng thì trông xa hơn,",
+  "part": "C"
+ },
+ {
+  "blk": 4,
+  "t": "53.04–57.8s",
+  "head": "Tối hơn thì trông gần hơn",
+  "loi": "còn tường cuối tối hơn thì trông gần hơn, và trần cũng thế.",
+  "tts": "còn tường cuối tối hơn thì trông gần hơn, và trần cũng thế.",
+  "part": "C"
+ },
+ {
+  "blk": 5,
+  "t": "57.8–62.56s",
+  "head": "Trần tối hơn tường",
   "loi": "Vì vậy, muốn trần cao thấp xuống thì sơn trần tối hơn tường,",
   "tts": "Vì vậy, muốn trần cao thấp xuống thì sơn trần tối hơn tường,",
-  "part": "D"
+  "part": "F"
  },
  {
-  "blk": 4,
-  "t": "48.73–54.43s",
+  "blk": 5,
+  "t": "62.56–68.89s",
+  "head": "Màu gì thì theo bảng màu của nhà",
+  "loi": "còn màu gì thì chọn theo bảng màu chung của nhà, như xám than hay gỗ tối màu.",
+  "tts": "còn màu gì thì chọn theo bảng màu chung của nhà, như xám than hay gỗ tối màu.",
+  "part": "F"
+ },
+ {
+  "blk": 5,
+  "t": "68.89–74.59s",
   "head": "Klinker Apartment, Barcelona (2019)",
-  "loi": "như phòng ngủ này ở Barcelona, trần xanh xám đậm tối hẳn so với tường kem.",
-  "tts": "như phòng ngủ này ở Bác-xê-lô-na, trần xanh xám đậm tối hẳn so với tường kem.",
+  "loi": "Phòng ngủ này ở Barcelona có trần xanh xám đậm, tối hẳn so với tường kem.",
+  "tts": "Phòng ngủ này ở Bác-xê-lô-na có trần xanh xám đậm, tối hẳn so với tường kem.",
   "part": "D"
  },
  {
-  "blk": 4,
-  "t": "54.43–59.82s",
+  "blk": 5,
+  "t": "74.59–80.29s",
   "head": "Báo trước với chủ nhà",
-  "loi": "Sổ tay dặn nói trước với chủ nhà rằng trần chỉ thấp đi vài xăng-ti-mét,",
-  "tts": "Sổ tay dặn nói trước với chủ nhà rằng trần chỉ thấp đi vài xăng-ti-mét,",
-  "part": "F"
- },
- {
-  "blk": 4,
-  "t": "59.82–64.58s",
-  "head": "Báo trước với chủ nhà",
-  "loi": "còn điều họ thấy rõ hơn là phòng ấm cúng và êm hơn.",
-  "tts": "còn điều họ thấy rõ hơn là phòng ấm cúng và êm hơn.",
+  "loi": "Sổ tay dặn nên báo trước với chủ nhà rằng trần chỉ thấp đi vài xăng-ti-mét,",
+  "tts": "Sổ tay dặn nên báo trước với chủ nhà rằng trần chỉ thấp đi vài xăng-ti-mét,",
   "part": "F"
  },
  {
   "blk": 5,
-  "t": "64.58–69.97s",
-  "head": "Hành lang sâu, tường cuối sáng",
-  "loi": "Hành lang quá sâu cũng theo cách đó. Tường cuối sáng thì trông xa hơn,",
-  "tts": "Hành lang quá sâu cũng theo cách đó. Tường cuối sáng thì trông xa hơn,",
-  "part": "F"
- },
- {
-  "blk": 5,
-  "t": "69.97–75.67s",
-  "head": "Tường cuối tối hơn thì gần hơn",
-  "loi": "còn tường cuối tối hơn hai tường bên thì trông gần hơn, chênh khoảng 6,8 xăng-ti-mét.",
-  "tts": "còn tường cuối tối hơn hai tường bên thì trông gần hơn, chênh khoảng sáu phẩy tám xăng-ti-mét.",
+  "t": "80.29–85.37s",
+  "head": "Cái thấy rõ là ấm cúng, êm hơn",
+  "loi": "còn điều họ thường thấy rõ hơn là phòng ấm cúng và êm hơn.",
+  "tts": "còn điều họ thường thấy rõ hơn là phòng ấm cúng và êm hơn.",
   "part": "F"
  },
  {
   "blk": 6,
-  "t": "75.67–82.62s",
-  "head": "Tối hơn tường, không phải ấm hơn",
-  "loi": "Vậy muốn phòng trần cao ấm lại, đừng chỉ đổi sang màu ấm, mà hãy làm trần tối hơn tường.",
-  "tts": "Vậy muốn phòng trần cao ấm lại, đừng chỉ đổi sang màu ấm, mà hãy làm trần tối hơn tường.",
+  "t": "85.37–95.13s",
+  "head": "Đổi độ sáng tối, không chỉ đổi màu nóng lạnh",
+  "loi": "Vậy muốn phòng trần cao ấm lại, điều cần đổi là độ sáng tối của trần so với tường, còn nóng hay lạnh thì tùy bảng màu của nhà.",
+  "tts": "Vậy muốn phòng trần cao ấm lại, điều cần đổi là độ sáng tối của trần so với tường, còn nóng hay lạnh thì tùy bảng màu của nhà.",
   "part": "H"
  },
  {
   "blk": 6,
-  "t": "82.62–93.95s",
+  "t": "95.13–105.83s",
   "head": "end",
-  "loi": "Ba cách chỉnh cảm giác cao thấp, nông sâu của căn phòng bằng màu có trong sổ tay Công thức chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha.",
-  "tts": "Ba cách chỉnh cảm giác cao thấp, nông sâu của căn phòng bằng màu có trong sổ tay Công thức chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha.",
+  "loi": "Ba cách chỉnh cao thấp, nông sâu của căn phòng bằng màu có trong sổ tay Công thức chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha.",
+  "tts": "Ba cách chỉnh cao thấp, nông sâu của căn phòng bằng màu có trong sổ tay Công thức chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha.",
   "part": "I"
  }
 ]
