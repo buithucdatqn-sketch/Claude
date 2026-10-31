@@ -76,7 +76,7 @@ SC = [
          vo="Ở căn bếp này, phần tường trắng sát tủ hồng cũng ửng màu hơn phần ở xa."),
     dict(move="pull", part="C", blk=4, img="hanh", head="Tường, trần, sàn dội ánh sáng lên nhau", cam=HANH, dark=True, dd=["mat", "lab_mat"],
          vo="Trong phòng, tường, trần và sàn đều dội ánh sáng lên nhau, nên màu của một bức tường còn tùy các mặt xung quanh,"),
-    dict(move="hold", part="C", blk=4, img="hanh", head="Điều tấm thẻ không cho thấy", cam=HANH, dark=True, dd=[],
+    dict(move="hold", part="C", blk=4, img="hanh", head="Điều tấm thẻ không thể hiện được", cam=HANH, dark=True, dd=[],
          vo="điều mà tấm thẻ màu sơn đặt giữa tường trắng không thể hiện được."),
     dict(move="hold", part="F", blk=5, img="pk2", head="Mảng thử một mét vuông, hai lớp", cam=PK2, free=True, dark=False, dd=["phai", "kt"], keep=["trai"],
          vo="Vì vậy, nên sơn một mảng thử khoảng một mét vuông, hai lớp, ngay trên bức tường sẽ sơn,"),

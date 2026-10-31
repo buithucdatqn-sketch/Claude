@@ -565,7 +565,7 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–3.1s", head="Điều tấm thẻ không cho thấy", vo="điều mà tấm thẻ màu sơn đặt giữa tường trắng không thể hiện được.",
+    dict(t="0–3.1s", head="Điều tấm thẻ không thể hiện được", vo="điều mà tấm thẻ màu sơn đặt giữa tường trắng không thể hiện được.",
          cam=((324, 226), 0.9, (540, 910)), dark=True, dd=[], keep=[], move="hold"),
     dict(t="3.1–8.08s", head="Mảng thử một mét vuông, hai lớp", vo="Vì vậy, nên sơn một mảng thử khoảng một mét vuông, hai lớp, ngay trên bức tường sẽ sơn,",
          cam=((324, 226), 0.9, (540, 910)), dark=False, dd=['phai', 'kt'], keep=['trai'], move="hold"),

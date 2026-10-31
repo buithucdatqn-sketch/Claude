@@ -570,7 +570,7 @@ SCENES = [
          cam=((700, 1300), 2.5, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
     dict(t="4.08–10.19s", head="Tường, trần, sàn dội ánh sáng lên nhau", vo="Trong phòng, tường, trần và sàn đều dội ánh sáng lên nhau, nên màu của một bức tường còn tùy các mặt xung quanh,",
          cam=((700, 1300), 2.5, (540, 925)), dark=True, dd=['mat', 'lab_mat'], keep=[], move="pull"),
-    dict(t="10.19–13.29s", head="Điều tấm thẻ không cho thấy", vo="điều mà tấm thẻ màu sơn đặt giữa tường trắng không thể hiện được.",
+    dict(t="10.19–13.29s", head="Điều tấm thẻ không thể hiện được", vo="điều mà tấm thẻ màu sơn đặt giữa tường trắng không thể hiện được.",
          cam=((700, 1300), 2.5, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
     dict(t="13.29–13.79s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
