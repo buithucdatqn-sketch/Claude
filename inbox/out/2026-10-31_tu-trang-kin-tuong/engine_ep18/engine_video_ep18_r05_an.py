@@ -569,13 +569,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.07s", head="Lane Cove House, Sydney", vo="Căn bếp nhà Lane Cove ở Sydney cho tủ chìm vào tường như thế.",
+    dict(t="0–4.2s", head="Lane Cove House, Sydney", vo="Căn nhà Lane Cove ở Sydney cho tủ chìm vào tường như thế.",
          cam=((1150, 960), 2.65, (540, 925)), dark=False, dd=[], keep=[], move="hold"),
-    dict(t="5.07–9.83s", head="Tủ kín tường, cánh phẳng và trắng", vo="Dãy tủ cao kín cả bức tường, cánh phẳng và trắng như tường.",
+    dict(t="4.2–7.71s", head="Tủ kín tường, cánh phẳng và trắng", vo="Dãy tủ cao kín cả bức tường, cánh phẳng và trắng như tường.",
          cam=((1150, 960), 2.65, (540, 925)), dark=True, dd=['cao', 'lab_cao'], keep=[], move="pan_r"),
-    dict(t="9.83–14.91s", head="Không tay nắm, khe rất mảnh", vo="Cánh tủ không có tay nắm lộ ra, khe giữa các cánh rất mảnh.",
+    dict(t="7.71–11.13s", head="Không tay nắm, khe rất mảnh", vo="Cánh tủ không có tay nắm lộ ra, khe giữa các cánh rất mảnh.",
          cam=((1150, 960), 2.65, (540, 925)), dark=True, dd=['khe', 'lab_khe'], keep=[], move="hold"),
-    dict(t="14.91–15.41s", head="end", vo="",
+    dict(t="11.13–11.63s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1

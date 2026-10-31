@@ -569,11 +569,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.95s", head="Màu ấm làm đồ nổi lên khỏi nền", vo="Bài phân tích của tụi mình giải thích rằng màu ấm làm món đồ nổi lên khỏi nền phía sau.",
+    dict(t="0–4.32s", head="Màu ấm làm đồ nổi lên khỏi nền", vo="Các nghiên cứu cũng giải thích rằng màu ấm làm món đồ nổi lên khỏi nền phía sau.",
          cam=((1150, 960), 2.65, (540, 925)), dark=False, dd=[], keep=[], move="hold"),
-    dict(t="6.95–13.28s", head="Cùng màu với nền thì chìm vào nền", vo="Ngược lại, món đồ cùng màu với nền thì chìm vào nền, không còn giống một món đồ.",
+    dict(t="4.32–8.66s", head="Cùng màu với nền thì chìm vào nền", vo="Ngược lại, món đồ cùng màu với nền thì chìm vào nền, không còn giống một món đồ.",
          cam=((1150, 960), 2.65, (540, 925)), dark=True, dd=['mau', 'lab_mau'], keep=[], move="push"),
-    dict(t="13.28–13.78s", head="end", vo="",
+    dict(t="8.66–9.16s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1

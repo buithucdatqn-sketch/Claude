@@ -6,9 +6,9 @@
   "scenes": [
    1
   ],
-  "t_in_main": 0.0,
+  "t_in_main": 0,
   "cut_from": 0.0,
-  "cut_len": 5.08,
+  "cut_len": 4.2,
   "first_frame": 1
  },
  {
@@ -20,9 +20,9 @@
    3,
    4
   ],
-  "t_in_main": 5.08,
-  "cut_from": 5.08,
-  "cut_len": 18.97,
+  "t_in_main": 4.2,
+  "cut_from": 4.2,
+  "cut_len": 13.830000000000002,
   "first_frame": 2
  },
  {
@@ -32,9 +32,9 @@
   "scenes": [
    5
   ],
-  "t_in_main": 24.05,
-  "cut_from": 6.949999999999999,
-  "cut_len": 6.329999999999998,
+  "t_in_main": 18.03,
+  "cut_from": 4.32,
+  "cut_len": 4.34,
   "first_frame": 2
  },
  {
@@ -44,9 +44,9 @@
   "scenes": [
    6
   ],
-  "t_in_main": 30.38,
-  "cut_from": 6.329999999999998,
-  "cut_len": 5.070000000000004,
+  "t_in_main": 22.37,
+  "cut_from": 4.34,
+  "cut_len": 4.199999999999999,
   "first_frame": 2
  },
  {
@@ -57,9 +57,9 @@
    7,
    8
   ],
-  "t_in_main": 35.45,
-  "cut_from": 5.070000000000004,
-  "cut_len": 9.839999999999996,
+  "t_in_main": 26.57,
+  "cut_from": 4.199999999999999,
+  "cut_len": 6.93,
   "first_frame": 2
  },
  {
@@ -69,9 +69,9 @@
   "scenes": [
    9
   ],
-  "t_in_main": 45.29,
-  "cut_from": 5.079999999999998,
-  "cut_len": 6.950000000000003,
+  "t_in_main": 33.5,
+  "cut_from": 3.4200000000000017,
+  "cut_len": 4.700000000000003,
   "first_frame": 2
  },
  {
@@ -83,9 +83,9 @@
    11,
    12
   ],
-  "t_in_main": 52.24,
-  "cut_from": 6.950000000000003,
-  "cut_len": 21.54,
+  "t_in_main": 38.2,
+  "cut_from": 4.700000000000003,
+  "cut_len": 16.099999999999994,
   "first_frame": 2
  }
 ]

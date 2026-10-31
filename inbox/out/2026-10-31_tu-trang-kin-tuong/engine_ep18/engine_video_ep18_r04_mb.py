@@ -569,11 +569,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.33s", head="Cùng màu với nền thì chìm vào nền", vo="Ngược lại, món đồ cùng màu với nền thì chìm vào nền, không còn giống một món đồ.",
+    dict(t="0–4.34s", head="Cùng màu với nền thì chìm vào nền", vo="Ngược lại, món đồ cùng màu với nền thì chìm vào nền, không còn giống một món đồ.",
          cam=((460, 450), 0.75, (540, 905)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="6.33–11.4s", head="Lane Cove House, Sydney", vo="Căn bếp nhà Lane Cove ở Sydney cho tủ chìm vào tường như thế.",
+    dict(t="4.34–8.54s", head="Lane Cove House, Sydney", vo="Căn nhà Lane Cove ở Sydney cho tủ chìm vào tường như thế.",
          cam=((460, 450), 0.75, (540, 905)), dark=False, dd=['mb', 'tu'], keep=[], move="hold"),
-    dict(t="11.4–11.9s", head="end", vo="",
+    dict(t="8.54–9.04s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1

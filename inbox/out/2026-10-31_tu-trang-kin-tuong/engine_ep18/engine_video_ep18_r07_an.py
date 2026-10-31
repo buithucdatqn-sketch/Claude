@@ -569,13 +569,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.95s", head="Dãy tủ chìm vào tường", vo="Nhìn trong ảnh, cả dãy tủ chìm vào tường, nhường chỗ cho đảo đá và bàn ăn đứng phía trước.",
+    dict(t="0–4.7s", head="Dãy tủ chìm vào tường", vo="Nhìn trong ảnh, cả dãy tủ chìm vào tường, nhường chỗ cho đảo đá và bàn ăn đứng phía trước.",
          cam=((1150, 960), 2.65, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="6.95–12.65s", head="Tủ lớn chọn cùng màu sáng với tường", vo="Vậy phòng nhỏ mà cần tủ lớn thì nên chọn tủ cùng màu sáng với tường.",
+    dict(t="4.7–9.3s", head="Tủ lớn chọn cùng màu sáng với tường", vo="Vậy phòng nhỏ mà cần tủ lớn thì nên chọn tủ cùng màu sáng với tường.",
          cam=((1150, 960), 2.65, (540, 925)), dark=True, dd=[], keep=[], move="pull"),
-    dict(t="12.65–18.66s", head="Tủ vẫn to, nhưng chìm vào tường", vo="Tủ vẫn to như cũ, nhưng chìm vào tường chứ không nổi lên như chiếc sofa đỏ.",
+    dict(t="9.3–12.9s", head="Tủ vẫn to, nhưng chìm vào tường", vo="Tủ vẫn to nhưng cảm giác chìm vào tường chứ không nổi lên quá.",
          cam=((1150, 960), 2.65, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="18.66–27.49s", head="end", vo="",
+    dict(t="12.9–19.8s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1

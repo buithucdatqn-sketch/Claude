@@ -1,15 +1,15 @@
 [
  {
   "blk": 1,
-  "t": "0–5.08s",
+  "t": "0–4.2s",
   "head": "Phòng nhỏ, tủ lớn, chọn màu gì?",
-  "loi": "Phòng nhỏ mà cần tủ lớn, chọn màu gì để tủ không choán chỗ?",
-  "tts": "Phòng nhỏ mà cần tủ lớn, chọn màu gì để tủ không choán chỗ?",
+  "loi": "Phòng nhỏ mà cần tủ lớn, chọn màu gì để tủ không làm ngộp căn phòng?",
+  "tts": "Phòng nhỏ mà cần tủ lớn, chọn màu gì để tủ không làm ngộp căn phòng?",
   "part": "A"
  },
  {
   "blk": 2,
-  "t": "5.08–11.09s",
+  "t": "4.2–9.49s",
   "head": "Theo Kilmer & Kilmer (2014)",
   "loi": "Hai tác giả Kilmer viết rằng món đồ màu ấm và rực trông to hơn chính nó.",
   "tts": "Hai tác giả Kin-mơ viết rằng món đồ màu ấm và rực trông to hơn chính nó.",
@@ -17,7 +17,7 @@
  },
  {
   "blk": 2,
-  "t": "11.09–17.1s",
+  "t": "9.49–13.71s",
   "head": "Sofa đỏ trông to hơn sofa xanh",
   "loi": "Một chiếc sofa bọc vải đỏ thường trông to hơn chiếc sofa y hệt bọc vải xanh.",
   "tts": "Một chiếc sô-pha bọc vải đỏ thường trông to hơn chiếc sô-pha y hệt bọc vải xanh.",
@@ -25,15 +25,15 @@
  },
  {
   "blk": 3,
-  "t": "17.1–24.05s",
+  "t": "13.71–18.03s",
   "head": "Màu ấm làm đồ nổi lên khỏi nền",
-  "loi": "Bài phân tích của tụi mình giải thích rằng màu ấm làm món đồ nổi lên khỏi nền phía sau.",
-  "tts": "Bài phân tích của tụi mình giải thích rằng màu ấm làm món đồ nổi lên khỏi nền phía sau.",
+  "loi": "Các nghiên cứu cũng giải thích rằng màu ấm làm món đồ nổi lên khỏi nền phía sau.",
+  "tts": "Các nghiên cứu cũng giải thích rằng màu ấm làm món đồ nổi lên khỏi nền phía sau.",
   "part": "C"
  },
  {
   "blk": 3,
-  "t": "24.05–30.38s",
+  "t": "18.03–22.37s",
   "head": "Cùng màu với nền thì chìm vào nền",
   "loi": "Ngược lại, món đồ cùng màu với nền thì chìm vào nền, không còn giống một món đồ.",
   "tts": "Ngược lại, món đồ cùng màu với nền thì chìm vào nền, không còn giống một món đồ.",
@@ -41,15 +41,15 @@
  },
  {
   "blk": 4,
-  "t": "30.38–35.45s",
+  "t": "22.37–26.57s",
   "head": "Lane Cove House, Sydney",
-  "loi": "Căn bếp nhà Lane Cove ở Sydney cho tủ chìm vào tường như thế.",
-  "tts": "Căn bếp nhà Lên Cô-vơ ở Xít-ni cho tủ chìm vào tường như thế.",
+  "loi": "Căn nhà Lane Cove ở Sydney cho tủ chìm vào tường như thế.",
+  "tts": "Căn nhà Lên Cô-vơ ở Xít-ni cho tủ chìm vào tường như thế.",
   "part": "D"
  },
  {
   "blk": 5,
-  "t": "35.45–40.21s",
+  "t": "26.57–30.08s",
   "head": "Tủ kín tường, cánh phẳng và trắng",
   "loi": "Dãy tủ cao kín cả bức tường, cánh phẳng và trắng như tường.",
   "tts": "Dãy tủ cao kín cả bức tường, cánh phẳng và trắng như tường.",
@@ -57,7 +57,7 @@
  },
  {
   "blk": 5,
-  "t": "40.21–45.29s",
+  "t": "30.08–33.5s",
   "head": "Không tay nắm, khe rất mảnh",
   "loi": "Cánh tủ không có tay nắm lộ ra, khe giữa các cánh rất mảnh.",
   "tts": "Cánh tủ không có tay nắm lộ ra, khe giữa các cánh rất mảnh.",
@@ -65,7 +65,7 @@
  },
  {
   "blk": 6,
-  "t": "45.29–52.24s",
+  "t": "33.5–38.2s",
   "head": "Dãy tủ chìm vào tường",
   "loi": "Nhìn trong ảnh, cả dãy tủ chìm vào tường, nhường chỗ cho đảo đá và bàn ăn đứng phía trước.",
   "tts": "Nhìn trong ảnh, cả dãy tủ chìm vào tường, nhường chỗ cho đảo đá và bàn ăn đứng phía trước.",
@@ -73,7 +73,7 @@
  },
  {
   "blk": 7,
-  "t": "52.24–57.94s",
+  "t": "38.2–42.8s",
   "head": "Tủ lớn chọn cùng màu sáng với tường",
   "loi": "Vậy phòng nhỏ mà cần tủ lớn thì nên chọn tủ cùng màu sáng với tường.",
   "tts": "Vậy phòng nhỏ mà cần tủ lớn thì nên chọn tủ cùng màu sáng với tường.",
@@ -81,18 +81,18 @@
  },
  {
   "blk": 7,
-  "t": "57.94–63.95s",
+  "t": "42.8–46.4s",
   "head": "Tủ vẫn to, nhưng chìm vào tường",
-  "loi": "Tủ vẫn to như cũ, nhưng chìm vào tường chứ không nổi lên như chiếc sofa đỏ.",
-  "tts": "Tủ vẫn to như cũ, nhưng chìm vào tường chứ không nổi lên như chiếc sô-pha đỏ.",
+  "loi": "Tủ vẫn to nhưng cảm giác chìm vào tường chứ không nổi lên quá.",
+  "tts": "Tủ vẫn to nhưng cảm giác chìm vào tường chứ không nổi lên quá.",
   "part": "H"
  },
  {
   "blk": 8,
-  "t": "63.95–72.78s",
+  "t": "46.4–53.3s",
   "head": "end",
-  "loi": "Bài phân tích về màu làm đồ trông to hay nhỏ, từ sách của hai tác giả Kilmer, mọi người xem ở phần bình luận nha.",
-  "tts": "Bài phân tích về màu làm đồ trông to hay nhỏ, từ sách của hai tác giả Kin-mơ, mọi người xem ở phần bình luận nha.",
+  "loi": "Bài phân tích về màu làm đồ trông to hay nhỏ, từ sách của hai tác giả Kilmer, mọi người xem ở phần bình luận nhá.",
+  "tts": "Bài phân tích về màu làm đồ trông to hay nhỏ, từ sách của hai tác giả Kin-mơ, mọi người xem ở phần bình luận nhá.",
   "part": "I"
  }
 ]

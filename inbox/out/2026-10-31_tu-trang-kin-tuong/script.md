@@ -58,3 +58,30 @@ Engine khung chạy 7 run, không có dòng LỖI. Đã xem mọi khung: nhãn d
 1. Câu "món đồ cùng màu với nền thì chìm vào nền, không còn giống một món đồ" là lời tổng hợp từ ba chỗ của bài (người chấm chấp nhận), không phải câu nguyên văn.
 2. Ví dụ sofa chỉ có trong lời và trên sơ đồ (ô đỏ lớn, ô xanh nhỏ); ảnh của bài không có cặp sofa đỏ, xanh.
 3. Ảnh vị trí chụp `anh/vi-tri-chup/07-vi-tri-chup.png` ghi tiêu đề "ảnh 03" (lệch số với tên file 07); bản làm việc đã xoá nhãn này.
+
+## Giai đoạn B (2026-10-31): ghép giọng chủ Trang
+- File giọng: `audio/tu-lon-phong-nho.mp3` (ElevenLabs, giọng Tony Hoang, 52,19 giây, 44,1 kHz mono). Xử lý: chuyển 48 kHz, lọc dưới 80 Hz, `afftdn` nhẹ (nr 6), tăng 7 dB, chặn đỉnh (`alimiter` 0,77), giảm 0,4 dB → `audio/tu-lon-phong-nho_xu-ly.wav`. Đo `ebur128`: **−14,7 LUFS, đỉnh −2,1 dBFS**, 48 kHz. Không nhạc.
+- Nhận dạng lời: sherpa-onnx, mô hình `sherpa-onnx-zipformer-vi-2025-04-20` (GitHub releases của k2-fsa), chạy trong máy, cắt theo quãng nghỉ (silencedetect −35 dB / 0,25 giây, 20 quãng). Chủ Trang chỉnh lời khi thu ở năm chỗ, phụ đề đã sửa theo lời thu:
+  1. câu móc "…để tủ không choán chỗ?" → "…để tủ không làm ngộp căn phòng?" (máy nhận dạng ra "NGẬP"; mình đoán là "ngộp", **cần chủ Trang xác nhận**);
+  2. "Bài phân tích của tụi mình giải thích rằng…" → "Các nghiên cứu cũng giải thích rằng…";
+  3. "Căn bếp nhà Lane Cove…" → "Căn nhà Lane Cove…";
+  4. "Tủ vẫn to như cũ, nhưng chìm vào tường chứ không nổi lên như chiếc sofa đỏ." → "Tủ vẫn to nhưng cảm giác chìm vào tường chứ không nổi lên quá.";
+  5. "…phần bình luận nha." → "…phần bình luận nhá."
+- Mốc cảnh `T_AUDIO` (mỗi cảnh bắt đầu khoảng 0,38 giây trước câu của nó, câu bắt đầu ở cuối quãng nghỉ):
+
+| Cảnh | Câu bắt đầu (giây) | Cảnh bắt đầu | Câu |
+|---|---|---|---|
+| 1 | 0,0 | 0 | Phòng nhỏ mà cần tủ lớn… |
+| 2 | 4,58 | 4,20 | Hai tác giả Kilmer viết rằng… |
+| 3 | 9,87 | 9,49 | Một chiếc sofa bọc vải đỏ… |
+| 4 | 14,09 | 13,71 | Các nghiên cứu cũng giải thích… |
+| 5 | 18,41 | 18,03 | Ngược lại, món đồ cùng màu với nền… |
+| 6 | 22,75 | 22,37 | Căn nhà Lane Cove ở Sydney… |
+| 7 | 26,95 | 26,57 | Dãy tủ cao kín cả bức tường… |
+| 8 | 30,46 | 30,08 | Cánh tủ không có tay nắm lộ ra… |
+| 9 | 33,88 | 33,50 | Nhìn trong ảnh… |
+| 10 | 38,58 | 38,20 | Vậy phòng nhỏ mà cần tủ lớn… |
+| 11 | 43,18 | 42,80 | Tủ vẫn to nhưng cảm giác… |
+| 12 (khung cuối) | 46,78 | 46,40 | Bài phân tích về màu làm đồ trông to hay nhỏ… (giọng hết ở 52,19) |
+
+- Cần kiểm tra thêm: câu 2 của chủ Trang ("Các nghiên cứu cũng giải thích") gán ý "màu ấm làm món đồ nổi lên khỏi nền" cho các nghiên cứu, trong khi bài 05 viết ý này là của bài phân tích (bài có dẫn nghiên cứu của nhóm von Castell về trần, không về đồ nổi trên nền). Phụ đề theo đúng lời thu; nếu cần sửa thì thu lại câu này.

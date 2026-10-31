@@ -56,7 +56,7 @@ MB = STRIP(460, 450, 0.75, 905)
 # với tường; tủ vẫn to nhưng chìm vào tường, không nổi lên như chiếc sofa đỏ.
 SC = [
     dict(move="push", part="A", blk=1, img="bep", head="Phòng nhỏ, tủ lớn, chọn màu gì?", cam=BEP_K, dark=True, dd=[],
-         vo="Phòng nhỏ mà cần tủ lớn, chọn màu gì để tủ không choán chỗ?"),
+         vo="Phòng nhỏ mà cần tủ lớn, chọn màu gì để tủ không làm ngộp căn phòng?"),
     dict(move="hold", part="B", blk=2, img="sac", head="Theo Kilmer & Kilmer (2014)", cam=SAC, free=True, dark=False, dd=["tieu", "mat", "am"], keep=[],
          vo="Hai tác giả Kilmer viết rằng món đồ màu ấm và rực trông to hơn chính nó.",
          tts="Hai tác giả Kin-mơ viết rằng món đồ màu ấm và rực trông to hơn chính nó."),
@@ -64,12 +64,12 @@ SC = [
          vo="Một chiếc sofa bọc vải đỏ thường trông to hơn chiếc sofa y hệt bọc vải xanh.",
          tts="Một chiếc sô-pha bọc vải đỏ thường trông to hơn chiếc sô-pha y hệt bọc vải xanh."),
     dict(move="hold", part="C", blk=3, img="sac", head="Màu ấm làm đồ nổi lên khỏi nền", cam=SAC, free=True, dark=False, dd=[], keep=["tieu", "mat", "am", "lanh"],
-         vo="Bài phân tích của tụi mình giải thích rằng màu ấm làm món đồ nổi lên khỏi nền phía sau."),
+         vo="Các nghiên cứu cũng giải thích rằng màu ấm làm món đồ nổi lên khỏi nền phía sau."),
     dict(move="push", part="C", blk=3, img="an", head="Cùng màu với nền thì chìm vào nền", cam=AN, dark=True, dd=["mau", "lab_mau"],
          vo="Ngược lại, món đồ cùng màu với nền thì chìm vào nền, không còn giống một món đồ."),
     dict(move="hold", part="D", blk=4, img="mb", head="Lane Cove House, Sydney", cam=MB, free=True, dark=False, dd=["mb", "tu"], keep=[],
-         vo="Căn bếp nhà Lane Cove ở Sydney cho tủ chìm vào tường như thế.",
-         tts="Căn bếp nhà Lên Cô-vơ ở Xít-ni cho tủ chìm vào tường như thế."),
+         vo="Căn nhà Lane Cove ở Sydney cho tủ chìm vào tường như thế.",
+         tts="Căn nhà Lên Cô-vơ ở Xít-ni cho tủ chìm vào tường như thế."),
     dict(move="pan_r", part="D", blk=5, img="an", head="Tủ kín tường, cánh phẳng và trắng", cam=AN, dark=True, dd=["cao", "lab_cao"],
          vo="Dãy tủ cao kín cả bức tường, cánh phẳng và trắng như tường."),
     dict(move="hold", part="D", blk=5, img="an", head="Không tay nắm, khe rất mảnh", cam=AN, dark=True, dd=["khe", "lab_khe"],
@@ -79,11 +79,10 @@ SC = [
     dict(move="pull", part="H", blk=7, img="an", head="Tủ lớn chọn cùng màu sáng với tường", cam=AN, dark=True, dd=[],
          vo="Vậy phòng nhỏ mà cần tủ lớn thì nên chọn tủ cùng màu sáng với tường."),
     dict(move="hold", part="H", blk=7, img="an", head="Tủ vẫn to, nhưng chìm vào tường", cam=AN, dark=True, dd=[],
-         vo="Tủ vẫn to như cũ, nhưng chìm vào tường chứ không nổi lên như chiếc sofa đỏ.",
-         tts="Tủ vẫn to như cũ, nhưng chìm vào tường chứ không nổi lên như chiếc sô-pha đỏ."),
+         vo="Tủ vẫn to nhưng cảm giác chìm vào tường chứ không nổi lên quá."),
     dict(move="hold", part="I", blk=8, img="an", head="end", cam="END", dark=False, vo="", dd=[],
-         say="Bài phân tích về màu làm đồ trông to hay nhỏ, từ sách của hai tác giả Kilmer, mọi người xem ở phần bình luận nha.",
-         tts="Bài phân tích về màu làm đồ trông to hay nhỏ, từ sách của hai tác giả Kin-mơ, mọi người xem ở phần bình luận nha."),
+         say="Bài phân tích về màu làm đồ trông to hay nhỏ, từ sách của hai tác giả Kilmer, mọi người xem ở phần bình luận nhá.",
+         tts="Bài phân tích về màu làm đồ trông to hay nhỏ, từ sách của hai tác giả Kin-mơ, mọi người xem ở phần bình luận nhá."),
 ]
 
 DOODLE = r'''
@@ -139,7 +138,7 @@ def dur(s):
 
 
 # Giai đoạn B: điền mốc cảnh theo ghi âm (mỗi cảnh bắt đầu khoảng 0,35–0,4 giây trước câu của nó). Giai đoạn A để trống.
-T_AUDIO = []   # giai đoạn B: điền theo ghi âm
+T_AUDIO = [0, 4.2, 9.49, 13.71, 18.03, 22.37, 26.57, 30.08, 33.5, 38.2, 42.8, 46.4, 53.3]   # giai đoạn B: theo ghi âm audio/tu-lon-phong-nho.mp3 (52,19 giây); mỗi cảnh bắt đầu ~0,38 giây trước câu (silencedetect −35 dB / 0,25 s, mốc chữ sherpa-onnx)
 
 
 def times():

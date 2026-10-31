@@ -568,15 +568,15 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.08s", head="Phòng nhỏ, tủ lớn, chọn màu gì?", vo="Phòng nhỏ mà cần tủ lớn, chọn màu gì để tủ không choán chỗ?",
+    dict(t="0–4.2s", head="Phòng nhỏ, tủ lớn, chọn màu gì?", vo="Phòng nhỏ mà cần tủ lớn, chọn màu gì để tủ không làm ngộp căn phòng?",
          cam=((540, 152), 1.0, (540, 905)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="5.08–11.09s", head="Theo Kilmer & Kilmer (2014)", vo="Hai tác giả Kilmer viết rằng món đồ màu ấm và rực trông to hơn chính nó.",
+    dict(t="4.2–9.49s", head="Theo Kilmer & Kilmer (2014)", vo="Hai tác giả Kilmer viết rằng món đồ màu ấm và rực trông to hơn chính nó.",
          cam=((540, 152), 1.0, (540, 905)), dark=False, dd=['tieu', 'mat', 'am'], keep=[], move="hold"),
-    dict(t="11.09–17.1s", head="Sofa đỏ trông to hơn sofa xanh", vo="Một chiếc sofa bọc vải đỏ thường trông to hơn chiếc sofa y hệt bọc vải xanh.",
+    dict(t="9.49–13.71s", head="Sofa đỏ trông to hơn sofa xanh", vo="Một chiếc sofa bọc vải đỏ thường trông to hơn chiếc sofa y hệt bọc vải xanh.",
          cam=((540, 152), 1.0, (540, 905)), dark=False, dd=['lanh'], keep=['tieu', 'mat', 'am'], move="hold"),
-    dict(t="17.1–24.05s", head="Màu ấm làm đồ nổi lên khỏi nền", vo="Bài phân tích của tụi mình giải thích rằng màu ấm làm món đồ nổi lên khỏi nền phía sau.",
+    dict(t="13.71–18.03s", head="Màu ấm làm đồ nổi lên khỏi nền", vo="Các nghiên cứu cũng giải thích rằng màu ấm làm món đồ nổi lên khỏi nền phía sau.",
          cam=((540, 152), 1.0, (540, 905)), dark=False, dd=[], keep=['tieu', 'mat', 'am', 'lanh'], move="hold"),
-    dict(t="24.05–24.55s", head="end", vo="",
+    dict(t="18.03–18.53s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1
