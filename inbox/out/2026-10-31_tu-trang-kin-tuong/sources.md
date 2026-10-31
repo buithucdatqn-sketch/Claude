@@ -1,14 +1,25 @@
-# Bảng nguồn · tập 18 (mọi dòng lấy từ bai-05.md, commit a83863a)
+# Bảng nguồn · tập 18 (mọi dòng lấy từ `original/kho/bai-05.md`, commit a83863a)
 
-| Nhận định trong lời | Vị trí trong bài | Mức chắc chắn | Nguồn bài dẫn |
+| Nhận định trong lời | Vị trí trong bài, trích ngắn | Mức chắc chắn theo bài | Nguồn bài dẫn |
 |---|---|---|---|
-| Phòng tường trắng hoặc màu lạnh thật nhạt thường trông rộng hơn phòng tường ấm, tối | "Giữ tường và tủ thật sáng…", câu đầu: "Theo hai tác giả, phòng có tường trắng hay sơn màu lạnh thật nhạt thường trông rộng hơn…" | nguyên lý (giáo trình) | [1] Kilmer & Kilmer 2014, ch.5 |
-| Mỗi đường tối của tủ, khung cửa, ron cho mắt chỗ đo khoảng cách, kéo tường lại gần | cùng mục: "mỗi đường tối của tủ, khung cửa hay đường ron… kéo bức tường lại gần" | diễn giải của bài (không gắn với sách), rào "theo cách tụi mình hiểu" | không |
-| Lane Cove, Sydney, Lachlan Seegers, 2025 | mục "Màu sơn có thể làm…", đoạn "Để thấy những điều này…" | dữ kiện công trình | bài |
-| Tủ kín một tường, sàn tới mép trần, cánh phẳng trắng, không tay nắm lộ, khe mảnh | "Giữ tường và tủ thật sáng…", đoạn "Khu bếp ở Lane Cove…" | quan sát trên ảnh | bài |
-| Gương sau bếp mở thêm lớp không gian; tủ lùi, nhường đảo đá, bàn ăn | cùng đoạn | quan sát trên ảnh | bài |
-| Trần xanh lá đậm tiến xuống, sàn gỗ sẫm tiến lên, tường trắng lùi; phòng rộng ngang, thấp đứng | cùng mục, đoạn "Kilmer bàn từng bề mặt riêng lẻ…" | diễn giải của bài từ quy tắc màu | [1] |
-| Chọn cánh tủ phẳng, sáng, bớt đường tối chạy ngang (lời khuyên cho bếp nhà mình) | KHÔNG có nguyên văn trong bài; suy từ đoạn Lane Cove và quy tắc "đường tối kéo tường lại gần" | suy luận từ bài, cần chủ Trang duyệt | không |
-| Kết: bếp thoáng vì dãy tủ lùi thành tường trắng liền | tổng hợp đoạn Lane Cove (câu "Thành ra cả dãy tủ trông như một bức tường trắng…") | diễn giải của bài | |
+| Nhà hẹp ngại tủ kịch trần vì sợ bếp trông chật (câu móc) | tình huống mở, suy từ tiêu đề bài học 2 "…để chỗ hẹp trông rộng hơn" | tình huống, không phải nhận định | không |
+| Dãy tủ trắng kín bức tường trông như lùi ra sau | bài học 2, đoạn 2: "Nhìn trong ảnh, mảng tủ ấy lùi hẳn ra sau" | quan sát trên ảnh | bài |
+| Kilmer 2014: phòng tường trắng hay màu lạnh thật nhạt trông rộng hơn phòng ấm, tối | bài học 2, câu đầu: "Theo hai tác giả, phòng có tường trắng hay sơn màu lạnh thật nhạt thường trông rộng hơn phòng sơn màu ấm và tối [1]" | nguyên lý (giáo trình) | [1] |
+| Màu sáng có vẻ lùi ra xa, màu tối có vẻ tiến lại gần | mục "Vậy một màu tiến lại hay lùi đi là do đâu?": "Màu tối thì tiến, màu sáng thì lùi", sau câu "ta phải xét cả ba thuộc tính của nó [1]" | nguyên lý (giáo trình) | [1] |
+| Cạnh tủ, tay nắm, khung cửa, đường ron là đường tối, cho mắt mốc đo khoảng cách, kéo tường lại gần; chỉ sơn trắng chưa đủ | bài học 2, đoạn 1: "Quy tắc này dễ bị hiểu thành chỉ cần sơn tường trắng. Trong phòng thật, mỗi đường tối của tủ, khung cửa hay đường ron… cho mắt một chỗ để đo khoảng cách, và kéo bức tường lại gần." ("tay nắm" do lời thêm, theo đoạn 2) | diễn giải của bài, rào "Bài phân tích của tụi mình cho rằng" | không |
+| Lane Cove House, Sydney | mục 2, đoạn cuối: "Lane Cove House ở Sydney do Lachlan Seegers Architect thiết kế" | dữ kiện | bài |
+| Dãy tủ chạy trọn bức tường sau đảo bếp | quan sát trên mặt bằng vị trí chụp (anh/vi-tri-chup/07) và bài học 2 đoạn 2 "Tủ bếp chạy kín một bức tường" | quan sát | bài |
+| Tủ cao từ sàn lên sát trần, cánh phẳng trắng, không tay nắm lộ ra, khe mảnh | bài học 2, đoạn 2: "từ sàn lên tới mép trần, cánh tủ phẳng và trắng. Nhìn trên ảnh thì cánh tủ không có tay nắm lộ ra, các khe giữa cánh rất mảnh" | quan sát trên ảnh | bài |
+| Mặt tủ không còn đường tối, nên trông như bức tường trắng, không như món đồ | bài học 2, đoạn 2: "Thành ra cả dãy tủ trông như một bức tường trắng chứ không như một món đồ" | diễn giải của bài | bài |
+| Màu sáng lùi xa, nên trong ảnh mảng tủ lùi ra sau, nhường chỗ cho đảo đá và bàn ăn | bài học 2, đoạn 2: "mảng tủ ấy lùi hẳn ra sau, nhường chỗ cho đảo đá và bàn ăn đứng phía trước" | quan sát trên ảnh, nối với nguyên lý [1] | [1], bài |
+| Mặt tủ giữ thật sáng và trơn (ít đường tối) thì tủ kịch trần không làm bếp trông chật | tiêu đề bài học 2 "Giữ tường và tủ thật sáng…"; đoạn kết "giữ hai tường dọc thật sáng và trơn" | lời khuyên của bài | bài |
+| Hành lang dài, hẹp của nhà ống giữ hai tường dọc thật sáng và trơn | đoạn kết: "Hành lang dài và hẹp của nhà ống thì giữ hai tường dọc thật sáng và trơn" | lời khuyên của bài | bài |
 
-Danh mục nguồn của bài: [1] Kilmer & Kilmer (2014), Designing Interiors 2nd ed., Wiley, ch.5. Các nguồn [2]–[5] của bài không dùng trong reel này.
+Không dùng trong reel: Kandinsky 1911 [4], Meerwein và cộng sự 2007 [3], bảng phản xạ [2], von Castell và cộng sự 2018 [5], trần tối, thảm đỏ, ghế da, gương sau bếp (đưa vào caption).
+
+Danh mục nguồn của bài (chép đúng):
+[1] Kilmer, R., & Kilmer, W. O. (2014). Designing Interiors (2nd ed.). Hoboken, NJ, Wiley. Chương 5 "Color and Light", các mục Psychology of Color và Color and Space.
+[2] Kilmer, R., & Kilmer, W. O. (2014). Designing Interiors (2nd ed.). Chương 12 "Lighting for Interiors".
+[3] Meerwein, G., Rodeck, B., & Mahnke, F. H. (2007). Color – Communication in Architectural Space. Birkhäuser.
+[4] Wassily Kandinsky, Über das Geistige in der Kunst (1911).
+[5] von Castell, C., Hecht, H., & Oberfeld, D. (2018). Human Factors, 60(8), 1228–1240.

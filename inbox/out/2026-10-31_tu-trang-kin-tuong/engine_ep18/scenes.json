@@ -1,0 +1,138 @@
+[
+ {
+  "blk": 1,
+  "t": "0–5.7s",
+  "head": "Tủ kịch trần mà bếp không chật?",
+  "loi": "Nhiều nhà hẹp ngại đóng tủ bếp cao kịch trần, vì sợ bếp trông chật hơn.",
+  "tts": "Nhiều nhà hẹp ngại đóng tủ bếp cao kịch trần, vì sợ bếp trông chật hơn.",
+  "part": "A"
+ },
+ {
+  "blk": 1,
+  "t": "5.7–12.96s",
+  "head": "Tủ kịch trần mà bếp không chật?",
+  "loi": "Vậy mà dãy tủ trắng kín cả bức tường ở căn bếp này lại trông như lùi ra sau, vì sao?",
+  "tts": "Vậy mà dãy tủ trắng kín cả bức tường ở căn bếp này lại trông như lùi ra sau, vì sao?",
+  "part": "A"
+ },
+ {
+  "blk": 2,
+  "t": "12.96–20.85s",
+  "head": "Theo Kilmer & Kilmer (2014)",
+  "loi": "Trong sách năm 2014, hai tác giả Rosemary và Otie Kilmer viết rằng phòng có tường trắng, hay sơn màu lạnh thật nhạt,",
+  "tts": "Trong sách năm hai nghìn không trăm mười bốn, hai tác giả Rô-dơ-me-ri và Ô-ti Kin-mơ viết rằng phòng có tường trắng, hay sơn màu lạnh thật nhạt,",
+  "part": "B"
+ },
+ {
+  "blk": 2,
+  "t": "20.85–24.68s",
+  "head": "Theo Kilmer & Kilmer (2014)",
+  "loi": "thường trông rộng hơn phòng sơn màu ấm và tối.",
+  "tts": "thường trông rộng hơn phòng sơn màu ấm và tối.",
+  "part": "B"
+ },
+ {
+  "blk": 2,
+  "t": "24.68–31.32s",
+  "head": "Màu sáng lùi ra, màu tối tiến lại",
+  "loi": "Theo hai tác giả, màu sáng có vẻ lùi ra xa, còn màu tối có vẻ tiến lại gần.",
+  "tts": "Theo hai tác giả, màu sáng có vẻ lùi ra xa, còn màu tối có vẻ tiến lại gần.",
+  "part": "B"
+ },
+ {
+  "blk": 3,
+  "t": "31.32–39.83s",
+  "head": "Đường tối kéo bức tường lại gần",
+  "loi": "Bài phân tích của tụi mình cho rằng cạnh tủ, tay nắm, khung cửa hay đường ron trên mặt tường đều là những đường tối,",
+  "tts": "Bài phân tích của tụi mình cho rằng cạnh tủ, tay nắm, khung cửa hay đường ron trên mặt tường đều là những đường tối,",
+  "part": "C"
+ },
+ {
+  "blk": 3,
+  "t": "39.83–46.47s",
+  "head": "Đường tối kéo bức tường lại gần",
+  "loi": "cho mắt một mốc để đo khoảng cách, nên mỗi đường như vậy lại kéo bức tường lại gần.",
+  "tts": "cho mắt một mốc để đo khoảng cách, nên mỗi đường như vậy lại kéo bức tường lại gần.",
+  "part": "C"
+ },
+ {
+  "blk": 3,
+  "t": "46.47–49.98s",
+  "head": "Chỉ sơn tường trắng thì chưa đủ",
+  "loi": "Vì thế, chỉ sơn tường trắng thì chưa đủ.",
+  "tts": "Vì thế, chỉ sơn tường trắng thì chưa đủ.",
+  "part": "C"
+ },
+ {
+  "blk": 4,
+  "t": "49.98–55.37s",
+  "head": "Lane Cove House, Sydney",
+  "loi": "Căn bếp ở đầu video, trong nhà Lane Cove ở Sydney, làm đúng điều này.",
+  "tts": "Căn bếp ở đầu video, trong nhà Lên Cô-vơ ở Xít-ni, làm đúng điều này.",
+  "part": "D"
+ },
+ {
+  "blk": 4,
+  "t": "55.37–60.13s",
+  "head": "Dãy tủ chạy trọn một bức tường",
+  "loi": "Trên mặt bằng, dãy tủ chạy trọn bức tường phía sau đảo bếp.",
+  "tts": "Trên mặt bằng, dãy tủ chạy trọn bức tường phía sau đảo bếp.",
+  "part": "D"
+ },
+ {
+  "blk": 5,
+  "t": "60.13–68.95s",
+  "head": "Cánh phẳng, khe mảnh, không tay nắm",
+  "loi": "Dãy tủ cao từ sàn lên sát trần, cánh tủ phẳng và trắng, không có tay nắm lộ ra, còn khe giữa các cánh rất mảnh.",
+  "tts": "Dãy tủ cao từ sàn lên sát trần, cánh tủ phẳng và trắng, không có tay nắm lộ ra, còn khe giữa các cánh rất mảnh.",
+  "part": "D"
+ },
+ {
+  "blk": 6,
+  "t": "68.95–77.78s",
+  "head": "Mặt tủ gần như không còn đường tối",
+  "loi": "Mặt tủ gần như không còn đường tối nào, nên cả dãy tủ trông như một bức tường trắng chứ không còn như một món đồ.",
+  "tts": "Mặt tủ gần như không còn đường tối nào, nên cả dãy tủ trông như một bức tường trắng chứ không còn như một món đồ.",
+  "part": "D"
+ },
+ {
+  "blk": 7,
+  "t": "77.78–84.11s",
+  "head": "Màu sáng lùi, mảng tủ lùi ra sau",
+  "loi": "Mà màu sáng thì lùi ra xa, nên trong ảnh này cả mảng tủ lùi hẳn ra sau,",
+  "tts": "Mà màu sáng thì lùi ra xa, nên trong ảnh này cả mảng tủ lùi hẳn ra sau,",
+  "part": "D"
+ },
+ {
+  "blk": 7,
+  "t": "84.11–88.25s",
+  "head": "Màu sáng lùi, mảng tủ lùi ra sau",
+  "loi": "nhường chỗ cho đảo đá và bàn ăn đứng phía trước.",
+  "tts": "nhường chỗ cho đảo đá và bàn ăn đứng phía trước.",
+  "part": "D"
+ },
+ {
+  "blk": 8,
+  "t": "88.25–97.08s",
+  "head": "Mặt tủ sáng và trơn, ít đường tối",
+  "loi": "Tủ kịch trần vì vậy không làm bếp trông chật hơn, miễn là mặt tủ được giữ thật sáng và trơn, nghĩa là ít đường tối.",
+  "tts": "Tủ kịch trần vì vậy không làm bếp trông chật hơn, miễn là mặt tủ được giữ thật sáng và trơn, nghĩa là ít đường tối.",
+  "part": "H"
+ },
+ {
+  "blk": 9,
+  "t": "97.08–104.97s",
+  "head": "Hành lang nhà ống cũng giữ tường sáng, trơn",
+  "loi": "Với hành lang dài và hẹp của nhà ống, tụi mình cũng khuyên giữ hai tường dọc thật sáng và trơn như vậy.",
+  "tts": "Với hành lang dài và hẹp của nhà ống, tụi mình cũng khuyên giữ hai tường dọc thật sáng và trơn như vậy.",
+  "part": "F"
+ },
+ {
+  "blk": 10,
+  "t": "104.97–112.86s",
+  "head": "end",
+  "loi": "Bài phân tích về màu tiến, màu lùi từ sách của hai tác giả Kilmer, mọi người xem ở phần bình luận nha.",
+  "tts": "Bài phân tích về màu tiến, màu lùi từ sách của hai tác giả Kin-mơ, mọi người xem ở phần bình luận nha.",
+  "part": "I"
+ }
+]

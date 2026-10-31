@@ -1,0 +1,96 @@
+[
+ {
+  "tag": "r01_bep",
+  "img": "bep",
+  "src": "source_bep.png",
+  "scenes": [
+   1,
+   2
+  ],
+  "t_in_main": 0.0,
+  "cut_from": 0.0,
+  "cut_len": 12.96,
+  "first_frame": 1
+ },
+ {
+  "tag": "r02_sang",
+  "img": "sang",
+  "src": "source_sang.png",
+  "scenes": [
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "t_in_main": 12.96,
+  "cut_from": 7.260000000000001,
+  "cut_len": 37.019999999999996,
+  "first_frame": 2
+ },
+ {
+  "tag": "r03_mb",
+  "img": "mb",
+  "src": "source_mb.png",
+  "scenes": [
+   9,
+   10
+  ],
+  "t_in_main": 49.98,
+  "cut_from": 3.509999999999998,
+  "cut_len": 10.150000000000006,
+  "first_frame": 2
+ },
+ {
+  "tag": "r04_an",
+  "img": "an",
+  "src": "source_an.png",
+  "scenes": [
+   11
+  ],
+  "t_in_main": 60.13,
+  "cut_from": 4.760000000000005,
+  "cut_len": 8.82,
+  "first_frame": 2
+ },
+ {
+  "tag": "r05_bep",
+  "img": "bep",
+  "src": "source_bep.png",
+  "scenes": [
+   12,
+   13,
+   14,
+   15
+  ],
+  "t_in_main": 68.95,
+  "cut_from": 8.82,
+  "cut_len": 28.129999999999995,
+  "first_frame": 2
+ },
+ {
+  "tag": "r06_hanh",
+  "img": "hanh",
+  "src": "source_hanh.png",
+  "scenes": [
+   16
+  ],
+  "t_in_main": 97.08,
+  "cut_from": 8.829999999999998,
+  "cut_len": 7.890000000000001,
+  "first_frame": 2
+ },
+ {
+  "tag": "r07_bep",
+  "img": "bep",
+  "src": "source_bep.png",
+  "scenes": [
+   17
+  ],
+  "t_in_main": 104.97,
+  "cut_from": 7.890000000000001,
+  "cut_len": 8.89,
+  "first_frame": 2
+ }
+]
