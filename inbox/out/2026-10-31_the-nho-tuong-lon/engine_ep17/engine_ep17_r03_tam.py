@@ -499,9 +499,9 @@ def scrim(base, top=False, bottom=False):
     ys = np.arange(H, dtype=np.float32)
     f = np.ones(H, np.float32)
     if top:
-        f *= 1 - 0.55 * _band(ys, SAFE_Y0 - 20, TOP_END, 150)
+        f *= 1 - 0.30 * _band(ys, SAFE_Y0 - 20, TOP_END, 260)   # nhạt hơn, mép mềm hơn (chủ Trang góp ý 2026-10-31: dải tối quá đậm, thành lằn)
     if bottom:
-        f *= 1 - 0.58 * _band(ys, 1150, SAFE_Y1 + 10, 170)
+        f *= 1 - 0.32 * _band(ys, 1150, SAFE_Y1 + 10, 280)
     return base * f[:, None, None]
 
 
@@ -565,13 +565,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–4.14s", head="Lý do thứ nhất là kích thước", vo="còn bức tường sơn thật thì chiếm phần lớn tầm nhìn.",
+    dict(t="0–2.59s", head="Lý do thứ nhất là kích thước", vo="còn bức tường sơn thật thì chiếm phần lớn tầm nhìn.",
          cam=((1300, 1100), 2.6, (540, 917)), dark=False, dd=[], keep=[], move="hold"),
-    dict(t="4.14–12.96s", head="CIE 208:2014", vo="Một báo cáo kỹ thuật năm 2014 tổng hợp các thí nghiệm và cho thấy mảng màu lớn thường trông sáng hơn, rực hơn mảng nhỏ,",
+    dict(t="2.59–9.66s", head="CIE 208:2014", vo="Một báo cáo kỹ thuật năm 2014 tổng hợp các thí nghiệm và cho thấy mảng màu lớn thường trông sáng hơn, rực hơn mảng nhỏ,",
          cam=((1300, 1100), 2.6, (540, 917)), dark=True, dd=['vang', 'lab_vang'], keep=[], move="pan_u"),
-    dict(t="12.96–18.66s", head="Mảng lớn sáng hơn, rực hơn", vo="có khi còn đổi cả sắc màu, dù nghiên cứu về hiện tượng này còn ít.",
+    dict(t="9.66–13.21s", head="Mảng lớn sáng hơn, rực hơn", vo="có khi còn đổi cả sắc màu, dù nghiên cứu về hiện tượng này còn ít.",
          cam=((1300, 1100), 2.6, (540, 917)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="18.66–19.16s", head="end", vo="",
+    dict(t="13.21–13.71s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1
@@ -654,7 +654,7 @@ def render_scene(i):
 
 
 BOARDS["plain"] = make_board(1.0)
-BOARDS["dark"] = make_board(0.86)
+BOARDS["dark"] = make_board(0.94)
 BOARDS["clean"] = make_board(1.0)
 frames = []
 for i in range(len(SCENES)):

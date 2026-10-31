@@ -52,10 +52,12 @@ PK2 = STRIP(324, 226, 0.9, 910)
 # 1 m², hai lớp, qua góc (PK.2 phải vẽ dần) → xem ba mốc giờ (PK.3 vẽ dần) → chốt → lời mời.
 SC = [
     dict(move="push", part="A", blk=1, img="tuong", head="Thẻ màu vừa mắt, tường lại rực", cam=TUONG, dark=True, dd=[],
-         vo="Màu chọn trên thẻ thì vừa mắt, sơn lên cả bức tường lại sáng và rực hơn hẳn, vì sao?"),
+         vo="Màu sơn chọn trên thẻ màu thì vừa mắt, nhưng sơn lên cả bức tường lại sáng và rực hơn hẳn, vì sao?"),
     dict(move="hold", part="B", blk=2, img="pk2", head="Lý do thứ nhất là kích thước", cam=PK2, free=True, dark=False, dd=["trai"], keep=[],
-         vo="Sổ tay AH+ nêu hai lý do. Lý do đầu tiên là kích thước, vì tấm thẻ chỉ vài xăng-ti-mét đặt giữa tường trắng,",
-         tts="Sổ tay Ây-hát cộng nêu hai lý do. Lý do đầu tiên là kích thước, vì tấm thẻ chỉ vài xăng-ti-mét đặt giữa tường trắng,"),
+         vo="Sổ tay AH+ có nói về các nghiên cứu chỉ ra hai lý do.",
+         tts="Sổ tay Ây-hát cộng có nói về các nghiên cứu chỉ ra hai lý do."),
+    dict(move="hold", part="B", blk=2, img="pk2", head="Lý do thứ nhất là kích thước", cam=PK2, free=True, dark=False, dd=[], keep=["trai"],
+         vo="Lý do đầu tiên là kích thước, vì tấm thẻ chỉ vài xăng-ti-mét đặt giữa tường trắng,"),
     dict(move="hold", part="B", blk=2, img="pk2", head="Lý do thứ nhất là kích thước", cam=PK2, free=True, dark=False, dd=[], keep=["trai"],
          vo="còn bức tường sơn thật thì chiếm phần lớn tầm nhìn."),
     dict(move="pan_u", part="C", blk=3, img="tam", head="CIE 208:2014", cam=TAM, dark=True, dd=["vang", "lab_vang"],
@@ -75,7 +77,7 @@ SC = [
     dict(move="pull", part="C", blk=4, img="hanh", head="Tường, trần, sàn dội ánh sáng lên nhau", cam=HANH, dark=True, dd=["mat", "lab_mat"],
          vo="Trong phòng, tường, trần và sàn đều dội ánh sáng lên nhau, nên màu của một bức tường còn tùy các mặt xung quanh,"),
     dict(move="hold", part="C", blk=4, img="hanh", head="Điều tấm thẻ không cho thấy", cam=HANH, dark=True, dd=[],
-         vo="điều mà tấm thẻ đặt giữa tường trắng không cho thấy."),
+         vo="điều mà tấm thẻ màu sơn đặt giữa tường trắng không thể hiện được."),
     dict(move="hold", part="F", blk=5, img="pk2", head="Mảng thử một mét vuông, hai lớp", cam=PK2, free=True, dark=False, dd=["phai", "kt"], keep=["trai"],
          vo="Vì vậy, nên sơn một mảng thử khoảng một mét vuông, hai lớp, ngay trên bức tường sẽ sơn,"),
     dict(move="hold", part="F", blk=5, img="pk2", head="Cho mảng thử chạy qua góc tường", cam=PK2, free=True, dark=False, dd=[], keep=["trai", "phai", "kt"],
@@ -83,7 +85,7 @@ SC = [
     dict(move="pull", part="H", blk=6, img="tuong", head="Một ô nhỏ chưa phải cả bức tường", cam=TUONG, dark=True, dd=[],
          vo="Tấm thẻ chỉ cho biết màu của một ô nhỏ trên nền trắng, chưa cho biết màu của cả bức tường trong căn phòng thật."),
     dict(move="hold", part="I", blk=6, img="ebook", head="end", cam="END", dark=False, vo="", dd=[],
-         say="Ba phép thử màu ngay tại công trình có trong sổ tay Công thức chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha."),
+         say="Ba phép thử màu ngay tại công trình có trong sổ tay Kinh nghiệm chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nhá."),
 ]
 
 DOODLE = r'''
@@ -139,7 +141,7 @@ def dur(s):
 
 
 # Giai đoạn B: điền mốc cảnh theo ghi âm (mỗi cảnh bắt đầu khoảng 0,35–0,4 giây trước câu của nó). Giai đoạn A để trống.
-T_AUDIO = []
+T_AUDIO = [0, 5.43, 9.41, 13.89, 16.48, 23.55, 27.1, 30.45, 36.09, 39.65, 43.73, 49.84, 52.94, 57.92, 62.63, 68.93, 76.05]   # giai đoạn B: theo ghi âm the-nho-tuong-lon.mp3 (74,92 giây)
 
 
 def times():

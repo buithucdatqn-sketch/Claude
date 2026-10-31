@@ -1,11 +1,11 @@
-Màu chọn trên thẻ thì vừa mắt, sơn lên cả bức tường lại sáng và rực hơn hẳn, vì sao?
+Màu sơn chọn trên thẻ màu thì vừa mắt, nhưng sơn lên cả bức tường lại sáng và rực hơn hẳn, vì sao?
 <break time="1.2s" />
-Sổ tay Ây-hát cộng nêu hai lý do. Lý do đầu tiên là kích thước, vì tấm thẻ chỉ vài xăng-ti-mét đặt giữa tường trắng, còn bức tường sơn thật thì chiếm phần lớn tầm nhìn.
+Sổ tay Ây-hát cộng có nói về các nghiên cứu chỉ ra hai lý do. Lý do đầu tiên là kích thước, vì tấm thẻ chỉ vài xăng-ti-mét đặt giữa tường trắng, còn bức tường sơn thật thì chiếm phần lớn tầm nhìn.
 <break time="1.2s" />
 Một báo cáo kỹ thuật năm hai nghìn không trăm mười bốn tổng hợp các thí nghiệm và cho thấy mảng màu lớn thường trông sáng hơn, rực hơn mảng nhỏ, có khi còn đổi cả sắc màu, dù nghiên cứu về hiện tượng này còn ít.
 <break time="1.2s" />
-Lý do thứ hai là ánh sáng dội từ mặt màu sang mặt bên cạnh. Năm một nghìn chín trăm chín mươi chín, một nhóm nghiên cứu cho người xem một tấm bìa gập, nửa đỏ tía, nửa trắng, và ánh sáng dội từ nửa đỏ tía phủ một quầng hồng lên nửa trắng. Ở căn bếp này, phần tường trắng sát tủ hồng cũng ửng màu hơn phần ở xa. Trong phòng, tường, trần và sàn đều dội ánh sáng lên nhau, nên màu của một bức tường còn tùy các mặt xung quanh, điều mà tấm thẻ đặt giữa tường trắng không cho thấy.
+Lý do thứ hai là ánh sáng dội từ mặt màu sang mặt bên cạnh. Năm một nghìn chín trăm chín mươi chín, một nhóm nghiên cứu cho người xem một tấm bìa gập, nửa đỏ tía, nửa trắng, và ánh sáng dội từ nửa đỏ tía phủ một quầng hồng lên nửa trắng. Ở căn bếp này, phần tường trắng sát tủ hồng cũng ửng màu hơn phần ở xa. Trong phòng, tường, trần và sàn đều dội ánh sáng lên nhau, nên màu của một bức tường còn tùy các mặt xung quanh, điều mà tấm thẻ màu sơn đặt giữa tường trắng không thể hiện được.
 <break time="1.2s" />
 Vì vậy, nên sơn một mảng thử khoảng một mét vuông, hai lớp, ngay trên bức tường sẽ sơn, và cho chạy qua góc tường để thấy cả phía sáng, phía tối lẫn màu dội sang tường bên cạnh.
 <break time="1.2s" />
-Tấm thẻ chỉ cho biết màu của một ô nhỏ trên nền trắng, chưa cho biết màu của cả bức tường trong căn phòng thật. Ba phép thử màu ngay tại công trình có trong sổ tay Công thức chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha.
+Tấm thẻ chỉ cho biết màu của một ô nhỏ trên nền trắng, chưa cho biết màu của cả bức tường trong căn phòng thật. Ba phép thử màu ngay tại công trình có trong sổ tay Kinh nghiệm chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nhá.

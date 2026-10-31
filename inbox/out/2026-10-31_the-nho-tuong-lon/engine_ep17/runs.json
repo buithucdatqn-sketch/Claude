@@ -6,9 +6,9 @@
   "scenes": [
    1
   ],
-  "t_in_main": 0.0,
+  "t_in_main": 0,
   "cut_from": 0.0,
-  "cut_len": 6.95,
+  "cut_len": 5.43,
   "first_frame": 1
  },
  {
@@ -17,11 +17,12 @@
   "src": "source_pk2.png",
   "scenes": [
    2,
-   3
+   3,
+   4
   ],
-  "t_in_main": 6.95,
-  "cut_from": 6.95,
-  "cut_len": 12.34,
+  "t_in_main": 5.43,
+  "cut_from": 5.43,
+  "cut_len": 11.05,
   "first_frame": 2
  },
  {
@@ -29,12 +30,12 @@
   "img": "tam",
   "src": "source_tam.png",
   "scenes": [
-   4,
-   5
+   5,
+   6
   ],
-  "t_in_main": 19.29,
-  "cut_from": 4.139999999999999,
-  "cut_len": 14.520000000000005,
+  "t_in_main": 16.48,
+  "cut_from": 2.59,
+  "cut_len": 10.620000000000001,
   "first_frame": 2
  },
  {
@@ -42,14 +43,14 @@
   "img": "tu",
   "src": "source_tu.png",
   "scenes": [
-   6,
    7,
    8,
-   9
+   9,
+   10
   ],
-  "t_in_main": 33.81,
-  "cut_from": 5.700000000000003,
-  "cut_len": 23.119999999999997,
+  "t_in_main": 27.1,
+  "cut_from": 3.5500000000000007,
+  "cut_len": 16.629999999999995,
   "first_frame": 2
  },
  {
@@ -57,12 +58,12 @@
   "img": "hanh",
   "src": "source_hanh.png",
   "scenes": [
-   10,
-   11
+   11,
+   12
   ],
-  "t_in_main": 56.93,
-  "cut_from": 6.009999999999998,
-  "cut_len": 12.339999999999996,
+  "t_in_main": 43.73,
+  "cut_from": 4.079999999999998,
+  "cut_len": 9.21,
   "first_frame": 2
  },
  {
@@ -70,12 +71,12 @@
   "img": "pk2",
   "src": "source_pk2.png",
   "scenes": [
-   12,
-   13
+   13,
+   14
   ],
-  "t_in_main": 69.27,
-  "cut_from": 4.140000000000001,
-  "cut_len": 13.590000000000003,
+  "t_in_main": 52.94,
+  "cut_from": 3.0999999999999943,
+  "cut_len": 9.690000000000005,
   "first_frame": 2
  },
  {
@@ -83,11 +84,11 @@
   "img": "tuong",
   "src": "source_tuong.png",
   "scenes": [
-   14
+   15
   ],
-  "t_in_main": 82.86,
-  "cut_from": 6.950000000000003,
-  "cut_len": 8.510000000000005,
+  "t_in_main": 62.63,
+  "cut_from": 4.710000000000001,
+  "cut_len": 6.300000000000004,
   "first_frame": 2
  },
  {
@@ -95,11 +96,11 @@
   "img": "ebook",
   "src": "source_ebook.png",
   "scenes": [
-   15
+   16
   ],
-  "t_in_main": 91.37,
-  "cut_from": 8.510000000000005,
-  "cut_len": 10.449999999999989,
+  "t_in_main": 68.93,
+  "cut_from": 6.300000000000004,
+  "cut_len": 8.11999999999999,
   "first_frame": 2
  }
 ]

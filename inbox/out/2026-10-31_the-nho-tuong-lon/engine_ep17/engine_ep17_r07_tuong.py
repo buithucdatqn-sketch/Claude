@@ -499,9 +499,9 @@ def scrim(base, top=False, bottom=False):
     ys = np.arange(H, dtype=np.float32)
     f = np.ones(H, np.float32)
     if top:
-        f *= 1 - 0.55 * _band(ys, SAFE_Y0 - 20, TOP_END, 150)
+        f *= 1 - 0.30 * _band(ys, SAFE_Y0 - 20, TOP_END, 260)   # nhạt hơn, mép mềm hơn (chủ Trang góp ý 2026-10-31: dải tối quá đậm, thành lằn)
     if bottom:
-        f *= 1 - 0.58 * _band(ys, 1150, SAFE_Y1 + 10, 170)
+        f *= 1 - 0.32 * _band(ys, 1150, SAFE_Y1 + 10, 280)
     return base * f[:, None, None]
 
 
@@ -565,11 +565,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.95s", head="Cho mảng thử chạy qua góc tường", vo="và cho chạy qua góc tường để thấy cả phía sáng, phía tối lẫn màu dội sang tường bên cạnh.",
+    dict(t="0–4.71s", head="Cho mảng thử chạy qua góc tường", vo="và cho chạy qua góc tường để thấy cả phía sáng, phía tối lẫn màu dội sang tường bên cạnh.",
          cam=((1000, 1300), 2.6, (540, 925)), dark=False, dd=[], keep=[], move="hold"),
-    dict(t="6.95–15.46s", head="Một ô nhỏ chưa phải cả bức tường", vo="Tấm thẻ chỉ cho biết màu của một ô nhỏ trên nền trắng, chưa cho biết màu của cả bức tường trong căn phòng thật.",
+    dict(t="4.71–11.01s", head="Một ô nhỏ chưa phải cả bức tường", vo="Tấm thẻ chỉ cho biết màu của một ô nhỏ trên nền trắng, chưa cho biết màu của cả bức tường trong căn phòng thật.",
          cam=((1000, 1300), 2.6, (540, 925)), dark=True, dd=[], keep=[], move="pull"),
-    dict(t="15.46–15.96s", head="end", vo="",
+    dict(t="11.01–11.51s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1
@@ -652,7 +652,7 @@ def render_scene(i):
 
 
 BOARDS["plain"] = make_board(1.0)
-BOARDS["dark"] = make_board(0.86)
+BOARDS["dark"] = make_board(0.94)
 BOARDS["clean"] = make_board(1.0)
 frames = []
 for i in range(len(SCENES)):

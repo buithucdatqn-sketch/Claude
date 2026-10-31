@@ -499,9 +499,9 @@ def scrim(base, top=False, bottom=False):
     ys = np.arange(H, dtype=np.float32)
     f = np.ones(H, np.float32)
     if top:
-        f *= 1 - 0.55 * _band(ys, SAFE_Y0 - 20, TOP_END, 150)
+        f *= 1 - 0.30 * _band(ys, SAFE_Y0 - 20, TOP_END, 260)   # nhạt hơn, mép mềm hơn (chủ Trang góp ý 2026-10-31: dải tối quá đậm, thành lằn)
     if bottom:
-        f *= 1 - 0.58 * _band(ys, 1150, SAFE_Y1 + 10, 170)
+        f *= 1 - 0.32 * _band(ys, 1150, SAFE_Y1 + 10, 280)
     return base * f[:, None, None]
 
 
@@ -565,17 +565,17 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.7s", head="Mảng lớn sáng hơn, rực hơn", vo="có khi còn đổi cả sắc màu, dù nghiên cứu về hiện tượng này còn ít.",
+    dict(t="0–3.55s", head="Mảng lớn sáng hơn, rực hơn", vo="có khi còn đổi cả sắc màu, dù nghiên cứu về hiện tượng này còn ít.",
          cam=((750, 1300), 2.8, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="5.7–11.09s", head="Lý do thứ hai là ánh sáng dội", vo="Lý do thứ hai là ánh sáng dội từ mặt màu sang mặt bên cạnh.",
+    dict(t="3.55–6.9s", head="Lý do thứ hai là ánh sáng dội", vo="Lý do thứ hai là ánh sáng dội từ mặt màu sang mặt bên cạnh.",
          cam=((750, 1300), 2.8, (540, 925)), dark=True, dd=['doi', 'lab_doi'], keep=[], move="push"),
-    dict(t="11.09–17.42s", head="Bloj, Kersten và Hurlbert (1999)", vo="Năm 1999, một nhóm nghiên cứu cho người xem một tấm bìa gập, nửa đỏ tía, nửa trắng,",
+    dict(t="6.9–12.54s", head="Bloj, Kersten và Hurlbert (1999)", vo="Năm 1999, một nhóm nghiên cứu cho người xem một tấm bìa gập, nửa đỏ tía, nửa trắng,",
          cam=((750, 1300), 2.8, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="17.42–22.81s", head="Bloj, Kersten và Hurlbert (1999)", vo="và ánh sáng dội từ nửa đỏ tía phủ một quầng hồng lên nửa trắng.",
+    dict(t="12.54–16.1s", head="Bloj, Kersten và Hurlbert (1999)", vo="và ánh sáng dội từ nửa đỏ tía phủ một quầng hồng lên nửa trắng.",
          cam=((750, 1300), 2.8, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="22.81–28.82s", head="Tường trắng sát tủ hồng ửng màu", vo="Ở căn bếp này, phần tường trắng sát tủ hồng cũng ửng màu hơn phần ở xa.",
+    dict(t="16.1–20.18s", head="Tường trắng sát tủ hồng ửng màu", vo="Ở căn bếp này, phần tường trắng sát tủ hồng cũng ửng màu hơn phần ở xa.",
          cam=((750, 1300), 2.8, (540, 925)), dark=True, dd=['gan', 'lab_gan', 'xa', 'lab_xa'], keep=[], move="pan_r"),
-    dict(t="28.82–29.32s", head="end", vo="",
+    dict(t="20.18–20.68s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1
@@ -658,7 +658,7 @@ def render_scene(i):
 
 
 BOARDS["plain"] = make_board(1.0)
-BOARDS["dark"] = make_board(0.86)
+BOARDS["dark"] = make_board(0.94)
 BOARDS["clean"] = make_board(1.0)
 frames = []
 for i in range(len(SCENES)):

@@ -499,9 +499,9 @@ def scrim(base, top=False, bottom=False):
     ys = np.arange(H, dtype=np.float32)
     f = np.ones(H, np.float32)
     if top:
-        f *= 1 - 0.55 * _band(ys, SAFE_Y0 - 20, TOP_END, 150)
+        f *= 1 - 0.30 * _band(ys, SAFE_Y0 - 20, TOP_END, 260)   # nhạt hơn, mép mềm hơn (chủ Trang góp ý 2026-10-31: dải tối quá đậm, thành lằn)
     if bottom:
-        f *= 1 - 0.58 * _band(ys, 1150, SAFE_Y1 + 10, 170)
+        f *= 1 - 0.32 * _band(ys, 1150, SAFE_Y1 + 10, 280)
     return base * f[:, None, None]
 
 
@@ -565,13 +565,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–4.14s", head="Điều tấm thẻ không cho thấy", vo="điều mà tấm thẻ đặt giữa tường trắng không cho thấy.",
+    dict(t="0–3.1s", head="Điều tấm thẻ không cho thấy", vo="điều mà tấm thẻ màu sơn đặt giữa tường trắng không thể hiện được.",
          cam=((324, 226), 0.9, (540, 910)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="4.14–10.78s", head="Mảng thử một mét vuông, hai lớp", vo="Vì vậy, nên sơn một mảng thử khoảng một mét vuông, hai lớp, ngay trên bức tường sẽ sơn,",
+    dict(t="3.1–8.08s", head="Mảng thử một mét vuông, hai lớp", vo="Vì vậy, nên sơn một mảng thử khoảng một mét vuông, hai lớp, ngay trên bức tường sẽ sơn,",
          cam=((324, 226), 0.9, (540, 910)), dark=False, dd=['phai', 'kt'], keep=['trai'], move="hold"),
-    dict(t="10.78–17.73s", head="Cho mảng thử chạy qua góc tường", vo="và cho chạy qua góc tường để thấy cả phía sáng, phía tối lẫn màu dội sang tường bên cạnh.",
+    dict(t="8.08–12.79s", head="Cho mảng thử chạy qua góc tường", vo="và cho chạy qua góc tường để thấy cả phía sáng, phía tối lẫn màu dội sang tường bên cạnh.",
          cam=((324, 226), 0.9, (540, 910)), dark=False, dd=[], keep=['trai', 'phai', 'kt'], move="hold"),
-    dict(t="17.73–18.23s", head="end", vo="",
+    dict(t="12.79–13.29s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1
@@ -654,7 +654,7 @@ def render_scene(i):
 
 
 BOARDS["plain"] = make_board(1.0)
-BOARDS["dark"] = make_board(0.86)
+BOARDS["dark"] = make_board(0.94)
 BOARDS["clean"] = make_board(1.0)
 frames = []
 for i in range(len(SCENES)):

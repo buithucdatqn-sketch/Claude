@@ -500,9 +500,9 @@ def scrim(base, top=False, bottom=False):
     ys = np.arange(H, dtype=np.float32)
     f = np.ones(H, np.float32)
     if top:
-        f *= 1 - 0.55 * _band(ys, SAFE_Y0 - 20, TOP_END, 150)
+        f *= 1 - 0.30 * _band(ys, SAFE_Y0 - 20, TOP_END, 260)   # nhạt hơn, mép mềm hơn (chủ Trang góp ý 2026-10-31: dải tối quá đậm, thành lằn)
     if bottom:
-        f *= 1 - 0.58 * _band(ys, 1150, SAFE_Y1 + 10, 170)
+        f *= 1 - 0.32 * _band(ys, 1150, SAFE_Y1 + 10, 280)
     return base * f[:, None, None]
 
 
@@ -566,9 +566,9 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.95s", head="Thẻ màu vừa mắt, tường lại rực", vo="Màu chọn trên thẻ thì vừa mắt, sơn lên cả bức tường lại sáng và rực hơn hẳn, vì sao?",
+    dict(t="0–5.43s", head="Thẻ màu vừa mắt, tường lại rực", vo="Màu sơn chọn trên thẻ màu thì vừa mắt, nhưng sơn lên cả bức tường lại sáng và rực hơn hẳn, vì sao?",
          cam=((1000, 1300), 2.6, (540, 925)), dark=True, dd=[], keep=[], move="push"),
-    dict(t="6.95–7.45s", head="end", vo="",
+    dict(t="5.43–5.93s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1
@@ -621,7 +621,7 @@ def doodle(i, wb, text, cam):
 
 
 BOARDS["plain"] = make_board(1.0)
-BOARDS["dark"] = make_board(0.86)
+BOARDS["dark"] = make_board(0.94)
 BOARDS["clean"] = BOARDS["plain"]
 
 import subprocess, re

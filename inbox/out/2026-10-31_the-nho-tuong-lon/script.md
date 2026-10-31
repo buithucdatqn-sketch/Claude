@@ -72,3 +72,34 @@ Ba điều người xem học được: (1) mảng màu lớn thường trông s
 - Ảnh chụp phủ kín khung (ảnh 2000 px, phóng gần 1:1), không băng keo; nhãn doodle khoảng 58 px trong dải y 610–1240.
 - Sơ đồ PK.2 vẽ dần trên nền trắng (chế độ SKETCH, đã kiểm bằng video thử ở bản 2).
 - Câu quan sát "tường trắng sát tủ hồng ửng màu hơn phần ở xa" đã đo trên ảnh (research.md).
+
+
+## Giai đoạn B (2026-10-31): ghép giọng chủ Trang
+- File giọng: `audio/the-nho-tuong-lon.mp3` (ElevenLabs, giọng Tony Hoang, 74,92 giây). Xử lý: lọc dưới 80 Hz, `afftdn` nhẹ, chặn đỉnh, `loudnorm` hai lượt, tăng 1 dB, chặn đỉnh lại → `audio/the-nho-tuong-lon_xu-ly.wav`; đo `ebur128`: −14,7 LUFS, đỉnh −1,5 dBFS, 48 kHz.
+- Nhận dạng lời: sherpa-onnx, mô hình `sherpa-onnx-zipformer-vi-2025-04-20`, cắt theo 27 quãng nghỉ (silencedetect −35 dB / 0,25 giây), giải mã lại các đoạn nghi bằng modified beam search. Chủ Trang chỉnh lời khi thu ở bốn chỗ; phụ đề và chữ khung cuối sửa theo lời thu:
+  1. câu móc: "Màu sơn chọn trên thẻ màu thì vừa mắt, nhưng sơn lên cả bức tường lại sáng và rực hơn hẳn, vì sao?";
+  2. "Sổ tay AH+ có nói về các nghiên cứu chỉ ra hai lý do." (tách thành trang phụ đề riêng);
+  3. "điều mà tấm thẻ màu sơn đặt giữa tường trắng không thể hiện được.";
+  4. lời mời: "…có trong sổ tay Kinh nghiệm chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nhá." (tên sổ tay khác bản viết "Công thức…"; khung cuối theo lời thu, cần chủ Trang xác nhận tên).
+  Đoạn "Ở căn bếp này" máy nhận "Ở căn này" nhưng có quãng 0,56 giây giữa "căn" và "này", nên giữ chữ "bếp".
+- Mốc cảnh `T_AUDIO`: mỗi cảnh bắt đầu khoảng 0,37 giây trước câu của nó, đều rơi vào quãng nghỉ. Khung cuối 68,93–76,05 giây, video sổ tay toàn màn hình.
+- Dải nền tối dưới chữ làm nhạt theo góp ý chủ Trang (mục 0.6l).
+
+| # | Mốc (giây) | Tiêu đề | Phụ đề theo ghi âm |
+|---|---|---|---|
+| 1 | 0–5.43s | Thẻ màu vừa mắt, tường lại rực | Màu sơn chọn trên thẻ màu thì vừa mắt, nhưng sơn lên cả bức tường lại sáng và rực hơn hẳn, vì sao? |
+| 2 | 5.43–9.41s | Lý do thứ nhất là kích thước | Sổ tay AH+ có nói về các nghiên cứu chỉ ra hai lý do. |
+| 3 | 9.41–13.89s | Lý do thứ nhất là kích thước | Lý do đầu tiên là kích thước, vì tấm thẻ chỉ vài xăng-ti-mét đặt giữa tường trắng, |
+| 4 | 13.89–16.48s | Lý do thứ nhất là kích thước | còn bức tường sơn thật thì chiếm phần lớn tầm nhìn. |
+| 5 | 16.48–23.55s | CIE 208:2014 | Một báo cáo kỹ thuật năm 2014 tổng hợp các thí nghiệm và cho thấy mảng màu lớn thường trông sáng hơn, rực hơn mảng nhỏ, |
+| 6 | 23.55–27.1s | Mảng lớn sáng hơn, rực hơn | có khi còn đổi cả sắc màu, dù nghiên cứu về hiện tượng này còn ít. |
+| 7 | 27.1–30.45s | Lý do thứ hai là ánh sáng dội | Lý do thứ hai là ánh sáng dội từ mặt màu sang mặt bên cạnh. |
+| 8 | 30.45–36.09s | Bloj, Kersten và Hurlbert (1999) | Năm 1999, một nhóm nghiên cứu cho người xem một tấm bìa gập, nửa đỏ tía, nửa trắng, |
+| 9 | 36.09–39.65s | Bloj, Kersten và Hurlbert (1999) | và ánh sáng dội từ nửa đỏ tía phủ một quầng hồng lên nửa trắng. |
+| 10 | 39.65–43.73s | Tường trắng sát tủ hồng ửng màu | Ở căn bếp này, phần tường trắng sát tủ hồng cũng ửng màu hơn phần ở xa. |
+| 11 | 43.73–49.84s | Tường, trần, sàn dội ánh sáng lên nhau | Trong phòng, tường, trần và sàn đều dội ánh sáng lên nhau, nên màu của một bức tường còn tùy các mặt xung quanh, |
+| 12 | 49.84–52.94s | Điều tấm thẻ không cho thấy | điều mà tấm thẻ màu sơn đặt giữa tường trắng không thể hiện được. |
+| 13 | 52.94–57.92s | Mảng thử một mét vuông, hai lớp | Vì vậy, nên sơn một mảng thử khoảng một mét vuông, hai lớp, ngay trên bức tường sẽ sơn, |
+| 14 | 57.92–62.63s | Cho mảng thử chạy qua góc tường | và cho chạy qua góc tường để thấy cả phía sáng, phía tối lẫn màu dội sang tường bên cạnh. |
+| 15 | 62.63–68.93s | Một ô nhỏ chưa phải cả bức tường | Tấm thẻ chỉ cho biết màu của một ô nhỏ trên nền trắng, chưa cho biết màu của cả bức tường trong căn phòng thật. |
+| 16 | 68.93–76.05s | end | Ba phép thử màu ngay tại công trình có trong sổ tay Kinh nghiệm chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nhá. |

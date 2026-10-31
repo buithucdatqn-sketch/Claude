@@ -1,23 +1,31 @@
 [
  {
   "blk": 1,
-  "t": "0–6.95s",
+  "t": "0–5.43s",
   "head": "Thẻ màu vừa mắt, tường lại rực",
-  "loi": "Màu chọn trên thẻ thì vừa mắt, sơn lên cả bức tường lại sáng và rực hơn hẳn, vì sao?",
-  "tts": "Màu chọn trên thẻ thì vừa mắt, sơn lên cả bức tường lại sáng và rực hơn hẳn, vì sao?",
+  "loi": "Màu sơn chọn trên thẻ màu thì vừa mắt, nhưng sơn lên cả bức tường lại sáng và rực hơn hẳn, vì sao?",
+  "tts": "Màu sơn chọn trên thẻ màu thì vừa mắt, nhưng sơn lên cả bức tường lại sáng và rực hơn hẳn, vì sao?",
   "part": "A"
  },
  {
   "blk": 2,
-  "t": "6.95–15.15s",
+  "t": "5.43–9.41s",
   "head": "Lý do thứ nhất là kích thước",
-  "loi": "Sổ tay AH+ nêu hai lý do. Lý do đầu tiên là kích thước, vì tấm thẻ chỉ vài xăng-ti-mét đặt giữa tường trắng,",
-  "tts": "Sổ tay Ây-hát cộng nêu hai lý do. Lý do đầu tiên là kích thước, vì tấm thẻ chỉ vài xăng-ti-mét đặt giữa tường trắng,",
+  "loi": "Sổ tay AH+ có nói về các nghiên cứu chỉ ra hai lý do.",
+  "tts": "Sổ tay Ây-hát cộng có nói về các nghiên cứu chỉ ra hai lý do.",
   "part": "B"
  },
  {
   "blk": 2,
-  "t": "15.15–19.29s",
+  "t": "9.41–13.89s",
+  "head": "Lý do thứ nhất là kích thước",
+  "loi": "Lý do đầu tiên là kích thước, vì tấm thẻ chỉ vài xăng-ti-mét đặt giữa tường trắng,",
+  "tts": "Lý do đầu tiên là kích thước, vì tấm thẻ chỉ vài xăng-ti-mét đặt giữa tường trắng,",
+  "part": "B"
+ },
+ {
+  "blk": 2,
+  "t": "13.89–16.48s",
   "head": "Lý do thứ nhất là kích thước",
   "loi": "còn bức tường sơn thật thì chiếm phần lớn tầm nhìn.",
   "tts": "còn bức tường sơn thật thì chiếm phần lớn tầm nhìn.",
@@ -25,7 +33,7 @@
  },
  {
   "blk": 3,
-  "t": "19.29–28.11s",
+  "t": "16.48–23.55s",
   "head": "CIE 208:2014",
   "loi": "Một báo cáo kỹ thuật năm 2014 tổng hợp các thí nghiệm và cho thấy mảng màu lớn thường trông sáng hơn, rực hơn mảng nhỏ,",
   "tts": "Một báo cáo kỹ thuật năm hai nghìn không trăm mười bốn tổng hợp các thí nghiệm và cho thấy mảng màu lớn thường trông sáng hơn, rực hơn mảng nhỏ,",
@@ -33,7 +41,7 @@
  },
  {
   "blk": 3,
-  "t": "28.11–33.81s",
+  "t": "23.55–27.1s",
   "head": "Mảng lớn sáng hơn, rực hơn",
   "loi": "có khi còn đổi cả sắc màu, dù nghiên cứu về hiện tượng này còn ít.",
   "tts": "có khi còn đổi cả sắc màu, dù nghiên cứu về hiện tượng này còn ít.",
@@ -41,7 +49,7 @@
  },
  {
   "blk": 4,
-  "t": "33.81–39.2s",
+  "t": "27.1–30.45s",
   "head": "Lý do thứ hai là ánh sáng dội",
   "loi": "Lý do thứ hai là ánh sáng dội từ mặt màu sang mặt bên cạnh.",
   "tts": "Lý do thứ hai là ánh sáng dội từ mặt màu sang mặt bên cạnh.",
@@ -49,7 +57,7 @@
  },
  {
   "blk": 4,
-  "t": "39.2–45.53s",
+  "t": "30.45–36.09s",
   "head": "Bloj, Kersten và Hurlbert (1999)",
   "loi": "Năm 1999, một nhóm nghiên cứu cho người xem một tấm bìa gập, nửa đỏ tía, nửa trắng,",
   "tts": "Năm một nghìn chín trăm chín mươi chín, một nhóm nghiên cứu cho người xem một tấm bìa gập, nửa đỏ tía, nửa trắng,",
@@ -57,7 +65,7 @@
  },
  {
   "blk": 4,
-  "t": "45.53–50.92s",
+  "t": "36.09–39.65s",
   "head": "Bloj, Kersten và Hurlbert (1999)",
   "loi": "và ánh sáng dội từ nửa đỏ tía phủ một quầng hồng lên nửa trắng.",
   "tts": "và ánh sáng dội từ nửa đỏ tía phủ một quầng hồng lên nửa trắng.",
@@ -65,7 +73,7 @@
  },
  {
   "blk": 4,
-  "t": "50.92–56.93s",
+  "t": "39.65–43.73s",
   "head": "Tường trắng sát tủ hồng ửng màu",
   "loi": "Ở căn bếp này, phần tường trắng sát tủ hồng cũng ửng màu hơn phần ở xa.",
   "tts": "Ở căn bếp này, phần tường trắng sát tủ hồng cũng ửng màu hơn phần ở xa.",
@@ -73,7 +81,7 @@
  },
  {
   "blk": 4,
-  "t": "56.93–65.13s",
+  "t": "43.73–49.84s",
   "head": "Tường, trần, sàn dội ánh sáng lên nhau",
   "loi": "Trong phòng, tường, trần và sàn đều dội ánh sáng lên nhau, nên màu của một bức tường còn tùy các mặt xung quanh,",
   "tts": "Trong phòng, tường, trần và sàn đều dội ánh sáng lên nhau, nên màu của một bức tường còn tùy các mặt xung quanh,",
@@ -81,15 +89,15 @@
  },
  {
   "blk": 4,
-  "t": "65.13–69.27s",
+  "t": "49.84–52.94s",
   "head": "Điều tấm thẻ không cho thấy",
-  "loi": "điều mà tấm thẻ đặt giữa tường trắng không cho thấy.",
-  "tts": "điều mà tấm thẻ đặt giữa tường trắng không cho thấy.",
+  "loi": "điều mà tấm thẻ màu sơn đặt giữa tường trắng không thể hiện được.",
+  "tts": "điều mà tấm thẻ màu sơn đặt giữa tường trắng không thể hiện được.",
   "part": "C"
  },
  {
   "blk": 5,
-  "t": "69.27–75.91s",
+  "t": "52.94–57.92s",
   "head": "Mảng thử một mét vuông, hai lớp",
   "loi": "Vì vậy, nên sơn một mảng thử khoảng một mét vuông, hai lớp, ngay trên bức tường sẽ sơn,",
   "tts": "Vì vậy, nên sơn một mảng thử khoảng một mét vuông, hai lớp, ngay trên bức tường sẽ sơn,",
@@ -97,7 +105,7 @@
  },
  {
   "blk": 5,
-  "t": "75.91–82.86s",
+  "t": "57.92–62.63s",
   "head": "Cho mảng thử chạy qua góc tường",
   "loi": "và cho chạy qua góc tường để thấy cả phía sáng, phía tối lẫn màu dội sang tường bên cạnh.",
   "tts": "và cho chạy qua góc tường để thấy cả phía sáng, phía tối lẫn màu dội sang tường bên cạnh.",
@@ -105,7 +113,7 @@
  },
  {
   "blk": 6,
-  "t": "82.86–91.37s",
+  "t": "62.63–68.93s",
   "head": "Một ô nhỏ chưa phải cả bức tường",
   "loi": "Tấm thẻ chỉ cho biết màu của một ô nhỏ trên nền trắng, chưa cho biết màu của cả bức tường trong căn phòng thật.",
   "tts": "Tấm thẻ chỉ cho biết màu của một ô nhỏ trên nền trắng, chưa cho biết màu của cả bức tường trong căn phòng thật.",
@@ -113,10 +121,10 @@
  },
  {
   "blk": 6,
-  "t": "91.37–100.82s",
+  "t": "68.93–76.05s",
   "head": "end",
-  "loi": "Ba phép thử màu ngay tại công trình có trong sổ tay Công thức chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha.",
-  "tts": "Ba phép thử màu ngay tại công trình có trong sổ tay Công thức chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha.",
+  "loi": "Ba phép thử màu ngay tại công trình có trong sổ tay Kinh nghiệm chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nhá.",
+  "tts": "Ba phép thử màu ngay tại công trình có trong sổ tay Kinh nghiệm chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nhá.",
   "part": "I"
  }
 ]

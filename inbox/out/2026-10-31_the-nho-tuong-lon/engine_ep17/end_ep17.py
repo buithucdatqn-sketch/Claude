@@ -18,7 +18,7 @@ W, H = 1080, 1920
 S, OX, OY = 1.0, 0, -285            # X = S*x - OX, Y = S*y - OY
 IPAD = [(210, 560), (630, 375), (1052, 780), (600, 1030)]   # bốn góc iPad trên video
 LINES = [(380, "Ba phép thử màu ngay tại công trình", 50, 255),
-         (440, "trong sổ tay Công thức chọn màu kiến trúc nội thất", 40, 240),
+         (440, "trong sổ tay Kinh nghiệm chọn màu kiến trúc nội thất", 40, 240),
          (512, "mọi người xem ở phần bình luận nha", 58, 255)]
 CREDIT = (1440, "Video: sổ tay AH+ Công thức chọn màu nội thất · Giả Thuyết Kiến Trúc", 28, 215)
 STILL = dict(S=1.55, OX=185, OY=-72, IPAD=[(155, 405), (480, 275), (780, 580), (430, 768)],
