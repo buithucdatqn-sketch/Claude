@@ -85,3 +85,5 @@ Engine khung chạy 7 run, không có dòng LỖI. Đã xem mọi khung: nhãn d
 | 12 (khung cuối) | 46,78 | 46,40 | Bài phân tích về màu làm đồ trông to hay nhỏ… (giọng hết ở 52,19) |
 
 - Cần kiểm tra thêm: câu 2 của chủ Trang ("Các nghiên cứu cũng giải thích") gán ý "màu ấm làm món đồ nổi lên khỏi nền" cho các nghiên cứu, trong khi bài 05 viết ý này là của bài phân tích (bài có dẫn nghiên cứu của nhóm von Castell về trần, không về đồ nổi trên nền). Phụ đề theo đúng lời thu; nếu cần sửa thì thu lại câu này.
+- Video: `reel_tu-lon-phong-nho_final.mp4`, 54,27 giây (giọng 52,19 + khung cuối), 1080×1920, H.264 CRF 17, AAC 48 kHz, −14,7 LUFS, đỉnh −2,1 dBFS. Dựng 7 đoạn bằng `engine_video_ep18_r*.py`, nối bằng hoà tan 0,45 giây (`ghep_ep18.py`). Ảnh bìa `anh_bia_tu-lon-phong-nho.png` (1080×1920, `cover_ep18.py`).
+- Kiểm tra bằng mắt 21 khung (1,5; 4,3; 6,5; 9,6; 12; 14; 17; 18,2; 20,5; 22,5; 25; 27; 29; 31,5; 33,7; 36; 38,3; 41; 44,5; 48; 53,5 giây) kèm khung cắt 4:5 (y 285–1635): header, tiêu đề, phụ đề, nhãn doodle đều nằm trong khung 4:5; nét vẽ dần đúng lúc lời nói tới; phụ đề khớp lời thu.
