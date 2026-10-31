@@ -674,5 +674,37 @@
   "thu_muc": "inbox/out/2026-10-31_the-nho-tuong-lon/",
   "ghi_chu": "Bản 3 của tập 17 (bản 1 chương 2, bản 2 chương 3 đều bị chủ Trang bỏ). Lần đầu dùng ảnh công trình ngoài sách (ArchDaily) theo phép của chủ Trang 2026-10-31.",
   "video": "inbox/out/2026-10-31_the-nho-tuong-lon/reel_the-nho-tuong-lon_final.mp4 (77,05 giây, giọng 74,92 giây, −14,7 LUFS)"
+ },
+ {
+  "tap": 18,
+  "slug": "tu-trang-kin-tuong",
+  "ngay": "2026-10-31",
+  "nguyen_ly": "Tường trắng hoặc màu lạnh thật nhạt làm phòng trông rộng; mặt tủ phẳng, sáng, ít đường tối thì thành bức tường lùi ra (Kilmer & Kilmer 2014, ch.5; bài 05)",
+  "nhom": "Màu tiến, màu lùi: tủ bếp",
+  "bai_kho": {
+   "duong_dan": "AH-Decode-Decor/bai-05-3-bai-hoc-mau-tien-mau-lui-noi-that/bai-05.md",
+   "nhanh": "AH-Interior-notes",
+   "commit": "a83863a9ee0df1e0aedd1340fb294afc3ddb92bd"
+  },
+  "anh_kho": [
+   "anh/07-doodle-tu-trang-bep.jpg",
+   "anh/01-diagram-ba-thuoc-tinh.png",
+   "anh/vi-tri-chup/07-vi-tri-chup.png",
+   "anh/05-doodle-tran-xanh-ban-an.jpg",
+   "anh/06-doodle-dam-toi-hanh-lang.jpg"
+  ],
+  "du_an": "Lane Cove House, Sydney",
+  "studio": "Lachlan Seegers Architect",
+  "nhiep_anh": "Rory Gardiner",
+  "cau_moc": "Tủ bếp trắng cao kịch trần, chạy kín cả một bức tường, sao nhìn bếp vẫn thoáng?",
+  "nguon": [
+   "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 5 (theo bài)"
+  ],
+  "trang_thai": "giai_doan_A_cho_duyet",
+  "thu_muc": "inbox/out/2026-10-31_tu-trang-kin-tuong/",
+  "y_bai": {
+   "muc": "Giữ tường và tủ thật sáng để chỗ hẹp trông rộng hơn",
+   "tom_tat": "Tường trắng chưa đủ, đường tối trên mặt tường kéo tường lại gần; tủ bếp Lane Cove phẳng, trắng, không tay nắm, gương sau bếp; trần tối, sàn sẫm, tường trắng đổi tỷ lệ phòng"
+  }
  }
 ]
