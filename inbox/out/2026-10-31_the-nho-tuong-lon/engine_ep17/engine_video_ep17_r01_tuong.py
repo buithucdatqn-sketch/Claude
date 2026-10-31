@@ -24,6 +24,7 @@ if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
 CREDIT = "Ảnh dự án: Casa Tahiti · Margine · ảnh Nicolò Panzeri / ArchDaily"
 HEAD = "AH DECODE · THẺ MÀU VÀ BỨC TƯỜNG"
+SCRIM = False   # True: phủ tối nhẹ dải tiêu đề, phụ đề (đã bỏ theo chủ Trang 2026-10-31)
 TAPE = False    # False: ảnh phóng phủ kín khung, không vẽ băng keo ở mép trên (chủ Trang yêu cầu 2026-10-30)
 SKETCH = False  # True: sơ đồ (sketch) hiện ra theo từng nét trên nền trắng, không thẻ ảnh, không băng keo (chủ Trang yêu cầu 2026-10-30)
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
@@ -499,6 +500,8 @@ def scrim(base, top=False, bottom=False):
     """phủ tối nhẹ đúng dải chữ (không còn phủ mép trên/dưới khung vì chữ đã dời vào vùng an toàn)"""
     ys = np.arange(H, dtype=np.float32)
     f = np.ones(H, np.float32)
+    if not SCRIM:   # chủ Trang 2026-10-31: không phủ tối dải chữ trên ảnh chụp; chữ trắng đọc được nhờ bóng sát nét chữ (compose)
+        return base * f[:, None, None]
     if top:
         f *= 1 - 0.30 * _band(ys, SAFE_Y0 - 20, TOP_END, 260)   # nhạt hơn, mép mềm hơn (chủ Trang góp ý 2026-10-31: dải tối quá đậm, thành lằn)
     if bottom:
@@ -554,7 +557,7 @@ def compose(base, white, fabm):
     sh = cv2.GaussianBlur(white, (0, 0), 5)
     sh = np.roll(np.roll(sh, 5, 0), 3, 1)
     halo = np.clip(cv2.GaussianBlur(white, (0, 0), 2.4) * 1.7, 0, 1)
-    out = base * (1 - 0.40 * sh)[..., None] * (1 - 0.50 * halo)[..., None]
+    out = base * (1 - 0.55 * sh)[..., None] * (1 - 0.62 * halo)[..., None]   # bóng sát nét chữ đậm hơn một chút vì đã bỏ dải phủ tối
     out = out * (1 - white[..., None]) + 255.0 * white[..., None]
     out = out * (1 - dark[..., None]) + DARK * dark[..., None]
     return Image.fromarray(np.clip(out, 0, 255).astype(np.uint8))
@@ -621,7 +624,7 @@ def doodle(i, wb, text, cam):
 
 
 BOARDS["plain"] = make_board(1.0)
-BOARDS["dark"] = make_board(0.94)
+BOARDS["dark"] = make_board(1.0)   # không làm tối ảnh (chủ Trang 2026-10-31)
 BOARDS["clean"] = BOARDS["plain"]
 
 import subprocess, re
