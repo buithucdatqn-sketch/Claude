@@ -1,0 +1,19 @@
+Chọn màu trên tấm thẻ thấy vừa mắt, sơn lên tường lại đậm và rực hơn hẳn: chuyện gần như nhà nào sơn sửa cũng gặp. Sổ tay AH+ giải thích bằng hai cơ chế.
+
+Thứ nhất là kích thước. Báo cáo kỹ thuật CIE 208:2014 tổng hợp các thí nghiệm so mẫu màu lớn (góc nhìn trên 20°) với mẫu chuẩn nhỏ, và cho thấy mẫu lớn thường trông sáng hơn, rực hơn, có khi đổi cả sắc độ; báo cáo cũng lưu ý nghiên cứu về hiệu ứng này còn ít.
+
+Thứ hai là phản xạ chéo. Ánh sáng dội từ một mặt màu nhuộm sang mặt bên cạnh: trong thí nghiệm của Bloj, Kersten và Hurlbert (1999), nửa trắng của một tấm bìa gập hiện quầng hồng từ nửa đỏ tía bên cạnh. Trong phòng, tường, trần, sàn hắt màu lên nhau, điều mà tấm thẻ giữa tường trắng không cho thấy.
+
+Cách làm theo sổ tay: sơn mảng thử khoảng 1 × 1 m, hai lớp, trên chính bức tường sẽ sơn, trên nền đã bả và lót như lớp hoàn thiện; cho chạy qua góc nếu bức tường giáp góc; xem và chụp lúc 8:00, 14:00 và 20:00 từ cùng chỗ đứng; chỉ đánh giá khi sơn đã khô hẳn. Đừng duyệt bằng tấm thẻ vài centimet hay ảnh trên màn hình.
+
+Câu hỏi cho mọi người: lần sơn nhà gần nhất, màu lên tường có khác màu mọi người chọn trên thẻ không, và khác theo hướng nào?
+
+AH Decode là series mới của Giả Thuyết Kiến Trúc, phân tích các nguyên tắc thiết kế và cách chọn đồ decor. Theo dõi Fanpage Giả Thuyết Kiến Trúc. Bài viết phân tích đầy đủ xem ở dòng đầu tiên trong phần bình luận.
+
+Nguồn chính (theo sổ tay AH+ Công thức chọn màu nội thất, Phần kết):
+- CIE (2014). CIE 208:2014: Effect of stimulus size on colour appearance.
+- Bloj, M. G., Kersten, D. và Hurlbert, A. C. (1999). Perception of three-dimensional shape influences colour perception through mutual illumination. Nature.
+
+Ảnh: Casa Tahiti · Margine · Nicolò Panzeri / ArchDaily. Hình vẽ: AH+.
+
+#AHDecode #ChonMauSon #MauSonNoiThat #PhoiMauNoiThat #GiaThuyetKienTruc

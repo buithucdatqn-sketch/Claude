@@ -646,8 +646,32 @@
    "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/04-chuong-3-khoi-tich-lon.pdf · ảnh 4 (Hình 3.1, vẽ dần trên nền trắng)",
    "inbox/out/2026-10-28_tuong-sang-phong-rong/original/chu-trang/AH_mockup_tablet.mp4 (khung cuối, dùng lại)"
   ],
-  "trang_thai": "cho_ghi_am",
+  "trang_thai": "chu_trang_bo_lam_lai",
   "thu_muc": "inbox/out/2026-10-30_tran-toi-hon-tuong/",
-  "ghi_chu": "Bản 2 của tập 17 theo góp ý chủ Trang 2026-10-30 (bản 1 mau-tren-san-thay-vach bị bỏ). Lần đầu dùng chế độ SKETCH (sơ đồ vẽ dần trên nền trắng) và ảnh phủ kín khung. Ý chưa dùng của chương 3: Goethe (3.3), đường chân trời nội thất và sọc (kỹ thuật 3), Barragán (3.5), kỹ thuật 2 làm ý chính."
+  "ghi_chu": "Bản 2 của tập 17 theo góp ý chủ Trang 2026-10-30 (bản 1 mau-tren-san-thay-vach bị bỏ). Lần đầu dùng chế độ SKETCH (sơ đồ vẽ dần trên nền trắng) và ảnh phủ kín khung. Ý chưa dùng của chương 3: Goethe (3.3), đường chân trời nội thất và sọc (kỹ thuật 3), Barragán (3.5), kỹ thuật 2 làm ý chính. Chủ Trang 2026-10-31: tình huống trần cao \"rất không thực tế\", làm lại bản 3 the-nho-tuong-lon."
+ },
+ {
+  "tap": 17,
+  "slug": "the-nho-tuong-lon",
+  "ngay": "2026-10-31",
+  "nguyen_ly": "Màu trên tường khác màu trên thẻ vì kích thước (mẫu lớn trông sáng, rực hơn, CIE 208:2014) và phản xạ chéo (Bloj, Kersten và Hurlbert 1999); duyệt bằng mảng thử ~1 m², hai lớp, qua góc, xem ba mốc giờ (sổ tay AH+ phần kết K.2, phụ lục D3)",
+  "bai_kho": {
+   "duong_dan": "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/07-phan-ket-kiem-chung-tai-cong-truong.pdf + 09-phu-luc-bang-tra-nhanh.pdf",
+   "nhanh": "AH-Interior-notes",
+   "commit": "28c7cfa0e47c697875f10cca000d5762c5be94a8"
+  },
+  "y_bai": {
+   "muc": "Phần kết K.2 'Mảng thử lớn, xem vào ba thời điểm' + Phụ lục D3 'Chủ nhà duyệt màu tường'",
+   "tom_tat": "Màu chọn trên thẻ sơn lên tường đậm, rực hơn: hai lý do (kích thước, ánh sáng dội); mảng thử một mét vuông hai lớp qua góc, xem 8 giờ, 14 giờ, 20 giờ"
+  },
+  "anh_kho": [
+   "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/07-phan-ket-kiem-chung-tai-cong-truong.pdf · Hình PK.2 (vẽ dần)",
+   "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/07-phan-ket-kiem-chung-tai-cong-truong.pdf · Hình PK.3 (vẽ dần)",
+   "ArchDaily Casa Tahiti / Margine, ảnh Nicolò Panzeri: casa-tahiti-margine_13, _8, _16, _20 (xem original/archdaily-casa-tahiti/urls.txt)",
+   "inbox/out/2026-10-28_tuong-sang-phong-rong/original/chu-trang/AH_mockup_tablet.mp4 (khung cuối, dùng lại)"
+  ],
+  "trang_thai": "cho_ghi_am",
+  "thu_muc": "inbox/out/2026-10-31_the-nho-tuong-lon/",
+  "ghi_chu": "Bản 3 của tập 17 (bản 1 chương 2, bản 2 chương 3 đều bị chủ Trang bỏ). Lần đầu dùng ảnh công trình ngoài sách (ArchDaily) theo phép của chủ Trang 2026-10-31."
  }
 ]
