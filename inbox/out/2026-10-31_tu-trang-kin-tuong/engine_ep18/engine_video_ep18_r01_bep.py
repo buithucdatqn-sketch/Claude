@@ -569,11 +569,9 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.7s", head="Tủ kịch trần mà bếp không chật?", vo="Nhiều nhà hẹp ngại đóng tủ bếp cao kịch trần, vì sợ bếp trông chật hơn.",
-         cam=((1050, 1230), 2.15, (540, 925)), dark=True, dd=[], keep=[], move="push"),
-    dict(t="5.7–12.96s", head="Tủ kịch trần mà bếp không chật?", vo="Vậy mà dãy tủ trắng kín cả bức tường ở căn bếp này lại trông như lùi ra sau, vì sao?",
-         cam=((1050, 1230), 2.15, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="12.96–13.46s", head="end", vo="",
+    dict(t="0–4.45s", head="Bếp nhỏ, tường trắng, vẫn chật", vo="Tường đã sơn trắng hết, sao căn bếp nhỏ vẫn thấy chật?",
+         cam=((1150, 1200), 2.2, (540, 925)), dark=True, dd=[], keep=[], move="push"),
+    dict(t="4.45–4.95s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1

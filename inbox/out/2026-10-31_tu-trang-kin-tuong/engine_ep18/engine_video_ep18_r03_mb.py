@@ -569,13 +569,11 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–3.51s", head="Chỉ sơn tường trắng thì chưa đủ", vo="Vì thế, chỉ sơn tường trắng thì chưa đủ.",
+    dict(t="0–6.32s", head="Đường tối kéo bức tường lại gần", vo="Mỗi đường như vậy cho mắt một mốc để đo khoảng cách, nên kéo bức tường lại gần.",
          cam=((460, 450), 0.75, (540, 905)), dark=False, dd=[], keep=[], move="hold"),
-    dict(t="3.51–8.9s", head="Lane Cove House, Sydney", vo="Căn bếp ở đầu video, trong nhà Lane Cove ở Sydney, làm đúng điều này.",
-         cam=((460, 450), 0.75, (540, 905)), dark=False, dd=['mb'], keep=[], move="hold"),
-    dict(t="8.9–13.66s", head="Dãy tủ chạy trọn một bức tường", vo="Trên mặt bằng, dãy tủ chạy trọn bức tường phía sau đảo bếp.",
-         cam=((460, 450), 0.75, (540, 905)), dark=False, dd=['tu'], keep=['mb'], move="hold"),
-    dict(t="13.66–14.16s", head="end", vo="",
+    dict(t="6.32–12.02s", head="Lane Cove House, Sydney", vo="Ở căn bếp nhà Lane Cove tại Sydney, những đường tối ấy gần như không còn.",
+         cam=((460, 450), 0.75, (540, 905)), dark=False, dd=['mb', 'tu'], keep=[], move="hold"),
+    dict(t="12.02–12.52s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1

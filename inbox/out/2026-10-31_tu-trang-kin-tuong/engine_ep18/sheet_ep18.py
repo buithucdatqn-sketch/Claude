@@ -27,7 +27,7 @@ sheet = Image.new("RGB", (MX * 2 + cols * PW + (cols - 1) * GAP, TOP + rows * (P
 d = ImageDraw.Draw(sheet)
 d.text((MX, 38), "AH Decode · Tủ trắng kín tường (tập 18, giai đoạn A)", font=F(60), fill=(255, 255, 255))
 d.text((MX, 118), "Ảnh Lane Cove House (Lachlan Seegers Architect, ảnh Rory Gardiner) trong thư mục anh/ của bài 05, phủ kín khung", font=F(34), fill=(200, 194, 186))
-d.text((MX, 158), "Nét doodle trắng trên ảnh (cảnh 11–13, 15) · sơ đồ, mặt bằng: nét hiện dần theo thứ tự vẽ (cảnh 3–10) · camera trôi nhẹ", font=F(34), fill=(200, 194, 186))
+d.text((MX, 158), "Nét doodle trắng trên ảnh (cảnh 7–10) · sơ đồ, mặt bằng: nét hiện dần theo thứ tự vẽ (cảnh 2, 6) · camera trôi nhẹ", font=F(34), fill=(200, 194, 186))
 for i, sc in enumerate(SC):
     r, c = divmod(i, cols)
     x, y = MX + c * (PW + GAP), TOP + r * (PH + 120)

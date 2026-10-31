@@ -569,21 +569,17 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–7.26s", head="Tủ kịch trần mà bếp không chật?", vo="Vậy mà dãy tủ trắng kín cả bức tường ở căn bếp này lại trông như lùi ra sau, vì sao?",
+    dict(t="0–4.45s", head="Bếp nhỏ, tường trắng, vẫn chật", vo="Tường đã sơn trắng hết, sao căn bếp nhỏ vẫn thấy chật?",
          cam=((540, 153), 1.0, (540, 905)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="7.26–15.15s", head="Theo Kilmer & Kilmer (2014)", vo="Trong sách năm 2014, hai tác giả Rosemary và Otie Kilmer viết rằng phòng có tường trắng, hay sơn màu lạnh thật nhạt,",
-         cam=((540, 153), 1.0, (540, 905)), dark=False, dd=['tieu', 'mat', 'sang'], keep=[], move="hold"),
-    dict(t="15.15–18.98s", head="Theo Kilmer & Kilmer (2014)", vo="thường trông rộng hơn phòng sơn màu ấm và tối.",
-         cam=((540, 153), 1.0, (540, 905)), dark=False, dd=[], keep=['tieu', 'mat', 'sang'], move="hold"),
-    dict(t="18.98–25.62s", head="Màu sáng lùi ra, màu tối tiến lại", vo="Theo hai tác giả, màu sáng có vẻ lùi ra xa, còn màu tối có vẻ tiến lại gần.",
-         cam=((540, 153), 1.0, (540, 905)), dark=False, dd=['toi'], keep=['tieu', 'mat', 'sang'], move="hold"),
-    dict(t="25.62–34.13s", head="Đường tối kéo bức tường lại gần", vo="Bài phân tích của tụi mình cho rằng cạnh tủ, tay nắm, khung cửa hay đường ron trên mặt tường đều là những đường tối,",
+    dict(t="4.45–11.71s", head="Theo Kilmer & Kilmer (2014)", vo="Hai tác giả Kilmer viết rằng màu sáng trông như lùi ra xa, còn màu tối trông như tiến lại gần.",
+         cam=((540, 153), 1.0, (540, 905)), dark=False, dd=['tieu', 'mat', 'sang', 'toi'], keep=[], move="hold"),
+    dict(t="11.71–17.1s", head="Những đường tối trên mặt tường", vo="Bài phân tích của tụi mình để ý tới những đường tối trên mặt tường.",
          cam=((540, 153), 1.0, (540, 905)), dark=False, dd=[], keep=['tieu', 'mat', 'sang', 'toi'], move="hold"),
-    dict(t="34.13–40.77s", head="Đường tối kéo bức tường lại gần", vo="cho mắt một mốc để đo khoảng cách, nên mỗi đường như vậy lại kéo bức tường lại gần.",
+    dict(t="17.1–21.24s", head="Những đường tối trên mặt tường", vo="Đó là tay nắm, viền tủ hay đường ron sẫm màu.",
          cam=((540, 153), 1.0, (540, 905)), dark=False, dd=[], keep=['tieu', 'mat', 'sang', 'toi'], move="hold"),
-    dict(t="40.77–44.28s", head="Chỉ sơn tường trắng thì chưa đủ", vo="Vì thế, chỉ sơn tường trắng thì chưa đủ.",
+    dict(t="21.24–27.56s", head="Đường tối kéo bức tường lại gần", vo="Mỗi đường như vậy cho mắt một mốc để đo khoảng cách, nên kéo bức tường lại gần.",
          cam=((540, 153), 1.0, (540, 905)), dark=False, dd=[], keep=['tieu', 'mat', 'sang', 'toi'], move="hold"),
-    dict(t="44.28–44.78s", head="end", vo="",
+    dict(t="27.56–28.06s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1

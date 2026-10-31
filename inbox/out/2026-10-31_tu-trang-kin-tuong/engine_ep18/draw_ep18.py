@@ -126,7 +126,7 @@ w = 9
 # an: phòng ăn nhìn thẳng vào dãy tủ (2500x2000). Cảnh "Dãy tủ cao từ sàn lên tới mép trần…": tủ cao kịch trần, khe mảnh
 L["an"] = dict(
     cao=arrow([(770, 1195), (772, 960), (770, 720)], w, DASH(w), 1.2, 1, head=46),
-    lab_cao=label("cao từ sàn/lên sát trần", (810, 800), 66),
+    lab_cao=label("cao kín/cả bức tường", (810, 800), 66),
     khe=arrow([(1330, 960), (1365, 1010), (1385, 1080)], w, DASH(w), 1.0, 2, head=40),
     lab_khe=label("khe mảnh,/không tay nắm", (1180, 790), 66),
 )
@@ -134,8 +134,8 @@ L["an"] = dict(
 L["bep"] = dict(
     khoi=stroke([(570, 900), (572, 1100), (1150, 1100), (1750, 1097), (1752, 900)], w, DASH(w), 1.4, 3, smooth=False)[0],
     lab_khoi=label("như một bức tường trắng", (520, 1150), 70),
-    lui=arrow([(950, 1010), (1120, 950), (1300, 900)], w, DASH(w), 1.2, 4, head=46),
-    lab_lui=label("tủ lùi ra sau", (430, 900), 70),
+    lui=arrow([(1010, 1010), (1160, 950), (1320, 900)], w, DASH(w), 1.2, 4, head=46),
+    lab_lui=label("tủ lùi ra sau", (570, 905), 70),
     dao=arrow([(820, 1430), (930, 1480), (1020, 1560)], w, DASH(w), 1.2, 5, head=46),
     lab_dao=label("đảo đá, bàn ăn ở phía trước", (420, 1320), 66),
 )

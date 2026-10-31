@@ -568,17 +568,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–8.82s", head="Cánh phẳng, khe mảnh, không tay nắm", vo="Dãy tủ cao từ sàn lên sát trần, cánh tủ phẳng và trắng, không có tay nắm lộ ra, còn khe giữa các cánh rất mảnh.",
+    dict(t="0–5.39s", head="Không tay nắm, khe rất mảnh", vo="Cánh tủ không có tay nắm lộ ra, còn khe giữa các cánh rất mảnh.",
          cam=((1150, 1200), 2.2, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="8.82–17.65s", head="Mặt tủ gần như không còn đường tối", vo="Mặt tủ gần như không còn đường tối nào, nên cả dãy tủ trông như một bức tường trắng chứ không còn như một món đồ.",
+    dict(t="5.39–11.4s", head="Mắt không còn mốc để đo", vo="Mắt không còn mốc nào để đo, nên cả dãy tủ trông như một bức tường trắng.",
          cam=((1150, 1200), 2.2, (540, 925)), dark=True, dd=['khoi', 'lab_khoi'], keep=[], move="push"),
-    dict(t="17.65–23.98s", head="Màu sáng lùi, mảng tủ lùi ra sau", vo="Mà màu sáng thì lùi ra xa, nên trong ảnh này cả mảng tủ lùi hẳn ra sau,",
-         cam=((1000, 1250), 2.2, (540, 925)), dark=True, dd=['lui', 'lab_lui'], keep=[], move="pan_d"),
-    dict(t="23.98–28.12s", head="Màu sáng lùi, mảng tủ lùi ra sau", vo="nhường chỗ cho đảo đá và bàn ăn đứng phía trước.",
-         cam=((1000, 1250), 2.2, (540, 925)), dark=True, dd=['dao', 'lab_dao'], keep=[], move="hold"),
-    dict(t="28.12–36.95s", head="Mặt tủ sáng và trơn, ít đường tối", vo="Tủ kịch trần vì vậy không làm bếp trông chật hơn, miễn là mặt tủ được giữ thật sáng và trơn, nghĩa là ít đường tối.",
-         cam=((1050, 1230), 2.15, (540, 925)), dark=True, dd=[], keep=[], move="pull"),
-    dict(t="36.95–37.45s", head="end", vo="",
+    dict(t="11.4–16.16s", head="Bức tường trắng lùi ra sau", vo="Trong ảnh này, bức tường trắng ấy lùi hẳn ra sau đảo bếp.",
+         cam=((1150, 1200), 2.2, (540, 925)), dark=True, dd=['lui', 'lab_lui'], keep=[], move="hold"),
+    dict(t="16.16–16.66s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1

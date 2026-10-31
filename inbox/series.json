@@ -679,7 +679,7 @@
   "tap": 18,
   "slug": "tu-trang-kin-tuong",
   "ngay": "2026-10-31",
-  "nguyen_ly": "Tường trắng hoặc màu lạnh thật nhạt làm phòng trông rộng hơn; sáng lùi, tối tiến (Kilmer & Kilmer 2014, ch.5); đường tối trên mặt tường kéo tường lại gần (diễn giải của bài 05)",
+  "nguyen_ly": "Sáng lùi, tối tiến (Kilmer & Kilmer 2014, ch.5); tay nắm, viền tủ, ron sẫm màu là đường tối kéo tường lại gần (diễn giải của bài 05); sơn trắng mới là một nửa",
   "nhom": "Màu tiến, màu lùi: tủ bếp, nhà hẹp",
   "bai_kho": {
    "duong_dan": "AH-Decode-Decor/bai-05-3-bai-hoc-mau-tien-mau-lui-noi-that/bai-05.md",
@@ -689,14 +689,13 @@
   "anh_kho": [
    "AH-Decode-Decor/bai-05-3-bai-hoc-mau-tien-mau-lui-noi-that/anh/goc/07-goc-tu-trang-bep.jpg",
    "AH-Decode-Decor/bai-05-3-bai-hoc-mau-tien-mau-lui-noi-that/anh/goc/05-goc-tran-xanh-ban-an.jpg",
-   "AH-Decode-Decor/bai-05-3-bai-hoc-mau-tien-mau-lui-noi-that/anh/goc/06-goc-dam-toi-hanh-lang.jpg",
    "AH-Decode-Decor/bai-05-3-bai-hoc-mau-tien-mau-lui-noi-that/anh/01-diagram-ba-thuoc-tinh.png",
    "AH-Decode-Decor/bai-05-3-bai-hoc-mau-tien-mau-lui-noi-that/anh/vi-tri-chup/07-vi-tri-chup.png"
   ],
   "du_an": "Lane Cove House, Lane Cove, Sydney",
   "studio": "Lachlan Seegers Architect",
   "nhiep_anh": "Rory Gardiner",
-  "cau_moc": "Nhiều nhà hẹp ngại đóng tủ bếp cao kịch trần, vì sợ bếp trông chật hơn. Vậy mà dãy tủ trắng kín cả bức tường ở căn bếp này lại trông như lùi ra sau, vì sao?",
+  "cau_moc": "Tường đã sơn trắng hết, sao căn bếp nhỏ vẫn thấy chật?",
   "nguon": [
    "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 5 (theo bài)"
   ],
@@ -704,7 +703,8 @@
   "thu_muc": "inbox/out/2026-10-31_tu-trang-kin-tuong/",
   "y_bai": {
    "muc": "Giữ tường và tủ thật sáng để chỗ hẹp trông rộng hơn",
-   "tom_tat": "Chỉ sơn tường trắng chưa đủ: đường tối (cạnh tủ, tay nắm, khung cửa, ron) kéo tường lại gần; tủ bếp Lane Cove cao kịch trần, cánh phẳng trắng, không tay nắm, khe mảnh thành bức tường trắng lùi ra sau; giữ mặt tủ sáng và trơn; hành lang nhà ống giữ hai tường dọc sáng, trơn"
-  }
+   "tom_tat": "Tường trắng mà bếp nhỏ vẫn chật vì đường tối (tay nắm, viền tủ, ron sẫm màu) cho mắt mốc đo khoảng cách, kéo tường lại gần; tủ bếp Lane Cove kín tường, cánh phẳng trắng, không tay nắm lộ ra, khe mảnh thành bức tường trắng lùi ra sau đảo bếp; sơn trắng mới là một nửa, nửa còn lại là bớt đường tối"
+  },
+  "ban": "làm lại lần 2 theo góp ý chủ Trang (câu móc phổ biến, lời 188 từ)"
  }
 ]

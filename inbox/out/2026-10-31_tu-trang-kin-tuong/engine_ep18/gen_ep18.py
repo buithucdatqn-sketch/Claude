@@ -46,46 +46,39 @@ HANH = ((998, 1300), 2.3, (540, 925))        # hai tường dọc hành lang
 SANG = STRIP(540, 153, 1.0, 905)
 MB = STRIP(460, 450, 0.75, 905)
 
-# Một câu hỏi trung tâm: nhà hẹp sợ tủ bếp kịch trần làm bếp trông chật; vì sao dãy tủ trắng kín tường ở Lane Cove lại trông như lùi ra sau?
-# Mạch: móc → nguồn Kilmer 2014 (tường trắng trông rộng hơn; sáng lùi, tối tiến; sơ đồ vẽ dần) → cơ chế của bài (đường tối cho mắt mốc đo
-# khoảng cách, kéo tường lại gần; chỉ sơn trắng chưa đủ) → Lane Cove (mặt bằng: dãy tủ trọn bức tường) → cánh phẳng, khe mảnh, không tay nắm
-# → không còn đường tối, thành bức tường trắng → màu sáng lùi, mảng tủ lùi ra sau → chốt (sáng và trơn = ít đường tối) → hành lang nhà ống → lời mời.
+# Bản làm lại theo góp ý chủ Trang 2026-10-31 (mục 0.6m): câu móc là băn khoăn phổ biến, lời 150–200 từ, một cơ chế, một ví dụ, một kết luận.
+# Một câu hỏi trung tâm: tường đã sơn trắng hết, sao căn bếp nhỏ vẫn thấy chật?
+# Mạch: móc → Kilmer: tường sáng lùi xa nên phòng rộng; màu tối tiến lại (sơ đồ vẽ dần) → bài: tay nắm, viền tủ, ron là đường tối, cho mắt mốc
+# để đo, kéo tường lại gần → Lane Cove làm ngược lại (mặt bằng) → tủ kín tường, cánh phẳng trắng, không tay nắm, khe mảnh (ảnh 05)
+# → mắt không còn mốc, dãy tủ thành bức tường trắng lùi ra sau đảo bếp (ảnh 07) → chốt: sơn trắng mới là một nửa, nửa còn lại là bớt đường tối.
 SC = [
-    dict(move="push", part="A", blk=1, img="bep", head="Tủ kịch trần mà bếp không chật?", cam=BEP_A, dark=True, dd=[],
-         vo="Nhiều nhà hẹp ngại đóng tủ bếp cao kịch trần, vì sợ bếp trông chật hơn."),
-    dict(move="hold", part="A", blk=1, img="bep", head="Tủ kịch trần mà bếp không chật?", cam=BEP_A, dark=True, dd=[],
-         vo="Vậy mà dãy tủ trắng kín cả bức tường ở căn bếp này lại trông như lùi ra sau, vì sao?"),
-    dict(move="hold", part="B", blk=2, img="sang", head="Theo Kilmer & Kilmer (2014)", cam=SANG, free=True, dark=False, dd=["tieu", "mat", "sang"], keep=[],
-         vo="Trong sách năm 2014, hai tác giả Rosemary và Otie Kilmer viết rằng phòng có tường trắng, hay sơn màu lạnh thật nhạt,",
-         tts="Trong sách năm hai nghìn không trăm mười bốn, hai tác giả Rô-dơ-me-ri và Ô-ti Kin-mơ viết rằng phòng có tường trắng, hay sơn màu lạnh thật nhạt,"),
-    dict(move="hold", part="B", blk=2, img="sang", head="Theo Kilmer & Kilmer (2014)", cam=SANG, free=True, dark=False, dd=[], keep=["tieu", "mat", "sang"],
-         vo="thường trông rộng hơn phòng sơn màu ấm và tối."),
-    dict(move="hold", part="B", blk=2, img="sang", head="Màu sáng lùi ra, màu tối tiến lại", cam=SANG, free=True, dark=False, dd=["toi"], keep=["tieu", "mat", "sang"],
-         vo="Theo hai tác giả, màu sáng có vẻ lùi ra xa, còn màu tối có vẻ tiến lại gần."),
+    dict(move="push", part="A", blk=1, img="bep", head="Bếp nhỏ, tường trắng, vẫn chật", cam=BEP_K, dark=True, dd=[],
+         vo="Tường đã sơn trắng hết, sao căn bếp nhỏ vẫn thấy chật?"),
+    dict(move="hold", part="B", blk=2, img="sang", head="Theo Kilmer & Kilmer (2014)", cam=SANG, free=True, dark=False, dd=["tieu", "mat", "sang", "toi"], keep=[],
+         vo="Hai tác giả Kilmer viết rằng màu sáng trông như lùi ra xa, còn màu tối trông như tiến lại gần.",
+         tts="Hai tác giả Kin-mơ viết rằng màu sáng trông như lùi ra xa, còn màu tối trông như tiến lại gần."),
+    dict(move="hold", part="C", blk=3, img="sang", head="Những đường tối trên mặt tường", cam=SANG, free=True, dark=False, dd=[], keep=["tieu", "mat", "sang", "toi"],
+         vo="Bài phân tích của tụi mình để ý tới những đường tối trên mặt tường."),
+    dict(move="hold", part="C", blk=3, img="sang", head="Những đường tối trên mặt tường", cam=SANG, free=True, dark=False, dd=[], keep=["tieu", "mat", "sang", "toi"],
+         vo="Đó là tay nắm, viền tủ hay đường ron sẫm màu."),
     dict(move="hold", part="C", blk=3, img="sang", head="Đường tối kéo bức tường lại gần", cam=SANG, free=True, dark=False, dd=[], keep=["tieu", "mat", "sang", "toi"],
-         vo="Bài phân tích của tụi mình cho rằng cạnh tủ, tay nắm, khung cửa hay đường ron trên mặt tường đều là những đường tối,"),
-    dict(move="hold", part="C", blk=3, img="sang", head="Đường tối kéo bức tường lại gần", cam=SANG, free=True, dark=False, dd=[], keep=["tieu", "mat", "sang", "toi"],
-         vo="cho mắt một mốc để đo khoảng cách, nên mỗi đường như vậy lại kéo bức tường lại gần."),
-    dict(move="hold", part="C", blk=3, img="sang", head="Chỉ sơn tường trắng thì chưa đủ", cam=SANG, free=True, dark=False, dd=[], keep=["tieu", "mat", "sang", "toi"],
-         vo="Vì thế, chỉ sơn tường trắng thì chưa đủ."),
-    dict(move="hold", part="D", blk=4, img="mb", head="Lane Cove House, Sydney", cam=MB, free=True, dark=False, dd=["mb"], keep=[],
-         vo="Căn bếp ở đầu video, trong nhà Lane Cove ở Sydney, làm đúng điều này.",
-         tts="Căn bếp ở đầu video, trong nhà Lên Cô-vơ ở Xít-ni, làm đúng điều này."),
-    dict(move="hold", part="D", blk=4, img="mb", head="Dãy tủ chạy trọn một bức tường", cam=MB, free=True, dark=False, dd=["tu"], keep=["mb"],
-         vo="Trên mặt bằng, dãy tủ chạy trọn bức tường phía sau đảo bếp."),
-    dict(move="pan_r", part="D", blk=5, img="an", head="Cánh phẳng, khe mảnh, không tay nắm", cam=AN, dark=True, dd=["cao", "lab_cao", "khe", "lab_khe"],
-         vo="Dãy tủ cao từ sàn lên sát trần, cánh tủ phẳng và trắng, không có tay nắm lộ ra, còn khe giữa các cánh rất mảnh."),
-    dict(move="push", part="D", blk=6, img="bep", head="Mặt tủ gần như không còn đường tối", cam=BEP_K, dark=True, dd=["khoi", "lab_khoi"],
-         vo="Mặt tủ gần như không còn đường tối nào, nên cả dãy tủ trông như một bức tường trắng chứ không còn như một món đồ."),
-    dict(move="pan_d", part="D", blk=7, img="bep", head="Màu sáng lùi, mảng tủ lùi ra sau", cam=BEP_L, dark=True, dd=["lui", "lab_lui"],
-         vo="Mà màu sáng thì lùi ra xa, nên trong ảnh này cả mảng tủ lùi hẳn ra sau,"),
-    dict(move="hold", part="D", blk=7, img="bep", head="Màu sáng lùi, mảng tủ lùi ra sau", cam=BEP_L, dark=True, dd=["dao", "lab_dao"],
-         vo="nhường chỗ cho đảo đá và bàn ăn đứng phía trước."),
-    dict(move="pull", part="H", blk=8, img="bep", head="Mặt tủ sáng và trơn, ít đường tối", cam=BEP_A, dark=True, dd=[],
-         vo="Tủ kịch trần vì vậy không làm bếp trông chật hơn, miễn là mặt tủ được giữ thật sáng và trơn, nghĩa là ít đường tối."),
-    dict(move="pan_u", part="F", blk=9, img="hanh", head="Hành lang nhà ống cũng giữ tường sáng, trơn", cam=HANH, dark=True, dd=["tuong", "lab_tuong"],
-         vo="Với hành lang dài và hẹp của nhà ống, tụi mình cũng khuyên giữ hai tường dọc thật sáng và trơn như vậy."),
-    dict(move="hold", part="I", blk=10, img="bep", head="end", cam="END", dark=False, vo="", dd=[],
+         vo="Mỗi đường như vậy cho mắt một mốc để đo khoảng cách, nên kéo bức tường lại gần."),
+    dict(move="hold", part="D", blk=4, img="mb", head="Lane Cove House, Sydney", cam=MB, free=True, dark=False, dd=["mb", "tu"], keep=[],
+         vo="Ở căn bếp nhà Lane Cove tại Sydney, những đường tối ấy gần như không còn.",
+         tts="Ở căn bếp nhà Lên Cô-vơ tại Xít-ni, những đường tối ấy gần như không còn."),
+    dict(move="pan_r", part="D", blk=5, img="an", head="Tủ kín tường, cánh phẳng và trắng", cam=AN, dark=True, dd=["cao", "lab_cao"],
+         vo="Dãy tủ cao kín cả bức tường, cánh tủ phẳng và trắng."),
+    dict(move="hold", part="D", blk=5, img="an", head="Không tay nắm, khe rất mảnh", cam=AN, dark=True, dd=["khe", "lab_khe"],
+         vo="Cánh tủ không có tay nắm lộ ra, còn khe giữa các cánh rất mảnh."),
+    dict(move="push", part="D", blk=6, img="bep", head="Mắt không còn mốc để đo", cam=BEP_K, dark=True, dd=["khoi", "lab_khoi"],
+         vo="Mắt không còn mốc nào để đo, nên cả dãy tủ trông như một bức tường trắng."),
+    dict(move="hold", part="D", blk=6, img="bep", head="Bức tường trắng lùi ra sau", cam=BEP_K, dark=True, dd=["lui", "lab_lui"],
+         vo="Trong ảnh này, bức tường trắng ấy lùi hẳn ra sau đảo bếp."),
+    dict(move="pull", part="H", blk=7, img="an", head="Sơn trắng mới là một nửa", cam=AN, dark=True, dd=[],
+         vo="Vậy với bếp nhỏ, sơn trắng mới là một nửa."),
+    dict(move="hold", part="H", blk=7, img="an", head="Nửa còn lại là bớt đường tối", cam=AN, dark=True, dd=[],
+         vo="Nửa còn lại là bớt những đường tối trên tường và mặt tủ."),
+    dict(move="hold", part="I", blk=8, img="an", head="end", cam="END", dark=False, vo="", dd=[],
          say="Bài phân tích về màu tiến, màu lùi từ sách của hai tác giả Kilmer, mọi người xem ở phần bình luận nha.",
          tts="Bài phân tích về màu tiến, màu lùi từ sách của hai tác giả Kin-mơ, mọi người xem ở phần bình luận nha."),
 ]
@@ -293,7 +286,7 @@ for n, ks in enumerate(runs(), 1):
 json.dump(RUNS, open(OUT + "engine_ep18/runs.json", "w"), ensure_ascii=False, indent=1)
 
 # ảnh bìa 1080x1920: cảnh rộng trên ảnh bếp hồng Casa Tahiti, tiêu đề ngắn
-COVER = [dict(img="bep", head="Tủ kịch trần mà bếp không chật", vo="Vì sao dãy tủ trắng kín cả bức tường lại trông như lùi ra sau.", dark=False),
+COVER = [dict(img="bep", head="Tường trắng hết, sao bếp vẫn chật?", vo="Sơn trắng mới là một nửa. Nửa còn lại là bớt những đường tối trên tường và mặt tủ.", dark=False),
          dict(img="bep", head="end", vo="", dark=False)]
 build("engine_storyboard_v7.py", "cover_ep18.py", False,
       wrap_data([scene_line(COVER[0], 0, 3, "WIDE", []), scene_line(COVER[1], 3, 4, "END_SAFE", [])],

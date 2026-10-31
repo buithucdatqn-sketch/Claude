@@ -568,11 +568,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–4.76s", head="Dãy tủ chạy trọn một bức tường", vo="Trên mặt bằng, dãy tủ chạy trọn bức tường phía sau đảo bếp.",
+    dict(t="0–5.7s", head="Lane Cove House, Sydney", vo="Ở căn bếp nhà Lane Cove tại Sydney, những đường tối ấy gần như không còn.",
          cam=((1150, 960), 2.65, (540, 925)), dark=False, dd=[], keep=[], move="hold"),
-    dict(t="4.76–13.58s", head="Cánh phẳng, khe mảnh, không tay nắm", vo="Dãy tủ cao từ sàn lên sát trần, cánh tủ phẳng và trắng, không có tay nắm lộ ra, còn khe giữa các cánh rất mảnh.",
-         cam=((1150, 960), 2.65, (540, 925)), dark=True, dd=['cao', 'lab_cao', 'khe', 'lab_khe'], keep=[], move="pan_r"),
-    dict(t="13.58–14.08s", head="end", vo="",
+    dict(t="5.7–10.15s", head="Tủ kín tường, cánh phẳng và trắng", vo="Dãy tủ cao kín cả bức tường, cánh tủ phẳng và trắng.",
+         cam=((1150, 960), 2.65, (540, 925)), dark=True, dd=['cao', 'lab_cao'], keep=[], move="pan_r"),
+    dict(t="10.15–15.54s", head="Không tay nắm, khe rất mảnh", vo="Cánh tủ không có tay nắm lộ ra, còn khe giữa các cánh rất mảnh.",
+         cam=((1150, 960), 2.65, (540, 925)), dark=True, dd=['khe', 'lab_khe'], keep=[], move="hold"),
+    dict(t="15.54–16.04s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1

@@ -4,12 +4,11 @@
   "img": "bep",
   "src": "source_bep.png",
   "scenes": [
-   1,
-   2
+   1
   ],
   "t_in_main": 0.0,
   "cut_from": 0.0,
-  "cut_len": 12.96,
+  "cut_len": 4.45,
   "first_frame": 1
  },
  {
@@ -17,16 +16,14 @@
   "img": "sang",
   "src": "source_sang.png",
   "scenes": [
+   2,
    3,
    4,
-   5,
-   6,
-   7,
-   8
+   5
   ],
-  "t_in_main": 12.96,
-  "cut_from": 7.260000000000001,
-  "cut_len": 37.019999999999996,
+  "t_in_main": 4.45,
+  "cut_from": 4.45,
+  "cut_len": 23.11,
   "first_frame": 2
  },
  {
@@ -34,12 +31,11 @@
   "img": "mb",
   "src": "source_mb.png",
   "scenes": [
-   9,
-   10
+   6
   ],
-  "t_in_main": 49.98,
-  "cut_from": 3.509999999999998,
-  "cut_len": 10.150000000000006,
+  "t_in_main": 27.56,
+  "cut_from": 6.32,
+  "cut_len": 5.699999999999999,
   "first_frame": 2
  },
  {
@@ -47,11 +43,12 @@
   "img": "an",
   "src": "source_an.png",
   "scenes": [
-   11
+   7,
+   8
   ],
-  "t_in_main": 60.13,
-  "cut_from": 4.760000000000005,
-  "cut_len": 8.82,
+  "t_in_main": 33.26,
+  "cut_from": 5.699999999999999,
+  "cut_len": 9.840000000000003,
   "first_frame": 2
  },
  {
@@ -59,38 +56,26 @@
   "img": "bep",
   "src": "source_bep.png",
   "scenes": [
+   9,
+   10
+  ],
+  "t_in_main": 43.1,
+  "cut_from": 5.390000000000001,
+  "cut_len": 10.769999999999996,
+  "first_frame": 2
+ },
+ {
+  "tag": "r06_an",
+  "img": "an",
+  "src": "source_an.png",
+  "scenes": [
+   11,
    12,
-   13,
-   14,
-   15
+   13
   ],
-  "t_in_main": 68.95,
-  "cut_from": 8.82,
-  "cut_len": 28.129999999999995,
-  "first_frame": 2
- },
- {
-  "tag": "r06_hanh",
-  "img": "hanh",
-  "src": "source_hanh.png",
-  "scenes": [
-   16
-  ],
-  "t_in_main": 97.08,
-  "cut_from": 8.829999999999998,
-  "cut_len": 7.890000000000001,
-  "first_frame": 2
- },
- {
-  "tag": "r07_bep",
-  "img": "bep",
-  "src": "source_bep.png",
-  "scenes": [
-   17
-  ],
-  "t_in_main": 104.97,
-  "cut_from": 7.890000000000001,
-  "cut_len": 8.89,
+  "t_in_main": 53.87,
+  "cut_from": 4.759999999999998,
+  "cut_len": 17.479999999999997,
   "first_frame": 2
  }
 ]
