@@ -567,11 +567,11 @@ WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–4.14s", head="Lý do thứ nhất là kích thước", vo="còn bức tường sơn thật thì chiếm phần lớn tầm nhìn.",
          cam=((1300, 1100), 2.6, (540, 917)), dark=False, dd=[], keep=[], move="hold"),
-    dict(t="4.14–12.65s", head="CIE 208:2014", vo="Một báo cáo kỹ thuật năm 2014 tổng hợp các thí nghiệm và thấy mảng màu lớn thường trông sáng hơn, rực hơn mảng nhỏ,",
+    dict(t="4.14–12.96s", head="CIE 208:2014", vo="Một báo cáo kỹ thuật năm 2014 tổng hợp các thí nghiệm và cho thấy mảng màu lớn thường trông sáng hơn, rực hơn mảng nhỏ,",
          cam=((1300, 1100), 2.6, (540, 917)), dark=True, dd=['vang', 'lab_vang'], keep=[], move="pan_u"),
-    dict(t="12.65–18.35s", head="Mảng lớn sáng hơn, rực hơn", vo="có khi còn đổi cả sắc màu, dù nghiên cứu về hiện tượng này còn ít.",
+    dict(t="12.96–18.66s", head="Mảng lớn sáng hơn, rực hơn", vo="có khi còn đổi cả sắc màu, dù nghiên cứu về hiện tượng này còn ít.",
          cam=((1300, 1100), 2.6, (540, 917)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="18.35–18.85s", head="end", vo="",
+    dict(t="18.66–19.16s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1

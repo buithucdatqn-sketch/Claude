@@ -56,7 +56,7 @@ SW, SH = src.size
 
 # ---------------- board geometry (2x master, 1x = reel canvas) ----------------
 B2W, B2H = W * 2, H * 2
-CARD_W2, BORDER2 = 1371, 0  # theo tỷ lệ ảnh của run
+CARD_W2, BORDER2 = 1309, 0  # theo tỷ lệ ảnh của run
 PH_W2 = CARD_W2 - 2 * BORDER2
 PH_H2 = int(round(PH_W2 * SH / SW))
 CARD_H2 = PH_H2 + 2 * BORDER2
@@ -566,17 +566,17 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.64s", head="Xem vào ba mốc giờ", vo="Rồi xem mảng thử lúc tám giờ sáng, hai giờ chiều và tám giờ tối, đứng cùng một chỗ.",
-         cam=((700, 1300), 2.5, (540, 925)), dark=False, dd=[], keep=[], move="hold"),
-    dict(t="6.64–12.97s", head="Thẻ nhỏ không nói thay bức tường", vo="Vậy màu sơn không sai, chỉ là tấm thẻ nhỏ không nói thay được cho cả bức tường.",
-         cam=((700, 1300), 2.5, (540, 925)), dark=True, dd=[], keep=[], move="push"),
-    dict(t="12.97–13.47s", head="end", vo="",
+    dict(t="0–6.95s", head="Cho mảng thử chạy qua góc tường", vo="và cho chạy qua góc tường để thấy cả phía sáng, phía tối lẫn màu dội sang tường bên cạnh.",
+         cam=((1000, 1300), 2.6, (540, 925)), dark=False, dd=[], keep=[], move="hold"),
+    dict(t="6.95–15.46s", head="Một ô nhỏ chưa phải cả bức tường", vo="Tấm thẻ chỉ cho biết màu của một ô nhỏ trên nền trắng, chưa cho biết màu của cả bức tường trong căn phòng thật.",
+         cam=((1000, 1300), 2.6, (540, 925)), dark=True, dd=[], keep=[], move="pull"),
+    dict(t="15.46–15.96s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1
 BOARDS = {}
 
-_P = os.path.join(HERE, "doodle_ep17_hanh.npz")
+_P = os.path.join(HERE, "doodle_ep17_tuong.npz")
 LAYER = dict(np.load(_P)) if os.path.isfile(_P) else {}   # toạ độ trên ảnh làm việc của run
 RAD = 0.9                              # bán kính chấm bút khi lộ lại nét gốc (px ảnh làm việc)
 RAD_SK = 0.95                          # sơ đồ vẽ dần: chấm bút phủ đúng điểm mực của sơ đồ
@@ -747,7 +747,7 @@ proc = subprocess.Popen(
     ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
      "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-t", f"{TOTAL:.2f}",
      "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-pix_fmt", "yuv420p", "-movflags", "+faststart",
-     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "r07_hanh_silent.mp4")], stdin=subprocess.PIPE)
+     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "r07_tuong_silent.mp4")], stdin=subprocess.PIPE)
 
 nframes = int(TOTAL * FPS)
 cur = -1

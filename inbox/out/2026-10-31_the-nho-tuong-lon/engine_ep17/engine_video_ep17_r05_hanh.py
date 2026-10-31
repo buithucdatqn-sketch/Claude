@@ -22,10 +22,10 @@ W, H, SS = 1080, 1920, 2
 FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
 if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
-CREDIT = "Hình PK.2: AH+, sổ tay Công thức chọn màu nội thất"
+CREDIT = "Ảnh dự án: Casa Tahiti · Margine · ảnh Nicolò Panzeri / ArchDaily"
 HEAD = "AH DECODE · THẺ MÀU VÀ BỨC TƯỜNG"
-TAPE = True     # False: ảnh phóng phủ kín khung, không vẽ băng keo ở mép trên (chủ Trang yêu cầu 2026-10-30)
-SKETCH = True  # True: sơ đồ (sketch) hiện ra theo từng nét trên nền trắng, không thẻ ảnh, không băng keo (chủ Trang yêu cầu 2026-10-30)
+TAPE = False    # False: ảnh phóng phủ kín khung, không vẽ băng keo ở mép trên (chủ Trang yêu cầu 2026-10-30)
+SKETCH = False  # True: sơ đồ (sketch) hiện ra theo từng nét trên nền trắng, không thẻ ảnh, không băng keo (chủ Trang yêu cầu 2026-10-30)
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
 END_LINES = [
@@ -56,11 +56,11 @@ SW, SH = src.size
 
 # ---------------- board geometry (2x master, 1x = reel canvas) ----------------
 B2W, B2H = W * 2, H * 2
-CARD_W2, BORDER2 = 1920, 0  # theo tỷ lệ ảnh của run
+CARD_W2, BORDER2 = 1371, 0  # theo tỷ lệ ảnh của run
 PH_W2 = CARD_W2 - 2 * BORDER2
 PH_H2 = int(round(PH_W2 * SH / SW))
 CARD_H2 = PH_H2 + 2 * BORDER2
-C2 = (B2W / 2, 1810.0)
+C2 = (B2W / 2, 1880.0)
 ANGLE = 1.2  # degrees, counter-clockwise (card is hung very slightly crooked)
 S2 = PH_W2 / SW
 ROT = cv2.getRotationMatrix2D(C2, ANGLE, 1.0)
@@ -566,19 +566,19 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–4.14s", head="Tường trắng sát tủ hồng ửng màu", vo="điều mà tấm thẻ đặt giữa tường trắng không cho thấy.",
-         cam=((324, 226), 0.9, (540, 910)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="4.14–8.9s", head="Mảng thử một mét vuông, hai lớp", vo="Vì vậy, nên sơn một mảng thử khoảng một mét vuông, hai lớp,",
-         cam=((324, 226), 0.9, (540, 910)), dark=False, dd=['phai', 'kt'], keep=['trai'], move="hold"),
-    dict(t="8.9–15.85s", head="Cho mảng thử chạy qua góc tường", vo="ngay trên bức tường sẽ sơn, và cho chạy qua góc tường để thấy cả phía sáng lẫn phía tối.",
-         cam=((324, 226), 0.9, (540, 910)), dark=False, dd=[], keep=['trai', 'phai', 'kt'], move="hold"),
-    dict(t="15.85–16.35s", head="end", vo="",
+    dict(t="0–6.01s", head="Tường trắng sát tủ hồng ửng màu", vo="Ở căn bếp này, phần tường trắng sát tủ hồng cũng ửng màu hơn phần ở xa.",
+         cam=((700, 1300), 2.5, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
+    dict(t="6.01–14.21s", head="Tường, trần, sàn dội màu lên nhau", vo="Trong phòng, tường, trần và sàn đều dội ánh sáng lên nhau, nên màu của một bức tường còn tùy các mặt xung quanh,",
+         cam=((700, 1300), 2.5, (540, 925)), dark=True, dd=['mat', 'lab_mat'], keep=[], move="pull"),
+    dict(t="14.21–18.35s", head="Điều tấm thẻ không cho thấy", vo="điều mà tấm thẻ đặt giữa tường trắng không cho thấy.",
+         cam=((700, 1300), 2.5, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
+    dict(t="18.35–18.85s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1
 BOARDS = {}
 
-_P = os.path.join(HERE, "sketch_ep17_pk2.npz")
+_P = os.path.join(HERE, "doodle_ep17_hanh.npz")
 LAYER = dict(np.load(_P)) if os.path.isfile(_P) else {}   # toạ độ trên ảnh làm việc của run
 RAD = 0.9                              # bán kính chấm bút khi lộ lại nét gốc (px ảnh làm việc)
 RAD_SK = 0.95                          # sơ đồ vẽ dần: chấm bút phủ đúng điểm mực của sơ đồ
@@ -749,7 +749,7 @@ proc = subprocess.Popen(
     ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
      "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-t", f"{TOTAL:.2f}",
      "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-pix_fmt", "yuv420p", "-movflags", "+faststart",
-     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "r05_pk2_silent.mp4")], stdin=subprocess.PIPE)
+     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "r05_hanh_silent.mp4")], stdin=subprocess.PIPE)
 
 nframes = int(TOTAL * FPS)
 cur = -1

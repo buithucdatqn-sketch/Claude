@@ -16,16 +16,16 @@ from silhouette import loose_contour  # noqa: E402
 
 SRC = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "source.png")
 OUT = sys.argv[2] if len(sys.argv) > 2 else HERE
-os.makedirs(os.path.join(OUT, "frames_r06_pk3"), exist_ok=True)
+os.makedirs(os.path.join(OUT, "frames_r07_tuong"), exist_ok=True)
 
 W, H, SS = 1080, 1920, 2
 FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
 if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
-CREDIT = "Hình PK.3: AH+, sổ tay Công thức chọn màu nội thất"
+CREDIT = "Ảnh dự án: Casa Tahiti · Margine · ảnh Nicolò Panzeri / ArchDaily"
 HEAD = "AH DECODE · THẺ MÀU VÀ BỨC TƯỜNG"
-TAPE = True     # False: ảnh phóng phủ kín khung, không vẽ băng keo ở mép trên (chủ Trang yêu cầu 2026-10-30)
-SKETCH = True  # True: sơ đồ (sketch) hiện ra theo từng nét trên nền trắng, không thẻ ảnh, không băng keo (chủ Trang yêu cầu 2026-10-30)
+TAPE = False    # False: ảnh phóng phủ kín khung, không vẽ băng keo ở mép trên (chủ Trang yêu cầu 2026-10-30)
+SKETCH = False  # True: sơ đồ (sketch) hiện ra theo từng nét trên nền trắng, không thẻ ảnh, không băng keo (chủ Trang yêu cầu 2026-10-30)
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
 END_LINES = [
@@ -56,11 +56,11 @@ SW, SH = src.size
 
 # ---------------- board geometry (2x master, 1x = reel canvas) ----------------
 B2W, B2H = W * 2, H * 2
-CARD_W2, BORDER2 = 1920, 0  # theo tỷ lệ ảnh của run
+CARD_W2, BORDER2 = 1309, 0  # theo tỷ lệ ảnh của run
 PH_W2 = CARD_W2 - 2 * BORDER2
 PH_H2 = int(round(PH_W2 * SH / SW))
 CARD_H2 = PH_H2 + 2 * BORDER2
-C2 = (B2W / 2, 1810.0)
+C2 = (B2W / 2, 1880.0)
 ANGLE = 1.2  # degrees, counter-clockwise (card is hung very slightly crooked)
 S2 = PH_W2 / SW
 ROT = cv2.getRotationMatrix2D(C2, ANGLE, 1.0)
@@ -565,17 +565,17 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.95s", head="Cho mảng thử chạy qua góc tường", vo="ngay trên bức tường sẽ sơn, và cho chạy qua góc tường để thấy cả phía sáng lẫn phía tối.",
-         cam=((324, 220), 0.92, (540, 915)), dark=False, dd=[], keep=[], move="hold"),
-    dict(t="6.95–13.59s", head="Xem vào ba mốc giờ", vo="Rồi xem mảng thử lúc tám giờ sáng, hai giờ chiều và tám giờ tối, đứng cùng một chỗ.",
-         cam=((324, 220), 0.92, (540, 915)), dark=False, dd=['p1', 'p2', 'p3', 'cuoi'], keep=[], move="hold"),
-    dict(t="13.59–14.09s", head="end", vo="",
+    dict(t="0–6.95s", head="Cho mảng thử chạy qua góc tường", vo="và cho chạy qua góc tường để thấy cả phía sáng, phía tối lẫn màu dội sang tường bên cạnh.",
+         cam=((1000, 1300), 2.6, (540, 925)), dark=False, dd=[], keep=[], move="hold"),
+    dict(t="6.95–15.46s", head="Một ô nhỏ chưa phải cả bức tường", vo="Tấm thẻ chỉ cho biết màu của một ô nhỏ trên nền trắng, chưa cho biết màu của cả bức tường trong căn phòng thật.",
+         cam=((1000, 1300), 2.6, (540, 925)), dark=True, dd=[], keep=[], move="pull"),
+    dict(t="15.46–15.96s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1
 BOARDS = {}
 
-_P = os.path.join(HERE, "sketch_ep17_pk3.npz")
+_P = os.path.join(HERE, "doodle_ep17_tuong.npz")
 LAYER = dict(np.load(_P)) if os.path.isfile(_P) else {}   # toạ độ trên ảnh làm việc của run
 RAD = 0.9                              # bán kính chấm bút khi lộ lại nét gốc (px ảnh làm việc)
 RAD_SK = 0.95                          # sơ đồ vẽ dần: chấm bút phủ đúng điểm mực của sơ đồ
@@ -657,7 +657,7 @@ BOARDS["clean"] = make_board(1.0)
 frames = []
 for i in range(len(SCENES)):
     im = render_scene(i)
-    im.save(os.path.join(OUT, "frames_r06_pk3", f"scene_{i + 1}.png"))
+    im.save(os.path.join(OUT, "frames_r07_tuong", f"scene_{i + 1}.png"))
     frames.append(im)
 
 # ---------------- contact sheet ----------------
@@ -682,5 +682,5 @@ fy = TOP + rows * (PH + 86) + 10
 d.text((MX, fy), "Nền trắng trơn · băng keo giấy thay ghim · header AH DECODE · bỏ “Bước n”", font=F(32), fill=(255, 255, 255))
 d.text((MX, fy + 44), "Cảnh zoom kín ảnh: chữ trắng viết lên ảnh (có phủ tối nhẹ).", font=F(32), fill=(225, 220, 212))
 d.text((MX, fy + 88), "Ảnh tối ~14% ở cảnh có nét vẽ; cảnh 1, 6, 7 giữ ảnh nguyên bản.", font=F(32), fill=(225, 220, 212))
-sheet.save(os.path.join(OUT, "storyboard_r06_pk3.png"))
+sheet.save(os.path.join(OUT, "storyboard_r07_tuong.png"))
 print("fabric", tuple(int(x) for x in FAB), "sheet", sheet.size)

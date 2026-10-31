@@ -29,7 +29,6 @@ IMGS = dict(
     tu=("source_tu.png", "doodle_ep17_tu.npz", TAH),            # tủ hồng sát tường trắng (2000x2933)
     hanh=("source_hanh.png", "doodle_ep17_hanh.npz", TAH),      # lối đi nhìn về phòng tắm vàng (2000x2800)
     pk2=("source_pk2.png", "sketch_ep17_pk2.npz", "Hình PK.2: AH+, sổ tay Công thức chọn màu nội thất", True),   # cắt bỏ tiêu đề (648x453)
-    pk3=("source_pk3.png", "sketch_ep17_pk3.npz", "Hình PK.3: AH+, sổ tay Công thức chọn màu nội thất", True),   # cắt bỏ tiêu đề (648x441)
     ebook=("source_ebook.png", "", "Ảnh: sổ tay AH+ Công thức chọn màu nội thất · Giả Thuyết Kiến Trúc"),
 )
 
@@ -45,7 +44,6 @@ TAM = ((1300, 1100), 2.6, (540, 925))
 TU = ((750, 1300), 2.8, (540, 925))
 HANH = ((700, 1300), 2.5, (540, 925))
 PK2 = STRIP(324, 226, 0.9, 910)
-PK3 = STRIP(324, 220, 0.92, 915)
 
 
 # Một câu hỏi trung tâm: màu chọn trên thẻ thì vừa mắt, sơn lên cả bức tường lại đậm và rực hẳn, vì sao?
@@ -54,34 +52,36 @@ PK3 = STRIP(324, 220, 0.92, 915)
 # 1 m², hai lớp, qua góc (PK.2 phải vẽ dần) → xem ba mốc giờ (PK.3 vẽ dần) → chốt → lời mời.
 SC = [
     dict(move="push", part="A", blk=1, img="tuong", head="Thẻ màu vừa mắt, tường lại rực", cam=TUONG, dark=True, dd=[],
-         vo="Màu chọn trên thẻ thì vừa mắt, sơn lên cả bức tường lại đậm và rực hẳn, vì sao?"),
+         vo="Màu chọn trên thẻ thì vừa mắt, sơn lên cả bức tường lại sáng và rực hơn hẳn, vì sao?"),
     dict(move="hold", part="B", blk=2, img="pk2", head="Lý do thứ nhất là kích thước", cam=PK2, free=True, dark=False, dd=["trai"], keep=[],
          vo="Sổ tay AH+ nêu hai lý do. Lý do đầu tiên là kích thước, vì tấm thẻ chỉ vài xăng-ti-mét đặt giữa tường trắng,",
          tts="Sổ tay Ây-hát cộng nêu hai lý do. Lý do đầu tiên là kích thước, vì tấm thẻ chỉ vài xăng-ti-mét đặt giữa tường trắng,"),
     dict(move="hold", part="B", blk=2, img="pk2", head="Lý do thứ nhất là kích thước", cam=PK2, free=True, dark=False, dd=[], keep=["trai"],
          vo="còn bức tường sơn thật thì chiếm phần lớn tầm nhìn."),
     dict(move="pan_u", part="C", blk=3, img="tam", head="CIE 208:2014", cam=TAM, dark=True, dd=["vang", "lab_vang"],
-         vo="Một báo cáo kỹ thuật năm 2014 tổng hợp các thí nghiệm và thấy mảng màu lớn thường trông sáng hơn, rực hơn mảng nhỏ,",
-         tts="Một báo cáo kỹ thuật năm hai nghìn không trăm mười bốn tổng hợp các thí nghiệm và thấy mảng màu lớn thường trông sáng hơn, rực hơn mảng nhỏ,"),
+         vo="Một báo cáo kỹ thuật năm 2014 tổng hợp các thí nghiệm và cho thấy mảng màu lớn thường trông sáng hơn, rực hơn mảng nhỏ,",
+         tts="Một báo cáo kỹ thuật năm hai nghìn không trăm mười bốn tổng hợp các thí nghiệm và cho thấy mảng màu lớn thường trông sáng hơn, rực hơn mảng nhỏ,"),
     dict(move="hold", part="C", blk=3, img="tam", head="Mảng lớn sáng hơn, rực hơn", cam=TAM, dark=True, dd=[],
          vo="có khi còn đổi cả sắc màu, dù nghiên cứu về hiện tượng này còn ít."),
     dict(move="push", part="C", blk=4, img="tu", head="Lý do thứ hai là ánh sáng dội", cam=TU, dark=True, dd=["doi", "lab_doi"],
          vo="Lý do thứ hai là ánh sáng dội từ mặt màu sang mặt bên cạnh."),
     dict(move="hold", part="C", blk=4, img="tu", head="Bloj, Kersten và Hurlbert (1999)", cam=TU, dark=True, dd=[],
-         vo="Năm 1999, nhóm Bloj cho người xem một tấm bìa gập, nửa đỏ tía, nửa trắng, và nửa trắng hiện lên một quầng hồng.",
-         tts="Năm một nghìn chín trăm chín mươi chín, nhóm Blốt cho người xem một tấm bìa gập, nửa đỏ tía, nửa trắng, và nửa trắng hiện lên một quầng hồng."),
+         vo="Năm 1999, một nhóm nghiên cứu cho người xem một tấm bìa gập, nửa đỏ tía, nửa trắng,",
+         tts="Năm một nghìn chín trăm chín mươi chín, một nhóm nghiên cứu cho người xem một tấm bìa gập, nửa đỏ tía, nửa trắng,"),
+    dict(move="hold", part="C", blk=4, img="tu", head="Bloj, Kersten và Hurlbert (1999)", cam=TU, dark=True, dd=[],
+         vo="và ánh sáng dội từ nửa đỏ tía phủ một quầng hồng lên nửa trắng."),
     dict(move="pan_r", part="D", blk=4, img="tu", head="Tường trắng sát tủ hồng ửng màu", cam=TU, dark=True, dd=["gan", "lab_gan", "xa", "lab_xa"],
-         vo="Ở căn bếp này, phần tường trắng sát tủ hồng cũng ửng màu hơn phần ở xa,"),
-    dict(move="hold", part="D", blk=4, img="tu", head="Tường trắng sát tủ hồng ửng màu", cam=TU, dark=True, dd=[],
+         vo="Ở căn bếp này, phần tường trắng sát tủ hồng cũng ửng màu hơn phần ở xa."),
+    dict(move="pull", part="C", blk=4, img="hanh", head="Tường, trần, sàn dội màu lên nhau", cam=HANH, dark=True, dd=["mat", "lab_mat"],
+         vo="Trong phòng, tường, trần và sàn đều dội ánh sáng lên nhau, nên màu của một bức tường còn tùy các mặt xung quanh,"),
+    dict(move="hold", part="C", blk=4, img="hanh", head="Điều tấm thẻ không cho thấy", cam=HANH, dark=True, dd=[],
          vo="điều mà tấm thẻ đặt giữa tường trắng không cho thấy."),
     dict(move="hold", part="F", blk=5, img="pk2", head="Mảng thử một mét vuông, hai lớp", cam=PK2, free=True, dark=False, dd=["phai", "kt"], keep=["trai"],
-         vo="Vì vậy, nên sơn một mảng thử khoảng một mét vuông, hai lớp,"),
+         vo="Vì vậy, nên sơn một mảng thử khoảng một mét vuông, hai lớp, ngay trên bức tường sẽ sơn,"),
     dict(move="hold", part="F", blk=5, img="pk2", head="Cho mảng thử chạy qua góc tường", cam=PK2, free=True, dark=False, dd=[], keep=["trai", "phai", "kt"],
-         vo="ngay trên bức tường sẽ sơn, và cho chạy qua góc tường để thấy cả phía sáng lẫn phía tối."),
-    dict(move="hold", part="F", blk=5, img="pk3", head="Xem vào ba mốc giờ", cam=PK3, free=True, dark=False, dd=["p1", "p2", "p3", "cuoi"], keep=[],
-         vo="Rồi xem mảng thử lúc tám giờ sáng, hai giờ chiều và tám giờ tối, đứng cùng một chỗ."),
-    dict(move="push", part="H", blk=6, img="hanh", head="Thẻ nhỏ không nói thay bức tường", cam=HANH, dark=True, dd=[],
-         vo="Vậy màu sơn không sai, chỉ là tấm thẻ nhỏ không nói thay được cho cả bức tường."),
+         vo="và cho chạy qua góc tường để thấy cả phía sáng, phía tối lẫn màu dội sang tường bên cạnh."),
+    dict(move="pull", part="H", blk=6, img="tuong", head="Một ô nhỏ chưa phải cả bức tường", cam=TUONG, dark=True, dd=[],
+         vo="Tấm thẻ chỉ cho biết màu của một ô nhỏ trên nền trắng, chưa cho biết màu của cả bức tường trong căn phòng thật."),
     dict(move="hold", part="I", blk=6, img="ebook", head="end", cam="END", dark=False, vo="", dd=[],
          say="Ba phép thử màu ngay tại công trình có trong sổ tay Công thức chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha."),
 ]

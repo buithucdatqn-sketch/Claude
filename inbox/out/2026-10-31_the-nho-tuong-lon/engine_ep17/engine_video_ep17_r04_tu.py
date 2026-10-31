@@ -570,13 +570,13 @@ SCENES = [
          cam=((750, 1300), 2.8, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
     dict(t="5.7–11.09s", head="Lý do thứ hai là ánh sáng dội", vo="Lý do thứ hai là ánh sáng dội từ mặt màu sang mặt bên cạnh.",
          cam=((750, 1300), 2.8, (540, 925)), dark=True, dd=['doi', 'lab_doi'], keep=[], move="push"),
-    dict(t="11.09–19.29s", head="Bloj, Kersten và Hurlbert (1999)", vo="Năm 1999, nhóm Bloj cho người xem một tấm bìa gập, nửa đỏ tía, nửa trắng, và nửa trắng hiện lên một quầng hồng.",
+    dict(t="11.09–17.42s", head="Bloj, Kersten và Hurlbert (1999)", vo="Năm 1999, một nhóm nghiên cứu cho người xem một tấm bìa gập, nửa đỏ tía, nửa trắng,",
          cam=((750, 1300), 2.8, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="19.29–25.3s", head="Tường trắng sát tủ hồng ửng màu", vo="Ở căn bếp này, phần tường trắng sát tủ hồng cũng ửng màu hơn phần ở xa,",
+    dict(t="17.42–22.81s", head="Bloj, Kersten và Hurlbert (1999)", vo="và ánh sáng dội từ nửa đỏ tía phủ một quầng hồng lên nửa trắng.",
+         cam=((750, 1300), 2.8, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
+    dict(t="22.81–28.82s", head="Tường trắng sát tủ hồng ửng màu", vo="Ở căn bếp này, phần tường trắng sát tủ hồng cũng ửng màu hơn phần ở xa.",
          cam=((750, 1300), 2.8, (540, 925)), dark=True, dd=['gan', 'lab_gan', 'xa', 'lab_xa'], keep=[], move="pan_r"),
-    dict(t="25.3–29.44s", head="Tường trắng sát tủ hồng ửng màu", vo="điều mà tấm thẻ đặt giữa tường trắng không cho thấy.",
-         cam=((750, 1300), 2.8, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="29.44–29.94s", head="end", vo="",
+    dict(t="28.82–29.32s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1

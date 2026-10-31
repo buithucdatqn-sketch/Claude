@@ -8,7 +8,7 @@
   ],
   "t_in_main": 0.0,
   "cut_from": 0.0,
-  "cut_len": 6.64,
+  "cut_len": 6.95,
   "first_frame": 1
  },
  {
@@ -19,8 +19,8 @@
    2,
    3
   ],
-  "t_in_main": 6.64,
-  "cut_from": 6.64,
+  "t_in_main": 6.95,
+  "cut_from": 6.95,
   "cut_len": 12.34,
   "first_frame": 2
  },
@@ -32,9 +32,9 @@
    4,
    5
   ],
-  "t_in_main": 18.98,
-  "cut_from": 4.140000000000001,
-  "cut_len": 14.209999999999997,
+  "t_in_main": 19.29,
+  "cut_from": 4.139999999999999,
+  "cut_len": 14.520000000000005,
   "first_frame": 2
  },
  {
@@ -47,46 +47,47 @@
    8,
    9
   ],
-  "t_in_main": 33.19,
-  "cut_from": 5.699999999999999,
-  "cut_len": 23.740000000000002,
+  "t_in_main": 33.81,
+  "cut_from": 5.700000000000003,
+  "cut_len": 23.119999999999997,
   "first_frame": 2
  },
  {
-  "tag": "r05_pk2",
-  "img": "pk2",
-  "src": "source_pk2.png",
+  "tag": "r05_hanh",
+  "img": "hanh",
+  "src": "source_hanh.png",
   "scenes": [
    10,
    11
   ],
   "t_in_main": 56.93,
-  "cut_from": 4.140000000000001,
-  "cut_len": 11.71,
+  "cut_from": 6.009999999999998,
+  "cut_len": 12.339999999999996,
   "first_frame": 2
  },
  {
-  "tag": "r06_pk3",
-  "img": "pk3",
-  "src": "source_pk3.png",
+  "tag": "r06_pk2",
+  "img": "pk2",
+  "src": "source_pk2.png",
   "scenes": [
-   12
-  ],
-  "t_in_main": 68.64,
-  "cut_from": 6.950000000000003,
-  "cut_len": 6.640000000000001,
-  "first_frame": 2
- },
- {
-  "tag": "r07_hanh",
-  "img": "hanh",
-  "src": "source_hanh.png",
-  "scenes": [
+   12,
    13
   ],
-  "t_in_main": 75.28,
-  "cut_from": 6.640000000000001,
-  "cut_len": 6.329999999999998,
+  "t_in_main": 69.27,
+  "cut_from": 4.140000000000001,
+  "cut_len": 13.590000000000003,
+  "first_frame": 2
+ },
+ {
+  "tag": "r07_tuong",
+  "img": "tuong",
+  "src": "source_tuong.png",
+  "scenes": [
+   14
+  ],
+  "t_in_main": 82.86,
+  "cut_from": 6.950000000000003,
+  "cut_len": 8.510000000000005,
   "first_frame": 2
  },
  {
@@ -94,11 +95,11 @@
   "img": "ebook",
   "src": "source_ebook.png",
   "scenes": [
-   14
+   15
   ],
-  "t_in_main": 81.61,
-  "cut_from": 6.329999999999998,
-  "cut_len": 10.450000000000003,
+  "t_in_main": 91.37,
+  "cut_from": 8.510000000000005,
+  "cut_len": 10.449999999999989,
   "first_frame": 2
  }
 ]

@@ -566,13 +566,13 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–6.64s", head="Thẻ màu vừa mắt, tường lại rực", vo="Màu chọn trên thẻ thì vừa mắt, sơn lên cả bức tường lại đậm và rực hẳn, vì sao?",
+    dict(t="0–6.95s", head="Thẻ màu vừa mắt, tường lại rực", vo="Màu chọn trên thẻ thì vừa mắt, sơn lên cả bức tường lại sáng và rực hơn hẳn, vì sao?",
          cam=((324, 226), 0.9, (540, 910)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="6.64–14.84s", head="Lý do thứ nhất là kích thước", vo="Sổ tay AH+ nêu hai lý do. Lý do đầu tiên là kích thước, vì tấm thẻ chỉ vài xăng-ti-mét đặt giữa tường trắng,",
+    dict(t="6.95–15.15s", head="Lý do thứ nhất là kích thước", vo="Sổ tay AH+ nêu hai lý do. Lý do đầu tiên là kích thước, vì tấm thẻ chỉ vài xăng-ti-mét đặt giữa tường trắng,",
          cam=((324, 226), 0.9, (540, 910)), dark=False, dd=['trai'], keep=[], move="hold"),
-    dict(t="14.84–18.98s", head="Lý do thứ nhất là kích thước", vo="còn bức tường sơn thật thì chiếm phần lớn tầm nhìn.",
+    dict(t="15.15–19.29s", head="Lý do thứ nhất là kích thước", vo="còn bức tường sơn thật thì chiếm phần lớn tầm nhìn.",
          cam=((324, 226), 0.9, (540, 910)), dark=False, dd=[], keep=['trai'], move="hold"),
-    dict(t="18.98–19.48s", head="end", vo="",
+    dict(t="19.29–19.79s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1
