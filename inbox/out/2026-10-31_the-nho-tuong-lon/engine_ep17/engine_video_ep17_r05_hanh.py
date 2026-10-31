@@ -568,7 +568,7 @@ WIDE = WIDE_SAFE
 SCENES = [
     dict(t="0–6.01s", head="Tường trắng sát tủ hồng ửng màu", vo="Ở căn bếp này, phần tường trắng sát tủ hồng cũng ửng màu hơn phần ở xa.",
          cam=((700, 1300), 2.5, (540, 925)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="6.01–14.21s", head="Tường, trần, sàn dội màu lên nhau", vo="Trong phòng, tường, trần và sàn đều dội ánh sáng lên nhau, nên màu của một bức tường còn tùy các mặt xung quanh,",
+    dict(t="6.01–14.21s", head="Tường, trần, sàn dội ánh sáng lên nhau", vo="Trong phòng, tường, trần và sàn đều dội ánh sáng lên nhau, nên màu của một bức tường còn tùy các mặt xung quanh,",
          cam=((700, 1300), 2.5, (540, 925)), dark=True, dd=['mat', 'lab_mat'], keep=[], move="pull"),
     dict(t="14.21–18.35s", head="Điều tấm thẻ không cho thấy", vo="điều mà tấm thẻ đặt giữa tường trắng không cho thấy.",
          cam=((700, 1300), 2.5, (540, 925)), dark=True, dd=[], keep=[], move="hold"),

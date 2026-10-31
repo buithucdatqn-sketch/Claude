@@ -20,7 +20,7 @@ Màu chọn trên thẻ thì vừa mắt, sơn lên cả bức tường lại s�
 | 7 | C | 39.2–45.53s | Bloj, Kersten và Hurlbert (1999) | Năm 1999, một nhóm nghiên cứu cho người xem một tấm bìa gập, nửa đỏ tía, nửa trắng, | Năm một nghìn chín trăm chín mươi chín, một nhóm nghiên cứu cho người xem một tấm bìa gập, nửa đỏ tía, nửa trắng, |
 | 8 | C | 45.53–50.92s | Bloj, Kersten và Hurlbert (1999) | và ánh sáng dội từ nửa đỏ tía phủ một quầng hồng lên nửa trắng. | giữ nguyên |
 | 9 | D | 50.92–56.93s | Tường trắng sát tủ hồng ửng màu | Ở căn bếp này, phần tường trắng sát tủ hồng cũng ửng màu hơn phần ở xa. | giữ nguyên |
-| 10 | C | 56.93–65.13s | Tường, trần, sàn dội màu lên nhau | Trong phòng, tường, trần và sàn đều dội ánh sáng lên nhau, nên màu của một bức tường còn tùy các mặt xung quanh, | giữ nguyên |
+| 10 | C | 56.93–65.13s | Tường, trần, sàn dội ánh sáng lên nhau | Trong phòng, tường, trần và sàn đều dội ánh sáng lên nhau, nên màu của một bức tường còn tùy các mặt xung quanh, | giữ nguyên |
 | 11 | C | 65.13–69.27s | Điều tấm thẻ không cho thấy | điều mà tấm thẻ đặt giữa tường trắng không cho thấy. | giữ nguyên |
 | 12 | F | 69.27–75.91s | Mảng thử một mét vuông, hai lớp | Vì vậy, nên sơn một mảng thử khoảng một mét vuông, hai lớp, ngay trên bức tường sẽ sơn, | giữ nguyên |
 | 13 | F | 75.91–82.86s | Cho mảng thử chạy qua góc tường | và cho chạy qua góc tường để thấy cả phía sáng, phía tối lẫn màu dội sang tường bên cạnh. | giữ nguyên |
@@ -34,7 +34,7 @@ Màu chọn trên thẻ thì vừa mắt, sơn lên cả bức tường lại s�
 | 2–3 | Hình PK.2 trên nền trắng | cảnh 2: nét nửa trái hiện dần (bức tường, người, tấm thẻ vài cm, nhãn); cảnh 3 giữ nguyên | đứng yên |
 | 4–5 | phòng tắm sơn vàng, phủ kín khung | khung quanh mảng vàng, nhãn "mảng vàng lớn" | lia lên, đứng yên |
 | 6–9 | tủ hồng sát tường trắng, phủ kín khung | 6: mũi tên từ tủ sang tường "ánh hồng dội sang"; 9: hai mũi tên "ửng hồng" (gần tủ), "trắng hơn" (xa tủ) | đẩy vào, đứng yên, lia phải |
-| 10–11 | lối đi nhìn về phòng tắm vàng | khung quanh ô cửa "phòng vàng", mũi tên "dội sang tường" | lùi ra, đứng yên |
+| 10–11 | lối đi nhìn về phòng tắm vàng | khung quanh ô cửa "phòng vàng", mũi tên vào má cửa "sát cửa ám vàng" (đã đo màu, research.md) | lùi ra, đứng yên |
 | 12–13 | Hình PK.2 | giữ nửa trái, vẽ dần nửa phải (góc tường, mảng thử, mũi tên phản xạ chéo, "sáng", "tối", "≈ 1 × 1 m, 2 lớp") | đứng yên |
 | 14 | bếp hồng | không nét (chốt) | lùi ra |
 | 15 | video sổ tay AH+ | | |
@@ -63,7 +63,7 @@ Tên nhóm Bloj chỉ hiện trên tiêu đề cảnh 7–8, không đọc.
 
 ## Người chấm độc lập
 - Lượt 1: CHƯA ĐẠT. Tình huống thực tế, có ích ngay; ba sửa bắt buộc và một bỏ ý: câu móc "đậm" mâu thuẫn với "sáng hơn" của cơ chế → "sáng và rực hơn hẳn"; khối ánh sáng dội chưa dùng lại chữ "dội" và chưa nối về bức tường của người xem → viết lại, thêm câu "tường, trần và sàn đều dội ánh sáng lên nhau" (K.2 tr. 74); ý xem ba mốc giờ trùng tập 16 và không phải hệ quả của hai lý do → bỏ cả ý và sơ đồ PK.3, câu góc tường thêm "màu dội sang tường bên cạnh"; câu chốt cùng khuôn tập 16 → câu chốt mới. Nhận gợi ý "cho thấy". Không đọc tên Bloj để tránh đọc sai.
-- Lượt 2: xem cuối file.
+- Lượt 2: lời ĐẠT (mạch kể, thực tế, thuyết phục, có ích ngay; câu "tường, trần và sàn đều dội ánh sáng lên nhau" đúng K.2 tr. 74; không còn trùng tập 16). Một sửa hình đã làm: mũi tên cảnh 10 trỏ vào tường trái không đo thấy ánh vàng → rút về má cửa sát ô vàng, nhãn "sát cửa ám vàng", tiêu đề đổi "dội ánh sáng". Gợi ý dự phòng: nếu bản thu quá 78 giây, bỏ câu căn bếp (cảnh 9).
 
 Ba điều người xem học được: (1) mảng màu lớn thường trông sáng và rực hơn mảng nhỏ, nên tấm thẻ vài xăng-ti-mét không báo trước được màu của cả bức tường; (2) ánh sáng dội từ mặt màu sang mặt bên cạnh, nên màu một bức tường còn tùy các mặt xung quanh; (3) duyệt màu bằng mảng thử khoảng một mét vuông, hai lớp, ngay trên bức tường sẽ sơn, chạy qua góc tường. Không trùng tập 16 (màu đổi theo ánh sáng các hướng, giờ trong ngày).
 

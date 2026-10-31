@@ -139,9 +139,9 @@ L["tu"] = dict(
 )
 # hanh: lối đi nhìn về phòng tắm vàng (2000x2800). Cảnh 10: tường, sàn và khung cửa phòng tắm vàng dội ánh sáng lên nhau
 L["hanh"] = dict(
-    mat=poly([(650, 1010), (930, 1010), (930, 1610), (650, 1620)], w, DASH(w), 1.2, 5)
-    + arrow([(640, 1330), (500, 1290), (360, 1210)], w, DASH(w), 1.0, 6, head=40),
-    lab_mat=label("phòng vàng", (970, 1080), 64) + label("dội sang tường", (190, 1420), 64),
+    mat=poly([(650, 1010), (930, 1010), (930, 1585), (650, 1590)], w, DASH(w), 1.2, 5)
+    + arrow([(380, 1420), (470, 1370), (575, 1310)], w, DASH(w), 1.0, 6, head=40),
+    lab_mat=label("phòng vàng", (970, 1080), 64) + label("sát cửa ám vàng", (120, 1430), 64),
 )
 
 os.makedirs(OUT + "doodle_preview", exist_ok=True)

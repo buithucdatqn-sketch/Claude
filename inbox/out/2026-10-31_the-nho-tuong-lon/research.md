@@ -22,3 +22,6 @@ Lý do làm lại lần hai: chủ Trang góp ý 2026-10-31 cho bản 2 ("Trần
 - Màu sơn không sai, tấm thẻ nhỏ không nói thay được cho cả bức tường.
 ## I. Lời mời
 - Mẫu tập 16; quyền lợi: ba phép thử tại công trình (đèn, mảng thử lớn, độ bóng) và checklist ký duyệt (K.1–K.4).
+
+## Đo màu cảnh 10 (lối đi nhìn về phòng tắm vàng)
+Trên `source_hanh.png`, vùng y 1150–1450: tường trái x 200–400 có R−B 28, G−B 12 (đều nhau, không đậm dần về phía cửa); má cửa sát ô vàng x 560–600 có R−B 38–40, G−B 23–24. Vì vậy doodle chỉ vào má cửa ("sát cửa ám vàng"), không chỉ vào mảng tường xa. Má cửa cũng tối hơn (nằm trong bóng), nên đây là quan sát minh hoạ cơ chế của sổ tay, không phải số đo phản xạ chéo.

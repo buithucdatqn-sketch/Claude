@@ -72,7 +72,7 @@ SC = [
          vo="và ánh sáng dội từ nửa đỏ tía phủ một quầng hồng lên nửa trắng."),
     dict(move="pan_r", part="D", blk=4, img="tu", head="Tường trắng sát tủ hồng ửng màu", cam=TU, dark=True, dd=["gan", "lab_gan", "xa", "lab_xa"],
          vo="Ở căn bếp này, phần tường trắng sát tủ hồng cũng ửng màu hơn phần ở xa."),
-    dict(move="pull", part="C", blk=4, img="hanh", head="Tường, trần, sàn dội màu lên nhau", cam=HANH, dark=True, dd=["mat", "lab_mat"],
+    dict(move="pull", part="C", blk=4, img="hanh", head="Tường, trần, sàn dội ánh sáng lên nhau", cam=HANH, dark=True, dd=["mat", "lab_mat"],
          vo="Trong phòng, tường, trần và sàn đều dội ánh sáng lên nhau, nên màu của một bức tường còn tùy các mặt xung quanh,"),
     dict(move="hold", part="C", blk=4, img="hanh", head="Điều tấm thẻ không cho thấy", cam=HANH, dark=True, dd=[],
          vo="điều mà tấm thẻ đặt giữa tường trắng không cho thấy."),
