@@ -32,7 +32,7 @@ SKETCH = False  # True: sơ đồ (sketch) hiện ra theo từng nét trên nề
 END_LINES = [
     (1124, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1170, "và cách chọn đồ decor", 40, 215),
-    (1252, "Bài phân tích về màu tiến, màu lùi", 54, 240),
+    (1252, "Bài phân tích về màu làm đồ to, nhỏ", 54, 240),
     (1314, "từ sách của Kilmer & Kilmer", 48, 240),
     (1398, "xem ở phần bình luận", 66, 255),
 ]
@@ -568,7 +568,7 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–3s", head="Tường trắng hết, sao bếp vẫn chật?", vo="Sơn trắng mới là một nửa. Nửa còn lại là bớt những đường tối trên tường và mặt tủ.",
+    dict(t="0–3s", head="Phòng nhỏ, tủ lớn, chọn màu gì?", vo="Tủ cùng màu sáng với tường thì chìm vào tường, không choán chỗ.",
          cam=WIDE, dark=False, dd=[], keep=[], move="hold"),
     dict(t="3–4s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),

@@ -2,16 +2,16 @@
 
 | Nhận định trong lời | Vị trí trong bài, trích ngắn | Mức chắc chắn theo bài | Nguồn bài dẫn |
 |---|---|---|---|
-| Câu móc: tường đã sơn trắng mà bếp nhỏ vẫn thấy chật | bài học 2, đoạn 1: "Quy tắc này dễ bị hiểu thành chỉ cần sơn tường trắng" | tình huống dựng từ câu của bài | bài |
-| Chốt: với bếp nhỏ, sơn trắng mới là một nửa; nửa còn lại là bớt đường tối trên tường và mặt tủ | tiêu đề bài học 2 "Giữ tường và tủ thật sáng…" và đoạn 1 (đường tối kéo tường lại gần) | diễn giải của bài | bài |
-| Màu sáng có vẻ lùi ra xa, màu tối có vẻ tiến lại gần | mục "Vậy một màu tiến lại hay lùi đi là do đâu?": "Màu tối thì tiến, màu sáng thì lùi", sau câu "ta phải xét cả ba thuộc tính của nó [1]" | nguyên lý (giáo trình) | [1] |
-| Tay nắm, viền tủ, đường ron sẫm màu là đường tối, cho mắt mốc đo khoảng cách, nên kéo tường lại gần | bài học 2, đoạn 1: "Quy tắc này dễ bị hiểu thành chỉ cần sơn tường trắng. Trong phòng thật, mỗi đường tối của tủ, khung cửa hay đường ron… cho mắt một chỗ để đo khoảng cách, và kéo bức tường lại gần." ("tay nắm" do lời thêm, theo đoạn 2) | diễn giải của bài, rào "Bài phân tích của tụi mình cho rằng" | không |
-| Ở căn bếp Lane Cove, Sydney, đường tối gần như không còn | mục 2, đoạn cuối: "Lane Cove House ở Sydney do Lachlan Seegers Architect thiết kế" | dữ kiện | bài |
-| Tủ cao từ sàn lên sát trần, cánh phẳng trắng, không tay nắm lộ ra, khe mảnh | bài học 2, đoạn 2: "từ sàn lên tới mép trần, cánh tủ phẳng và trắng. Nhìn trên ảnh thì cánh tủ không có tay nắm lộ ra, các khe giữa cánh rất mảnh" | quan sát trên ảnh | bài |
-| Mặt tủ không còn đường tối, nên trông như bức tường trắng, không như món đồ | bài học 2, đoạn 2: "Thành ra cả dãy tủ trông như một bức tường trắng chứ không như một món đồ" | diễn giải của bài | bài |
-| Màu sáng lùi xa, nên trong ảnh mảng tủ lùi ra sau, nhường chỗ cho đảo đá và bàn ăn | bài học 2, đoạn 2: "mảng tủ ấy lùi hẳn ra sau, nhường chỗ cho đảo đá và bàn ăn đứng phía trước" | quan sát trên ảnh, nối với nguyên lý [1] | [1], bài |
+| Câu móc: phòng nhỏ cần tủ lớn, chọn màu gì để tủ không choán chỗ | tình huống dựng từ tiêu đề bài học 2 "Giữ tường và tủ thật sáng để chỗ hẹp trông rộng hơn" | tình huống | bài |
+| Món đồ màu ấm và rực trông to hơn chính nó | bài học 3, đoạn 1: "một món đồ màu ấm và rực trông lớn hơn chính nó và có vẻ gần hơn [1]" | nguyên lý (giáo trình) | [1] |
+| Sofa bọc vải đỏ thường trông to hơn sofa y hệt bọc vải xanh | mục "Màu sơn có thể làm một bề mặt trông gần hơn hay xa hơn", đoạn 2: "Một chiếc sofa bọc vải đỏ thường trông to hơn chiếc sofa y hệt bọc vải xanh [1]" | nguyên lý (giáo trình) | [1] |
+| Màu ấm làm món đồ nổi lên khỏi nền phía sau | bài học 3: "Nhờ màu ấm mà các món đồ ấy tiến lên khỏi nền"; "Sắc ấm hay lạnh… làm món đồ nổi lên hay chìm xuống trước nền" | diễn giải của bài, rào "Bài phân tích của tụi mình" | bài |
+| Món đồ cùng màu với nền thì chìm vào nền, không còn giống một món đồ | tổng hợp: "chiếc ghế sẽ chìm vào góc tường" (bài học 3), "cả dãy tủ trông như một bức tường trắng chứ không như một món đồ" (bài học 2) | diễn giải của bài | bài |
+| Lane Cove, Sydney; tủ cao kín bức tường, cánh phẳng trắng, không tay nắm lộ ra, khe mảnh; tường trắng | mục 2 đoạn cuối ("Tường, tủ và vách bên dưới thì trắng"); bài học 2 đoạn 2 | dữ kiện, quan sát trên ảnh | bài |
+| Nhìn trong ảnh, dãy tủ chìm vào tường, nhường chỗ cho đảo đá và bàn ăn phía trước | bài học 2 đoạn 2: "Nhìn trong ảnh, mảng tủ ấy lùi hẳn ra sau, nhường chỗ cho đảo đá và bàn ăn đứng phía trước" | quan sát trên ảnh | bài |
+| Phòng nhỏ cần tủ lớn thì nên chọn tủ cùng màu sáng với tường | tiêu đề bài học 2 "Giữ tường và tủ thật sáng để chỗ hẹp trông rộng hơn" | lời khuyên của bài | bài |
 
-Không dùng trong reel: Kandinsky 1911 [4], Meerwein và cộng sự 2007 [3], bảng phản xạ [2], von Castell và cộng sự 2018 [5], trần tối, thảm đỏ, ghế da, gương sau bếp, hành lang nhà ống (đưa vào caption), vế "phòng trông rộng hơn" (câu móc đã gợi).
+Không dùng trong reel: Kandinsky 1911 [4], Meerwein và cộng sự 2007 [3], bảng phản xạ [2], von Castell và cộng sự 2018 [5], trần tối, thảm đỏ, ghế da, gương sau bếp, hành lang nhà ống (đưa vào caption), phần "đường tối kéo tường lại gần" (chủ Trang thấy khó tin), câu màu lạnh làm đồ nhỏ đi.
 
 Danh mục nguồn của bài (chép đúng):
 [1] Kilmer, R., & Kilmer, W. O. (2014). Designing Interiors (2nd ed.). Hoboken, NJ, Wiley. Chương 5 "Color and Light", các mục Psychology of Color và Color and Space.

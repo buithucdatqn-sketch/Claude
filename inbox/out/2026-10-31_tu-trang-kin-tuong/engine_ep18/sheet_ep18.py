@@ -19,7 +19,7 @@ for r in RUNS:
     shutil.rmtree(OUT + "frames_" + r["tag"])
     if os.path.exists(OUT + f"storyboard_{r['tag']}.png"):
         os.remove(OUT + f"storyboard_{r['tag']}.png")
-NAME = dict(bep="Lane Cove, bếp (anh/goc/07)", an="Lane Cove, phòng ăn nhìn dãy tủ (anh/goc/05)", hanh="Lane Cove, hành lang (anh/goc/06)", sang="sơ đồ độ sáng (anh/01), vẽ dần", mb="mặt bằng vị trí chụp (anh/vi-tri-chup/07), vẽ dần")
+NAME = dict(bep="Lane Cove, bếp (anh/goc/07)", an="Lane Cove, phòng ăn nhìn dãy tủ (anh/goc/05)", hanh="Lane Cove, hành lang (anh/goc/06)", sang="sơ đồ độ sáng (anh/01), vẽ dần", sac="sơ đồ hàng sắc (anh/01), vẽ dần", mb="mặt bằng vị trí chụp (anh/vi-tri-chup/07), vẽ dần")
 img_of = {k: r["img"] for r in RUNS for k in r["scenes"]}
 PW, PH, GAP, MX, TOP, cols = 360, 640, 34, 50, 200, 4
 rows = (len(SC) + cols - 1) // cols
@@ -27,7 +27,7 @@ sheet = Image.new("RGB", (MX * 2 + cols * PW + (cols - 1) * GAP, TOP + rows * (P
 d = ImageDraw.Draw(sheet)
 d.text((MX, 38), "AH Decode · Tủ trắng kín tường (tập 18, giai đoạn A)", font=F(60), fill=(255, 255, 255))
 d.text((MX, 118), "Ảnh Lane Cove House (Lachlan Seegers Architect, ảnh Rory Gardiner) trong thư mục anh/ của bài 05, phủ kín khung", font=F(34), fill=(200, 194, 186))
-d.text((MX, 158), "Nét doodle trắng trên ảnh (cảnh 7–10) · sơ đồ, mặt bằng: nét hiện dần theo thứ tự vẽ (cảnh 2, 6) · camera trôi nhẹ", font=F(34), fill=(200, 194, 186))
+d.text((MX, 158), "Nét doodle trắng trên ảnh (cảnh 5, 7–9) · sơ đồ, mặt bằng: nét hiện dần theo thứ tự vẽ (cảnh 2–3, 6) · camera trôi nhẹ", font=F(34), fill=(200, 194, 186))
 for i, sc in enumerate(SC):
     r, c = divmod(i, cols)
     x, y = MX + c * (PW + GAP), TOP + r * (PH + 120)

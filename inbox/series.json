@@ -677,10 +677,10 @@
  },
  {
   "tap": 18,
-  "slug": "tu-trang-kin-tuong",
+  "slug": "tu-lon-phong-nho",
   "ngay": "2026-10-31",
-  "nguyen_ly": "Sáng lùi, tối tiến (Kilmer & Kilmer 2014, ch.5); tay nắm, viền tủ, ron sẫm màu là đường tối kéo tường lại gần (diễn giải của bài 05); sơn trắng mới là một nửa",
-  "nhom": "Màu tiến, màu lùi: tủ bếp, nhà hẹp",
+  "nguyen_ly": "Món đồ màu ấm, rực trông to hơn chính nó; sofa đỏ trông to hơn sofa xanh y hệt (Kilmer & Kilmer 2014, ch.5); đồ cùng màu nền thì chìm vào nền (diễn giải của bài 05)",
+  "nhom": "Màu và cỡ đồ: tủ lớn trong phòng nhỏ",
   "bai_kho": {
    "duong_dan": "AH-Decode-Decor/bai-05-3-bai-hoc-mau-tien-mau-lui-noi-that/bai-05.md",
    "nhanh": "AH-Interior-notes",
@@ -695,16 +695,16 @@
   "du_an": "Lane Cove House, Lane Cove, Sydney",
   "studio": "Lachlan Seegers Architect",
   "nhiep_anh": "Rory Gardiner",
-  "cau_moc": "Tường đã sơn trắng hết, sao căn bếp nhỏ vẫn thấy chật?",
+  "cau_moc": "Phòng nhỏ mà cần tủ lớn, chọn màu gì để tủ không choán chỗ?",
   "nguon": [
    "Kilmer & Kilmer (2014) Designing Interiors 2nd ed., Wiley, ch. 5 (theo bài)"
   ],
   "trang_thai": "giai_doan_A_cho_duyet",
   "thu_muc": "inbox/out/2026-10-31_tu-trang-kin-tuong/",
   "y_bai": {
-   "muc": "Giữ tường và tủ thật sáng để chỗ hẹp trông rộng hơn",
-   "tom_tat": "Tường trắng mà bếp nhỏ vẫn chật vì đường tối (tay nắm, viền tủ, ron sẫm màu) cho mắt mốc đo khoảng cách, kéo tường lại gần; tủ bếp Lane Cove kín tường, cánh phẳng trắng, không tay nắm lộ ra, khe mảnh thành bức tường trắng lùi ra sau đảo bếp; sơn trắng mới là một nửa, nửa còn lại là bớt đường tối"
+   "muc": "Giữ tường và tủ thật sáng để chỗ hẹp trông rộng hơn (bài học 2) + câu sofa đỏ/xanh (mục 'Màu sơn có thể làm…') + 'món đồ màu ấm, rực trông lớn hơn chính nó' (bài học 3, chỉ câu nguồn)",
+   "tom_tat": "Sofa đỏ trông to hơn sofa xanh y hệt; màu ấm làm đồ nổi lên khỏi nền, đồ cùng màu nền thì chìm vào nền; Lane Cove: dãy tủ trắng kín tường, cánh phẳng, không tay nắm lộ ra, khe mảnh, chìm vào tường trắng; phòng nhỏ cần tủ lớn thì chọn tủ cùng màu sáng với tường"
   },
-  "ban": "làm lại lần 2 theo góp ý chủ Trang (câu móc phổ biến, lời 188 từ)"
+  "ban": "làm lại lần 3 theo hai góp ý của chủ Trang (câu móc phổ biến, lời ngắn; ý hiểu ngay, đa số đồng thuận), lời 197 từ"
  }
 ]

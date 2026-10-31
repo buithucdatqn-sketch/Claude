@@ -1,106 +1,98 @@
 [
  {
   "blk": 1,
-  "t": "0–4.45s",
-  "head": "Bếp nhỏ, tường trắng, vẫn chật",
-  "loi": "Tường đã sơn trắng hết, sao căn bếp nhỏ vẫn thấy chật?",
-  "tts": "Tường đã sơn trắng hết, sao căn bếp nhỏ vẫn thấy chật?",
+  "t": "0–5.08s",
+  "head": "Phòng nhỏ, tủ lớn, chọn màu gì?",
+  "loi": "Phòng nhỏ mà cần tủ lớn, chọn màu gì để tủ không choán chỗ?",
+  "tts": "Phòng nhỏ mà cần tủ lớn, chọn màu gì để tủ không choán chỗ?",
   "part": "A"
  },
  {
   "blk": 2,
-  "t": "4.45–11.71s",
+  "t": "5.08–11.09s",
   "head": "Theo Kilmer & Kilmer (2014)",
-  "loi": "Hai tác giả Kilmer viết rằng màu sáng trông như lùi ra xa, còn màu tối trông như tiến lại gần.",
-  "tts": "Hai tác giả Kin-mơ viết rằng màu sáng trông như lùi ra xa, còn màu tối trông như tiến lại gần.",
+  "loi": "Hai tác giả Kilmer viết rằng món đồ màu ấm và rực trông to hơn chính nó.",
+  "tts": "Hai tác giả Kin-mơ viết rằng món đồ màu ấm và rực trông to hơn chính nó.",
+  "part": "B"
+ },
+ {
+  "blk": 2,
+  "t": "11.09–17.1s",
+  "head": "Sofa đỏ trông to hơn sofa xanh",
+  "loi": "Một chiếc sofa bọc vải đỏ thường trông to hơn chiếc sofa y hệt bọc vải xanh.",
+  "tts": "Một chiếc sô-pha bọc vải đỏ thường trông to hơn chiếc sô-pha y hệt bọc vải xanh.",
   "part": "B"
  },
  {
   "blk": 3,
-  "t": "11.71–17.1s",
-  "head": "Những đường tối trên mặt tường",
-  "loi": "Bài phân tích của tụi mình để ý tới những đường tối trên mặt tường.",
-  "tts": "Bài phân tích của tụi mình để ý tới những đường tối trên mặt tường.",
+  "t": "17.1–24.05s",
+  "head": "Màu ấm làm đồ nổi lên khỏi nền",
+  "loi": "Bài phân tích của tụi mình giải thích rằng màu ấm làm món đồ nổi lên khỏi nền phía sau.",
+  "tts": "Bài phân tích của tụi mình giải thích rằng màu ấm làm món đồ nổi lên khỏi nền phía sau.",
   "part": "C"
  },
  {
   "blk": 3,
-  "t": "17.1–21.24s",
-  "head": "Những đường tối trên mặt tường",
-  "loi": "Đó là tay nắm, viền tủ hay đường ron sẫm màu.",
-  "tts": "Đó là tay nắm, viền tủ hay đường ron sẫm màu.",
-  "part": "C"
- },
- {
-  "blk": 3,
-  "t": "21.24–27.56s",
-  "head": "Đường tối kéo bức tường lại gần",
-  "loi": "Mỗi đường như vậy cho mắt một mốc để đo khoảng cách, nên kéo bức tường lại gần.",
-  "tts": "Mỗi đường như vậy cho mắt một mốc để đo khoảng cách, nên kéo bức tường lại gần.",
+  "t": "24.05–30.38s",
+  "head": "Cùng màu với nền thì chìm vào nền",
+  "loi": "Ngược lại, món đồ cùng màu với nền thì chìm vào nền, không còn giống một món đồ.",
+  "tts": "Ngược lại, món đồ cùng màu với nền thì chìm vào nền, không còn giống một món đồ.",
   "part": "C"
  },
  {
   "blk": 4,
-  "t": "27.56–33.26s",
+  "t": "30.38–35.45s",
   "head": "Lane Cove House, Sydney",
-  "loi": "Ở căn bếp nhà Lane Cove tại Sydney, những đường tối ấy gần như không còn.",
-  "tts": "Ở căn bếp nhà Lên Cô-vơ tại Xít-ni, những đường tối ấy gần như không còn.",
+  "loi": "Căn bếp nhà Lane Cove ở Sydney cho tủ chìm vào tường như thế.",
+  "tts": "Căn bếp nhà Lên Cô-vơ ở Xít-ni cho tủ chìm vào tường như thế.",
   "part": "D"
  },
  {
   "blk": 5,
-  "t": "33.26–37.71s",
+  "t": "35.45–40.21s",
   "head": "Tủ kín tường, cánh phẳng và trắng",
-  "loi": "Dãy tủ cao kín cả bức tường, cánh tủ phẳng và trắng.",
-  "tts": "Dãy tủ cao kín cả bức tường, cánh tủ phẳng và trắng.",
+  "loi": "Dãy tủ cao kín cả bức tường, cánh phẳng và trắng như tường.",
+  "tts": "Dãy tủ cao kín cả bức tường, cánh phẳng và trắng như tường.",
   "part": "D"
  },
  {
   "blk": 5,
-  "t": "37.71–43.1s",
+  "t": "40.21–45.29s",
   "head": "Không tay nắm, khe rất mảnh",
-  "loi": "Cánh tủ không có tay nắm lộ ra, còn khe giữa các cánh rất mảnh.",
-  "tts": "Cánh tủ không có tay nắm lộ ra, còn khe giữa các cánh rất mảnh.",
+  "loi": "Cánh tủ không có tay nắm lộ ra, khe giữa các cánh rất mảnh.",
+  "tts": "Cánh tủ không có tay nắm lộ ra, khe giữa các cánh rất mảnh.",
   "part": "D"
  },
  {
   "blk": 6,
-  "t": "43.1–49.11s",
-  "head": "Mắt không còn mốc để đo",
-  "loi": "Mắt không còn mốc nào để đo, nên cả dãy tủ trông như một bức tường trắng.",
-  "tts": "Mắt không còn mốc nào để đo, nên cả dãy tủ trông như một bức tường trắng.",
-  "part": "D"
- },
- {
-  "blk": 6,
-  "t": "49.11–53.87s",
-  "head": "Bức tường trắng lùi ra sau",
-  "loi": "Trong ảnh này, bức tường trắng ấy lùi hẳn ra sau đảo bếp.",
-  "tts": "Trong ảnh này, bức tường trắng ấy lùi hẳn ra sau đảo bếp.",
+  "t": "45.29–52.24s",
+  "head": "Dãy tủ chìm vào tường",
+  "loi": "Nhìn trong ảnh, cả dãy tủ chìm vào tường, nhường chỗ cho đảo đá và bàn ăn đứng phía trước.",
+  "tts": "Nhìn trong ảnh, cả dãy tủ chìm vào tường, nhường chỗ cho đảo đá và bàn ăn đứng phía trước.",
   "part": "D"
  },
  {
   "blk": 7,
-  "t": "53.87–57.7s",
-  "head": "Sơn trắng mới là một nửa",
-  "loi": "Vậy với bếp nhỏ, sơn trắng mới là một nửa.",
-  "tts": "Vậy với bếp nhỏ, sơn trắng mới là một nửa.",
+  "t": "52.24–57.94s",
+  "head": "Tủ lớn chọn cùng màu sáng với tường",
+  "loi": "Vậy phòng nhỏ mà cần tủ lớn thì nên chọn tủ cùng màu sáng với tường.",
+  "tts": "Vậy phòng nhỏ mà cần tủ lớn thì nên chọn tủ cùng màu sáng với tường.",
   "part": "H"
  },
  {
   "blk": 7,
-  "t": "57.7–62.46s",
-  "head": "Nửa còn lại là bớt đường tối",
-  "loi": "Nửa còn lại là bớt những đường tối trên tường và mặt tủ.",
-  "tts": "Nửa còn lại là bớt những đường tối trên tường và mặt tủ.",
+  "t": "57.94–63.95s",
+  "head": "Tủ vẫn to, nhưng chìm vào tường",
+  "loi": "Tủ vẫn to như cũ, nhưng chìm vào tường chứ không nổi lên như chiếc sofa đỏ.",
+  "tts": "Tủ vẫn to như cũ, nhưng chìm vào tường chứ không nổi lên như chiếc sô-pha đỏ.",
   "part": "H"
  },
  {
   "blk": 8,
-  "t": "62.46–70.35s",
+  "t": "63.95–72.78s",
   "head": "end",
-  "loi": "Bài phân tích về màu tiến, màu lùi từ sách của hai tác giả Kilmer, mọi người xem ở phần bình luận nha.",
-  "tts": "Bài phân tích về màu tiến, màu lùi từ sách của hai tác giả Kin-mơ, mọi người xem ở phần bình luận nha.",
+  "loi": "Bài phân tích về màu làm đồ trông to hay nhỏ, từ sách của hai tác giả Kilmer, mọi người xem ở phần bình luận nha.",
+  "tts": "Bài phân tích về màu làm đồ trông to hay nhỏ, từ sách của hai tác giả Kin-mơ, mọi người xem ở phần bình luận nha.",
   "part": "I"
  }
 ]

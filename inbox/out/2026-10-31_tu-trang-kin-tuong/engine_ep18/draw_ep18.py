@@ -125,6 +125,8 @@ L = {}
 w = 9
 # an: phòng ăn nhìn thẳng vào dãy tủ (2500x2000). Cảnh "Dãy tủ cao từ sàn lên tới mép trần…": tủ cao kịch trần, khe mảnh
 L["an"] = dict(
+    mau=poly([(660, 725), (1650, 718), (1655, 1185), (662, 1190)], w, DASH(w), 1.4, 12),
+    lab_mau=label("tủ cùng màu tường", (720, 780), 70),
     cao=arrow([(770, 1195), (772, 960), (770, 720)], w, DASH(w), 1.2, 1, head=46),
     lab_cao=label("cao kín/cả bức tường", (810, 800), 66),
     khe=arrow([(1330, 960), (1365, 1010), (1385, 1080)], w, DASH(w), 1.0, 2, head=40),
@@ -133,11 +135,11 @@ L["an"] = dict(
 # bep: bếp, dãy tủ trắng và đảo đá (2000x2500). Cảnh "Mặt tủ gần như không còn đường tối nào…"; cảnh "Bức tường trắng ấy lùi ra xa…"
 L["bep"] = dict(
     khoi=stroke([(570, 900), (572, 1100), (1150, 1100), (1750, 1097), (1752, 900)], w, DASH(w), 1.4, 3, smooth=False)[0],
-    lab_khoi=label("như một bức tường trắng", (520, 1150), 70),
+    lab_khoi=label("dãy tủ chìm vào tường", (560, 1150), 70),
     lui=arrow([(1010, 1010), (1160, 950), (1320, 900)], w, DASH(w), 1.2, 4, head=46),
     lab_lui=label("tủ lùi ra sau", (570, 905), 70),
-    dao=arrow([(820, 1430), (930, 1480), (1020, 1560)], w, DASH(w), 1.2, 5, head=46),
-    lab_dao=label("đảo đá, bàn ăn ở phía trước", (420, 1320), 66),
+    dao=arrow([(960, 1420), (1060, 1470), (1140, 1550)], w, DASH(w), 1.2, 5, head=46),
+    lab_dao=label("đảo đá, bàn ăn ở phía trước", (560, 1320), 66),
 )
 # hanh: hành lang, hai tường dọc sáng và trơn (1996x2500). Cảnh lời khuyên hành lang nhà ống
 L["hanh"] = dict(

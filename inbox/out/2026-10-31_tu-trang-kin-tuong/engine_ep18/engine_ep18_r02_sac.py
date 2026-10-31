@@ -16,7 +16,7 @@ from silhouette import loose_contour  # noqa: E402
 
 SRC = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "source.png")
 OUT = sys.argv[2] if len(sys.argv) > 2 else HERE
-os.makedirs(os.path.join(OUT, "frames_r02_sang"), exist_ok=True)
+os.makedirs(os.path.join(OUT, "frames_r02_sac"), exist_ok=True)
 
 W, H, SS = 1080, 1920, 2
 FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
@@ -32,7 +32,7 @@ SKETCH = True  # True: sơ đồ (sketch) hiện ra theo từng nét trên nền
 END_LINES = [
     (1124, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1170, "và cách chọn đồ decor", 40, 215),
-    (1252, "Bài phân tích về màu tiến, màu lùi", 54, 240),
+    (1252, "Bài phân tích về màu làm đồ to, nhỏ", 54, 240),
     (1314, "từ sách của Kilmer & Kilmer", 48, 240),
     (1398, "xem ở phần bình luận", 66, 255),
 ]
@@ -568,23 +568,21 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–4.45s", head="Bếp nhỏ, tường trắng, vẫn chật", vo="Tường đã sơn trắng hết, sao căn bếp nhỏ vẫn thấy chật?",
-         cam=((540, 153), 1.0, (540, 905)), dark=True, dd=[], keep=[], move="hold"),
-    dict(t="4.45–11.71s", head="Theo Kilmer & Kilmer (2014)", vo="Hai tác giả Kilmer viết rằng màu sáng trông như lùi ra xa, còn màu tối trông như tiến lại gần.",
-         cam=((540, 153), 1.0, (540, 905)), dark=False, dd=['tieu', 'mat', 'sang', 'toi'], keep=[], move="hold"),
-    dict(t="11.71–17.1s", head="Những đường tối trên mặt tường", vo="Bài phân tích của tụi mình để ý tới những đường tối trên mặt tường.",
-         cam=((540, 153), 1.0, (540, 905)), dark=False, dd=[], keep=['tieu', 'mat', 'sang', 'toi'], move="hold"),
-    dict(t="17.1–21.24s", head="Những đường tối trên mặt tường", vo="Đó là tay nắm, viền tủ hay đường ron sẫm màu.",
-         cam=((540, 153), 1.0, (540, 905)), dark=False, dd=[], keep=['tieu', 'mat', 'sang', 'toi'], move="hold"),
-    dict(t="21.24–27.56s", head="Đường tối kéo bức tường lại gần", vo="Mỗi đường như vậy cho mắt một mốc để đo khoảng cách, nên kéo bức tường lại gần.",
-         cam=((540, 153), 1.0, (540, 905)), dark=False, dd=[], keep=['tieu', 'mat', 'sang', 'toi'], move="hold"),
-    dict(t="27.56–28.06s", head="end", vo="",
+    dict(t="0–5.08s", head="Phòng nhỏ, tủ lớn, chọn màu gì?", vo="Phòng nhỏ mà cần tủ lớn, chọn màu gì để tủ không choán chỗ?",
+         cam=((540, 152), 1.0, (540, 905)), dark=True, dd=[], keep=[], move="hold"),
+    dict(t="5.08–11.09s", head="Theo Kilmer & Kilmer (2014)", vo="Hai tác giả Kilmer viết rằng món đồ màu ấm và rực trông to hơn chính nó.",
+         cam=((540, 152), 1.0, (540, 905)), dark=False, dd=['tieu', 'mat', 'am'], keep=[], move="hold"),
+    dict(t="11.09–17.1s", head="Sofa đỏ trông to hơn sofa xanh", vo="Một chiếc sofa bọc vải đỏ thường trông to hơn chiếc sofa y hệt bọc vải xanh.",
+         cam=((540, 152), 1.0, (540, 905)), dark=False, dd=['lanh'], keep=['tieu', 'mat', 'am'], move="hold"),
+    dict(t="17.1–24.05s", head="Màu ấm làm đồ nổi lên khỏi nền", vo="Bài phân tích của tụi mình giải thích rằng màu ấm làm món đồ nổi lên khỏi nền phía sau.",
+         cam=((540, 152), 1.0, (540, 905)), dark=False, dd=[], keep=['tieu', 'mat', 'am', 'lanh'], move="hold"),
+    dict(t="24.05–24.55s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1
 BOARDS = {}
 
-_P = os.path.join(HERE, "sketch_ep18_sang.npz")
+_P = os.path.join(HERE, "sketch_ep18_sac.npz")
 LAYER = dict(np.load(_P)) if os.path.isfile(_P) else {}   # toạ độ trên ảnh làm việc của run
 RAD = 0.9                              # bán kính chấm bút khi lộ lại nét gốc (px ảnh làm việc)
 RAD_SK = 0.95                          # sơ đồ vẽ dần: chấm bút phủ đúng điểm mực của sơ đồ
@@ -666,7 +664,7 @@ BOARDS["clean"] = make_board(1.0)
 frames = []
 for i in range(len(SCENES)):
     im = render_scene(i)
-    im.save(os.path.join(OUT, "frames_r02_sang", f"scene_{i + 1}.png"))
+    im.save(os.path.join(OUT, "frames_r02_sac", f"scene_{i + 1}.png"))
     frames.append(im)
 
 # ---------------- contact sheet ----------------
@@ -691,5 +689,5 @@ fy = TOP + rows * (PH + 86) + 10
 d.text((MX, fy), "Nền trắng trơn · băng keo giấy thay ghim · header AH DECODE · bỏ “Bước n”", font=F(32), fill=(255, 255, 255))
 d.text((MX, fy + 44), "Cảnh zoom kín ảnh: chữ trắng viết lên ảnh (có phủ tối nhẹ).", font=F(32), fill=(225, 220, 212))
 d.text((MX, fy + 88), "Ảnh tối ~14% ở cảnh có nét vẽ; cảnh 1, 6, 7 giữ ảnh nguyên bản.", font=F(32), fill=(225, 220, 212))
-sheet.save(os.path.join(OUT, "storyboard_r02_sang.png"))
+sheet.save(os.path.join(OUT, "storyboard_r02_sac.png"))
 print("fabric", tuple(int(x) for x in FAB), "sheet", sheet.size)

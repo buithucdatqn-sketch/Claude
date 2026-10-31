@@ -22,17 +22,17 @@ W, H, SS = 1080, 1920, 2
 FONT = os.path.join(HERE, "PatrickHand-Regular.ttf")
 if not os.path.exists(FONT):
     FONT = os.path.join(HERE, "fonts", "PatrickHand-Regular.ttf")
-CREDIT = "Ảnh dự án: Lane Cove House · Lachlan Seegers Architect · ảnh Rory Gardiner"
+CREDIT = "Mặt bằng: Lachlan Seegers Architect (qua ArchDaily), ghi chú Giả Thuyết Kiến Trúc"
 HEAD = "AH DECODE · TỦ TRẮNG KÍN TƯỜNG"
 SCRIM = False   # True: phủ tối nhẹ dải tiêu đề, phụ đề (đã bỏ theo chủ Trang 2026-10-31)
-TAPE = False    # False: ảnh phóng phủ kín khung, không vẽ băng keo ở mép trên (chủ Trang yêu cầu 2026-10-30)
-SKETCH = False  # True: sơ đồ (sketch) hiện ra theo từng nét trên nền trắng, không thẻ ảnh, không băng keo (chủ Trang yêu cầu 2026-10-30)
+TAPE = True     # False: ảnh phóng phủ kín khung, không vẽ băng keo ở mép trên (chủ Trang yêu cầu 2026-10-30)
+SKETCH = True  # True: sơ đồ (sketch) hiện ra theo từng nét trên nền trắng, không thẻ ảnh, không băng keo (chủ Trang yêu cầu 2026-10-30)
 # Khung cuối cố định cho mọi tập (dùng cam END_SAFE): giới thiệu series AH Decode và trỏ tới bài phân tích ở phần bình luận.
 # KHÔNG có cụm "Theo dõi Fanpage" và tên Fanpage (bỏ cho bớt chữ), KHÔNG nhắc tập sau. (y, chữ, cỡ, độ đậm)
 END_LINES = [
     (1124, "AH Decode · series phân tích nguyên tắc thiết kế", 40, 215),
     (1170, "và cách chọn đồ decor", 40, 215),
-    (1252, "Bài phân tích về màu tiến, màu lùi", 54, 240),
+    (1252, "Bài phân tích về màu làm đồ to, nhỏ", 54, 240),
     (1314, "từ sách của Kilmer & Kilmer", 48, 240),
     (1398, "xem ở phần bình luận", 66, 255),
 ]
@@ -569,19 +569,17 @@ OBJ = {}
 
 WIDE = WIDE_SAFE
 SCENES = [
-    dict(t="0–5.7s", head="Lane Cove House, Sydney", vo="Ở căn bếp nhà Lane Cove tại Sydney, những đường tối ấy gần như không còn.",
-         cam=((1150, 960), 2.65, (540, 925)), dark=False, dd=[], keep=[], move="hold"),
-    dict(t="5.7–10.15s", head="Tủ kín tường, cánh phẳng và trắng", vo="Dãy tủ cao kín cả bức tường, cánh tủ phẳng và trắng.",
-         cam=((1150, 960), 2.65, (540, 925)), dark=True, dd=['cao', 'lab_cao'], keep=[], move="pan_r"),
-    dict(t="10.15–15.54s", head="Không tay nắm, khe rất mảnh", vo="Cánh tủ không có tay nắm lộ ra, còn khe giữa các cánh rất mảnh.",
-         cam=((1150, 960), 2.65, (540, 925)), dark=True, dd=['khe', 'lab_khe'], keep=[], move="hold"),
-    dict(t="15.54–16.04s", head="end", vo="",
+    dict(t="0–6.33s", head="Cùng màu với nền thì chìm vào nền", vo="Ngược lại, món đồ cùng màu với nền thì chìm vào nền, không còn giống một món đồ.",
+         cam=((460, 450), 0.75, (540, 905)), dark=True, dd=[], keep=[], move="hold"),
+    dict(t="6.33–11.4s", head="Lane Cove House, Sydney", vo="Căn bếp nhà Lane Cove ở Sydney cho tủ chìm vào tường như thế.",
+         cam=((460, 450), 0.75, (540, 905)), dark=False, dd=['mb', 'tu'], keep=[], move="hold"),
+    dict(t="11.4–11.9s", head="end", vo="",
          cam=END_SAFE, dark=False, dd=[], keep=[], move="hold"),
 ]
 END = len(SCENES) - 1
 BOARDS = {}
 
-_P = os.path.join(HERE, "doodle_ep18_an.npz")
+_P = os.path.join(HERE, "sketch_ep18_mb.npz")
 LAYER = dict(np.load(_P)) if os.path.isfile(_P) else {}   # toạ độ trên ảnh làm việc của run
 RAD = 0.9                              # bán kính chấm bút khi lộ lại nét gốc (px ảnh làm việc)
 RAD_SK = 0.95                          # sơ đồ vẽ dần: chấm bút phủ đúng điểm mực của sơ đồ
@@ -752,7 +750,7 @@ proc = subprocess.Popen(
     ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
      "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo", "-t", f"{TOTAL:.2f}",
      "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-pix_fmt", "yuv420p", "-movflags", "+faststart",
-     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "r04_an_silent.mp4")], stdin=subprocess.PIPE)
+     "-c:a", "aac", "-b:a", "128k", os.path.join(OUT, "video", "r04_mb_silent.mp4")], stdin=subprocess.PIPE)
 
 nframes = int(TOTAL * FPS)
 cur = -1

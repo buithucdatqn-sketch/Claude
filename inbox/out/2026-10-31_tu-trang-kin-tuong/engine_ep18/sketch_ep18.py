@@ -85,6 +85,12 @@ def run(src, npz, groups, join=3, dark=200, sat=60, long_frac=0.35):
 
 # ---- tập 18: (ảnh làm việc, npz ra, [(nhóm, (x0, y0, x1, y1)), ...]); tên nhóm lặp lại = nhiều khung cho cùng nhóm ----
 JOBS = [
+    ("source_sac.png", "sketch_ep18_sac.npz", [
+        ("tieu", (0, 0, 1080, 70)),                                   # "sắc"
+        ("mat", (0, 135, 222, 190)), ("mat", (392, 135, 808, 190)), ("mat", (912, 135, 1080, 190)),   # con mắt + đường nhìn
+        ("lanh", (600, 70, 1080, 305)),                               # ô xanh nhỏ, mũi tên xám, "lạnh thì lùi"
+        ("am", (0, 70, 600, 305)),                                    # ô đỏ lớn, mũi tên đỏ, "ấm thì tiến"
+    ]),
     ("source_sang.png", "sketch_ep18_sang.npz", [
         ("tieu", (0, 0, 1080, 70)),                                   # "độ sáng"
         ("mat", (0, 135, 222, 190)), ("mat", (392, 135, 808, 190)), ("mat", (912, 135, 1080, 190)),   # con mắt + đường nhìn nét đứt

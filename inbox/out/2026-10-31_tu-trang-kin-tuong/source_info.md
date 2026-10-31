@@ -5,11 +5,11 @@ Credit theo YAML của bài: Lane Cove House, Lane Cove, Sydney · Lachlan Seege
 
 | File làm việc | Ảnh trong kho | Loại | Cảnh | Cách dựng | Credit trên khung |
 |---|---|---|---|---|---|
-| `source_bep.png` 2000×2500 | anh/goc/07-goc-tu-trang-bep.jpg | ảnh thật, bếp | 1, 9–10 | phủ kín khung, zoom 2,15–2,2; nét mới `draw_ep18.py` | Ảnh dự án: Lane Cove House · Lachlan Seegers Architect · ảnh Rory Gardiner |
-| `source_an.png` 2500×2000 | anh/goc/05-goc-tran-xanh-ban-an.jpg | ảnh thật, phòng ăn nhìn thẳng dãy tủ | 7–8, 11–13 | phủ kín khung, zoom 2,65; nét mới | như trên |
-| `source_sang.png` 1080×307 | anh/01-diagram-ba-thuoc-tinh.png, cắt hàng "độ sáng" (y 1335–1950), thu nửa | sơ đồ của bài | 2–5 | SKETCH vẽ dần (`sketch_ep18.py`): "độ sáng", con mắt + đường nhìn, ô sáng, rồi ô tối | Hình: Giả Thuyết Kiến Trúc, theo Kilmer & Kilmer (2014) |
+| `source_bep.png` 2000×2500 | anh/goc/07-goc-tu-trang-bep.jpg | ảnh thật, bếp | 1, 9 | phủ kín khung, zoom 2,15–2,2; nét mới `draw_ep18.py` | Ảnh dự án: Lane Cove House · Lachlan Seegers Architect · ảnh Rory Gardiner |
+| `source_an.png` 2500×2000 | anh/goc/05-goc-tran-xanh-ban-an.jpg | ảnh thật, phòng ăn nhìn thẳng dãy tủ | 5, 7–8, 10–12 | phủ kín khung, zoom 2,65; nét mới | như trên |
+| `source_sac.png` 1080×305 | anh/01-diagram-ba-thuoc-tinh.png, cắt hàng "sắc" (y 690–1300), thu nửa | sơ đồ của bài | 2–4 | SKETCH vẽ dần (`sketch_ep18.py`): "sắc", con mắt + đường nhìn, ô đỏ lớn "ấm thì tiến", rồi ô xanh nhỏ "lạnh thì lùi" | Hình: Giả Thuyết Kiến Trúc, theo Kilmer & Kilmer (2014) |
 | `source_mb.png` 920×900 | anh/vi-tri-chup/07-vi-tri-chup.png, cắt khung mặt bằng, xoá nhãn "ảnh 03", thêm nét cam khoanh dãy tủ (`mb_ep18.py`) | mặt bằng | 6 | SKETCH vẽ dần | Mặt bằng: Lachlan Seegers Architect (qua ArchDaily), ghi chú Giả Thuyết Kiến Trúc |
 
 Không dùng: 06 (hành lang, câu hành lang đã bỏ khi rút gọn; `source_hanh.png` giữ lại cho bản cũ), 00 (chưa có), 02, 03 (mặt bằng, mặt cắt tổng, chữ nhỏ), 04, 10 (sơ đồ trần tối, độ sáng át sắc: ý khác), 08, 09, 11 (thảm đỏ, ghế da, khoang chung: ý khác). Bài 05 chưa tập nào dùng nên không trùng ảnh với tập trước.
-Lý do chọn: ảnh 07 là đúng căn bếp bài phân tích ở bài học 2; ảnh 05 nhìn thẳng cả dãy tủ, thấy rõ khe mảnh và độ cao kịch trần; sơ đồ 01 là hình của câu nguồn "sáng lùi, tối tiến".
+Lý do chọn: ảnh 07 là đúng căn bếp bài phân tích ở bài học 2; ảnh 05 nhìn thẳng cả dãy tủ, thấy rõ khe mảnh và độ cao kịch trần; sơ đồ 01 hàng "sắc" có ô đỏ lớn, ô xanh nhỏ, là hình của câu sofa đỏ to hơn sofa xanh. `source_sang.png` (hàng độ sáng) là của bản trước, không dùng.
 Hạn chế: mặt bằng là ảnh phóng từ bản nhỏ, nét hơi mờ.
