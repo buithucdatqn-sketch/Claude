@@ -5,8 +5,8 @@ Sáu mươi phần trăm là nền, gồm trần, sàn và các bức tường, 
 Ba mươi phần trăm là một khối màu phủ trọn một khu, như cả dãy tủ bếp.
 Mười phần trăm còn lại là ghế, đèn và đồ rời, phần này mới dùng màu rực nhất.
 <break time="1.2s" />
-Ở căn nhà này, trần, sàn, tường đều sáng màu, còn cả khối tủ bếp màu xanh lá đậm.
-Ngoài khối tủ ấy, màu rực nằm ở đồ rời, như chiếc xô vàng và tấm thảm xanh dương.
+Ở căn hộ này, trần, sàn, tường đều sáng màu, còn cả khối tủ bếp màu xanh dương đậm.
+Ngoài khối tủ ấy, màu rực nằm ở đồ rời, như bộ ghế ăn đỏ cam và mấy bức tranh nhỏ.
 <break time="1.2s" />
 Chia đúng tỷ lệ vẫn chưa đủ, vì khối màu chỉ tách khỏi nền khi đủ chênh lệch độ sáng.
 <break time="1.2s" />

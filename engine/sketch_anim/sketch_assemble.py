@@ -120,8 +120,9 @@ def jitter(pts, seed, amp=2.6, step=14):
     out = np.array(out, np.float32)
     ns = r.normal(0, amp, out.shape).astype(np.float32)
     k = np.array([1, 2, 3, 2, 1], np.float32); k /= k.sum()
-    for c in range(2):
-        ns[:, c] = np.convolve(ns[:, c], k, mode='same')
+    if len(ns) >= len(k):                       # nét quá ngắn thì giữ nguyên độ rung, không làm mượt
+        for c in range(2):
+            ns[:, c] = np.convolve(ns[:, c], k, mode='same')
     return out + ns * 1.6
 
 

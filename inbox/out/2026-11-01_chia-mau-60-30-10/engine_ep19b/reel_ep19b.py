@@ -13,9 +13,9 @@ import sketch_reel  # noqa: E402
 
 OUT = os.path.dirname(HERE)
 P = lambda *a: os.path.join(OUT, *a)
-CREDIT = 'Ảnh dự án: First House · HANGHAR · ảnh Luis Díaz Díaz'
+CREDIT = 'Ảnh dự án: Curva Apartment, Brasília · Isabela Bandeira + Gabriela Lauria · ảnh Júlia Tótoli'
 H22 = 'Hình 2.2 · sổ tay AH+, mục 2.4 · kinh nghiệm hành nghề'
-LOI = open(P('ban_nhap', 'loi_v3.txt'), encoding='utf8').read().strip().split('\n')
+LOI = open(P('ban_nhap', 'loi_v4.txt'), encoding='utf8').read().strip().split('\n')
 
 
 def R(x0, y0, x1, y1):
@@ -45,33 +45,35 @@ K60 = ['plan', 'lg60']
 K30 = K60 + ['g_top', 'g_bep', 'lg30']
 K10 = K30 + ['r_sq', 'r_chairs', 'lg10']
 
-# ảnh _15 (2000x2667): nền và khối tủ xanh
-NEN15 = [[(0, 470), (560, 540), (920, 560)], [(1640, 625), (2000, 700)], [(0, 2090), (640, 1625)], [(1640, 1560), (2000, 1520)]]
-ISLAND = [R(925, 535, 1635, 2440)]
-COUNTER = [[(0, 1345), (625, 1322), (632, 1625), (0, 2090)]]
-# ảnh _12 (2000x1500): đồ rời
-BUCKET = [[(55, 1180), (285, 1175), (275, 1465), (65, 1468), (55, 1180)], [(110, 1268), (175, 1302), (255, 1282)]]
-BOOKS = [R(332, 1300, 548, 1390), [(345, 1265), (520, 1235), (545, 1300)]]
-RUG = [[(1095, 1195), (1625, 1195), (1990, 1492), (1110, 1498), (1095, 1195)]]
-TEAPOT = [ell(1270, 1302, 80, 52)]
-SPONGE = [ell(1395, 1365, 26, 20)]
-# ảnh _13 (2000x1333): hai ghế vàng
-CHAIR1 = [[(1095, 812), (1130, 775), (1200, 760), (1265, 768), (1300, 822)], [(1095, 812), (1180, 900), (1305, 940), (1300, 822)],
-          [(1100, 815), (1262, 1155)], [(1295, 825), (1112, 1095)], [(1305, 965), (1378, 1112)]]
-CHAIR2 = [[(1750, 878), (1915, 935)], [(1594, 1011), (1745, 1025), (1900, 1085)], [(1752, 880), (1606, 1190)],
-          [(1912, 938), (1930, 1294)], [(1910, 945), (1717, 1289)], [(1640, 1050), (1880, 1240)]]
+# Curva Apartment (ArchDaily): _7 bếp (2000x1333), _12 góc ăn (1365x2048), _2 phòng khách (2000x1333), _9 quầy bếp (1365x2048)
+WALL7 = [R(1530, 255, 2000, 950)]
+NAVY7 = [R(690, 262, 1500, 1095), [(0, 1135), (690, 850), (780, 850), (780, 1333)], [(1405, 1333), (1420, 1080), (1600, 990), (2000, 960)]]
+TABLE = [ell(711, 1244, 360, 55), [(560, 1300), (600, 1700), (840, 1700), (860, 1300)]]
+CH_FL = [ell(333, 1327, 95, 113), [(320, 1410), (600, 1420), (600, 1500), (330, 1500), (320, 1410)],
+         [(240, 1500), (225, 1840)], [(393, 1520), (395, 1840)], [(600, 1500), (640, 1740)]]
+CH_FR = [ell(1083, 1327, 85, 113), [(810, 1420), (1080, 1410), (1090, 1500), (820, 1510), (810, 1420)],
+         [(800, 1510), (785, 1745)], [(1060, 1510), (1048, 1840)], [(1150, 1430), (1190, 1800)]]
+CH_BL = [ell(422, 1200, 62, 70), [(360, 1380), (355, 1560)]]
+CH_BR = [ell(940, 1195, 62, 68), [(990, 1380), (1000, 1500)]]
+PRINTS = [R(60, 781, 233, 1029), R(255, 795, 400, 1020), R(425, 810, 552, 1018)]
+ARM = [[(1105, 800), (1130, 760), (1210, 755), (1245, 800), (1230, 860), (1120, 870), (1105, 800)], [(1085, 880), (1070, 935)], [(1200, 880), (1210, 935)]]
+STOOLS = [ell(1610, 1075, 100, 38), [(1530, 1090), (1500, 1320)], [(1690, 1090), (1714, 1320)],
+          ell(1790, 1165, 90, 42), [(1720, 1180), (1702, 1330)]]
+NAVY9 = [R(775, 700, 1365, 1450), [(0, 1300), (1050, 1300), (1100, 1380), (1060, 1640), (760, 1650), (760, 1500), (0, 1480)]]
 
 EP = dict(
     HEAD='AH DECODE · CHIA MÀU 60-30-10',
     VIDEO='reel_chia-mau-60-30-10_silent.mp4',
     IMGS=dict(
-        f15=dict(path=P('original', 'archdaily-first-house', 'HANGHAR_FirstHouse_15.jpg'), credit=CREDIT),
-        f12=dict(path=P('source_f12.png'), empty=P('empty_f12.png'), credit=CREDIT),
-        f13=dict(path=P('original', 'archdaily-first-house', 'HANGHAR_FirstHouse_13.jpg'), credit=CREDIT),
+        c10=dict(path=P('original', 'archdaily-curva', 'apartamento-curva-isabela-bandeira-plus-gabriela-lauria_10.jpg'), credit=CREDIT),
+        c7=dict(path=P('original', 'archdaily-curva', 'apartamento-curva-isabela-bandeira-plus-gabriela-lauria_7.jpg'), credit=CREDIT),
+        c12=dict(path=P('source_c12.png'), empty=P('empty_c12.png'), credit=CREDIT),
+        c2=dict(path=P('original', 'archdaily-curva', 'apartamento-curva-isabela-bandeira-plus-gabriela-lauria_2.jpg'), credit=CREDIT),
+        c9=dict(path=P('original', 'archdaily-curva', 'apartamento-curva-isabela-bandeira-plus-gabriela-lauria_9.jpg'), credit=CREDIT),
         h22=dict(kind='diagram', path=P('original', 'so-tay', 'hinh-2-2-60-30-10.png'), crop=(0, OFFY, 648, 665), up=UP, groups=GROUPS),
     ),
     SCENES=[
-        dict(img='f15', fit=True, cam=(1000, 1333, 3556), cam1=(1000, 1333, 3420), box='top', sub=LOI[0], src=CREDIT),
+        dict(img='c10', fit=True, cam=(1000, 666, 3556), cam1=(1000, 666, 3420), box='top', sub=LOI[0], src=CREDIT),
         dict(img='h22', cam=DC(), cam1=DC(k=1.47), box='diagram', sub=LOI[1], src=H22, draw=[('plan', 0.3, 3.2)]),
         dict(img='h22', cam=DC(k=1.47), cam1=DC(k=1.47), box='diagram', sub=LOI[2], src=H22, keep=['plan'],
              draw=[('lg60', 0.5, 2.2)]),
@@ -79,23 +81,20 @@ EP = dict(
              draw=[('g_top', 0.4, 1.5), ('g_bep', 1.3, 2.3), ('lg30', 2.1, 3.3)]),
         dict(img='h22', cam=DC(k=1.47), cam1=DC(k=1.47), box='diagram', sub=LOI[4], src=H22, keep=K30,
              draw=[('r_sq', 0.4, 1.0), ('r_chairs', 0.9, 2.5), ('lg10', 2.3, 3.5)]),
-        dict(img='f15', fit=True, cam=(1000, 1333, 3420), cam1=(1000, 1333, 3300), box='top', sub=LOI[5], src=CREDIT,
-             objs=[dict(t=0.5, d=(0, -900), rot=10, strokes=NEN15, color='ink'),
-                   dict(t=1.6, d=(1000, 300), rot=-18, strokes=ISLAND), dict(t=2.3, d=(-1000, 400), rot=20, strokes=COUNTER)]),
-        dict(img='f12', fit=True, empty=True, real=(4.3, 5.1), cam=(1000, 750, 3556), cam1=(1000, 750, 3450), box='top', sub=LOI[6], src=CREDIT,
-             objs=[dict(t=0.6, d=(-900, 300), rot=-24, strokes=BUCKET, color='ink'),
-                   dict(t=1.2, d=(-700, 600), rot=18, strokes=BOOKS, color='ink'),
-                   dict(t=2.9, d=(900, 500), rot=20, strokes=RUG, color='ink'),
-                   dict(t=3.4, d=(600, -700), rot=-16, strokes=TEAPOT, color='ink'),
-                   dict(t=3.7, d=(700, 400), rot=30, strokes=SPONGE, color='ink')],
-             fade_objs=(4.6, 5.3)),
+        dict(img='c7', fit=True, cam=(1000, 666, 3556), cam1=(1000, 666, 3420), box='top', sub=LOI[5], src=CREDIT,
+             objs=[dict(t=0.5, d=(900, -500), rot=12, strokes=WALL7, color='ink'), dict(t=1.5, d=(-900, 400), rot=-16, strokes=NAVY7)]),
+        dict(img='c12', fit=True, empty=True, real=(4.4, 5.2), cam=(683, 1024, 2427), cam1=(683, 1024, 2380), box='top', sub=LOI[6], src=CREDIT,
+             objs=[dict(t=0.5, d=(0, 900), rot=10, strokes=TABLE, color='ink'),
+                   dict(t=1.1, d=(-900, 500), rot=-22, strokes=CH_FL, color='ink'), dict(t=1.5, d=(900, 500), rot=24, strokes=CH_FR, color='ink'),
+                   dict(t=1.9, d=(-800, -400), rot=-18, strokes=CH_BL, color='ink'), dict(t=2.3, d=(800, -400), rot=18, strokes=CH_BR, color='ink'),
+                   dict(t=2.8, d=(-700, -600), rot=-14, strokes=PRINTS, color='ink')],
+             fade_objs=(4.7, 5.4)),
         dict(img='h22', cam=DC(k=1.47), cam1=DC(k=1.47), box='diagram', sub=LOI[7], src=H22 + ' · mốc 30 theo Dulux Trade',
              keep=K10, draw=[('lrv', 0.6, 2.8)]),
-        dict(img='f13', fit=True, cam=(1000, 666, 3556), cam1=(1000, 666, 3450), box='top', sub=LOI[8], src=CREDIT,
-             objs=[dict(t=0.8, d=(-900, 300), rot=-22, strokes=CHAIR1, color='ink'),
-                   dict(t=1.5, d=(900, 300), rot=24, strokes=CHAIR2, color='ink')]),
-        dict(img='f15', fit=True, cam=(1150, 1400, 2900), cam1=(1150, 1400, 2800), box='top', sub=LOI[9], src=CREDIT,
-             objs=[dict(t=0.4, d=(0, 900), rot=12, strokes=ISLAND)]),
+        dict(img='c2', fit=True, cam=(1000, 666, 3556), cam1=(1000, 666, 3420), box='top', sub=LOI[8], src=CREDIT,
+             objs=[dict(t=0.8, d=(0, -900), rot=16, strokes=ARM, th=9), dict(t=1.5, d=(900, 400), rot=-20, strokes=STOOLS, th=9)]),
+        dict(img='c9', fit=True, cam=(683, 1024, 2427), cam1=(700, 1060, 2300), box='top', sub=LOI[9], src=CREDIT,
+             objs=[dict(t=0.5, d=(900, 400), rot=14, strokes=NAVY9)]),
         dict(img='endv', endvideo=True, sub=LOI[10]),
     ],
     TAIL=1.0,

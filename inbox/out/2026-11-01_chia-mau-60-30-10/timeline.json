@@ -1,6 +1,6 @@
 [
  {
-  "img": "f15",
+  "img": "c10",
   "sub": "Thích nhà có màu nhưng sợ rối mắt, vậy thì nên chia màu thế nào?",
   "_t0": 0.0,
   "_dur": 5.3875
@@ -30,39 +30,39 @@
   "_dur": 6.325
  },
  {
-  "img": "f15",
-  "sub": "Ở căn nhà này, trần, sàn, tường đều sáng màu, còn cả khối tủ bếp màu xanh lá đậm.",
+  "img": "c7",
+  "sub": "Ở căn hộ này, trần, sàn, tường đều sáng màu, còn cả khối tủ bếp màu xanh dương đậm.",
   "_t0": 29.125,
   "_dur": 6.6375
  },
  {
-  "img": "f12",
-  "sub": "Ngoài khối tủ ấy, màu rực nằm ở đồ rời, như chiếc xô vàng và tấm thảm xanh dương.",
+  "img": "c12",
+  "sub": "Ngoài khối tủ ấy, màu rực nằm ở đồ rời, như bộ ghế ăn đỏ cam và mấy bức tranh nhỏ.",
   "_t0": 35.7625,
-  "_dur": 6.6375
+  "_dur": 7.2625
  },
  {
   "img": "h22",
   "sub": "Chia đúng tỷ lệ vẫn chưa đủ, vì khối màu chỉ tách khỏi nền khi đủ chênh lệch độ sáng.",
-  "_t0": 42.400000000000006,
+  "_t0": 43.025000000000006,
   "_dur": 6.95
  },
  {
-  "img": "f13",
+  "img": "c2",
   "sub": "Vậy muốn nhà có màu mà không rối mắt, hãy để nền sáng và giữ màu rực cho vài món nhỏ.",
-  "_t0": 49.35000000000001,
+  "_t0": 49.97500000000001,
   "_dur": 7.2625
  },
  {
-  "img": "f15",
+  "img": "c9",
   "sub": "Còn khối màu của mỗi khu thì chọn đậm hẳn so với nền.",
-  "_t0": 56.61250000000001,
+  "_t0": 57.23750000000001,
   "_dur": 4.7625
  },
  {
   "img": "endv",
   "sub": "Cách chia màu này có trong sổ tay chọn màu của tụi mình, mọi người xem ở phần bình luận nha.",
-  "_t0": 61.375000000000014,
+  "_t0": 62.000000000000014,
   "_dur": 7.2625
  }
 ]

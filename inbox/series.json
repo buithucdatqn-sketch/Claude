@@ -743,16 +743,17 @@
   },
   "y_bai": {
    "muc": "Chương 2 mục 2.4 'Quy tắc 60-30-10 trong phân bổ diện tích màu' + checklist 2.6 + Hình 2.2",
-   "tom_tat": "60% nền sáng (trần, sàn, tường), 30% một khối màu phủ trọn một khu (cả dãy tủ bếp), 10% đồ rời dùng màu rực nhất; tỷ lệ chưa đủ, khối màu phải chênh đủ độ sáng với nền (mốc LRV 30 điểm, Dulux Trade, trên khung); First House: khối tủ xanh lá đậm, xô vàng, thảm xanh dương, ghế vàng"
+   "tom_tat": "60% nền sáng (trần, sàn, tường), 30% một khối màu phủ trọn một khu (cả dãy tủ bếp), 10% đồ rời dùng màu rực nhất; tỷ lệ chưa đủ, khối màu phải chênh đủ độ sáng với nền (mốc LRV 30 điểm, Dulux Trade, trên khung); Curva Apartment: khối tủ bếp xanh dương đậm, bộ ghế ăn đỏ cam, tranh, ghế bành vàng"
   },
   "cau_moc": "Thích nhà có màu nhưng sợ rối mắt, vậy thì nên chia màu thế nào?",
   "anh_kho": [
-   "ArchDaily First House / HANGHAR, ảnh Luis Díaz Díaz: _15 (bếp đảo xanh, ảnh chính), _12 (phòng trống lắp xô, thảm), _13 (hai ghế vàng); xem original/archdaily-first-house/urls.txt",
-   "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/03-chuong-2-khong-gian-mo.pdf · pdfimages ảnh 7 (Hình 2.2, vẽ dần theo tầng)"
+   "ArchDaily Curva Apartment / Isabela Bandeira + Gabriela Lauria, ảnh Júlia Tótoli: _10 (mở), _7 (bếp, khối tủ), _12 (góc ăn trống lắp bàn, ghế, tranh), _2 (ghế bành, ghế quầy), _9 (quầy); xem original/archdaily-curva/urls.txt",
+   "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/03-chuong-2-khong-gian-mo.pdf · Hình 2.2 (vẽ dần theo tầng)",
+   "original/chu-trang/AH_mockup_tablet.mp4 (khung cuối, dùng lại từ tập 14)"
   ],
   "phong_cach": "sketch lắp ráp (mục 00b), nét vẽ là đối tượng chính của câu; engine/sketch_anim/sketch_reel.py",
   "thu_muc": "inbox/out/2026-11-01_chia-mau-60-30-10/",
   "trang_thai": "cho_ghi_am",
-  "ghi_chu": "Bản 2 của tập 19 theo góp ý chủ Trang. Hai lượt chấm độc lập (v1 sai ảnh, chốt lặp; v2 đạt nhưng 214 từ; v3 bỏ một câu, 195 từ). Có video xem trước không tiếng."
+  "ghi_chu": "Bản 2 của tập 19 theo góp ý chủ Trang. Hai lượt chấm độc lập (v1 sai ảnh, chốt lặp; v2 đạt nhưng 214 từ; v3 bỏ một câu, 195 từ). Có video xem trước không tiếng. | Góp ý chủ Trang 2026-11-01: ảnh zoom quá cận (đổi sang trọn bề ngang), khung cuối thiếu mockup sổ tay (đã thêm); First House 'không giống nhà ở… phòng trống hoác' → đổi ví dụ sang Curva Apartment, lời đổi hai câu tả ảnh (197 từ)."
  }
 ]

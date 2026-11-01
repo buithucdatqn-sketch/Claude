@@ -9,8 +9,8 @@ while not os.path.exists(os.path.join(REPO, 'engine', 'sketch_anim', 'sketch_ree
     REPO = os.path.dirname(REPO)
 sys.path.insert(0, os.path.join(REPO, 'engine', 'sketch_anim'))
 from sketch_reel import cam_matrix, font, wrap, W, H  # noqa: E402
-img = cv2.imread(os.path.join(OUT, 'original/archdaily-first-house/HANGHAR_FirstHouse_15.jpg'))
-M, s = cam_matrix(1000, 1500, 2400, *img.shape[:2])
+img = cv2.imread(os.path.join(OUT, 'original/archdaily-curva/apartamento-curva-isabela-bandeira-plus-gabriela-lauria_10.jpg'))
+M, s = cam_matrix(1350, 700, 1333, *img.shape[:2])
 f = cv2.warpAffine(img, M, (W, H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
 im = Image.fromarray(f[..., ::-1]); d = ImageDraw.Draw(im)
 x, y, w = 60, 336, 960
