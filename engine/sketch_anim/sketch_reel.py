@@ -26,6 +26,7 @@ FONT = os.path.join(HERE, '..', 'PatrickHand-Regular.ttf')
 W, H, FPS = 1080, 1920, 30
 CREAM = (205, 236, 246)       # BGR
 ORANGE = (43, 86, 224)        # BGR
+INKC = (40, 36, 32)           # BGR nét mực sẫm cho phòng trắng
 INK_TXT = (38, 34, 30)        # RGB chữ nâu
 XFADE, PAN = 0.45, 1.1
 
@@ -69,6 +70,8 @@ class Source:
             self.ink = np.clip(255 - (255 - f) / a3, 0, 255)
             self.img = None
             self.order = {}
+            self._gidx = {g['name']: i for i, g in enumerate(spec['groups'])}
+            self._assign(spec['groups'])
             for g in spec['groups']:
                 self.order[g['name']] = self._order_map(g)
             self.shape = im.shape[:2]
@@ -81,13 +84,31 @@ class Source:
         """toạ độ sơ đồ gốc -> toạ độ ảnh làm việc đã phóng."""
         return [((x - self.off[0]) * self.scale, (y - self.off[1]) * self.scale) for x, y in pts]
 
+    def _box(self, g):
+        return [int(round(v)) for v in ((g['box'][0] - self.off[0]) * self.scale, (g['box'][1] - self.off[1]) * self.scale,
+                                        (g['box'][2] - self.off[0]) * self.scale, (g['box'][3] - self.off[1]) * self.scale)]
+
+    def _assign(self, groups):
+        """Mỗi điểm mực thuộc nhóm có khung nhỏ nhất chứa nó (hoặc 'prio' lớn hơn)."""
+        h, w = self.alpha.shape
+        best = np.full((h, w), -1, np.int32)
+        score = np.full((h, w), -1e18)
+        for gi, g in enumerate(groups):
+            x0, y0, x1, y1 = self._box(g)
+            x0, y0 = max(x0, 0), max(y0, 0)
+            sc_ = g.get('prio', 0) * 1e12 - (x1 - x0) * (y1 - y0)
+            reg = score[y0:y1, x0:x1]
+            upd = reg < sc_
+            reg[upd] = sc_
+            best[y0:y1, x0:x1][upd] = gi
+        self.assign = best
+
     def _order_map(self, g):
-        """Bản đồ thứ tự vẽ của một nhóm: 0..1, nét lớn trước, mỗi nét quét theo chiều dài của nó."""
-        x0, y0, x1, y1 = [v * self.scale for v in ((g['box'][0] - self.off[0]), (g['box'][1] - self.off[1]),
-                                                   (g['box'][2] - self.off[0]), (g['box'][3] - self.off[1]))]
-        m = (self.alpha > 0.15).astype(np.uint8)
+        """Bản đồ thứ tự vẽ của một nhóm: 0..1, các nét theo thứ tự trái→phải (hoặc trên→dưới), mỗi nét quét theo chiều dài."""
+        idx = self._gidx[g['name']]
+        m = ((self.alpha > 0.12) & (self.assign == idx)).astype(np.uint8)
         n, lab, st, cen = cv2.connectedComponentsWithStats(m, 8)
-        sel = [i for i in range(1, n) if x0 <= cen[i][0] <= x1 and y0 <= cen[i][1] <= y1 and st[i][4] > 4]
+        sel = [i for i in range(1, n) if st[i][4] > 3]
         key = g.get('by', 'x')
         sel.sort(key=lambda i: (cen[i][1], cen[i][0]) if key == 'y' else (cen[i][0], cen[i][1]))
         tot = float(sum(st[i][4] for i in sel)) or 1.0
@@ -192,6 +213,8 @@ def render_scene(ep, srcs, i, u, layers):
     # camera: trôi nhẹ trong cảnh; nếu cùng ảnh với cảnh trước thì lia từ camera cuối cảnh trước
     c0, c1 = sc['cam'], sc.get('cam1', sc['cam'])
     pc = ease(min(u / max(dur, 1e-3), 1.0)) if sc.get('move', 'drift') != 'hold' else 0.0
+    if sc.get('cam_t'):
+        pc = ease(prog(u, *sc['cam_t']))
     cam = lerp_cam(c0, c1, pc)
     if prev is not None and prev['img'] == sc['img'] and u < PAN:
         pcam = prev.get('cam1', prev['cam'])
@@ -235,13 +258,17 @@ def render_scene(ep, srcs, i, u, layers):
         t0 = ob['t']
         if u < t0 or aobj <= 0:
             continue
-        col = ORANGE if ob.get('color') == 'orange' else CREAM
+        col = {'orange': ORANGE, 'ink': INKC}.get(ob.get('color'), CREAM)
         st = place(ob['strokes'], u, t0, ob.get('d', (0, -900)), ob.get('rot', 15)) if ob.get('fly', True) else \
             [np.array(x, np.float32) for x in ob['strokes']]
         layer = frame.copy() if aobj < 1 else frame
         for j, stroke in enumerate(st):
             p = jitter([tuple(q) for q in stroke], 1000 * k + 37 * boil + j, amp=2.2)
             p = p @ M[:, :2].T + M[:, 2]
+            if col == CREAM and ob.get('halo', True):
+                halo = layer.copy()
+                cv2.polylines(halo, [np.int32(p * 4)], False, (52, 58, 60), ob.get('th', th) + 6, cv2.LINE_AA, shift=2)
+                cv2.addWeighted(halo, 0.45, layer, 0.55, 0, dst=layer)
             cv2.polylines(layer, [np.int32(p * 4)], False, col, ob.get('th', th), cv2.LINE_AA, shift=2)
         if aobj < 1:
             cv2.addWeighted(layer, aobj, frame, 1 - aobj, 0, dst=frame)

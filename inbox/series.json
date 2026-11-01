@@ -728,7 +728,31 @@
   ],
   "phong_cach": "sketch lắp ráp (mục 00b), engine/sketch_anim/sketch_reel.py",
   "thu_muc": "inbox/out/2026-11-01_den-lech-mau-go/",
+  "trang_thai": "chu_trang_bo_lam_lai",
+  "ghi_chu": "Chủ Trang yêu cầu trong phiên 2026-11-01 sau khi duyệt demo phong cách: reel mới theo phong cách sketch lắp ráp, nội dung từ sổ tay AH+, ảnh công trình ngoài sách được nhưng phải khớp nội dung. K.3 (độ bóng) bỏ vì sát ý cấm ánh sáng xiên. Hai lượt chấm độc lập (v1 chưa đạt 5 sửa, v2 còn 1 câu, v3 đạt). Có bản video xem trước không tiếng theo thời lượng nháp. | Chủ Trang 2026-11-01: \"các animation sketch không phù hợp vì nó trình diễn các đối tượng phụ như ghế sofa,... chứ không liên quan gì đến nội dung chính… Hãy làm lại hoặc chọn ví dụ khác, bài học khác dễ trình bày hơn, dễ hiểu hơn với số đông.\" Làm lại thành tập 19 bản 2 chia-mau-60-30-10; ý K.1 chưa coi là đã đăng."
+ },
+ {
+  "tap": 19,
+  "ban": 2,
+  "ngay": "2026-11-01",
+  "slug": "chia-mau-60-30-10",
+  "bai_kho": {
+   "duong_dan": "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/03-chuong-2-khong-gian-mo.pdf",
+   "nhanh": "AH-Interior-notes",
+   "commit": "0deebf6381c57999600a4a4381cce35db97f3074"
+  },
+  "y_bai": {
+   "muc": "Chương 2 mục 2.4 'Quy tắc 60-30-10 trong phân bổ diện tích màu' + checklist 2.6 + Hình 2.2",
+   "tom_tat": "60% nền sáng (trần, sàn, tường), 30% một khối màu phủ trọn một khu (cả dãy tủ bếp), 10% đồ rời dùng màu rực nhất; tỷ lệ chưa đủ, khối màu phải chênh đủ độ sáng với nền (mốc LRV 30 điểm, Dulux Trade, trên khung); First House: khối tủ xanh lá đậm, xô vàng, thảm xanh dương, ghế vàng"
+  },
+  "cau_moc": "Thích nhà có màu nhưng sợ rối mắt, vậy thì nên chia màu thế nào?",
+  "anh_kho": [
+   "ArchDaily First House / HANGHAR, ảnh Luis Díaz Díaz: _15 (bếp đảo xanh, ảnh chính), _12 (phòng trống lắp xô, thảm), _13 (hai ghế vàng); xem original/archdaily-first-house/urls.txt",
+   "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/03-chuong-2-khong-gian-mo.pdf · pdfimages ảnh 7 (Hình 2.2, vẽ dần theo tầng)"
+  ],
+  "phong_cach": "sketch lắp ráp (mục 00b), nét vẽ là đối tượng chính của câu; engine/sketch_anim/sketch_reel.py",
+  "thu_muc": "inbox/out/2026-11-01_chia-mau-60-30-10/",
   "trang_thai": "cho_ghi_am",
-  "ghi_chu": "Chủ Trang yêu cầu trong phiên 2026-11-01 sau khi duyệt demo phong cách: reel mới theo phong cách sketch lắp ráp, nội dung từ sổ tay AH+, ảnh công trình ngoài sách được nhưng phải khớp nội dung. K.3 (độ bóng) bỏ vì sát ý cấm ánh sáng xiên. Hai lượt chấm độc lập (v1 chưa đạt 5 sửa, v2 còn 1 câu, v3 đạt). Có bản video xem trước không tiếng theo thời lượng nháp."
+  "ghi_chu": "Bản 2 của tập 19 theo góp ý chủ Trang. Hai lượt chấm độc lập (v1 sai ảnh, chốt lặp; v2 đạt nhưng 214 từ; v3 bỏ một câu, 195 từ). Có video xem trước không tiếng."
  }
 ]
