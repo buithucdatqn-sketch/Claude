@@ -37,3 +37,8 @@ Ngày: 2026-11-01. Đây chỉ là bản thử phong cách phần hình, không 
 | 10,4–13,6 giây | Camera lùi ra. Ba mũi tên cam vẽ đường đi ánh sáng xuống bàn ăn. |
 
 Hạn chế: phòng trống tạo bằng cách xoá đồ trên ảnh, nên nhìn kỹ vẫn thấy sàn hơi phẳng, ở mép gác còn vết mờ nhỏ chỗ chậu cây. Bản 1 (`demo_sketch_silent.mp4`) giữ lại để so sánh.
+
+### Sửa theo góp ý 2026-11-01 (bản 2 được đánh giá "tạm ổn")
+- Credit tên công trình chuyển vào trong hộp chữ phụ đề, không còn thẻ riêng đè lên ảnh.
+- Bỏ băng keo trên các hộp chữ.
+- Ghi nhớ: demo chỉ thử một ảnh điển hình; reel thật vẫn theo instruction (nhiều ảnh, có bản vẽ). Đã ghi thành mục 00b trong `TASK_INSTRUCTION.md`.

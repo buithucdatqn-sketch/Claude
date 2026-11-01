@@ -206,17 +206,18 @@ def tape(w=150, h=52, seed=3):
 def note(sub, nw=960):
     fh, fs = font(28), font(46)
     tmp = ImageDraw.Draw(Image.new('RGB', (4, 4)))
+    fc = font(22)
     lines = wrap(sub, fs, nw - 70, tmp)
-    nh = 96 + 56 * len(lines) + 20
+    clines = wrap(CREDIT, fc, nw - 70, tmp)
+    nh = 74 + 56 * len(lines) + 12 + 28 * len(clines) + 18
     n = Image.new('RGBA', (nw, nh), (255, 255, 255, 255))
     d = ImageDraw.Draw(n)
-    d.text((34, 44), HEAD if nw > 700 else HEAD.replace('AH DECODE · ', ''), font=fh, fill=(95, 90, 85))
+    d.text((34, 22), HEAD if nw > 700 else HEAD.replace('AH DECODE · ', ''), font=fh, fill=(95, 90, 85))
     for j, ln in enumerate(lines):
-        d.text((34, 88 + j * 56), ln, font=fs, fill=(38, 34, 30))
-    n = n.rotate(0.8, expand=True, resample=Image.BICUBIC)
-    tp = tape()
-    n.paste(tp, ((n.width - tp.width) // 2, 0), tp)  # băng keo ở giữa mép trên
-    return n
+        d.text((34, 66 + j * 56), ln, font=fs, fill=(38, 34, 30))
+    for j, ln in enumerate(clines):   # credit nằm trong hộp chữ, không đè lên ảnh
+        d.text((34, 66 + 56 * len(lines) + 12 + j * 28), ln, font=fc, fill=(120, 114, 108))
+    return n   # hộp chữ thẳng, không băng keo (chủ Trang góp ý 2026-11-01)
 
 
 def credit_tag():
@@ -234,7 +235,6 @@ def render(real_p, empty_p, out):
     empty = cv2.imread(empty_p)
     ih, iw = real.shape[:2]
     notes = [note(s[2], s[4]) for s in SUBS]
-    ctag = credit_tag()
     vid = os.path.join(out, 'demo_lap_rap_silent.mp4')
     ff = subprocess.Popen(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'rawvideo', '-pix_fmt', 'bgr24',
                            '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
@@ -285,11 +285,10 @@ def render(real_p, empty_p, out):
                 if pos == 'top':
                     xy = ((W - nt.width) // 2, 336)
                 elif pos == 'bottom':
-                    xy = ((W - nt.width) // 2, 1440 - nt.height)
+                    xy = ((W - nt.width) // 2, 1490 - nt.height)
                 else:
                     xy = (44, 336)
                 im.paste(nt, xy, nt)
-        im.paste(ctag, (52, 1448), ctag)
         if any(abs(t - pt) < 0.5 / FPS for pt in probes):
             im.save(os.path.join(out, f'probe_{t:05.2f}.png'))
         ff.stdin.write(np.asarray(im)[..., ::-1].tobytes())
