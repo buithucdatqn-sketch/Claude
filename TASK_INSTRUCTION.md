@@ -27,6 +27,12 @@ Mười điểm của bản mẫu (mỗi điểm là một mục kiểm tra tron
 - commit, push nhánh được giao, rồi đề nghị chủ Trang cho gộp vào `main` (hoặc mở pull request).
 Không để góp ý chỉ nằm trong thư mục của một tập.
 
+## 00b. PHONG CÁCH HÌNH ĐANG THỬ: ANIMATION SKETCH LẮP RÁP (chủ Trang góp ý 2026-11-01, chưa duyệt hẳn)
+Chủ Trang muốn phần hình chuyển sang kiểu animation sketch theo video mẫu (Klickpin, phòng khách rừng thông). Demo một ảnh được đánh giá "tạm ổn": `inbox/out/2026-11-01_demo-sketch-animation/demo_lap_rap_silent.mp4`, engine `engine/sketch_anim/` (`empty_room.py` tạo ảnh phòng trống từ ảnh gốc, `sketch_assemble.py` dựng video). Khi chủ Trang duyệt hẳn, gộp kiểu này vào bộ khuôn `engine/mau_tap7/` thay cho doodle hiện dần.
+1. **Demo chỉ là thử một ảnh điển hình.** Reel thật vẫn theo đúng mục 00 và mục 2d: nhiều ảnh, đúng chỗ đang nói; vẫn dùng diagram, mặt bằng, mặt cắt (bản vẽ) của bài ở cảnh nguồn gốc và giới thiệu công trình. Kiểu sketch lắp ráp áp cho ẢNH CHỤP; bản vẽ vẫn đọc được trên điện thoại như mục 00 điểm 5, có thể cho nét kem vẽ dần theo cùng tinh thần.
+2. **Kiểu hình:** ảnh phủ kín khung; mở đầu bằng phòng trống (xoá đồ đạc khỏi ảnh gốc của bài, tường ván gỗ chép theo cột, sàn ghép mảnh vá; kiểm tra bằng Read đến khi sạch); từng món đồ là nét viền dày màu kem vẽ tay đơn giản, bay vào từ mép khung, xoay, nảy rồi đáp đúng chỗ; đủ đồ thì hoà sang ảnh thật. Chi tiết cần nói (ô kính, vách lam) bay vào cùng kiểu; đường đi ánh sáng dùng nét cam vẽ dần.
+3. **Chữ không đè lên ảnh, không băng keo.** Phụ đề, đầu trang và credit nằm CHUNG trong một hộp chữ nền trắng, thẳng, không băng keo; không có thẻ credit riêng nằm trên ảnh. Hộp chữ đổi chỗ theo cảnh (trên, dưới, góc trái) để không che chi tiết đang nói, vẫn trong y 330–1500.
+
 ## 0. BÀI HỌC TỪ CÁC LẦN LÀM SAI (đọc trước tiên, bắt buộc)
 Ngày 2026-10-19 có hai phiên làm lại đúng ý đã có ở tập 7 hoặc ý chủ Trang đã bỏ, vẫn dùng một ảnh, sai chủng loại ảnh. Nguyên nhân và cách tránh:
 1. **`main` KHÔNG phải trạng thái mới nhất.** Mỗi phiên bị buộc đẩy lên nhánh riêng (`claude/...`), nên `main` có thể dừng ở tập 5 trong khi tập 6, tập 7 nằm ở các nhánh khác. Vì vậy đầu MỖI lần chạy, trước khi chọn ý:
