@@ -19,9 +19,13 @@ Lời 195 từ (đếm tách theo khoảng trắng; `wc -w` đếm thiếu chữ
 | 8 | 42.4–49.4s | C | Hình 2.2 | Chia đúng tỷ lệ vẫn chưa đủ, vì khối màu chỉ tách khỏi nền khi đủ chênh lệch độ sáng. | vẽ dần dòng "LRV nền ≈ 81, khối ≈ 29 · chênh ≈ 52 điểm (mốc ≥ 30)"; nguồn Dulux Trade trên khung |
 | 9 | 49.4–56.6s | H | phòng _13 | Vậy muốn nhà có màu mà không rối mắt, hãy để nền sáng và giữ màu rực cho vài món nhỏ. | nét mực ghế dây vàng, ghế xếp gỗ vàng bay vào |
 | 10 | 56.6–61.4s | H | bếp _15, cận đảo xanh | Còn khối màu của mỗi khu thì chọn đậm hẳn so với nền. | nét kem quanh đảo bếp xanh |
-| 11 | 61.4–68.6s | I | bếp _15 rộng | Cách chia màu này có trong sổ tay chọn màu của tụi mình, mọi người xem ở phần bình luận nha. | khung cuối, dòng series AH Decode |
+| 11 | 61.4–68.6s | I | video mockup sổ tay AH+ trên iPad (`original/chu-trang/AH_mockup_tablet.mp4`, như tập 14–17) | Cách chia màu này có trong sổ tay chọn màu của tụi mình, mọi người xem ở phần bình luận nha. | iPad lật trang trong khung 4:5; ba dòng mời chữ trắng phía trên iPad, credit video phía dưới |
 
 Ảnh: Hình 2.2 năm trang, bếp _15 bốn trang, _12 một, _13 một. Ba không gian chụp (bếp, phòng có xô và thảm, phòng có ghế vàng) + sơ đồ.
+
+## Sửa theo góp ý chủ Trang (2026-11-01, sau bản xem trước đầu)
+1. "Các ảnh chụp trong reel bị zoom quá cận nên không hình dung được căn phòng" → mọi cảnh ảnh chụp đặt trọn bề ngang ảnh (`fit=True`), nền trắng ở dải trên dưới: thấy cả căn bếp, cả phòng có xô và thảm, cả phòng có hai ghế; cảnh xô và thảm không còn phải lia.
+2. "Cảnh cuối bị lỗi không lồng ảnh mockup của sách AH+ giống các reel trước" → khung cuối dùng video mockup sổ tay như tập 14–17 (đặt đúng khung 4:5, dải trên dưới phản chiếu, chữ trắng có bóng ở mảng vải phía trên iPad).
 
 ## Lời đọc liền mạch
 Thích nhà có màu nhưng sợ rối mắt, vậy thì nên chia màu thế nào? Quy tắc kinh nghiệm sáu mươi, ba mươi, mười chia diện tích cho từng màu. Sáu mươi phần trăm là nền, gồm trần, sàn và các bức tường, nên dùng màu sáng. Ba mươi phần trăm là một khối màu phủ trọn một khu, như cả dãy tủ bếp. Mười phần trăm còn lại là ghế, đèn và đồ rời, phần này mới dùng màu rực nhất. Ở căn nhà này, trần, sàn, tường đều sáng màu, còn cả khối tủ bếp màu xanh lá đậm. Ngoài khối tủ ấy, màu rực nằm ở đồ rời, như chiếc xô vàng và tấm thảm xanh dương. Chia đúng tỷ lệ vẫn chưa đủ, vì khối màu chỉ tách khỏi nền khi đủ chênh lệch độ sáng. Vậy muốn nhà có màu mà không rối mắt, hãy để nền sáng và giữ màu rực cho vài món nhỏ. Còn khối màu của mỗi khu thì chọn đậm hẳn so với nền. Cách chia màu này có trong sổ tay chọn màu của tụi mình, mọi người xem ở phần bình luận nha.

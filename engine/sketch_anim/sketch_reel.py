@@ -204,9 +204,42 @@ def qa_text(lay, idx):
 
 
 # ---------------- dựng một khung của một cảnh ----------------
+class EndVideo:
+    """Khung cuối từ video mockup sổ tay AH+ (1080x1350, như tập 14–17): đặt đúng khung 4:5 (y 285–1635),
+    hai dải trên dưới lấp bằng phản chiếu; chữ trắng có bóng mờ ở mảng vải phía trên iPad, credit ở dải dưới."""
+    def __init__(self, spec):
+        self.path, self.lines, self.credit = spec['video'], spec['lines'], spec.get('credit')
+        self.cap, self.idx, self.last = None, -1, None
+        t = Image.new('L', (W, H), 0); d = ImageDraw.Draw(t)
+        for y, txt, sz, f in self.lines + ([self.credit] if self.credit else []):
+            d.text((W / 2, y), txt, font=font(sz), fill=f, anchor='ma')
+        from PIL import ImageFilter
+        self.t = np.asarray(t).astype(np.float32)[..., None] / 255
+        self.sh = np.asarray(t.filter(ImageFilter.GaussianBlur(6))).astype(np.float32)[..., None] / 255 * 0.55
+        ys, xs = np.nonzero(self.t[..., 0] > 0.15)
+        if len(ys) and (ys.min() < 340 or ys.max() > 1490 or xs.min() < 60 or xs.max() > 1020):
+            print(f'LỖI: chữ khung cuối ra ngoài vùng an toàn (y {ys.min()}–{ys.max()}, x {xs.min()}–{xs.max()})')
+
+    def frame(self, u):
+        k = max(0, int(u * FPS))
+        if self.cap is None or k < self.idx:
+            self.cap = cv2.VideoCapture(self.path); self.idx = -1
+        while self.idx < k:
+            ok, f = self.cap.read()
+            if not ok:
+                self.cap = cv2.VideoCapture(self.path); ok, f = self.cap.read()
+            self.last = f; self.idx += 1
+        f = cv2.copyMakeBorder(self.last, 285, H - 285 - self.last.shape[0], 0, 0, cv2.BORDER_REFLECT)[:H, :W]
+        f = f.astype(np.float32) * (1 - self.sh)
+        f = f * (1 - self.t) + 255 * self.t
+        return f.astype(np.uint8)
+
+
 def render_scene(ep, srcs, i, u, layers):
     S = ep['SCENES']
     sc = S[i]
+    if sc.get('endvideo'):
+        return ep['_endv'].frame(u)
     src = srcs[sc['img']]
     dur = sc['_dur']
     prev = S[i - 1] if i > 0 else None
@@ -220,7 +253,9 @@ def render_scene(ep, srcs, i, u, layers):
         pcam = prev.get('cam1', prev['cam'])
         cam = lerp_cam(pcam, cam, ease(u / PAN))
     ih, iw = src.shape
-    M, s = cam_matrix(*cam, ih, iw, fill_frame=(src.kind == 'photo'))
+    fit = sc.get('fit', False)
+    M, s = cam_matrix(*cam, ih, iw, fill_frame=(src.kind == 'photo' and not fit))
+    BM = dict(borderMode=cv2.BORDER_CONSTANT, borderValue=(255, 255, 255)) if fit else dict(borderMode=cv2.BORDER_REFLECT)
     if src.kind == 'diagram':
         rev = np.zeros(src.alpha.shape, np.float32)
         for gname in sc.get('keep', []):
@@ -237,18 +272,18 @@ def render_scene(ep, srcs, i, u, layers):
         base = src.img
         if sc.get('empty') and src.empty is not None:
             pr = ease(prog(u, *sc['real']))
-            A_ = cv2.warpAffine(src.empty, M, (W, H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
+            A_ = cv2.warpAffine(src.empty, M, (W, H), flags=cv2.INTER_LINEAR, **BM)
             if pr > 0:
-                B_ = cv2.warpAffine(base, M, (W, H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
+                B_ = cv2.warpAffine(base, M, (W, H), flags=cv2.INTER_LINEAR, **BM)
                 frame = cv2.addWeighted(A_, 1 - pr, B_, pr, 0)
             else:
                 frame = A_
         else:
-            frame = cv2.warpAffine(base, M, (W, H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
+            frame = cv2.warpAffine(base, M, (W, H), flags=cv2.INTER_LINEAR, **BM)
         if sc.get('img2'):
             p2 = ease(prog(u, *sc['fade']))
             if p2 > 0:
-                F2 = cv2.warpAffine(srcs[sc['img2']].img, M, (W, H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
+                F2 = cv2.warpAffine(srcs[sc['img2']].img, M, (W, H), flags=cv2.INTER_LINEAR, **BM)
                 frame = cv2.addWeighted(frame, 1 - p2, F2, p2, 0)
     boil = int(u * FPS) // 3 % 4
     th = max(7, int(round(min(s, 2.4) * 6.0)))
@@ -316,8 +351,10 @@ def frame_at(ep, srcs, layers, t):
 def run(ep, mode, out):
     os.makedirs(out, exist_ok=True)
     srcs = {k: Source(k, v) for k, v in ep['IMGS'].items()}
+    if ep.get('END_VIDEO'):
+        ep['_endv'] = EndVideo(ep['END_VIDEO'])
     total = timeline(ep)
-    layers = [text_layer(sc, ep) for sc in ep['SCENES']]
+    layers = [text_layer(sc, ep) if not sc.get('endvideo') else Image.new('RGBA', (W, H), (0, 0, 0, 0)) for sc in ep['SCENES']]
     errs = []
     for i, l in enumerate(layers):
         errs += qa_text(l, i + 1)
