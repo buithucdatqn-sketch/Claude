@@ -1,0 +1,20 @@
+Ban ngày màu sơn rất hợp với tủ gỗ, sao tối bật đèn lên lại thấy lệch tông?
+<break time="1.2s" />
+Mẫu sơn và mẫu gỗ khớp nhau dưới ánh sáng này vẫn có thể lệch nhau dưới ngọn đèn khác.
+<break time="1.2s" />
+Trong cặp ảnh này, dưới đèn ấm lúc chạng vạng, mảng gỗ gần đèn ngả cam, còn ghế đỏ sẫm lại.
+<break time="1.2s" />
+Ngọn đèn hiện màu tốt hay kém được ghi trên nhãn đèn bằng chỉ số hoàn màu Rờ-a.
+Chỉ số Rờ-a chỉ tính tám mẫu màu không quá rực, còn màu đỏ đậm có chỉ số riêng là Rờ chín.
+Vì vậy, đèn có Rờ-a khá cao vẫn có thể hiện sai màu đỏ đậm, màu nâu gỗ và màu da người.
+<break time="1.2s" />
+Phòng nhiều đồ gỗ thì nên chọn đèn có Rờ-a từ chín mươi trở lên và Rờ chín trên năm mươi.
+Mẫu sơn cũng nên đặt cạnh mẫu gỗ dưới đúng đèn ấy, thấy lệch thì đổi một bên trước khi mua.
+<break time="1.2s" />
+Vậy chọn màu cho căn nhà cũng là chọn luôn ngọn đèn sẽ thắp mỗi tối.
+<break time="1.2s" />
+Cách soi mẫu dưới đèn có trong sổ tay Kinh nghiệm chọn màu kiến trúc nội thất, mọi người xem ở phần bình luận nha.
+
+---
+Gợi ý cài đặt: giọng nam trầm ấm (Tony Hoang như các tập trước), tốc độ 1.0, mô hình đa ngôn ngữ, ngôn ngữ Vietnamese
+---

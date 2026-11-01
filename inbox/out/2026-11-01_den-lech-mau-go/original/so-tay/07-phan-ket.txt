@@ -1,0 +1,340 @@
+PHẦN KẾT
+QUY TRÌNH
+KIỂM CHỨNG
+VẬT LÝ TẠI
+CÔNG TRƯỜNG
+
+
+
+
+“Trong cảm nhận thị
+giác, một màu hầu như
+không bao giờ được
+thấy đúng như nó vốn
+là.”
+
+“In visual perception a color is
+almost never seen as it really is—as
+it physically is.”
+
+Josef Albers
+trong Interaction of Color (1963)
+Mọi công cụ trong cuốn sách này, từ thang LRV, tỷ
+lệ 60-30-10 đến ảnh xem trước bằng AI, đều làm việc
+với màu trên giấy hoặc trên màn hình, trong khi
+màu mà chủ nhà sống cùng là lớp sơn thật trên bức
+tường thật, dưới đèn thật và nắng thật. Giữa hai thứ
+đó có ba biến số mà bản vẽ không kiểm soát được,
+gồm phổ của nguồn sáng nhân tạo, kích thước và
+bối cảnh của mảng màu, và độ bóng bề mặt.
+
+Phần kết gom ba biến số đó thành ba phép thử tại
+công trường. Các phép thử này không thay thế
+những chương trước, mà là bước kiểm chứng cuối
+cùng để bảng màu đã chọn bằng dữ liệu đứng vững        Hình PK.1. Cùng một cặp mẫu sơn và gỗ dưới hai ngọn đèn. Dưới đèn sẽ lắp (Ra
+ngoài thực tế.                                         ≥ 90, R9 > 50), cặp mẫu khớp nhau, còn dưới đèn tạm có Ra thấp, cặp mẫu bị
+                                                       lệch. Ô màu chỉ minh họa nguyên lý, không phải số đo. Hình vẽ: AH+.
+
+
+
+
+K.1. Phép thử 1 - Soi mẫu dưới
+đúng loại đèn sẽ lắp
+Chủ nhà thường duyệt thẻ màu dưới đèn văn phòng
+vào ban ngày, nhưng lại sống với bức tường đó chủ
+yếu vào buổi tối, dưới đèn LED của chính căn nhà,
+và hai tình huống chiếu sáng ấy có thể cho ra hai
+màu khác nhau.
+
+
+
+
+Màu đã duyệt dưới một ngọn
+đèn chưa chắc còn đúng dưới
+ngọn đèn khác.
+
+
+
+                                                       Cùng một phòng và cùng vị trí máy ảnh, dưới ánh sáng ban ngày (trên) và đèn ấm
+                                                       lúc chạng vạng (dưới). Stage in Hayama, Kanagawa, Nhật Bản (Takanori
+                                                       Ineyama Architects, 2022). Ảnh: Koichi Torimura / ArchDaily.
+
+
+
+
+72
+Chỉ số hoàn màu đo gì? Chỉ số hoàn màu chung Ra,                                  Vì sao phải thử dưới đúng đèn? Như đã nói ở mục
+thường gọi là CRI, được tính từ tám mẫu màu thử                                   5.3, hai mẫu có phổ phản xạ khác nhau có thể trông
+có độ rực vừa phải, trải đều quanh vòng sắc độ.                                   giống hệt nhau dưới nguồn sáng này nhưng lại khác
+Ngoài ra, CIE quy định thêm sáu mẫu bổ sung, mở                                   nhau dưới nguồn sáng khác, hiện tượng gọi là đồng
+đầu bằng một mẫu đỏ đậm¹. Chỉ số riêng của mẫu                                    sắc dị phổ⁶. Vì vậy, một mẫu sơn khớp với mẫu gỗ
+đỏ đậm này là R9, và R9 không nằm trong Ra. Vì                                    dưới đèn văn phòng chưa chắc còn khớp dưới đèn
+vậy, một nguồn sáng có Ra khá cao vẫn có thể hoàn                                 LED ấm của phòng khách.
+màu kém với màu đỏ đậm, nâu gỗ hay màu da.
+                                                                                  Các thao tác tại công trình gồm:
+Điểm yếu này đã được đưa vào quy chuẩn. Bộ quy
+chuẩn năng lượng năm 2019 của bang California                                     1. Lấy thông số của đúng mẫu đèn sẽ lắp từ hồ sơ
+(Mỹ) yêu cầu nguồn sáng hiệu suất cao theo phụ lục                                chiếu sáng hoặc nhãn sản phẩm, gồm Ra, R9 (nếu
+JA8 đạt CRI ≥ 90, R9 > 50 và nhiệt độ màu tương                                   hãng công bố) và nhiệt độ màu.
+quan ≤ 4000 K². Nghiên cứu của Viện Tiêu chuẩn và
+Công nghệ Quốc gia Mỹ (NIST) chỉ ra rằng CRI có                                   2. Không duyệt màu dưới đèn văn phòng hay đèn
+thiếu sót khi dùng cho nguồn LED trắng³, còn Hội                                  tạm của công trường. Hãy mang thẻ màu, mẫu sơn
+Kỹ thuật Chiếu sáng (IES) khuyến nghị chuyển dần                                  và mẫu vật liệu đến công trình, rồi chiếu bằng đúng
+từ CRI sang chỉ số Rf của phương pháp TM-30⁴.                                     mẫu đèn đó (cùng mã, cùng nhiệt độ màu), ở khoảng
+                                                                                  cách và góc chiếu dự kiến.
+Ở Việt Nam, TCVN 7114-1:2008 (tương đương ISO
+8995-1:2002) ghi rõ rằng bóng đèn có Ra nhỏ hơn 80                                3. Đặt mẫu sơn cạnh vật liệu sẽ đi cùng như gỗ, đá
+không nên dùng cho nơi làm việc thường xuyên                                      hay vải, rồi so sánh dưới cả ánh sáng ban ngày lẫn
+hoặc nơi có người ở lâu⁵. Như vậy, Ra 80 chỉ là mức                               ánh đèn. Nếu cặp mẫu khớp dưới nguồn sáng này
+sàn. Với mảng màu chủ đạo, gỗ, đá và tường trưng                                  mà lệch dưới nguồn sáng kia, hãy đổi một trong hai
+bày, mức tham chiếu Ra ≥ 90 và R9 > 50 của                                        trước khi đặt hàng.
+California là ngưỡng đặt hàng hợp lý hơn.
+                                                                                  4. Với đèn rọi tường trưng bày và mảng màu nhấn,
+                                                                                  ghi mức Ra ≥ 90 và R9 > 50 vào yêu cầu kỹ thuật của
+                                                                                  thiết bị chiếu sáng.
+
+
+
+
+Duyệt màu dưới đúng ngọn
+đèn sẽ thắp mỗi tối, không
+phải dưới đèn phòng họp.
+
+
+
+
+¹ CIE (1995). CIE 13.3-1995: Method of measuring and specifying colour
+rendering properties of light sources.
+² California Energy Commission (2020). 2019 Energy Code: Residential lighting.
+³ Davis, W. và Ohno, Y. (2010). The color quality scale. Optical Engineering.
+⁴ Royer, M. P. (2022). Tutorial: Background and guidance for using the ANSI/IES
+TM-30 method. LEUKOS.
+⁵ Bộ Khoa học và Công nghệ (2008). TCVN 7114-1:2008, mục 4.2 và 4.6.2.
+⁶ CIE (2020). CIE S 017:2020 ILV, mục 17-23-006 "metamerism".
+
+
+                                                                                                                                     73
+Màu trên tấm thẻ nhỏ chưa
+phải là màu của cả bức
+tường.
+
+
+
+K.2. Phép thử 2 - Mảng thử
+lớn, xem vào ba thời điểm
+Chủ nhà thường chọn màu từ một tấm thẻ vài
+centimet đặt giữa bức tường trắng, nhưng tấm thẻ
+đó và một bức tường vài mét vuông không cho cùng                              Hình PK.2. So sánh thẻ màu vài centimet đặt giữa bức tường với mảng thử
+                                                                              khoảng 1 × 1 m, sơn hai lớp và chạy qua góc tường, nhờ đó thấy được phía sáng,
+một cảm nhận màu. Ở đây có ít nhất hai cơ chế,                                phía tối và phản xạ chéo. Hình vẽ: AH+.
+
+chưa kể hiện tượng đồng sắc dị phổ (phép thử 1) khi
+ánh sáng ban ngày thay đổi trong ngày.
+                                                                              Phản xạ chéo. Ánh sáng phản xạ từ một bề mặt
+Hiệu ứng kích thước. Báo cáo kỹ thuật CIE 208:2014                            màu sẽ nhuộm màu bề mặt bên cạnh. Trong một thí
+tổng hợp các thí nghiệm so sánh mẫu màu lớn (góc                              nghiệm công bố năm 1999, người tham gia nhìn một
+nhìn trên 20°) với mẫu chuẩn 2°, và cho thấy mẫu lớn                          tấm bìa gập gồm một nửa giấy đỏ tía và một nửa
+thường trông sáng hơn, rực hơn, kèm theo thay đổi                             giấy trắng. Ánh sáng dội từ nửa đỏ tía phủ một
+sắc độ đáng kể⁷. Tuy vậy, báo cáo cũng lưu ý rằng                             quầng hồng lên nửa trắng, và người xem thấy hồng
+nghiên cứu về hiệu ứng này còn ít, và kết quả trong                           nhiều hay ít còn tùy vào hình khối mà họ nhận ra⁸.
+không gian thật không phải lúc nào cũng khớp với                              Trong phòng, tường, trần và sàn cũng phản xạ ánh
+phòng thí nghiệm.                                                             sáng lên nhau, nên màu của một bức tường chịu ảnh
+                                                                              hưởng từ các bề mặt xung quanh, điều mà một mẫu
+                                                                              nhỏ đặt giữa tường trắng không thể cho thấy.
+
+                                                                              Hướng dẫn của hãng sơn. Benjamin Moore khuyên
+                                                                              quét ít nhất hai lớp để màu lên đúng, xem mẫu từ
+                                                                              sáng đến tối dưới cả ánh sáng tự nhiên lẫn nhân tạo,
+                                                                              và di chuyển mẫu qua các bức tường, vào cả góc
+                                                                              sáng lẫn góc tối. Hãng cũng nhấn mạnh rằng cần
+                                                                              xem một mảng màu lớn hơn trước khi quyết định⁹.
+
+
+
+
+⁷ CIE (2014). CIE 208:2014: Effect of stimulus size on colour appearance.
+⁸ Bloj, M. G., Kersten, D. và Hurlbert, A. C. (1999). Perception of three-
+dimensional shape influences colour perception through mutual illumination.
+Nature.
+⁹ Benjamin Moore (không ghi năm-c). Tips on how to sample paint colors.
+benjaminmoore.com
+
+
+74
+Đừng duyệt bức tường bằng
+một tấm thẻ, mà hãy duyệt
+bằng một mét vuông sơn
+thật, xem vào ba giờ khác
+nhau.
+
+Các thao tác tại công trình gồm:
+
+                                                       Một mảng sơn thử khổ lớn trên chính bức tường sẽ sơn cho thấy màu đúng như
+1. Yêu cầu nhà thầu sơn mảng thử khoảng 1 × 1 m,       trong căn phòng thật. Ảnh: Sal (Wondermonkey2k) / Flickr, CC BY-NC-ND 2.0.
+hai lớp, trên chính bức tường sẽ sơn. Kích thước này
+lấy từ kinh nghiệm hành nghề chứ không phải từ
+tiêu chuẩn, với mục tiêu để mảng thử chiếm phần
+đáng kể trong tầm nhìn khi đứng cách vài mét.
+
+2. Sơn trên nền đã xử lý giống hệt lớp hoàn thiện
+cuối (bả, sơn lót cùng hệ), để độ hút và độ bóng của
+mảng thử giống bức tường thật.
+
+3. Nếu bức tường giáp góc, cho mảng thử chạy qua
+góc để thấy màu ở cả phía sáng và phía tối.
+
+4. Quan sát và chụp ảnh ở ba mốc giờ, từ cùng vị trí
+đứng và với cùng cài đặt máy ảnh.
+• Lúc 8:00, dưới ánh sáng ban ngày buổi sáng, xem      Hình PK.3. Một mảng thử được xem vào ba giờ 8:00, 14:00 và 20:00, từ cùng chỗ
+                                                       đứng và với cùng cài đặt máy ảnh. Hình vẽ: AH+.
+màu có ngả lạnh hay xỉn đi không, nhất là ở phòng
+chỉ nhận ánh sáng trời (mục 4.2 và 4.3).
+• Lúc 14:00, khi ánh sáng ban ngày mạnh, xem mảng
+màu có gây chói hay tạo vệt sáng khó chịu cạnh cửa
+sổ không. Hãy đối chiếu LRV của màu với dải hệ số
+phản xạ hữu ích của TCVN 7114-1, gồm 0,6-0,9 cho
+trần, 0,3-0,8 cho tường và 0,1-0,5 cho sàn, tức LRV
+khoảng 60-90, 30-80 và 10-50⁵.
+• Lúc 20:00, khi chỉ có đèn, xem màu dưới đúng mẫu
+đèn và nhiệt độ màu đã chọn ở phép thử 1.
+
+5. Chỉ đánh giá khi sơn đã khô hẳn theo thời gian
+hãng ghi trên bao bì.
+
+
+
+
+                                                                                                                               75
+Cùng một mã màu, cùng LRV,
+nhưng sơn mờ và sơn bóng
+cho ra hai bức tường khác
+nhau.
+
+
+K.3. Phép thử 3 - Độ bóng và
+góc chiếu của đèn
+Khi chủ nhà đổi từ sơn mờ sang sơn bóng để dễ lau
+chùi, bức tường có thể trông khác hẳn dù vẫn cùng                                Hình PK.4. Bảy cấp bóng MPI của cùng một màu, kèm số GU ở 60°, đi từ tán xạ
+                                                                                 đều (G1) đến phản xạ gương (G7). Sơ đồ phản xạ chỉ minh họa nguyên lý, không
+mã màu và cùng LRV. Độ bóng quyết định hai điều,                                 phải số đo. Hình vẽ: AH+, theo bảng cấp bóng MPI do Cloverdale Paint công bố.
+
+đó là tường lộ khuyết tật đến đâu dưới ánh sáng
+xiên, và màu trông đậm nhạt ra sao.
+
+Cấp độ bóng được đo thế nào? Độ bóng của sơn
+được đo bằng đơn vị bóng (GU) theo phương pháp
+ASTM D523, ở góc 60° và 85°. Viện Thợ sơn Bậc thầy
+(Master Painters Institute, MPI) chia độ bóng thành
+bảy cấp, được hãng sơn Cloverdale công bố lại như
+sau¹⁰.
+
+• G1 - Mờ (flat): ≤ 5 GU ở 60°, ≤ 10 GU ở 85°
+• G2 - Mờ nhung (velvet): ≤ 10 GU ở 60°, 10-35 GU ở                              Ánh sáng xiên sát tường làm nổi từng chênh lệch nhỏ trên bề mặt bê tông. Thánh
+85°                                                                              đường Sancaklar, Istanbul (Emre Arolat Architects). Ảnh: Thomas Mayer /
+                                                                                 ArchDaily.
+• G3 - Vỏ trứng (eggshell): 10-25 GU ở 60°, 10-35 GU ở
+85°                                                                              Ánh sáng xiên làm lộ khuyết tật. Tiêu chuẩn GA-214-
+• G4 - Satin: 20-35 GU ở 60°, ≥ 35 GU ở 85°                                      2021 của Hiệp hội Thạch cao Mỹ định nghĩa chiếu
+• G5 - Bán bóng (semi-gloss): 35-70 GU ở 60°                                     sáng khắc nghiệt (critical lighting) là ánh sáng bên
+• G6 - Bóng (gloss): 70-85 GU ở 60°                                              mạnh từ cửa sổ hoặc từ đèn gắn bề mặt, và lưu ý
+• G7 - Bóng cao (high gloss): > 85 GU ở 60°                                      rằng ánh sáng xiên mạnh có thể phóng đại các
+Tên gọi "mờ", "vỏ trứng" hay "satin" khác nhau giữa                              chênh lệch nhỏ trên bề mặt¹¹. Cũng theo tài liệu này,
+các hãng, nên khi đặt hàng, bạn hãy ghi cấp MPI                                  sơn không mờ và sơn tông tối làm nổi các chênh
+hoặc số GU ở 60°.                                                                lệch nhỏ, còn bề mặt có gai thì che bớt. Vì vậy, hoàn
+                                                                                 thiện cấp 5, tức bả phủ toàn bộ bề mặt, thường được
+                                                                                 chỉ định khi dùng sơn có độ bóng, sơn tông tối hoặc
+                                                                                 khi có chiếu sáng khắc nghiệt.
+
+
+
+
+¹⁰ Cloverdale Paint (không ghi năm). Sheen & gloss levels (bảng cấp bóng MPI).
+cloverdalepaint.com
+¹¹ Gypsum Association (2021). GA-214-2021: Levels of finish for gypsum panel
+products.
+
+
+76
+Đèn hắt càng xiên, sơn càng
+phải mờ và tường càng phải
+phẳng.
+Đèn hắt khe trần và đèn LED hắt sát tường (wall-
+washing, grazing) chính là một dạng chiếu sáng khắc
+nghiệt do thiết kế tạo ra. Với những bức tường này,
+nên ưu tiên sơn mờ G1 và bả hoàn thiện ở cấp cao
+nhất, còn nếu buộc phải dùng sơn có độ bóng hay
+màu tối thì cần bả phủ toàn bộ bề mặt.
+
+Độ bóng cũng làm thay đổi cảm nhận màu. Tài liệu
+kỹ thuật của Datacolor, một hãng thiết bị đo màu,                                Hình PK.5. Dưới đèn hắt khe trần sát tường, sơn bóng trên lớp bả thường làm lộ
+cho biết với cùng một sắc tố, bề mặt bóng cao                                    vết bả và bóng đổ dài, còn bên kia là sơn mờ G1 trên bả cấp 5, quan sát từ
+                                                                                 khoảng cách từ 1,5 m trở lên. Độ gồ bề mặt được vẽ phóng đại. Hình vẽ: AH+,
+thường trông tối hơn và rực hơn, bề mặt mờ trông                                 theo GA-214-2021.
+
+sáng hơn hoặc hơi nhạt, còn satin nằm ở giữa. Riêng
+ở góc nhìn thấy vệt phản xạ gương, màu lại trông                                 Khu ướt. Bếp và phòng vệ sinh cần bề mặt chịu lau
+nhạt đi¹². Có lời khuyên nên hạ màu một đến hai                                  chùi, nên thường dùng sơn từ cấp vỏ trứng (G3) trở
+tông khi dùng sơn bóng, với lý do bề mặt bóng làm                                lên, theo khuyến cáo của từng hãng cho khu vực ẩm.
+màu "sáng và gắt hơn", nhưng chúng mình không tìm                                Mảng thử ở các khu này phải làm bằng chính loại
+được nguồn nào xác nhận điều này, và nguồn nêu                                   sơn đó, và được xem ở cả góc đứng thông thường lẫn
+trên còn cho thấy điều ngược lại ở góc nhìn thông                                góc thấy vệt phản xạ của đèn trần.
+thường. Vì vậy, cách an toàn là không chỉnh mã màu
+theo cảm tính, mà làm mảng thử bằng đúng loại sơn                                Các thao tác tại công trình gồm:
+và đúng cấp bóng sẽ thi công.
+                                                                                 1. Ghi cấp bóng (cấp MPI hoặc số GU ở 60°) cho
+                                                                                 từng bức tường trong bảng màu.
+
+                                                                                 2. Đánh dấu trên bản vẽ chiếu sáng những bức
+                                                                                 tường có đèn hắt, đèn rọi xiên hoặc cửa sổ chiếu
+                                                                                 ngang, rồi chọn G1 cho các tường đó và yêu cầu bả ở
+                                                                                 cấp cao nhất.
+
+                                                                                 3. Mảng thử ở phép thử 2 phải dùng đúng cấp bóng
+                                                                                 thi công. Lưu ý rằng mẫu sơn thử bán lẻ có thể chỉ
+                                                                                 có một cấp bóng, chẳng hạn hũ mẫu của Benjamin
+                                                                                 Moore là loại vỏ trứng⁹.
+
+                                                                                 4. Bật đèn hắt và xem mảng thử cả ở góc xiên lẫn ở
+                                                                                 khoảng cách nhìn thông thường, vì GA-214 đánh giá
+                                                                                 bề mặt từ khoảng cách tối thiểu 1,5 m, vuông góc với
+                                                                                 tường¹¹.
+
+
+
+¹² Datacolor (2019, cập nhật 2026). Gloss and color measurement: What you need
+to know. datacolor.com
+
+
+
+                                                                                                                                                           77
+K.4. Checklist ký duyệt màu                                                             Đã có Ra, R9 và nhiệt độ màu của đúng mẫu đèn
+                                                                                        sẽ lắp.
+tại công trình                                                                          Đã so mẫu sơn và vật liệu đi kèm dưới mẫu đèn
+                                                                                        đó và dưới ánh sáng ban ngày.
+                                                                                        Yêu cầu Ra ≥ 90 và R9 > 50 cho đèn rọi tường
+                                                                                        trưng bày và mảng màu nhấn đã được ghi vào
+                                                                                        yêu cầu kỹ thuật.
+                                                                                        Mảng thử khoảng 1 × 1 m, hai lớp, trên nền xử lý
+                                                                                        như hoàn thiện và đúng cấp bóng.
+
+Bảng màu chỉ xong khi đứng                                                              Đã xem và chụp mảng thử lúc 8:00, 14:00 và
+                                                                                        20:00.
+vững trên tường thật, dưới                                                              LRV của trần, tường và sàn nằm trong dải phản
+đèn thật, vào giờ thật.                                                                 xạ hữu ích của TCVN 7114-1.
+                                                                                        Cấp bóng của từng bức tường được ghi bằng cấp
+                                                                                        MPI hoặc số GU.
+                                                                                        Tường có đèn hắt hoặc ánh sáng xiên dùng sơn
+                                                                                        mờ và bả hoàn thiện ở cấp cao nhất.
+                                                                                        Chủ nhà ký duyệt trên mảng thử thật, không
+                                                                                        phải trên thẻ màu hay ảnh màn hình.
+
+
+
+
+Hình PK.6. Chủ nhà ký duyệt trước mảng thử khoảng 1 × 1 m trên tường thật, không ký trên thẻ màu hay ảnh màn hình (mục K.2 và K.4). Ô màu chỉ là minh họa. Hình
+vẽ: AH+.
+
+
+
+78
+

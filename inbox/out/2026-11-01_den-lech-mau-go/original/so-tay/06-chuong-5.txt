@@ -1,0 +1,478 @@
+CHƯƠNG 5
+ỨNG DỤNG AI
+TRONG THIẾT LẬP
+VÀ KIỂM CHỨNG
+BẢNG MÀU
+
+
+
+
+“Muốn dùng màu hiệu
+quả, cần nhận ra rằng
+màu sắc luôn đánh lừa
+thị giác.”
+
+“In order to use color effectively it is
+necessary to recognize that color
+deceives continually.”
+
+Josef Albers
+trong Interaction of Color (1963)
+AI có thể cho bạn và chủ nhà thấy một căn phòng
+với ba bảng màu khác nhau chỉ trong vài phút,
+nhưng tấm ảnh đẹp đó không phải là một phép đo.
+Chương này trình bày những việc AI làm tốt và
+những việc AI không làm được khi chọn màu, cùng
+cách kết hợp AI với dữ liệu của hãng sơn và mẫu sơn
+tại công trình. Thông tin về công cụ AI được cập
+nhật đến tháng 10/2026. Vì nhóm công cụ AI thay
+đổi rất nhanh, bạn nên kiểm tra lại tên và tính năng
+trước khi dùng.
+
+
+
+
+5.1. Thử màu thì chậm,
+còn đoán màu thì rủi ro
+
+Khi chủ nhà muốn biết một mã sơn trông thế nào
+trong phòng khách của họ, kiến trúc sư thường chọn
+một trong hai cách, hoặc sơn mẫu trên tường thật,
+hoặc dựng mô hình rồi render. Sơn mẫu đáng tin
+cậy nhất, nhưng phải chờ sơn khô và chờ đúng giờ
+nắng (mục 4.6). Render chất lượng cao thì đòi hỏi
+dựng vật liệu, thiết lập bầu trời và chờ máy tính xử
+lý. Vì vậy, trên thực tế hiếm khi có đủ thời gian để
+thử quá vài phương án.
+
+
+
+
+                                                       Hình 5.1. Phần mềm mô phỏng vật lý lần theo tia sáng và cho ra số đo, còn AI
+                                                       sinh ảnh khử nhiễu dần theo câu lệnh và cho ra một tấm ảnh trông hợp lý. Đường
+                                                       tia chỉ là sơ đồ nguyên lý. Hình vẽ: AH+.
+
+
+
+
+                                                       Dùng AI để xem trước
+                                                       nhanh nhiều phương án,
+                                                       nhưng đừng tin AI để quyết
+                                                       định mã sơn.
+
+
+
+
+60
+Công cụ AI sinh ảnh rút ngắn đáng kể vòng lặp này,
+vì mỗi phương án chỉ cần một câu lệnh. Trong một
+nghiên cứu, 17 sinh viên kiến trúc đã viết tổng cộng
+588 câu lệnh trên Midjourney, Stable Diffusion và
+DALL-E, và nhóm nghiên cứu ghi nhận rằng các
+công cụ này giúp nảy ra ý tưởng ngẫu nhiên và kích
+thích trí tưởng tượng¹.
+
+Rủi ro nằm ở kỳ vọng của người dùng. Nhiều người
+dễ coi AI tạo sinh ảnh như một công cụ mô phỏng
+quang học có thể tính được hệ số phản xạ ánh sáng
+của vật liệu. Trên thực tế, mô hình sinh ảnh không
+đo đạc, không tính hệ số phản xạ ánh sáng (LRV) và
+không mô phỏng vật lý ánh sáng, mà chỉ tạo ra một
+tấm ảnh trông hợp lý. Chỉ khi hiểu đúng giới hạn       Hình 5.2. Phần mềm mô phỏng chiếu sáng như Radiance đã được đối chiếu với
+                                                       số đo thật trong một phòng làm việc thử nghiệm, dưới 10.097 điều kiện bầu trời⁶,
+này, bạn mới dùng AI một cách an toàn.                 còn ảnh AI chưa có kiểm chứng tương tự. Đường cong chỉ là sơ đồ nguyên lý.
+                                                       Hình vẽ: AH+.
+
+
+
+
+5.2. AI sinh ảnh đoán ánh sáng
+chứ không tính ánh sáng
+
+Phần lớn công cụ sinh ảnh hiện nay dùng mô hình        Phần mềm mô phỏng chiếu sáng hoạt động theo
+khuếch tán (diffusion model). Mô hình này học cách     cách khác hẳn. Kỹ thuật dựng hình dựa trên vật lý
+đảo ngược quá trình thêm nhiễu dần vào ảnh, nhờ        (physically based rendering) dùng các nguyên lý vật
+đó tạo ra ảnh mới giống với dữ liệu đã dùng để huấn    lý để mô phỏng tương tác giữa ánh sáng và vật chất⁴.
+luyện². Để chạy nhanh hơn, quá trình này diễn ra       Radiance là một ví dụ kinh điển, vì đây là phần mềm
+trong một không gian tiềm ẩn (latent space) đã được    được viết riêng cho thiết kế chiếu sáng và kiến trúc
+nén gọn, còn câu lệnh văn bản có vai trò điều hướng    nhằm tính chính xác độ chói⁵. Loại công cụ này đã
+kết quả³.                                              được đối chiếu với số đo thật. Trong một phòng làm
+                                                       việc thử nghiệm, khi so sánh dưới 10.097 điều kiện
+Vì thế, khi bạn viết "tường bê tông thô dưới nắng      bầu trời, chỉ số tự chủ ánh sáng ngày (daylight
+chiều", mô hình không tính toán một tia sáng nào.      autonomy) do phần mềm dự báo chỉ lệch dưới 2
+Nó chỉ dựng nên những điểm ảnh giống với các ảnh       điểm phần trăm so với số đo⁶. Trong khi đó, chúng
+tường bê tông và nắng chiều mà nó đã học.              mình chưa tìm thấy nghiên cứu nào kiểm chứng ảnh
+                                                       do AI sinh ra theo cách tương tự.
+
+
+
+
+Kết quả thường thuyết phục                             ¹ Paananen, V., Oppenlaender, J. và Visuri, A. (2024). Using text-to-image
+
+
+bằng mắt, nhưng không có
+                                                       generation for architectural design ideation. International Journal of Architectural
+                                                       Computing.
+                                                       ² Ho, J., Jain, A. và Abbeel, P. (2020). Denoising diffusion probabilistic models.
+
+con số vật lý nào đứng sau.                            NeurIPS.
+                                                       ³ Rombach, R. và cs. (2022). High-resolution image synthesis with latent diffusion
+                                                       models. CVPR.
+                                                       ⁴ Pharr, M., Jakob, W. và Humphreys, G. (2023). Physically based rendering (tái
+                                                       bản lần 4). MIT Press.
+                                                       ⁵ Ward, G. J. (1994). The RADIANCE lighting simulation and rendering system.
+                                                       SIGGRAPH '94.
+                                                       ⁶ Reinhart, C. F. và Walkenhorst, O. (2001). Validation of dynamic RADIANCE-
+                                                       based daylight simulations for a test office with external blinds. Energy and
+                                                       Buildings.
+
+
+
+                                                                                                                                       61
+Ba nhóm nghiên cứu khác nhau đã chỉ ra những giới                                        Màu trên màn hình cũng không phải là màu sơn.
+hạn cụ thể của AI sinh ảnh:                                                              Ảnh trên màn hình được mã hóa theo một hệ màu
+                                                                                         như sRGB, vốn là hệ RGB mặc định của máy tính¹⁰,
+• Bóng đổ và phối cảnh. Một nhóm nghiên cứu đã                                           và không mang thông tin về phổ phản xạ của sơn. Vì
+cho thấy ảnh do mô hình tạo ra có đặc điểm hình                                          vậy, nhiều hãng sơn cảnh báo rằng màu trên màn
+học khác với ảnh thật⁷. Không cần xét đến điểm ảnh,                                      hình có thể khác màu sơn thật, và khuyên người
+chỉ dựa vào đường thẳng, trường phối cảnh và quan                                        dùng xem thẻ màu hoặc mẫu sơn thật trước khi
+hệ giữa vật với bóng đổ, các bộ phân loại vẫn tách                                       mua¹¹ ¹².
+được ảnh tạo ra khỏi ảnh thật, với chỉ số AUC từ
+0,72 đến 0,97. Nhóm tác giả kết luận rằng các mô                                         5.3. LRV là con số lấy từ
+hình hiện nay chưa tái tạo được hình học của ảnh                                         hãng sơn, không lấy từ AI
+thật một cách đủ tin cậy.
+                                                                                         Khi cần biết một bức tường sơn xanh đậm sẽ làm
+• Gắn màu đúng vật. Bộ đánh giá T2I-CompBench có                                         căn phòng tối đi bao nhiêu, bạn cần một con số đo
+1.000 câu lệnh về màu, trong đó có một ví dụ rất gần                                     được, đó là LRV (light reflectance value), tức hệ số
+với nội thất. Với câu lệnh "một căn phòng có rèm                                         phản xạ ánh sáng. LRV là tỷ lệ ánh sáng nhìn thấy
+xanh và ghế vàng", mô hình có thể tạo ra rèm vàng                                        mà một bề mặt phản xạ lại, tính theo độ nhạy sáng
+và ghế xanh. Điểm gắn màu đúng, trên thang từ 0                                          của mắt người¹³. Thang đo đi từ 0, ứng với bề mặt
+đến 1, dao động từ khoảng 0,38 với Stable Diffusion                                      hấp thụ toàn bộ ánh sáng, đến 100, ứng với bề mặt
+1.4 đến 0,66 với phương pháp tốt nhất được thử⁸.                                         phản xạ toàn bộ¹⁴. Theo tiêu chuẩn Anh BS 8493,
+Các mô hình mới hơn đã cải thiện, nhưng chúng                                            LRV được tính bằng giá trị kích thích màu Y của
+mình chưa thấy đánh giá độc lập nào cho thấy                                             CIE, với nguồn sáng chuẩn D65 và người quan sát
+chúng tái tạo đúng 100% một mã màu cho trước.                                            chuẩn 10°¹⁵. Nói cách khác, LRV là số đo bằng thiết
+                                                                                         bị trên mẫu sơn thật.
+• Hiểu không gian. Một nghiên cứu khác phân tích
+40 triệu câu lệnh Midjourney và thử nghiệm ba mô                                         Các hãng sơn công bố LRV trên thẻ màu và trang
+hình, rồi ghi nhận rằng mô hình không hiểu ý nghĩa                                       màu, chẳng hạn Sherwin-Williams in LRV ở mặt sau
+của các nét trên mặt bằng và còn yếu khi phải đếm                                        mỗi thẻ màu¹⁴. Ví dụ, màu SW 7029 Agreeable Gray
+hay sắp xếp không gian phức tạp⁹. Trong nghiên cứu                                       có LRV 60,386¹⁶, còn màu HC-154 Hale Navy của
+với sinh viên kiến trúc nêu ở mục 5.1, người tham gia                                    Benjamin Moore có LRV 8,36¹⁷.
+cũng thấy kết quả có vẻ ngẫu nhiên so với điều họ
+chờ đợi từ câu lệnh¹.
+
+
+
+
+Ảnh AI cho bạn thấy một
+khả năng, chứ không cho
+bạn một phép đo.
+
+
+
+
+                                                                                         ¹³ British Standards Institution (2008). BS 8493:2008+A1:2010. Light reflectance
+⁷ Sarkar, A. và cs. (2024). Shadows don't lie and lines can't bend! CVPR.                value (LRV) of a surface.
+⁸ Huang, K. và cs. (2023). T2I-CompBench. NeurIPS.                                       ¹⁴ Sherwin-Williams (không ghi năm). Worthy of reflection. sherwin-williams.com
+⁹ Ploennigs, J. và Berger, M. (2023). AI art in architecture. AI in Civil Engineering.   ¹⁵ Fosroc ANZ (2025). Technical bulletin: Understanding LRV and SRI.
+¹⁰ International Electrotechnical Commission (1999). IEC 61966-2-1:1999 (sRGB).          ¹⁶ Sherwin-Williams (không ghi năm). SW 7029 Agreeable Gray. sherwin-
+¹¹ Sherwin-Williams (không ghi năm). Color visualizer. sherwin-williams.com              williams.com
+¹² Benjamin Moore (không ghi năm). FAQ. benjaminmoore.com                                ¹⁷ Benjamin Moore (không ghi năm). Hale Navy HC-154. benjaminmoore.com
+
+
+62
+Vì sao không nên suy ra LRV từ ảnh hay từ mã HEX?
+Từ một mã HEX, có thể tính độ chói tương đối theo
+công thức của W3C, bằng cách đưa từng kênh sRGB
+về giá trị tuyến tính rồi lấy 0,2126 × R + 0,7152 × G +
+0,0722 × B¹⁸. Chúng mình đã thử công thức này với
+mã HEX do chính hãng công bố và được kết quả
+như sau:
+
+• SW 7029 Agreeable Gray (#D1CBC1) tính ra khoảng
+60,1, rất gần với LRV đo được là 60,4.
+• Hale Navy (#434B56) tính ra khoảng 6,9, trong khi
+LRV đo được là 8,36.
+
+Như vậy, ngay cả với mã HEX của hãng, kết quả
+cũng chỉ gần đúng. Màu hút từ ảnh AI còn kém tin
+cậy hơn, vì độ sáng của điểm ảnh phụ thuộc vào ánh                                     Hình 5.3. LRV hãng công bố (đo trên sơn thật) đặt cạnh giá trị tính từ mã HEX
+                                                                                       theo công thức W3C: Hale Navy 8,36 và 6,9; SW 7029 60,4 và 60,1. Ô màu hiển
+sáng và độ phơi sáng do mô hình tự chọn, không                                         thị theo mã HEX của hãng, không thay thế thẻ màu thật. Hình vẽ: AH+, theo số
+                                                                                       liệu của Sherwin-Williams, Benjamin Moore và công thức W3C.
+gắn với mẫu sơn nào.
+
+Hai mẫu trông giống nhau chưa chắc đã là một. Hai
+bề mặt có phổ phản xạ khác nhau vẫn có thể cho                                         5.4. Dùng mô hình ngôn ngữ
+cùng một màu dưới một nguồn sáng, và CIE gọi đây
+                                                                                       để lập luận, không dùng làm
+là hiện tượng đồng sắc dị phổ (metamerism)¹⁹. Khi
+đổi nguồn sáng, hai mẫu đó có thể lệch màu với                                         bảng tra mã màu
+nhau. Ảnh chụp hay ảnh AI đều chỉ ghi lại một trạng
+thái ánh sáng, nên không cho biết phổ phản xạ của                                      Bạn có thể hỏi ChatGPT nên sơn phòng hướng Tây
+sơn.                                                                                   màu gì và nhận về một mã sơn kèm LRV trông rất
+                                                                                       cụ thể. Mô hình ngôn ngữ lớn (large language model
+                                                                                       - LLM), như phần trò chuyện của ChatGPT, sắp xếp
+LRV là số đo trên sơn thật, vì                                                         lập luận và văn bản rất tốt. Tuy vậy, LLM có thể tạo
+vậy hãy chép từ thẻ màu của                                                            ra nội dung nghe hợp lý nhưng sai sự thật²⁰ hoặc
+
+hãng, đừng để AI ước lượng.
+                                                                                       không kiểm chứng được từ nguồn²¹, hiện tượng
+                                                                                       thường được gọi là "ảo giác" (hallucination). Vì vậy,
+                                                                                       mã sơn, con số LRV hay tên màu do LLM đưa ra có
+                                                                                       thể không có thật.
+
+                                                                                       Những việc nên giao cho LLM gồm:
+                                                                                       • Chuyển ghi chú khảo sát thành bảng dữ liệu đầu
+                                                                                       vào, gồm hướng cửa, giờ dùng phòng, nguồn sáng và
+                                                                                       mong muốn của chủ nhà.
+                                                                                       • Đề xuất nhóm màu bằng lời theo nguyên lý của
+                                                                                       chương 4, chẳng hạn phòng hướng Tây dùng màu
+                                                                                       mát đã pha xám.
+¹⁸ W3C (2024). WCAG 2.2: Relative luminance. w3.org
+                                                                                       • Liệt kê các số liệu cần tra từ hãng sơn và nhà cung
+¹⁹ CIE (2020). CIE S 017:2020 ILV, mục 17-23-006 "metamerism". cie.co.at               cấp đèn.
+²⁰ Huang, L. và cs. (2025). A survey on hallucination in large language models.
+ACM Transactions on Information Systems.                                               • Soạn câu lệnh sinh ảnh theo khung ở mục 5.5, và
+²¹ Ji, Z. và cs. (2023). Survey of hallucination in natural language generation. ACM
+Computing Surveys.                                                                     giải thích phương án cho chủ nhà bằng lời dễ hiểu.
+
+
+                                                                                                                                                                63
+Ngược lại, không nên giao cho LLM việc chọn mã                                       5.5. Viết lệnh sinh ảnh theo
+sơn cuối cùng, việc "tính" LRV, hay việc khẳng định
+một màu sơn sẽ làm mát phòng (mục 4.4).                                              ba biến số và mỗi lần chỉ đổi
+Thay cho kiểu lệnh "hãy tính mã HEX và LRV tối                                       một biến
+ưu", bạn nên yêu cầu LLM lập luận và chỉ ra những
+việc cần tra, như mẫu prompt dưới đây:                                               Khi muốn cho chủ nhà xem cùng một phòng khách
+                                                                                     với hai màu tường, bạn cần những tấm ảnh chỉ khác
+Bạn là trợ lý của kiến trúc sư. Dữ liệu: phòng làm việc 4 ×                          nhau ở màu tường. Tài liệu hướng dẫn của
+6 m, trần 3,2 m, cửa kính duy nhất hướng Đông Bắc, ở                                 Midjourney mô tả màu bằng từ ngữ, như rực, trầm,
+TP.HCM, dùng chủ yếu từ 8 đến 17 giờ.                                                sáng, đơn sắc hay pastel²², và dùng ảnh tham chiếu
+1. Đề xuất 3 nhóm màu tường theo hướng nắng và nguyên                                phong cách (style reference) để truyền màu, chất liệu
+lý màu bổ túc. Mỗi nhóm mô tả sắc độ, độ sáng, độ rực                                và ánh sáng²³. Chúng mình chưa tìm thấy tài liệu
+bằng lời.                                                                            chính thức nào xác nhận mô hình hiểu đúng mã
+2. Liệt kê các thông số tôi cần tra trên thẻ màu của hãng                            HEX trong câu lệnh, vì vậy mã HEX trong lệnh chỉ
+sơn.                                                                                 nên được coi là gợi ý.
+3. Không tự đưa mã sơn hay LRV. Điểm nào không chắc,
+hãy ghi rõ.                                                                          Khung ba biến số dưới đây giúp mô tả cảnh một
+                                                                                     cách nhất quán giữa các lần tạo ảnh. Mục tiêu của
+                                                                                     khung là mô tả cảnh, chứ không phải yêu cầu mô
+
+Dùng LLM để lập luận và lập
+                                                                                     hình tính toán.
+
+danh sách việc cần tra. Mọi                                                          1. Hình học, gồm loại không gian, kích thước, chiều
+
+mã sơn và con số phải lấy từ                                                         cao trần, vị trí cửa và góc máy (ví dụ ngang tầm mắt
+                                                                                     1,6 m, ống kính 35 mm).
+hãng.
+                                                                                     2. Ánh sáng, gồm hướng nắng, giờ trong ngày, trời
+                                                                                     quang hay u ám. Nếu ghi nhiệt độ màu, hãy dùng số
+                                                                                     liệu đo ở mục 4.2 thay cho con số truyền miệng.
+
+                                                                                     3. Vật liệu và màu, gồm tên màu bằng lời, độ bóng
+                                                                                     (mờ, bán bóng), vật liệu sàn và đồ nội thất.
+
+                                                                                     Muốn so sánh, hãy giữ nguyên hai biến và chỉ đổi
+                                                                                     một, ví dụ chỉ đổi màu tường hoặc chỉ đổi giờ, vì nếu
+                                                                                     đổi nhiều thứ cùng lúc thì không biết khác biệt đến
+                                                                                     từ đâu. Kể cả khi giữ nguyên câu lệnh, bố cục và đồ
+                                                                                     đạc vẫn có thể thay đổi giữa các lần tạo, nên bạn cần
+                                                                                     so sánh nhiều ảnh thay vì kết luận từ một ảnh.
+
+
+
+
+                                                                                     ²² Midjourney (không ghi năm). Prompt basics. docs.midjourney.com
+                                                                                     ²³ Midjourney (không ghi năm). Style reference. docs.midjourney.com
+
+
+
+
+Hình 5.4. Mỗi loạt ảnh chỉ đổi một biến, ở đây là ánh sáng, và giữ nguyên hai biến
+còn lại. Nên tạo vài ảnh rồi so sánh, không kết luận từ một ảnh. Hình vẽ: AH+.
+
+
+
+64
+Sửa trên ảnh chụp thật thay vì tạo cảnh mới. Trình                    Câu lệnh (prompt) mẫu dưới đây do chúng mình
+Editor của Midjourney cho phép tải ảnh lên và tạo                     soạn bằng tiếng Anh.
+lại riêng vùng được chọn²⁴, còn ChatGPT cũng sửa
+được ảnh theo lời mô tả. Tuy vậy, khi ra mắt tính                       Open-plan office interior, 8 x 12 m, ceiling height 3.2 m,
+năng tạo ảnh năm 2025, chính OpenAI đã liệt kê độ                       one glazed wall facing west.
+chính xác khi chỉnh sửa là một giới hạn²⁵. Cách làm                     Walls painted in a matte warm light grey, microcement
+hợp lý là chụp chính căn phòng vào đúng giờ cần                         floor, light oak desks.
+xét rồi chỉ đổi màu tường, vì cách này giữ được hình                    Lighting: late afternoon, low sun from the west entering
+học và ánh sáng của ảnh gốc tốt hơn so với tạo cảnh                     deep into the room, clear sky, long shadows. Camera: eye
+từ đầu.                                                                 level 1.6 m, 35 mm lens, architectural photography --ar 3:2
+                                                                        --raw
+Dưới đây là các công cụ hiện có tính đến tháng
+10/2026, kèm đơn vị phát triển và những điều cần
+biết khi thử màu.
+                                                                      Mỗi lần chỉ đổi một biến, và
+                                                                      khi có thể, hãy sửa trên ảnh
+• Midjourney (Midjourney, Inc.). Phiên bản mặc định
+là V8.2 từ ngày 24/7/2026²⁶. Với câu lệnh đơn giản,
+chế độ Raw (tham số --raw) cho ảnh giống ảnh chụp                     chụp chính căn phòng.
+hơn²⁷. Ngoài ra, tham số --ar đặt tỷ lệ khung, --sref
+dùng ảnh tham chiếu phong cách, và Editor cho
+phép sửa từng vùng trên ảnh tải lên.
+• ChatGPT, phần tạo ảnh (OpenAI). Phiên bản
+Images 2.5 ra mắt ngày 8/9/2026 và sửa ảnh theo lời
+mô tả²⁸.
+• Figma Weave, trước đây là Weavy (Figma mua lại
+Weavy vào tháng 10/2025). Đây là nền tảng tạo và
+chỉnh sửa hình ảnh bằng AI, trong đó quy trình
+được xây bằng các nút (node)²⁹.
+• Ứng dụng ướm màu của hãng sơn, như ColorSnap
+của Sherwin-Williams và ColourDesign của Jotun.
+Các ứng dụng này ướm màu có thật của hãng lên
+ảnh hoặc lên camera³⁰ ³¹, nhưng chính các hãng vẫn
+cảnh báo rằng màu trên màn hình có thể khác màu
+thật.
+
+
+
+
+²⁴ Midjourney (không ghi năm). Editor. docs.midjourney.com
+²⁵ OpenAI (2025). Introducing 4o image generation. openai.com
+²⁶ Midjourney (không ghi năm). Version. docs.midjourney.com
+²⁷ Midjourney (không ghi năm). Raw. docs.midjourney.com
+²⁸ OpenAI (2026). Introducing ChatGPT Images 2.5. openai.com
+²⁹ Figma (không ghi năm). Figma Weave FAQ. help.figma.com
+³⁰ Sherwin-Williams (không ghi năm). ColorSnap mobile app. sherwin-   Mảng sơn thử khổ lớn trên tường thật, với mã màu ghi ngay dưới từng mảng. Đây
+williams.com                                                          là bước kiểm chứng mà ảnh AI không thay thế được. Ảnh: Patrick Federi /
+³¹ Jotun (không ghi năm). Jotun ColourDesign app. jotun.com           Unsplash.
+
+
+
+                                                                                                                                              65
+5.6. Quy trình năm bước kết
+hợp AI với dữ liệu thật
+
+
+Một quy trình hợp lý cần tách bạch phần việc của
+AI với phần việc của dữ liệu thật. Trong năm bước
+dưới đây, AI chỉ tham gia ở bước 2 và bước 4.
+
+1. Thu dữ liệu thật. Ghi hướng, giờ dùng phòng và
+ánh sáng chủ đạo theo mục 4.2 và 4.3, rồi chụp ảnh
+hiện trạng vào đúng giờ cần xét.
+
+2. Lập phương án bằng LLM. Yêu cầu LLM đề xuất
+ba nhóm màu bằng lời, kèm danh sách số liệu cần
+tra (mục 5.4).
+
+3. Chọn mã sơn từ thẻ màu của hãng. Ghi tên, mã
+và LRV công bố (mục 5.3). Khi cần hai bề mặt kề
+nhau dễ phân biệt, hãy so LRV của chúng, vì theo
+hướng dẫn của Dulux Trade, chênh lệch LRV từ 30
+điểm trở lên giúp nhận diện tách bạch các thành
+phần khác nhau trong một công trình³².
+
+4. Xem trước bằng AI sinh ảnh. Lập một ma trận
+ảnh gồm các mã đã chọn ở các thời điểm ánh sáng
+khác nhau. Ảnh chỉ dùng để so sánh tương đối và                                   Hình 5.5. Quy trình năm bước, trong đó bước 1, 3 và 5 do dữ liệu quyết định, còn
+trao đổi với chủ nhà, không dùng để đọc màu tuyệt                                 bước 2 và 4 do AI hỗ trợ lập phương án và xem trước. Khi cần thêm mã màu,
+                                                                                  quay lại bước 3. Hình vẽ: AH+.
+đối, và hồ sơ trình bày cần ghi rõ đây là ảnh minh
+họa do AI tạo.
+
+5. Kiểm chứng trên tường thật. Sơn mẫu khổ lớn và                                 AI rút ngắn vòng thử ý tưởng,
+xem vào đúng giờ (mục 4.6 và Phần kết). Khi cần số                                còn dữ liệu hãng và mẫu sơn
+                                                                                  trên tường mới là thứ quyết
+liệu chiếu sáng như độ rọi, độ chói hay nguy cơ chói
+lóa, hãy dùng phần mềm mô phỏng dựa trên vật lý
+như Radiance⁵.                                                                    định.
+
+
+
+
+³² Dulux Trade (không ghi năm). The Dulux Trade colour & contrast design guide.
+AkzoNobel.
+
+
+
+
+66
+5.7. Bài tập mẫu chọn màu                              Bước 4 - Lập ma trận ảnh. Giữ nguyên phần mô tả
+                                                       không gian và vật liệu theo mục 5.5, chỉ thay phần
+xám cho văn phòng mở                                   ánh sáng bằng ba đoạn sau:
+hướng Tây                                              • Buổi sáng: "morning, west facade in shade, clear
+                                                       blue sky, cool diffuse daylight, no direct sun".
+Tình huống. Một văn phòng mở ở TP.HCM có mặt           • Buổi trưa: "midday, high sun, no direct sun
+kính hướng Tây, và chủ đầu tư muốn tường màu           entering, bright neutral daylight".
+"xám trung tính". Điều cần lo là một màu xám đẹp       • Buổi chiều: "late afternoon, low sun from the west
+vào buổi trưa có thể ngả lạnh vào buổi sáng, khi mặt   entering deep into the room, warm sunlight, long
+Tây chỉ nhận ánh sáng trời, và ngả nâu dưới nắng       shadows".
+chiều thấp. Đây là tình huống do chúng mình dựng
+để luyện quy trình, không phải phân tích một công      Đọc ảnh, vẫn trong bước 4. Hãy so sánh các ảnh với
+trình đã xây.                                          nhau. Nếu ảnh buổi sáng cho thấy tường ngả lạnh
+                                                       rõ, hãy thêm một mã xám ấm hơn vào danh sách thử
+Bước 1 - Thu dữ liệu. Theo bảng ở mục 4.2, bề mặt      mẫu. Đây chỉ là một tín hiệu, chưa phải bằng chứng,
+chỉ nhận ánh sáng trời vào ngày quang có nhiệt độ      và bạn không nên dùng công cụ hút màu trên ảnh
+màu khoảng 7900-9700 K, còn nắng chiều chỉ xuống       để kết luận về sơn (mục 5.3).
+dưới 4000 K trong một khoảng ngắn trước lúc mặt
+trời lặn hoặc khi trời mù. Vì vậy, bạn không nên       Bước 5 - Kiểm chứng. Sơn hai hoặc ba mẫu khổ lớn
+chép những con số như "3500 K lúc 4 giờ chiều" vào     cạnh nhau trên tường hướng Tây, rồi xem vào buổi
+câu lệnh.                                              sáng của một ngày quang và vào cuối chiều.
+
+
+Bước 2 - Dùng LLM. Yêu cầu ba nhóm màu, gồm            Kết quả mong đợi. AI giúp loại nhanh những
+xám trung tính, xám ấm (greige) và xám ngả lục nhẹ,    phương án rõ ràng không phù hợp và chuẩn bị hình
+kèm danh sách số liệu cần tra.                         ảnh để trao đổi với chủ đầu tư, còn quyết định cuối
+                                                       cùng dựa trên mẫu sơn thật.
+Bước 3 - Tra hãng. Với mỗi nhóm, chọn một đến hai
+mã trên thẻ màu và ghi LRV, chẳng hạn SW 7029
+Agreeable Gray có LRV 60,386¹⁶. Ở Việt Nam, hãy
+dùng thẻ màu và cách đọc LRV của hãng mà bạn chỉ
+định.
+
+
+
+
+Ảnh AI chỉ ra màu nào đáng
+thử, tường thật mới cho biết
+nên chọn màu nào.
+
+
+
+
+                                                       Hình 5.6. Văn phòng hướng Tây vào buổi sáng chỉ có ánh sáng trời, buổi trưa
+                                                       nắng cao không lọt vào, buổi chiều nắng thấp xiên sâu tới cuối phòng. Hình vẽ:
+                                                       AH+.
+
+
+
+
+                                                                                                                                   67
+5.8. Checklist dùng AI khi                                                               Đã ghi hướng, giờ dùng phòng và ánh sáng chủ
+                                                                                         đạo trước khi mở công cụ AI.
+chọn màu                                                                                 Mọi mã sơn và LRV do LLM đưa ra đều đã được
+                                                                                         đối chiếu với hãng.
+                                                                                         LRV được chép từ thẻ màu hoặc trang màu
+                                                                                         chính thức của hãng.
+                                                                                         Mỗi loạt ảnh so sánh chỉ đổi một biến.
+                                                                                         Khi có thể, đã đổi màu trên ảnh chụp chính căn
+AI cho bạn tốc độ, hãng sơn                                                              phòng thay vì tạo cảnh mới.
+
+cho bạn con số, và bức tường                                                             Không dùng màu hút từ ảnh AI để suy ra mã sơn
+                                                                                         hay LRV.
+thật cho bạn câu trả lời.                                                                Ảnh AI trong hồ sơ trình bày được ghi rõ là "ảnh
+                                                                                         minh họa do AI tạo".
+                                                                                         Đã kiểm tra lại tên và tính năng của công cụ AI
+                                                                                         tại thời điểm dùng.
+                                                                                         Phương án cuối cùng đã được thử bằng mẫu sơn
+                                                                                         khổ lớn trên tường thật, vào đúng giờ.
+
+
+
+
+Hình 5.7. Màn hình tự phát sáng và hiển thị theo sRGB, còn sơn phản xạ ánh sáng tại chỗ, nên màu có thể khác nhau (mục 5.3). Hãy chốt màu trên tường thật vào đúng
+giờ. Ô màu chỉ là minh họa. Hình vẽ: AH+.
+
+
+68
+

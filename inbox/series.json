@@ -707,5 +707,28 @@
   },
   "ban": "làm lại lần 3 theo hai góp ý của chủ Trang (câu móc phổ biến, lời ngắn; ý hiểu ngay, đa số đồng thuận), lời 197 từ",
   "video": "inbox/out/2026-10-31_tu-trang-kin-tuong/reel_tu-lon-phong-nho_final.mp4"
+ },
+ {
+  "tap": 19,
+  "ngay": "2026-11-01",
+  "slug": "den-lech-mau-go",
+  "bai_kho": {
+   "duong_dan": "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/07-phan-ket-kiem-chung-tai-cong-truong.pdf + 06-chuong-5-ai-va-bang-mau.pdf (mục 5.3, một câu)",
+   "nhanh": "AH-Interior-notes",
+   "commit": "0deebf6381c57999600a4a4381cce35db97f3074"
+  },
+  "y_bai": {
+   "muc": "Phần kết K.1 'Phép thử 1 - Soi mẫu dưới đúng loại đèn sẽ lắp' (+ câu đồng sắc dị phổ mục 5.3)",
+   "tom_tat": "Sơn và gỗ khớp ban ngày vẫn lệch dưới đèn khác; Ra chỉ tính tám mẫu màu không quá rực, đỏ đậm có chỉ số riêng R9 nên đèn Ra khá cao vẫn hiện sai đỏ đậm, nâu gỗ, da người; Hayama ngày/chạng vạng; phòng nhiều gỗ chọn Ra ≥ 90, R9 > 50, soi mẫu dưới đúng đèn, lệch thì đổi một bên"
+  },
+  "cau_moc": "Ban ngày màu sơn rất hợp với tủ gỗ, sao tối bật đèn lên lại thấy lệch tông?",
+  "anh_kho": [
+   "ArchDaily Stage in Hayama / Takanori Ineyama Architects, ảnh Koichi Torimura: _10 (ngày, ảnh chính, phòng trống lắp ráp), _21 (chạng vạng, căn trùng _10), _20 (phòng ăn chạng vạng); xem original/archdaily-stage-in-hayama/urls.txt",
+   "AH-Decode-Decor/so-tay-cong-thuc-chon-mau-noi-that/07-phan-ket-kiem-chung-tai-cong-truong.pdf · pdfimages ảnh 2 (Hình PK.1, vẽ dần)"
+  ],
+  "phong_cach": "sketch lắp ráp (mục 00b), engine/sketch_anim/sketch_reel.py",
+  "thu_muc": "inbox/out/2026-11-01_den-lech-mau-go/",
+  "trang_thai": "cho_ghi_am",
+  "ghi_chu": "Chủ Trang yêu cầu trong phiên 2026-11-01 sau khi duyệt demo phong cách: reel mới theo phong cách sketch lắp ráp, nội dung từ sổ tay AH+, ảnh công trình ngoài sách được nhưng phải khớp nội dung. K.3 (độ bóng) bỏ vì sát ý cấm ánh sáng xiên. Hai lượt chấm độc lập (v1 chưa đạt 5 sửa, v2 còn 1 câu, v3 đạt). Có bản video xem trước không tiếng theo thời lượng nháp."
  }
 ]

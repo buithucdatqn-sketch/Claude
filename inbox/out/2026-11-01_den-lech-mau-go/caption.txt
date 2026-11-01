@@ -1,0 +1,19 @@
+Ban ngày chọn màu sơn thấy rất hợp với tủ gỗ, tối bật đèn lên lại lệch tông. Lý do nằm ở ngọn đèn: hai mẫu có phổ phản xạ khác nhau có thể trông giống hệt nhau dưới nguồn sáng này nhưng lệch nhau dưới nguồn sáng khác, hiện tượng đồng sắc dị phổ (metamerism).
+
+Chỉ số hoàn màu chung Ra (nhãn đèn thường in là CRI) chỉ tính từ tám mẫu màu thử có độ rực vừa phải. Mẫu đỏ đậm có chỉ số riêng R9 và không nằm trong Ra, nên một ngọn đèn Ra khá cao vẫn có thể hiện sai màu đỏ đậm, nâu gỗ hay màu da người. TCVN 7114-1:2008 coi Ra 80 là mức sàn cho nơi có người ở lâu; với mảng màu chủ đạo, gỗ, đá và tường trưng bày, mức Ra ≥ 90 và R9 > 50 (quy chuẩn năng lượng California 2019) là ngưỡng đặt hàng hợp lý hơn. R9 thường chỉ có khi hãng công bố, nên hỏi thông số khi mua.
+
+Cách làm tại công trình: lấy Ra, R9, nhiệt độ màu của đúng mẫu đèn sẽ lắp; mang thẻ màu, mẫu sơn, mẫu gỗ, đá, vải đến công trình, soi dưới chính mẫu đèn đó và dưới ánh sáng ban ngày; cặp nào khớp dưới nguồn này mà lệch dưới nguồn kia thì đổi một bên trước khi đặt hàng. Không duyệt màu dưới đèn văn phòng hay đèn tạm của công trường.
+
+Ảnh: cùng phòng khách Stage in Hayama (Kanagawa, Nhật Bản) chụp ban ngày và lúc chạng vạng dưới đèn ấm.
+
+Câu hỏi cho mọi người: đèn trong phòng khách nhà mình có ghi Ra hay CRI bao nhiêu, và đã có lúc nào mọi người thấy màu gỗ hay màu sơn "khác hẳn" khi bật đèn buổi tối chưa?
+
+AH Decode là series mới của Giả Thuyết Kiến Trúc, phân tích các nguyên tắc thiết kế và cách chọn đồ decor. Theo dõi Fanpage Giả Thuyết Kiến Trúc. Bài viết phân tích đầy đủ xem ở dòng đầu tiên trong phần bình luận.
+
+Nguồn chính (theo sổ tay AH+ Công thức chọn màu nội thất, phần kết mục K.1):
+- CIE (1995). CIE 13.3-1995: Method of measuring and specifying colour rendering properties of light sources.
+- California Energy Commission (2020). 2019 Energy Code: Residential lighting.
+- Bộ Khoa học và Công nghệ (2008). TCVN 7114-1:2008, mục 4.2 và 4.6.2.
+Ảnh: Stage in Hayama · Takanori Ineyama Architects · ảnh Koichi Torimura (ArchDaily). Hình PK.1: AH+.
+
+#AHDecode #DenChieuSang #MauSacNoiThat #GoNoiThat #GiaThuyetKienTruc
