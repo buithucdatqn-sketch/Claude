@@ -21,3 +21,19 @@ Ngày: 2026-11-01. Đây chỉ là bản thử phong cách phần hình, không 
 2. Có giữ bước hiện ảnh thật ở cuối không, hay để nguyên bản ký họa suốt reel.
 3. Độ dày lớp nét chì đổ bóng: giữ như demo, hay bớt nữa.
 4. Lưu ý quy cách cũ (mục 9: không tô mảng, không gradient): bước ảnh thật hiện dần là hoà ảnh, không phải tô màu, nhưng xin chủ Trang xác nhận.
+
+## Bản 2 (theo video mẫu chủ Trang gửi lại): nét viền bay vào lắp ráp
+
+- File: `demo_lap_rap_silent.mp4` (13,6 giây), `demo_lap_rap_keyframes.jpg`.
+- Engine: `engine/sketch_anim/empty_room.py` (tạo ảnh phòng trống từ ảnh gốc: tường ván gỗ chép theo cột, sàn bê tông ghép mảnh vá) và `engine/sketch_anim/sketch_assemble.py`.
+- Ảnh phủ kín khung 1080×1920 như video mẫu. Phụ đề nằm trên mẩu giấy trắng dán băng keo, đổi chỗ theo cảnh để không che chi tiết đang nói (trên, dưới, góc trái). Mọi chữ nằm trong y 336–1490.
+
+| Thời điểm | Hình |
+|---|---|
+| 0–0,5 giây | Phòng trống (đã xoá đảo bếp, bàn, bốn ghế, thảm, ghế đôn inox, kệ trên gác). |
+| 0,5–4,8 giây | Lần lượt thảm, đảo bếp, bàn, bốn ghế, ghế đôn, kệ bay vào từ mép khung. Nét viền dày màu kem, xoay, nảy rồi đáp đúng chỗ. Nét rung nhẹ 10 lần mỗi giây. |
+| 5,3–6,4 giây | Hoà sang ảnh thật, nét viền mờ đi. |
+| 6,6–9,6 giây | Camera zoom vào ô kính. Khung vách lam rồi ô kính bay vào theo cùng kiểu. |
+| 10,4–13,6 giây | Camera lùi ra. Ba mũi tên cam vẽ đường đi ánh sáng xuống bàn ăn. |
+
+Hạn chế: phòng trống tạo bằng cách xoá đồ trên ảnh, nên nhìn kỹ vẫn thấy sàn hơi phẳng, ở mép gác còn vết mờ nhỏ chỗ chậu cây. Bản 1 (`demo_sketch_silent.mp4`) giữ lại để so sánh.
